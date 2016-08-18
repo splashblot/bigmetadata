@@ -1,11 +1,13 @@
 services:
  - docker
 sudo: required
+before_install:
+  - echo -e "machine github.com\n  login $token" >> ~/.netrc
 before_script:
-  cp .env.sample .env
+  - cp .env.sample .env
 script:
   #- make etl-unittest
-  - git clone --single-branch https://$token@github.com/cartodb/observatory-extension.git
+  - git clone "https://$token@github.com/cartodb/observatory-extension.git"
   - make extension-unittest
 env:
   global:

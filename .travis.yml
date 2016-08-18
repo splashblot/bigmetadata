@@ -1,16 +1,15 @@
-{
-  "services": [
-    "docker"
-  ],
-  "sudo": "required",
-  "before_install": [
-    "openssl aes-256-cbc -K $encrypted_d303290e7d32_key -iv $encrypted_d303290e7d32_iv -in keys/id_rsa_observatory_extension.key.enc -out keys/id_rsa_observatory_extension.key -d"
-  ],
-  "before_script": "cp .env.sample .env",
-  "script": [
-    #"make etl-unittest",
-    "GIT_SSH_COMMAND='ssh -i keys/id_rsa_observatory_extension.key' git clone git@github.com:cartodb/observatory-extension",
-    "make extension-unittest"
-  ]
-}
+services:
+ - docker
+sudo: required
+before_script:
+  cp .env.sample .env
+script:
+  #- make etl-unittest
+  - git clone --single-branch https://$token@github.com/cartodb/observatory-extension.git
+  - make extension-unittest
+env:
+  global:
+    - secure: RFnZ/LKxzNhqjJBYZVYCpRyTIc+O1KAeDj5bPt0q3JZEagl4foG0MgvGSnT7pOsGIurtO9TlhkRFK25BqqfWa+lej0q785WkBWi+L058PMg+EFr//EVXWp46ExwhKn7P9kI2L216/jhj/2JF2b3kvsu4waU4dVUyzoMVQ/nnulRBNDo/BY/9tqHwIeTFpQtnVNLD6ybZGAhSZ7wj4oIFqjqRtv5NgoCABjYMoT3IeUkCb6F/exK7m451Fuo3kPFoXU3ZP+D6HzF9SFlhVSF2qPe+YOKSI3KEmL3TJNpAa/8kGNpaGMHtUXDvfBzM6GopHLhntppdvUr2rOPgIlJbZ1C1vuLs2VCe34hNV++BE77Y6C3oH1cKq8ioXPsAH8n1YijygxWOMT2ivKgikWC/i9pDWPMm3kE0Na5axIYLyDLWS98ozIe1kmAxAsXjpP6yCSwDVcy5Xt3b8hqnUtCJv62fwIIW2n985T23CwvqX9ST6HwCDaTPBsOYfO0St/Z5o0DyLBtINI5NgqJMPxxDP0+r4Y3p1iTWxkZHfUY9FYCiRkb6THNOExx5RkWVuRmCY4f/kwoIWzmD/5BT1RHuambqJDcbp3WlnKnPyN4UiJe4aepkdRg6Emdis8b/eBVy6JXrlN5DRfMicDwWf4tQQ+qAsLlsqsnX1dA9VFgPQ=
 
+#https://1f874f52200401fc0fbdbc7e83916a827dcc02ff@github.com/cartodb/observatory-extension.git
+#

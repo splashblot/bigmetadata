@@ -1,8 +1,8 @@
 services:
  - docker
 sudo: required
-before_install:
-  - echo -e "machine github.com\n  login $token" >> ~/.netrc
+#before_install:
+#  - echo -e "machine github.com\n  login $token" >> ~/.netrc
 before_script:
   - cp .env.sample .env
 script:
@@ -11,7 +11,4 @@ script:
   - make extension-unittest
 env:
   global:
-    - secure: RFnZ/LKxzNhqjJBYZVYCpRyTIc+O1KAeDj5bPt0q3JZEagl4foG0MgvGSnT7pOsGIurtO9TlhkRFK25BqqfWa+lej0q785WkBWi+L058PMg+EFr//EVXWp46ExwhKn7P9kI2L216/jhj/2JF2b3kvsu4waU4dVUyzoMVQ/nnulRBNDo/BY/9tqHwIeTFpQtnVNLD6ybZGAhSZ7wj4oIFqjqRtv5NgoCABjYMoT3IeUkCb6F/exK7m451Fuo3kPFoXU3ZP+D6HzF9SFlhVSF2qPe+YOKSI3KEmL3TJNpAa/8kGNpaGMHtUXDvfBzM6GopHLhntppdvUr2rOPgIlJbZ1C1vuLs2VCe34hNV++BE77Y6C3oH1cKq8ioXPsAH8n1YijygxWOMT2ivKgikWC/i9pDWPMm3kE0Na5axIYLyDLWS98ozIe1kmAxAsXjpP6yCSwDVcy5Xt3b8hqnUtCJv62fwIIW2n985T23CwvqX9ST6HwCDaTPBsOYfO0St/Z5o0DyLBtINI5NgqJMPxxDP0+r4Y3p1iTWxkZHfUY9FYCiRkb6THNOExx5RkWVuRmCY4f/kwoIWzmD/5BT1RHuambqJDcbp3WlnKnPyN4UiJe4aepkdRg6Emdis8b/eBVy6JXrlN5DRfMicDwWf4tQQ+qAsLlsqsnX1dA9VFgPQ=
-
-#https://1f874f52200401fc0fbdbc7e83916a827dcc02ff@github.com/cartodb/observatory-extension.git
-#
+    - secure: XM1tV+l1MRaFRRHJiU5B68lntZKZgNyF/SV2r53ccShuTDNDPDDIQAme8m2Q7nM6uhEWjJWXiaFKv4LWye/YaOZUhU3He+PMwhxXqqey5h9mgjV8i1gUdCU398GE53CK+Yp+TYwrL0QUvBWXb57Zs2icisEIyDIqNidBEoVM2l0W7NpLZiZazB5uf8H+OpVag/nwTb18kT3L1LWVSXc6H9GFWdJaxwAVMKhp1FC9XvBtNfLGrvmP7pOJa5GFv1Y0lIuLazDPewQkBANUcfDnqxORWkR8M1KOAB8yf4xG0ZFma+w2HK11tEft23gTr+vWSvn0ssxFMZQFHo2GdH6HhphtVeRd+alLThHqALbAtvpxwjQlxtPY04we9kj/vroUPhkNEuKHByHde0Ru4DtWaqS0hiwnYUnaZA1oXNt0UTRlad3MLpVBVX1AnYUsqQT1uA28UnJ19n778Rblj/9lJ8vbw/4aNasp7wsZbojz9YO88hlg+ixKR5Z7W5zQigDg4ur1dsJ+x8AIH+iM9KJtNthZfWUpuI2wG6x204UvNbbsHaoQdRkwg4/ti5jxwhyI8eiZKsXX+vE+rXaqMUOztOI/p9gNOujPej3Z7CADS2EMkGKmPrem+Rk8vpL92Ie1WzyTCzq8pB6xpMCIorFW1XM2GGAMtNDEGyaA6D/HvnY=

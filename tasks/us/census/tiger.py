@@ -58,7 +58,7 @@ class ClippedGeomColumns(ColumnsTask):
 class GeomColumns(ColumnsTask):
 
     def version(self):
-        return 14
+        return 15
 
     def requires(self):
         return {
@@ -167,6 +167,13 @@ class GeomColumns(ColumnsTask):
                 weight=1.1,
                 tags=[sections['united_states'], subsections['boundary']]
             ),
+            'roads': OBSColumn(
+                type='Geometry',
+                name='Roads',
+                description='',
+                weight=0,
+                tags=[sections['united_states'], subsections['boundary']]
+            ),
         }
 
 
@@ -195,7 +202,7 @@ class Attributes(ColumnsTask):
 class GeoidColumns(ColumnsTask):
 
     def version(self):
-        return 6
+        return 7
 
     def requires(self):
         return {
@@ -230,7 +237,7 @@ class DownloadTigerGeography(Task):
 
     @property
     def url(self):
-        return self.url_format.format(year=self.year, geography=self.geography)
+        return self.url_format.format(year=self.year, geography=self.geography.upper())
 
     @property
     def directory(self):
@@ -534,6 +541,50 @@ class UnionTigerWaterGeoms(TempTableTask):
                         'GROUP BY geoid'.format(
                             output=self.output().table,
                             input=self.input().table))
+
+
+class TigerGeometry(TableTask):
+    '''
+    Bring in a geometry from TIGER directly.
+    '''
+
+    year = Parameter()
+    geography = Parameter()
+
+    def version(self):
+        return 1
+
+    def requires(self):
+        return {
+            'data': TigerGeographyShapefileToSQL(year=self.year, geography=self.geography),
+            'geoms': ClippedGeomColumns(),
+            'geoids': GeoidColumns(),
+            'attributes': Attributes(),
+        }
+
+    def columns(self):
+        return OrderedDict([
+            ('geoid', self.input()['geoids'][self.geography + '_geoid']),
+            ('the_geom', self.input()['geoms'][self.geography]),
+        ])
+
+    def timespan(self):
+        return self.year
+
+    def populate(self):
+        session = current_session()
+        stmt = ('INSERT INTO {output} '
+                'SELECT geoid, ST_Union(ST_MakePolygon(ST_ExteriorRing(the_geom))) AS the_geom, '
+                '       MAX(aland) aland '
+                'FROM ( '
+                '    SELECT geoid, (ST_Dump(the_geom)).geom AS the_geom, '
+                '           aland '
+                '    FROM {input} '
+                ") holes WHERE GeometryType(the_geom) = 'POLYGON' "
+                'GROUP BY geoid'.format(
+                    output=self.output().table,
+                    input=self.input()['data'].table), )[0]
+        session.execute(stmt)
 
 
 class ShorelineClip(TableTask):

@@ -22,7 +22,7 @@ Illiterate persons
 
 
 
-.. figure:: html/es.ine.t12_1.png
+.. figure:: ../img/es.ine.t12_1.png
   :width: 100 %
   :align: center
 
@@ -100,8 +100,6 @@ Measure "Illiterate persons" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -171,7 +169,7 @@ Illiterate females
 
 
 
-.. figure:: html/es.ine.t13_2.png
+.. figure:: ../img/es.ine.t13_2.png
   :width: 100 %
   :align: center
 
@@ -219,7 +217,7 @@ Measure "Illiterate females" within an area:
 
 
 
-Measure "Illiterate females" percent of "Illiterate persons" at one point:
+Measure "Illiterate females" percent of "Females" at one point:
 
 .. code-block:: postgresql
 
@@ -232,7 +230,7 @@ Measure "Illiterate females" percent of "Illiterate persons" at one point:
       );
 
 
-Measure "Illiterate females" percent of "Illiterate persons" within an area:
+Measure "Illiterate females" percent of "Females" within an area:
 
 .. code-block:: postgresql
 
@@ -243,8 +241,6 @@ Measure "Illiterate females" percent of "Illiterate persons" within an area:
         'es.ine.t13_2',
         'denominator'
       );
-
-
 
 
 
@@ -293,11 +289,11 @@ Measure "Illiterate females" percent of "Illiterate persons" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t2_2`
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t12_1`
 
 
 :Source:
@@ -321,7 +317,7 @@ Illiterate males
 
 
 
-.. figure:: html/es.ine.t13_1.png
+.. figure:: ../img/es.ine.t13_1.png
   :width: 100 %
   :align: center
 
@@ -369,7 +365,7 @@ Measure "Illiterate males" within an area:
 
 
 
-Measure "Illiterate males" percent of "Illiterate persons" at one point:
+Measure "Illiterate males" percent of "Males" at one point:
 
 .. code-block:: postgresql
 
@@ -382,7 +378,7 @@ Measure "Illiterate males" percent of "Illiterate persons" at one point:
       );
 
 
-Measure "Illiterate males" percent of "Illiterate persons" within an area:
+Measure "Illiterate males" percent of "Males" within an area:
 
 .. code-block:: postgresql
 
@@ -393,8 +389,6 @@ Measure "Illiterate males" percent of "Illiterate persons" within an area:
         'es.ine.t13_1',
         'denominator'
       );
-
-
 
 
 
@@ -443,11 +437,11 @@ Measure "Illiterate males" percent of "Illiterate persons" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t2_1`
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_1`
 
 
 :Source:
@@ -471,7 +465,7 @@ Persons aged between 16 (included) and 64 (included) years and illiterate
 
 
 
-.. figure:: html/es.ine.t15_2.png
+.. figure:: ../img/es.ine.t15_2.png
   :width: 100 %
   :align: center
 
@@ -519,7 +513,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Illiterate persons" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
 
 .. code-block:: postgresql
 
@@ -532,7 +526,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Illiterate persons" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
 
 .. code-block:: postgresql
 
@@ -543,8 +537,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
         'es.ine.t15_2',
         'denominator'
       );
-
-
 
 
 
@@ -593,11 +585,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t3_2`
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_1`
 
 
 :Source:
@@ -621,7 +613,7 @@ Persons aged over 64 years and illiterate
 
 
 
-.. figure:: html/es.ine.t15_3.png
+.. figure:: ../img/es.ine.t15_3.png
   :width: 100 %
   :align: center
 
@@ -699,8 +691,6 @@ Measure "Persons aged over 64 years and illiterate" percent of "Illiterate perso
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -771,7 +761,7 @@ Persons with a foreign nationality and illiterate
 
 
 
-.. figure:: html/es.ine.t14_2.png
+.. figure:: ../img/es.ine.t14_2.png
   :width: 100 %
   :align: center
 
@@ -819,7 +809,7 @@ Measure "Persons with a foreign nationality and illiterate" within an area:
 
 
 
-Measure "Persons with a foreign nationality and illiterate" percent of "Illiterate persons" at one point:
+Measure "Persons with a foreign nationality and illiterate" percent of "Persons with a foreign nationality" at one point:
 
 .. code-block:: postgresql
 
@@ -832,7 +822,7 @@ Measure "Persons with a foreign nationality and illiterate" percent of "Illitera
       );
 
 
-Measure "Persons with a foreign nationality and illiterate" percent of "Illiterate persons" within an area:
+Measure "Persons with a foreign nationality and illiterate" percent of "Persons with a foreign nationality" within an area:
 
 .. code-block:: postgresql
 
@@ -843,8 +833,6 @@ Measure "Persons with a foreign nationality and illiterate" percent of "Illitera
         'es.ine.t14_2',
         'denominator'
       );
-
-
 
 
 
@@ -893,11 +881,11 @@ Measure "Persons with a foreign nationality and illiterate" percent of "Illitera
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t6_2`
 
 :Denominator:
 
-    :ref:`es.ine.t6_2`
+    :ref:`es.ine.t12_1`
 
 
 :Source:
@@ -921,7 +909,7 @@ Persons with Spanish nationality and illiterate
 
 
 
-.. figure:: html/es.ine.t14_1.png
+.. figure:: ../img/es.ine.t14_1.png
   :width: 100 %
   :align: center
 
@@ -969,7 +957,7 @@ Measure "Persons with Spanish nationality and illiterate" within an area:
 
 
 
-Measure "Persons with Spanish nationality and illiterate" percent of "Illiterate persons" at one point:
+Measure "Persons with Spanish nationality and illiterate" percent of "Persons with Spanish nationality" at one point:
 
 .. code-block:: postgresql
 
@@ -982,7 +970,7 @@ Measure "Persons with Spanish nationality and illiterate" percent of "Illiterate
       );
 
 
-Measure "Persons with Spanish nationality and illiterate" percent of "Illiterate persons" within an area:
+Measure "Persons with Spanish nationality and illiterate" percent of "Persons with Spanish nationality" within an area:
 
 .. code-block:: postgresql
 
@@ -993,8 +981,6 @@ Measure "Persons with Spanish nationality and illiterate" percent of "Illiterate
         'es.ine.t14_1',
         'denominator'
       );
-
-
 
 
 
@@ -1043,11 +1029,11 @@ Measure "Persons with Spanish nationality and illiterate" percent of "Illiterate
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t6_1`
 
 :Denominator:
 
-    :ref:`es.ine.t6_1`
+    :ref:`es.ine.t12_1`
 
 
 :Source:
@@ -1148,8 +1134,6 @@ Measure "Persons aged under 16 years (information regarding the educational leve
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1216,7 +1200,7 @@ Persons with first level studies
 
 
 
-.. figure:: html/es.ine.t12_3.png
+.. figure:: ../img/es.ine.t12_3.png
   :width: 100 %
   :align: center
 
@@ -1294,8 +1278,6 @@ Measure "Persons with first level studies" percent of "Total population" within 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1365,7 +1347,7 @@ Females with first level studies
 
 
 
-.. figure:: html/es.ine.t13_6.png
+.. figure:: ../img/es.ine.t13_6.png
   :width: 100 %
   :align: center
 
@@ -1413,7 +1395,7 @@ Measure "Females with first level studies" within an area:
 
 
 
-Measure "Females with first level studies" percent of "Persons with first level studies" at one point:
+Measure "Females with first level studies" percent of "Females" at one point:
 
 .. code-block:: postgresql
 
@@ -1426,7 +1408,7 @@ Measure "Females with first level studies" percent of "Persons with first level 
       );
 
 
-Measure "Females with first level studies" percent of "Persons with first level studies" within an area:
+Measure "Females with first level studies" percent of "Females" within an area:
 
 .. code-block:: postgresql
 
@@ -1437,8 +1419,6 @@ Measure "Females with first level studies" percent of "Persons with first level 
         'es.ine.t13_6',
         'denominator'
       );
-
-
 
 
 
@@ -1487,11 +1467,11 @@ Measure "Females with first level studies" percent of "Persons with first level 
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t2_2`
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t12_3`
 
 
 :Source:
@@ -1515,7 +1495,7 @@ Males with first level studies
 
 
 
-.. figure:: html/es.ine.t13_5.png
+.. figure:: ../img/es.ine.t13_5.png
   :width: 100 %
   :align: center
 
@@ -1563,7 +1543,7 @@ Measure "Males with first level studies" within an area:
 
 
 
-Measure "Males with first level studies" percent of "Persons with first level studies" at one point:
+Measure "Males with first level studies" percent of "Males" at one point:
 
 .. code-block:: postgresql
 
@@ -1576,7 +1556,7 @@ Measure "Males with first level studies" percent of "Persons with first level st
       );
 
 
-Measure "Males with first level studies" percent of "Persons with first level studies" within an area:
+Measure "Males with first level studies" percent of "Males" within an area:
 
 .. code-block:: postgresql
 
@@ -1587,8 +1567,6 @@ Measure "Males with first level studies" percent of "Persons with first level st
         'es.ine.t13_5',
         'denominator'
       );
-
-
 
 
 
@@ -1637,11 +1615,11 @@ Measure "Males with first level studies" percent of "Persons with first level st
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t2_1`
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_3`
 
 
 :Source:
@@ -1665,7 +1643,7 @@ Persons aged between 16 (included) and 64 (included) years and with first level 
 
 
 
-.. figure:: html/es.ine.t15_8.png
+.. figure:: ../img/es.ine.t15_8.png
   :width: 100 %
   :align: center
 
@@ -1713,7 +1691,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with fir
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons with first level studies" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
 
 .. code-block:: postgresql
 
@@ -1726,7 +1704,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with fir
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons with first level studies" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
 
 .. code-block:: postgresql
 
@@ -1737,8 +1715,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with fir
         'es.ine.t15_8',
         'denominator'
       );
-
-
 
 
 
@@ -1787,11 +1763,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with fir
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t3_2`
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_3`
 
 
 :Source:
@@ -1815,7 +1791,7 @@ Persons aged between 16 (included) and 64 (included) years and with second level
 
 
 
-.. figure:: html/es.ine.t15_11.png
+.. figure:: ../img/es.ine.t15_11.png
   :width: 100 %
   :align: center
 
@@ -1863,7 +1839,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with sec
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons with first level studies" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
 
 .. code-block:: postgresql
 
@@ -1876,7 +1852,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with sec
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons with first level studies" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
 
 .. code-block:: postgresql
 
@@ -1887,8 +1863,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with sec
         'es.ine.t15_11',
         'denominator'
       );
-
-
 
 
 
@@ -1937,11 +1911,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with sec
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t3_2`
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_3`
 
 
 :Source:
@@ -1965,7 +1939,7 @@ Persons aged between 16 (included) and 64 (included) years and with third level 
 
 
 
-.. figure:: html/es.ine.t15_14.png
+.. figure:: ../img/es.ine.t15_14.png
   :width: 100 %
   :align: center
 
@@ -2013,7 +1987,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with thi
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons with first level studies" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
 
 .. code-block:: postgresql
 
@@ -2026,7 +2000,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with thi
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons with first level studies" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
 
 .. code-block:: postgresql
 
@@ -2037,8 +2011,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with thi
         'es.ine.t15_14',
         'denominator'
       );
-
-
 
 
 
@@ -2087,11 +2059,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with thi
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t3_2`
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_3`
 
 
 :Source:
@@ -2115,7 +2087,7 @@ Persons aged over 64 years and with first level studies
 
 
 
-.. figure:: html/es.ine.t15_9.png
+.. figure:: ../img/es.ine.t15_9.png
   :width: 100 %
   :align: center
 
@@ -2193,8 +2165,6 @@ Measure "Persons aged over 64 years and with first level studies" percent of "Pe
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2265,7 +2235,7 @@ Persons aged over 64 years and with second level studies
 
 
 
-.. figure:: html/es.ine.t15_12.png
+.. figure:: ../img/es.ine.t15_12.png
   :width: 100 %
   :align: center
 
@@ -2343,8 +2313,6 @@ Measure "Persons aged over 64 years and with second level studies" percent of "P
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2415,7 +2383,7 @@ Persons aged over 64 years and with third level studies
 
 
 
-.. figure:: html/es.ine.t15_15.png
+.. figure:: ../img/es.ine.t15_15.png
   :width: 100 %
   :align: center
 
@@ -2493,8 +2461,6 @@ Measure "Persons aged over 64 years and with third level studies" percent of "Pe
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2565,7 +2531,7 @@ Persons with a foreign nationality and with first level studies
 
 
 
-.. figure:: html/es.ine.t14_6.png
+.. figure:: ../img/es.ine.t14_6.png
   :width: 100 %
   :align: center
 
@@ -2643,8 +2609,6 @@ Measure "Persons with a foreign nationality and with first level studies" percen
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2715,7 +2679,7 @@ Persons with Spanish nationality and with first level studies
 
 
 
-.. figure:: html/es.ine.t14_5.png
+.. figure:: ../img/es.ine.t14_5.png
   :width: 100 %
   :align: center
 
@@ -2787,8 +2751,6 @@ Measure "Persons with Spanish nationality and with first level studies" percent 
         'es.ine.t14_5',
         'denominator'
       );
-
-
 
 
 
@@ -2868,7 +2830,7 @@ Persons with second level studies
 
 
 
-.. figure:: html/es.ine.t12_4.png
+.. figure:: ../img/es.ine.t12_4.png
   :width: 100 %
   :align: center
 
@@ -2946,8 +2908,6 @@ Measure "Persons with second level studies" percent of "Total population" within
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3017,7 +2977,7 @@ Females with second level studies
 
 
 
-.. figure:: html/es.ine.t13_8.png
+.. figure:: ../img/es.ine.t13_8.png
   :width: 100 %
   :align: center
 
@@ -3065,7 +3025,7 @@ Measure "Females with second level studies" within an area:
 
 
 
-Measure "Females with second level studies" percent of "Persons with second level studies" at one point:
+Measure "Females with second level studies" percent of "Females" at one point:
 
 .. code-block:: postgresql
 
@@ -3078,7 +3038,7 @@ Measure "Females with second level studies" percent of "Persons with second leve
       );
 
 
-Measure "Females with second level studies" percent of "Persons with second level studies" within an area:
+Measure "Females with second level studies" percent of "Females" within an area:
 
 .. code-block:: postgresql
 
@@ -3089,8 +3049,6 @@ Measure "Females with second level studies" percent of "Persons with second leve
         'es.ine.t13_8',
         'denominator'
       );
-
-
 
 
 
@@ -3139,11 +3097,11 @@ Measure "Females with second level studies" percent of "Persons with second leve
 
 :Denominator:
 
-    :ref:`es.ine.t12_4`
+    :ref:`es.ine.t2_2`
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t12_4`
 
 
 :Source:
@@ -3167,7 +3125,7 @@ Males with second level studies
 
 
 
-.. figure:: html/es.ine.t13_7.png
+.. figure:: ../img/es.ine.t13_7.png
   :width: 100 %
   :align: center
 
@@ -3215,7 +3173,7 @@ Measure "Males with second level studies" within an area:
 
 
 
-Measure "Males with second level studies" percent of "Persons with second level studies" at one point:
+Measure "Males with second level studies" percent of "Males" at one point:
 
 .. code-block:: postgresql
 
@@ -3228,7 +3186,7 @@ Measure "Males with second level studies" percent of "Persons with second level 
       );
 
 
-Measure "Males with second level studies" percent of "Persons with second level studies" within an area:
+Measure "Males with second level studies" percent of "Males" within an area:
 
 .. code-block:: postgresql
 
@@ -3239,8 +3197,6 @@ Measure "Males with second level studies" percent of "Persons with second level 
         'es.ine.t13_7',
         'denominator'
       );
-
-
 
 
 
@@ -3289,11 +3245,11 @@ Measure "Males with second level studies" percent of "Persons with second level 
 
 :Denominator:
 
-    :ref:`es.ine.t12_4`
+    :ref:`es.ine.t2_1`
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_4`
 
 
 :Source:
@@ -3317,7 +3273,7 @@ Persons with a foreign nationality and with second level studies
 
 
 
-.. figure:: html/es.ine.t14_8.png
+.. figure:: ../img/es.ine.t14_8.png
   :width: 100 %
   :align: center
 
@@ -3395,8 +3351,6 @@ Measure "Persons with a foreign nationality and with second level studies" perce
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3467,7 +3421,7 @@ Persons with Spanish nationality and with second level studies
 
 
 
-.. figure:: html/es.ine.t14_7.png
+.. figure:: ../img/es.ine.t14_7.png
   :width: 100 %
   :align: center
 
@@ -3539,8 +3493,6 @@ Measure "Persons with Spanish nationality and with second level studies" percent
         'es.ine.t14_7',
         'denominator'
       );
-
-
 
 
 
@@ -3620,7 +3572,7 @@ Persons with third level studies
 
 
 
-.. figure:: html/es.ine.t12_5.png
+.. figure:: ../img/es.ine.t12_5.png
   :width: 100 %
   :align: center
 
@@ -3698,8 +3650,6 @@ Measure "Persons with third level studies" percent of "Total population" within 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3769,7 +3719,7 @@ Females with third level studies
 
 
 
-.. figure:: html/es.ine.t13_10.png
+.. figure:: ../img/es.ine.t13_10.png
   :width: 100 %
   :align: center
 
@@ -3817,7 +3767,7 @@ Measure "Females with third level studies" within an area:
 
 
 
-Measure "Females with third level studies" percent of "Persons with third level studies" at one point:
+Measure "Females with third level studies" percent of "Females" at one point:
 
 .. code-block:: postgresql
 
@@ -3830,7 +3780,7 @@ Measure "Females with third level studies" percent of "Persons with third level 
       );
 
 
-Measure "Females with third level studies" percent of "Persons with third level studies" within an area:
+Measure "Females with third level studies" percent of "Females" within an area:
 
 .. code-block:: postgresql
 
@@ -3841,8 +3791,6 @@ Measure "Females with third level studies" percent of "Persons with third level 
         'es.ine.t13_10',
         'denominator'
       );
-
-
 
 
 
@@ -3891,11 +3839,11 @@ Measure "Females with third level studies" percent of "Persons with third level 
 
 :Denominator:
 
-    :ref:`es.ine.t12_5`
+    :ref:`es.ine.t2_2`
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t12_5`
 
 
 :Source:
@@ -3919,7 +3867,7 @@ Males with third level studies
 
 
 
-.. figure:: html/es.ine.t13_9.png
+.. figure:: ../img/es.ine.t13_9.png
   :width: 100 %
   :align: center
 
@@ -3967,7 +3915,7 @@ Measure "Males with third level studies" within an area:
 
 
 
-Measure "Males with third level studies" percent of "Persons with third level studies" at one point:
+Measure "Males with third level studies" percent of "Males" at one point:
 
 .. code-block:: postgresql
 
@@ -3980,7 +3928,7 @@ Measure "Males with third level studies" percent of "Persons with third level st
       );
 
 
-Measure "Males with third level studies" percent of "Persons with third level studies" within an area:
+Measure "Males with third level studies" percent of "Males" within an area:
 
 .. code-block:: postgresql
 
@@ -3991,8 +3939,6 @@ Measure "Males with third level studies" percent of "Persons with third level st
         'es.ine.t13_9',
         'denominator'
       );
-
-
 
 
 
@@ -4041,11 +3987,11 @@ Measure "Males with third level studies" percent of "Persons with third level st
 
 :Denominator:
 
-    :ref:`es.ine.t12_5`
+    :ref:`es.ine.t2_1`
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_5`
 
 
 :Source:
@@ -4069,7 +4015,7 @@ Persons with a foreign nationality and with third level studies
 
 
 
-.. figure:: html/es.ine.t14_10.png
+.. figure:: ../img/es.ine.t14_10.png
   :width: 100 %
   :align: center
 
@@ -4117,7 +4063,7 @@ Measure "Persons with a foreign nationality and with third level studies" within
 
 
 
-Measure "Persons with a foreign nationality and with third level studies" percent of "Persons with a foreign nationality" at one point:
+Measure "Persons with a foreign nationality and with third level studies" percent of "Persons with third level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -4130,7 +4076,7 @@ Measure "Persons with a foreign nationality and with third level studies" percen
       );
 
 
-Measure "Persons with a foreign nationality and with third level studies" percent of "Persons with a foreign nationality" within an area:
+Measure "Persons with a foreign nationality and with third level studies" percent of "Persons with third level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -4141,8 +4087,6 @@ Measure "Persons with a foreign nationality and with third level studies" percen
         'es.ine.t14_10',
         'denominator'
       );
-
-
 
 
 
@@ -4191,11 +4135,11 @@ Measure "Persons with a foreign nationality and with third level studies" percen
 
 :Denominator:
 
-    :ref:`es.ine.t6_2`
+    :ref:`es.ine.t12_5`
 
 :Denominator:
 
-    :ref:`es.ine.t12_5`
+    :ref:`es.ine.t6_2`
 
 
 :Source:
@@ -4219,7 +4163,7 @@ Persons with Spanish nationality and with third level studies
 
 
 
-.. figure:: html/es.ine.t14_9.png
+.. figure:: ../img/es.ine.t14_9.png
   :width: 100 %
   :align: center
 
@@ -4291,8 +4235,6 @@ Measure "Persons with Spanish nationality and with third level studies" percent 
         'es.ine.t14_9',
         'denominator'
       );
-
-
 
 
 
@@ -4372,7 +4314,7 @@ Persons without information regarding their educational level (aged under 16 yea
 
 
 
-.. figure:: html/es.ine.t12_6.png
+.. figure:: ../img/es.ine.t12_6.png
   :width: 100 %
   :align: center
 
@@ -4450,8 +4392,6 @@ Measure "Persons without information regarding their educational level (aged und
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4521,7 +4461,7 @@ Females without information regarding their educational level  (under 16 years o
 
 
 
-.. figure:: html/es.ine.t13_12.png
+.. figure:: ../img/es.ine.t13_12.png
   :width: 100 %
   :align: center
 
@@ -4569,7 +4509,7 @@ Measure "Females without information regarding their educational level  (under 1
 
 
 
-Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
+Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Females" at one point:
 
 .. code-block:: postgresql
 
@@ -4582,7 +4522,7 @@ Measure "Females without information regarding their educational level  (under 1
       );
 
 
-Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
+Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Females" within an area:
 
 .. code-block:: postgresql
 
@@ -4593,8 +4533,6 @@ Measure "Females without information regarding their educational level  (under 1
         'es.ine.t13_12',
         'denominator'
       );
-
-
 
 
 
@@ -4643,11 +4581,11 @@ Measure "Females without information regarding their educational level  (under 1
 
 :Denominator:
 
-    :ref:`es.ine.t12_6`
+    :ref:`es.ine.t2_2`
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t12_6`
 
 
 :Source:
@@ -4671,7 +4609,7 @@ Males without information regarding their educational level (under 16 years of a
 
 
 
-.. figure:: html/es.ine.t13_11.png
+.. figure:: ../img/es.ine.t13_11.png
   :width: 100 %
   :align: center
 
@@ -4719,7 +4657,7 @@ Measure "Males without information regarding their educational level (under 16 y
 
 
 
-Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" at one point:
 
 .. code-block:: postgresql
 
@@ -4732,7 +4670,7 @@ Measure "Males without information regarding their educational level (under 16 y
       );
 
 
-Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" within an area:
 
 .. code-block:: postgresql
 
@@ -4743,8 +4681,6 @@ Measure "Males without information regarding their educational level (under 16 y
         'es.ine.t13_11',
         'denominator'
       );
-
-
 
 
 
@@ -4793,11 +4729,11 @@ Measure "Males without information regarding their educational level (under 16 y
 
 :Denominator:
 
-    :ref:`es.ine.t12_6`
+    :ref:`es.ine.t2_1`
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_6`
 
 
 :Source:
@@ -4821,7 +4757,7 @@ Persons with a foreign nationality without information regarding their education
 
 
 
-.. figure:: html/es.ine.t14_12.png
+.. figure:: ../img/es.ine.t14_12.png
   :width: 100 %
   :align: center
 
@@ -4869,7 +4805,7 @@ Measure "Persons with a foreign nationality without information regarding their 
 
 
 
-Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" at one point:
 
 .. code-block:: postgresql
 
@@ -4882,7 +4818,7 @@ Measure "Persons with a foreign nationality without information regarding their 
       );
 
 
-Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" within an area:
 
 .. code-block:: postgresql
 
@@ -4893,8 +4829,6 @@ Measure "Persons with a foreign nationality without information regarding their 
         'es.ine.t14_12',
         'denominator'
       );
-
-
 
 
 
@@ -4943,11 +4877,11 @@ Measure "Persons with a foreign nationality without information regarding their 
 
 :Denominator:
 
-    :ref:`es.ine.t12_6`
+    :ref:`es.ine.t6_1`
 
 :Denominator:
 
-    :ref:`es.ine.t6_1`
+    :ref:`es.ine.t12_6`
 
 
 :Source:
@@ -4971,7 +4905,7 @@ Persons with Spanish nationality without information regarding their educational
 
 
 
-.. figure:: html/es.ine.t14_11.png
+.. figure:: ../img/es.ine.t14_11.png
   :width: 100 %
   :align: center
 
@@ -5019,7 +4953,7 @@ Measure "Persons with Spanish nationality without information regarding their ed
 
 
 
-Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" at one point:
 
 .. code-block:: postgresql
 
@@ -5032,7 +4966,7 @@ Measure "Persons with Spanish nationality without information regarding their ed
       );
 
 
-Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" within an area:
 
 .. code-block:: postgresql
 
@@ -5043,8 +4977,6 @@ Measure "Persons with Spanish nationality without information regarding their ed
         'es.ine.t14_11',
         'denominator'
       );
-
-
 
 
 
@@ -5093,11 +5025,11 @@ Measure "Persons with Spanish nationality without information regarding their ed
 
 :Denominator:
 
-    :ref:`es.ine.t12_6`
+    :ref:`es.ine.t6_1`
 
 :Denominator:
 
-    :ref:`es.ine.t6_1`
+    :ref:`es.ine.t12_6`
 
 
 :Source:
@@ -5124,7 +5056,7 @@ Persons without studies
 
 
 
-.. figure:: html/es.ine.t12_2.png
+.. figure:: ../img/es.ine.t12_2.png
   :width: 100 %
   :align: center
 
@@ -5202,8 +5134,6 @@ Measure "Persons without studies" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -5273,7 +5203,7 @@ Females without studies
 
 
 
-.. figure:: html/es.ine.t13_4.png
+.. figure:: ../img/es.ine.t13_4.png
   :width: 100 %
   :align: center
 
@@ -5321,7 +5251,7 @@ Measure "Females without studies" within an area:
 
 
 
-Measure "Females without studies" percent of "Persons without studies" at one point:
+Measure "Females without studies" percent of "Females" at one point:
 
 .. code-block:: postgresql
 
@@ -5334,7 +5264,7 @@ Measure "Females without studies" percent of "Persons without studies" at one po
       );
 
 
-Measure "Females without studies" percent of "Persons without studies" within an area:
+Measure "Females without studies" percent of "Females" within an area:
 
 .. code-block:: postgresql
 
@@ -5345,8 +5275,6 @@ Measure "Females without studies" percent of "Persons without studies" within an
         'es.ine.t13_4',
         'denominator'
       );
-
-
 
 
 
@@ -5395,11 +5323,11 @@ Measure "Females without studies" percent of "Persons without studies" within an
 
 :Denominator:
 
-    :ref:`es.ine.t12_2`
+    :ref:`es.ine.t2_2`
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t12_2`
 
 
 :Source:
@@ -5423,7 +5351,7 @@ Males without studies
 
 
 
-.. figure:: html/es.ine.t13_3.png
+.. figure:: ../img/es.ine.t13_3.png
   :width: 100 %
   :align: center
 
@@ -5501,8 +5429,6 @@ Measure "Males without studies" percent of "Persons without studies" within an a
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -5573,7 +5499,7 @@ Persons aged between 16 (included) and 64 (included) years and without studies
 
 
 
-.. figure:: html/es.ine.t15_5.png
+.. figure:: ../img/es.ine.t15_5.png
   :width: 100 %
   :align: center
 
@@ -5651,8 +5577,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and without 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -5723,7 +5647,7 @@ Persons aged over 64 years and without studies
 
 
 
-.. figure:: html/es.ine.t15_6.png
+.. figure:: ../img/es.ine.t15_6.png
   :width: 100 %
   :align: center
 
@@ -5801,8 +5725,6 @@ Measure "Persons aged over 64 years and without studies" percent of "Persons wit
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -5873,7 +5795,7 @@ Persons with a foreign nationality and without studies
 
 
 
-.. figure:: html/es.ine.t14_4.png
+.. figure:: ../img/es.ine.t14_4.png
   :width: 100 %
   :align: center
 
@@ -5951,8 +5873,6 @@ Measure "Persons with a foreign nationality and without studies" percent of "Per
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -6023,7 +5943,7 @@ Persons with Spanish nationality and without studies
 
 
 
-.. figure:: html/es.ine.t14_3.png
+.. figure:: ../img/es.ine.t14_3.png
   :width: 100 %
   :align: center
 
@@ -6095,8 +6015,6 @@ Measure "Persons with Spanish nationality and without studies" percent of "Perso
         'es.ine.t14_3',
         'denominator'
       );
-
-
 
 
 

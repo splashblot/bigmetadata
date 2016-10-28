@@ -86,7 +86,7 @@
 <div class="section" id="population-3-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish">
 <span id="mx-inegi-columns-indi4"></span><h2><a class="toc-backref" href="#id1">7.8.1. Population 3 or more years old who speak an indigenous language and do not speak Spanish</a><a class="headerlink" href="#population-3-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI4.png"><img alt="mx/html/mx.inegi_columns.INDI4.png" src="mx/html/mx.inegi_columns.INDI4.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI4.png"><img alt="../_images/mx.inegi_columns.INDI4.png" src="../_images/mx.inegi_columns.INDI4.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -132,16 +132,16 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
@@ -171,7 +171,7 @@
 <div class="section" id="female-population-3-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish">
 <span id="mx-inegi-columns-indi5"></span><h3><a class="toc-backref" href="#id19">7.8.1.1. Female population 3 or more years old who speak an indigenous language and do not speak Spanish</a><a class="headerlink" href="#female-population-3-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI5.png"><img alt="mx/html/mx.inegi_columns.INDI5.png" src="mx/html/mx.inegi_columns.INDI5.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI5.png"><img alt="../_images/mx.inegi_columns.INDI5.png" src="../_images/mx.inegi_columns.INDI5.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Female population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -191,7 +191,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; at one point:</p>
+<p>Measure &#8220;Female population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Female population 3 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -201,7 +201,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; within an area:</p>
+<p>Measure &#8220;Female population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Female population 3 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -217,10 +217,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -235,9 +235,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi4"><span class="std std-ref">Population 3 or more years old who speak an indigenous language and do not speak Spanish</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB48</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB48</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi4"><span class="std std-ref">Population 3 or more years old who speak an indigenous language and do not speak Spanish</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -249,7 +249,7 @@
 <div class="section" id="male-population-3-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish">
 <span id="mx-inegi-columns-indi6"></span><h3><a class="toc-backref" href="#id20">7.8.1.2. Male population 3 or more years old who speak an indigenous language and do not speak Spanish</a><a class="headerlink" href="#male-population-3-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI6.png"><img alt="mx/html/mx.inegi_columns.INDI6.png" src="mx/html/mx.inegi_columns.INDI6.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI6.png"><img alt="../_images/mx.inegi_columns.INDI6.png" src="../_images/mx.inegi_columns.INDI6.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Male population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -269,7 +269,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; at one point:</p>
+<p>Measure &#8220;Male population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Male population 3 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -279,7 +279,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; within an area:</p>
+<p>Measure &#8220;Male population 3 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Male population 3 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -295,10 +295,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -313,9 +313,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi4"><span class="std std-ref">Population 3 or more years old who speak an indigenous language and do not speak Spanish</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB73</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB73</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi4"><span class="std std-ref">Population 3 or more years old who speak an indigenous language and do not speak Spanish</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -328,7 +328,7 @@
 <div class="section" id="population-3-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish">
 <span id="mx-inegi-columns-indi7"></span><h2><a class="toc-backref" href="#id4">7.8.2. Population 3 or more years old who speak an indigenous language and speak Spanish</a><a class="headerlink" href="#population-3-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI7.png"><img alt="mx/html/mx.inegi_columns.INDI7.png" src="mx/html/mx.inegi_columns.INDI7.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI7.png"><img alt="../_images/mx.inegi_columns.INDI7.png" src="../_images/mx.inegi_columns.INDI7.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Population 3 or more years old who speak an indigenous language and speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -374,16 +374,16 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
@@ -413,7 +413,7 @@
 <div class="section" id="female-population-3-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish">
 <span id="mx-inegi-columns-indi8"></span><h3><a class="toc-backref" href="#id21">7.8.2.1. Female population 3 or more years old who speak an indigenous language and speak Spanish</a><a class="headerlink" href="#female-population-3-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI8.png"><img alt="mx/html/mx.inegi_columns.INDI8.png" src="mx/html/mx.inegi_columns.INDI8.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI8.png"><img alt="../_images/mx.inegi_columns.INDI8.png" src="../_images/mx.inegi_columns.INDI8.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Female population 3 or more years old who speak an indigenous language and speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -459,10 +459,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -491,7 +491,7 @@
 <div class="section" id="male-population-3-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish">
 <span id="mx-inegi-columns-indi9"></span><h3><a class="toc-backref" href="#id22">7.8.2.2. Male population 3 or more years old who speak an indigenous language and speak Spanish</a><a class="headerlink" href="#male-population-3-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI9.png"><img alt="mx/html/mx.inegi_columns.INDI9.png" src="mx/html/mx.inegi_columns.INDI9.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI9.png"><img alt="../_images/mx.inegi_columns.INDI9.png" src="../_images/mx.inegi_columns.INDI9.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Male population 3 or more years old who speak an indigenous language and speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -537,10 +537,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -570,7 +570,7 @@
 <div class="section" id="population-5-or-more-years-old-who-speak-an-indigenous-language">
 <span id="mx-inegi-columns-indi10"></span><h2><a class="toc-backref" href="#id7">7.8.3. Population 5 or more years old who speak an indigenous language</a><a class="headerlink" href="#population-5-or-more-years-old-who-speak-an-indigenous-language" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI10.png"><img alt="mx/html/mx.inegi_columns.INDI10.png" src="mx/html/mx.inegi_columns.INDI10.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI10.png"><img alt="../_images/mx.inegi_columns.INDI10.png" src="../_images/mx.inegi_columns.INDI10.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Population 5 or more years old who speak an indigenous language&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -616,16 +616,16 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
@@ -655,7 +655,7 @@
 <div class="section" id="female-population-5-or-more-years-old-who-speak-an-indigenous-language">
 <span id="mx-inegi-columns-indi11"></span><h3><a class="toc-backref" href="#id23">7.8.3.1. Female population 5 or more years old who speak an indigenous language</a><a class="headerlink" href="#female-population-5-or-more-years-old-who-speak-an-indigenous-language" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI11.png"><img alt="mx/html/mx.inegi_columns.INDI11.png" src="mx/html/mx.inegi_columns.INDI11.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI11.png"><img alt="../_images/mx.inegi_columns.INDI11.png" src="../_images/mx.inegi_columns.INDI11.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Female population 5 or more years old who speak an indigenous language&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -701,10 +701,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -733,7 +733,7 @@
 <div class="section" id="male-population-5-or-more-years-old-who-speak-an-indigenous-language">
 <span id="mx-inegi-columns-indi12"></span><h3><a class="toc-backref" href="#id24">7.8.3.2. Male population 5 or more years old who speak an indigenous language</a><a class="headerlink" href="#male-population-5-or-more-years-old-who-speak-an-indigenous-language" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI12.png"><img alt="mx/html/mx.inegi_columns.INDI12.png" src="mx/html/mx.inegi_columns.INDI12.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI12.png"><img alt="../_images/mx.inegi_columns.INDI12.png" src="../_images/mx.inegi_columns.INDI12.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Male population 5 or more years old who speak an indigenous language&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -779,10 +779,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -812,7 +812,7 @@
 <div class="section" id="population-5-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish">
 <span id="mx-inegi-columns-indi13"></span><h2><a class="toc-backref" href="#id10">7.8.4. Population 5 or more years old who speak an indigenous language and do not speak Spanish</a><a class="headerlink" href="#population-5-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI13.png"><img alt="mx/html/mx.inegi_columns.INDI13.png" src="mx/html/mx.inegi_columns.INDI13.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI13.png"><img alt="../_images/mx.inegi_columns.INDI13.png" src="../_images/mx.inegi_columns.INDI13.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -858,16 +858,16 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
@@ -897,7 +897,7 @@
 <div class="section" id="female-population-5-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish">
 <span id="mx-inegi-columns-indi14"></span><h3><a class="toc-backref" href="#id25">7.8.4.1. Female population 5 or more years old who speak an indigenous language and do not speak Spanish</a><a class="headerlink" href="#female-population-5-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI14.png"><img alt="mx/html/mx.inegi_columns.INDI14.png" src="mx/html/mx.inegi_columns.INDI14.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI14.png"><img alt="../_images/mx.inegi_columns.INDI14.png" src="../_images/mx.inegi_columns.INDI14.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -917,7 +917,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; at one point:</p>
+<p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Female population 5 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -927,7 +927,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; within an area:</p>
+<p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Female population 5 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -943,10 +943,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -961,9 +961,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi13"><span class="std std-ref">Population 5 or more years old who speak an indigenous language and do not speak Spanish</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB49</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB49</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi13"><span class="std std-ref">Population 5 or more years old who speak an indigenous language and do not speak Spanish</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -975,7 +975,7 @@
 <div class="section" id="male-population-5-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish">
 <span id="mx-inegi-columns-indi15"></span><h3><a class="toc-backref" href="#id26">7.8.4.2. Male population 5 or more years old who speak an indigenous language and do not speak Spanish</a><a class="headerlink" href="#male-population-5-or-more-years-old-who-speak-an-indigenous-language-and-do-not-speak-spanish" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI15.png"><img alt="mx/html/mx.inegi_columns.INDI15.png" src="mx/html/mx.inegi_columns.INDI15.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI15.png"><img alt="../_images/mx.inegi_columns.INDI15.png" src="../_images/mx.inegi_columns.INDI15.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Male population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -995,7 +995,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; at one point:</p>
+<p>Measure &#8220;Male population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Male population 5 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1005,7 +1005,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; within an area:</p>
+<p>Measure &#8220;Male population 5 or more years old who speak an indigenous language and do not speak Spanish&#8221; percent of &#8220;Male population 5 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1021,10 +1021,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1039,9 +1039,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi13"><span class="std std-ref">Population 5 or more years old who speak an indigenous language and do not speak Spanish</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB74</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB74</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi13"><span class="std std-ref">Population 5 or more years old who speak an indigenous language and do not speak Spanish</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1054,7 +1054,7 @@
 <div class="section" id="population-5-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish">
 <span id="mx-inegi-columns-indi16"></span><h2><a class="toc-backref" href="#id13">7.8.5. Population 5 or more years old who speak an indigenous language and speak Spanish</a><a class="headerlink" href="#population-5-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI16.png"><img alt="mx/html/mx.inegi_columns.INDI16.png" src="mx/html/mx.inegi_columns.INDI16.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI16.png"><img alt="../_images/mx.inegi_columns.INDI16.png" src="../_images/mx.inegi_columns.INDI16.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Population 5 or more years old who speak an indigenous language and speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1100,16 +1100,16 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
@@ -1139,7 +1139,7 @@
 <div class="section" id="female-population-5-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish">
 <span id="mx-inegi-columns-indi17"></span><h3><a class="toc-backref" href="#id27">7.8.5.1. Female population 5 or more years old who speak an indigenous language and speak Spanish</a><a class="headerlink" href="#female-population-5-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI17.png"><img alt="mx/html/mx.inegi_columns.INDI17.png" src="mx/html/mx.inegi_columns.INDI17.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI17.png"><img alt="../_images/mx.inegi_columns.INDI17.png" src="../_images/mx.inegi_columns.INDI17.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1159,7 +1159,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and speak Spanish&#8221; percent of &#8220;Population 5 or more years old who speak an indigenous language and speak Spanish&#8221; at one point:</p>
+<p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and speak Spanish&#8221; percent of &#8220;Female population 5 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1169,7 +1169,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and speak Spanish&#8221; percent of &#8220;Population 5 or more years old who speak an indigenous language and speak Spanish&#8221; within an area:</p>
+<p>Measure &#8220;Female population 5 or more years old who speak an indigenous language and speak Spanish&#8221; percent of &#8220;Female population 5 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1185,10 +1185,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1203,9 +1203,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi16"><span class="std std-ref">Population 5 or more years old who speak an indigenous language and speak Spanish</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB49</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB49</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi16"><span class="std std-ref">Population 5 or more years old who speak an indigenous language and speak Spanish</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1217,7 +1217,7 @@
 <div class="section" id="male-population-5-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish">
 <span id="mx-inegi-columns-indi18"></span><h3><a class="toc-backref" href="#id28">7.8.5.2. Male population 5 or more years old who speak an indigenous language and speak Spanish</a><a class="headerlink" href="#male-population-5-or-more-years-old-who-speak-an-indigenous-language-and-speak-spanish" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI18.png"><img alt="mx/html/mx.inegi_columns.INDI18.png" src="mx/html/mx.inegi_columns.INDI18.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI18.png"><img alt="../_images/mx.inegi_columns.INDI18.png" src="../_images/mx.inegi_columns.INDI18.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Male population 5 or more years old who speak an indigenous language and speak Spanish&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1263,10 +1263,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1296,7 +1296,7 @@
 <div class="section" id="population-age-3-or-more-who-speak-an-indigenous-language">
 <span id="mx-inegi-columns-indi1"></span><h2><a class="toc-backref" href="#id16">7.8.6. Population age 3 or more who speak an indigenous language</a><a class="headerlink" href="#population-age-3-or-more-who-speak-an-indigenous-language" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI1.png"><img alt="mx/html/mx.inegi_columns.INDI1.png" src="mx/html/mx.inegi_columns.INDI1.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI1.png"><img alt="../_images/mx.inegi_columns.INDI1.png" src="../_images/mx.inegi_columns.INDI1.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Population age 3 or more who speak an indigenous language&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1342,16 +1342,16 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
@@ -1381,7 +1381,7 @@
 <div class="section" id="female-population-age-3-or-more-who-speak-an-indigenous-language">
 <span id="mx-inegi-columns-indi2"></span><h3><a class="toc-backref" href="#id29">7.8.6.1. Female population age 3 or more who speak an indigenous language</a><a class="headerlink" href="#female-population-age-3-or-more-who-speak-an-indigenous-language" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI2.png"><img alt="mx/html/mx.inegi_columns.INDI2.png" src="mx/html/mx.inegi_columns.INDI2.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI2.png"><img alt="../_images/mx.inegi_columns.INDI2.png" src="../_images/mx.inegi_columns.INDI2.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Female population age 3 or more who speak an indigenous language&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1401,7 +1401,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population age 3 or more who speak an indigenous language&#8221; percent of &#8220;Population age 3 or more who speak an indigenous language&#8221; at one point:</p>
+<p>Measure &#8220;Female population age 3 or more who speak an indigenous language&#8221; percent of &#8220;Female population 3 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1411,7 +1411,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population age 3 or more who speak an indigenous language&#8221; percent of &#8220;Population age 3 or more who speak an indigenous language&#8221; within an area:</p>
+<p>Measure &#8220;Female population age 3 or more who speak an indigenous language&#8221; percent of &#8220;Female population 3 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1427,10 +1427,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1445,9 +1445,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi1"><span class="std std-ref">Population age 3 or more who speak an indigenous language</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB48</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB48</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-indi1"><span class="std std-ref">Population age 3 or more who speak an indigenous language</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1459,7 +1459,7 @@
 <div class="section" id="male-population-age-3-or-more-who-speak-an-indigenous-language">
 <span id="mx-inegi-columns-indi3"></span><h3><a class="toc-backref" href="#id30">7.8.6.2. Male population age 3 or more who speak an indigenous language</a><a class="headerlink" href="#male-population-age-3-or-more-who-speak-an-indigenous-language" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="mx/html/mx.inegi_columns.INDI3.png"><img alt="mx/html/mx.inegi_columns.INDI3.png" src="mx/html/mx.inegi_columns.INDI3.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.INDI3.png"><img alt="../_images/mx.inegi_columns.INDI3.png" src="../_images/mx.inegi_columns.INDI3.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Male population age 3 or more who speak an indigenous language&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1505,10 +1505,10 @@
 <th class="head">Time (default is latest)</th>
 </tr>
 </thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>

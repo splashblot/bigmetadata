@@ -22,7 +22,7 @@ Birthrate
 
 
 
-.. figure:: html/mx.inegi_columns.FEC1_R.png
+.. figure:: ../img/mx.inegi_columns.FEC1_R.png
   :width: 100 %
   :align: center
 
@@ -63,8 +63,6 @@ Birthrate is only available for point lookups.
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -81,7 +79,7 @@ Birthrate is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -117,7 +115,7 @@ Birthrate is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -135,7 +133,7 @@ Birthrate is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -199,7 +197,7 @@ Birthrate to women age 15 to 49
 
 
 
-.. figure:: html/mx.inegi_columns.FEC2_R.png
+.. figure:: ../img/mx.inegi_columns.FEC2_R.png
   :width: 100 %
   :align: center
 
@@ -240,8 +238,6 @@ Birthrate to women age 15 to 49 is only available for point lookups.
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -258,7 +254,7 @@ Birthrate to women age 15 to 49 is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -294,7 +290,7 @@ Birthrate to women age 15 to 49 is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -312,7 +308,7 @@ Birthrate to women age 15 to 49 is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -376,7 +372,7 @@ Formerly married population 12 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY7.png
+.. figure:: ../img/mx.inegi_columns.SCONY7.png
   :width: 100 %
   :align: center
 
@@ -454,8 +450,6 @@ Measure "Formerly married population 12 or more years old" percent of "Populatio
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -472,7 +466,7 @@ Measure "Formerly married population 12 or more years old" percent of "Populatio
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -508,7 +502,7 @@ Measure "Formerly married population 12 or more years old" percent of "Populatio
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -526,7 +520,7 @@ Measure "Formerly married population 12 or more years old" percent of "Populatio
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -597,7 +591,7 @@ Female formerly married population 12 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY8.png
+.. figure:: ../img/mx.inegi_columns.SCONY8.png
   :width: 100 %
   :align: center
 
@@ -645,7 +639,7 @@ Measure "Female formerly married population 12 or more years old" within an area
 
 
 
-Measure "Female formerly married population 12 or more years old" percent of "Formerly married population 12 or more years old" at one point:
+Measure "Female formerly married population 12 or more years old" percent of "Female population 12 or more years old" at one point:
 
 .. code-block:: postgresql
 
@@ -658,7 +652,7 @@ Measure "Female formerly married population 12 or more years old" percent of "Fo
       );
 
 
-Measure "Female formerly married population 12 or more years old" percent of "Formerly married population 12 or more years old" within an area:
+Measure "Female formerly married population 12 or more years old" percent of "Female population 12 or more years old" within an area:
 
 .. code-block:: postgresql
 
@@ -669,8 +663,6 @@ Measure "Female formerly married population 12 or more years old" percent of "Fo
         'mx.inegi_columns.SCONY8',
         'denominator'
       );
-
-
 
 
 
@@ -693,7 +685,7 @@ Measure "Female formerly married population 12 or more years old" percent of "Fo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -711,7 +703,7 @@ Measure "Female formerly married population 12 or more years old" percent of "Fo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -773,11 +765,11 @@ Measure "Female formerly married population 12 or more years old" percent of "Fo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.SCONY7`
+    :ref:`mx.inegi_columns.POB50`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB50`
+    :ref:`mx.inegi_columns.SCONY7`
 
 
 :Source:
@@ -801,7 +793,7 @@ Male formerly married population 12 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY9.png
+.. figure:: ../img/mx.inegi_columns.SCONY9.png
   :width: 100 %
   :align: center
 
@@ -849,7 +841,7 @@ Measure "Male formerly married population 12 or more years old" within an area:
 
 
 
-Measure "Male formerly married population 12 or more years old" percent of "Formerly married population 12 or more years old" at one point:
+Measure "Male formerly married population 12 or more years old" percent of "Male population 12 or more years old" at one point:
 
 .. code-block:: postgresql
 
@@ -862,7 +854,7 @@ Measure "Male formerly married population 12 or more years old" percent of "Form
       );
 
 
-Measure "Male formerly married population 12 or more years old" percent of "Formerly married population 12 or more years old" within an area:
+Measure "Male formerly married population 12 or more years old" percent of "Male population 12 or more years old" within an area:
 
 .. code-block:: postgresql
 
@@ -873,8 +865,6 @@ Measure "Male formerly married population 12 or more years old" percent of "Form
         'mx.inegi_columns.SCONY9',
         'denominator'
       );
-
-
 
 
 
@@ -897,7 +887,7 @@ Measure "Male formerly married population 12 or more years old" percent of "Form
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -915,7 +905,7 @@ Measure "Male formerly married population 12 or more years old" percent of "Form
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -977,11 +967,11 @@ Measure "Male formerly married population 12 or more years old" percent of "Form
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.SCONY7`
+    :ref:`mx.inegi_columns.POB75`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB75`
+    :ref:`mx.inegi_columns.SCONY7`
 
 
 :Source:
@@ -1008,7 +998,7 @@ Households
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR1.png
+.. figure:: ../img/mx.inegi_columns.HOGAR1.png
   :width: 100 %
   :align: center
 
@@ -1058,8 +1048,6 @@ Measure "Households" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1076,7 +1064,7 @@ Measure "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1112,7 +1100,7 @@ Measure "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -1130,7 +1118,7 @@ Measure "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1197,7 +1185,7 @@ Female headed households
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR2.png
+.. figure:: ../img/mx.inegi_columns.HOGAR2.png
   :width: 100 %
   :align: center
 
@@ -1275,8 +1263,6 @@ Measure "Female headed households" percent of "Households" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1293,7 +1279,7 @@ Measure "Female headed households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1329,7 +1315,7 @@ Measure "Female headed households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -1347,7 +1333,7 @@ Measure "Female headed households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1418,7 +1404,7 @@ Household with female head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR20.png
+.. figure:: ../img/mx.inegi_columns.HOGAR20.png
   :width: 100 %
   :align: center
 
@@ -1496,8 +1482,6 @@ Measure "Household with female head 60 or more years old" percent of "Household 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1514,7 +1498,7 @@ Measure "Household with female head 60 or more years old" percent of "Household 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1532,7 +1516,7 @@ Measure "Household with female head 60 or more years old" percent of "Household 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -1622,7 +1606,7 @@ Household with female head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR14.png
+.. figure:: ../img/mx.inegi_columns.HOGAR14.png
   :width: 100 %
   :align: center
 
@@ -1700,8 +1684,6 @@ Measure "Household with female head between 30 and 59 years old" percent of "Hou
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1718,7 +1700,7 @@ Measure "Household with female head between 30 and 59 years old" percent of "Hou
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1736,7 +1718,7 @@ Measure "Household with female head between 30 and 59 years old" percent of "Hou
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -1826,7 +1808,7 @@ Household with female head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR8.png
+.. figure:: ../img/mx.inegi_columns.HOGAR8.png
   :width: 100 %
   :align: center
 
@@ -1904,8 +1886,6 @@ Measure "Household with female head under 30 years old" percent of "Female heade
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1922,7 +1902,7 @@ Measure "Household with female head under 30 years old" percent of "Female heade
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1940,7 +1920,7 @@ Measure "Household with female head under 30 years old" percent of "Female heade
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -2033,7 +2013,7 @@ Household with head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR19.png
+.. figure:: ../img/mx.inegi_columns.HOGAR19.png
   :width: 100 %
   :align: center
 
@@ -2111,8 +2091,6 @@ Measure "Household with head 60 or more years old" percent of "Households" withi
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2129,7 +2107,7 @@ Measure "Household with head 60 or more years old" percent of "Households" withi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -2165,7 +2143,7 @@ Measure "Household with head 60 or more years old" percent of "Households" withi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -2183,7 +2161,7 @@ Measure "Household with head 60 or more years old" percent of "Households" withi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2254,7 +2232,7 @@ Household with female head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR20.png
+.. figure:: ../img/mx.inegi_columns.HOGAR20.png
   :width: 100 %
   :align: center
 
@@ -2332,8 +2310,6 @@ Measure "Household with female head 60 or more years old" percent of "Household 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2350,7 +2326,7 @@ Measure "Household with female head 60 or more years old" percent of "Household 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -2368,7 +2344,7 @@ Measure "Household with female head 60 or more years old" percent of "Household 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -2458,7 +2434,7 @@ Household with male head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR21.png
+.. figure:: ../img/mx.inegi_columns.HOGAR21.png
   :width: 100 %
   :align: center
 
@@ -2506,7 +2482,7 @@ Measure "Household with male head 60 or more years old" within an area:
 
 
 
-Measure "Household with male head 60 or more years old" percent of "Household with head 60 or more years old" at one point:
+Measure "Household with male head 60 or more years old" percent of "Male headed households" at one point:
 
 .. code-block:: postgresql
 
@@ -2519,7 +2495,7 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
       );
 
 
-Measure "Household with male head 60 or more years old" percent of "Household with head 60 or more years old" within an area:
+Measure "Household with male head 60 or more years old" percent of "Male headed households" within an area:
 
 .. code-block:: postgresql
 
@@ -2530,8 +2506,6 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
         'mx.inegi_columns.HOGAR21',
         'denominator'
       );
-
-
 
 
 
@@ -2554,7 +2528,7 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -2572,7 +2546,7 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -2634,11 +2608,11 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.HOGAR19`
+    :ref:`mx.inegi_columns.HOGAR3`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.HOGAR3`
+    :ref:`mx.inegi_columns.HOGAR19`
 
 
 :Source:
@@ -2665,7 +2639,7 @@ Household with head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR13.png
+.. figure:: ../img/mx.inegi_columns.HOGAR13.png
   :width: 100 %
   :align: center
 
@@ -2743,8 +2717,6 @@ Measure "Household with head between 30 and 59 years old" percent of "Households
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2761,7 +2733,7 @@ Measure "Household with head between 30 and 59 years old" percent of "Households
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -2797,7 +2769,7 @@ Measure "Household with head between 30 and 59 years old" percent of "Households
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -2815,7 +2787,7 @@ Measure "Household with head between 30 and 59 years old" percent of "Households
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2886,7 +2858,7 @@ Household with female head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR14.png
+.. figure:: ../img/mx.inegi_columns.HOGAR14.png
   :width: 100 %
   :align: center
 
@@ -2964,8 +2936,6 @@ Measure "Household with female head between 30 and 59 years old" percent of "Hou
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2982,7 +2952,7 @@ Measure "Household with female head between 30 and 59 years old" percent of "Hou
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3000,7 +2970,7 @@ Measure "Household with female head between 30 and 59 years old" percent of "Hou
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -3090,7 +3060,7 @@ Household with male head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR15.png
+.. figure:: ../img/mx.inegi_columns.HOGAR15.png
   :width: 100 %
   :align: center
 
@@ -3138,7 +3108,7 @@ Measure "Household with male head between 30 and 59 years old" within an area:
 
 
 
-Measure "Household with male head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" at one point:
+Measure "Household with male head between 30 and 59 years old" percent of "Male headed households" at one point:
 
 .. code-block:: postgresql
 
@@ -3151,7 +3121,7 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
       );
 
 
-Measure "Household with male head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" within an area:
+Measure "Household with male head between 30 and 59 years old" percent of "Male headed households" within an area:
 
 .. code-block:: postgresql
 
@@ -3162,8 +3132,6 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
         'mx.inegi_columns.HOGAR15',
         'denominator'
       );
-
-
 
 
 
@@ -3186,7 +3154,7 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3204,7 +3172,7 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -3266,11 +3234,11 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.HOGAR13`
+    :ref:`mx.inegi_columns.HOGAR3`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.HOGAR3`
+    :ref:`mx.inegi_columns.HOGAR13`
 
 
 :Source:
@@ -3297,7 +3265,7 @@ Household with head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR7.png
+.. figure:: ../img/mx.inegi_columns.HOGAR7.png
   :width: 100 %
   :align: center
 
@@ -3375,8 +3343,6 @@ Measure "Household with head under 30 years old" percent of "Households" within 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3393,7 +3359,7 @@ Measure "Household with head under 30 years old" percent of "Households" within 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3429,7 +3395,7 @@ Measure "Household with head under 30 years old" percent of "Households" within 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -3447,7 +3413,7 @@ Measure "Household with head under 30 years old" percent of "Households" within 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -3518,7 +3484,7 @@ Household with female head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR8.png
+.. figure:: ../img/mx.inegi_columns.HOGAR8.png
   :width: 100 %
   :align: center
 
@@ -3596,8 +3562,6 @@ Measure "Household with female head under 30 years old" percent of "Female heade
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3614,7 +3578,7 @@ Measure "Household with female head under 30 years old" percent of "Female heade
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3632,7 +3596,7 @@ Measure "Household with female head under 30 years old" percent of "Female heade
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -3722,7 +3686,7 @@ Household with male head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR9.png
+.. figure:: ../img/mx.inegi_columns.HOGAR9.png
   :width: 100 %
   :align: center
 
@@ -3800,8 +3764,6 @@ Measure "Household with male head under 30 years old" percent of "Male headed ho
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3818,7 +3780,7 @@ Measure "Household with male head under 30 years old" percent of "Male headed ho
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3836,7 +3798,7 @@ Measure "Household with male head under 30 years old" percent of "Male headed ho
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -3931,7 +3893,7 @@ Male headed households
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR3.png
+.. figure:: ../img/mx.inegi_columns.HOGAR3.png
   :width: 100 %
   :align: center
 
@@ -4009,8 +3971,6 @@ Measure "Male headed households" percent of "Households" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4027,7 +3987,7 @@ Measure "Male headed households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4063,7 +4023,7 @@ Measure "Male headed households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -4081,7 +4041,7 @@ Measure "Male headed households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -4152,7 +4112,7 @@ Household with male head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR21.png
+.. figure:: ../img/mx.inegi_columns.HOGAR21.png
   :width: 100 %
   :align: center
 
@@ -4200,7 +4160,7 @@ Measure "Household with male head 60 or more years old" within an area:
 
 
 
-Measure "Household with male head 60 or more years old" percent of "Household with head 60 or more years old" at one point:
+Measure "Household with male head 60 or more years old" percent of "Male headed households" at one point:
 
 .. code-block:: postgresql
 
@@ -4213,7 +4173,7 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
       );
 
 
-Measure "Household with male head 60 or more years old" percent of "Household with head 60 or more years old" within an area:
+Measure "Household with male head 60 or more years old" percent of "Male headed households" within an area:
 
 .. code-block:: postgresql
 
@@ -4224,8 +4184,6 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
         'mx.inegi_columns.HOGAR21',
         'denominator'
       );
-
-
 
 
 
@@ -4248,7 +4206,7 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4266,7 +4224,7 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -4328,11 +4286,11 @@ Measure "Household with male head 60 or more years old" percent of "Household wi
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.HOGAR19`
+    :ref:`mx.inegi_columns.HOGAR3`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.HOGAR3`
+    :ref:`mx.inegi_columns.HOGAR19`
 
 
 :Source:
@@ -4356,7 +4314,7 @@ Household with male head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR15.png
+.. figure:: ../img/mx.inegi_columns.HOGAR15.png
   :width: 100 %
   :align: center
 
@@ -4404,7 +4362,7 @@ Measure "Household with male head between 30 and 59 years old" within an area:
 
 
 
-Measure "Household with male head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" at one point:
+Measure "Household with male head between 30 and 59 years old" percent of "Male headed households" at one point:
 
 .. code-block:: postgresql
 
@@ -4417,7 +4375,7 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
       );
 
 
-Measure "Household with male head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" within an area:
+Measure "Household with male head between 30 and 59 years old" percent of "Male headed households" within an area:
 
 .. code-block:: postgresql
 
@@ -4428,8 +4386,6 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
         'mx.inegi_columns.HOGAR15',
         'denominator'
       );
-
-
 
 
 
@@ -4452,7 +4408,7 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4470,7 +4426,7 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -4532,11 +4488,11 @@ Measure "Household with male head between 30 and 59 years old" percent of "House
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.HOGAR13`
+    :ref:`mx.inegi_columns.HOGAR3`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.HOGAR3`
+    :ref:`mx.inegi_columns.HOGAR13`
 
 
 :Source:
@@ -4560,7 +4516,7 @@ Household with male head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR9.png
+.. figure:: ../img/mx.inegi_columns.HOGAR9.png
   :width: 100 %
   :align: center
 
@@ -4638,8 +4594,6 @@ Measure "Household with male head under 30 years old" percent of "Male headed ho
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4656,7 +4610,7 @@ Measure "Household with male head under 30 years old" percent of "Male headed ho
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4674,7 +4628,7 @@ Measure "Household with male head under 30 years old" percent of "Male headed ho
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -4767,7 +4721,7 @@ Nuclear households (head with children under 18 years of age)
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR25.png
+.. figure:: ../img/mx.inegi_columns.HOGAR25.png
   :width: 100 %
   :align: center
 
@@ -4845,8 +4799,6 @@ Measure "Nuclear households (head with children under 18 years of age)" percent 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4863,7 +4815,7 @@ Measure "Nuclear households (head with children under 18 years of age)" percent 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4899,7 +4851,7 @@ Measure "Nuclear households (head with children under 18 years of age)" percent 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -4917,7 +4869,7 @@ Measure "Nuclear households (head with children under 18 years of age)" percent 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -4988,7 +4940,7 @@ Married or cohabited two years population 12 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY4.png
+.. figure:: ../img/mx.inegi_columns.SCONY4.png
   :width: 100 %
   :align: center
 
@@ -5066,8 +5018,6 @@ Measure "Married or cohabited two years population 12 or more years old" percent
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -5084,7 +5034,7 @@ Measure "Married or cohabited two years population 12 or more years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5120,7 +5070,7 @@ Measure "Married or cohabited two years population 12 or more years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -5138,7 +5088,7 @@ Measure "Married or cohabited two years population 12 or more years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -5209,7 +5159,7 @@ Female married or cohabited two years population 12 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY5.png
+.. figure:: ../img/mx.inegi_columns.SCONY5.png
   :width: 100 %
   :align: center
 
@@ -5287,8 +5237,6 @@ Measure "Female married or cohabited two years population 12 or more years old" 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -5305,7 +5253,7 @@ Measure "Female married or cohabited two years population 12 or more years old" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5323,7 +5271,7 @@ Measure "Female married or cohabited two years population 12 or more years old" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -5413,7 +5361,7 @@ Male married or cohabited two years population 12 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY6.png
+.. figure:: ../img/mx.inegi_columns.SCONY6.png
   :width: 100 %
   :align: center
 
@@ -5461,7 +5409,7 @@ Measure "Male married or cohabited two years population 12 or more years old" wi
 
 
 
-Measure "Male married or cohabited two years population 12 or more years old" percent of "Married or cohabited two years population 12 or more years old" at one point:
+Measure "Male married or cohabited two years population 12 or more years old" percent of "Male population 12 or more years old" at one point:
 
 .. code-block:: postgresql
 
@@ -5474,7 +5422,7 @@ Measure "Male married or cohabited two years population 12 or more years old" pe
       );
 
 
-Measure "Male married or cohabited two years population 12 or more years old" percent of "Married or cohabited two years population 12 or more years old" within an area:
+Measure "Male married or cohabited two years population 12 or more years old" percent of "Male population 12 or more years old" within an area:
 
 .. code-block:: postgresql
 
@@ -5485,8 +5433,6 @@ Measure "Male married or cohabited two years population 12 or more years old" pe
         'mx.inegi_columns.SCONY6',
         'denominator'
       );
-
-
 
 
 
@@ -5509,7 +5455,7 @@ Measure "Male married or cohabited two years population 12 or more years old" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5527,7 +5473,7 @@ Measure "Male married or cohabited two years population 12 or more years old" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -5589,11 +5535,11 @@ Measure "Male married or cohabited two years population 12 or more years old" pe
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.SCONY4`
+    :ref:`mx.inegi_columns.POB75`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB75`
+    :ref:`mx.inegi_columns.SCONY4`
 
 
 :Source:
@@ -5620,7 +5566,7 @@ Married or cohabited two years population 15 to 24 years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY10.png
+.. figure:: ../img/mx.inegi_columns.SCONY10.png
   :width: 100 %
   :align: center
 
@@ -5698,8 +5644,6 @@ Measure "Married or cohabited two years population 15 to 24 years old" percent o
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -5716,7 +5660,7 @@ Measure "Married or cohabited two years population 15 to 24 years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5752,7 +5696,7 @@ Measure "Married or cohabited two years population 15 to 24 years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -5770,7 +5714,7 @@ Measure "Married or cohabited two years population 15 to 24 years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -5841,7 +5785,7 @@ Female married or cohabited two years population 15 to 24 years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY11.png
+.. figure:: ../img/mx.inegi_columns.SCONY11.png
   :width: 100 %
   :align: center
 
@@ -5889,7 +5833,7 @@ Measure "Female married or cohabited two years population 15 to 24 years old" wi
 
 
 
-Measure "Female married or cohabited two years population 15 to 24 years old" percent of "Female population 15 to 24 years old" at one point:
+Measure "Female married or cohabited two years population 15 to 24 years old" percent of "Married or cohabited two years population 15 to 24 years old" at one point:
 
 .. code-block:: postgresql
 
@@ -5902,7 +5846,7 @@ Measure "Female married or cohabited two years population 15 to 24 years old" pe
       );
 
 
-Measure "Female married or cohabited two years population 15 to 24 years old" percent of "Female population 15 to 24 years old" within an area:
+Measure "Female married or cohabited two years population 15 to 24 years old" percent of "Married or cohabited two years population 15 to 24 years old" within an area:
 
 .. code-block:: postgresql
 
@@ -5913,8 +5857,6 @@ Measure "Female married or cohabited two years population 15 to 24 years old" pe
         'mx.inegi_columns.SCONY11',
         'denominator'
       );
-
-
 
 
 
@@ -5937,7 +5879,7 @@ Measure "Female married or cohabited two years population 15 to 24 years old" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5955,7 +5897,7 @@ Measure "Female married or cohabited two years population 15 to 24 years old" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -6017,11 +5959,11 @@ Measure "Female married or cohabited two years population 15 to 24 years old" pe
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB40`
+    :ref:`mx.inegi_columns.SCONY10`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.SCONY10`
+    :ref:`mx.inegi_columns.POB40`
 
 
 :Source:
@@ -6045,7 +5987,7 @@ Male married or cohabited two years population 15 to 24 years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY12.png
+.. figure:: ../img/mx.inegi_columns.SCONY12.png
   :width: 100 %
   :align: center
 
@@ -6093,7 +6035,7 @@ Measure "Male married or cohabited two years population 15 to 24 years old" with
 
 
 
-Measure "Male married or cohabited two years population 15 to 24 years old" percent of "Male population 15 to 24 years old" at one point:
+Measure "Male married or cohabited two years population 15 to 24 years old" percent of "Married or cohabited two years population 15 to 24 years old" at one point:
 
 .. code-block:: postgresql
 
@@ -6106,7 +6048,7 @@ Measure "Male married or cohabited two years population 15 to 24 years old" perc
       );
 
 
-Measure "Male married or cohabited two years population 15 to 24 years old" percent of "Male population 15 to 24 years old" within an area:
+Measure "Male married or cohabited two years population 15 to 24 years old" percent of "Married or cohabited two years population 15 to 24 years old" within an area:
 
 .. code-block:: postgresql
 
@@ -6117,8 +6059,6 @@ Measure "Male married or cohabited two years population 15 to 24 years old" perc
         'mx.inegi_columns.SCONY12',
         'denominator'
       );
-
-
 
 
 
@@ -6141,7 +6081,7 @@ Measure "Male married or cohabited two years population 15 to 24 years old" perc
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6159,7 +6099,7 @@ Measure "Male married or cohabited two years population 15 to 24 years old" perc
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -6221,11 +6161,11 @@ Measure "Male married or cohabited two years population 15 to 24 years old" perc
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB66`
+    :ref:`mx.inegi_columns.SCONY10`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.SCONY10`
+    :ref:`mx.inegi_columns.POB66`
 
 
 :Source:
@@ -6252,7 +6192,7 @@ Percentage of women age 15 to 19 with a child
 
 
 
-.. figure:: html/mx.inegi_columns.FEC3_R.png
+.. figure:: ../img/mx.inegi_columns.FEC3_R.png
   :width: 100 %
   :align: center
 
@@ -6293,8 +6233,6 @@ Percentage of women age 15 to 19 with a child is only available for point lookup
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -6311,7 +6249,7 @@ Percentage of women age 15 to 19 with a child is only available for point lookup
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6347,7 +6285,7 @@ Percentage of women age 15 to 19 with a child is only available for point lookup
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -6365,7 +6303,7 @@ Percentage of women age 15 to 19 with a child is only available for point lookup
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -6429,7 +6367,7 @@ Population in households
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR4.png
+.. figure:: ../img/mx.inegi_columns.HOGAR4.png
   :width: 100 %
   :align: center
 
@@ -6507,8 +6445,6 @@ Measure "Population in households" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -6525,7 +6461,7 @@ Measure "Population in households" percent of "Total population" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6561,7 +6497,7 @@ Measure "Population in households" percent of "Total population" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -6579,7 +6515,7 @@ Measure "Population in households" percent of "Total population" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -6650,7 +6586,7 @@ Population in female headed households
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR5.png
+.. figure:: ../img/mx.inegi_columns.HOGAR5.png
   :width: 100 %
   :align: center
 
@@ -6728,8 +6664,6 @@ Measure "Population in female headed households" percent of "Population in house
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -6746,7 +6680,7 @@ Measure "Population in female headed households" percent of "Population in house
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6782,7 +6716,7 @@ Measure "Population in female headed households" percent of "Population in house
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -6800,7 +6734,7 @@ Measure "Population in female headed households" percent of "Population in house
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -6871,7 +6805,7 @@ Population in households with female head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR23.png
+.. figure:: ../img/mx.inegi_columns.HOGAR23.png
   :width: 100 %
   :align: center
 
@@ -6949,8 +6883,6 @@ Measure "Population in households with female head 60 or more years old" percent
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -6967,7 +6899,7 @@ Measure "Population in households with female head 60 or more years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6985,7 +6917,7 @@ Measure "Population in households with female head 60 or more years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -7075,7 +7007,7 @@ Population in households with female head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR17.png
+.. figure:: ../img/mx.inegi_columns.HOGAR17.png
   :width: 100 %
   :align: center
 
@@ -7153,8 +7085,6 @@ Measure "Population in households with female head between 30 and 59 years old" 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -7171,7 +7101,7 @@ Measure "Population in households with female head between 30 and 59 years old" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7189,7 +7119,7 @@ Measure "Population in households with female head between 30 and 59 years old" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -7279,7 +7209,7 @@ Population in households with female head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR11.png
+.. figure:: ../img/mx.inegi_columns.HOGAR11.png
   :width: 100 %
   :align: center
 
@@ -7357,8 +7287,6 @@ Measure "Population in households with female head under 30 years old" percent o
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -7375,7 +7303,7 @@ Measure "Population in households with female head under 30 years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7393,7 +7321,7 @@ Measure "Population in households with female head under 30 years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -7486,7 +7414,7 @@ Population in households with head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR22.png
+.. figure:: ../img/mx.inegi_columns.HOGAR22.png
   :width: 100 %
   :align: center
 
@@ -7564,8 +7492,6 @@ Measure "Population in households with head 60 or more years old" percent of "Po
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -7582,7 +7508,7 @@ Measure "Population in households with head 60 or more years old" percent of "Po
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7618,7 +7544,7 @@ Measure "Population in households with head 60 or more years old" percent of "Po
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -7636,7 +7562,7 @@ Measure "Population in households with head 60 or more years old" percent of "Po
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -7707,7 +7633,7 @@ Population in households with female head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR23.png
+.. figure:: ../img/mx.inegi_columns.HOGAR23.png
   :width: 100 %
   :align: center
 
@@ -7785,8 +7711,6 @@ Measure "Population in households with female head 60 or more years old" percent
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -7803,7 +7727,7 @@ Measure "Population in households with female head 60 or more years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7821,7 +7745,7 @@ Measure "Population in households with female head 60 or more years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -7911,7 +7835,7 @@ Population in households with male head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR24.png
+.. figure:: ../img/mx.inegi_columns.HOGAR24.png
   :width: 100 %
   :align: center
 
@@ -7989,8 +7913,6 @@ Measure "Population in households with male head 60 or more years old" percent o
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -8007,7 +7929,7 @@ Measure "Population in households with male head 60 or more years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8025,7 +7947,7 @@ Measure "Population in households with male head 60 or more years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -8118,7 +8040,7 @@ Population in households with head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR16.png
+.. figure:: ../img/mx.inegi_columns.HOGAR16.png
   :width: 100 %
   :align: center
 
@@ -8196,8 +8118,6 @@ Measure "Population in households with head between 30 and 59 years old" percent
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -8214,7 +8134,7 @@ Measure "Population in households with head between 30 and 59 years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8250,7 +8170,7 @@ Measure "Population in households with head between 30 and 59 years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -8268,7 +8188,7 @@ Measure "Population in households with head between 30 and 59 years old" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -8339,7 +8259,7 @@ Population in households with female head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR17.png
+.. figure:: ../img/mx.inegi_columns.HOGAR17.png
   :width: 100 %
   :align: center
 
@@ -8417,8 +8337,6 @@ Measure "Population in households with female head between 30 and 59 years old" 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -8435,7 +8353,7 @@ Measure "Population in households with female head between 30 and 59 years old" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8453,7 +8371,7 @@ Measure "Population in households with female head between 30 and 59 years old" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -8543,7 +8461,7 @@ Population in households with male head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR18.png
+.. figure:: ../img/mx.inegi_columns.HOGAR18.png
   :width: 100 %
   :align: center
 
@@ -8621,8 +8539,6 @@ Measure "Population in households with male head between 30 and 59 years old" pe
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -8639,7 +8555,7 @@ Measure "Population in households with male head between 30 and 59 years old" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8657,7 +8573,7 @@ Measure "Population in households with male head between 30 and 59 years old" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -8750,7 +8666,7 @@ Population in households with head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR10.png
+.. figure:: ../img/mx.inegi_columns.HOGAR10.png
   :width: 100 %
   :align: center
 
@@ -8828,8 +8744,6 @@ Measure "Population in households with head under 30 years old" percent of "Popu
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -8846,7 +8760,7 @@ Measure "Population in households with head under 30 years old" percent of "Popu
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8882,7 +8796,7 @@ Measure "Population in households with head under 30 years old" percent of "Popu
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -8900,7 +8814,7 @@ Measure "Population in households with head under 30 years old" percent of "Popu
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -8971,7 +8885,7 @@ Population in households with female head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR11.png
+.. figure:: ../img/mx.inegi_columns.HOGAR11.png
   :width: 100 %
   :align: center
 
@@ -9049,8 +8963,6 @@ Measure "Population in households with female head under 30 years old" percent o
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9067,7 +8979,7 @@ Measure "Population in households with female head under 30 years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -9085,7 +8997,7 @@ Measure "Population in households with female head under 30 years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -9175,7 +9087,7 @@ Population in households with male head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR12.png
+.. figure:: ../img/mx.inegi_columns.HOGAR12.png
   :width: 100 %
   :align: center
 
@@ -9253,8 +9165,6 @@ Measure "Population in households with male head under 30 years old" percent of 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9271,7 +9181,7 @@ Measure "Population in households with male head under 30 years old" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -9289,7 +9199,7 @@ Measure "Population in households with male head under 30 years old" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -9382,7 +9292,7 @@ Population in male headed households
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR6.png
+.. figure:: ../img/mx.inegi_columns.HOGAR6.png
   :width: 100 %
   :align: center
 
@@ -9460,8 +9370,6 @@ Measure "Population in male headed households" percent of "Population in househo
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9478,7 +9386,7 @@ Measure "Population in male headed households" percent of "Population in househo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -9514,7 +9422,7 @@ Measure "Population in male headed households" percent of "Population in househo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -9532,7 +9440,7 @@ Measure "Population in male headed households" percent of "Population in househo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -9603,7 +9511,7 @@ Population in households with male head 60 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR24.png
+.. figure:: ../img/mx.inegi_columns.HOGAR24.png
   :width: 100 %
   :align: center
 
@@ -9681,8 +9589,6 @@ Measure "Population in households with male head 60 or more years old" percent o
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9699,7 +9605,7 @@ Measure "Population in households with male head 60 or more years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -9717,7 +9623,7 @@ Measure "Population in households with male head 60 or more years old" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -9807,7 +9713,7 @@ Population in households with male head between 30 and 59 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR18.png
+.. figure:: ../img/mx.inegi_columns.HOGAR18.png
   :width: 100 %
   :align: center
 
@@ -9885,8 +9791,6 @@ Measure "Population in households with male head between 30 and 59 years old" pe
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9903,7 +9807,7 @@ Measure "Population in households with male head between 30 and 59 years old" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -9921,7 +9825,7 @@ Measure "Population in households with male head between 30 and 59 years old" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -10011,7 +9915,7 @@ Population in households with male head under 30 years old
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR12.png
+.. figure:: ../img/mx.inegi_columns.HOGAR12.png
   :width: 100 %
   :align: center
 
@@ -10089,8 +9993,6 @@ Measure "Population in households with male head under 30 years old" percent of 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10107,7 +10009,7 @@ Measure "Population in households with male head under 30 years old" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -10125,7 +10027,7 @@ Measure "Population in households with male head under 30 years old" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -10218,7 +10120,7 @@ Population in nuclear households (head with children under 18 years of age)
 
 
 
-.. figure:: html/mx.inegi_columns.HOGAR26.png
+.. figure:: ../img/mx.inegi_columns.HOGAR26.png
   :width: 100 %
   :align: center
 
@@ -10296,8 +10198,6 @@ Measure "Population in nuclear households (head with children under 18 years of 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10314,7 +10214,7 @@ Measure "Population in nuclear households (head with children under 18 years of 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -10350,7 +10250,7 @@ Measure "Population in nuclear households (head with children under 18 years of 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -10368,7 +10268,7 @@ Measure "Population in nuclear households (head with children under 18 years of 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -10439,7 +10339,7 @@ Single population 12 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY1.png
+.. figure:: ../img/mx.inegi_columns.SCONY1.png
   :width: 100 %
   :align: center
 
@@ -10517,8 +10417,6 @@ Measure "Single population 12 or more years old" percent of "Population 12 or mo
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10535,7 +10433,7 @@ Measure "Single population 12 or more years old" percent of "Population 12 or mo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -10571,7 +10469,7 @@ Measure "Single population 12 or more years old" percent of "Population 12 or mo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -10589,7 +10487,7 @@ Measure "Single population 12 or more years old" percent of "Population 12 or mo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -10660,7 +10558,7 @@ Female single population 12 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY2.png
+.. figure:: ../img/mx.inegi_columns.SCONY2.png
   :width: 100 %
   :align: center
 
@@ -10708,7 +10606,7 @@ Measure "Female single population 12 or more years old" within an area:
 
 
 
-Measure "Female single population 12 or more years old" percent of "Female population 12 or more years old" at one point:
+Measure "Female single population 12 or more years old" percent of "Single population 12 or more years old" at one point:
 
 .. code-block:: postgresql
 
@@ -10721,7 +10619,7 @@ Measure "Female single population 12 or more years old" percent of "Female popul
       );
 
 
-Measure "Female single population 12 or more years old" percent of "Female population 12 or more years old" within an area:
+Measure "Female single population 12 or more years old" percent of "Single population 12 or more years old" within an area:
 
 .. code-block:: postgresql
 
@@ -10732,8 +10630,6 @@ Measure "Female single population 12 or more years old" percent of "Female popul
         'mx.inegi_columns.SCONY2',
         'denominator'
       );
-
-
 
 
 
@@ -10756,7 +10652,7 @@ Measure "Female single population 12 or more years old" percent of "Female popul
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -10774,7 +10670,7 @@ Measure "Female single population 12 or more years old" percent of "Female popul
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 
@@ -10836,11 +10732,11 @@ Measure "Female single population 12 or more years old" percent of "Female popul
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB50`
+    :ref:`mx.inegi_columns.SCONY1`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.SCONY1`
+    :ref:`mx.inegi_columns.POB50`
 
 
 :Source:
@@ -10864,7 +10760,7 @@ Male single population 12 or more years old
 
 
 
-.. figure:: html/mx.inegi_columns.SCONY3.png
+.. figure:: ../img/mx.inegi_columns.SCONY3.png
   :width: 100 %
   :align: center
 
@@ -10942,8 +10838,6 @@ Measure "Male single population 12 or more years old" percent of "Male populatio
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10960,7 +10854,7 @@ Measure "Male single population 12 or more years old" percent of "Male populatio
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.ageb`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -10978,7 +10872,7 @@ Measure "Male single population 12 or more years old" percent of "Male populatio
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.ageb`
 
 .. raw:: html
 

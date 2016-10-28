@@ -22,7 +22,7 @@ Male-female ratio in population 5 years and over who resided in the United State
 
 
 
-.. figure:: html/mx.inegi_columns.MIG16_R.png
+.. figure:: ../img/mx.inegi_columns.MIG16_R.png
   :width: 100 %
   :align: center
 
@@ -63,8 +63,6 @@ Male-female ratio in population 5 years and over who resided in the United State
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -81,7 +79,7 @@ Male-female ratio in population 5 years and over who resided in the United State
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -99,7 +97,7 @@ Male-female ratio in population 5 years and over who resided in the United State
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -163,7 +161,7 @@ Population age 5 or more resident in the United States in June 2005
 
 
 
-.. figure:: html/mx.inegi_columns.MIG15.png
+.. figure:: ../img/mx.inegi_columns.MIG15.png
   :width: 100 %
   :align: center
 
@@ -241,8 +239,6 @@ Measure "Population age 5 or more resident in the United States in June 2005" pe
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -313,7 +309,7 @@ Measure "Population age 5 or more resident in the United States in June 2005" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -331,7 +327,7 @@ Measure "Population age 5 or more resident in the United States in June 2005" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -381,7 +377,7 @@ Population born in another country
 
 
 
-.. figure:: html/mx.inegi_columns.MIG7.png
+.. figure:: ../img/mx.inegi_columns.MIG7.png
   :width: 100 %
   :align: center
 
@@ -459,8 +455,6 @@ Measure "Population born in another country" percent of "Total population" withi
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -531,7 +525,7 @@ Measure "Population born in another country" percent of "Total population" withi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -549,7 +543,7 @@ Measure "Population born in another country" percent of "Total population" withi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -599,7 +593,7 @@ Population born in another state
 
 
 
-.. figure:: html/mx.inegi_columns.MIG4.png
+.. figure:: ../img/mx.inegi_columns.MIG4.png
   :width: 100 %
   :align: center
 
@@ -677,8 +671,6 @@ Measure "Population born in another state" percent of "Total population" within 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -749,7 +741,7 @@ Measure "Population born in another state" percent of "Total population" within 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -767,7 +759,7 @@ Measure "Population born in another state" percent of "Total population" within 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -820,7 +812,7 @@ Female population born in another state
 
 
 
-.. figure:: html/mx.inegi_columns.MIG5.png
+.. figure:: ../img/mx.inegi_columns.MIG5.png
   :width: 100 %
   :align: center
 
@@ -868,7 +860,7 @@ Measure "Female population born in another state" within an area:
 
 
 
-Measure "Female population born in another state" percent of "Population born in another state" at one point:
+Measure "Female population born in another state" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -881,7 +873,7 @@ Measure "Female population born in another state" percent of "Population born in
       );
 
 
-Measure "Female population born in another state" percent of "Population born in another state" within an area:
+Measure "Female population born in another state" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -892,8 +884,6 @@ Measure "Female population born in another state" percent of "Population born in
         'mx.inegi_columns.MIG5',
         'denominator'
       );
-
-
 
 
 
@@ -970,7 +960,7 @@ Measure "Female population born in another state" percent of "Population born in
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -988,7 +978,7 @@ Measure "Female population born in another state" percent of "Population born in
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -1014,11 +1004,11 @@ Measure "Female population born in another state" percent of "Population born in
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.MIG4`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.MIG4`
 
 
 :Source:
@@ -1042,7 +1032,7 @@ Male population born in another state
 
 
 
-.. figure:: html/mx.inegi_columns.MIG6.png
+.. figure:: ../img/mx.inegi_columns.MIG6.png
   :width: 100 %
   :align: center
 
@@ -1090,7 +1080,7 @@ Measure "Male population born in another state" within an area:
 
 
 
-Measure "Male population born in another state" percent of "Population born in another state" at one point:
+Measure "Male population born in another state" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -1103,7 +1093,7 @@ Measure "Male population born in another state" percent of "Population born in a
       );
 
 
-Measure "Male population born in another state" percent of "Population born in another state" within an area:
+Measure "Male population born in another state" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -1114,8 +1104,6 @@ Measure "Male population born in another state" percent of "Population born in a
         'mx.inegi_columns.MIG6',
         'denominator'
       );
-
-
 
 
 
@@ -1192,7 +1180,7 @@ Measure "Male population born in another state" percent of "Population born in a
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1210,7 +1198,7 @@ Measure "Male population born in another state" percent of "Population born in a
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -1236,11 +1224,11 @@ Measure "Male population born in another state" percent of "Population born in a
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.MIG4`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.MIG4`
 
 
 :Source:
@@ -1267,7 +1255,7 @@ Population born in the state
 
 
 
-.. figure:: html/mx.inegi_columns.MIG1.png
+.. figure:: ../img/mx.inegi_columns.MIG1.png
   :width: 100 %
   :align: center
 
@@ -1345,8 +1333,6 @@ Measure "Population born in the state" percent of "Total population" within an a
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1417,7 +1403,7 @@ Measure "Population born in the state" percent of "Total population" within an a
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1435,7 +1421,7 @@ Measure "Population born in the state" percent of "Total population" within an a
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -1488,7 +1474,7 @@ Female population born in the state
 
 
 
-.. figure:: html/mx.inegi_columns.MIG2.png
+.. figure:: ../img/mx.inegi_columns.MIG2.png
   :width: 100 %
   :align: center
 
@@ -1536,7 +1522,7 @@ Measure "Female population born in the state" within an area:
 
 
 
-Measure "Female population born in the state" percent of "Female population" at one point:
+Measure "Female population born in the state" percent of "Population born in the state" at one point:
 
 .. code-block:: postgresql
 
@@ -1549,7 +1535,7 @@ Measure "Female population born in the state" percent of "Female population" at 
       );
 
 
-Measure "Female population born in the state" percent of "Female population" within an area:
+Measure "Female population born in the state" percent of "Population born in the state" within an area:
 
 .. code-block:: postgresql
 
@@ -1560,8 +1546,6 @@ Measure "Female population born in the state" percent of "Female population" wit
         'mx.inegi_columns.MIG2',
         'denominator'
       );
-
-
 
 
 
@@ -1638,7 +1622,7 @@ Measure "Female population born in the state" percent of "Female population" wit
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1656,7 +1640,7 @@ Measure "Female population born in the state" percent of "Female population" wit
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -1682,11 +1666,11 @@ Measure "Female population born in the state" percent of "Female population" wit
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.MIG1`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.MIG1`
+    :ref:`mx.inegi_columns.POB31`
 
 
 :Source:
@@ -1710,7 +1694,7 @@ Male population born in the state
 
 
 
-.. figure:: html/mx.inegi_columns.MIG3.png
+.. figure:: ../img/mx.inegi_columns.MIG3.png
   :width: 100 %
   :align: center
 
@@ -1758,7 +1742,7 @@ Measure "Male population born in the state" within an area:
 
 
 
-Measure "Male population born in the state" percent of "Male population" at one point:
+Measure "Male population born in the state" percent of "Population born in the state" at one point:
 
 .. code-block:: postgresql
 
@@ -1771,7 +1755,7 @@ Measure "Male population born in the state" percent of "Male population" at one 
       );
 
 
-Measure "Male population born in the state" percent of "Male population" within an area:
+Measure "Male population born in the state" percent of "Population born in the state" within an area:
 
 .. code-block:: postgresql
 
@@ -1782,8 +1766,6 @@ Measure "Male population born in the state" percent of "Male population" within 
         'mx.inegi_columns.MIG3',
         'denominator'
       );
-
-
 
 
 
@@ -1860,7 +1842,7 @@ Measure "Male population born in the state" percent of "Male population" within 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1878,7 +1860,7 @@ Measure "Male population born in the state" percent of "Male population" within 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -1904,11 +1886,11 @@ Measure "Male population born in the state" percent of "Male population" within 
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.MIG1`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.MIG1`
+    :ref:`mx.inegi_columns.POB57`
 
 
 :Source:
@@ -1935,7 +1917,7 @@ Population resident in another country in June 2005
 
 
 
-.. figure:: html/mx.inegi_columns.MIG14.png
+.. figure:: ../img/mx.inegi_columns.MIG14.png
   :width: 100 %
   :align: center
 
@@ -2013,8 +1995,6 @@ Measure "Population resident in another country in June 2005" percent of "Popula
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2085,7 +2065,7 @@ Measure "Population resident in another country in June 2005" percent of "Popula
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2103,7 +2083,7 @@ Measure "Population resident in another country in June 2005" percent of "Popula
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -2153,7 +2133,7 @@ Population resident in another state in June 2005
 
 
 
-.. figure:: html/mx.inegi_columns.MIG11.png
+.. figure:: ../img/mx.inegi_columns.MIG11.png
   :width: 100 %
   :align: center
 
@@ -2231,8 +2211,6 @@ Measure "Population resident in another state in June 2005" percent of "Populati
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2303,7 +2281,7 @@ Measure "Population resident in another state in June 2005" percent of "Populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2321,7 +2299,7 @@ Measure "Population resident in another state in June 2005" percent of "Populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -2374,7 +2352,7 @@ Female population resident in another state in June 2005
 
 
 
-.. figure:: html/mx.inegi_columns.MIG12.png
+.. figure:: ../img/mx.inegi_columns.MIG12.png
   :width: 100 %
   :align: center
 
@@ -2422,7 +2400,7 @@ Measure "Female population resident in another state in June 2005" within an are
 
 
 
-Measure "Female population resident in another state in June 2005" percent of "Population resident in another state in June 2005" at one point:
+Measure "Female population resident in another state in June 2005" percent of "Female population 5 or more years old" at one point:
 
 .. code-block:: postgresql
 
@@ -2435,7 +2413,7 @@ Measure "Female population resident in another state in June 2005" percent of "P
       );
 
 
-Measure "Female population resident in another state in June 2005" percent of "Population resident in another state in June 2005" within an area:
+Measure "Female population resident in another state in June 2005" percent of "Female population 5 or more years old" within an area:
 
 .. code-block:: postgresql
 
@@ -2446,8 +2424,6 @@ Measure "Female population resident in another state in June 2005" percent of "P
         'mx.inegi_columns.MIG12',
         'denominator'
       );
-
-
 
 
 
@@ -2524,7 +2500,7 @@ Measure "Female population resident in another state in June 2005" percent of "P
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2542,7 +2518,7 @@ Measure "Female population resident in another state in June 2005" percent of "P
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -2568,11 +2544,11 @@ Measure "Female population resident in another state in June 2005" percent of "P
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.MIG11`
+    :ref:`mx.inegi_columns.POB49`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB49`
+    :ref:`mx.inegi_columns.MIG11`
 
 
 :Source:
@@ -2596,7 +2572,7 @@ Male population resident in another state in June 2005
 
 
 
-.. figure:: html/mx.inegi_columns.MIG13.png
+.. figure:: ../img/mx.inegi_columns.MIG13.png
   :width: 100 %
   :align: center
 
@@ -2674,8 +2650,6 @@ Measure "Male population resident in another state in June 2005" percent of "Pop
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2746,7 +2720,7 @@ Measure "Male population resident in another state in June 2005" percent of "Pop
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2764,7 +2738,7 @@ Measure "Male population resident in another state in June 2005" percent of "Pop
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -2821,7 +2795,7 @@ Population resident in the state in June 2005
 
 
 
-.. figure:: html/mx.inegi_columns.MIG8.png
+.. figure:: ../img/mx.inegi_columns.MIG8.png
   :width: 100 %
   :align: center
 
@@ -2899,8 +2873,6 @@ Measure "Population resident in the state in June 2005" percent of "Population 5
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2971,7 +2943,7 @@ Measure "Population resident in the state in June 2005" percent of "Population 5
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2989,7 +2961,7 @@ Measure "Population resident in the state in June 2005" percent of "Population 5
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -3042,7 +3014,7 @@ Female population resident in the state in June 2005
 
 
 
-.. figure:: html/mx.inegi_columns.MIG9.png
+.. figure:: ../img/mx.inegi_columns.MIG9.png
   :width: 100 %
   :align: center
 
@@ -3090,7 +3062,7 @@ Measure "Female population resident in the state in June 2005" within an area:
 
 
 
-Measure "Female population resident in the state in June 2005" percent of "Population resident in the state in June 2005" at one point:
+Measure "Female population resident in the state in June 2005" percent of "Female population 5 or more years old" at one point:
 
 .. code-block:: postgresql
 
@@ -3103,7 +3075,7 @@ Measure "Female population resident in the state in June 2005" percent of "Popul
       );
 
 
-Measure "Female population resident in the state in June 2005" percent of "Population resident in the state in June 2005" within an area:
+Measure "Female population resident in the state in June 2005" percent of "Female population 5 or more years old" within an area:
 
 .. code-block:: postgresql
 
@@ -3114,8 +3086,6 @@ Measure "Female population resident in the state in June 2005" percent of "Popul
         'mx.inegi_columns.MIG9',
         'denominator'
       );
-
-
 
 
 
@@ -3192,7 +3162,7 @@ Measure "Female population resident in the state in June 2005" percent of "Popul
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -3210,7 +3180,7 @@ Measure "Female population resident in the state in June 2005" percent of "Popul
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 
@@ -3236,11 +3206,11 @@ Measure "Female population resident in the state in June 2005" percent of "Popul
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.MIG8`
+    :ref:`mx.inegi_columns.POB49`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB49`
+    :ref:`mx.inegi_columns.MIG8`
 
 
 :Source:
@@ -3264,7 +3234,7 @@ Male population resident in the state in June 2005
 
 
 
-.. figure:: html/mx.inegi_columns.MIG10.png
+.. figure:: ../img/mx.inegi_columns.MIG10.png
   :width: 100 %
   :align: center
 
@@ -3342,8 +3312,6 @@ Measure "Male population resident in the state in June 2005" percent of "Populat
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3414,7 +3382,7 @@ Measure "Male population resident in the state in June 2005" percent of "Populat
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.entidad`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -3432,7 +3400,7 @@ Measure "Male population resident in the state in June 2005" percent of "Populat
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.entidad`
 
 .. raw:: html
 

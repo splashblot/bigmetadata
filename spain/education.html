@@ -109,7 +109,7 @@
 <div class="section" id="illiterate-persons">
 <span id="es-ine-t12-1"></span><h2><a class="toc-backref" href="#id1">8.4.1. Illiterate persons</a><a class="headerlink" href="#illiterate-persons" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t12_1.png"><img alt="spain/html/es.ine.t12_1.png" src="spain/html/es.ine.t12_1.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t12_1.png"><img alt="../_images/es.ine.t12_1.png" src="../_images/es.ine.t12_1.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Illiterate persons&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -186,7 +186,7 @@
 <div class="section" id="illiterate-females">
 <span id="es-ine-t13-2"></span><h3><a class="toc-backref" href="#id42">8.4.1.1. Illiterate females</a><a class="headerlink" href="#illiterate-females" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_2.png"><img alt="spain/html/es.ine.t13_2.png" src="spain/html/es.ine.t13_2.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_2.png"><img alt="../_images/es.ine.t13_2.png" src="../_images/es.ine.t13_2.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Illiterate females&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -206,7 +206,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Illiterate females&#8221; percent of &#8220;Illiterate persons&#8221; at one point:</p>
+<p>Measure &#8220;Illiterate females&#8221; percent of &#8220;Females&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -216,7 +216,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Illiterate females&#8221; percent of &#8220;Illiterate persons&#8221; within an area:</p>
+<p>Measure &#8220;Illiterate females&#8221; percent of &#8220;Females&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -241,9 +241,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -255,7 +255,7 @@
 <div class="section" id="illiterate-males">
 <span id="es-ine-t13-1"></span><h3><a class="toc-backref" href="#id43">8.4.1.2. Illiterate males</a><a class="headerlink" href="#illiterate-males" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_1.png"><img alt="spain/html/es.ine.t13_1.png" src="spain/html/es.ine.t13_1.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_1.png"><img alt="../_images/es.ine.t13_1.png" src="../_images/es.ine.t13_1.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Illiterate males&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -275,7 +275,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Illiterate males&#8221; percent of &#8220;Illiterate persons&#8221; at one point:</p>
+<p>Measure &#8220;Illiterate males&#8221; percent of &#8220;Males&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -285,7 +285,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Illiterate males&#8221; percent of &#8220;Illiterate persons&#8221; within an area:</p>
+<p>Measure &#8220;Illiterate males&#8221; percent of &#8220;Males&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -310,9 +310,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -324,7 +324,7 @@
 <div class="section" id="persons-aged-between-16-included-and-64-included-years-and-illiterate">
 <span id="es-ine-t15-2"></span><h3><a class="toc-backref" href="#id44">8.4.1.3. Persons aged between 16 (included) and 64 (included) years and illiterate</a><a class="headerlink" href="#persons-aged-between-16-included-and-64-included-years-and-illiterate" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_2.png"><img alt="spain/html/es.ine.t15_2.png" src="spain/html/es.ine.t15_2.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_2.png"><img alt="../_images/es.ine.t15_2.png" src="../_images/es.ine.t15_2.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and illiterate&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -344,7 +344,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; at one point:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and illiterate&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -354,7 +354,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; within an area:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and illiterate&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -379,9 +379,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -393,7 +393,7 @@
 <div class="section" id="persons-aged-over-64-years-and-illiterate">
 <span id="es-ine-t15-3"></span><h3><a class="toc-backref" href="#id45">8.4.1.4. Persons aged over 64 years and illiterate</a><a class="headerlink" href="#persons-aged-over-64-years-and-illiterate" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_3.png"><img alt="spain/html/es.ine.t15_3.png" src="spain/html/es.ine.t15_3.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_3.png"><img alt="../_images/es.ine.t15_3.png" src="../_images/es.ine.t15_3.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged over 64 years and illiterate&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -462,7 +462,7 @@
 <div class="section" id="persons-with-a-foreign-nationality-and-illiterate">
 <span id="es-ine-t14-2"></span><h3><a class="toc-backref" href="#id46">8.4.1.5. Persons with a foreign nationality and illiterate</a><a class="headerlink" href="#persons-with-a-foreign-nationality-and-illiterate" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_2.png"><img alt="spain/html/es.ine.t14_2.png" src="spain/html/es.ine.t14_2.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_2.png"><img alt="../_images/es.ine.t14_2.png" src="../_images/es.ine.t14_2.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with a foreign nationality and illiterate&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -482,7 +482,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with a foreign nationality and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; at one point:</p>
+<p>Measure &#8220;Persons with a foreign nationality and illiterate&#8221; percent of &#8220;Persons with a foreign nationality&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -492,7 +492,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with a foreign nationality and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; within an area:</p>
+<p>Measure &#8220;Persons with a foreign nationality and illiterate&#8221; percent of &#8220;Persons with a foreign nationality&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -517,9 +517,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-2"><span class="std std-ref">Persons with a foreign nationality</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-2"><span class="std std-ref">Persons with a foreign nationality</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -531,7 +531,7 @@
 <div class="section" id="persons-with-spanish-nationality-and-illiterate">
 <span id="es-ine-t14-1"></span><h3><a class="toc-backref" href="#id47">8.4.1.6. Persons with Spanish nationality and illiterate</a><a class="headerlink" href="#persons-with-spanish-nationality-and-illiterate" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_1.png"><img alt="spain/html/es.ine.t14_1.png" src="spain/html/es.ine.t14_1.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_1.png"><img alt="../_images/es.ine.t14_1.png" src="../_images/es.ine.t14_1.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with Spanish nationality and illiterate&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -551,7 +551,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; at one point:</p>
+<p>Measure &#8220;Persons with Spanish nationality and illiterate&#8221; percent of &#8220;Persons with Spanish nationality&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -561,7 +561,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; within an area:</p>
+<p>Measure &#8220;Persons with Spanish nationality and illiterate&#8221; percent of &#8220;Persons with Spanish nationality&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -586,9 +586,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -665,7 +665,7 @@
 <div class="section" id="persons-with-first-level-studies">
 <span id="es-ine-t12-3"></span><h2><a class="toc-backref" href="#id9">8.4.3. Persons with first level studies</a><a class="headerlink" href="#persons-with-first-level-studies" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t12_3.png"><img alt="spain/html/es.ine.t12_3.png" src="spain/html/es.ine.t12_3.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t12_3.png"><img alt="../_images/es.ine.t12_3.png" src="../_images/es.ine.t12_3.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with first level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -746,7 +746,7 @@
 <div class="section" id="females-with-first-level-studies">
 <span id="es-ine-t13-6"></span><h3><a class="toc-backref" href="#id48">8.4.3.1. Females with first level studies</a><a class="headerlink" href="#females-with-first-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_6.png"><img alt="spain/html/es.ine.t13_6.png" src="spain/html/es.ine.t13_6.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_6.png"><img alt="../_images/es.ine.t13_6.png" src="../_images/es.ine.t13_6.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Females with first level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -766,7 +766,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; at one point:</p>
+<p>Measure &#8220;Females with first level studies&#8221; percent of &#8220;Females&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -776,7 +776,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; within an area:</p>
+<p>Measure &#8220;Females with first level studies&#8221; percent of &#8220;Females&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -801,9 +801,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -815,7 +815,7 @@
 <div class="section" id="males-with-first-level-studies">
 <span id="es-ine-t13-5"></span><h3><a class="toc-backref" href="#id49">8.4.3.2. Males with first level studies</a><a class="headerlink" href="#males-with-first-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_5.png"><img alt="spain/html/es.ine.t13_5.png" src="spain/html/es.ine.t13_5.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_5.png"><img alt="../_images/es.ine.t13_5.png" src="../_images/es.ine.t13_5.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Males with first level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -835,7 +835,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; at one point:</p>
+<p>Measure &#8220;Males with first level studies&#8221; percent of &#8220;Males&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -845,7 +845,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; within an area:</p>
+<p>Measure &#8220;Males with first level studies&#8221; percent of &#8220;Males&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -870,9 +870,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -884,7 +884,7 @@
 <div class="section" id="persons-aged-between-16-included-and-64-included-years-and-with-first-level-studies">
 <span id="es-ine-t15-8"></span><h3><a class="toc-backref" href="#id50">8.4.3.3. Persons aged between 16 (included) and 64 (included) years and with first level studies</a><a class="headerlink" href="#persons-aged-between-16-included-and-64-included-years-and-with-first-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_8.png"><img alt="spain/html/es.ine.t15_8.png" src="spain/html/es.ine.t15_8.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_8.png"><img alt="../_images/es.ine.t15_8.png" src="../_images/es.ine.t15_8.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with first level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -904,7 +904,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; at one point:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with first level studies&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -914,7 +914,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; within an area:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with first level studies&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -939,9 +939,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -953,7 +953,7 @@
 <div class="section" id="persons-aged-between-16-included-and-64-included-years-and-with-second-level-studies">
 <span id="es-ine-t15-11"></span><h3><a class="toc-backref" href="#id51">8.4.3.4. Persons aged between 16 (included) and 64 (included) years and with second level studies</a><a class="headerlink" href="#persons-aged-between-16-included-and-64-included-years-and-with-second-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_11.png"><img alt="spain/html/es.ine.t15_11.png" src="spain/html/es.ine.t15_11.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_11.png"><img alt="../_images/es.ine.t15_11.png" src="../_images/es.ine.t15_11.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with second level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -973,7 +973,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with second level studies&#8221; percent of &#8220;Persons with first level studies&#8221; at one point:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with second level studies&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -983,7 +983,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with second level studies&#8221; percent of &#8220;Persons with first level studies&#8221; within an area:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with second level studies&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1008,9 +1008,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -1022,7 +1022,7 @@
 <div class="section" id="persons-aged-between-16-included-and-64-included-years-and-with-third-level-studies">
 <span id="es-ine-t15-14"></span><h3><a class="toc-backref" href="#id52">8.4.3.5. Persons aged between 16 (included) and 64 (included) years and with third level studies</a><a class="headerlink" href="#persons-aged-between-16-included-and-64-included-years-and-with-third-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_14.png"><img alt="spain/html/es.ine.t15_14.png" src="spain/html/es.ine.t15_14.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_14.png"><img alt="../_images/es.ine.t15_14.png" src="../_images/es.ine.t15_14.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with third level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1042,7 +1042,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with third level studies&#8221; percent of &#8220;Persons with first level studies&#8221; at one point:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with third level studies&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1052,7 +1052,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with third level studies&#8221; percent of &#8220;Persons with first level studies&#8221; within an area:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and with third level studies&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1077,9 +1077,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -1091,7 +1091,7 @@
 <div class="section" id="persons-aged-over-64-years-and-with-first-level-studies">
 <span id="es-ine-t15-9"></span><h3><a class="toc-backref" href="#id53">8.4.3.6. Persons aged over 64 years and with first level studies</a><a class="headerlink" href="#persons-aged-over-64-years-and-with-first-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_9.png"><img alt="spain/html/es.ine.t15_9.png" src="spain/html/es.ine.t15_9.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_9.png"><img alt="../_images/es.ine.t15_9.png" src="../_images/es.ine.t15_9.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged over 64 years and with first level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1160,7 +1160,7 @@
 <div class="section" id="persons-aged-over-64-years-and-with-second-level-studies">
 <span id="es-ine-t15-12"></span><h3><a class="toc-backref" href="#id54">8.4.3.7. Persons aged over 64 years and with second level studies</a><a class="headerlink" href="#persons-aged-over-64-years-and-with-second-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_12.png"><img alt="spain/html/es.ine.t15_12.png" src="spain/html/es.ine.t15_12.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_12.png"><img alt="../_images/es.ine.t15_12.png" src="../_images/es.ine.t15_12.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged over 64 years and with second level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1229,7 +1229,7 @@
 <div class="section" id="persons-aged-over-64-years-and-with-third-level-studies">
 <span id="es-ine-t15-15"></span><h3><a class="toc-backref" href="#id55">8.4.3.8. Persons aged over 64 years and with third level studies</a><a class="headerlink" href="#persons-aged-over-64-years-and-with-third-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_15.png"><img alt="spain/html/es.ine.t15_15.png" src="spain/html/es.ine.t15_15.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_15.png"><img alt="../_images/es.ine.t15_15.png" src="../_images/es.ine.t15_15.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged over 64 years and with third level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1298,7 +1298,7 @@
 <div class="section" id="persons-with-a-foreign-nationality-and-with-first-level-studies">
 <span id="es-ine-t14-6"></span><h3><a class="toc-backref" href="#id56">8.4.3.9. Persons with a foreign nationality and with first level studies</a><a class="headerlink" href="#persons-with-a-foreign-nationality-and-with-first-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_6.png"><img alt="spain/html/es.ine.t14_6.png" src="spain/html/es.ine.t14_6.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_6.png"><img alt="../_images/es.ine.t14_6.png" src="../_images/es.ine.t14_6.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with a foreign nationality and with first level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1367,7 +1367,7 @@
 <div class="section" id="persons-with-spanish-nationality-and-with-first-level-studies">
 <span id="es-ine-t14-5"></span><h3><a class="toc-backref" href="#id57">8.4.3.10. Persons with Spanish nationality and with first level studies</a><a class="headerlink" href="#persons-with-spanish-nationality-and-with-first-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_5.png"><img alt="spain/html/es.ine.t14_5.png" src="spain/html/es.ine.t14_5.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_5.png"><img alt="../_images/es.ine.t14_5.png" src="../_images/es.ine.t14_5.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with Spanish nationality and with first level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1437,7 +1437,7 @@
 <div class="section" id="persons-with-second-level-studies">
 <span id="es-ine-t12-4"></span><h2><a class="toc-backref" href="#id20">8.4.4. Persons with second level studies</a><a class="headerlink" href="#persons-with-second-level-studies" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t12_4.png"><img alt="spain/html/es.ine.t12_4.png" src="spain/html/es.ine.t12_4.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t12_4.png"><img alt="../_images/es.ine.t12_4.png" src="../_images/es.ine.t12_4.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with second level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1512,7 +1512,7 @@
 <div class="section" id="females-with-second-level-studies">
 <span id="es-ine-t13-8"></span><h3><a class="toc-backref" href="#id58">8.4.4.1. Females with second level studies</a><a class="headerlink" href="#females-with-second-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_8.png"><img alt="spain/html/es.ine.t13_8.png" src="spain/html/es.ine.t13_8.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_8.png"><img alt="../_images/es.ine.t13_8.png" src="../_images/es.ine.t13_8.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Females with second level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1532,7 +1532,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with second level studies&#8221; percent of &#8220;Persons with second level studies&#8221; at one point:</p>
+<p>Measure &#8220;Females with second level studies&#8221; percent of &#8220;Females&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1542,7 +1542,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with second level studies&#8221; percent of &#8220;Persons with second level studies&#8221; within an area:</p>
+<p>Measure &#8220;Females with second level studies&#8221; percent of &#8220;Females&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1567,9 +1567,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-4"><span class="std std-ref">Persons with second level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-4"><span class="std std-ref">Persons with second level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -1581,7 +1581,7 @@
 <div class="section" id="males-with-second-level-studies">
 <span id="es-ine-t13-7"></span><h3><a class="toc-backref" href="#id59">8.4.4.2. Males with second level studies</a><a class="headerlink" href="#males-with-second-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_7.png"><img alt="spain/html/es.ine.t13_7.png" src="spain/html/es.ine.t13_7.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_7.png"><img alt="../_images/es.ine.t13_7.png" src="../_images/es.ine.t13_7.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Males with second level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1601,7 +1601,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males with second level studies&#8221; percent of &#8220;Persons with second level studies&#8221; at one point:</p>
+<p>Measure &#8220;Males with second level studies&#8221; percent of &#8220;Males&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1611,7 +1611,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males with second level studies&#8221; percent of &#8220;Persons with second level studies&#8221; within an area:</p>
+<p>Measure &#8220;Males with second level studies&#8221; percent of &#8220;Males&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1636,9 +1636,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-4"><span class="std std-ref">Persons with second level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-4"><span class="std std-ref">Persons with second level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -1650,7 +1650,7 @@
 <div class="section" id="persons-with-a-foreign-nationality-and-with-second-level-studies">
 <span id="es-ine-t14-8"></span><h3><a class="toc-backref" href="#id60">8.4.4.3. Persons with a foreign nationality and with second level studies</a><a class="headerlink" href="#persons-with-a-foreign-nationality-and-with-second-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_8.png"><img alt="spain/html/es.ine.t14_8.png" src="spain/html/es.ine.t14_8.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_8.png"><img alt="../_images/es.ine.t14_8.png" src="../_images/es.ine.t14_8.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with a foreign nationality and with second level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1719,7 +1719,7 @@
 <div class="section" id="persons-with-spanish-nationality-and-with-second-level-studies">
 <span id="es-ine-t14-7"></span><h3><a class="toc-backref" href="#id61">8.4.4.4. Persons with Spanish nationality and with second level studies</a><a class="headerlink" href="#persons-with-spanish-nationality-and-with-second-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_7.png"><img alt="spain/html/es.ine.t14_7.png" src="spain/html/es.ine.t14_7.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_7.png"><img alt="../_images/es.ine.t14_7.png" src="../_images/es.ine.t14_7.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with Spanish nationality and with second level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1789,7 +1789,7 @@
 <div class="section" id="persons-with-third-level-studies">
 <span id="es-ine-t12-5"></span><h2><a class="toc-backref" href="#id25">8.4.5. Persons with third level studies</a><a class="headerlink" href="#persons-with-third-level-studies" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t12_5.png"><img alt="spain/html/es.ine.t12_5.png" src="spain/html/es.ine.t12_5.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t12_5.png"><img alt="../_images/es.ine.t12_5.png" src="../_images/es.ine.t12_5.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with third level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1864,7 +1864,7 @@
 <div class="section" id="females-with-third-level-studies">
 <span id="es-ine-t13-10"></span><h3><a class="toc-backref" href="#id62">8.4.5.1. Females with third level studies</a><a class="headerlink" href="#females-with-third-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_10.png"><img alt="spain/html/es.ine.t13_10.png" src="spain/html/es.ine.t13_10.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_10.png"><img alt="../_images/es.ine.t13_10.png" src="../_images/es.ine.t13_10.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Females with third level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1884,7 +1884,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; at one point:</p>
+<p>Measure &#8220;Females with third level studies&#8221; percent of &#8220;Females&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1894,7 +1894,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; within an area:</p>
+<p>Measure &#8220;Females with third level studies&#8221; percent of &#8220;Females&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1919,9 +1919,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-5"><span class="std std-ref">Persons with third level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-5"><span class="std std-ref">Persons with third level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -1933,7 +1933,7 @@
 <div class="section" id="males-with-third-level-studies">
 <span id="es-ine-t13-9"></span><h3><a class="toc-backref" href="#id63">8.4.5.2. Males with third level studies</a><a class="headerlink" href="#males-with-third-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_9.png"><img alt="spain/html/es.ine.t13_9.png" src="spain/html/es.ine.t13_9.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_9.png"><img alt="../_images/es.ine.t13_9.png" src="../_images/es.ine.t13_9.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Males with third level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -1953,7 +1953,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; at one point:</p>
+<p>Measure &#8220;Males with third level studies&#8221; percent of &#8220;Males&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1963,12 +1963,81 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; within an area:</p>
+<p>Measure &#8220;Males with third level studies&#8221; percent of &#8220;Males&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;es.ine.t13_9&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#es-ine-the-geom"><span class="std std-ref">Sección Censal</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-5"><span class="std std-ref">Persons with third level studies</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#es-ine-ine-license"><span class="std std-ref">National Statistics Institute (INE)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="persons-with-a-foreign-nationality-and-with-third-level-studies">
+<span id="es-ine-t14-10"></span><h3><a class="toc-backref" href="#id64">8.4.5.3. Persons with a foreign nationality and with third level studies</a><a class="headerlink" href="#persons-with-a-foreign-nationality-and-with-third-level-studies" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/es.ine.t14_10.png"><img alt="../_images/es.ine.t14_10.png" src="../_images/es.ine.t14_10.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Persons with a foreign nationality and with third level studies&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span>
+      <span class="s1">&#39;es.ine.t14_10&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Persons with a foreign nationality and with third level studies&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;es.ine.t14_10&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Persons with a foreign nationality and with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span>
+      <span class="s1">&#39;es.ine.t14_10&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Persons with a foreign nationality and with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;es.ine.t14_10&#39;</span><span class="p">,</span>
       <span class="s1">&#39;denominator&#39;</span>
     <span class="p">);</span>
 </pre></div>
@@ -1990,76 +2059,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-5"><span class="std std-ref">Persons with third level studies</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
-</tr>
-<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#es-ine-ine-license"><span class="std std-ref">National Statistics Institute (INE)</span></a></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="persons-with-a-foreign-nationality-and-with-third-level-studies">
-<span id="es-ine-t14-10"></span><h3><a class="toc-backref" href="#id64">8.4.5.3. Persons with a foreign nationality and with third level studies</a><a class="headerlink" href="#persons-with-a-foreign-nationality-and-with-third-level-studies" title="Permalink to this headline">¶</a></h3>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_10.png"><img alt="spain/html/es.ine.t14_10.png" src="spain/html/es.ine.t14_10.png" style="width: 100%;" /></a>
-</div>
-<p>Measure &#8220;Persons with a foreign nationality and with third level studies&#8221;  density per sq. kilometer  for one point:</p>
-<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
-    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
-      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span>
-      <span class="s1">&#39;es.ine.t14_10&#39;</span>
-    <span class="p">);</span>
-</pre></div>
-</div>
-<p>Measure &#8220;Persons with a foreign nationality and with third level studies&#8221; within an area:</p>
-<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
-    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
-      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
-      <span class="s1">&#39;es.ine.t14_10&#39;</span>
-    <span class="p">);</span>
-</pre></div>
-</div>
-<p>Measure &#8220;Persons with a foreign nationality and with third level studies&#8221; percent of &#8220;Persons with a foreign nationality&#8221; at one point:</p>
-<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
-    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
-      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span>
-      <span class="s1">&#39;es.ine.t14_10&#39;</span><span class="p">,</span>
-      <span class="s1">&#39;denominator&#39;</span>
-    <span class="p">);</span>
-</pre></div>
-</div>
-<p>Measure &#8220;Persons with a foreign nationality and with third level studies&#8221; percent of &#8220;Persons with a foreign nationality&#8221; within an area:</p>
-<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
-    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
-      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
-      <span class="s1">&#39;es.ine.t14_10&#39;</span><span class="p">,</span>
-      <span class="s1">&#39;denominator&#39;</span>
-    <span class="p">);</span>
-</pre></div>
-</div>
-<table border="1" class="docutils">
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Boundary</th>
-<th class="head">Time (default is latest)</th>
-</tr>
-</thead>
-<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#es-ine-the-geom"><span class="std std-ref">Sección Censal</span></a></p>
-</td>
-<td><p>2011</p>
-</td></tr>
-</tbody>
-</table><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-2"><span class="std std-ref">Persons with a foreign nationality</span></a></td>
-</tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-5"><span class="std std-ref">Persons with third level studies</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-2"><span class="std std-ref">Persons with a foreign nationality</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2071,7 +2071,7 @@
 <div class="section" id="persons-with-spanish-nationality-and-with-third-level-studies">
 <span id="es-ine-t14-9"></span><h3><a class="toc-backref" href="#id65">8.4.5.4. Persons with Spanish nationality and with third level studies</a><a class="headerlink" href="#persons-with-spanish-nationality-and-with-third-level-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_9.png"><img alt="spain/html/es.ine.t14_9.png" src="spain/html/es.ine.t14_9.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_9.png"><img alt="../_images/es.ine.t14_9.png" src="../_images/es.ine.t14_9.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with Spanish nationality and with third level studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2141,7 +2141,7 @@
 <div class="section" id="persons-without-information-regarding-their-educational-level-aged-under-16-years">
 <span id="es-ine-t12-6"></span><h2><a class="toc-backref" href="#id30">8.4.6. Persons without information regarding their educational level (aged under 16 years)</a><a class="headerlink" href="#persons-without-information-regarding-their-educational-level-aged-under-16-years" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t12_6.png"><img alt="spain/html/es.ine.t12_6.png" src="spain/html/es.ine.t12_6.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t12_6.png"><img alt="../_images/es.ine.t12_6.png" src="../_images/es.ine.t12_6.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2216,7 +2216,7 @@
 <div class="section" id="females-without-information-regarding-their-educational-level-under-16-years-of-age">
 <span id="es-ine-t13-12"></span><h3><a class="toc-backref" href="#id66">8.4.6.1. Females without information regarding their educational level  (under 16 years of age)</a><a class="headerlink" href="#females-without-information-regarding-their-educational-level-under-16-years-of-age" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_12.png"><img alt="spain/html/es.ine.t13_12.png" src="spain/html/es.ine.t13_12.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_12.png"><img alt="../_images/es.ine.t13_12.png" src="../_images/es.ine.t13_12.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Females without information regarding their educational level  (under 16 years of age)&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2236,7 +2236,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females without information regarding their educational level  (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; at one point:</p>
+<p>Measure &#8220;Females without information regarding their educational level  (under 16 years of age)&#8221; percent of &#8220;Females&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2246,7 +2246,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females without information regarding their educational level  (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; within an area:</p>
+<p>Measure &#8220;Females without information regarding their educational level  (under 16 years of age)&#8221; percent of &#8220;Females&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2271,9 +2271,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2285,7 +2285,7 @@
 <div class="section" id="males-without-information-regarding-their-educational-level-under-16-years-of-age">
 <span id="es-ine-t13-11"></span><h3><a class="toc-backref" href="#id67">8.4.6.2. Males without information regarding their educational level (under 16 years of age)</a><a class="headerlink" href="#males-without-information-regarding-their-educational-level-under-16-years-of-age" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_11.png"><img alt="spain/html/es.ine.t13_11.png" src="spain/html/es.ine.t13_11.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_11.png"><img alt="../_images/es.ine.t13_11.png" src="../_images/es.ine.t13_11.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Males without information regarding their educational level (under 16 years of age)&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2305,7 +2305,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; at one point:</p>
+<p>Measure &#8220;Males without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Males&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2315,7 +2315,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; within an area:</p>
+<p>Measure &#8220;Males without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Males&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2340,9 +2340,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2354,7 +2354,7 @@
 <div class="section" id="persons-with-a-foreign-nationality-without-information-regarding-their-educational-level-under-16-years-of-age">
 <span id="es-ine-t14-12"></span><h3><a class="toc-backref" href="#id68">8.4.6.3. Persons with a foreign nationality without information regarding their educational level (under 16 years of age)</a><a class="headerlink" href="#persons-with-a-foreign-nationality-without-information-regarding-their-educational-level-under-16-years-of-age" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_12.png"><img alt="spain/html/es.ine.t14_12.png" src="spain/html/es.ine.t14_12.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_12.png"><img alt="../_images/es.ine.t14_12.png" src="../_images/es.ine.t14_12.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with a foreign nationality without information regarding their educational level (under 16 years of age)&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2374,7 +2374,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with a foreign nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; at one point:</p>
+<p>Measure &#8220;Persons with a foreign nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons with Spanish nationality&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2384,7 +2384,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with a foreign nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; within an area:</p>
+<p>Measure &#8220;Persons with a foreign nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons with Spanish nationality&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2409,9 +2409,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2423,7 +2423,7 @@
 <div class="section" id="persons-with-spanish-nationality-without-information-regarding-their-educational-level-under-16-years-of-age">
 <span id="es-ine-t14-11"></span><h3><a class="toc-backref" href="#id69">8.4.6.4. Persons with Spanish nationality without information regarding their educational level (under 16 years of age)</a><a class="headerlink" href="#persons-with-spanish-nationality-without-information-regarding-their-educational-level-under-16-years-of-age" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_11.png"><img alt="spain/html/es.ine.t14_11.png" src="spain/html/es.ine.t14_11.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_11.png"><img alt="../_images/es.ine.t14_11.png" src="../_images/es.ine.t14_11.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with Spanish nationality without information regarding their educational level (under 16 years of age)&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2443,7 +2443,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; at one point:</p>
+<p>Measure &#8220;Persons with Spanish nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons with Spanish nationality&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2453,7 +2453,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; within an area:</p>
+<p>Measure &#8220;Persons with Spanish nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons with Spanish nationality&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2478,9 +2478,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2493,7 +2493,7 @@
 <div class="section" id="persons-without-studies">
 <span id="es-ine-t12-2"></span><h2><a class="toc-backref" href="#id35">8.4.7. Persons without studies</a><a class="headerlink" href="#persons-without-studies" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t12_2.png"><img alt="spain/html/es.ine.t12_2.png" src="spain/html/es.ine.t12_2.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t12_2.png"><img alt="../_images/es.ine.t12_2.png" src="../_images/es.ine.t12_2.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons without studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2570,7 +2570,7 @@
 <div class="section" id="females-without-studies">
 <span id="es-ine-t13-4"></span><h3><a class="toc-backref" href="#id70">8.4.7.1. Females without studies</a><a class="headerlink" href="#females-without-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_4.png"><img alt="spain/html/es.ine.t13_4.png" src="spain/html/es.ine.t13_4.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_4.png"><img alt="../_images/es.ine.t13_4.png" src="../_images/es.ine.t13_4.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Females without studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2590,7 +2590,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females without studies&#8221; percent of &#8220;Persons without studies&#8221; at one point:</p>
+<p>Measure &#8220;Females without studies&#8221; percent of &#8220;Females&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2600,7 +2600,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females without studies&#8221; percent of &#8220;Persons without studies&#8221; within an area:</p>
+<p>Measure &#8220;Females without studies&#8221; percent of &#8220;Females&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2625,9 +2625,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-2"><span class="std std-ref">Persons without studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-2"><span class="std std-ref">Persons without studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2639,7 +2639,7 @@
 <div class="section" id="males-without-studies">
 <span id="es-ine-t13-3"></span><h3><a class="toc-backref" href="#id71">8.4.7.2. Males without studies</a><a class="headerlink" href="#males-without-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t13_3.png"><img alt="spain/html/es.ine.t13_3.png" src="spain/html/es.ine.t13_3.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t13_3.png"><img alt="../_images/es.ine.t13_3.png" src="../_images/es.ine.t13_3.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Males without studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2708,7 +2708,7 @@
 <div class="section" id="persons-aged-between-16-included-and-64-included-years-and-without-studies">
 <span id="es-ine-t15-5"></span><h3><a class="toc-backref" href="#id72">8.4.7.3. Persons aged between 16 (included) and 64 (included) years and without studies</a><a class="headerlink" href="#persons-aged-between-16-included-and-64-included-years-and-without-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_5.png"><img alt="spain/html/es.ine.t15_5.png" src="spain/html/es.ine.t15_5.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_5.png"><img alt="../_images/es.ine.t15_5.png" src="../_images/es.ine.t15_5.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and without studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2777,7 +2777,7 @@
 <div class="section" id="persons-aged-over-64-years-and-without-studies">
 <span id="es-ine-t15-6"></span><h3><a class="toc-backref" href="#id73">8.4.7.4. Persons aged over 64 years and without studies</a><a class="headerlink" href="#persons-aged-over-64-years-and-without-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t15_6.png"><img alt="spain/html/es.ine.t15_6.png" src="spain/html/es.ine.t15_6.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t15_6.png"><img alt="../_images/es.ine.t15_6.png" src="../_images/es.ine.t15_6.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons aged over 64 years and without studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2846,7 +2846,7 @@
 <div class="section" id="persons-with-a-foreign-nationality-and-without-studies">
 <span id="es-ine-t14-4"></span><h3><a class="toc-backref" href="#id74">8.4.7.5. Persons with a foreign nationality and without studies</a><a class="headerlink" href="#persons-with-a-foreign-nationality-and-without-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_4.png"><img alt="spain/html/es.ine.t14_4.png" src="spain/html/es.ine.t14_4.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_4.png"><img alt="../_images/es.ine.t14_4.png" src="../_images/es.ine.t14_4.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with a foreign nationality and without studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
@@ -2915,7 +2915,7 @@
 <div class="section" id="persons-with-spanish-nationality-and-without-studies">
 <span id="es-ine-t14-3"></span><h3><a class="toc-backref" href="#id75">8.4.7.6. Persons with Spanish nationality and without studies</a><a class="headerlink" href="#persons-with-spanish-nationality-and-without-studies" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="spain/html/es.ine.t14_3.png"><img alt="spain/html/es.ine.t14_3.png" src="spain/html/es.ine.t14_3.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/es.ine.t14_3.png"><img alt="../_images/es.ine.t14_3.png" src="../_images/es.ine.t14_3.png" style="width: 100%;" /></a>
 </div>
 <p>Measure &#8220;Persons with Spanish nationality and without studies&#8221;  density per sq. kilometer  for one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>

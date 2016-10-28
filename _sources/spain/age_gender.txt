@@ -22,7 +22,7 @@ Total population
 
 
 
-.. figure:: html/es.ine.t1_1.png
+.. figure:: ../img/es.ine.t1_1.png
   :width: 100 %
   :align: center
 
@@ -64,8 +64,6 @@ Measure "Total population" within an area:
           ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
           'es.ine.t1_1'
         );
-
-
 
 
 
@@ -139,7 +137,7 @@ Females
 
 
 
-.. figure:: html/es.ine.t2_2.png
+.. figure:: ../img/es.ine.t2_2.png
   :width: 100 %
   :align: center
 
@@ -217,8 +215,6 @@ Measure "Females" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -288,7 +284,7 @@ Females between 16 (included) and 64 (included) years of age
 
 
 
-.. figure:: html/es.ine.t7_5.png
+.. figure:: ../img/es.ine.t7_5.png
   :width: 100 %
   :align: center
 
@@ -366,8 +362,6 @@ Measure "Females between 16 (included) and 64 (included) years of age" percent o
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -438,7 +432,7 @@ Females over 64 years of age
 
 
 
-.. figure:: html/es.ine.t7_6.png
+.. figure:: ../img/es.ine.t7_6.png
   :width: 100 %
   :align: center
 
@@ -486,7 +480,7 @@ Measure "Females over 64 years of age" within an area:
 
 
 
-Measure "Females over 64 years of age" percent of "Females" at one point:
+Measure "Females over 64 years of age" percent of "Persons aged over 64 years" at one point:
 
 .. code-block:: postgresql
 
@@ -499,7 +493,7 @@ Measure "Females over 64 years of age" percent of "Females" at one point:
       );
 
 
-Measure "Females over 64 years of age" percent of "Females" within an area:
+Measure "Females over 64 years of age" percent of "Persons aged over 64 years" within an area:
 
 .. code-block:: postgresql
 
@@ -510,8 +504,6 @@ Measure "Females over 64 years of age" percent of "Females" within an area:
         'es.ine.t7_6',
         'denominator'
       );
-
-
 
 
 
@@ -560,11 +552,11 @@ Measure "Females over 64 years of age" percent of "Females" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t3_3`
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t2_2`
 
 
 :Source:
@@ -588,7 +580,7 @@ Females under 16 years of age
 
 
 
-.. figure:: html/es.ine.t7_4.png
+.. figure:: ../img/es.ine.t7_4.png
   :width: 100 %
   :align: center
 
@@ -636,7 +628,7 @@ Measure "Females under 16 years of age" within an area:
 
 
 
-Measure "Females under 16 years of age" percent of "Females" at one point:
+Measure "Females under 16 years of age" percent of "Persons aged under 16 years" at one point:
 
 .. code-block:: postgresql
 
@@ -649,7 +641,7 @@ Measure "Females under 16 years of age" percent of "Females" at one point:
       );
 
 
-Measure "Females under 16 years of age" percent of "Females" within an area:
+Measure "Females under 16 years of age" percent of "Persons aged under 16 years" within an area:
 
 .. code-block:: postgresql
 
@@ -660,8 +652,6 @@ Measure "Females under 16 years of age" percent of "Females" within an area:
         'es.ine.t7_4',
         'denominator'
       );
-
-
 
 
 
@@ -710,11 +700,11 @@ Measure "Females under 16 years of age" percent of "Females" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t3_1`
 
 :Denominator:
 
-    :ref:`es.ine.t3_1`
+    :ref:`es.ine.t2_2`
 
 
 :Source:
@@ -738,7 +728,7 @@ Females with a foreign nationality
 
 
 
-.. figure:: html/es.ine.t8_4.png
+.. figure:: ../img/es.ine.t8_4.png
   :width: 100 %
   :align: center
 
@@ -816,8 +806,6 @@ Measure "Females with a foreign nationality" percent of "Females" within an area
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -888,7 +876,7 @@ Females with first level studies
 
 
 
-.. figure:: html/es.ine.t13_6.png
+.. figure:: ../img/es.ine.t13_6.png
   :width: 100 %
   :align: center
 
@@ -966,8 +954,6 @@ Measure "Females with first level studies" percent of "Persons with first level 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1038,7 +1024,7 @@ Females with second level studies
 
 
 
-.. figure:: html/es.ine.t13_8.png
+.. figure:: ../img/es.ine.t13_8.png
   :width: 100 %
   :align: center
 
@@ -1116,8 +1102,6 @@ Measure "Females with second level studies" percent of "Persons with second leve
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1188,7 +1172,7 @@ Females with Spanish nationality
 
 
 
-.. figure:: html/es.ine.t8_3.png
+.. figure:: ../img/es.ine.t8_3.png
   :width: 100 %
   :align: center
 
@@ -1266,8 +1250,6 @@ Measure "Females with Spanish nationality" percent of "Females" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1338,7 +1320,7 @@ Females with third level studies
 
 
 
-.. figure:: html/es.ine.t13_10.png
+.. figure:: ../img/es.ine.t13_10.png
   :width: 100 %
   :align: center
 
@@ -1386,7 +1368,7 @@ Measure "Females with third level studies" within an area:
 
 
 
-Measure "Females with third level studies" percent of "Females" at one point:
+Measure "Females with third level studies" percent of "Persons with third level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -1399,7 +1381,7 @@ Measure "Females with third level studies" percent of "Females" at one point:
       );
 
 
-Measure "Females with third level studies" percent of "Females" within an area:
+Measure "Females with third level studies" percent of "Persons with third level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -1410,8 +1392,6 @@ Measure "Females with third level studies" percent of "Females" within an area:
         'es.ine.t13_10',
         'denominator'
       );
-
-
 
 
 
@@ -1460,11 +1440,11 @@ Measure "Females with third level studies" percent of "Females" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t12_5`
 
 :Denominator:
 
-    :ref:`es.ine.t12_5`
+    :ref:`es.ine.t2_2`
 
 
 :Source:
@@ -1488,7 +1468,7 @@ Females without information regarding their educational level  (under 16 years o
 
 
 
-.. figure:: html/es.ine.t13_12.png
+.. figure:: ../img/es.ine.t13_12.png
   :width: 100 %
   :align: center
 
@@ -1566,8 +1546,6 @@ Measure "Females without information regarding their educational level  (under 1
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1638,7 +1616,7 @@ Females without studies
 
 
 
-.. figure:: html/es.ine.t13_4.png
+.. figure:: ../img/es.ine.t13_4.png
   :width: 100 %
   :align: center
 
@@ -1716,8 +1694,6 @@ Measure "Females without studies" percent of "Persons without studies" within an
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -1788,7 +1764,7 @@ Illiterate females
 
 
 
-.. figure:: html/es.ine.t13_2.png
+.. figure:: ../img/es.ine.t13_2.png
   :width: 100 %
   :align: center
 
@@ -1836,7 +1812,7 @@ Measure "Illiterate females" within an area:
 
 
 
-Measure "Illiterate females" percent of "Females" at one point:
+Measure "Illiterate females" percent of "Illiterate persons" at one point:
 
 .. code-block:: postgresql
 
@@ -1849,7 +1825,7 @@ Measure "Illiterate females" percent of "Females" at one point:
       );
 
 
-Measure "Illiterate females" percent of "Females" within an area:
+Measure "Illiterate females" percent of "Illiterate persons" within an area:
 
 .. code-block:: postgresql
 
@@ -1860,8 +1836,6 @@ Measure "Illiterate females" percent of "Females" within an area:
         'es.ine.t13_2',
         'denominator'
       );
-
-
 
 
 
@@ -1910,11 +1884,11 @@ Measure "Illiterate females" percent of "Females" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t12_1`
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t2_2`
 
 
 :Source:
@@ -1943,7 +1917,7 @@ Males
 
 
 
-.. figure:: html/es.ine.t2_1.png
+.. figure:: ../img/es.ine.t2_1.png
   :width: 100 %
   :align: center
 
@@ -2021,8 +1995,6 @@ Measure "Males" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2092,7 +2064,7 @@ Illiterate males
 
 
 
-.. figure:: html/es.ine.t13_1.png
+.. figure:: ../img/es.ine.t13_1.png
   :width: 100 %
   :align: center
 
@@ -2140,7 +2112,7 @@ Measure "Illiterate males" within an area:
 
 
 
-Measure "Illiterate males" percent of "Males" at one point:
+Measure "Illiterate males" percent of "Illiterate persons" at one point:
 
 .. code-block:: postgresql
 
@@ -2153,7 +2125,7 @@ Measure "Illiterate males" percent of "Males" at one point:
       );
 
 
-Measure "Illiterate males" percent of "Males" within an area:
+Measure "Illiterate males" percent of "Illiterate persons" within an area:
 
 .. code-block:: postgresql
 
@@ -2164,8 +2136,6 @@ Measure "Illiterate males" percent of "Males" within an area:
         'es.ine.t13_1',
         'denominator'
       );
-
-
 
 
 
@@ -2214,11 +2184,11 @@ Measure "Illiterate males" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_1`
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -2242,7 +2212,7 @@ Males between 16 (included) and 64 (included) years of age
 
 
 
-.. figure:: html/es.ine.t7_2.png
+.. figure:: ../img/es.ine.t7_2.png
   :width: 100 %
   :align: center
 
@@ -2320,8 +2290,6 @@ Measure "Males between 16 (included) and 64 (included) years of age" percent of 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2392,7 +2360,7 @@ Males over 64 years of age
 
 
 
-.. figure:: html/es.ine.t7_3.png
+.. figure:: ../img/es.ine.t7_3.png
   :width: 100 %
   :align: center
 
@@ -2440,7 +2408,7 @@ Measure "Males over 64 years of age" within an area:
 
 
 
-Measure "Males over 64 years of age" percent of "Males" at one point:
+Measure "Males over 64 years of age" percent of "Persons aged over 64 years" at one point:
 
 .. code-block:: postgresql
 
@@ -2453,7 +2421,7 @@ Measure "Males over 64 years of age" percent of "Males" at one point:
       );
 
 
-Measure "Males over 64 years of age" percent of "Males" within an area:
+Measure "Males over 64 years of age" percent of "Persons aged over 64 years" within an area:
 
 .. code-block:: postgresql
 
@@ -2464,8 +2432,6 @@ Measure "Males over 64 years of age" percent of "Males" within an area:
         'es.ine.t7_3',
         'denominator'
       );
-
-
 
 
 
@@ -2514,11 +2480,11 @@ Measure "Males over 64 years of age" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t3_3`
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -2542,7 +2508,7 @@ Males under 16 years of age
 
 
 
-.. figure:: html/es.ine.t7_1.png
+.. figure:: ../img/es.ine.t7_1.png
   :width: 100 %
   :align: center
 
@@ -2590,7 +2556,7 @@ Measure "Males under 16 years of age" within an area:
 
 
 
-Measure "Males under 16 years of age" percent of "Males" at one point:
+Measure "Males under 16 years of age" percent of "Persons aged under 16 years" at one point:
 
 .. code-block:: postgresql
 
@@ -2603,7 +2569,7 @@ Measure "Males under 16 years of age" percent of "Males" at one point:
       );
 
 
-Measure "Males under 16 years of age" percent of "Males" within an area:
+Measure "Males under 16 years of age" percent of "Persons aged under 16 years" within an area:
 
 .. code-block:: postgresql
 
@@ -2614,8 +2580,6 @@ Measure "Males under 16 years of age" percent of "Males" within an area:
         'es.ine.t7_1',
         'denominator'
       );
-
-
 
 
 
@@ -2664,11 +2628,11 @@ Measure "Males under 16 years of age" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t3_1`
 
 :Denominator:
 
-    :ref:`es.ine.t3_1`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -2692,7 +2656,7 @@ Males with a foreign nationality
 
 
 
-.. figure:: html/es.ine.t8_2.png
+.. figure:: ../img/es.ine.t8_2.png
   :width: 100 %
   :align: center
 
@@ -2770,8 +2734,6 @@ Measure "Males with a foreign nationality" percent of "Males" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2842,7 +2804,7 @@ Males with first level studies
 
 
 
-.. figure:: html/es.ine.t13_5.png
+.. figure:: ../img/es.ine.t13_5.png
   :width: 100 %
   :align: center
 
@@ -2920,8 +2882,6 @@ Measure "Males with first level studies" percent of "Persons with first level st
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -2992,7 +2952,7 @@ Males with second level studies
 
 
 
-.. figure:: html/es.ine.t13_7.png
+.. figure:: ../img/es.ine.t13_7.png
   :width: 100 %
   :align: center
 
@@ -3070,8 +3030,6 @@ Measure "Males with second level studies" percent of "Persons with second level 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3142,7 +3100,7 @@ Males with Spanish nationality
 
 
 
-.. figure:: html/es.ine.t8_1.png
+.. figure:: ../img/es.ine.t8_1.png
   :width: 100 %
   :align: center
 
@@ -3220,8 +3178,6 @@ Measure "Males with Spanish nationality" percent of "Males" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3292,7 +3248,7 @@ Males with third level studies
 
 
 
-.. figure:: html/es.ine.t13_9.png
+.. figure:: ../img/es.ine.t13_9.png
   :width: 100 %
   :align: center
 
@@ -3340,7 +3296,7 @@ Measure "Males with third level studies" within an area:
 
 
 
-Measure "Males with third level studies" percent of "Males" at one point:
+Measure "Males with third level studies" percent of "Persons with third level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -3353,7 +3309,7 @@ Measure "Males with third level studies" percent of "Males" at one point:
       );
 
 
-Measure "Males with third level studies" percent of "Males" within an area:
+Measure "Males with third level studies" percent of "Persons with third level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -3364,8 +3320,6 @@ Measure "Males with third level studies" percent of "Males" within an area:
         'es.ine.t13_9',
         'denominator'
       );
-
-
 
 
 
@@ -3414,11 +3368,11 @@ Measure "Males with third level studies" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_5`
 
 :Denominator:
 
-    :ref:`es.ine.t12_5`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -3442,7 +3396,7 @@ Males without information regarding their educational level (under 16 years of a
 
 
 
-.. figure:: html/es.ine.t13_11.png
+.. figure:: ../img/es.ine.t13_11.png
   :width: 100 %
   :align: center
 
@@ -3490,7 +3444,7 @@ Measure "Males without information regarding their educational level (under 16 y
 
 
 
-Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" at one point:
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
 
 .. code-block:: postgresql
 
@@ -3503,7 +3457,7 @@ Measure "Males without information regarding their educational level (under 16 y
       );
 
 
-Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" within an area:
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
 
 .. code-block:: postgresql
 
@@ -3514,8 +3468,6 @@ Measure "Males without information regarding their educational level (under 16 y
         'es.ine.t13_11',
         'denominator'
       );
-
-
 
 
 
@@ -3564,11 +3516,11 @@ Measure "Males without information regarding their educational level (under 16 y
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_6`
 
 :Denominator:
 
-    :ref:`es.ine.t12_6`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -3592,7 +3544,7 @@ Males without studies
 
 
 
-.. figure:: html/es.ine.t13_3.png
+.. figure:: ../img/es.ine.t13_3.png
   :width: 100 %
   :align: center
 
@@ -3664,8 +3616,6 @@ Measure "Males without studies" percent of "Persons without studies" within an a
         'es.ine.t13_3',
         'denominator'
       );
-
-
 
 
 
@@ -3745,7 +3695,7 @@ Persons aged between 16 (included) and 64 (included) years
 
 
 
-.. figure:: html/es.ine.t3_2.png
+.. figure:: ../img/es.ine.t3_2.png
   :width: 100 %
   :align: center
 
@@ -3823,8 +3773,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years" percent of 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -3894,7 +3842,7 @@ Females between 16 (included) and 64 (included) years of age
 
 
 
-.. figure:: html/es.ine.t7_5.png
+.. figure:: ../img/es.ine.t7_5.png
   :width: 100 %
   :align: center
 
@@ -3972,8 +3920,6 @@ Measure "Females between 16 (included) and 64 (included) years of age" percent o
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4044,7 +3990,7 @@ Males between 16 (included) and 64 (included) years of age
 
 
 
-.. figure:: html/es.ine.t7_2.png
+.. figure:: ../img/es.ine.t7_2.png
   :width: 100 %
   :align: center
 
@@ -4122,8 +4068,6 @@ Measure "Males between 16 (included) and 64 (included) years of age" percent of 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4194,7 +4138,7 @@ Persons aged between 16 (included) and 64 (included) years and illiterate
 
 
 
-.. figure:: html/es.ine.t15_2.png
+.. figure:: ../img/es.ine.t15_2.png
   :width: 100 %
   :align: center
 
@@ -4242,7 +4186,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Illiterate persons" at one point:
 
 .. code-block:: postgresql
 
@@ -4255,7 +4199,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Illiterate persons" within an area:
 
 .. code-block:: postgresql
 
@@ -4266,8 +4210,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
         'es.ine.t15_2',
         'denominator'
       );
-
-
 
 
 
@@ -4316,11 +4258,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_1`
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t3_2`
 
 
 :Source:
@@ -4344,7 +4286,7 @@ Persons aged between 16 (included) and 64 (included) years and with first level 
 
 
 
-.. figure:: html/es.ine.t15_8.png
+.. figure:: ../img/es.ine.t15_8.png
   :width: 100 %
   :align: center
 
@@ -4422,8 +4364,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with fir
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4494,7 +4434,7 @@ Persons aged between 16 (included) and 64 (included) years and with second level
 
 
 
-.. figure:: html/es.ine.t15_11.png
+.. figure:: ../img/es.ine.t15_11.png
   :width: 100 %
   :align: center
 
@@ -4572,8 +4512,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with sec
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4644,7 +4582,7 @@ Persons aged between 16 (included) and 64 (included) years and with third level 
 
 
 
-.. figure:: html/es.ine.t15_14.png
+.. figure:: ../img/es.ine.t15_14.png
   :width: 100 %
   :align: center
 
@@ -4722,8 +4660,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with thi
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4794,7 +4730,7 @@ Persons aged between 16 (included) and 64 (included) years and without studies
 
 
 
-.. figure:: html/es.ine.t15_5.png
+.. figure:: ../img/es.ine.t15_5.png
   :width: 100 %
   :align: center
 
@@ -4872,8 +4808,6 @@ Measure "Persons aged between 16 (included) and 64 (included) years and without 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -4944,7 +4878,7 @@ Persons with a foreign nationality and between 16 (included) and 64 (included) y
 
 
 
-.. figure:: html/es.ine.t9_4.png
+.. figure:: ../img/es.ine.t9_4.png
   :width: 100 %
   :align: center
 
@@ -5022,8 +4956,6 @@ Measure "Persons with a foreign nationality and between 16 (included) and 64 (in
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -5094,7 +5026,7 @@ Persons with marital status: divorced and between 16 (included) and 64 (included
 
 
 
-.. figure:: html/es.ine.t11_11.png
+.. figure:: ../img/es.ine.t11_11.png
   :width: 100 %
   :align: center
 
@@ -5142,7 +5074,7 @@ Measure "Persons with marital status: divorced and between 16 (included) and 64 
 
 
 
-Measure "Persons with marital status: divorced and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+Measure "Persons with marital status: divorced and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: divorced" at one point:
 
 .. code-block:: postgresql
 
@@ -5155,7 +5087,7 @@ Measure "Persons with marital status: divorced and between 16 (included) and 64 
       );
 
 
-Measure "Persons with marital status: divorced and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+Measure "Persons with marital status: divorced and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: divorced" within an area:
 
 .. code-block:: postgresql
 
@@ -5166,8 +5098,6 @@ Measure "Persons with marital status: divorced and between 16 (included) and 64 
         'es.ine.t11_11',
         'denominator'
       );
-
-
 
 
 
@@ -5216,11 +5146,11 @@ Measure "Persons with marital status: divorced and between 16 (included) and 64 
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t10_4`
 
 :Denominator:
 
-    :ref:`es.ine.t10_4`
+    :ref:`es.ine.t3_2`
 
 
 :Source:
@@ -5244,7 +5174,7 @@ Persons with marital status: married and between 16 (included) and 64 (included)
 
 
 
-.. figure:: html/es.ine.t11_5.png
+.. figure:: ../img/es.ine.t11_5.png
   :width: 100 %
   :align: center
 
@@ -5322,8 +5252,6 @@ Measure "Persons with marital status: married and between 16 (included) and 64 (
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -5394,7 +5322,7 @@ Persons with marital status: separated and between 16 (included) and 64 (include
 
 
 
-.. figure:: html/es.ine.t11_8.png
+.. figure:: ../img/es.ine.t11_8.png
   :width: 100 %
   :align: center
 
@@ -5442,7 +5370,7 @@ Measure "Persons with marital status: separated and between 16 (included) and 64
 
 
 
-Measure "Persons with marital status: separated and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+Measure "Persons with marital status: separated and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: separated" at one point:
 
 .. code-block:: postgresql
 
@@ -5455,7 +5383,7 @@ Measure "Persons with marital status: separated and between 16 (included) and 64
       );
 
 
-Measure "Persons with marital status: separated and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+Measure "Persons with marital status: separated and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: separated" within an area:
 
 .. code-block:: postgresql
 
@@ -5466,8 +5394,6 @@ Measure "Persons with marital status: separated and between 16 (included) and 64
         'es.ine.t11_8',
         'denominator'
       );
-
-
 
 
 
@@ -5516,11 +5442,11 @@ Measure "Persons with marital status: separated and between 16 (included) and 64
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t10_3`
 
 :Denominator:
 
-    :ref:`es.ine.t10_3`
+    :ref:`es.ine.t3_2`
 
 
 :Source:
@@ -5544,7 +5470,7 @@ Persons with marital status: single and between 16 (included) and 64 (included) 
 
 
 
-.. figure:: html/es.ine.t11_2.png
+.. figure:: ../img/es.ine.t11_2.png
   :width: 100 %
   :align: center
 
@@ -5592,7 +5518,7 @@ Measure "Persons with marital status: single and between 16 (included) and 64 (i
 
 
 
-Measure "Persons with marital status: single and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+Measure "Persons with marital status: single and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: single " at one point:
 
 .. code-block:: postgresql
 
@@ -5605,7 +5531,7 @@ Measure "Persons with marital status: single and between 16 (included) and 64 (i
       );
 
 
-Measure "Persons with marital status: single and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+Measure "Persons with marital status: single and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: single " within an area:
 
 .. code-block:: postgresql
 
@@ -5616,8 +5542,6 @@ Measure "Persons with marital status: single and between 16 (included) and 64 (i
         'es.ine.t11_2',
         'denominator'
       );
-
-
 
 
 
@@ -5666,11 +5590,11 @@ Measure "Persons with marital status: single and between 16 (included) and 64 (i
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t10_1`
 
 :Denominator:
 
-    :ref:`es.ine.t10_1`
+    :ref:`es.ine.t3_2`
 
 
 :Source:
@@ -5694,7 +5618,7 @@ Persons with marital status: widowed and between 16 (included) and 64 (included)
 
 
 
-.. figure:: html/es.ine.t11_14.png
+.. figure:: ../img/es.ine.t11_14.png
   :width: 100 %
   :align: center
 
@@ -5742,7 +5666,7 @@ Measure "Persons with marital status: widowed and between 16 (included) and 64 (
 
 
 
-Measure "Persons with marital status: widowed and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+Measure "Persons with marital status: widowed and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: widowed" at one point:
 
 .. code-block:: postgresql
 
@@ -5755,7 +5679,7 @@ Measure "Persons with marital status: widowed and between 16 (included) and 64 (
       );
 
 
-Measure "Persons with marital status: widowed and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+Measure "Persons with marital status: widowed and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: widowed" within an area:
 
 .. code-block:: postgresql
 
@@ -5766,8 +5690,6 @@ Measure "Persons with marital status: widowed and between 16 (included) and 64 (
         'es.ine.t11_14',
         'denominator'
       );
-
-
 
 
 
@@ -5816,11 +5738,11 @@ Measure "Persons with marital status: widowed and between 16 (included) and 64 (
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t10_5`
 
 :Denominator:
 
-    :ref:`es.ine.t10_5`
+    :ref:`es.ine.t3_2`
 
 
 :Source:
@@ -5844,7 +5766,7 @@ Persons with Spanish nationality and between 16 (included) and 64 (included) yea
 
 
 
-.. figure:: html/es.ine.t9_3.png
+.. figure:: ../img/es.ine.t9_3.png
   :width: 100 %
   :align: center
 
@@ -5916,8 +5838,6 @@ Measure "Persons with Spanish nationality and between 16 (included) and 64 (incl
         'es.ine.t9_3',
         'denominator'
       );
-
-
 
 
 
@@ -5997,7 +5917,7 @@ Persons aged over 64 years
 
 
 
-.. figure:: html/es.ine.t3_3.png
+.. figure:: ../img/es.ine.t3_3.png
   :width: 100 %
   :align: center
 
@@ -6075,8 +5995,6 @@ Measure "Persons aged over 64 years" percent of "Total population" within an are
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -6146,7 +6064,7 @@ Females over 64 years of age
 
 
 
-.. figure:: html/es.ine.t7_6.png
+.. figure:: ../img/es.ine.t7_6.png
   :width: 100 %
   :align: center
 
@@ -6194,7 +6112,7 @@ Measure "Females over 64 years of age" within an area:
 
 
 
-Measure "Females over 64 years of age" percent of "Females" at one point:
+Measure "Females over 64 years of age" percent of "Persons aged over 64 years" at one point:
 
 .. code-block:: postgresql
 
@@ -6207,7 +6125,7 @@ Measure "Females over 64 years of age" percent of "Females" at one point:
       );
 
 
-Measure "Females over 64 years of age" percent of "Females" within an area:
+Measure "Females over 64 years of age" percent of "Persons aged over 64 years" within an area:
 
 .. code-block:: postgresql
 
@@ -6218,8 +6136,6 @@ Measure "Females over 64 years of age" percent of "Females" within an area:
         'es.ine.t7_6',
         'denominator'
       );
-
-
 
 
 
@@ -6268,11 +6184,11 @@ Measure "Females over 64 years of age" percent of "Females" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t3_3`
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t2_2`
 
 
 :Source:
@@ -6296,7 +6212,7 @@ Males over 64 years of age
 
 
 
-.. figure:: html/es.ine.t7_3.png
+.. figure:: ../img/es.ine.t7_3.png
   :width: 100 %
   :align: center
 
@@ -6344,7 +6260,7 @@ Measure "Males over 64 years of age" within an area:
 
 
 
-Measure "Males over 64 years of age" percent of "Males" at one point:
+Measure "Males over 64 years of age" percent of "Persons aged over 64 years" at one point:
 
 .. code-block:: postgresql
 
@@ -6357,7 +6273,7 @@ Measure "Males over 64 years of age" percent of "Males" at one point:
       );
 
 
-Measure "Males over 64 years of age" percent of "Males" within an area:
+Measure "Males over 64 years of age" percent of "Persons aged over 64 years" within an area:
 
 .. code-block:: postgresql
 
@@ -6368,8 +6284,6 @@ Measure "Males over 64 years of age" percent of "Males" within an area:
         'es.ine.t7_3',
         'denominator'
       );
-
-
 
 
 
@@ -6418,11 +6332,11 @@ Measure "Males over 64 years of age" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t3_3`
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -6446,7 +6360,7 @@ Persons aged over 64 years and illiterate
 
 
 
-.. figure:: html/es.ine.t15_3.png
+.. figure:: ../img/es.ine.t15_3.png
   :width: 100 %
   :align: center
 
@@ -6524,8 +6438,6 @@ Measure "Persons aged over 64 years and illiterate" percent of "Persons aged ove
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -6596,7 +6508,7 @@ Persons aged over 64 years and with first level studies
 
 
 
-.. figure:: html/es.ine.t15_9.png
+.. figure:: ../img/es.ine.t15_9.png
   :width: 100 %
   :align: center
 
@@ -6644,7 +6556,7 @@ Measure "Persons aged over 64 years and with first level studies" within an area
 
 
 
-Measure "Persons aged over 64 years and with first level studies" percent of "Persons with first level studies" at one point:
+Measure "Persons aged over 64 years and with first level studies" percent of "Persons aged over 64 years" at one point:
 
 .. code-block:: postgresql
 
@@ -6657,7 +6569,7 @@ Measure "Persons aged over 64 years and with first level studies" percent of "Pe
       );
 
 
-Measure "Persons aged over 64 years and with first level studies" percent of "Persons with first level studies" within an area:
+Measure "Persons aged over 64 years and with first level studies" percent of "Persons aged over 64 years" within an area:
 
 .. code-block:: postgresql
 
@@ -6668,8 +6580,6 @@ Measure "Persons aged over 64 years and with first level studies" percent of "Pe
         'es.ine.t15_9',
         'denominator'
       );
-
-
 
 
 
@@ -6718,11 +6628,11 @@ Measure "Persons aged over 64 years and with first level studies" percent of "Pe
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t3_3`
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t12_3`
 
 
 :Source:
@@ -6746,7 +6656,7 @@ Persons aged over 64 years and with second level studies
 
 
 
-.. figure:: html/es.ine.t15_12.png
+.. figure:: ../img/es.ine.t15_12.png
   :width: 100 %
   :align: center
 
@@ -6794,7 +6704,7 @@ Measure "Persons aged over 64 years and with second level studies" within an are
 
 
 
-Measure "Persons aged over 64 years and with second level studies" percent of "Persons with first level studies" at one point:
+Measure "Persons aged over 64 years and with second level studies" percent of "Persons aged over 64 years" at one point:
 
 .. code-block:: postgresql
 
@@ -6807,7 +6717,7 @@ Measure "Persons aged over 64 years and with second level studies" percent of "P
       );
 
 
-Measure "Persons aged over 64 years and with second level studies" percent of "Persons with first level studies" within an area:
+Measure "Persons aged over 64 years and with second level studies" percent of "Persons aged over 64 years" within an area:
 
 .. code-block:: postgresql
 
@@ -6818,8 +6728,6 @@ Measure "Persons aged over 64 years and with second level studies" percent of "P
         'es.ine.t15_12',
         'denominator'
       );
-
-
 
 
 
@@ -6868,11 +6776,11 @@ Measure "Persons aged over 64 years and with second level studies" percent of "P
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t3_3`
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t12_3`
 
 
 :Source:
@@ -6896,7 +6804,7 @@ Persons aged over 64 years and with third level studies
 
 
 
-.. figure:: html/es.ine.t15_15.png
+.. figure:: ../img/es.ine.t15_15.png
   :width: 100 %
   :align: center
 
@@ -6944,7 +6852,7 @@ Measure "Persons aged over 64 years and with third level studies" within an area
 
 
 
-Measure "Persons aged over 64 years and with third level studies" percent of "Persons with first level studies" at one point:
+Measure "Persons aged over 64 years and with third level studies" percent of "Persons aged over 64 years" at one point:
 
 .. code-block:: postgresql
 
@@ -6957,7 +6865,7 @@ Measure "Persons aged over 64 years and with third level studies" percent of "Pe
       );
 
 
-Measure "Persons aged over 64 years and with third level studies" percent of "Persons with first level studies" within an area:
+Measure "Persons aged over 64 years and with third level studies" percent of "Persons aged over 64 years" within an area:
 
 .. code-block:: postgresql
 
@@ -6968,8 +6876,6 @@ Measure "Persons aged over 64 years and with third level studies" percent of "Pe
         'es.ine.t15_15',
         'denominator'
       );
-
-
 
 
 
@@ -7018,11 +6924,11 @@ Measure "Persons aged over 64 years and with third level studies" percent of "Pe
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t3_3`
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t12_3`
 
 
 :Source:
@@ -7046,7 +6952,7 @@ Persons aged over 64 years and without studies
 
 
 
-.. figure:: html/es.ine.t15_6.png
+.. figure:: ../img/es.ine.t15_6.png
   :width: 100 %
   :align: center
 
@@ -7094,7 +7000,7 @@ Measure "Persons aged over 64 years and without studies" within an area:
 
 
 
-Measure "Persons aged over 64 years and without studies" percent of "Persons without studies" at one point:
+Measure "Persons aged over 64 years and without studies" percent of "Persons aged over 64 years" at one point:
 
 .. code-block:: postgresql
 
@@ -7107,7 +7013,7 @@ Measure "Persons aged over 64 years and without studies" percent of "Persons wit
       );
 
 
-Measure "Persons aged over 64 years and without studies" percent of "Persons without studies" within an area:
+Measure "Persons aged over 64 years and without studies" percent of "Persons aged over 64 years" within an area:
 
 .. code-block:: postgresql
 
@@ -7118,8 +7024,6 @@ Measure "Persons aged over 64 years and without studies" percent of "Persons wit
         'es.ine.t15_6',
         'denominator'
       );
-
-
 
 
 
@@ -7168,11 +7072,11 @@ Measure "Persons aged over 64 years and without studies" percent of "Persons wit
 
 :Denominator:
 
-    :ref:`es.ine.t12_2`
+    :ref:`es.ine.t3_3`
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t12_2`
 
 
 :Source:
@@ -7196,7 +7100,7 @@ Persons with a foreign nationality and over 64 years of age
 
 
 
-.. figure:: html/es.ine.t9_6.png
+.. figure:: ../img/es.ine.t9_6.png
   :width: 100 %
   :align: center
 
@@ -7274,8 +7178,6 @@ Measure "Persons with a foreign nationality and over 64 years of age" percent of
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -7346,7 +7248,7 @@ Persons with marital status: divorced and over 64 years of age
 
 
 
-.. figure:: html/es.ine.t11_12.png
+.. figure:: ../img/es.ine.t11_12.png
   :width: 100 %
   :align: center
 
@@ -7424,8 +7326,6 @@ Measure "Persons with marital status: divorced and over 64 years of age" percent
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -7496,7 +7396,7 @@ Persons with marital status: married and over 64 years of age
 
 
 
-.. figure:: html/es.ine.t11_6.png
+.. figure:: ../img/es.ine.t11_6.png
   :width: 100 %
   :align: center
 
@@ -7574,8 +7474,6 @@ Measure "Persons with marital status: married and over 64 years of age" percent 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -7646,7 +7544,7 @@ Persons with marital status: separated and over 64 years of age
 
 
 
-.. figure:: html/es.ine.t11_9.png
+.. figure:: ../img/es.ine.t11_9.png
   :width: 100 %
   :align: center
 
@@ -7694,7 +7592,7 @@ Measure "Persons with marital status: separated and over 64 years of age" within
 
 
 
-Measure "Persons with marital status: separated and over 64 years of age" percent of "Persons aged over 64 years" at one point:
+Measure "Persons with marital status: separated and over 64 years of age" percent of "Persons with marital status: separated" at one point:
 
 .. code-block:: postgresql
 
@@ -7707,7 +7605,7 @@ Measure "Persons with marital status: separated and over 64 years of age" percen
       );
 
 
-Measure "Persons with marital status: separated and over 64 years of age" percent of "Persons aged over 64 years" within an area:
+Measure "Persons with marital status: separated and over 64 years of age" percent of "Persons with marital status: separated" within an area:
 
 .. code-block:: postgresql
 
@@ -7718,8 +7616,6 @@ Measure "Persons with marital status: separated and over 64 years of age" percen
         'es.ine.t11_9',
         'denominator'
       );
-
-
 
 
 
@@ -7768,11 +7664,11 @@ Measure "Persons with marital status: separated and over 64 years of age" percen
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t10_3`
 
 :Denominator:
 
-    :ref:`es.ine.t10_3`
+    :ref:`es.ine.t3_3`
 
 
 :Source:
@@ -7796,7 +7692,7 @@ Persons with marital status: single and over 64 years of age
 
 
 
-.. figure:: html/es.ine.t11_3.png
+.. figure:: ../img/es.ine.t11_3.png
   :width: 100 %
   :align: center
 
@@ -7874,8 +7770,6 @@ Measure "Persons with marital status: single and over 64 years of age" percent o
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -7946,7 +7840,7 @@ Persons with marital status: widowed and over 64 years of age
 
 
 
-.. figure:: html/es.ine.t11_15.png
+.. figure:: ../img/es.ine.t11_15.png
   :width: 100 %
   :align: center
 
@@ -7994,7 +7888,7 @@ Measure "Persons with marital status: widowed and over 64 years of age" within a
 
 
 
-Measure "Persons with marital status: widowed and over 64 years of age" percent of "Persons aged over 64 years" at one point:
+Measure "Persons with marital status: widowed and over 64 years of age" percent of "Persons with marital status: widowed" at one point:
 
 .. code-block:: postgresql
 
@@ -8007,7 +7901,7 @@ Measure "Persons with marital status: widowed and over 64 years of age" percent 
       );
 
 
-Measure "Persons with marital status: widowed and over 64 years of age" percent of "Persons aged over 64 years" within an area:
+Measure "Persons with marital status: widowed and over 64 years of age" percent of "Persons with marital status: widowed" within an area:
 
 .. code-block:: postgresql
 
@@ -8018,8 +7912,6 @@ Measure "Persons with marital status: widowed and over 64 years of age" percent 
         'es.ine.t11_15',
         'denominator'
       );
-
-
 
 
 
@@ -8068,11 +7960,11 @@ Measure "Persons with marital status: widowed and over 64 years of age" percent 
 
 :Denominator:
 
-    :ref:`es.ine.t3_3`
+    :ref:`es.ine.t10_5`
 
 :Denominator:
 
-    :ref:`es.ine.t10_5`
+    :ref:`es.ine.t3_3`
 
 
 :Source:
@@ -8096,7 +7988,7 @@ Persons with Spanish nationality and over 64 years of age
 
 
 
-.. figure:: html/es.ine.t9_5.png
+.. figure:: ../img/es.ine.t9_5.png
   :width: 100 %
   :align: center
 
@@ -8168,8 +8060,6 @@ Measure "Persons with Spanish nationality and over 64 years of age" percent of "
         'es.ine.t9_5',
         'denominator'
       );
-
-
 
 
 
@@ -8249,7 +8139,7 @@ Persons aged under 16 years
 
 
 
-.. figure:: html/es.ine.t3_1.png
+.. figure:: ../img/es.ine.t3_1.png
   :width: 100 %
   :align: center
 
@@ -8327,8 +8217,6 @@ Measure "Persons aged under 16 years" percent of "Total population" within an ar
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -8398,7 +8286,7 @@ Females under 16 years of age
 
 
 
-.. figure:: html/es.ine.t7_4.png
+.. figure:: ../img/es.ine.t7_4.png
   :width: 100 %
   :align: center
 
@@ -8446,7 +8334,7 @@ Measure "Females under 16 years of age" within an area:
 
 
 
-Measure "Females under 16 years of age" percent of "Females" at one point:
+Measure "Females under 16 years of age" percent of "Persons aged under 16 years" at one point:
 
 .. code-block:: postgresql
 
@@ -8459,7 +8347,7 @@ Measure "Females under 16 years of age" percent of "Females" at one point:
       );
 
 
-Measure "Females under 16 years of age" percent of "Females" within an area:
+Measure "Females under 16 years of age" percent of "Persons aged under 16 years" within an area:
 
 .. code-block:: postgresql
 
@@ -8470,8 +8358,6 @@ Measure "Females under 16 years of age" percent of "Females" within an area:
         'es.ine.t7_4',
         'denominator'
       );
-
-
 
 
 
@@ -8520,11 +8406,11 @@ Measure "Females under 16 years of age" percent of "Females" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t3_1`
 
 :Denominator:
 
-    :ref:`es.ine.t3_1`
+    :ref:`es.ine.t2_2`
 
 
 :Source:
@@ -8548,7 +8434,7 @@ Males under 16 years of age
 
 
 
-.. figure:: html/es.ine.t7_1.png
+.. figure:: ../img/es.ine.t7_1.png
   :width: 100 %
   :align: center
 
@@ -8596,7 +8482,7 @@ Measure "Males under 16 years of age" within an area:
 
 
 
-Measure "Males under 16 years of age" percent of "Males" at one point:
+Measure "Males under 16 years of age" percent of "Persons aged under 16 years" at one point:
 
 .. code-block:: postgresql
 
@@ -8609,7 +8495,7 @@ Measure "Males under 16 years of age" percent of "Males" at one point:
       );
 
 
-Measure "Males under 16 years of age" percent of "Males" within an area:
+Measure "Males under 16 years of age" percent of "Persons aged under 16 years" within an area:
 
 .. code-block:: postgresql
 
@@ -8620,8 +8506,6 @@ Measure "Males under 16 years of age" percent of "Males" within an area:
         'es.ine.t7_1',
         'denominator'
       );
-
-
 
 
 
@@ -8670,11 +8554,11 @@ Measure "Males under 16 years of age" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t3_1`
 
 :Denominator:
 
-    :ref:`es.ine.t3_1`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -8700,7 +8584,7 @@ Persons with a foreign nationality and under 16 years of age
 
 
 
-.. figure:: html/es.ine.t9_2.png
+.. figure:: ../img/es.ine.t9_2.png
   :width: 100 %
   :align: center
 
@@ -8778,8 +8662,6 @@ Measure "Persons with a foreign nationality and under 16 years of age" percent o
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -8850,7 +8732,7 @@ Persons with marital status: divorced and under 16 years of age
 
 
 
-.. figure:: html/es.ine.t11_10.png
+.. figure:: ../img/es.ine.t11_10.png
   :width: 100 %
   :align: center
 
@@ -8898,7 +8780,7 @@ Measure "Persons with marital status: divorced and under 16 years of age" within
 
 
 
-Measure "Persons with marital status: divorced and under 16 years of age" percent of "Persons with marital status: divorced" at one point:
+Measure "Persons with marital status: divorced and under 16 years of age" percent of "Persons aged under 16 years" at one point:
 
 .. code-block:: postgresql
 
@@ -8911,7 +8793,7 @@ Measure "Persons with marital status: divorced and under 16 years of age" percen
       );
 
 
-Measure "Persons with marital status: divorced and under 16 years of age" percent of "Persons with marital status: divorced" within an area:
+Measure "Persons with marital status: divorced and under 16 years of age" percent of "Persons aged under 16 years" within an area:
 
 .. code-block:: postgresql
 
@@ -8922,8 +8804,6 @@ Measure "Persons with marital status: divorced and under 16 years of age" percen
         'es.ine.t11_10',
         'denominator'
       );
-
-
 
 
 
@@ -8972,11 +8852,11 @@ Measure "Persons with marital status: divorced and under 16 years of age" percen
 
 :Denominator:
 
-    :ref:`es.ine.t10_4`
+    :ref:`es.ine.t3_1`
 
 :Denominator:
 
-    :ref:`es.ine.t3_1`
+    :ref:`es.ine.t10_4`
 
 
 :Source:
@@ -9000,7 +8880,7 @@ Persons with marital status: married and under 16 years of age
 
 
 
-.. figure:: html/es.ine.t11_4.png
+.. figure:: ../img/es.ine.t11_4.png
   :width: 100 %
   :align: center
 
@@ -9078,8 +8958,6 @@ Measure "Persons with marital status: married and under 16 years of age" percent
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9150,7 +9028,7 @@ Persons with marital status: separated and under 16 years of age
 
 
 
-.. figure:: html/es.ine.t11_7.png
+.. figure:: ../img/es.ine.t11_7.png
   :width: 100 %
   :align: center
 
@@ -9228,8 +9106,6 @@ Measure "Persons with marital status: separated and under 16 years of age" perce
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9300,7 +9176,7 @@ Persons with marital status: single and under 16 years of age
 
 
 
-.. figure:: html/es.ine.t11_1.png
+.. figure:: ../img/es.ine.t11_1.png
   :width: 100 %
   :align: center
 
@@ -9348,7 +9224,7 @@ Measure "Persons with marital status: single and under 16 years of age" within a
 
 
 
-Measure "Persons with marital status: single and under 16 years of age" percent of "Persons with marital status: single " at one point:
+Measure "Persons with marital status: single and under 16 years of age" percent of "Persons aged under 16 years" at one point:
 
 .. code-block:: postgresql
 
@@ -9361,7 +9237,7 @@ Measure "Persons with marital status: single and under 16 years of age" percent 
       );
 
 
-Measure "Persons with marital status: single and under 16 years of age" percent of "Persons with marital status: single " within an area:
+Measure "Persons with marital status: single and under 16 years of age" percent of "Persons aged under 16 years" within an area:
 
 .. code-block:: postgresql
 
@@ -9372,8 +9248,6 @@ Measure "Persons with marital status: single and under 16 years of age" percent 
         'es.ine.t11_1',
         'denominator'
       );
-
-
 
 
 
@@ -9422,11 +9296,11 @@ Measure "Persons with marital status: single and under 16 years of age" percent 
 
 :Denominator:
 
-    :ref:`es.ine.t10_1`
+    :ref:`es.ine.t3_1`
 
 :Denominator:
 
-    :ref:`es.ine.t3_1`
+    :ref:`es.ine.t10_1`
 
 
 :Source:
@@ -9450,7 +9324,7 @@ Persons with marital status: widowed and under 16 years of age
 
 
 
-.. figure:: html/es.ine.t11_13.png
+.. figure:: ../img/es.ine.t11_13.png
   :width: 100 %
   :align: center
 
@@ -9528,8 +9402,6 @@ Measure "Persons with marital status: widowed and under 16 years of age" percent
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9600,7 +9472,7 @@ Persons with Spanish nationality and under 16 years of age
 
 
 
-.. figure:: html/es.ine.t9_1.png
+.. figure:: ../img/es.ine.t9_1.png
   :width: 100 %
   :align: center
 
@@ -9678,8 +9550,6 @@ Measure "Persons with Spanish nationality and under 16 years of age" percent of 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9750,7 +9620,7 @@ Persons without information regarding their educational level (aged under 16 yea
 
 
 
-.. figure:: html/es.ine.t12_6.png
+.. figure:: ../img/es.ine.t12_6.png
   :width: 100 %
   :align: center
 
@@ -9828,8 +9698,6 @@ Measure "Persons without information regarding their educational level (aged und
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -9899,7 +9767,7 @@ Females without information regarding their educational level  (under 16 years o
 
 
 
-.. figure:: html/es.ine.t13_12.png
+.. figure:: ../img/es.ine.t13_12.png
   :width: 100 %
   :align: center
 
@@ -9977,8 +9845,6 @@ Measure "Females without information regarding their educational level  (under 1
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10049,7 +9915,7 @@ Males without information regarding their educational level (under 16 years of a
 
 
 
-.. figure:: html/es.ine.t13_11.png
+.. figure:: ../img/es.ine.t13_11.png
   :width: 100 %
   :align: center
 
@@ -10127,8 +9993,6 @@ Measure "Males without information regarding their educational level (under 16 y
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10199,7 +10063,7 @@ Persons with a foreign nationality without information regarding their education
 
 
 
-.. figure:: html/es.ine.t14_12.png
+.. figure:: ../img/es.ine.t14_12.png
   :width: 100 %
   :align: center
 
@@ -10277,8 +10141,6 @@ Measure "Persons with a foreign nationality without information regarding their 
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10349,7 +10211,7 @@ Persons with Spanish nationality without information regarding their educational
 
 
 
-.. figure:: html/es.ine.t14_11.png
+.. figure:: ../img/es.ine.t14_11.png
   :width: 100 %
   :align: center
 
@@ -10421,8 +10283,6 @@ Measure "Persons with Spanish nationality without information regarding their ed
         'es.ine.t14_11',
         'denominator'
       );
-
-
 
 
 
@@ -10543,7 +10403,7 @@ Population age 0 to 4
 
 
 
-.. figure:: html/es.ine.pop_0_4.png
+.. figure:: ../img/es.ine.pop_0_4.png
   :width: 100 %
   :align: center
 
@@ -10621,8 +10481,6 @@ Measure "Population age 0 to 4" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10689,7 +10547,7 @@ Population age 5 to 9
 
 
 
-.. figure:: html/es.ine.pop_5_9.png
+.. figure:: ../img/es.ine.pop_5_9.png
   :width: 100 %
   :align: center
 
@@ -10767,8 +10625,6 @@ Measure "Population age 5 to 9" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10835,7 +10691,7 @@ Population age 10 to 14
 
 
 
-.. figure:: html/es.ine.pop_10_14.png
+.. figure:: ../img/es.ine.pop_10_14.png
   :width: 100 %
   :align: center
 
@@ -10913,8 +10769,6 @@ Measure "Population age 10 to 14" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -10981,7 +10835,7 @@ Population age 15 to 19
 
 
 
-.. figure:: html/es.ine.pop_15_19.png
+.. figure:: ../img/es.ine.pop_15_19.png
   :width: 100 %
   :align: center
 
@@ -11059,8 +10913,6 @@ Measure "Population age 15 to 19" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -11127,7 +10979,7 @@ Population age 20 to 24
 
 
 
-.. figure:: html/es.ine.pop_20_24.png
+.. figure:: ../img/es.ine.pop_20_24.png
   :width: 100 %
   :align: center
 
@@ -11205,8 +11057,6 @@ Measure "Population age 20 to 24" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -11273,7 +11123,7 @@ Population age 25 to 29
 
 
 
-.. figure:: html/es.ine.pop_25_29.png
+.. figure:: ../img/es.ine.pop_25_29.png
   :width: 100 %
   :align: center
 
@@ -11351,8 +11201,6 @@ Measure "Population age 25 to 29" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -11419,7 +11267,7 @@ Population age 30 to 34
 
 
 
-.. figure:: html/es.ine.pop_30_34.png
+.. figure:: ../img/es.ine.pop_30_34.png
   :width: 100 %
   :align: center
 
@@ -11497,8 +11345,6 @@ Measure "Population age 30 to 34" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -11565,7 +11411,7 @@ Population age 35 to 39
 
 
 
-.. figure:: html/es.ine.pop_35_39.png
+.. figure:: ../img/es.ine.pop_35_39.png
   :width: 100 %
   :align: center
 
@@ -11643,8 +11489,6 @@ Measure "Population age 35 to 39" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -11711,7 +11555,7 @@ Population age 40 to 44
 
 
 
-.. figure:: html/es.ine.pop_40_44.png
+.. figure:: ../img/es.ine.pop_40_44.png
   :width: 100 %
   :align: center
 
@@ -11789,8 +11633,6 @@ Measure "Population age 40 to 44" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -11857,7 +11699,7 @@ Population age 45 to 49
 
 
 
-.. figure:: html/es.ine.pop_45_49.png
+.. figure:: ../img/es.ine.pop_45_49.png
   :width: 100 %
   :align: center
 
@@ -11935,8 +11777,6 @@ Measure "Population age 45 to 49" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -12003,7 +11843,7 @@ Population age 50 to 54
 
 
 
-.. figure:: html/es.ine.pop_50_54.png
+.. figure:: ../img/es.ine.pop_50_54.png
   :width: 100 %
   :align: center
 
@@ -12081,8 +11921,6 @@ Measure "Population age 50 to 54" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -12149,7 +11987,7 @@ Population age 55 to 59
 
 
 
-.. figure:: html/es.ine.pop_55_59.png
+.. figure:: ../img/es.ine.pop_55_59.png
   :width: 100 %
   :align: center
 
@@ -12227,8 +12065,6 @@ Measure "Population age 55 to 59" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -12295,7 +12131,7 @@ Population age 60 to 64
 
 
 
-.. figure:: html/es.ine.pop_60_64.png
+.. figure:: ../img/es.ine.pop_60_64.png
   :width: 100 %
   :align: center
 
@@ -12373,8 +12209,6 @@ Measure "Population age 60 to 64" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -12441,7 +12275,7 @@ Population age 65 to 69
 
 
 
-.. figure:: html/es.ine.pop_65_69.png
+.. figure:: ../img/es.ine.pop_65_69.png
   :width: 100 %
   :align: center
 
@@ -12519,8 +12353,6 @@ Measure "Population age 65 to 69" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -12587,7 +12419,7 @@ Population age 70 to 74
 
 
 
-.. figure:: html/es.ine.pop_70_74.png
+.. figure:: ../img/es.ine.pop_70_74.png
   :width: 100 %
   :align: center
 
@@ -12665,8 +12497,6 @@ Measure "Population age 70 to 74" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -12733,7 +12563,7 @@ Population age 75 to 79
 
 
 
-.. figure:: html/es.ine.pop_75_79.png
+.. figure:: ../img/es.ine.pop_75_79.png
   :width: 100 %
   :align: center
 
@@ -12811,8 +12641,6 @@ Measure "Population age 75 to 79" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -12879,7 +12707,7 @@ Population age 80 to 84
 
 
 
-.. figure:: html/es.ine.pop_80_84.png
+.. figure:: ../img/es.ine.pop_80_84.png
   :width: 100 %
   :align: center
 
@@ -12957,8 +12785,6 @@ Measure "Population age 80 to 84" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -13025,7 +12851,7 @@ Population age 85 to 89
 
 
 
-.. figure:: html/es.ine.pop_85_89.png
+.. figure:: ../img/es.ine.pop_85_89.png
   :width: 100 %
   :align: center
 
@@ -13103,8 +12929,6 @@ Measure "Population age 85 to 89" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -13171,7 +12995,7 @@ Population age 90 to 94
 
 
 
-.. figure:: html/es.ine.pop_90_94.png
+.. figure:: ../img/es.ine.pop_90_94.png
   :width: 100 %
   :align: center
 
@@ -13249,8 +13073,6 @@ Measure "Population age 90 to 94" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -13317,7 +13139,7 @@ Population age 95 to 99
 
 
 
-.. figure:: html/es.ine.pop_95_99.png
+.. figure:: ../img/es.ine.pop_95_99.png
   :width: 100 %
   :align: center
 
@@ -13395,8 +13217,6 @@ Measure "Population age 95 to 99" percent of "Total population" within an area:
 
 
 
-
-
 .. raw:: html
 
    <table border="1" class="docutils">
@@ -13463,7 +13283,7 @@ Population age 100 or more
 
 
 
-.. figure:: html/es.ine.pop_100_more.png
+.. figure:: ../img/es.ine.pop_100_more.png
   :width: 100 %
   :align: center
 
@@ -13535,8 +13355,6 @@ Measure "Population age 100 or more" percent of "Total population" within an are
         'es.ine.pop_100_more',
         'denominator'
       );
-
-
 
 
 

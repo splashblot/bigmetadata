@@ -1,0 +1,5279 @@
+
+
+.. Commerce & Economy:
+
+Commerce & Economy
+===========================================================================
+
+Broader measures of economic and commercial activity.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _es.lacaixa.industrial_construction_businesses:
+
+Industrial and construction businesses
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.industrial_construction_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Number of industrial businesses (industry and construction) subject to business tax (IAE). The number of industrial businesses is practically equivalent to the number of industrial establishments in each municipality. Industrial businesses are broken down into industrial and construction.These comprise 1) energy and water; 2) extraction and processing of energy minerals and derived products, chemical industry; 3) metal processing industries, precision mechanics; 4) manufacturing; 5) construction.
+
+
+
+
+
+Measure "Industrial and construction businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.industrial_construction_businesses'
+      );
+
+
+
+
+
+Measure "Industrial and construction businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.industrial_construction_businesses'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Industrial and construction businesses
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.lacaixa.construction_businesses:
+
+Construction businesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.construction_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Construction businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.construction_businesses'
+      );
+
+
+
+
+
+Measure "Construction businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.construction_businesses'
+        );
+
+
+
+
+
+
+Measure "Construction businesses" percent of "Industrial and construction businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.construction_businesses',
+        'denominator'
+      );
+
+
+Measure "Construction businesses" percent of "Industrial and construction businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.construction_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.industrial_construction_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.industrial_businesses:
+
+Industrial businesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.industrial_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of businesses involved in industry, comprising 1) energy and water; 2) extraction and processing of energy minerals and derived products, chemical industry; 3) metal processing industries, precision mechanics; 4) manufacturing.
+
+
+
+
+
+Measure "Industrial businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.industrial_businesses'
+      );
+
+
+
+
+
+Measure "Industrial businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.industrial_businesses'
+        );
+
+
+
+
+
+
+Measure "Industrial businesses" percent of "Industrial and construction businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.industrial_businesses',
+        'denominator'
+      );
+
+
+Measure "Industrial businesses" percent of "Industrial and construction businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.industrial_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.industrial_construction_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Industrial businesses
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.lacaixa.chemical_energy_extraction_businesses:
+
+Chemical and energy extraction businesses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.chemical_energy_extraction_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Chemical and energy extraction businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.chemical_energy_extraction_businesses'
+      );
+
+
+
+
+
+Measure "Chemical and energy extraction businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.chemical_energy_extraction_businesses'
+        );
+
+
+
+
+
+
+Measure "Chemical and energy extraction businesses" percent of "Industrial businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.chemical_energy_extraction_businesses',
+        'denominator'
+      );
+
+
+Measure "Chemical and energy extraction businesses" percent of "Industrial businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.chemical_energy_extraction_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.industrial_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.energy_water_businesses:
+
+Energy & water businesses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.energy_water_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Energy & water businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.energy_water_businesses'
+      );
+
+
+
+
+
+Measure "Energy & water businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.energy_water_businesses'
+        );
+
+
+
+
+
+
+Measure "Energy & water businesses" percent of "Industrial businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.energy_water_businesses',
+        'denominator'
+      );
+
+
+Measure "Energy & water businesses" percent of "Industrial businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.energy_water_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.industrial_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.manufacturing_businesses:
+
+Manufacturing businesses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.manufacturing_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Manufacturing businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.manufacturing_businesses'
+      );
+
+
+
+
+
+Measure "Manufacturing businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.manufacturing_businesses'
+        );
+
+
+
+
+
+
+Measure "Manufacturing businesses" percent of "Industrial businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.manufacturing_businesses',
+        'denominator'
+      );
+
+
+Measure "Manufacturing businesses" percent of "Industrial businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.manufacturing_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.industrial_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.metal_precision_mechanics_businesses:
+
+Metal processing and precision mechanics businesses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.metal_precision_mechanics_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Metal processing and precision mechanics businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.metal_precision_mechanics_businesses'
+      );
+
+
+
+
+
+Measure "Metal processing and precision mechanics businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.metal_precision_mechanics_businesses'
+        );
+
+
+
+
+
+
+Measure "Metal processing and precision mechanics businesses" percent of "Industrial businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.metal_precision_mechanics_businesses',
+        'denominator'
+      );
+
+
+Measure "Metal processing and precision mechanics businesses" percent of "Industrial businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.metal_precision_mechanics_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.industrial_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _es.lacaixa.malls:
+
+Malls
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.malls.png
+  :width: 100 %
+  :align: center
+
+
+
+The Spanish Association of Shopping Centers defines the Mall as a "set of independent shops, planned and developed by one or more entities, whose size, business mix, common services and complementary activities are related to its environment. It has unified management. " According to the criteria of the Association, consideration Shopping Mall does not require a minimum surface for sales. The typology of centers established is based on gross leasable area (GLA) and ranges from the "urban shopping mall" (up 4,999 m2) to "very large mall" (over 79,999 m2).
+
+
+
+
+
+Measure "Malls"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.malls'
+      );
+
+
+
+
+
+Measure "Malls" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.malls'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _es.lacaixa.buses:
+
+Number of Buses
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.buses.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Number of Buses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.buses'
+      );
+
+
+
+
+
+Measure "Number of Buses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.buses'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _es.lacaixa.industrial_tractors:
+
+Number of Industrial Tractors
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.industrial_tractors.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Number of Industrial Tractors"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.industrial_tractors'
+      );
+
+
+
+
+
+Measure "Number of Industrial Tractors" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.industrial_tractors'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _es.lacaixa.automobiles:
+
+Number of automobiles
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.automobiles.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Number of automobiles"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.automobiles'
+      );
+
+
+
+
+
+Measure "Number of automobiles" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.automobiles'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _es.lacaixa.telephones:
+
+Number of fixed telephone lines (landlines)
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.telephones.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Number of fixed telephone lines (landlines)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.telephones'
+      );
+
+
+
+
+
+Measure "Number of fixed telephone lines (landlines)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.telephones'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _es.lacaixa.motor_vehicles:
+
+Number of motor vehicles
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.motor_vehicles.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Number of motor vehicles"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.motor_vehicles'
+      );
+
+
+
+
+
+Measure "Number of motor vehicles" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.motor_vehicles'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _es.lacaixa.motorcycles:
+
+Number of motorcycles
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.motorcycles.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Number of motorcycles"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.motorcycles'
+      );
+
+
+
+
+
+Measure "Number of motorcycles" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.motorcycles'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _es.lacaixa.trucks_vans:
+
+Number of trucks and vans
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.trucks_vans.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Number of trucks and vans"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.trucks_vans'
+      );
+
+
+
+
+
+Measure "Number of trucks and vans" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.trucks_vans'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _es.lacaixa.retail_businesses:
+
+Retail trade businesses
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.retail_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Number of retail trade businesses subject to business tax (IAE). These businesses are identified with the National Classification of Economic Activities (NACE 93) considered retail. For statistical purposes, the number of commercial businesses can be considered an approach to trade, of which there is no census data (a commercial establishment may have establishments one or more activities or business licenses).
+
+
+
+
+
+Measure "Retail trade businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.retail_businesses'
+      );
+
+
+
+
+
+Measure "Retail trade businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.retail_businesses'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Retail trade businesses
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.lacaixa.food_retail_businesses:
+
+Food retail trade businesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.food_retail_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+All retail businesses involved in the trade of food
+
+
+
+
+
+Measure "Food retail trade businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.food_retail_businesses'
+      );
+
+
+
+
+
+Measure "Food retail trade businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.food_retail_businesses'
+        );
+
+
+
+
+
+
+Measure "Food retail trade businesses" percent of "Retail trade businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.food_retail_businesses',
+        'denominator'
+      );
+
+
+Measure "Food retail trade businesses" percent of "Retail trade businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.food_retail_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.retail_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Food retail trade businesses
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.lacaixa.supermarkets:
+
+Supermarkets
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.supermarkets.png
+  :width: 100 %
+  :align: center
+
+
+
+Supermarkets together include any kind of food and beverage products in self-service establishments whose floor area is less than 120 square meters (self), from 120 to 399 square meters (small supermarkets) and greater than or equal to 400 meters square (large supermarkets).
+
+
+
+
+
+Measure "Supermarkets"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.supermarkets'
+      );
+
+
+
+
+
+Measure "Supermarkets" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.supermarkets'
+        );
+
+
+
+
+
+
+Measure "Supermarkets" percent of "Food retail trade businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.supermarkets',
+        'denominator'
+      );
+
+
+Measure "Supermarkets" percent of "Food retail trade businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.supermarkets',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.food_retail_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.trad_food_retail_businesses:
+
+Traditional food retail trade businesses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.trad_food_retail_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Traditional trade of "Food" includes all food products purchased in the traditional retail trade (greengrocers, butchers, fishmongers, bakeries, tobacconists, drinks [alcoholic and not alcoholic] and other food).
+
+
+
+
+
+Measure "Traditional food retail trade businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.trad_food_retail_businesses'
+      );
+
+
+
+
+
+Measure "Traditional food retail trade businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.trad_food_retail_businesses'
+        );
+
+
+
+
+
+
+Measure "Traditional food retail trade businesses" percent of "Food retail trade businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.trad_food_retail_businesses',
+        'denominator'
+      );
+
+
+Measure "Traditional food retail trade businesses" percent of "Food retail trade businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.trad_food_retail_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.food_retail_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _es.lacaixa.mixed_integrated_trade_businesses:
+
+Mixed or integrated trade businesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.mixed_integrated_trade_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Mixed or integrated trade businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.mixed_integrated_trade_businesses'
+      );
+
+
+
+
+
+Measure "Mixed or integrated trade businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.mixed_integrated_trade_businesses'
+        );
+
+
+
+
+
+
+Measure "Mixed or integrated trade businesses" percent of "Retail trade businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.mixed_integrated_trade_businesses',
+        'denominator'
+      );
+
+
+Measure "Mixed or integrated trade businesses" percent of "Retail trade businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.mixed_integrated_trade_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.retail_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Mixed or integrated trade businesses
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.lacaixa.department_stores:
+
+Department stores
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.department_stores.png
+  :width: 100 %
+  :align: center
+
+
+
+Establishments that offer a relatively wide and shallow assortment of consumer goods, with a range of low prices and low service. The sales area is organized into various sections and self-service or preselection.
+
+
+
+
+
+Measure "Department stores"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.department_stores'
+      );
+
+
+
+
+
+Measure "Department stores" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.department_stores'
+        );
+
+
+
+
+
+
+Measure "Department stores" percent of "Mixed or integrated trade businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.department_stores',
+        'denominator'
+      );
+
+
+Measure "Department stores" percent of "Mixed or integrated trade businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.department_stores',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.mixed_integrated_trade_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.street_vendors:
+
+Street vendors and flea markets
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.street_vendors.png
+  :width: 100 %
+  :align: center
+
+
+
+Street trade and retail trade activities that are characterized by not having a permanent establishment. The number of activities of street trade and markets are underestimated, because in this type of economic activity registration in the IAE scoped and payment of "provincial quota" instead of "municipal tax" is possible.
+
+
+
+
+
+Measure "Street vendors and flea markets"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.street_vendors'
+      );
+
+
+
+
+
+Measure "Street vendors and flea markets" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.street_vendors'
+        );
+
+
+
+
+
+
+Measure "Street vendors and flea markets" percent of "Mixed or integrated trade businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.street_vendors',
+        'denominator'
+      );
+
+
+Measure "Street vendors and flea markets" percent of "Mixed or integrated trade businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.street_vendors',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.mixed_integrated_trade_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.superstores:
+
+Superstores ("Hypermarkets")
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.superstores.png
+  :width: 100 %
+  :align: center
+
+
+
+Establishments that offer self-service a wide range of food products and non-food commonly consumed. They have their own parking lots and other miscellaneous services to customers. A hypermarket concept is well accepted internationally as follows: a) surface exceeding 2,500 m2 sale; b) sale in self-service consumer products, predominantly food; c) practice a policy of margins and reduced price; d) extended hours, usually uninterrupted; e) ample free parking.
+
+
+
+
+
+Measure "Superstores ("Hypermarkets")"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.superstores'
+      );
+
+
+
+
+
+Measure "Superstores ("Hypermarkets")" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.superstores'
+        );
+
+
+
+
+
+
+Measure "Superstores ("Hypermarkets")" percent of "Mixed or integrated trade businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.superstores',
+        'denominator'
+      );
+
+
+Measure "Superstores ("Hypermarkets")" percent of "Mixed or integrated trade businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.superstores',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.mixed_integrated_trade_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _es.lacaixa.non_food_retail_businesses:
+
+Retail trade businesses not involved in food
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.non_food_retail_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+All retail businesses not involved in the trade of food
+
+
+
+
+
+Measure "Retail trade businesses not involved in food"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.non_food_retail_businesses'
+      );
+
+
+
+
+
+Measure "Retail trade businesses not involved in food" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.non_food_retail_businesses'
+        );
+
+
+
+
+
+
+Measure "Retail trade businesses not involved in food" percent of "Retail trade businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.non_food_retail_businesses',
+        'denominator'
+      );
+
+
+Measure "Retail trade businesses not involved in food" percent of "Retail trade businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.non_food_retail_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.retail_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Retail trade businesses not involved in food
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.lacaixa.clothing_footwear_businesses:
+
+Clothing and footwear retail businesses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.clothing_footwear_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Retail businesses selling garments and clothing accessories for men, women and children, footwear, clothing and footwear, leather and leather goods.
+
+
+
+
+
+Measure "Clothing and footwear retail businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.clothing_footwear_businesses'
+      );
+
+
+
+
+
+Measure "Clothing and footwear retail businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.clothing_footwear_businesses'
+        );
+
+
+
+
+
+
+Measure "Clothing and footwear retail businesses" percent of "Retail trade businesses not involved in food" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.clothing_footwear_businesses',
+        'denominator'
+      );
+
+
+Measure "Clothing and footwear retail businesses" percent of "Retail trade businesses not involved in food" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.clothing_footwear_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.non_food_retail_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.home_goods_businesses:
+
+Home goods retail businesses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.home_goods_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Retail businesses selling furniture, home textiles, household appliances, household electrical equipment, cookware, utensils, crockery and glassware, household cleaning products and cleaning supplies; garden tools
+
+
+
+
+
+Measure "Home goods retail businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.home_goods_businesses'
+      );
+
+
+
+
+
+Measure "Home goods retail businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.home_goods_businesses'
+        );
+
+
+
+
+
+
+Measure "Home goods retail businesses" percent of "Retail trade businesses not involved in food" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.home_goods_businesses',
+        'denominator'
+      );
+
+
+Measure "Home goods retail businesses" percent of "Retail trade businesses not involved in food" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.home_goods_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.non_food_retail_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.other_non_food_retail_businesses:
+
+Other non-food retail businesses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/es.lacaixa.other_non_food_retail_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Retail businesses selling radio recreational items, TV, videos, CDs, sporting goods,. toys, musical instruments, photography, etc., stationery, books, newspapers and magazines, perfumes, cosmetics, watches, jewelery; smoking articles, travel goods, plants and flowers and pets, etc
+
+
+
+
+
+Measure "Other non-food retail businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.other_non_food_retail_businesses'
+      );
+
+
+
+
+
+Measure "Other non-food retail businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.other_non_food_retail_businesses'
+        );
+
+
+
+
+
+
+Measure "Other non-food retail businesses" percent of "Retail trade businesses not involved in food" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.other_non_food_retail_businesses',
+        'denominator'
+      );
+
+
+Measure "Other non-food retail businesses" percent of "Retail trade businesses not involved in food" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.other_non_food_retail_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.non_food_retail_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _es.lacaixa.wholesale_businesses:
+
+Wholesale businesses
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.lacaixa.wholesale_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Number of businesses in wholesale trade.  Derived from business tax (IAE), which constitute a good approximation of the number of existing in each municipality.
+
+
+
+
+
+Measure "Wholesale businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.wholesale_businesses'
+      );
+
+
+
+
+
+Measure "Wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.wholesale_businesses'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Wholesale businesses
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.lacaixa.consumer_durable_businesses:
+
+Consumer durables wholesale businesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.consumer_durable_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Wholesale businsses involved in consumer durables (motor vehicles, furniture, appliances, electronics, hardware, etc.)
+
+
+
+
+
+Measure "Consumer durables wholesale businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.consumer_durable_businesses'
+      );
+
+
+
+
+
+Measure "Consumer durables wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.consumer_durable_businesses'
+        );
+
+
+
+
+
+
+Measure "Consumer durables wholesale businesses" percent of "Wholesale businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.consumer_durable_businesses',
+        'denominator'
+      );
+
+
+Measure "Consumer durables wholesale businesses" percent of "Wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.consumer_durable_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.wholesale_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.food_drink_tobacco_businesses:
+
+Food, drink and tobacco wholesale businesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.food_drink_tobacco_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Food, drink and tobacco wholesale businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.food_drink_tobacco_businesses'
+      );
+
+
+
+
+
+Measure "Food, drink and tobacco wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.food_drink_tobacco_businesses'
+        );
+
+
+
+
+
+
+Measure "Food, drink and tobacco wholesale businesses" percent of "Wholesale businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.food_drink_tobacco_businesses',
+        'denominator'
+      );
+
+
+Measure "Food, drink and tobacco wholesale businesses" percent of "Wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.food_drink_tobacco_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.wholesale_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.other_wholesale_businesses:
+
+Other wholesale businesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.other_wholesale_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Other wholesale businesses not specified above (export trade, toys and sporting goods, etc.).
+
+
+
+
+
+Measure "Other wholesale businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.other_wholesale_businesses'
+      );
+
+
+
+
+
+Measure "Other wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.other_wholesale_businesses'
+        );
+
+
+
+
+
+
+Measure "Other wholesale businesses" percent of "Wholesale businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.other_wholesale_businesses',
+        'denominator'
+      );
+
+
+Measure "Other wholesale businesses" percent of "Wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.other_wholesale_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.wholesale_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.other_wholesale_interindustrial_businesses:
+
+Other wholesale interindustrial businesesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.other_wholesale_interindustrial_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Other wholesale interindustrial (textile fibers, building materials, agricultural machinery, textile machinery, office equipment, etc.)
+
+
+
+
+
+Measure "Other wholesale interindustrial businesesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.other_wholesale_interindustrial_businesses'
+      );
+
+
+
+
+
+Measure "Other wholesale interindustrial businesesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.other_wholesale_interindustrial_businesses'
+        );
+
+
+
+
+
+
+Measure "Other wholesale interindustrial businesesses" percent of "Wholesale businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.other_wholesale_interindustrial_businesses',
+        'denominator'
+      );
+
+
+Measure "Other wholesale interindustrial businesesses" percent of "Wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.other_wholesale_interindustrial_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.wholesale_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.pharmaceutical_perfume_household_businesses:
+
+Pharmaceutical, perfume, and household goods wholesale businesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.pharmaceutical_perfume_household_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+Wholesale businesses involved in pharmaceutical products, perfumery, and goods for the maintenance and operation of the household (tableware and glassware, cutlery, drugstore and cleaning, etc.)
+
+
+
+
+
+Measure "Pharmaceutical, perfume, and household goods wholesale businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.pharmaceutical_perfume_household_businesses'
+      );
+
+
+
+
+
+Measure "Pharmaceutical, perfume, and household goods wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.pharmaceutical_perfume_household_businesses'
+        );
+
+
+
+
+
+
+Measure "Pharmaceutical, perfume, and household goods wholesale businesses" percent of "Wholesale businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.pharmaceutical_perfume_household_businesses',
+        'denominator'
+      );
+
+
+Measure "Pharmaceutical, perfume, and household goods wholesale businesses" percent of "Wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.pharmaceutical_perfume_household_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.wholesale_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _es.lacaixa.textile_clothing_footwear_leather_businesses:
+
+Textile, clothing, footwear and leather goods wholesale businesses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.lacaixa.textile_clothing_footwear_leather_businesses.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Textile, clothing, footwear and leather goods wholesale businesses"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.textile_clothing_footwear_leather_businesses'
+      );
+
+
+
+
+
+Measure "Textile, clothing, footwear and leather goods wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.lacaixa.textile_clothing_footwear_leather_businesses'
+        );
+
+
+
+
+
+
+Measure "Textile, clothing, footwear and leather goods wholesale businesses" percent of "Wholesale businesses" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.lacaixa.textile_clothing_footwear_leather_businesses',
+        'denominator'
+      );
+
+
+Measure "Textile, clothing, footwear and leather goods wholesale businesses" percent of "Wholesale businesses" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.lacaixa.textile_clothing_footwear_leather_businesses',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.lacaixa.wholesale_businesses`
+
+
+:Source:
+
+    :ref:`es.lacaixa.lacaixa-license`:ref:`es.lacaixa.lacaixa-source`
+
+:License:
+
+    
+
+
+  
+  
+
+

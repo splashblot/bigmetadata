@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>11.7. Health &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="11. United States" href="../united_states.html" />
+    <link rel="next" title="11.8. Housing" href="housing.html" />
+    <link rel="prev" title="11.6. Families" href="families.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="health">
+<h1>11.7. Health<a class="headerlink" href="#health" title="Permalink to this headline">¶</a></h1>
+<p>Breakdowns of the population by health</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#female-life-expectancy" id="id1">Female life expectancy</a></li>
+<li><a class="reference internal" href="#female-obesity-prevalence" id="id2">Female obesity prevalence</a></li>
+<li><a class="reference internal" href="#female-sufficient-physical-activity-prevalence" id="id3">Female sufficient physical activity prevalence</a></li>
+<li><a class="reference internal" href="#male-life-expectancy" id="id4">Male life expectancy</a></li>
+<li><a class="reference internal" href="#male-obesity-prevalence" id="id5">Male obesity prevalence</a></li>
+<li><a class="reference internal" href="#male-sufficient-physical-activity-prevalence" id="id6">Male sufficient physical activity prevalence</a></li>
+</ul>
+</div>
+<div class="section" id="female-life-expectancy">
+<span id="us-ihme-female-life-expectancy"></span><h2><a class="toc-backref" href="#id1">11.7.1. Female life expectancy</a><a class="headerlink" href="#female-life-expectancy" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.ihme.female_life_expectancy.png"><img alt="../_images/us.ihme.female_life_expectancy.png" src="../_images/us.ihme.female_life_expectancy.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Female life expectancy&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.ihme.female_life_expectancy&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Female life expectancy is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county"><span class="std std-ref">US County</span></a></p>
+</td>
+<td><p>2010, 2005, 2000, 1995, 1990, 1985</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="female-obesity-prevalence">
+<span id="us-ihme-female-obesity"></span><h2><a class="toc-backref" href="#id2">11.7.2. Female obesity prevalence</a><a class="headerlink" href="#female-obesity-prevalence" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.ihme.female_obesity.png"><img alt="../_images/us.ihme.female_obesity.png" src="../_images/us.ihme.female_obesity.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Female obesity prevalence&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.ihme.female_obesity&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Female obesity prevalence is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county"><span class="std std-ref">US County</span></a></p>
+</td>
+<td><p>2011, 2009, 2001</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="female-sufficient-physical-activity-prevalence">
+<span id="us-ihme-female-physical-activity"></span><h2><a class="toc-backref" href="#id3">11.7.3. Female sufficient physical activity prevalence</a><a class="headerlink" href="#female-sufficient-physical-activity-prevalence" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.ihme.female_physical_activity.png"><img alt="../_images/us.ihme.female_physical_activity.png" src="../_images/us.ihme.female_physical_activity.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Female sufficient physical activity prevalence&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.ihme.female_physical_activity&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Female sufficient physical activity prevalence is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county"><span class="std std-ref">US County</span></a></p>
+</td>
+<td><p>2011, 2009, 2001</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="male-life-expectancy">
+<span id="us-ihme-male-life-expectancy"></span><h2><a class="toc-backref" href="#id4">11.7.4. Male life expectancy</a><a class="headerlink" href="#male-life-expectancy" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.ihme.male_life_expectancy.png"><img alt="../_images/us.ihme.male_life_expectancy.png" src="../_images/us.ihme.male_life_expectancy.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Male life expectancy&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.ihme.male_life_expectancy&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Male life expectancy is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county"><span class="std std-ref">US County</span></a></p>
+</td>
+<td><p>2010, 2005, 2000, 1995, 1990, 1985</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="male-obesity-prevalence">
+<span id="us-ihme-male-obesity"></span><h2><a class="toc-backref" href="#id5">11.7.5. Male obesity prevalence</a><a class="headerlink" href="#male-obesity-prevalence" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.ihme.male_obesity.png"><img alt="../_images/us.ihme.male_obesity.png" src="../_images/us.ihme.male_obesity.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Male obesity prevalence&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.ihme.male_obesity&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Male obesity prevalence is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county"><span class="std std-ref">US County</span></a></p>
+</td>
+<td><p>2011, 2009, 2001</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="male-sufficient-physical-activity-prevalence">
+<span id="us-ihme-male-physical-activity"></span><h2><a class="toc-backref" href="#id6">11.7.6. Male sufficient physical activity prevalence</a><a class="headerlink" href="#male-sufficient-physical-activity-prevalence" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.ihme.male_physical_activity.png"><img alt="../_images/us.ihme.male_physical_activity.png" src="../_images/us.ihme.male_physical_activity.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Male sufficient physical activity prevalence&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.ihme.male_physical_activity&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Male sufficient physical activity prevalence is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county"><span class="std std-ref">US County</span></a></p>
+</td>
+<td><p>2011, 2009, 2001</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">11.7. Health</a><ul>
+<li><a class="reference internal" href="#female-life-expectancy">11.7.1. Female life expectancy</a></li>
+<li><a class="reference internal" href="#female-obesity-prevalence">11.7.2. Female obesity prevalence</a></li>
+<li><a class="reference internal" href="#female-sufficient-physical-activity-prevalence">11.7.3. Female sufficient physical activity prevalence</a></li>
+<li><a class="reference internal" href="#male-life-expectancy">11.7.4. Male life expectancy</a></li>
+<li><a class="reference internal" href="#male-obesity-prevalence">11.7.5. Male obesity prevalence</a></li>
+<li><a class="reference internal" href="#male-sufficient-physical-activity-prevalence">11.7.6. Male sufficient physical activity prevalence</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../united_states.html">11. United States</a><ul>
+      <li>Previous: <a href="families.html" title="previous chapter">11.6. Families</a></li>
+      <li>Next: <a href="housing.html" title="next chapter">11.8. Housing</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/united_states/health.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/united_states/health.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

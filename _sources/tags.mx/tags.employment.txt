@@ -1,0 +1,8640 @@
+
+
+.. Employment:
+
+Employment
+===========================================================================
+
+How people are employed.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.ECO1:
+
+Economically active population
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.ECO1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Economically active population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO1'
+      );
+
+
+
+
+
+Measure "Economically active population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO1'
+        );
+
+
+
+
+
+
+Measure "Economically active population" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO1',
+        'denominator'
+      );
+
+
+Measure "Economically active population" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+.. contents:: Subcolumns of Economically active population
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO2:
+
+Economically active female population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Economically active female population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO2'
+      );
+
+
+
+
+
+Measure "Economically active female population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO2'
+        );
+
+
+
+
+
+
+Measure "Economically active female population" percent of "Economically active population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO2',
+        'denominator'
+      );
+
+
+Measure "Economically active female population" percent of "Economically active population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO1`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB31`
+
+
+
+.. contents:: Subcolumns of Economically active female population
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO5:
+
+Employed female
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO5'
+      );
+
+
+
+
+
+Measure "Employed female" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO5'
+        );
+
+
+
+
+
+
+Measure "Employed female" percent of "Economically active female population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO5',
+        'denominator'
+      );
+
+
+Measure "Employed female" percent of "Economically active female population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO2`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed female
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO17:
+
+Employed female population who completed basic education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO17.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO17'
+      );
+
+
+
+
+
+Measure "Employed female population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO17'
+        );
+
+
+
+
+
+
+Measure "Employed female population who completed basic education" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO17',
+        'denominator'
+      );
+
+
+Measure "Employed female population who completed basic education" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO17',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO16`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO20:
+
+Employed female population with a high school degree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO20'
+      );
+
+
+
+
+
+Measure "Employed female population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO20'
+        );
+
+
+
+
+
+
+Measure "Employed female population with a high school degree" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO20',
+        'denominator'
+      );
+
+
+Measure "Employed female population with a high school degree" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO19`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO23:
+
+Employed female population with a university degree or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO23.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO23'
+      );
+
+
+
+
+
+Measure "Employed female population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO23'
+        );
+
+
+
+
+
+
+Measure "Employed female population with a university degree or more" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO23',
+        'denominator'
+      );
+
+
+Measure "Employed female population with a university degree or more" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO23',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO22`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO14:
+
+Employed female population with incomplete secondary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO14'
+      );
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO14'
+        );
+
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO14',
+        'denominator'
+      );
+
+
+Measure "Employed female population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO13`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO11:
+
+Employed female population with primary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO11'
+      );
+
+
+
+
+
+Measure "Employed female population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO11'
+        );
+
+
+
+
+
+
+Measure "Employed female population with primary education" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO11',
+        'denominator'
+      );
+
+
+Measure "Employed female population with primary education" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO10`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO8:
+
+Employed female population without schooling
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO8'
+      );
+
+
+
+
+
+Measure "Employed female population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO8'
+        );
+
+
+
+
+
+
+Measure "Employed female population without schooling" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO8',
+        'denominator'
+      );
+
+
+Measure "Employed female population without schooling" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO7`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO26:
+
+Unemployed female
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO26.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Unemployed female"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO26'
+      );
+
+
+
+
+
+Measure "Unemployed female" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO26'
+        );
+
+
+
+
+
+
+Measure "Unemployed female" percent of "Unemployed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO26',
+        'denominator'
+      );
+
+
+Measure "Unemployed female" percent of "Unemployed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO26',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO25`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO2`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO3:
+
+Economically active male population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Economically active male population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO3'
+      );
+
+
+
+
+
+Measure "Economically active male population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO3'
+        );
+
+
+
+
+
+
+Measure "Economically active male population" percent of "Economically active population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO3',
+        'denominator'
+      );
+
+
+Measure "Economically active male population" percent of "Economically active population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO1`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB57`
+
+
+
+.. contents:: Subcolumns of Economically active male population
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO6:
+
+Employed male
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO6'
+      );
+
+
+
+
+
+Measure "Employed male" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO6'
+        );
+
+
+
+
+
+
+Measure "Employed male" percent of "Economically active male population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO6',
+        'denominator'
+      );
+
+
+Measure "Employed male" percent of "Economically active male population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO3`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed male
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO18:
+
+Employed male population who completed basic education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO18.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO18'
+      );
+
+
+
+
+
+Measure "Employed male population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO18'
+        );
+
+
+
+
+
+
+Measure "Employed male population who completed basic education" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO18',
+        'denominator'
+      );
+
+
+Measure "Employed male population who completed basic education" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO18',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO16`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO21:
+
+Employed male population with a high school degree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO21.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO21'
+      );
+
+
+
+
+
+Measure "Employed male population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO21'
+        );
+
+
+
+
+
+
+Measure "Employed male population with a high school degree" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO21',
+        'denominator'
+      );
+
+
+Measure "Employed male population with a high school degree" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO21',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO19`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO24:
+
+Employed male population with a university degree or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO24.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO24'
+      );
+
+
+
+
+
+Measure "Employed male population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO24'
+        );
+
+
+
+
+
+
+Measure "Employed male population with a university degree or more" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO24',
+        'denominator'
+      );
+
+
+Measure "Employed male population with a university degree or more" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO24',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO22`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO15:
+
+Employed male population with incomplete secondary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO15'
+      );
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO15'
+        );
+
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO15',
+        'denominator'
+      );
+
+
+Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO13`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO12:
+
+Employed male population with primary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO12'
+      );
+
+
+
+
+
+Measure "Employed male population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO12'
+        );
+
+
+
+
+
+
+Measure "Employed male population with primary education" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO12',
+        'denominator'
+      );
+
+
+Measure "Employed male population with primary education" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO10`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO9:
+
+Employed male population without schooling
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO9'
+      );
+
+
+
+
+
+Measure "Employed male population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO9'
+        );
+
+
+
+
+
+
+Measure "Employed male population without schooling" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO9',
+        'denominator'
+      );
+
+
+Measure "Employed male population without schooling" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO7`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO27:
+
+Unemployed male
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO27.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Unemployed male"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO27'
+      );
+
+
+
+
+
+Measure "Unemployed male" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO27'
+        );
+
+
+
+
+
+
+Measure "Unemployed male" percent of "Unemployed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO27',
+        'denominator'
+      );
+
+
+Measure "Unemployed male" percent of "Unemployed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO27',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO25`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO3`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO4:
+
+Employed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO4'
+      );
+
+
+
+
+
+Measure "Employed" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO4'
+        );
+
+
+
+
+
+
+Measure "Employed" percent of "Economically active population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO4',
+        'denominator'
+      );
+
+
+Measure "Employed" percent of "Economically active population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO1`
+
+
+
+.. contents:: Subcolumns of Employed
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO5:
+
+Employed female
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO5'
+      );
+
+
+
+
+
+Measure "Employed female" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO5'
+        );
+
+
+
+
+
+
+Measure "Employed female" percent of "Economically active female population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO5',
+        'denominator'
+      );
+
+
+Measure "Employed female" percent of "Economically active female population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO2`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed female
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO17:
+
+Employed female population who completed basic education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO17.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO17'
+      );
+
+
+
+
+
+Measure "Employed female population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO17'
+        );
+
+
+
+
+
+
+Measure "Employed female population who completed basic education" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO17',
+        'denominator'
+      );
+
+
+Measure "Employed female population who completed basic education" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO17',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO16`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO20:
+
+Employed female population with a high school degree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO20'
+      );
+
+
+
+
+
+Measure "Employed female population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO20'
+        );
+
+
+
+
+
+
+Measure "Employed female population with a high school degree" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO20',
+        'denominator'
+      );
+
+
+Measure "Employed female population with a high school degree" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO19`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO23:
+
+Employed female population with a university degree or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO23.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO23'
+      );
+
+
+
+
+
+Measure "Employed female population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO23'
+        );
+
+
+
+
+
+
+Measure "Employed female population with a university degree or more" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO23',
+        'denominator'
+      );
+
+
+Measure "Employed female population with a university degree or more" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO23',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO22`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO14:
+
+Employed female population with incomplete secondary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO14'
+      );
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO14'
+        );
+
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO14',
+        'denominator'
+      );
+
+
+Measure "Employed female population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO13`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO11:
+
+Employed female population with primary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO11'
+      );
+
+
+
+
+
+Measure "Employed female population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO11'
+        );
+
+
+
+
+
+
+Measure "Employed female population with primary education" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO11',
+        'denominator'
+      );
+
+
+Measure "Employed female population with primary education" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO10`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO8:
+
+Employed female population without schooling
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO8'
+      );
+
+
+
+
+
+Measure "Employed female population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO8'
+        );
+
+
+
+
+
+
+Measure "Employed female population without schooling" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO8',
+        'denominator'
+      );
+
+
+Measure "Employed female population without schooling" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO7`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO6:
+
+Employed male
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO6'
+      );
+
+
+
+
+
+Measure "Employed male" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO6'
+        );
+
+
+
+
+
+
+Measure "Employed male" percent of "Economically active male population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO6',
+        'denominator'
+      );
+
+
+Measure "Employed male" percent of "Economically active male population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO3`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed male
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO18:
+
+Employed male population who completed basic education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO18.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO18'
+      );
+
+
+
+
+
+Measure "Employed male population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO18'
+        );
+
+
+
+
+
+
+Measure "Employed male population who completed basic education" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO18',
+        'denominator'
+      );
+
+
+Measure "Employed male population who completed basic education" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO18',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO16`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO21:
+
+Employed male population with a high school degree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO21.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO21'
+      );
+
+
+
+
+
+Measure "Employed male population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO21'
+        );
+
+
+
+
+
+
+Measure "Employed male population with a high school degree" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO21',
+        'denominator'
+      );
+
+
+Measure "Employed male population with a high school degree" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO21',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO19`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO24:
+
+Employed male population with a university degree or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO24.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO24'
+      );
+
+
+
+
+
+Measure "Employed male population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO24'
+        );
+
+
+
+
+
+
+Measure "Employed male population with a university degree or more" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO24',
+        'denominator'
+      );
+
+
+Measure "Employed male population with a university degree or more" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO24',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO22`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO15:
+
+Employed male population with incomplete secondary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO15'
+      );
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO15'
+        );
+
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO15',
+        'denominator'
+      );
+
+
+Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO13`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO12:
+
+Employed male population with primary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO12'
+      );
+
+
+
+
+
+Measure "Employed male population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO12'
+        );
+
+
+
+
+
+
+Measure "Employed male population with primary education" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO12',
+        'denominator'
+      );
+
+
+Measure "Employed male population with primary education" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO10`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO9:
+
+Employed male population without schooling
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO9'
+      );
+
+
+
+
+
+Measure "Employed male population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO9'
+        );
+
+
+
+
+
+
+Measure "Employed male population without schooling" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO9',
+        'denominator'
+      );
+
+
+Measure "Employed male population without schooling" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO7`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO16:
+
+Employed population who completed basic education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO16.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO16'
+      );
+
+
+
+
+
+Measure "Employed population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO16'
+        );
+
+
+
+
+
+
+Measure "Employed population who completed basic education" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO16',
+        'denominator'
+      );
+
+
+Measure "Employed population who completed basic education" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO16',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed population who completed basic education
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO17:
+
+Employed female population who completed basic education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO17.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO17'
+      );
+
+
+
+
+
+Measure "Employed female population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO17'
+        );
+
+
+
+
+
+
+Measure "Employed female population who completed basic education" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO17',
+        'denominator'
+      );
+
+
+Measure "Employed female population who completed basic education" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO17',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO16`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO18:
+
+Employed male population who completed basic education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO18.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO18'
+      );
+
+
+
+
+
+Measure "Employed male population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO18'
+        );
+
+
+
+
+
+
+Measure "Employed male population who completed basic education" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO18',
+        'denominator'
+      );
+
+
+Measure "Employed male population who completed basic education" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO18',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO16`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO19:
+
+Employed population with a high school degree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO19.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO19'
+      );
+
+
+
+
+
+Measure "Employed population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO19'
+        );
+
+
+
+
+
+
+Measure "Employed population with a high school degree" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO19',
+        'denominator'
+      );
+
+
+Measure "Employed population with a high school degree" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO19',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed population with a high school degree
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO20:
+
+Employed female population with a high school degree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO20'
+      );
+
+
+
+
+
+Measure "Employed female population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO20'
+        );
+
+
+
+
+
+
+Measure "Employed female population with a high school degree" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO20',
+        'denominator'
+      );
+
+
+Measure "Employed female population with a high school degree" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO19`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO21:
+
+Employed male population with a high school degree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO21.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO21'
+      );
+
+
+
+
+
+Measure "Employed male population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO21'
+        );
+
+
+
+
+
+
+Measure "Employed male population with a high school degree" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO21',
+        'denominator'
+      );
+
+
+Measure "Employed male population with a high school degree" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO21',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO19`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO22:
+
+Employed population with a university degree or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO22.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO22'
+      );
+
+
+
+
+
+Measure "Employed population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO22'
+        );
+
+
+
+
+
+
+Measure "Employed population with a university degree or more" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO22',
+        'denominator'
+      );
+
+
+Measure "Employed population with a university degree or more" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO22',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed population with a university degree or more
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO23:
+
+Employed female population with a university degree or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO23.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO23'
+      );
+
+
+
+
+
+Measure "Employed female population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO23'
+        );
+
+
+
+
+
+
+Measure "Employed female population with a university degree or more" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO23',
+        'denominator'
+      );
+
+
+Measure "Employed female population with a university degree or more" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO23',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO22`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO24:
+
+Employed male population with a university degree or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO24.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO24'
+      );
+
+
+
+
+
+Measure "Employed male population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO24'
+        );
+
+
+
+
+
+
+Measure "Employed male population with a university degree or more" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO24',
+        'denominator'
+      );
+
+
+Measure "Employed male population with a university degree or more" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO24',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO22`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO13:
+
+Employed population with incomplete secondary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO13.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO13'
+      );
+
+
+
+
+
+Measure "Employed population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO13'
+        );
+
+
+
+
+
+
+Measure "Employed population with incomplete secondary education" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO13',
+        'denominator'
+      );
+
+
+Measure "Employed population with incomplete secondary education" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO13',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed population with incomplete secondary education
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO14:
+
+Employed female population with incomplete secondary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO14'
+      );
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO14'
+        );
+
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO14',
+        'denominator'
+      );
+
+
+Measure "Employed female population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO13`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO15:
+
+Employed male population with incomplete secondary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO15'
+      );
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO15'
+        );
+
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO15',
+        'denominator'
+      );
+
+
+Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO13`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO10:
+
+Employed population with primary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO10'
+      );
+
+
+
+
+
+Measure "Employed population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO10'
+        );
+
+
+
+
+
+
+Measure "Employed population with primary education" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO10',
+        'denominator'
+      );
+
+
+Measure "Employed population with primary education" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed population with primary education
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO11:
+
+Employed female population with primary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO11'
+      );
+
+
+
+
+
+Measure "Employed female population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO11'
+        );
+
+
+
+
+
+
+Measure "Employed female population with primary education" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO11',
+        'denominator'
+      );
+
+
+Measure "Employed female population with primary education" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO10`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO12:
+
+Employed male population with primary education
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO12'
+      );
+
+
+
+
+
+Measure "Employed male population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO12'
+        );
+
+
+
+
+
+
+Measure "Employed male population with primary education" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO12',
+        'denominator'
+      );
+
+
+Measure "Employed male population with primary education" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO10`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO7:
+
+Employed population without schooling
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO7'
+      );
+
+
+
+
+
+Measure "Employed population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO7'
+        );
+
+
+
+
+
+
+Measure "Employed population without schooling" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO7',
+        'denominator'
+      );
+
+
+Measure "Employed population without schooling" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+
+.. contents:: Subcolumns of Employed population without schooling
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO8:
+
+Employed female population without schooling
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed female population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO8'
+      );
+
+
+
+
+
+Measure "Employed female population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO8'
+        );
+
+
+
+
+
+
+Measure "Employed female population without schooling" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO8',
+        'denominator'
+      );
+
+
+Measure "Employed female population without schooling" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO7`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO9:
+
+Employed male population without schooling
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Employed male population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO9'
+      );
+
+
+
+
+
+Measure "Employed male population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO9'
+        );
+
+
+
+
+
+
+Measure "Employed male population without schooling" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO9',
+        'denominator'
+      );
+
+
+Measure "Employed male population without schooling" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO7`
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO25:
+
+Unemployed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO25.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Unemployed"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO25'
+      );
+
+
+
+
+
+Measure "Unemployed" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO25'
+        );
+
+
+
+
+
+
+Measure "Unemployed" percent of "Economically active population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO25',
+        'denominator'
+      );
+
+
+Measure "Unemployed" percent of "Economically active population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO25',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO1`
+
+
+
+.. contents:: Subcolumns of Unemployed
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO26:
+
+Unemployed female
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO26.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Unemployed female"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO26'
+      );
+
+
+
+
+
+Measure "Unemployed female" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO26'
+        );
+
+
+
+
+
+
+Measure "Unemployed female" percent of "Unemployed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO26',
+        'denominator'
+      );
+
+
+Measure "Unemployed female" percent of "Unemployed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO26',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO25`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO2`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO27:
+
+Unemployed male
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO27.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Unemployed male"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO27'
+      );
+
+
+
+
+
+Measure "Unemployed male" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO27'
+        );
+
+
+
+
+
+
+Measure "Unemployed male" percent of "Unemployed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO27',
+        'denominator'
+      );
+
+
+Measure "Unemployed male" percent of "Unemployed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO27',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO25`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO3`
+
+
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.ECO28:
+
+Economically inactive
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.ECO28.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Economically inactive"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO28'
+      );
+
+
+
+
+
+Measure "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO28'
+        );
+
+
+
+
+
+
+Measure "Economically inactive" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO28',
+        'denominator'
+      );
+
+
+Measure "Economically inactive" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO28',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+.. contents:: Subcolumns of Economically inactive
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO37:
+
+Dedicated to housework
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO37.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dedicated to housework"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO37'
+      );
+
+
+
+
+
+Measure "Dedicated to housework" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO37'
+        );
+
+
+
+
+
+
+Measure "Dedicated to housework" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO37',
+        'denominator'
+      );
+
+
+Measure "Dedicated to housework" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO37',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO28`
+
+
+
+.. contents:: Subcolumns of Dedicated to housework
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO38:
+
+Female dedicated to housework
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO38.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female dedicated to housework"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO38'
+      );
+
+
+
+
+
+Measure "Female dedicated to housework" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO38'
+        );
+
+
+
+
+
+
+Measure "Female dedicated to housework" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO38',
+        'denominator'
+      );
+
+
+Measure "Female dedicated to housework" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO38',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO37`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO39:
+
+Male dedicated to housework
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO39.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male dedicated to housework"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO39'
+      );
+
+
+
+
+
+Measure "Male dedicated to housework" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO39'
+        );
+
+
+
+
+
+
+Measure "Male dedicated to housework" percent of "Male economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO39',
+        'denominator'
+      );
+
+
+Measure "Male dedicated to housework" percent of "Male economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO39',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO37`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO40:
+
+Economically inactive with a physical or mental limitation impeding work
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO40.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Economically inactive with a physical or mental limitation impeding work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO40'
+      );
+
+
+
+
+
+Measure "Economically inactive with a physical or mental limitation impeding work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO40'
+        );
+
+
+
+
+
+
+Measure "Economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO40',
+        'denominator'
+      );
+
+
+Measure "Economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO40',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO28`
+
+
+
+.. contents:: Subcolumns of Economically inactive with a physical or mental limitation impeding work
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO41:
+
+Female economically inactive with a physical or mental limitation impeding work
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO41.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female economically inactive with a physical or mental limitation impeding work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO41'
+      );
+
+
+
+
+
+Measure "Female economically inactive with a physical or mental limitation impeding work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO41'
+        );
+
+
+
+
+
+
+Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO41',
+        'denominator'
+      );
+
+
+Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO41',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO40`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO42:
+
+Male economically inactive with a physical or mental limitation impeding work
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO42.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male economically inactive with a physical or mental limitation impeding work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO42'
+      );
+
+
+
+
+
+Measure "Male economically inactive with a physical or mental limitation impeding work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO42'
+        );
+
+
+
+
+
+
+Measure "Male economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive with a physical or mental limitation impeding work" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO42',
+        'denominator'
+      );
+
+
+Measure "Male economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive with a physical or mental limitation impeding work" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO42',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO40`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO43:
+
+Economically inactive with some other reason that impedes work
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO43.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Economically inactive with some other reason that impedes work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO43'
+      );
+
+
+
+
+
+Measure "Economically inactive with some other reason that impedes work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO43'
+        );
+
+
+
+
+
+
+Measure "Economically inactive with some other reason that impedes work" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO43',
+        'denominator'
+      );
+
+
+Measure "Economically inactive with some other reason that impedes work" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO43',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO28`
+
+
+
+.. contents:: Subcolumns of Economically inactive with some other reason that impedes work
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO44:
+
+Female economically inactive with some other reason that impedes work
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO44.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female economically inactive with some other reason that impedes work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO44'
+      );
+
+
+
+
+
+Measure "Female economically inactive with some other reason that impedes work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO44'
+        );
+
+
+
+
+
+
+Measure "Female economically inactive with some other reason that impedes work" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO44',
+        'denominator'
+      );
+
+
+Measure "Female economically inactive with some other reason that impedes work" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO44',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO43`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO45:
+
+Male economically inactive with some other reason that impedes work
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO45.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male economically inactive with some other reason that impedes work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO45'
+      );
+
+
+
+
+
+Measure "Male economically inactive with some other reason that impedes work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO45'
+        );
+
+
+
+
+
+
+Measure "Male economically inactive with some other reason that impedes work" percent of "Male economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO45',
+        'denominator'
+      );
+
+
+Measure "Male economically inactive with some other reason that impedes work" percent of "Male economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO45',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO43`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO29:
+
+Female economically inactive population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO29.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female economically inactive population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO29'
+      );
+
+
+
+
+
+Measure "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO29'
+        );
+
+
+
+
+
+
+Measure "Female economically inactive population" percent of "Female population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO29',
+        'denominator'
+      );
+
+
+Measure "Female economically inactive population" percent of "Female population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO29',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB31`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO28`
+
+
+
+.. contents:: Subcolumns of Female economically inactive population
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO38:
+
+Female dedicated to housework
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO38.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female dedicated to housework"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO38'
+      );
+
+
+
+
+
+Measure "Female dedicated to housework" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO38'
+        );
+
+
+
+
+
+
+Measure "Female dedicated to housework" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO38',
+        'denominator'
+      );
+
+
+Measure "Female dedicated to housework" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO38',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO37`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO41:
+
+Female economically inactive with a physical or mental limitation impeding work
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO41.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female economically inactive with a physical or mental limitation impeding work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO41'
+      );
+
+
+
+
+
+Measure "Female economically inactive with a physical or mental limitation impeding work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO41'
+        );
+
+
+
+
+
+
+Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO41',
+        'denominator'
+      );
+
+
+Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO41',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO40`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO44:
+
+Female economically inactive with some other reason that impedes work
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO44.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female economically inactive with some other reason that impedes work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO44'
+      );
+
+
+
+
+
+Measure "Female economically inactive with some other reason that impedes work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO44'
+        );
+
+
+
+
+
+
+Measure "Female economically inactive with some other reason that impedes work" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO44',
+        'denominator'
+      );
+
+
+Measure "Female economically inactive with some other reason that impedes work" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO44',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO43`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO35:
+
+Female full time student
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO35.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female full time student"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO35'
+      );
+
+
+
+
+
+Measure "Female full time student" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO35'
+        );
+
+
+
+
+
+
+Measure "Female full time student" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO35',
+        'denominator'
+      );
+
+
+Measure "Female full time student" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO35',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO34`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO32:
+
+Female retiree or receiving pension
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO32.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female retiree or receiving pension"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO32'
+      );
+
+
+
+
+
+Measure "Female retiree or receiving pension" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO32'
+        );
+
+
+
+
+
+
+Measure "Female retiree or receiving pension" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO32',
+        'denominator'
+      );
+
+
+Measure "Female retiree or receiving pension" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO32',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO31`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO34:
+
+Full time student
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO34.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Full time student"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO34'
+      );
+
+
+
+
+
+Measure "Full time student" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO34'
+        );
+
+
+
+
+
+
+Measure "Full time student" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO34',
+        'denominator'
+      );
+
+
+Measure "Full time student" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO34',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO28`
+
+
+
+.. contents:: Subcolumns of Full time student
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO35:
+
+Female full time student
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO35.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female full time student"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO35'
+      );
+
+
+
+
+
+Measure "Female full time student" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO35'
+        );
+
+
+
+
+
+
+Measure "Female full time student" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO35',
+        'denominator'
+      );
+
+
+Measure "Female full time student" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO35',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO34`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO36:
+
+Male full time student
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO36.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male full time student"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO36'
+      );
+
+
+
+
+
+Measure "Male full time student" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO36'
+        );
+
+
+
+
+
+
+Measure "Male full time student" percent of "Male economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO36',
+        'denominator'
+      );
+
+
+Measure "Male full time student" percent of "Male economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO36',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO34`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO30:
+
+Male economically inactive population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO30.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male economically inactive population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO30'
+      );
+
+
+
+
+
+Measure "Male economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO30'
+        );
+
+
+
+
+
+
+Measure "Male economically inactive population" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO30',
+        'denominator'
+      );
+
+
+Measure "Male economically inactive population" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO30',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO28`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB57`
+
+
+
+.. contents:: Subcolumns of Male economically inactive population
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO39:
+
+Male dedicated to housework
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO39.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male dedicated to housework"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO39'
+      );
+
+
+
+
+
+Measure "Male dedicated to housework" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO39'
+        );
+
+
+
+
+
+
+Measure "Male dedicated to housework" percent of "Male economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO39',
+        'denominator'
+      );
+
+
+Measure "Male dedicated to housework" percent of "Male economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO39',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO37`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO42:
+
+Male economically inactive with a physical or mental limitation impeding work
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO42.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male economically inactive with a physical or mental limitation impeding work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO42'
+      );
+
+
+
+
+
+Measure "Male economically inactive with a physical or mental limitation impeding work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO42'
+        );
+
+
+
+
+
+
+Measure "Male economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive with a physical or mental limitation impeding work" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO42',
+        'denominator'
+      );
+
+
+Measure "Male economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive with a physical or mental limitation impeding work" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO42',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO40`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO45:
+
+Male economically inactive with some other reason that impedes work
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO45.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male economically inactive with some other reason that impedes work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO45'
+      );
+
+
+
+
+
+Measure "Male economically inactive with some other reason that impedes work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO45'
+        );
+
+
+
+
+
+
+Measure "Male economically inactive with some other reason that impedes work" percent of "Male economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO45',
+        'denominator'
+      );
+
+
+Measure "Male economically inactive with some other reason that impedes work" percent of "Male economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO45',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO43`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO36:
+
+Male full time student
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO36.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male full time student"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO36'
+      );
+
+
+
+
+
+Measure "Male full time student" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO36'
+        );
+
+
+
+
+
+
+Measure "Male full time student" percent of "Male economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO36',
+        'denominator'
+      );
+
+
+Measure "Male full time student" percent of "Male economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO36',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO34`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO33:
+
+Male retiree or receiving pension
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO33.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male retiree or receiving pension"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO33'
+      );
+
+
+
+
+
+Measure "Male retiree or receiving pension" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO33'
+        );
+
+
+
+
+
+
+Measure "Male retiree or receiving pension" percent of "Male economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO33',
+        'denominator'
+      );
+
+
+Measure "Male retiree or receiving pension" percent of "Male economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO33',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO31`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO31:
+
+Retiree or receiving pension
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.ECO31.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Retiree or receiving pension"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO31'
+      );
+
+
+
+
+
+Measure "Retiree or receiving pension" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO31'
+        );
+
+
+
+
+
+
+Measure "Retiree or receiving pension" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO31',
+        'denominator'
+      );
+
+
+Measure "Retiree or receiving pension" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO31',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO28`
+
+
+
+.. contents:: Subcolumns of Retiree or receiving pension
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO32:
+
+Female retiree or receiving pension
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO32.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female retiree or receiving pension"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO32'
+      );
+
+
+
+
+
+Measure "Female retiree or receiving pension" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO32'
+        );
+
+
+
+
+
+
+Measure "Female retiree or receiving pension" percent of "Female economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO32',
+        'denominator'
+      );
+
+
+Measure "Female retiree or receiving pension" percent of "Female economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO32',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO29`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO31`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO33:
+
+Male retiree or receiving pension
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/mx.inegi_columns.ECO33.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male retiree or receiving pension"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO33'
+      );
+
+
+
+
+
+Measure "Male retiree or receiving pension" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.ECO33'
+        );
+
+
+
+
+
+
+Measure "Male retiree or receiving pension" percent of "Male economically inactive population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.ECO33',
+        'denominator'
+      );
+
+
+Measure "Male retiree or receiving pension" percent of "Male economically inactive population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.ECO33',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO30`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.ECO31`
+
+
+
+  
+  
+
+  
+  
+
+

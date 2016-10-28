@@ -21,6 +21,10 @@ Children under 18 Years of Age
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B09001001.png
+  :width: 100 %
+  :align: center
+
 
 The number of people within each geography who are under 18 years of age.
 
@@ -31,7 +35,7 @@ The number of people within each geography who are under 18 years of age.
 Measure "Children under 18 Years of Age"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -52,7 +56,7 @@ Measure "Children under 18 Years of Age"  density per sq. kilometer  for one poi
 
 Measure "Children under 18 Years of Age" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -92,6 +96,10 @@ Median Age
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B01002001.png
+  :width: 100 %
+  :align: center
+
 
 The median age of all people in a given geographic area.
 
@@ -102,7 +110,7 @@ The median age of all people in a given geographic area.
 Measure "Median Age"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -146,6 +154,10 @@ Men age 45 to 64 ("middle aged")
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B15001027.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of fourty-five years to sixty-four years within the specified area.
 
@@ -156,7 +168,7 @@ The male population between the age of fourty-five years to sixty-four years wit
 Measure "Men age 45 to 64 ("middle aged")"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -177,7 +189,7 @@ Measure "Men age 45 to 64 ("middle aged")"  density per sq. kilometer  for one p
 
 Measure "Men age 45 to 64 ("middle aged")" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -209,6 +221,10 @@ Population 1 year and over
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B07204001.png
+  :width: 100 %
+  :align: center
+
 
 All people, male and female, child and adult, living in a given geographic area that are 1 year and older.
 
@@ -216,10 +232,10 @@ All people, male and female, child and adult, living in a given geographic area 
 
 
 
-Measure "Population 1 year and over"  for one point:
+Measure "Population 1 year and over"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -238,8 +254,17 @@ Measure "Population 1 year and over"  for one point:
 
 
 
+Measure "Population 1 year and over" within an area:
 
-Population 1 year and over is only available for point lookups.
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B07204001'
+        );
+
 
 
 
@@ -273,6 +298,10 @@ Population 15 Years and Over
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B12005001.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area who are over the age of 15.  This is used mostly as a denominator of marital status.
 
@@ -283,7 +312,7 @@ The number of people in a geographic area who are over the age of 15.  This is u
 Measure "Population 15 Years and Over"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -304,7 +333,7 @@ Measure "Population 15 Years and Over"  density per sq. kilometer  for one point
 
 Measure "Population 15 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -352,6 +381,10 @@ Population age 16 and over
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B23025001.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in each geography who are age 16 or over.
 
@@ -362,7 +395,7 @@ The number of people in each geography who are age 16 or over.
 Measure "Population age 16 and over"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -383,7 +416,7 @@ Measure "Population age 16 and over"  density per sq. kilometer  for one point:
 
 Measure "Population age 16 and over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -425,6 +458,10 @@ Total Population
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B01003001.png
+  :width: 100 %
+  :align: center
+
 
 The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.
 
@@ -435,7 +472,7 @@ The total number of all people living in a given geographic area.  This is a ver
 Measure "Total Population"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -456,7 +493,7 @@ Measure "Total Population"  density per sq. kilometer  for one point:
 
 Measure "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -511,6 +548,10 @@ Female age 5 to 9
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001028.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of five years to nine years within the specified area.
 
@@ -521,7 +562,7 @@ The female population between the age of five years to nine years within the spe
 Measure "Female age 5 to 9"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -542,7 +583,7 @@ Measure "Female age 5 to 9"  density per sq. kilometer  for one point:
 
 Measure "Female age 5 to 9" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -555,9 +596,10 @@ Measure "Female age 5 to 9" within an area:
 
 
 
+
 Measure "Female age 5 to 9" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -570,7 +612,7 @@ Measure "Female age 5 to 9" percent of "Total Population" at one point:
 
 Measure "Female age 5 to 9" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -579,7 +621,6 @@ Measure "Female age 5 to 9" percent of "Total Population" within an area:
         'us.census.acs.B01001028',
         'denominator'
       );
-
 
 
 
@@ -606,6 +647,10 @@ Female age 10 to 14
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001029.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of ten years to fourteen years within the specified area.
 
@@ -616,7 +661,7 @@ The female population between the age of ten years to fourteen years within the 
 Measure "Female age 10 to 14"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -637,7 +682,7 @@ Measure "Female age 10 to 14"  density per sq. kilometer  for one point:
 
 Measure "Female age 10 to 14" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -650,9 +695,10 @@ Measure "Female age 10 to 14" within an area:
 
 
 
+
 Measure "Female age 10 to 14" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -665,7 +711,7 @@ Measure "Female age 10 to 14" percent of "Total Population" at one point:
 
 Measure "Female age 10 to 14" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -674,7 +720,6 @@ Measure "Female age 10 to 14" percent of "Total Population" within an area:
         'us.census.acs.B01001029',
         'denominator'
       );
-
 
 
 
@@ -701,6 +746,10 @@ Female age 15 to 17
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001030.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of fifteeen years to seventeen years within the specified area.
 
@@ -711,7 +760,7 @@ The female population between the age of fifteeen years to seventeen years withi
 Measure "Female age 15 to 17"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -732,7 +781,7 @@ Measure "Female age 15 to 17"  density per sq. kilometer  for one point:
 
 Measure "Female age 15 to 17" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -745,9 +794,10 @@ Measure "Female age 15 to 17" within an area:
 
 
 
+
 Measure "Female age 15 to 17" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -760,7 +810,7 @@ Measure "Female age 15 to 17" percent of "Total Population" at one point:
 
 Measure "Female age 15 to 17" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -769,7 +819,6 @@ Measure "Female age 15 to 17" percent of "Total Population" within an area:
         'us.census.acs.B01001030',
         'denominator'
       );
-
 
 
 
@@ -796,6 +845,10 @@ Female age 18 and 19
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001031.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of eighteen years to nineteen years within the specified area.
 
@@ -806,7 +859,7 @@ The female population between the age of eighteen years to nineteen years within
 Measure "Female age 18 and 19"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -827,7 +880,7 @@ Measure "Female age 18 and 19"  density per sq. kilometer  for one point:
 
 Measure "Female age 18 and 19" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -840,9 +893,10 @@ Measure "Female age 18 and 19" within an area:
 
 
 
+
 Measure "Female age 18 and 19" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -855,7 +909,7 @@ Measure "Female age 18 and 19" percent of "Total Population" at one point:
 
 Measure "Female age 18 and 19" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -864,7 +918,6 @@ Measure "Female age 18 and 19" percent of "Total Population" within an area:
         'us.census.acs.B01001031',
         'denominator'
       );
-
 
 
 
@@ -891,6 +944,10 @@ Female age 20
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001032.png
+  :width: 100 %
+  :align: center
+
 
 The female population with an age of twenty years within the specified area.
 
@@ -901,7 +958,7 @@ The female population with an age of twenty years within the specified area.
 Measure "Female age 20"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -922,7 +979,7 @@ Measure "Female age 20"  density per sq. kilometer  for one point:
 
 Measure "Female age 20" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -935,9 +992,10 @@ Measure "Female age 20" within an area:
 
 
 
+
 Measure "Female age 20" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -950,7 +1008,7 @@ Measure "Female age 20" percent of "Total Population" at one point:
 
 Measure "Female age 20" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -959,7 +1017,6 @@ Measure "Female age 20" percent of "Total Population" within an area:
         'us.census.acs.B01001032',
         'denominator'
       );
-
 
 
 
@@ -986,6 +1043,10 @@ Female age 21
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001033.png
+  :width: 100 %
+  :align: center
+
 
 The female population with an age of twenty-one years within the specified area.
 
@@ -996,7 +1057,7 @@ The female population with an age of twenty-one years within the specified area.
 Measure "Female age 21"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1017,7 +1078,7 @@ Measure "Female age 21"  density per sq. kilometer  for one point:
 
 Measure "Female age 21" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1030,9 +1091,10 @@ Measure "Female age 21" within an area:
 
 
 
+
 Measure "Female age 21" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1045,7 +1107,7 @@ Measure "Female age 21" percent of "Total Population" at one point:
 
 Measure "Female age 21" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1054,7 +1116,6 @@ Measure "Female age 21" percent of "Total Population" within an area:
         'us.census.acs.B01001033',
         'denominator'
       );
-
 
 
 
@@ -1081,6 +1142,10 @@ Female age 22 to 24
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001034.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of twenty-two years to twenty-four years within the specified area.
 
@@ -1091,7 +1156,7 @@ The female population between the age of twenty-two years to twenty-four years w
 Measure "Female age 22 to 24"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1112,7 +1177,7 @@ Measure "Female age 22 to 24"  density per sq. kilometer  for one point:
 
 Measure "Female age 22 to 24" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1125,9 +1190,10 @@ Measure "Female age 22 to 24" within an area:
 
 
 
+
 Measure "Female age 22 to 24" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1140,7 +1206,7 @@ Measure "Female age 22 to 24" percent of "Total Population" at one point:
 
 Measure "Female age 22 to 24" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1149,7 +1215,6 @@ Measure "Female age 22 to 24" percent of "Total Population" within an area:
         'us.census.acs.B01001034',
         'denominator'
       );
-
 
 
 
@@ -1176,6 +1241,10 @@ Female age 25 to 29
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001035.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of twenty-five years to twenty-nine years within the specified area.
 
@@ -1186,7 +1255,7 @@ The female population between the age of twenty-five years to twenty-nine years 
 Measure "Female age 25 to 29"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1207,7 +1276,7 @@ Measure "Female age 25 to 29"  density per sq. kilometer  for one point:
 
 Measure "Female age 25 to 29" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1220,9 +1289,10 @@ Measure "Female age 25 to 29" within an area:
 
 
 
+
 Measure "Female age 25 to 29" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1235,7 +1305,7 @@ Measure "Female age 25 to 29" percent of "Total Population" at one point:
 
 Measure "Female age 25 to 29" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1244,7 +1314,6 @@ Measure "Female age 25 to 29" percent of "Total Population" within an area:
         'us.census.acs.B01001035',
         'denominator'
       );
-
 
 
 
@@ -1271,6 +1340,10 @@ Female age 30 to 34
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001036.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of thirty years to thirty-four years within the specified area.
 
@@ -1281,7 +1354,7 @@ The female population between the age of thirty years to thirty-four years withi
 Measure "Female age 30 to 34"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1302,7 +1375,7 @@ Measure "Female age 30 to 34"  density per sq. kilometer  for one point:
 
 Measure "Female age 30 to 34" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1315,9 +1388,10 @@ Measure "Female age 30 to 34" within an area:
 
 
 
+
 Measure "Female age 30 to 34" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1330,7 +1404,7 @@ Measure "Female age 30 to 34" percent of "Total Population" at one point:
 
 Measure "Female age 30 to 34" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1339,7 +1413,6 @@ Measure "Female age 30 to 34" percent of "Total Population" within an area:
         'us.census.acs.B01001036',
         'denominator'
       );
-
 
 
 
@@ -1366,6 +1439,10 @@ Female age 35 to 39
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001037.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of thirty-five years to thirty-nine years within the specified area.
 
@@ -1376,7 +1453,7 @@ The female population between the age of thirty-five years to thirty-nine years 
 Measure "Female age 35 to 39"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1397,7 +1474,7 @@ Measure "Female age 35 to 39"  density per sq. kilometer  for one point:
 
 Measure "Female age 35 to 39" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1410,9 +1487,10 @@ Measure "Female age 35 to 39" within an area:
 
 
 
+
 Measure "Female age 35 to 39" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1425,7 +1503,7 @@ Measure "Female age 35 to 39" percent of "Total Population" at one point:
 
 Measure "Female age 35 to 39" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1434,7 +1512,6 @@ Measure "Female age 35 to 39" percent of "Total Population" within an area:
         'us.census.acs.B01001037',
         'denominator'
       );
-
 
 
 
@@ -1461,6 +1538,10 @@ Female age 40 to 44
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001038.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of fourty years to fourty-four years within the specified area.
 
@@ -1471,7 +1552,7 @@ The female population between the age of fourty years to fourty-four years withi
 Measure "Female age 40 to 44"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1492,7 +1573,7 @@ Measure "Female age 40 to 44"  density per sq. kilometer  for one point:
 
 Measure "Female age 40 to 44" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1505,9 +1586,10 @@ Measure "Female age 40 to 44" within an area:
 
 
 
+
 Measure "Female age 40 to 44" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1520,7 +1602,7 @@ Measure "Female age 40 to 44" percent of "Total Population" at one point:
 
 Measure "Female age 40 to 44" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1529,7 +1611,6 @@ Measure "Female age 40 to 44" percent of "Total Population" within an area:
         'us.census.acs.B01001038',
         'denominator'
       );
-
 
 
 
@@ -1556,6 +1637,10 @@ Female age 45 to 49
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001039.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of fourty-five years to fourty-nine years within the specified area.
 
@@ -1566,7 +1651,7 @@ The female population between the age of fourty-five years to fourty-nine years 
 Measure "Female age 45 to 49"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1587,7 +1672,7 @@ Measure "Female age 45 to 49"  density per sq. kilometer  for one point:
 
 Measure "Female age 45 to 49" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1600,9 +1685,10 @@ Measure "Female age 45 to 49" within an area:
 
 
 
+
 Measure "Female age 45 to 49" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1615,7 +1701,7 @@ Measure "Female age 45 to 49" percent of "Total Population" at one point:
 
 Measure "Female age 45 to 49" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1624,7 +1710,6 @@ Measure "Female age 45 to 49" percent of "Total Population" within an area:
         'us.census.acs.B01001039',
         'denominator'
       );
-
 
 
 
@@ -1651,6 +1736,10 @@ Female age 50 to 54
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001040.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of fifty years to fifty-four years within the specified area.
 
@@ -1661,7 +1750,7 @@ The female population between the age of fifty years to fifty-four years within 
 Measure "Female age 50 to 54"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1682,7 +1771,7 @@ Measure "Female age 50 to 54"  density per sq. kilometer  for one point:
 
 Measure "Female age 50 to 54" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1695,9 +1784,10 @@ Measure "Female age 50 to 54" within an area:
 
 
 
+
 Measure "Female age 50 to 54" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1710,7 +1800,7 @@ Measure "Female age 50 to 54" percent of "Total Population" at one point:
 
 Measure "Female age 50 to 54" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1719,7 +1809,6 @@ Measure "Female age 50 to 54" percent of "Total Population" within an area:
         'us.census.acs.B01001040',
         'denominator'
       );
-
 
 
 
@@ -1746,6 +1835,10 @@ Female age 55 to 59
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001041.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of fifty-five years to fifty-nine years within the specified area.
 
@@ -1756,7 +1849,7 @@ The female population between the age of fifty-five years to fifty-nine years wi
 Measure "Female age 55 to 59"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1777,7 +1870,7 @@ Measure "Female age 55 to 59"  density per sq. kilometer  for one point:
 
 Measure "Female age 55 to 59" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1790,9 +1883,10 @@ Measure "Female age 55 to 59" within an area:
 
 
 
+
 Measure "Female age 55 to 59" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1805,7 +1899,7 @@ Measure "Female age 55 to 59" percent of "Total Population" at one point:
 
 Measure "Female age 55 to 59" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1814,7 +1908,6 @@ Measure "Female age 55 to 59" percent of "Total Population" within an area:
         'us.census.acs.B01001041',
         'denominator'
       );
-
 
 
 
@@ -1841,6 +1934,10 @@ Female age 60 and 61
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001042.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of sixty years to sixty-one years within the specified area.
 
@@ -1851,7 +1948,7 @@ The female population between the age of sixty years to sixty-one years within t
 Measure "Female age 60 and 61"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1872,7 +1969,7 @@ Measure "Female age 60 and 61"  density per sq. kilometer  for one point:
 
 Measure "Female age 60 and 61" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1885,9 +1982,10 @@ Measure "Female age 60 and 61" within an area:
 
 
 
+
 Measure "Female age 60 and 61" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1900,7 +1998,7 @@ Measure "Female age 60 and 61" percent of "Total Population" at one point:
 
 Measure "Female age 60 and 61" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1909,7 +2007,6 @@ Measure "Female age 60 and 61" percent of "Total Population" within an area:
         'us.census.acs.B01001042',
         'denominator'
       );
-
 
 
 
@@ -1936,6 +2033,10 @@ Female age 62 to 64
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001043.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of sixty-two years to sixty-four years within the specified area.
 
@@ -1946,7 +2047,7 @@ The female population between the age of sixty-two years to sixty-four years wit
 Measure "Female age 62 to 64"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1967,7 +2068,7 @@ Measure "Female age 62 to 64"  density per sq. kilometer  for one point:
 
 Measure "Female age 62 to 64" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1980,9 +2081,10 @@ Measure "Female age 62 to 64" within an area:
 
 
 
+
 Measure "Female age 62 to 64" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1995,7 +2097,7 @@ Measure "Female age 62 to 64" percent of "Total Population" at one point:
 
 Measure "Female age 62 to 64" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2004,7 +2106,6 @@ Measure "Female age 62 to 64" percent of "Total Population" within an area:
         'us.census.acs.B01001043',
         'denominator'
       );
-
 
 
 
@@ -2031,6 +2132,10 @@ Female age 65 to 66
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001044.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of sixty-five years to sixty-six years within the specified area.
 
@@ -2041,7 +2146,7 @@ The female population between the age of sixty-five years to sixty-six years wit
 Measure "Female age 65 to 66"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2062,7 +2167,7 @@ Measure "Female age 65 to 66"  density per sq. kilometer  for one point:
 
 Measure "Female age 65 to 66" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2075,9 +2180,10 @@ Measure "Female age 65 to 66" within an area:
 
 
 
+
 Measure "Female age 65 to 66" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2090,7 +2196,7 @@ Measure "Female age 65 to 66" percent of "Total Population" at one point:
 
 Measure "Female age 65 to 66" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2099,7 +2205,6 @@ Measure "Female age 65 to 66" percent of "Total Population" within an area:
         'us.census.acs.B01001044',
         'denominator'
       );
-
 
 
 
@@ -2126,6 +2231,10 @@ Female age 67 to 69
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001045.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of sixty-seven years to sixty-nine years within the specified area.
 
@@ -2136,7 +2245,7 @@ The female population between the age of sixty-seven years to sixty-nine years w
 Measure "Female age 67 to 69"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2157,7 +2266,7 @@ Measure "Female age 67 to 69"  density per sq. kilometer  for one point:
 
 Measure "Female age 67 to 69" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2170,9 +2279,10 @@ Measure "Female age 67 to 69" within an area:
 
 
 
+
 Measure "Female age 67 to 69" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2185,7 +2295,7 @@ Measure "Female age 67 to 69" percent of "Total Population" at one point:
 
 Measure "Female age 67 to 69" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2194,7 +2304,6 @@ Measure "Female age 67 to 69" percent of "Total Population" within an area:
         'us.census.acs.B01001045',
         'denominator'
       );
-
 
 
 
@@ -2221,6 +2330,10 @@ Female age 70 to 74
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001046.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of seventy years to seventy-four years within the specified area.
 
@@ -2231,7 +2344,7 @@ The female population between the age of seventy years to seventy-four years wit
 Measure "Female age 70 to 74"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2252,7 +2365,7 @@ Measure "Female age 70 to 74"  density per sq. kilometer  for one point:
 
 Measure "Female age 70 to 74" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2265,9 +2378,10 @@ Measure "Female age 70 to 74" within an area:
 
 
 
+
 Measure "Female age 70 to 74" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2280,7 +2394,7 @@ Measure "Female age 70 to 74" percent of "Total Population" at one point:
 
 Measure "Female age 70 to 74" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2289,7 +2403,6 @@ Measure "Female age 70 to 74" percent of "Total Population" within an area:
         'us.census.acs.B01001046',
         'denominator'
       );
-
 
 
 
@@ -2316,6 +2429,10 @@ Female age 75 to 79
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001047.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of seventy-five years to seventy-nine years within the specified area.
 
@@ -2326,7 +2443,7 @@ The female population between the age of seventy-five years to seventy-nine year
 Measure "Female age 75 to 79"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2347,7 +2464,7 @@ Measure "Female age 75 to 79"  density per sq. kilometer  for one point:
 
 Measure "Female age 75 to 79" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2360,9 +2477,10 @@ Measure "Female age 75 to 79" within an area:
 
 
 
+
 Measure "Female age 75 to 79" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2375,7 +2493,7 @@ Measure "Female age 75 to 79" percent of "Total Population" at one point:
 
 Measure "Female age 75 to 79" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2384,7 +2502,6 @@ Measure "Female age 75 to 79" percent of "Total Population" within an area:
         'us.census.acs.B01001047',
         'denominator'
       );
-
 
 
 
@@ -2411,6 +2528,10 @@ Female age 80 to 84
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001048.png
+  :width: 100 %
+  :align: center
+
 
 The female population between the age of eighty years to eighty-four years within the specified area.
 
@@ -2421,7 +2542,7 @@ The female population between the age of eighty years to eighty-four years withi
 Measure "Female age 80 to 84"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2442,7 +2563,7 @@ Measure "Female age 80 to 84"  density per sq. kilometer  for one point:
 
 Measure "Female age 80 to 84" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2455,9 +2576,10 @@ Measure "Female age 80 to 84" within an area:
 
 
 
+
 Measure "Female age 80 to 84" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2470,7 +2592,7 @@ Measure "Female age 80 to 84" percent of "Total Population" at one point:
 
 Measure "Female age 80 to 84" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2479,7 +2601,6 @@ Measure "Female age 80 to 84" percent of "Total Population" within an area:
         'us.census.acs.B01001048',
         'denominator'
       );
-
 
 
 
@@ -2506,6 +2627,10 @@ Female age 85 and over
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001049.png
+  :width: 100 %
+  :align: center
+
 
 The female population of the age of eighty-five years and over within the specified area.
 
@@ -2516,7 +2641,7 @@ The female population of the age of eighty-five years and over within the specif
 Measure "Female age 85 and over"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2537,7 +2662,7 @@ Measure "Female age 85 and over"  density per sq. kilometer  for one point:
 
 Measure "Female age 85 and over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2550,9 +2675,10 @@ Measure "Female age 85 and over" within an area:
 
 
 
+
 Measure "Female age 85 and over" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2565,7 +2691,7 @@ Measure "Female age 85 and over" percent of "Total Population" at one point:
 
 Measure "Female age 85 and over" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2574,7 +2700,6 @@ Measure "Female age 85 and over" percent of "Total Population" within an area:
         'us.census.acs.B01001049',
         'denominator'
       );
-
 
 
 
@@ -2601,6 +2726,10 @@ Female Population
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001026.png
+  :width: 100 %
+  :align: center
+
 
 The number of people within each geography who are female.
 
@@ -2611,7 +2740,7 @@ The number of people within each geography who are female.
 Measure "Female Population"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2632,7 +2761,7 @@ Measure "Female Population"  density per sq. kilometer  for one point:
 
 Measure "Female Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2645,9 +2774,10 @@ Measure "Female Population" within an area:
 
 
 
+
 Measure "Female Population" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2660,7 +2790,7 @@ Measure "Female Population" percent of "Total Population" at one point:
 
 Measure "Female Population" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2669,7 +2799,6 @@ Measure "Female Population" percent of "Total Population" within an area:
         'us.census.acs.B01001026',
         'denominator'
       );
-
 
 
 
@@ -2696,6 +2825,10 @@ Female under 5 years
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001027.png
+  :width: 100 %
+  :align: center
+
 
 The female population over the age of five years within the specified area.
 
@@ -2706,7 +2839,7 @@ The female population over the age of five years within the specified area.
 Measure "Female under 5 years"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2727,7 +2860,7 @@ Measure "Female under 5 years"  density per sq. kilometer  for one point:
 
 Measure "Female under 5 years" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2740,9 +2873,10 @@ Measure "Female under 5 years" within an area:
 
 
 
+
 Measure "Female under 5 years" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2755,7 +2889,7 @@ Measure "Female under 5 years" percent of "Total Population" at one point:
 
 Measure "Female under 5 years" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2764,7 +2898,6 @@ Measure "Female under 5 years" percent of "Total Population" within an area:
         'us.census.acs.B01001027',
         'denominator'
       );
-
 
 
 
@@ -2799,6 +2932,10 @@ Male age 10 to 14
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001004.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of ten years to fourteen years within the specified area.
 
@@ -2809,7 +2946,7 @@ The male population between the age of ten years to fourteen years within the sp
 Measure "Male age 10 to 14"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2830,7 +2967,7 @@ Measure "Male age 10 to 14"  density per sq. kilometer  for one point:
 
 Measure "Male age 10 to 14" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2843,9 +2980,10 @@ Measure "Male age 10 to 14" within an area:
 
 
 
+
 Measure "Male age 10 to 14" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2858,7 +2996,7 @@ Measure "Male age 10 to 14" percent of "Total Population" at one point:
 
 Measure "Male age 10 to 14" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2867,7 +3005,6 @@ Measure "Male age 10 to 14" percent of "Total Population" within an area:
         'us.census.acs.B01001004',
         'denominator'
       );
-
 
 
 
@@ -2894,6 +3031,10 @@ Male age 15 to 17
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001006.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of fifteeen years to seventeen years within the specified area.
 
@@ -2904,7 +3045,7 @@ The male population between the age of fifteeen years to seventeen years within 
 Measure "Male age 15 to 17"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -2925,7 +3066,7 @@ Measure "Male age 15 to 17"  density per sq. kilometer  for one point:
 
 Measure "Male age 15 to 17" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -2938,9 +3079,10 @@ Measure "Male age 15 to 17" within an area:
 
 
 
+
 Measure "Male age 15 to 17" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2953,7 +3095,7 @@ Measure "Male age 15 to 17" percent of "Total Population" at one point:
 
 Measure "Male age 15 to 17" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -2962,7 +3104,6 @@ Measure "Male age 15 to 17" percent of "Total Population" within an area:
         'us.census.acs.B01001006',
         'denominator'
       );
-
 
 
 
@@ -2989,6 +3130,10 @@ Male age 18 and 19
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001007.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of eighteen years to nineteen years within the specified area.
 
@@ -2999,7 +3144,7 @@ The male population between the age of eighteen years to nineteen years within t
 Measure "Male age 18 and 19"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3020,7 +3165,7 @@ Measure "Male age 18 and 19"  density per sq. kilometer  for one point:
 
 Measure "Male age 18 and 19" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3033,9 +3178,10 @@ Measure "Male age 18 and 19" within an area:
 
 
 
+
 Measure "Male age 18 and 19" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3048,7 +3194,7 @@ Measure "Male age 18 and 19" percent of "Total Population" at one point:
 
 Measure "Male age 18 and 19" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3057,7 +3203,6 @@ Measure "Male age 18 and 19" percent of "Total Population" within an area:
         'us.census.acs.B01001007',
         'denominator'
       );
-
 
 
 
@@ -3084,6 +3229,10 @@ Male age 20
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001008.png
+  :width: 100 %
+  :align: center
+
 
 The male population with an age of twenty years within the specified area.
 
@@ -3094,7 +3243,7 @@ The male population with an age of twenty years within the specified area.
 Measure "Male age 20"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3115,7 +3264,7 @@ Measure "Male age 20"  density per sq. kilometer  for one point:
 
 Measure "Male age 20" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3128,9 +3277,10 @@ Measure "Male age 20" within an area:
 
 
 
+
 Measure "Male age 20" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3143,7 +3293,7 @@ Measure "Male age 20" percent of "Total Population" at one point:
 
 Measure "Male age 20" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3152,7 +3302,6 @@ Measure "Male age 20" percent of "Total Population" within an area:
         'us.census.acs.B01001008',
         'denominator'
       );
-
 
 
 
@@ -3179,6 +3328,10 @@ Male age 21
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001009.png
+  :width: 100 %
+  :align: center
+
 
 The male population with an age of twenty-one years within the specified area.
 
@@ -3189,7 +3342,7 @@ The male population with an age of twenty-one years within the specified area.
 Measure "Male age 21"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3210,7 +3363,7 @@ Measure "Male age 21"  density per sq. kilometer  for one point:
 
 Measure "Male age 21" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3223,9 +3376,10 @@ Measure "Male age 21" within an area:
 
 
 
+
 Measure "Male age 21" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3238,7 +3392,7 @@ Measure "Male age 21" percent of "Total Population" at one point:
 
 Measure "Male age 21" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3247,7 +3401,6 @@ Measure "Male age 21" percent of "Total Population" within an area:
         'us.census.acs.B01001009',
         'denominator'
       );
-
 
 
 
@@ -3274,6 +3427,10 @@ Male age 22 to 24
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001010.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of twenty-two years to twenty-four years within the specified area.
 
@@ -3284,7 +3441,7 @@ The male population between the age of twenty-two years to twenty-four years wit
 Measure "Male age 22 to 24"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3305,7 +3462,7 @@ Measure "Male age 22 to 24"  density per sq. kilometer  for one point:
 
 Measure "Male age 22 to 24" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3318,9 +3475,10 @@ Measure "Male age 22 to 24" within an area:
 
 
 
+
 Measure "Male age 22 to 24" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3333,7 +3491,7 @@ Measure "Male age 22 to 24" percent of "Total Population" at one point:
 
 Measure "Male age 22 to 24" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3342,7 +3500,6 @@ Measure "Male age 22 to 24" percent of "Total Population" within an area:
         'us.census.acs.B01001010',
         'denominator'
       );
-
 
 
 
@@ -3369,6 +3526,10 @@ Male age 25 to 29
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001011.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of twenty-five years to twenty-nine years within the specified area.
 
@@ -3379,7 +3540,7 @@ The male population between the age of twenty-five years to twenty-nine years wi
 Measure "Male age 25 to 29"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3400,7 +3561,7 @@ Measure "Male age 25 to 29"  density per sq. kilometer  for one point:
 
 Measure "Male age 25 to 29" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3413,9 +3574,10 @@ Measure "Male age 25 to 29" within an area:
 
 
 
+
 Measure "Male age 25 to 29" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3428,7 +3590,7 @@ Measure "Male age 25 to 29" percent of "Total Population" at one point:
 
 Measure "Male age 25 to 29" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3437,7 +3599,6 @@ Measure "Male age 25 to 29" percent of "Total Population" within an area:
         'us.census.acs.B01001011',
         'denominator'
       );
-
 
 
 
@@ -3464,6 +3625,10 @@ Male age 30 to 34
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001012.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of thirty years to thirty-four years within the specified area.
 
@@ -3474,7 +3639,7 @@ The male population between the age of thirty years to thirty-four years within 
 Measure "Male age 30 to 34"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3495,7 +3660,7 @@ Measure "Male age 30 to 34"  density per sq. kilometer  for one point:
 
 Measure "Male age 30 to 34" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3508,9 +3673,10 @@ Measure "Male age 30 to 34" within an area:
 
 
 
+
 Measure "Male age 30 to 34" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3523,7 +3689,7 @@ Measure "Male age 30 to 34" percent of "Total Population" at one point:
 
 Measure "Male age 30 to 34" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3532,7 +3698,6 @@ Measure "Male age 30 to 34" percent of "Total Population" within an area:
         'us.census.acs.B01001012',
         'denominator'
       );
-
 
 
 
@@ -3559,6 +3724,10 @@ Male age 35 to 39
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001013.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of thirty-five years to thirty-nine years within the specified area.
 
@@ -3569,7 +3738,7 @@ The male population between the age of thirty-five years to thirty-nine years wi
 Measure "Male age 35 to 39"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3590,7 +3759,7 @@ Measure "Male age 35 to 39"  density per sq. kilometer  for one point:
 
 Measure "Male age 35 to 39" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3603,9 +3772,10 @@ Measure "Male age 35 to 39" within an area:
 
 
 
+
 Measure "Male age 35 to 39" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3618,7 +3788,7 @@ Measure "Male age 35 to 39" percent of "Total Population" at one point:
 
 Measure "Male age 35 to 39" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3627,7 +3797,6 @@ Measure "Male age 35 to 39" percent of "Total Population" within an area:
         'us.census.acs.B01001013',
         'denominator'
       );
-
 
 
 
@@ -3654,6 +3823,10 @@ Male age 40 to 44
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001014.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of fourty years to fourty-four years within the specified area.
 
@@ -3664,7 +3837,7 @@ The male population between the age of fourty years to fourty-four years within 
 Measure "Male age 40 to 44"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3685,7 +3858,7 @@ Measure "Male age 40 to 44"  density per sq. kilometer  for one point:
 
 Measure "Male age 40 to 44" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3698,9 +3871,10 @@ Measure "Male age 40 to 44" within an area:
 
 
 
+
 Measure "Male age 40 to 44" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3713,7 +3887,7 @@ Measure "Male age 40 to 44" percent of "Total Population" at one point:
 
 Measure "Male age 40 to 44" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3722,7 +3896,6 @@ Measure "Male age 40 to 44" percent of "Total Population" within an area:
         'us.census.acs.B01001014',
         'denominator'
       );
-
 
 
 
@@ -3749,6 +3922,10 @@ Male age 65 to 66
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001020.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of sixty-five years to sixty-six years within the specified area.
 
@@ -3759,7 +3936,7 @@ The male population between the age of sixty-five years to sixty-six years withi
 Measure "Male age 65 to 66"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3780,7 +3957,7 @@ Measure "Male age 65 to 66"  density per sq. kilometer  for one point:
 
 Measure "Male age 65 to 66" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3793,9 +3970,10 @@ Measure "Male age 65 to 66" within an area:
 
 
 
+
 Measure "Male age 65 to 66" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3808,7 +3986,7 @@ Measure "Male age 65 to 66" percent of "Total Population" at one point:
 
 Measure "Male age 65 to 66" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3817,7 +3995,6 @@ Measure "Male age 65 to 66" percent of "Total Population" within an area:
         'us.census.acs.B01001020',
         'denominator'
       );
-
 
 
 
@@ -3844,6 +4021,10 @@ Male age 67 to 69
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001021.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of sixty-seven years to sixty-nine years within the specified area.
 
@@ -3854,7 +4035,7 @@ The male population between the age of sixty-seven years to sixty-nine years wit
 Measure "Male age 67 to 69"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3875,7 +4056,7 @@ Measure "Male age 67 to 69"  density per sq. kilometer  for one point:
 
 Measure "Male age 67 to 69" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3888,9 +4069,10 @@ Measure "Male age 67 to 69" within an area:
 
 
 
+
 Measure "Male age 67 to 69" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3903,7 +4085,7 @@ Measure "Male age 67 to 69" percent of "Total Population" at one point:
 
 Measure "Male age 67 to 69" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3912,7 +4094,6 @@ Measure "Male age 67 to 69" percent of "Total Population" within an area:
         'us.census.acs.B01001021',
         'denominator'
       );
-
 
 
 
@@ -3939,6 +4120,10 @@ Male age 70 to 74
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001022.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of seventy years to seventy-four years within the specified area.
 
@@ -3949,7 +4134,7 @@ The male population between the age of seventy years to seventy-four years withi
 Measure "Male age 70 to 74"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -3970,7 +4155,7 @@ Measure "Male age 70 to 74"  density per sq. kilometer  for one point:
 
 Measure "Male age 70 to 74" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -3983,9 +4168,10 @@ Measure "Male age 70 to 74" within an area:
 
 
 
+
 Measure "Male age 70 to 74" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -3998,7 +4184,7 @@ Measure "Male age 70 to 74" percent of "Total Population" at one point:
 
 Measure "Male age 70 to 74" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4007,7 +4193,6 @@ Measure "Male age 70 to 74" percent of "Total Population" within an area:
         'us.census.acs.B01001022',
         'denominator'
       );
-
 
 
 
@@ -4034,6 +4219,10 @@ Male age 75 to 79
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001023.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of seventy-five years to seventy-nine years within the specified area.
 
@@ -4044,7 +4233,7 @@ The male population between the age of seventy-five years to seventy-nine years 
 Measure "Male age 75 to 79"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4065,7 +4254,7 @@ Measure "Male age 75 to 79"  density per sq. kilometer  for one point:
 
 Measure "Male age 75 to 79" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4078,9 +4267,10 @@ Measure "Male age 75 to 79" within an area:
 
 
 
+
 Measure "Male age 75 to 79" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4093,7 +4283,7 @@ Measure "Male age 75 to 79" percent of "Total Population" at one point:
 
 Measure "Male age 75 to 79" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4102,7 +4292,6 @@ Measure "Male age 75 to 79" percent of "Total Population" within an area:
         'us.census.acs.B01001023',
         'denominator'
       );
-
 
 
 
@@ -4129,6 +4318,10 @@ Male age 80 to 84
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001024.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of eighty years to eighty-four years within the specified area.
 
@@ -4139,7 +4332,7 @@ The male population between the age of eighty years to eighty-four years within 
 Measure "Male age 80 to 84"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4160,7 +4353,7 @@ Measure "Male age 80 to 84"  density per sq. kilometer  for one point:
 
 Measure "Male age 80 to 84" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4173,9 +4366,10 @@ Measure "Male age 80 to 84" within an area:
 
 
 
+
 Measure "Male age 80 to 84" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4188,7 +4382,7 @@ Measure "Male age 80 to 84" percent of "Total Population" at one point:
 
 Measure "Male age 80 to 84" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4197,7 +4391,6 @@ Measure "Male age 80 to 84" percent of "Total Population" within an area:
         'us.census.acs.B01001024',
         'denominator'
       );
-
 
 
 
@@ -4224,6 +4417,10 @@ Male age 85 and over
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001025.png
+  :width: 100 %
+  :align: center
+
 
 The male population of the age of eighty-five years and over within the specified area.
 
@@ -4234,7 +4431,7 @@ The male population of the age of eighty-five years and over within the specifie
 Measure "Male age 85 and over"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4255,7 +4452,7 @@ Measure "Male age 85 and over"  density per sq. kilometer  for one point:
 
 Measure "Male age 85 and over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4268,9 +4465,10 @@ Measure "Male age 85 and over" within an area:
 
 
 
+
 Measure "Male age 85 and over" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4283,7 +4481,7 @@ Measure "Male age 85 and over" percent of "Total Population" at one point:
 
 Measure "Male age 85 and over" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4292,7 +4490,6 @@ Measure "Male age 85 and over" percent of "Total Population" within an area:
         'us.census.acs.B01001025',
         'denominator'
       );
-
 
 
 
@@ -4319,6 +4516,10 @@ Male Population
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001002.png
+  :width: 100 %
+  :align: center
+
 
 The number of people within each geography who are male.
 
@@ -4329,7 +4530,7 @@ The number of people within each geography who are male.
 Measure "Male Population"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4350,7 +4551,7 @@ Measure "Male Population"  density per sq. kilometer  for one point:
 
 Measure "Male Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4363,9 +4564,10 @@ Measure "Male Population" within an area:
 
 
 
+
 Measure "Male Population" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4378,7 +4580,7 @@ Measure "Male Population" percent of "Total Population" at one point:
 
 Measure "Male Population" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4387,7 +4589,6 @@ Measure "Male Population" percent of "Total Population" within an area:
         'us.census.acs.B01001002',
         'denominator'
       );
-
 
 
 
@@ -4414,6 +4615,10 @@ Male under 5 years
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001003.png
+  :width: 100 %
+  :align: center
+
 
 The male population over the age of five years within the specified area.
 
@@ -4424,7 +4629,7 @@ The male population over the age of five years within the specified area.
 Measure "Male under 5 years"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4445,7 +4650,7 @@ Measure "Male under 5 years"  density per sq. kilometer  for one point:
 
 Measure "Male under 5 years" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4458,9 +4663,10 @@ Measure "Male under 5 years" within an area:
 
 
 
+
 Measure "Male under 5 years" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4473,7 +4679,7 @@ Measure "Male under 5 years" percent of "Total Population" at one point:
 
 Measure "Male under 5 years" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4482,7 +4688,6 @@ Measure "Male under 5 years" percent of "Total Population" within an area:
         'us.census.acs.B01001003',
         'denominator'
       );
-
 
 
 
@@ -4509,6 +4714,10 @@ Men age 45 to 49
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001015.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of fourty-five years to fourty-nine years within the specified area.
 
@@ -4519,7 +4728,7 @@ The male population between the age of fourty-five years to fourty-nine years wi
 Measure "Men age 45 to 49"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4540,7 +4749,7 @@ Measure "Men age 45 to 49"  density per sq. kilometer  for one point:
 
 Measure "Men age 45 to 49" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4553,9 +4762,10 @@ Measure "Men age 45 to 49" within an area:
 
 
 
+
 Measure "Men age 45 to 49" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4568,7 +4778,7 @@ Measure "Men age 45 to 49" percent of "Total Population" at one point:
 
 Measure "Men age 45 to 49" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4577,7 +4787,6 @@ Measure "Men age 45 to 49" percent of "Total Population" within an area:
         'us.census.acs.B01001015',
         'denominator'
       );
-
 
 
 
@@ -4618,6 +4827,10 @@ Men age 50 to 54
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001016.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of fifty years to fifty-four years within the specified area.
 
@@ -4628,7 +4841,7 @@ The male population between the age of fifty years to fifty-four years within th
 Measure "Men age 50 to 54"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4649,7 +4862,7 @@ Measure "Men age 50 to 54"  density per sq. kilometer  for one point:
 
 Measure "Men age 50 to 54" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4662,9 +4875,10 @@ Measure "Men age 50 to 54" within an area:
 
 
 
+
 Measure "Men age 50 to 54" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4677,7 +4891,7 @@ Measure "Men age 50 to 54" percent of "Total Population" at one point:
 
 Measure "Men age 50 to 54" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4686,7 +4900,6 @@ Measure "Men age 50 to 54" percent of "Total Population" within an area:
         'us.census.acs.B01001016',
         'denominator'
       );
-
 
 
 
@@ -4713,6 +4926,10 @@ Men age 55 to 59
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001017.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of fifty-five years to fifty-nine years within the specified area.
 
@@ -4723,7 +4940,7 @@ The male population between the age of fifty-five years to fifty-nine years with
 Measure "Men age 55 to 59"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4744,7 +4961,7 @@ Measure "Men age 55 to 59"  density per sq. kilometer  for one point:
 
 Measure "Men age 55 to 59" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4757,9 +4974,10 @@ Measure "Men age 55 to 59" within an area:
 
 
 
+
 Measure "Men age 55 to 59" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4772,7 +4990,7 @@ Measure "Men age 55 to 59" percent of "Total Population" at one point:
 
 Measure "Men age 55 to 59" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4781,7 +4999,6 @@ Measure "Men age 55 to 59" percent of "Total Population" within an area:
         'us.census.acs.B01001017',
         'denominator'
       );
-
 
 
 
@@ -4808,6 +5025,10 @@ Men age 60 to 61
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001018.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of sixty years to sixty-one years within the specified area.
 
@@ -4818,7 +5039,7 @@ The male population between the age of sixty years to sixty-one years within the
 Measure "Men age 60 to 61"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4839,7 +5060,7 @@ Measure "Men age 60 to 61"  density per sq. kilometer  for one point:
 
 Measure "Men age 60 to 61" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4852,9 +5073,10 @@ Measure "Men age 60 to 61" within an area:
 
 
 
+
 Measure "Men age 60 to 61" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4867,7 +5089,7 @@ Measure "Men age 60 to 61" percent of "Total Population" at one point:
 
 Measure "Men age 60 to 61" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4876,7 +5098,6 @@ Measure "Men age 60 to 61" percent of "Total Population" within an area:
         'us.census.acs.B01001018',
         'denominator'
       );
-
 
 
 
@@ -4903,6 +5124,10 @@ Men age 62 to 64
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B01001019.png
+  :width: 100 %
+  :align: center
+
 
 The male population between the age of sixty-two years to sixty-four years within the specified area.
 
@@ -4913,7 +5138,7 @@ The male population between the age of sixty-two years to sixty-four years withi
 Measure "Men age 62 to 64"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -4934,7 +5159,7 @@ Measure "Men age 62 to 64"  density per sq. kilometer  for one point:
 
 Measure "Men age 62 to 64" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -4947,9 +5172,10 @@ Measure "Men age 62 to 64" within an area:
 
 
 
+
 Measure "Men age 62 to 64" percent of "Total Population" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4962,7 +5188,7 @@ Measure "Men age 62 to 64" percent of "Total Population" at one point:
 
 Measure "Men age 62 to 64" percent of "Total Population" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -4971,7 +5197,6 @@ Measure "Men age 62 to 64" percent of "Total Population" within an area:
         'us.census.acs.B01001019',
         'denominator'
       );
-
 
 
 

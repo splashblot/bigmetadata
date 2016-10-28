@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>10.2. Health &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="10. United Kingdom" href="../uk.html" />
+    <link rel="next" title="&lt;no title&gt;" href="migration.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="commerce_economy.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="health">
+<h1>10.2. Health<a class="headerlink" href="#health" title="Permalink to this headline">¶</a></h1>
+<p>Breakdowns of the population by health</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#bad-or-very-bad-health" id="id1">Bad or very bad health</a></li>
+<li><a class="reference internal" href="#day-to-day-activities-not-limited" id="id2">Day-to-day activities not limited</a></li>
+<li><a class="reference internal" href="#day-to-day-activities-somewhat-limited" id="id3">Day-to-day activities somewhat limited</a></li>
+<li><a class="reference internal" href="#day-to-day-activities-very-limited" id="id4">Day-to-day activities very limited</a></li>
+<li><a class="reference internal" href="#fair-health" id="id5">Fair health</a></li>
+<li><a class="reference internal" href="#very-good-or-good-health" id="id6">Very good or good health</a></li>
+</ul>
+</div>
+<div class="section" id="bad-or-very-bad-health">
+<span id="uk-ons-lc3202wa0010"></span><h2><a class="toc-backref" href="#id1">10.2.1. Bad or very bad health</a><a class="headerlink" href="#bad-or-very-bad-health" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC3202WA0010.png"><img alt="../_images/uk.ons.LC3202WA0010.png" src="../_images/uk.ons.LC3202WA0010.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Bad or very bad health&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0010&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Bad or very bad health&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0010&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Bad or very bad health&#8221; percent of &#8220;Population age 3 and over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0010&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Bad or very bad health&#8221; percent of &#8220;Population age 3 and over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0010&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2104EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="day-to-day-activities-not-limited">
+<span id="uk-ons-lc3204wa0010"></span><h2><a class="toc-backref" href="#id2">10.2.2. Day-to-day activities not limited</a><a class="headerlink" href="#day-to-day-activities-not-limited" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC3204WA0010.png"><img alt="../_images/uk.ons.LC3204WA0010.png" src="../_images/uk.ons.LC3204WA0010.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Day-to-day activities not limited&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0010&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Day-to-day activities not limited&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0010&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Day-to-day activities not limited&#8221; percent of &#8220;Population age 3 and over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0010&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Day-to-day activities not limited&#8221; percent of &#8220;Population age 3 and over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0010&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2104EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="day-to-day-activities-somewhat-limited">
+<span id="uk-ons-lc3204wa0007"></span><h2><a class="toc-backref" href="#id3">10.2.3. Day-to-day activities somewhat limited</a><a class="headerlink" href="#day-to-day-activities-somewhat-limited" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC3204WA0007.png"><img alt="../_images/uk.ons.LC3204WA0007.png" src="../_images/uk.ons.LC3204WA0007.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Day-to-day activities somewhat limited&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0007&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Day-to-day activities somewhat limited&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0007&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Day-to-day activities somewhat limited&#8221; percent of &#8220;Population age 3 and over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0007&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Day-to-day activities somewhat limited&#8221; percent of &#8220;Population age 3 and over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0007&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2104EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="day-to-day-activities-very-limited">
+<span id="uk-ons-lc3204wa0004"></span><h2><a class="toc-backref" href="#id4">10.2.4. Day-to-day activities very limited</a><a class="headerlink" href="#day-to-day-activities-very-limited" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC3204WA0004.png"><img alt="../_images/uk.ons.LC3204WA0004.png" src="../_images/uk.ons.LC3204WA0004.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Day-to-day activities very limited&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0004&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Day-to-day activities very limited&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0004&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Day-to-day activities very limited&#8221; percent of &#8220;Population age 3 and over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0004&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Day-to-day activities very limited&#8221; percent of &#8220;Population age 3 and over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3204WA0004&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2104EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fair-health">
+<span id="uk-ons-lc3202wa0007"></span><h2><a class="toc-backref" href="#id5">10.2.5. Fair health</a><a class="headerlink" href="#fair-health" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC3202WA0007.png"><img alt="../_images/uk.ons.LC3202WA0007.png" src="../_images/uk.ons.LC3202WA0007.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Fair health&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0007&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Fair health&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0007&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Fair health&#8221; percent of &#8220;Population age 3 and over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0007&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Fair health&#8221; percent of &#8220;Population age 3 and over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0007&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2104EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="very-good-or-good-health">
+<span id="uk-ons-lc3202wa0004"></span><h2><a class="toc-backref" href="#id6">10.2.6. Very good or good health</a><a class="headerlink" href="#very-good-or-good-health" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC3202WA0004.png"><img alt="../_images/uk.ons.LC3202WA0004.png" src="../_images/uk.ons.LC3202WA0004.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Very good or good health&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0004&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Very good or good health&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0004&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Very good or good health&#8221; percent of &#8220;Population age 3 and over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0004&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Very good or good health&#8221; percent of &#8220;Population age 3 and over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.4684455122</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.18483352661</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC3202WA0004&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2104EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">10.2. Health</a><ul>
+<li><a class="reference internal" href="#bad-or-very-bad-health">10.2.1. Bad or very bad health</a></li>
+<li><a class="reference internal" href="#day-to-day-activities-not-limited">10.2.2. Day-to-day activities not limited</a></li>
+<li><a class="reference internal" href="#day-to-day-activities-somewhat-limited">10.2.3. Day-to-day activities somewhat limited</a></li>
+<li><a class="reference internal" href="#day-to-day-activities-very-limited">10.2.4. Day-to-day activities very limited</a></li>
+<li><a class="reference internal" href="#fair-health">10.2.5. Fair health</a></li>
+<li><a class="reference internal" href="#very-good-or-good-health">10.2.6. Very good or good health</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../uk.html">10. United Kingdom</a><ul>
+      <li>Previous: <a href="commerce_economy.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="migration.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/uk/health.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/uk/health.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,13656 @@
+
+
+.. Education:
+
+Education
+===========================================================================
+
+Educational attainment and enrollment.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.EDU49_R:
+
+Average education level
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU49_R.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Average education level"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU49_R'
+      );
+
+
+
+
+
+
+Average education level is only available for point lookups.
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU50_R:
+
+Average female education level
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU50_R.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Average female education level"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU50_R'
+      );
+
+
+
+
+
+
+Average female education level is only available for point lookups.
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU51_R:
+
+Average male education level
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU51_R.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Average male education level"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU51_R'
+      );
+
+
+
+
+
+
+Average male education level is only available for point lookups.
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.ECO16:
+
+Employed population who completed basic education
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.ECO16.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO16'
+      );
+
+
+
+
+
+Measure "Employed population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO16'
+        );
+
+
+
+
+
+
+Measure "Employed population who completed basic education" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO16',
+        'denominator'
+      );
+
+
+Measure "Employed population who completed basic education" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO16',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Employed population who completed basic education
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO17:
+
+Employed female population who completed basic education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO17.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed female population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO17'
+      );
+
+
+
+
+
+Measure "Employed female population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO17'
+        );
+
+
+
+
+
+
+Measure "Employed female population who completed basic education" percent of "Employed population who completed basic education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO17',
+        'denominator'
+      );
+
+
+Measure "Employed female population who completed basic education" percent of "Employed population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO17',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO16`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO18:
+
+Employed male population who completed basic education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO18.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed male population who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO18'
+      );
+
+
+
+
+
+Measure "Employed male population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO18'
+        );
+
+
+
+
+
+
+Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO18',
+        'denominator'
+      );
+
+
+Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO18',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO16`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.ECO19:
+
+Employed population with a high school degree
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.ECO19.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO19'
+      );
+
+
+
+
+
+Measure "Employed population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO19'
+        );
+
+
+
+
+
+
+Measure "Employed population with a high school degree" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO19',
+        'denominator'
+      );
+
+
+Measure "Employed population with a high school degree" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO19',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Employed population with a high school degree
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO20:
+
+Employed female population with a high school degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed female population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO20'
+      );
+
+
+
+
+
+Measure "Employed female population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO20'
+        );
+
+
+
+
+
+
+Measure "Employed female population with a high school degree" percent of "Employed population with a high school degree" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO20',
+        'denominator'
+      );
+
+
+Measure "Employed female population with a high school degree" percent of "Employed population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO19`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO21:
+
+Employed male population with a high school degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO21.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed male population with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO21'
+      );
+
+
+
+
+
+Measure "Employed male population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO21'
+        );
+
+
+
+
+
+
+Measure "Employed male population with a high school degree" percent of "Employed population with a high school degree" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO21',
+        'denominator'
+      );
+
+
+Measure "Employed male population with a high school degree" percent of "Employed population with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO21',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO19`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.ECO22:
+
+Employed population with a university degree or more
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.ECO22.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO22'
+      );
+
+
+
+
+
+Measure "Employed population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO22'
+        );
+
+
+
+
+
+
+Measure "Employed population with a university degree or more" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO22',
+        'denominator'
+      );
+
+
+Measure "Employed population with a university degree or more" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO22',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Employed population with a university degree or more
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO23:
+
+Employed female population with a university degree or more
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO23.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed female population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO23'
+      );
+
+
+
+
+
+Measure "Employed female population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO23'
+        );
+
+
+
+
+
+
+Measure "Employed female population with a university degree or more" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO23',
+        'denominator'
+      );
+
+
+Measure "Employed female population with a university degree or more" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO23',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO22`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO24:
+
+Employed male population with a university degree or more
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO24.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed male population with a university degree or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO24'
+      );
+
+
+
+
+
+Measure "Employed male population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO24'
+        );
+
+
+
+
+
+
+Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO24',
+        'denominator'
+      );
+
+
+Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO24',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO22`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.ECO13:
+
+Employed population with incomplete secondary education
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.ECO13.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO13'
+      );
+
+
+
+
+
+Measure "Employed population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO13'
+        );
+
+
+
+
+
+
+Measure "Employed population with incomplete secondary education" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO13',
+        'denominator'
+      );
+
+
+Measure "Employed population with incomplete secondary education" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO13',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Employed population with incomplete secondary education
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO14:
+
+Employed female population with incomplete secondary education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO14'
+      );
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO14'
+        );
+
+
+
+
+
+
+Measure "Employed female population with incomplete secondary education" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO14',
+        'denominator'
+      );
+
+
+Measure "Employed female population with incomplete secondary education" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO13`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO15:
+
+Employed male population with incomplete secondary education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO15'
+      );
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO15'
+        );
+
+
+
+
+
+
+Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO15',
+        'denominator'
+      );
+
+
+Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO13`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.ECO10:
+
+Employed population with primary education
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.ECO10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO10'
+      );
+
+
+
+
+
+Measure "Employed population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO10'
+        );
+
+
+
+
+
+
+Measure "Employed population with primary education" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO10',
+        'denominator'
+      );
+
+
+Measure "Employed population with primary education" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Employed population with primary education
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO11:
+
+Employed female population with primary education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed female population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO11'
+      );
+
+
+
+
+
+Measure "Employed female population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO11'
+        );
+
+
+
+
+
+
+Measure "Employed female population with primary education" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO11',
+        'denominator'
+      );
+
+
+Measure "Employed female population with primary education" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO10`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO12:
+
+Employed male population with primary education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed male population with primary education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO12'
+      );
+
+
+
+
+
+Measure "Employed male population with primary education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO12'
+        );
+
+
+
+
+
+
+Measure "Employed male population with primary education" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO12',
+        'denominator'
+      );
+
+
+Measure "Employed male population with primary education" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO10`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.ECO7:
+
+Employed population without schooling
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.ECO7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO7'
+      );
+
+
+
+
+
+Measure "Employed population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO7'
+        );
+
+
+
+
+
+
+Measure "Employed population without schooling" percent of "Employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO7',
+        'denominator'
+      );
+
+
+Measure "Employed population without schooling" percent of "Employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Employed population without schooling
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.ECO8:
+
+Employed female population without schooling
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed female population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO8'
+      );
+
+
+
+
+
+Measure "Employed female population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO8'
+        );
+
+
+
+
+
+
+Measure "Employed female population without schooling" percent of "Employed female" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO8',
+        'denominator'
+      );
+
+
+Measure "Employed female population without schooling" percent of "Employed female" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO5`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO7`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.ECO9:
+
+Employed male population without schooling
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.ECO9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Employed male population without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO9'
+      );
+
+
+
+
+
+Measure "Employed male population without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.ECO9'
+        );
+
+
+
+
+
+
+Measure "Employed male population without schooling" percent of "Employed male" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.ECO9',
+        'denominator'
+      );
+
+
+Measure "Employed male population without schooling" percent of "Employed male" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.ECO9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO6`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.ECO7`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU28:
+
+Population 15 or more years old who are illiterate
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU28.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population 15 or more years old who are illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU28'
+      );
+
+
+
+
+
+Measure "Population 15 or more years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU28'
+        );
+
+
+
+
+
+
+Measure "Population 15 or more years old who are illiterate" percent of "Population 15 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU28',
+        'denominator'
+      );
+
+
+Measure "Population 15 or more years old who are illiterate" percent of "Population 15 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU28',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB20`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population 15 or more years old who are illiterate
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU29:
+
+Female population 15 or more years old who are illiterate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU29.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population 15 or more years old who are illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU29'
+      );
+
+
+
+
+
+Measure "Female population 15 or more years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU29'
+        );
+
+
+
+
+
+
+Measure "Female population 15 or more years old who are illiterate" percent of "Population 15 or more years old who are illiterate" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU29',
+        'denominator'
+      );
+
+
+Measure "Female population 15 or more years old who are illiterate" percent of "Population 15 or more years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU29',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU28`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB51`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU30:
+
+Male population 15 or more years old who are illiterate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU30.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population 15 or more years old who are illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU30'
+      );
+
+
+
+
+
+Measure "Male population 15 or more years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU30'
+        );
+
+
+
+
+
+
+Measure "Male population 15 or more years old who are illiterate" percent of "Population 15 or more years old who are illiterate" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU30',
+        'denominator'
+      );
+
+
+Measure "Male population 15 or more years old who are illiterate" percent of "Population 15 or more years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU30',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU28`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB76`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU25:
+
+Population 15 or more years old who are literate
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU25.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population 15 or more years old who are literate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU25'
+      );
+
+
+
+
+
+Measure "Population 15 or more years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU25'
+        );
+
+
+
+
+
+
+Measure "Population 15 or more years old who are literate" percent of "Population 15 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU25',
+        'denominator'
+      );
+
+
+Measure "Population 15 or more years old who are literate" percent of "Population 15 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU25',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB20`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population 15 or more years old who are literate
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU26:
+
+Female population 15 or more years old who are literate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU26.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population 15 or more years old who are literate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU26'
+      );
+
+
+
+
+
+Measure "Female population 15 or more years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU26'
+        );
+
+
+
+
+
+
+Measure "Female population 15 or more years old who are literate" percent of "Population 15 or more years old who are literate" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU26',
+        'denominator'
+      );
+
+
+Measure "Female population 15 or more years old who are literate" percent of "Population 15 or more years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU26',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU25`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB51`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU27:
+
+Male population 15 or more years old who are literate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU27.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population 15 or more years old who are literate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU27'
+      );
+
+
+
+
+
+Measure "Male population 15 or more years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU27'
+        );
+
+
+
+
+
+
+Measure "Male population 15 or more years old who are literate" percent of "Population 15 or more years old who are literate" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU27',
+        'denominator'
+      );
+
+
+Measure "Male population 15 or more years old who are literate" percent of "Population 15 or more years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU27',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU25`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB51`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU37:
+
+Population 15 or more years old who completed basic education
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU37.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population 15 or more years old who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU37'
+      );
+
+
+
+
+
+Measure "Population 15 or more years old who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU37'
+        );
+
+
+
+
+
+
+Measure "Population 15 or more years old who completed basic education" percent of "Population 15 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU37',
+        'denominator'
+      );
+
+
+Measure "Population 15 or more years old who completed basic education" percent of "Population 15 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU37',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB20`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population 15 or more years old who completed basic education
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU38:
+
+Female population 15 or more years old who completed basic education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU38.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population 15 or more years old who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU38'
+      );
+
+
+
+
+
+Measure "Female population 15 or more years old who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU38'
+        );
+
+
+
+
+
+
+Measure "Female population 15 or more years old who completed basic education" percent of "Population 15 or more years old who completed basic education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU38',
+        'denominator'
+      );
+
+
+Measure "Female population 15 or more years old who completed basic education" percent of "Population 15 or more years old who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU38',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU37`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB51`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU39:
+
+Male population 15 or more years old who completed basic education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU39.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population 15 or more years old who completed basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU39'
+      );
+
+
+
+
+
+Measure "Male population 15 or more years old who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU39'
+        );
+
+
+
+
+
+
+Measure "Male population 15 or more years old who completed basic education" percent of "Population 15 or more years old who completed basic education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU39',
+        'denominator'
+      );
+
+
+Measure "Male population 15 or more years old who completed basic education" percent of "Population 15 or more years old who completed basic education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU39',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU37`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB76`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU34:
+
+Population 15 or more years old who did not complete basic education
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU34.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population 15 or more years old who did not complete basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU34'
+      );
+
+
+
+
+
+Measure "Population 15 or more years old who did not complete basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU34'
+        );
+
+
+
+
+
+
+Measure "Population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU34',
+        'denominator'
+      );
+
+
+Measure "Population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU34',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB20`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population 15 or more years old who did not complete basic education
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU35:
+
+Female population 15 or more years old who did not complete basic education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU35.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population 15 or more years old who did not complete basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU35'
+      );
+
+
+
+
+
+Measure "Female population 15 or more years old who did not complete basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU35'
+        );
+
+
+
+
+
+
+Measure "Female population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old who did not complete basic education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU35',
+        'denominator'
+      );
+
+
+Measure "Female population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old who did not complete basic education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU35',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU34`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB51`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU36:
+
+Male population 15 or more years old who did not complete basic education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU36.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population 15 or more years old who did not complete basic education"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU36'
+      );
+
+
+
+
+
+Measure "Male population 15 or more years old who did not complete basic education" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU36'
+        );
+
+
+
+
+
+
+Measure "Male population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old who did not complete basic education" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU36',
+        'denominator'
+      );
+
+
+Measure "Male population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old who did not complete basic education" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU36',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU34`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB51`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU40:
+
+Population 15 or more years old with some high school
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU40.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population 15 or more years old with some high school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU40'
+      );
+
+
+
+
+
+Measure "Population 15 or more years old with some high school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU40'
+        );
+
+
+
+
+
+
+Measure "Population 15 or more years old with some high school" percent of "Population 15 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU40',
+        'denominator'
+      );
+
+
+Measure "Population 15 or more years old with some high school" percent of "Population 15 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU40',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB20`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population 15 or more years old with some high school
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU41:
+
+Female population 15 or more years old with some high school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU41.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population 15 or more years old with some high school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU41'
+      );
+
+
+
+
+
+Measure "Female population 15 or more years old with some high school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU41'
+        );
+
+
+
+
+
+
+Measure "Female population 15 or more years old with some high school" percent of "Population 15 or more years old with some high school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU41',
+        'denominator'
+      );
+
+
+Measure "Female population 15 or more years old with some high school" percent of "Population 15 or more years old with some high school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU41',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU40`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB51`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU42:
+
+Male population 15 or more years old with some high school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU42.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population 15 or more years old with some high school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU42'
+      );
+
+
+
+
+
+Measure "Male population 15 or more years old with some high school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU42'
+        );
+
+
+
+
+
+
+Measure "Male population 15 or more years old with some high school" percent of "Population 15 or more years old with some high school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU42',
+        'denominator'
+      );
+
+
+Measure "Male population 15 or more years old with some high school" percent of "Population 15 or more years old with some high school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU42',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU40`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB76`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU31:
+
+Population 15 or more years old without schooling
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU31.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population 15 or more years old without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU31'
+      );
+
+
+
+
+
+Measure "Population 15 or more years old without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU31'
+        );
+
+
+
+
+
+
+Measure "Population 15 or more years old without schooling" percent of "Population 15 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU31',
+        'denominator'
+      );
+
+
+Measure "Population 15 or more years old without schooling" percent of "Population 15 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU31',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB20`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population 15 or more years old without schooling
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU32:
+
+Female population 15 or more years old without schooling
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU32.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population 15 or more years old without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU32'
+      );
+
+
+
+
+
+Measure "Female population 15 or more years old without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU32'
+        );
+
+
+
+
+
+
+Measure "Female population 15 or more years old without schooling" percent of "Population 15 or more years old without schooling" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU32',
+        'denominator'
+      );
+
+
+Measure "Female population 15 or more years old without schooling" percent of "Population 15 or more years old without schooling" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU32',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU31`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB51`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU33:
+
+Male population 15 or more years old without schooling
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU33.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population 15 or more years old without schooling"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU33'
+      );
+
+
+
+
+
+Measure "Male population 15 or more years old without schooling" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU33'
+        );
+
+
+
+
+
+
+Measure "Male population 15 or more years old without schooling" percent of "Population 15 or more years old without schooling" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU33',
+        'denominator'
+      );
+
+
+Measure "Male population 15 or more years old without schooling" percent of "Population 15 or more years old without schooling" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU33',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU31`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB76`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU43:
+
+Population 18 or more years old with a high school degree
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU43.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population 18 or more years old with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU43'
+      );
+
+
+
+
+
+Measure "Population 18 or more years old with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU43'
+        );
+
+
+
+
+
+
+Measure "Population 18 or more years old with a high school degree" percent of "Population 18 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU43',
+        'denominator'
+      );
+
+
+Measure "Population 18 or more years old with a high school degree" percent of "Population 18 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU43',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB21`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population 18 or more years old with a high school degree
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU44:
+
+Female population 18 or more years old with a high school degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU44.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population 18 or more years old with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU44'
+      );
+
+
+
+
+
+Measure "Female population 18 or more years old with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU44'
+        );
+
+
+
+
+
+
+Measure "Female population 18 or more years old with a high school degree" percent of "Population 18 or more years old with a high school degree" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU44',
+        'denominator'
+      );
+
+
+Measure "Female population 18 or more years old with a high school degree" percent of "Population 18 or more years old with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU44',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU43`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB52`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU45:
+
+Male population 18 or more years old with a high school degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU45.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population 18 or more years old with a high school degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU45'
+      );
+
+
+
+
+
+Measure "Male population 18 or more years old with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU45'
+        );
+
+
+
+
+
+
+Measure "Male population 18 or more years old with a high school degree" percent of "Population 18 or more years old with a high school degree" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU45',
+        'denominator'
+      );
+
+
+Measure "Male population 18 or more years old with a high school degree" percent of "Population 18 or more years old with a high school degree" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU45',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU43`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB77`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU46:
+
+Population 25 or more years old with a university degree
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU46.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population 25 or more years old with a university degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU46'
+      );
+
+
+
+
+
+Measure "Population 25 or more years old with a university degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU46'
+        );
+
+
+
+
+
+
+Measure "Population 25 or more years old with a university degree" percent of "Population 25 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU46',
+        'denominator'
+      );
+
+
+Measure "Population 25 or more years old with a university degree" percent of "Population 25 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU46',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB22`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population 25 or more years old with a university degree
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU47:
+
+Female population 25 or more years old with a university degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU47.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population 25 or more years old with a university degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU47'
+      );
+
+
+
+
+
+Measure "Female population 25 or more years old with a university degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU47'
+        );
+
+
+
+
+
+
+Measure "Female population 25 or more years old with a university degree" percent of "Female population 25 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU47',
+        'denominator'
+      );
+
+
+Measure "Female population 25 or more years old with a university degree" percent of "Female population 25 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU47',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB53`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU46`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU48:
+
+Male population 25 or more years old with a university degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU48.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population 25 or more years old with a university degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU48'
+      );
+
+
+
+
+
+Measure "Male population 25 or more years old with a university degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU48'
+        );
+
+
+
+
+
+
+Measure "Male population 25 or more years old with a university degree" percent of "Male population 25 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU48',
+        'denominator'
+      );
+
+
+Measure "Male population 25 or more years old with a university degree" percent of "Male population 25 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU48',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB78`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU46`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU16:
+
+Population from 12 to 14 years old who do not go to school
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU16.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population from 12 to 14 years old who do not go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU16'
+      );
+
+
+
+
+
+Measure "Population from 12 to 14 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU16'
+        );
+
+
+
+
+
+
+Measure "Population from 12 to 14 years old who do not go to school" percent of "Population 12 to 14 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU16',
+        'denominator'
+      );
+
+
+Measure "Population from 12 to 14 years old who do not go to school" percent of "Population 12 to 14 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU16',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB7`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population from 12 to 14 years old who do not go to school
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU17:
+
+Female population from 12 to 14 years old who do not go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU17.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population from 12 to 14 years old who do not go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU17'
+      );
+
+
+
+
+
+Measure "Female population from 12 to 14 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU17'
+        );
+
+
+
+
+
+
+Measure "Female population from 12 to 14 years old who do not go to school" percent of "Population from 12 to 14 years old who do not go to school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU17',
+        'denominator'
+      );
+
+
+Measure "Female population from 12 to 14 years old who do not go to school" percent of "Population from 12 to 14 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU17',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU16`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB37`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU18:
+
+Male population from 12 to 14 years old who do not go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU18.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population from 12 to 14 years old who do not go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU18'
+      );
+
+
+
+
+
+Measure "Male population from 12 to 14 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU18'
+        );
+
+
+
+
+
+
+Measure "Male population from 12 to 14 years old who do not go to school" percent of "Male population 12 to 14 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU18',
+        'denominator'
+      );
+
+
+Measure "Male population from 12 to 14 years old who do not go to school" percent of "Male population 12 to 14 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU18',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB63`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU16`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU13:
+
+Population from 12 to 14 years old who go to school
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU13.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population from 12 to 14 years old who go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU13'
+      );
+
+
+
+
+
+Measure "Population from 12 to 14 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU13'
+        );
+
+
+
+
+
+
+Measure "Population from 12 to 14 years old who go to school" percent of "Population 12 to 14 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU13',
+        'denominator'
+      );
+
+
+Measure "Population from 12 to 14 years old who go to school" percent of "Population 12 to 14 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU13',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB7`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population from 12 to 14 years old who go to school
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU14:
+
+Female population from 12 to 14 years old who go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population from 12 to 14 years old who go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU14'
+      );
+
+
+
+
+
+Measure "Female population from 12 to 14 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU14'
+        );
+
+
+
+
+
+
+Measure "Female population from 12 to 14 years old who go to school" percent of "Population from 12 to 14 years old who go to school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU14',
+        'denominator'
+      );
+
+
+Measure "Female population from 12 to 14 years old who go to school" percent of "Population from 12 to 14 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU13`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB37`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU15:
+
+Male population from 12 to 14 years old who go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population from 12 to 14 years old who go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU15'
+      );
+
+
+
+
+
+Measure "Male population from 12 to 14 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU15'
+        );
+
+
+
+
+
+
+Measure "Male population from 12 to 14 years old who go to school" percent of "Population from 12 to 14 years old who go to school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU15',
+        'denominator'
+      );
+
+
+Measure "Male population from 12 to 14 years old who go to school" percent of "Population from 12 to 14 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU13`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB63`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU4:
+
+Population from 3 to 5 years old who do not go to school
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population from 3 to 5 years old who do not go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU4'
+      );
+
+
+
+
+
+Measure "Population from 3 to 5 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU4'
+        );
+
+
+
+
+
+
+Measure "Population from 3 to 5 years old who do not go to school" percent of "Population 3 to 5 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU4',
+        'denominator'
+      );
+
+
+Measure "Population from 3 to 5 years old who do not go to school" percent of "Population 3 to 5 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population from 3 to 5 years old who do not go to school
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU5:
+
+Female population from 3 to 5 years old who do not go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population from 3 to 5 years old who do not go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU5'
+      );
+
+
+
+
+
+Measure "Female population from 3 to 5 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU5'
+        );
+
+
+
+
+
+
+Measure "Female population from 3 to 5 years old who do not go to school" percent of "Population from 3 to 5 years old who do not go to school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU5',
+        'denominator'
+      );
+
+
+Measure "Female population from 3 to 5 years old who do not go to school" percent of "Population from 3 to 5 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU4`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB34`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU6:
+
+Male population from 3 to 5 years old who do not go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population from 3 to 5 years old who do not go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU6'
+      );
+
+
+
+
+
+Measure "Male population from 3 to 5 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU6'
+        );
+
+
+
+
+
+
+Measure "Male population from 3 to 5 years old who do not go to school" percent of "Population from 3 to 5 years old who do not go to school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU6',
+        'denominator'
+      );
+
+
+Measure "Male population from 3 to 5 years old who do not go to school" percent of "Population from 3 to 5 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU4`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB60`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU1:
+
+Population from 3 to 5 years old who go to school
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population from 3 to 5 years old who go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU1'
+      );
+
+
+
+
+
+Measure "Population from 3 to 5 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU1'
+        );
+
+
+
+
+
+
+Measure "Population from 3 to 5 years old who go to school" percent of "Population 3 to 5 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU1',
+        'denominator'
+      );
+
+
+Measure "Population from 3 to 5 years old who go to school" percent of "Population 3 to 5 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population from 3 to 5 years old who go to school
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU2:
+
+Female population from 3 to 5 years old who go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population from 3 to 5 years old who go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU2'
+      );
+
+
+
+
+
+Measure "Female population from 3 to 5 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU2'
+        );
+
+
+
+
+
+
+Measure "Female population from 3 to 5 years old who go to school" percent of "Population from 3 to 5 years old who go to school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU2',
+        'denominator'
+      );
+
+
+Measure "Female population from 3 to 5 years old who go to school" percent of "Population from 3 to 5 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU1`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB34`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU3:
+
+Male population from 3 to 5 years old who go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population from 3 to 5 years old who go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU3'
+      );
+
+
+
+
+
+Measure "Male population from 3 to 5 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU3'
+        );
+
+
+
+
+
+
+Measure "Male population from 3 to 5 years old who go to school" percent of "Population from 3 to 5 years old who go to school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU3',
+        'denominator'
+      );
+
+
+Measure "Male population from 3 to 5 years old who go to school" percent of "Population from 3 to 5 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU1`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB60`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU10:
+
+Population from 6 to 11 years old who do not go to school
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population from 6 to 11 years old who do not go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU10'
+      );
+
+
+
+
+
+Measure "Population from 6 to 11 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU10'
+        );
+
+
+
+
+
+
+Measure "Population from 6 to 11 years old who do not go to school" percent of "Population 6 to 11 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU10',
+        'denominator'
+      );
+
+
+Measure "Population from 6 to 11 years old who do not go to school" percent of "Population 6 to 11 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population from 6 to 11 years old who do not go to school
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU11:
+
+Female population from 6 to 11 years old who do not go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population from 6 to 11 years old who do not go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU11'
+      );
+
+
+
+
+
+Measure "Female population from 6 to 11 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU11'
+        );
+
+
+
+
+
+
+Measure "Female population from 6 to 11 years old who do not go to school" percent of "Female population 6 to 11 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU11',
+        'denominator'
+      );
+
+
+Measure "Female population from 6 to 11 years old who do not go to school" percent of "Female population 6 to 11 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB35`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU10`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU12:
+
+Male population from 6 to 11 years old who do not go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population from 6 to 11 years old who do not go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU12'
+      );
+
+
+
+
+
+Measure "Male population from 6 to 11 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU12'
+        );
+
+
+
+
+
+
+Measure "Male population from 6 to 11 years old who do not go to school" percent of "Population from 6 to 11 years old who do not go to school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU12',
+        'denominator'
+      );
+
+
+Measure "Male population from 6 to 11 years old who do not go to school" percent of "Population from 6 to 11 years old who do not go to school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU10`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB61`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU7:
+
+Population from 6 to 11 years old who go to school
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population from 6 to 11 years old who go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU7'
+      );
+
+
+
+
+
+Measure "Population from 6 to 11 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU7'
+        );
+
+
+
+
+
+
+Measure "Population from 6 to 11 years old who go to school" percent of "Population 6 to 11 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU7',
+        'denominator'
+      );
+
+
+Measure "Population from 6 to 11 years old who go to school" percent of "Population 6 to 11 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population from 6 to 11 years old who go to school
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU8:
+
+Female population from 6 to 11 years old who go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population from 6 to 11 years old who go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU8'
+      );
+
+
+
+
+
+Measure "Female population from 6 to 11 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU8'
+        );
+
+
+
+
+
+
+Measure "Female population from 6 to 11 years old who go to school" percent of "Female population 6 to 11 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU8',
+        'denominator'
+      );
+
+
+Measure "Female population from 6 to 11 years old who go to school" percent of "Female population 6 to 11 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB35`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU7`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU9:
+
+Male population from 6 to 11 years old who go to school
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population from 6 to 11 years old who go to school"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU9'
+      );
+
+
+
+
+
+Measure "Male population from 6 to 11 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU9'
+        );
+
+
+
+
+
+
+Measure "Male population from 6 to 11 years old who go to school" percent of "Population from 6 to 11 years old who go to school" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU9',
+        'denominator'
+      );
+
+
+Measure "Male population from 6 to 11 years old who go to school" percent of "Population from 6 to 11 years old who go to school" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU7`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB61`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU22:
+
+Population from 8 to 14 years old who are illiterate
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU22.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population from 8 to 14 years old who are illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU22'
+      );
+
+
+
+
+
+Measure "Population from 8 to 14 years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU22'
+        );
+
+
+
+
+
+
+Measure "Population from 8 to 14 years old who are illiterate" percent of "Population 8 to 14 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU22',
+        'denominator'
+      );
+
+
+Measure "Population from 8 to 14 years old who are illiterate" percent of "Population 8 to 14 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU22',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population from 8 to 14 years old who are illiterate
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU23:
+
+Female population from 8 to 14 years old who are illiterate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU23.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population from 8 to 14 years old who are illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU23'
+      );
+
+
+
+
+
+Measure "Female population from 8 to 14 years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU23'
+        );
+
+
+
+
+
+
+Measure "Female population from 8 to 14 years old who are illiterate" percent of "Population from 8 to 14 years old who are illiterate" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU23',
+        'denominator'
+      );
+
+
+Measure "Female population from 8 to 14 years old who are illiterate" percent of "Population from 8 to 14 years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU23',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU22`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB36`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU24:
+
+Male population from 8 to 14 years old who are illiterate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU24.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population from 8 to 14 years old who are illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU24'
+      );
+
+
+
+
+
+Measure "Male population from 8 to 14 years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU24'
+        );
+
+
+
+
+
+
+Measure "Male population from 8 to 14 years old who are illiterate" percent of "Population from 8 to 14 years old who are illiterate" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU24',
+        'denominator'
+      );
+
+
+Measure "Male population from 8 to 14 years old who are illiterate" percent of "Population from 8 to 14 years old who are illiterate" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU24',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU22`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB62`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.EDU19:
+
+Population from 8 to 14 years old who are literate
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.EDU19.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population from 8 to 14 years old who are literate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU19'
+      );
+
+
+
+
+
+Measure "Population from 8 to 14 years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU19'
+        );
+
+
+
+
+
+
+Measure "Population from 8 to 14 years old who are literate" percent of "Population 8 to 14 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU19',
+        'denominator'
+      );
+
+
+Measure "Population from 8 to 14 years old who are literate" percent of "Population 8 to 14 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU19',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population from 8 to 14 years old who are literate
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.EDU20:
+
+Female population from 8 to 14 years old who are literate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female population from 8 to 14 years old who are literate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU20'
+      );
+
+
+
+
+
+Measure "Female population from 8 to 14 years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU20'
+        );
+
+
+
+
+
+
+Measure "Female population from 8 to 14 years old who are literate" percent of "Population from 8 to 14 years old who are literate" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU20',
+        'denominator'
+      );
+
+
+Measure "Female population from 8 to 14 years old who are literate" percent of "Population from 8 to 14 years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU19`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB36`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.EDU21:
+
+Male population from 8 to 14 years old who are literate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.EDU21.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male population from 8 to 14 years old who are literate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU21'
+      );
+
+
+
+
+
+Measure "Male population from 8 to 14 years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.EDU21'
+        );
+
+
+
+
+
+
+Measure "Male population from 8 to 14 years old who are literate" percent of "Population from 8 to 14 years old who are literate" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.EDU21',
+        'denominator'
+      );
+
+
+Measure "Male population from 8 to 14 years old who are literate" percent of "Population from 8 to 14 years old who are literate" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.EDU21',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.EDU19`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB62`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+

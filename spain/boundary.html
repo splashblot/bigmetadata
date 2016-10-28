@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>8.1. Boundaries &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="8. Spain" href="../spain.html" />
+    <link rel="next" title="9. Thailand" href="../th.html" />
+    <link rel="prev" title="8. Spain" href="../spain.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="boundaries">
+<h1>8.1. Boundaries<a class="headerlink" href="#boundaries" title="Permalink to this headline">¶</a></h1>
+<p>Political, administrative, and census-based boundaries.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#autonomous-community" id="id1">Autonomous Community</a></li>
+<li><a class="reference internal" href="#municipality" id="id2">Municipality</a></li>
+<li><a class="reference internal" href="#province" id="id3">Province</a></li>
+<li><a class="reference internal" href="#seccion-censal" id="id4">Sección Censal</a></li>
+</ul>
+</div>
+<div class="section" id="autonomous-community">
+<span id="es-cnig-ccaa"></span><h2><a class="toc-backref" href="#id1">8.1.1. Autonomous Community</a><a class="headerlink" href="#autonomous-community" title="Permalink to this headline">¶</a></h2>
+<p>The first-level administrative subdivision of Spain.</p>
+<p>Obtain &#8220;Autonomous Community&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span>
+    <span class="s1">&#39;es.cnig.ccaa&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Autonomous Community&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;es.cnig.ccaa&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#es-cnig-ccaa"><span class="std std-ref">Autonomous Community</span></a></p>
+</td>
+<td><p>20150101</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-cnig-cnig-source"><span class="std std-ref">National Center for Geographic Information (CNIG)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#es-cnig-cnig-license"><span class="std std-ref">License of CNIG</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="municipality">
+<span id="es-cnig-muni"></span><h2><a class="toc-backref" href="#id2">8.1.2. Municipality</a><a class="headerlink" href="#municipality" title="Permalink to this headline">¶</a></h2>
+<p>The lowest level of territorial organization in Spain. Municipal boundaries do not cross between provinces.</p>
+<p>Obtain &#8220;Municipality&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span>
+    <span class="s1">&#39;es.cnig.muni&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Municipality&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;es.cnig.muni&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#es-cnig-muni"><span class="std std-ref">Municipality</span></a></p>
+</td>
+<td><p>20150101</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-cnig-cnig-source"><span class="std std-ref">National Center for Geographic Information (CNIG)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#es-cnig-cnig-license"><span class="std std-ref">License of CNIG</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="province">
+<span id="es-cnig-prov"></span><h2><a class="toc-backref" href="#id3">8.1.3. Province</a><a class="headerlink" href="#province" title="Permalink to this headline">¶</a></h2>
+<p>The second-level administrative subdivision of Spain, used primarily as electoral districts and geographic references.  Provinces do not cross between autonomous communities.</p>
+<p>Obtain &#8220;Province&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span>
+    <span class="s1">&#39;es.cnig.prov&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Province&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;es.cnig.prov&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#es-cnig-prov"><span class="std std-ref">Province</span></a></p>
+</td>
+<td><p>20150101</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-cnig-cnig-source"><span class="std std-ref">National Center for Geographic Information (CNIG)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#es-cnig-cnig-license"><span class="std std-ref">License of CNIG</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="seccion-censal">
+<span id="es-ine-the-geom"></span><h2><a class="toc-backref" href="#id4">8.1.4. Sección Censal</a><a class="headerlink" href="#seccion-censal" title="Permalink to this headline">¶</a></h2>
+<p>The smallest division of the Spanish Census.</p>
+<p>Obtain &#8220;Sección Censal&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span>
+    <span class="s1">&#39;es.ine.the_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Sección Censal&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">42.8226119029</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.51141249535</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;es.ine.the_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#es-ine-the-geom"><span class="std std-ref">Sección Censal</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">8.1. Boundaries</a><ul>
+<li><a class="reference internal" href="#autonomous-community">8.1.1. Autonomous Community</a></li>
+<li><a class="reference internal" href="#municipality">8.1.2. Municipality</a></li>
+<li><a class="reference internal" href="#province">8.1.3. Province</a></li>
+<li><a class="reference internal" href="#seccion-censal">8.1.4. Sección Censal</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../spain.html">8. Spain</a><ul>
+      <li>Previous: <a href="../spain.html" title="previous chapter">8. Spain</a></li>
+      <li>Next: <a href="../th.html" title="next chapter">9. Thailand</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/spain/boundary.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/spain/boundary.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

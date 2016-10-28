@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Boundaries &mdash; bigmetadata 0.0.1 documentation</title>
+    <title>5.2. Boundaries &mdash; observatory 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -27,16 +27,18 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/bigmetadata.js"></script>
     <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
-    <link rel="top" title="bigmetadata 0.0.1 documentation" href="../index.html" />
-    <link rel="up" title="United States" href="../tags.united_states.html" />
-    <link rel="next" title="Education" href="tags.education.html" />
-    <link rel="prev" title="Age and Gender" href="tags.age_gender.html" />
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="5. United States" href="../tags.united_states.html" />
+    <link rel="next" title="5.3. Commerce &amp; Economy" href="tags.commerce_economy.html" />
+    <link rel="prev" title="5.1. Age and Gender" href="tags.age_gender.html" />
    
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">  
+  <body role="document">
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -44,34 +46,61 @@
           <div class="body" role="main">
             
   <div class="section" id="boundaries">
-<h1>Boundaries<a class="headerlink" href="#boundaries" title="Permalink to this headline">¶</a></h1>
+<h1>5.2. Boundaries<a class="headerlink" href="#boundaries" title="Permalink to this headline">¶</a></h1>
 <p>Political, administrative, and census-based boundaries.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#elementary-school-district" id="id1">Elementary School District</a></li>
-<li><a class="reference internal" href="#secondary-school-district" id="id2">Secondary School District</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-elementary-school-district" id="id3">Shoreline clipped Elementary School District</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-secondary-school-district" id="id4">Shoreline clipped Secondary School District</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-census-block-groups" id="id5">Shoreline clipped US Census Block Groups</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-census-public-use-microdata-areas" id="id6">Shoreline clipped US Census Public Use Microdata Areas</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-census-tracts" id="id7">Shoreline clipped US Census Tracts</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-census-zip-code-tabulation-areas" id="id8">Shoreline clipped US Census Zip Code Tabulation Areas</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-congressional-districts" id="id9">Shoreline clipped US Congressional Districts</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-county" id="id10">Shoreline clipped US County</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-states" id="id11">Shoreline clipped US States</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-unified-school-district" id="id12">Shoreline clipped Unified School District</a></li>
-<li><a class="reference internal" href="#us-census-block-groups" id="id13">US Census Block Groups</a></li>
-<li><a class="reference internal" href="#us-census-public-use-microdata-areas" id="id14">US Census Public Use Microdata Areas</a></li>
-<li><a class="reference internal" href="#us-census-tracts" id="id15">US Census Tracts</a></li>
-<li><a class="reference internal" href="#us-census-zip-code-tabulation-areas" id="id16">US Census Zip Code Tabulation Areas</a></li>
-<li><a class="reference internal" href="#us-congressional-districts" id="id17">US Congressional Districts</a></li>
-<li><a class="reference internal" href="#us-county" id="id18">US County</a></li>
-<li><a class="reference internal" href="#us-states" id="id19">US States</a></li>
-<li><a class="reference internal" href="#unified-school-district" id="id20">Unified School District</a></li>
+<li><a class="reference internal" href="#core-based-statistical-area-cbsa" id="id1">Core Based Statistical Area (CBSA)</a></li>
+<li><a class="reference internal" href="#elementary-school-district" id="id2">Elementary School District</a></li>
+<li><a class="reference internal" href="#incorporated-places" id="id3">Incorporated Places</a></li>
+<li><a class="reference internal" href="#secondary-school-district" id="id4">Secondary School District</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-core-based-statistical-area-cbsa" id="id5">Shoreline clipped Core Based Statistical Area (CBSA)</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-elementary-school-district" id="id6">Shoreline clipped Elementary School District</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-incorporated-places" id="id7">Shoreline clipped Incorporated Places</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-secondary-school-district" id="id8">Shoreline clipped Secondary School District</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-census-block-groups" id="id9">Shoreline clipped US Census Block Groups</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-census-public-use-microdata-areas" id="id10">Shoreline clipped US Census Public Use Microdata Areas</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-census-tracts" id="id11">Shoreline clipped US Census Tracts</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-census-zip-code-tabulation-areas" id="id12">Shoreline clipped US Census Zip Code Tabulation Areas</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-congressional-districts" id="id13">Shoreline clipped US Congressional Districts</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-county" id="id14">Shoreline clipped US County</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-states" id="id15">Shoreline clipped US States</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-unified-school-district" id="id16">Shoreline clipped Unified School District</a></li>
+<li><a class="reference internal" href="#television-market-area" id="id17">Television Market Area</a></li>
+<li><a class="reference internal" href="#us-census-block-groups" id="id18">US Census Block Groups</a></li>
+<li><a class="reference internal" href="#us-census-public-use-microdata-areas" id="id19">US Census Public Use Microdata Areas</a></li>
+<li><a class="reference internal" href="#us-census-tracts" id="id20">US Census Tracts</a></li>
+<li><a class="reference internal" href="#us-census-zip-code-tabulation-areas" id="id21">US Census Zip Code Tabulation Areas</a></li>
+<li><a class="reference internal" href="#us-congressional-districts" id="id22">US Congressional Districts</a></li>
+<li><a class="reference internal" href="#us-county" id="id23">US County</a></li>
+<li><a class="reference internal" href="#us-states" id="id24">US States</a></li>
+<li><a class="reference internal" href="#unified-school-district" id="id25">Unified School District</a></li>
 </ul>
 </div>
+<div class="section" id="core-based-statistical-area-cbsa">
+<span id="us-census-tiger-cbsa"></span><h2><a class="toc-backref" href="#id1">5.2.1. Core Based Statistical Area (CBSA)</a><a class="headerlink" href="#core-based-statistical-area-cbsa" title="Permalink to this headline">¶</a></h2>
+<p>Core Based Statistical Areas (CBSAs) consist of the county or counties or equivalent entities associated with at least one core (urbanized area or urban cluster) of at least 10,000 population, plus adjacent counties having a high degree of social and economic integration with the core as measured through commuting ties with the counties associated with the core. The general concept of a CBSA is that of a
+core area containing a substantial population nucleus, together with adjacent communities having a high degree of economic and social integration with that core. The term “core based statistical area” became effective in 2003 and refers collectively to metropolitan statistical areas and micropolitan statistical areas. The U.S. Office of Management and Budget (OMB) defines CBSAs to provide a nationally consistent set of geographic entities for the United States and Puerto Rico for use in tabulating and presenting statistical data. Current CBSAs are based on application of the 2000 standards (published in the Federal Register of December 27, 2000) with Census 2000 data. The first set of areas defined based on the 2000 standards were announced on June 6, 2003; subsequent updates have been made to the universe of CBSAs and related statistical areas. No CBSAs are defined in the Island Areas. Statistical areas related to CBSAs include metropolitan divisions, combined statistical areas (CSAs), New England city and town areas (NECTAs), NECTA divisions, and combined NECTAs.</p>
+<p>Obtain &#8220;Core Based Statistical Area (CBSA)&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;us.census.tiger.cbsa&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Core Based Statistical Area (CBSA)&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;us.census.tiger.cbsa&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="elementary-school-district">
-<span id="us-census-tiger-school-district-elementary"></span><h2><a class="toc-backref" href="#id1">Elementary School District</a><a class="headerlink" href="#elementary-school-district" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-school-district-elementary"></span><h2><a class="toc-backref" href="#id2">5.2.2. Elementary School District</a><a class="headerlink" href="#elementary-school-district" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.school_district_elementary.png"><img alt="../_images/us.census.tiger.school_district_elementary.png" src="../_images/us.census.tiger.school_district_elementary.png" style="width: 100%;" /></a>
 </div>
@@ -80,25 +109,52 @@
 <p>The elementary school districts provide education to the lower grade/age levels and the secondary school districts provide education to the upper grade/age levels. Unified school districts provide education to children of all school ages in their service areas. In general, where there is a unified school district, no elementary or secondary school district exists; and where there is an elementary school district, the secondary school district may or may not exist.</p>
 <p>The Census Bureau’s representation of school districts in various data products is based both on the grade range that a school district operates and also the grade range for which the school district is financially responsible. For example, a school district is defined as an elementary school district if its operational grade range is less than the full kindergarten through 12 or prekindergarten through 12 grade range (for example, K–6 or pre-K–8). These elementary school districts do not provide direct educational services for grades 7–12, 9–12, or similar ranges. Some elementary school districts are financially responsible for the education of all school-aged children within their service areas and rely on other school districts to provide service for those grade ranges that are not operated by these elementary school districts. In these situations, in order to allocate all school-aged children to these school districts, the secondary school district code field is blank. For elementary school districts where the operational grade range and financially responsible grade range are the same, the secondary school district code field will contain a secondary school district code. There are no situations where an elementary school district does not exist and a secondary school district exists in Census Bureau records.</p>
 <p>Obtain &#8220;Elementary School District&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7025</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.7067</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_elementary&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Elementary School District&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7025</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.7067</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_elementary&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="section" id="incorporated-places">
+<span id="us-census-tiger-place"></span><h2><a class="toc-backref" href="#id3">5.2.3. Incorporated Places</a><a class="headerlink" href="#incorporated-places" title="Permalink to this headline">¶</a></h2>
+<p>Incorporated places are those reported to the Census Bureau as legally in existence as of January 1, 2010, as reported in the latest Boundary and Annexation Survey (BAS), under the laws of their respective states. An incorporated place is established to provide governmental functions for a concentration of people as opposed to a minor civil division, which generally is created to provide services or administer an area without regard, necessarily, to population. Places always are within a single state or equivalent entity, but may extend across county and county subdivision boundaries. An incorporated place usually is a city, town, village, or borough, but can have other legal descriptions. For Census Bureau data tabulation and presentation purposes, incorporated places exclude:</p>
+<p>Boroughs in Alaska (treated as statistical equivalents of counties).
+Towns in the New England states, New York, and Wisconsin (treated as MCDs).
+Boroughs in New York (treated as MCDs).</p>
+<p>Census Designated Places (CDPs) are the statistical counterparts of incorporated places, and are delineated to provide data for settled concentrations of population that are identifiable by name but are not legally incorporated under the laws of the state in which they are located. The boundaries usually are defined in cooperation with local or tribal officials and generally updated prior to each decennial census. These boundaries, which usually coincide with visible features or the boundary of an adjacent incorporated place or another legal entity boundary, have no legal status, nor do these places have officials elected to serve traditional municipal functions. CDP boundaries may change from one decennial census
+to the next with changes in the settlement pattern; a CDP with the same name as in an earlier census does not necessarily have the same boundary. CDPs must be contained within a single state and may not extend into an incorporated place. There are no population size requirements for CDPs.</p>
+<p>Hawaii is the only state that has no incorporated places recognized by the Census Bureau. All places shown in decennial census data products for Hawaii are CDPs. By agreement with the state of Hawaii, the Census Bureau does not show data separately for the city of Honolulu, which is coextensive with Honolulu County. In Puerto Rico, which also does not have incorporated places, the Census Bureau recognizes only CDPs and refers to them as comunidades or zonas urbanas. Guam also has only CDPs.</p>
+<p>Obtain &#8220;Incorporated Places&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;us.census.tiger.place&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Incorporated Places&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;us.census.tiger.place&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="secondary-school-district">
-<span id="us-census-tiger-school-district-secondary"></span><h2><a class="toc-backref" href="#id2">Secondary School District</a><a class="headerlink" href="#secondary-school-district" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-school-district-secondary"></span><h2><a class="toc-backref" href="#id4">5.2.4. Secondary School District</a><a class="headerlink" href="#secondary-school-district" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.school_district_secondary.png"><img alt="../_images/us.census.tiger.school_district_secondary.png" src="../_images/us.census.tiger.school_district_secondary.png" style="width: 100%;" /></a>
 </div>
@@ -107,41 +163,70 @@
 <p>The elementary school districts provide education to the lower grade/age levels and the secondary school districts provide education to the upper grade/age levels. Unified school districts provide education to children of all school ages in their service areas. In general, where there is a unified school district, no elementary or secondary school district exists; and where there is an elementary school district, the secondary school district may or may not exist.</p>
 <p>The Census Bureau’s representation of school districts in various data products is based both on the grade range that a school district operates and also the grade range for which the school district is financially responsible. For example, a school district is defined as an elementary school district if its operational grade range is less than the full kindergarten through 12 or prekindergarten through 12 grade range (for example, K–6 or pre-K–8). These elementary school districts do not provide direct educational services for grades 7–12, 9–12, or similar ranges. Some elementary school districts are financially responsible for the education of all school-aged children within their service areas and rely on other school districts to provide service for those grade ranges that are not operated by these elementary school districts. In these situations, in order to allocate all school-aged children to these school districts, the secondary school district code field is blank. For elementary school districts where the operational grade range and financially responsible grade range are the same, the secondary school district code field will contain a secondary school district code. There are no situations where an elementary school district does not exist and a secondary school district exists in Census Bureau records.</p>
 <p>Obtain &#8220;Secondary School District&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7025</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.7067</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_secondary&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Secondary School District&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7025</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.7067</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_secondary&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="section" id="shoreline-clipped-core-based-statistical-area-cbsa">
+<span id="us-census-tiger-cbsa-clipped"></span><h2><a class="toc-backref" href="#id5">5.2.5. Shoreline clipped Core Based Statistical Area (CBSA)</a><a class="headerlink" href="#shoreline-clipped-core-based-statistical-area-cbsa" title="Permalink to this headline">¶</a></h2>
+<p>A cartography-ready version of Core Based Statistical Area (CBSA)</p>
+<p>Obtain &#8220;Shoreline clipped Core Based Statistical Area (CBSA)&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;us.census.tiger.cbsa_clipped&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Shoreline clipped Core Based Statistical Area (CBSA)&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;us.census.tiger.cbsa_clipped&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">cartography:</th><td class="field-body"><a class="reference internal" href="#us-census-tiger-cbsa"><span class="std std-ref">Core Based Statistical Area (CBSA)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="shoreline-clipped-elementary-school-district">
-<span id="us-census-tiger-school-district-elementary-clipped"></span><h2><a class="toc-backref" href="#id3">Shoreline clipped Elementary School District</a><a class="headerlink" href="#shoreline-clipped-elementary-school-district" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-school-district-elementary-clipped"></span><h2><a class="toc-backref" href="#id6">5.2.6. Shoreline clipped Elementary School District</a><a class="headerlink" href="#shoreline-clipped-elementary-school-district" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.school_district_elementary_clipped.png"><img alt="../_images/us.census.tiger.school_district_elementary_clipped.png" src="../_images/us.census.tiger.school_district_elementary_clipped.png" style="width: 100%;" /></a>
 </div>
 <p>A cartography-ready version of Elementary School District</p>
 <p>Obtain &#8220;Shoreline clipped Elementary School District&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_elementary_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped Elementary School District&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_elementary_clipped&#39;</span>
   <span class="p">)</span>
@@ -156,24 +241,56 @@
 </tbody>
 </table>
 </div>
+<div class="section" id="shoreline-clipped-incorporated-places">
+<span id="us-census-tiger-place-clipped"></span><h2><a class="toc-backref" href="#id7">5.2.7. Shoreline clipped Incorporated Places</a><a class="headerlink" href="#shoreline-clipped-incorporated-places" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.tiger.place_clipped.png"><img alt="../_images/us.census.tiger.place_clipped.png" src="../_images/us.census.tiger.place_clipped.png" style="width: 100%;" /></a>
+</div>
+<p>A cartography-ready version of Incorporated Places</p>
+<p>Obtain &#8220;Shoreline clipped Incorporated Places&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;us.census.tiger.place_clipped&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Shoreline clipped Incorporated Places&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;us.census.tiger.place_clipped&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">cartography:</th><td class="field-body"><a class="reference internal" href="#us-census-tiger-place"><span class="std std-ref">Incorporated Places</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="shoreline-clipped-secondary-school-district">
-<span id="us-census-tiger-school-district-secondary-clipped"></span><h2><a class="toc-backref" href="#id4">Shoreline clipped Secondary School District</a><a class="headerlink" href="#shoreline-clipped-secondary-school-district" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-school-district-secondary-clipped"></span><h2><a class="toc-backref" href="#id8">5.2.8. Shoreline clipped Secondary School District</a><a class="headerlink" href="#shoreline-clipped-secondary-school-district" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.school_district_secondary_clipped.png"><img alt="../_images/us.census.tiger.school_district_secondary_clipped.png" src="../_images/us.census.tiger.school_district_secondary_clipped.png" style="width: 100%;" /></a>
 </div>
 <p>A cartography-ready version of Secondary School District</p>
 <p>Obtain &#8220;Shoreline clipped Secondary School District&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_secondary_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped Secondary School District&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_secondary_clipped&#39;</span>
   <span class="p">)</span>
@@ -189,23 +306,23 @@
 </table>
 </div>
 <div class="section" id="shoreline-clipped-us-census-block-groups">
-<span id="us-census-tiger-block-group-clipped"></span><h2><a class="toc-backref" href="#id5">Shoreline clipped US Census Block Groups</a><a class="headerlink" href="#shoreline-clipped-us-census-block-groups" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-block-group-clipped"></span><h2><a class="toc-backref" href="#id9">5.2.9. Shoreline clipped US Census Block Groups</a><a class="headerlink" href="#shoreline-clipped-us-census-block-groups" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.block_group_clipped.png"><img alt="../_images/us.census.tiger.block_group_clipped.png" src="../_images/us.census.tiger.block_group_clipped.png" style="width: 100%;" /></a>
 </div>
 <p>A cartography-ready version of US Census Block Groups</p>
 <p>Obtain &#8220;Shoreline clipped US Census Block Groups&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.block_group_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped US Census Block Groups&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.block_group_clipped&#39;</span>
   <span class="p">)</span>
@@ -221,23 +338,23 @@
 </table>
 </div>
 <div class="section" id="shoreline-clipped-us-census-public-use-microdata-areas">
-<span id="us-census-tiger-puma-clipped"></span><h2><a class="toc-backref" href="#id6">Shoreline clipped US Census Public Use Microdata Areas</a><a class="headerlink" href="#shoreline-clipped-us-census-public-use-microdata-areas" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-puma-clipped"></span><h2><a class="toc-backref" href="#id10">5.2.10. Shoreline clipped US Census Public Use Microdata Areas</a><a class="headerlink" href="#shoreline-clipped-us-census-public-use-microdata-areas" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.puma_clipped.png"><img alt="../_images/us.census.tiger.puma_clipped.png" src="../_images/us.census.tiger.puma_clipped.png" style="width: 100%;" /></a>
 </div>
 <p>A cartography-ready version of US Census Public Use Microdata Areas</p>
 <p>Obtain &#8220;Shoreline clipped US Census Public Use Microdata Areas&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.puma_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped US Census Public Use Microdata Areas&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.puma_clipped&#39;</span>
   <span class="p">)</span>
@@ -253,23 +370,23 @@
 </table>
 </div>
 <div class="section" id="shoreline-clipped-us-census-tracts">
-<span id="us-census-tiger-census-tract-clipped"></span><h2><a class="toc-backref" href="#id7">Shoreline clipped US Census Tracts</a><a class="headerlink" href="#shoreline-clipped-us-census-tracts" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-census-tract-clipped"></span><h2><a class="toc-backref" href="#id11">5.2.11. Shoreline clipped US Census Tracts</a><a class="headerlink" href="#shoreline-clipped-us-census-tracts" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.census_tract_clipped.png"><img alt="../_images/us.census.tiger.census_tract_clipped.png" src="../_images/us.census.tiger.census_tract_clipped.png" style="width: 100%;" /></a>
 </div>
 <p>A cartography-ready version of US Census Tracts</p>
 <p>Obtain &#8220;Shoreline clipped US Census Tracts&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.census_tract_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped US Census Tracts&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.census_tract_clipped&#39;</span>
   <span class="p">)</span>
@@ -285,23 +402,23 @@
 </table>
 </div>
 <div class="section" id="shoreline-clipped-us-census-zip-code-tabulation-areas">
-<span id="us-census-tiger-zcta5-clipped"></span><h2><a class="toc-backref" href="#id8">Shoreline clipped US Census Zip Code Tabulation Areas</a><a class="headerlink" href="#shoreline-clipped-us-census-zip-code-tabulation-areas" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-zcta5-clipped"></span><h2><a class="toc-backref" href="#id12">5.2.12. Shoreline clipped US Census Zip Code Tabulation Areas</a><a class="headerlink" href="#shoreline-clipped-us-census-zip-code-tabulation-areas" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.zcta5_clipped.png"><img alt="../_images/us.census.tiger.zcta5_clipped.png" src="../_images/us.census.tiger.zcta5_clipped.png" style="width: 100%;" /></a>
 </div>
 <p>A cartography-ready version of US Census Zip Code Tabulation Areas</p>
 <p>Obtain &#8220;Shoreline clipped US Census Zip Code Tabulation Areas&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.zcta5_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped US Census Zip Code Tabulation Areas&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.zcta5_clipped&#39;</span>
   <span class="p">)</span>
@@ -317,20 +434,20 @@
 </table>
 </div>
 <div class="section" id="shoreline-clipped-us-congressional-districts">
-<span id="us-census-tiger-congressional-district-clipped"></span><h2><a class="toc-backref" href="#id9">Shoreline clipped US Congressional Districts</a><a class="headerlink" href="#shoreline-clipped-us-congressional-districts" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-congressional-district-clipped"></span><h2><a class="toc-backref" href="#id13">5.2.13. Shoreline clipped US Congressional Districts</a><a class="headerlink" href="#shoreline-clipped-us-congressional-districts" title="Permalink to this headline">¶</a></h2>
 <p>A cartography-ready version of US Congressional Districts</p>
 <p>Obtain &#8220;Shoreline clipped US Congressional Districts&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.congressional_district_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped US Congressional Districts&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.congressional_district_clipped&#39;</span>
   <span class="p">)</span>
@@ -346,23 +463,23 @@
 </table>
 </div>
 <div class="section" id="shoreline-clipped-us-county">
-<span id="us-census-tiger-county-clipped"></span><h2><a class="toc-backref" href="#id10">Shoreline clipped US County</a><a class="headerlink" href="#shoreline-clipped-us-county" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-county-clipped"></span><h2><a class="toc-backref" href="#id14">5.2.14. Shoreline clipped US County</a><a class="headerlink" href="#shoreline-clipped-us-county" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.county_clipped.png"><img alt="../_images/us.census.tiger.county_clipped.png" src="../_images/us.census.tiger.county_clipped.png" style="width: 100%;" /></a>
 </div>
 <p>A cartography-ready version of US County</p>
 <p>Obtain &#8220;Shoreline clipped US County&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.county_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped US County&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.county_clipped&#39;</span>
   <span class="p">)</span>
@@ -378,23 +495,23 @@
 </table>
 </div>
 <div class="section" id="shoreline-clipped-us-states">
-<span id="us-census-tiger-state-clipped"></span><h2><a class="toc-backref" href="#id11">Shoreline clipped US States</a><a class="headerlink" href="#shoreline-clipped-us-states" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-state-clipped"></span><h2><a class="toc-backref" href="#id15">5.2.15. Shoreline clipped US States</a><a class="headerlink" href="#shoreline-clipped-us-states" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.state_clipped.png"><img alt="../_images/us.census.tiger.state_clipped.png" src="../_images/us.census.tiger.state_clipped.png" style="width: 100%;" /></a>
 </div>
 <p>A cartography-ready version of US States</p>
 <p>Obtain &#8220;Shoreline clipped US States&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.state_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped US States&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.state_clipped&#39;</span>
   <span class="p">)</span>
@@ -410,23 +527,23 @@
 </table>
 </div>
 <div class="section" id="shoreline-clipped-unified-school-district">
-<span id="us-census-tiger-school-district-unified-clipped"></span><h2><a class="toc-backref" href="#id12">Shoreline clipped Unified School District</a><a class="headerlink" href="#shoreline-clipped-unified-school-district" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-school-district-unified-clipped"></span><h2><a class="toc-backref" href="#id16">5.2.16. Shoreline clipped Unified School District</a><a class="headerlink" href="#shoreline-clipped-unified-school-district" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.school_district_unified_clipped.png"><img alt="../_images/us.census.tiger.school_district_unified_clipped.png" src="../_images/us.census.tiger.school_district_unified_clipped.png" style="width: 100%;" /></a>
 </div>
 <p>A cartography-ready version of Unified School District</p>
 <p>Obtain &#8220;Shoreline clipped Unified School District&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_unified_clipped&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Shoreline clipped Unified School District&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_unified_clipped&#39;</span>
   <span class="p">)</span>
@@ -441,25 +558,46 @@
 </tbody>
 </table>
 </div>
+<div class="section" id="television-market-area">
+<span id="us-dma-the-geom"></span><h2><a class="toc-backref" href="#id17">5.2.17. Television Market Area</a><a class="headerlink" href="#television-market-area" title="Permalink to this headline">¶</a></h2>
+<p>A television market area, also called a DMA, is a group of counties in the United States covered by a specific group of television stations.  There are 210 DMAs in the United States.</p>
+<p>Obtain &#8220;Television Market Area&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;us.dma.the_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Television Market Area&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;us.dma.the_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="us-census-block-groups">
-<span id="us-census-tiger-block-group"></span><h2><a class="toc-backref" href="#id13">US Census Block Groups</a><a class="headerlink" href="#us-census-block-groups" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-block-group"></span><h2><a class="toc-backref" href="#id18">5.2.18. US Census Block Groups</a><a class="headerlink" href="#us-census-block-groups" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.block_group.png"><img alt="../_images/us.census.tiger.block_group.png" src="../_images/us.census.tiger.block_group.png" style="width: 100%;" /></a>
 </div>
 <p>Block groups (BGs) are statistical divisions of census tracts, are generally defined to contain between 600 and 3,000 people, and are used to present data and control block numbering. A block group consists of clusters of blocks within the same census tract that have the same first digit of their four-digit census block number. For example, blocks 3001, 3002, 3003, ..., 3999 in census tract 1210.02 belong to BG 3 in that census tract. Most BGs were delineated by local participants in the Census Bureau’s Participant Statistical Areas Program. The Census Bureau delineated BGs only where a local or tribal government declined to participate, and a regional organization or State Data Center was not available to participate.</p>
 <p>A BG usually covers a contiguous area. Each census tract contains at least one BG, and BGs are uniquely numbered within the census tract. Within the standard census geographic hierarchy, BGs never cross state, county, or census tract boundaries but may cross the boundaries of any other geographic entity. Tribal census tracts and tribal BGs are separate and unique geographic areas defined within federally recognized American Indian reservations and can cross state and county boundaries (see “Tribal Census Tract” and “Tribal Block Group”). The tribal census tracts and tribal block groups may be completely different from the census tracts and block groups defined by state and county.</p>
 <p>Obtain &#8220;US Census Block Groups&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.block_group&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;US Census Block Groups&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.block_group&#39;</span>
   <span class="p">)</span>
@@ -467,21 +605,21 @@
 </div>
 </div>
 <div class="section" id="us-census-public-use-microdata-areas">
-<span id="us-census-tiger-puma"></span><h2><a class="toc-backref" href="#id14">US Census Public Use Microdata Areas</a><a class="headerlink" href="#us-census-public-use-microdata-areas" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-puma"></span><h2><a class="toc-backref" href="#id19">5.2.19. US Census Public Use Microdata Areas</a><a class="headerlink" href="#us-census-public-use-microdata-areas" title="Permalink to this headline">¶</a></h2>
 <p>PUMAs are geographic areas for which the Census Bureau provides selected extracts of raw data from a small sample of census records that are screened to protect confidentiality. These extracts are referred to as public use microdata sample (PUMS) files.</p>
 <p>For the 2010 Census, each state, the District of Columbia, Puerto Rico, and some Island Area participants delineated PUMAs for use in presenting PUMS data based on a 5 percent sample of decennial census or American Community Survey data. These areas are required to contain at least 100,000 people. This is different from Census 2000 when two types of PUMAs were defined: a 5 percent PUMA as for 2010 and an additional super-PUMA designed to provide a 1 percent sample. The PUMAs are identified by a five-digit census code unique within state.</p>
 <p>Obtain &#8220;US Census Public Use Microdata Areas&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.puma&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;US Census Public Use Microdata Areas&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.puma&#39;</span>
   <span class="p">)</span>
@@ -489,7 +627,7 @@
 </div>
 </div>
 <div class="section" id="us-census-tracts">
-<span id="us-census-tiger-census-tract"></span><h2><a class="toc-backref" href="#id15">US Census Tracts</a><a class="headerlink" href="#us-census-tracts" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-census-tract"></span><h2><a class="toc-backref" href="#id20">5.2.20. US Census Tracts</a><a class="headerlink" href="#us-census-tracts" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.census_tract.png"><img alt="../_images/us.census.tiger.census_tract.png" src="../_images/us.census.tiger.census_tract.png" style="width: 100%;" /></a>
 </div>
@@ -497,17 +635,17 @@
 <p>Census tracts generally have a population size between 1,200 and 8,000 people, with an optimum size of 4,000 people. A census tract usually covers a contiguous area; however, the spatial size of census tracts varies widely depending on the density of settlement. Census tract boundaries are delineated with the intention of being maintained over a long time so that statistical comparisons can be made from census to census. Census tracts occasionally are split due to population growth or merged as a result of substantial population decline.</p>
 <p>Census tract boundaries generally follow visible and identifiable features. They may follow nonvisible legal boundaries, such as minor civil division (MCD) or incorporated place boundaries in some states and situations, to allow for census-tract-to-governmental-unit relationships where the governmental boundaries tend to remain unchanged between censuses. State and county boundaries always are census tract boundaries in the standard census geographic hierarchy. Tribal census tracts are a unique geographic entity defined within federally recognized American Indian reservations and off-reservation trust lands and can cross state and county boundaries. Tribal census tracts may be completely different from the census tracts and block groups defined by state and county (see “Tribal Census Tract”).</p>
 <p>Obtain &#8220;US Census Tracts&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.census_tract&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;US Census Tracts&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.census_tract&#39;</span>
   <span class="p">)</span>
@@ -515,7 +653,7 @@
 </div>
 </div>
 <div class="section" id="us-census-zip-code-tabulation-areas">
-<span id="us-census-tiger-zcta5"></span><h2><a class="toc-backref" href="#id16">US Census Zip Code Tabulation Areas</a><a class="headerlink" href="#us-census-zip-code-tabulation-areas" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-zcta5"></span><h2><a class="toc-backref" href="#id21">5.2.21. US Census Zip Code Tabulation Areas</a><a class="headerlink" href="#us-census-zip-code-tabulation-areas" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.zcta5.png"><img alt="../_images/us.census.tiger.zcta5.png" src="../_images/us.census.tiger.zcta5.png" style="width: 100%;" /></a>
 </div>
@@ -523,17 +661,17 @@
 <p>There are significant changes to the 2010 ZCTA delineation from that used in 2000. Coverage was extended to include the Island Areas for 2010 so that the United States, Puerto Rico, and the Island Areas have ZCTAs. Unlike 2000, when areas that could not be assigned to a ZCTA were given a generic code ending in “XX” (land area) or “HH” (water area), for 2010 there is no universal coverage by ZCTAs, and only legitimate five-digit areas are defined. The 2010 ZCTAs will better represent the actual Zip Code service areas because the Census Bureau initiated a process before creation of 2010 blocks to add block boundaries that split polygons with large numbers of addresses using different Zip Codes.</p>
 <p>Data users should not use ZCTAs to identify the official USPS ZIP Code for mail delivery. The USPS makes periodic changes to ZIP Codes to support more efficient mail delivery. The ZCTAs process used primarily residential addresses and was biased towards Zip Codes used for city-style mail delivery, thus there may be Zip Codes that are primarily nonresidential or boxes only that may not have a corresponding ZCTA.</p>
 <p>Obtain &#8220;US Census Zip Code Tabulation Areas&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.zcta5&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;US Census Zip Code Tabulation Areas&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.zcta5&#39;</span>
   <span class="p">)</span>
@@ -541,20 +679,20 @@
 </div>
 </div>
 <div class="section" id="us-congressional-districts">
-<span id="us-census-tiger-congressional-district"></span><h2><a class="toc-backref" href="#id17">US Congressional Districts</a><a class="headerlink" href="#us-congressional-districts" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-congressional-district"></span><h2><a class="toc-backref" href="#id22">5.2.22. US Congressional Districts</a><a class="headerlink" href="#us-congressional-districts" title="Permalink to this headline">¶</a></h2>
 <p>Congressional districts are the 435 areas from which people are elected to the U.S. House of Representatives. After the apportionment of congressional seats among the states based on decennial census population counts, each state with multiple seats is responsible for establishing congressional districts for the purpose of electing representatives. Each congressional district is to be as equal in population to all other congressional districts in a state as practicable. For the District of Columbia, Puerto Rico, and each Island Area, a separate code is used to identify the entire areas of these state-equivalent entities as having a single nonvoting delegate.</p>
 <p>Obtain &#8220;US Congressional Districts&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.congressional_district&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;US Congressional Districts&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.congressional_district&#39;</span>
   <span class="p">)</span>
@@ -562,23 +700,23 @@
 </div>
 </div>
 <div class="section" id="us-county">
-<span id="us-census-tiger-county"></span><h2><a class="toc-backref" href="#id18">US County</a><a class="headerlink" href="#us-county" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-county"></span><h2><a class="toc-backref" href="#id23">5.2.23. US County</a><a class="headerlink" href="#us-county" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.county.png"><img alt="../_images/us.census.tiger.county.png" src="../_images/us.census.tiger.county.png" style="width: 100%;" /></a>
 </div>
 <p>The primary legal divisions of most states are termed counties. In Louisiana, these divisions are known as parishes. In Alaska, which has no counties, the equivalent entities are the organized boroughs, city and boroughs, municipalities, and census areas; the latter of which are delineated cooperatively for statistical purposes by the state of Alaska and the Census Bureau. In four states (Maryland, Missouri, Nevada, and Virginia), there are one or more incorporated places that are independent of any county organization and thus constitute primary divisions of their states. These incorporated places are known as independent cities and are treated as equivalent entities for purposes of data presentation. The District of Columbia and Guam have no primary divisions, and each area is considered an equivalent entity for purposes of data presentation. All of the counties in Connecticut and Rhode Island and nine counties in Massachusetts were dissolved as functioning governmental entities; however, the Census Bureau continues to present data for these historical entities in order to provide comparable geographic units at the county level of the geographic hierarchy for these states and represents them as nonfunctioning legal entities in data products. The Census Bureau treats the following entities as equivalents of counties for purposes of data presentation: municipios in Puerto Rico, districts and islands in American Samoa, municipalities in the Commonwealth of the Northern Mariana Islands, and islands in the U.S. Virgin Islands. Each county or statistically equivalent entity is assigned a three-character numeric Federal Information Processing Series (FIPS) code based on alphabetical sequence that is unique within state and an eight-digit National Standard feature identifier.</p>
 <p>Obtain &#8220;US County&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.county&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;US County&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.county&#39;</span>
   <span class="p">)</span>
@@ -586,23 +724,23 @@
 </div>
 </div>
 <div class="section" id="us-states">
-<span id="us-census-tiger-state"></span><h2><a class="toc-backref" href="#id19">US States</a><a class="headerlink" href="#us-states" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-state"></span><h2><a class="toc-backref" href="#id24">5.2.24. US States</a><a class="headerlink" href="#us-states" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.state.png"><img alt="../_images/us.census.tiger.state.png" src="../_images/us.census.tiger.state.png" style="width: 100%;" /></a>
 </div>
 <p>States and Equivalent Entities are the primary governmental divisions of the United States. In addition to the 50 states, the Census Bureau treats the District of Columbia, Puerto Rico, American Samoa, the Commonwealth of the Northern Mariana Islands, Guam, and the U.S. Virgin Islands as the statistical equivalents of states for the purpose of data presentation.</p>
 <p>Obtain &#8220;US States&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.state&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;US States&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.state&#39;</span>
   <span class="p">)</span>
@@ -610,7 +748,7 @@
 </div>
 </div>
 <div class="section" id="unified-school-district">
-<span id="us-census-tiger-school-district-unified"></span><h2><a class="toc-backref" href="#id20">Unified School District</a><a class="headerlink" href="#unified-school-district" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-tiger-school-district-unified"></span><h2><a class="toc-backref" href="#id25">5.2.25. Unified School District</a><a class="headerlink" href="#unified-school-district" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/us.census.tiger.school_district_unified.png"><img alt="../_images/us.census.tiger.school_district_unified.png" src="../_images/us.census.tiger.school_district_unified.png" style="width: 100%;" /></a>
 </div>
@@ -619,17 +757,17 @@
 <p>The elementary school districts provide education to the lower grade/age levels and the secondary school districts provide education to the upper grade/age levels. Unified school districts provide education to children of all school ages in their service areas. In general, where there is a unified school district, no elementary or secondary school district exists; and where there is an elementary school district, the secondary school district may or may not exist.</p>
 <p>The Census Bureau’s representation of school districts in various data products is based both on the grade range that a school district operates and also the grade range for which the school district is financially responsible. For example, a school district is defined as an elementary school district if its operational grade range is less than the full kindergarten through 12 or prekindergarten through 12 grade range (for example, K–6 or pre-K–8). These elementary school districts do not provide direct educational services for grades 7–12, 9–12, or similar ranges. Some elementary school districts are financially responsible for the education of all school-aged children within their service areas and rely on other school districts to provide service for those grade ranges that are not operated by these elementary school districts. In these situations, in order to allocate all school-aged children to these school districts, the secondary school district code field is blank. For elementary school districts where the operational grade range and financially responsible grade range are the same, the secondary school district code field will contain a secondary school district code. There are no situations where an elementary school district does not exist and a secondary school district exists in Census Bureau records.</p>
 <p>Obtain &#8220;Unified School District&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_unified&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Unified School District&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;us.census.tiger.school_district_unified&#39;</span>
   <span class="p">)</span>
@@ -646,27 +784,32 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Boundaries</a><ul>
-<li><a class="reference internal" href="#elementary-school-district">Elementary School District</a></li>
-<li><a class="reference internal" href="#secondary-school-district">Secondary School District</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-elementary-school-district">Shoreline clipped Elementary School District</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-secondary-school-district">Shoreline clipped Secondary School District</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-census-block-groups">Shoreline clipped US Census Block Groups</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-census-public-use-microdata-areas">Shoreline clipped US Census Public Use Microdata Areas</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-census-tracts">Shoreline clipped US Census Tracts</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-census-zip-code-tabulation-areas">Shoreline clipped US Census Zip Code Tabulation Areas</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-congressional-districts">Shoreline clipped US Congressional Districts</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-county">Shoreline clipped US County</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-us-states">Shoreline clipped US States</a></li>
-<li><a class="reference internal" href="#shoreline-clipped-unified-school-district">Shoreline clipped Unified School District</a></li>
-<li><a class="reference internal" href="#us-census-block-groups">US Census Block Groups</a></li>
-<li><a class="reference internal" href="#us-census-public-use-microdata-areas">US Census Public Use Microdata Areas</a></li>
-<li><a class="reference internal" href="#us-census-tracts">US Census Tracts</a></li>
-<li><a class="reference internal" href="#us-census-zip-code-tabulation-areas">US Census Zip Code Tabulation Areas</a></li>
-<li><a class="reference internal" href="#us-congressional-districts">US Congressional Districts</a></li>
-<li><a class="reference internal" href="#us-county">US County</a></li>
-<li><a class="reference internal" href="#us-states">US States</a></li>
-<li><a class="reference internal" href="#unified-school-district">Unified School District</a></li>
+<li><a class="reference internal" href="#">5.2. Boundaries</a><ul>
+<li><a class="reference internal" href="#core-based-statistical-area-cbsa">5.2.1. Core Based Statistical Area (CBSA)</a></li>
+<li><a class="reference internal" href="#elementary-school-district">5.2.2. Elementary School District</a></li>
+<li><a class="reference internal" href="#incorporated-places">5.2.3. Incorporated Places</a></li>
+<li><a class="reference internal" href="#secondary-school-district">5.2.4. Secondary School District</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-core-based-statistical-area-cbsa">5.2.5. Shoreline clipped Core Based Statistical Area (CBSA)</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-elementary-school-district">5.2.6. Shoreline clipped Elementary School District</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-incorporated-places">5.2.7. Shoreline clipped Incorporated Places</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-secondary-school-district">5.2.8. Shoreline clipped Secondary School District</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-census-block-groups">5.2.9. Shoreline clipped US Census Block Groups</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-census-public-use-microdata-areas">5.2.10. Shoreline clipped US Census Public Use Microdata Areas</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-census-tracts">5.2.11. Shoreline clipped US Census Tracts</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-census-zip-code-tabulation-areas">5.2.12. Shoreline clipped US Census Zip Code Tabulation Areas</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-congressional-districts">5.2.13. Shoreline clipped US Congressional Districts</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-county">5.2.14. Shoreline clipped US County</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-us-states">5.2.15. Shoreline clipped US States</a></li>
+<li><a class="reference internal" href="#shoreline-clipped-unified-school-district">5.2.16. Shoreline clipped Unified School District</a></li>
+<li><a class="reference internal" href="#television-market-area">5.2.17. Television Market Area</a></li>
+<li><a class="reference internal" href="#us-census-block-groups">5.2.18. US Census Block Groups</a></li>
+<li><a class="reference internal" href="#us-census-public-use-microdata-areas">5.2.19. US Census Public Use Microdata Areas</a></li>
+<li><a class="reference internal" href="#us-census-tracts">5.2.20. US Census Tracts</a></li>
+<li><a class="reference internal" href="#us-census-zip-code-tabulation-areas">5.2.21. US Census Zip Code Tabulation Areas</a></li>
+<li><a class="reference internal" href="#us-congressional-districts">5.2.22. US Congressional Districts</a></li>
+<li><a class="reference internal" href="#us-county">5.2.23. US County</a></li>
+<li><a class="reference internal" href="#us-states">5.2.24. US States</a></li>
+<li><a class="reference internal" href="#unified-school-district">5.2.25. Unified School District</a></li>
 </ul>
 </li>
 </ul>
@@ -674,9 +817,9 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-  <li><a href="../tags.united_states.html">United States</a><ul>
-      <li>Previous: <a href="tags.age_gender.html" title="previous chapter">Age and Gender</a></li>
-      <li>Next: <a href="tags.education.html" title="next chapter">Education</a></li>
+  <li><a href="../tags.united_states.html">5. United States</a><ul>
+      <li>Previous: <a href="tags.age_gender.html" title="previous chapter">5.1. Age and Gender</a></li>
+      <li>Next: <a href="tags.commerce_economy.html" title="next chapter">5.3. Commerce &amp; Economy</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -691,8 +834,8 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -706,8 +849,8 @@
       &copy;2016, CartoDB.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
       |
       <a href="../_sources/tags.united_states/tags.boundary.txt"

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Transportation &mdash; bigmetadata 0.0.1 documentation</title>
+    <title>5.13. Transportation &mdash; observatory 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -27,16 +27,18 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/bigmetadata.js"></script>
     <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
-    <link rel="top" title="bigmetadata 0.0.1 documentation" href="../index.html" />
-    <link rel="up" title="United States" href="../tags.united_states.html" />
-    <link rel="next" title="US Population Segments" href="us.census.acs.segments.html" />
-    <link rel="prev" title="Race and Ethnicity" href="tags.race_ethnicity.html" />
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="5. United States" href="../tags.united_states.html" />
+    <link rel="next" title="5.14. US Population Segments" href="us.census.acs.segments.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="tags.segments.html" />
    
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">  
+  <body role="document">
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -44,48 +46,109 @@
           <div class="body" role="main">
             
   <div class="section" id="transportation">
-<h1>Transportation<a class="headerlink" href="#transportation" title="Permalink to this headline">¶</a></h1>
+<h1>5.13. Transportation<a class="headerlink" href="#transportation" title="Permalink to this headline">¶</a></h1>
 <p>How do people move from place to place?</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#commuters-by-car-truck-or-van" id="id1">Commuters by Car, Truck, or Van</a><ul>
-<li><a class="reference internal" href="#commuters-by-carpool" id="id2">Commuters by Carpool</a></li>
-<li><a class="reference internal" href="#commuters-who-drove-alone" id="id3">Commuters who drove alone</a></li>
+<li><a class="reference internal" href="#car-free-households" id="id1">Car-free households</a></li>
+<li><a class="reference internal" href="#commuters-by-car-truck-or-van" id="id2">Commuters by Car, Truck, or Van</a><ul>
+<li><a class="reference internal" href="#commuters-by-carpool" id="id3">Commuters by Carpool</a></li>
+<li><a class="reference internal" href="#commuters-who-drove-alone" id="id4">Commuters who drove alone</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#commuters-by-public-transportation" id="id4">Commuters by Public Transportation</a><ul>
-<li><a class="reference internal" href="#commuters-by-bus" id="id5">Commuters by Bus</a></li>
-<li><a class="reference internal" href="#commuters-by-subway-or-elevated" id="id6">Commuters by Subway or Elevated</a></li>
+<li><a class="reference internal" href="#commuters-by-public-transportation" id="id5">Commuters by Public Transportation</a><ul>
+<li><a class="reference internal" href="#commuters-by-bus" id="id6">Commuters by Bus</a></li>
+<li><a class="reference internal" href="#commuters-by-subway-or-elevated" id="id7">Commuters by Subway or Elevated</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#walked-to-work" id="id7">Walked to Work</a></li>
-<li><a class="reference internal" href="#worked-at-home" id="id8">Worked at Home</a></li>
-<li><a class="reference internal" href="#workers-age-16-and-over-who-do-not-work-from-home" id="id9">Workers age 16 and over who do not work from home</a><ul>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-5-and-9-minutes" id="id10">Number of workers with a commute between 5 and 9 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-10-and-14-minutes" id="id11">Number of workers with a commute between 10 and 14 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-15-and-19-minutes" id="id12">Number of workers with a commute between 15 and 19 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-20-and-24-minutes" id="id13">Number of workers with a commute between 20 and 24 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-25-and-29-minutes" id="id14">Number of workers with a commute between 25 and 29 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-30-and-34-minutes" id="id15">Number of workers with a commute between 30 and 34 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-39-minutes" id="id16">Number of workers with a commute between 35 and 39 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-44-minutes" id="id17">Number of workers with a commute between 35 and 44 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-40-and-44-minutes" id="id18">Number of workers with a commute between 40 and 44 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-45-and-59-minutes" id="id19">Number of workers with a commute between 45 and 59 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-60-and-89-minutes" id="id20">Number of workers with a commute between 60 and 89 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-more-than-90-minutes" id="id21">Number of workers with a commute of more than 90 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-over-60-minutes" id="id22">Number of workers with a commute of over 60 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-less-than-10-minute-commute" id="id23">Number of workers with less than 10 minute commute</a></li>
+<li><a class="reference internal" href="#four-car-households" id="id8">Four car households</a></li>
+<li><a class="reference internal" href="#one-car-households" id="id9">One car households</a></li>
+<li><a class="reference internal" href="#three-car-households" id="id10">Three car households</a></li>
+<li><a class="reference internal" href="#two-car-households" id="id11">Two car households</a></li>
+<li><a class="reference internal" href="#walked-to-work" id="id12">Walked to Work</a></li>
+<li><a class="reference internal" href="#worked-at-home" id="id13">Worked at Home</a></li>
+<li><a class="reference internal" href="#workers-age-16-and-over-who-do-not-work-from-home" id="id14">Workers age 16 and over who do not work from home</a><ul>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-5-and-9-minutes" id="id15">Number of workers with a commute between 5 and 9 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-10-and-14-minutes" id="id16">Number of workers with a commute between 10 and 14 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-15-and-19-minutes" id="id17">Number of workers with a commute between 15 and 19 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-20-and-24-minutes" id="id18">Number of workers with a commute between 20 and 24 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-25-and-29-minutes" id="id19">Number of workers with a commute between 25 and 29 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-30-and-34-minutes" id="id20">Number of workers with a commute between 30 and 34 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-39-minutes" id="id21">Number of workers with a commute between 35 and 39 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-44-minutes" id="id22">Number of workers with a commute between 35 and 44 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-40-and-44-minutes" id="id23">Number of workers with a commute between 40 and 44 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-45-and-59-minutes" id="id24">Number of workers with a commute between 45 and 59 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-60-and-89-minutes" id="id25">Number of workers with a commute between 60 and 89 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-more-than-90-minutes" id="id26">Number of workers with a commute of more than 90 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-over-60-minutes" id="id27">Number of workers with a commute of over 60 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-less-than-10-minute-commute" id="id28">Number of workers with less than 10 minute commute</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#workers-age-16-and-over-with-no-vehicle" id="id24">Workers age 16 and over with no vehicle</a></li>
+<li><a class="reference internal" href="#workers-age-16-and-over-with-no-vehicle" id="id29">Workers age 16 and over with no vehicle</a></li>
 </ul>
 </div>
+<div class="section" id="car-free-households">
+<span id="us-census-acs-b08201002"></span><h2><a class="toc-backref" href="#id1">5.13.1. Car-free households</a><a class="headerlink" href="#car-free-households" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08201002.png"><img alt="../_images/us.census.acs.B08201002.png" src="../_images/us.census.acs.B08201002.png" style="width: 100%;" /></a>
+</div>
+<p>The number of households without passenger cars, vans, and pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.</p>
+<p>Measure &#8220;Car-free households&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201002&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Car-free households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201002&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Car-free households&#8221; percent of &#8220;Households&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201002&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Car-free households&#8221; percent of &#8220;Households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201002&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.housing.html#us-census-acs-b11001001"><span class="std std-ref">Households</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="commuters-by-car-truck-or-van">
-<span id="us-census-acs-b08006002"></span><h2><a class="toc-backref" href="#id1">Commuters by Car, Truck, or Van</a><a class="headerlink" href="#commuters-by-car-truck-or-van" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-acs-b08006002"></span><h2><a class="toc-backref" href="#id2">5.13.2. Commuters by Car, Truck, or Van</a><a class="headerlink" href="#commuters-by-car-truck-or-van" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08006002.png"><img alt="../_images/us.census.acs.B08006002.png" src="../_images/us.census.acs.B08006002.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers age 16 years and over within  a geographic area who primarily traveled to work by car, truck or  van.  This is the principal mode of travel or type of conveyance,  by distance rather than time, that the worker usually used to get  from home to work.</p>
 <p>Measure &#8220;Commuters by Car, Truck, or Van&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006002&#39;</span>
@@ -93,27 +156,58 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Car, Truck, or Van&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006002&#39;</span>
     <span class="p">);</span>
 </pre></div>
 </div>
+<p>Measure &#8220;Commuters by Car, Truck, or Van&#8221; percent of &#8220;Workers over the Age of 16&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08006002&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Commuters by Car, Truck, or Van&#8221; percent of &#8220;Workers over the Age of 16&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08006002&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.employment.html#us-census-acs-b08006001"><span class="std std-ref">Workers over the Age of 16</span></a></td>
+</tr>
+</tbody>
+</table>
 <div class="contents local topic" id="subcolumns-of-commuters-by-car-truck-or-van">
 <p class="topic-title first">Subcolumns of Commuters by Car, Truck, or Van</p>
 <ul class="simple">
-<li><a class="reference internal" href="#commuters-by-carpool" id="id25">Commuters by Carpool</a></li>
-<li><a class="reference internal" href="#commuters-who-drove-alone" id="id26">Commuters who drove alone</a></li>
+<li><a class="reference internal" href="#commuters-by-carpool" id="id30">Commuters by Carpool</a></li>
+<li><a class="reference internal" href="#commuters-who-drove-alone" id="id31">Commuters who drove alone</a></li>
 </ul>
 </div>
 <div class="section" id="commuters-by-carpool">
-<span id="us-census-acs-b08006004"></span><h3><a class="toc-backref" href="#id25">Commuters by Carpool</a><a class="headerlink" href="#commuters-by-carpool" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08006004"></span><h3><a class="toc-backref" href="#id30">5.13.2.1. Commuters by Carpool</a><a class="headerlink" href="#commuters-by-carpool" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08006004.png"><img alt="../_images/us.census.acs.B08006004.png" src="../_images/us.census.acs.B08006004.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers age 16 years and over within a geographic area who primarily traveled to work by carpool.  This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.</p>
 <p>Measure &#8220;Commuters by Carpool&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006004&#39;</span>
@@ -121,8 +215,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Carpool&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006004&#39;</span>
@@ -130,8 +224,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Carpool&#8221; percent of &#8220;Commuters by Car, Truck, or Van&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006004&#39;</span><span class="p">,</span>
@@ -140,8 +234,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Carpool&#8221; percent of &#8220;Commuters by Car, Truck, or Van&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006004&#39;</span><span class="p">,</span>
@@ -159,11 +253,14 @@
 </table>
 </div>
 <div class="section" id="commuters-who-drove-alone">
-<span id="us-census-acs-b08006003"></span><h3><a class="toc-backref" href="#id26">Commuters who drove alone</a><a class="headerlink" href="#commuters-who-drove-alone" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08006003"></span><h3><a class="toc-backref" href="#id31">5.13.2.2. Commuters who drove alone</a><a class="headerlink" href="#commuters-who-drove-alone" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08006003.png"><img alt="../_images/us.census.acs.B08006003.png" src="../_images/us.census.acs.B08006003.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers age 16 years and over within a geographic area who primarily traveled by car driving alone. This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.</p>
 <p>Measure &#8220;Commuters who drove alone&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006003&#39;</span>
@@ -171,8 +268,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters who drove alone&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006003&#39;</span>
@@ -180,8 +277,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters who drove alone&#8221; percent of &#8220;Commuters by Car, Truck, or Van&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006003&#39;</span><span class="p">,</span>
@@ -190,8 +287,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters who drove alone&#8221; percent of &#8220;Commuters by Car, Truck, or Van&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006003&#39;</span><span class="p">,</span>
@@ -210,11 +307,14 @@
 </div>
 </div>
 <div class="section" id="commuters-by-public-transportation">
-<span id="us-census-acs-b08301010"></span><h2><a class="toc-backref" href="#id4">Commuters by Public Transportation</a><a class="headerlink" href="#commuters-by-public-transportation" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-acs-b08301010"></span><h2><a class="toc-backref" href="#id5">5.13.3. Commuters by Public Transportation</a><a class="headerlink" href="#commuters-by-public-transportation" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08301010.png"><img alt="../_images/us.census.acs.B08301010.png" src="../_images/us.census.acs.B08301010.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers age 16 years and over within a geographic area who primarily traveled to work by public transportation.  This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.</p>
 <p>Measure &#8220;Commuters by Public Transportation&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08301010&#39;</span>
@@ -222,27 +322,58 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Public Transportation&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08301010&#39;</span>
     <span class="p">);</span>
 </pre></div>
 </div>
+<p>Measure &#8220;Commuters by Public Transportation&#8221; percent of &#8220;Workers over the Age of 16&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08301010&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Commuters by Public Transportation&#8221; percent of &#8220;Workers over the Age of 16&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08301010&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.employment.html#us-census-acs-b08006001"><span class="std std-ref">Workers over the Age of 16</span></a></td>
+</tr>
+</tbody>
+</table>
 <div class="contents local topic" id="subcolumns-of-commuters-by-public-transportation">
 <p class="topic-title first">Subcolumns of Commuters by Public Transportation</p>
 <ul class="simple">
-<li><a class="reference internal" href="#commuters-by-bus" id="id27">Commuters by Bus</a></li>
-<li><a class="reference internal" href="#commuters-by-subway-or-elevated" id="id28">Commuters by Subway or Elevated</a></li>
+<li><a class="reference internal" href="#commuters-by-bus" id="id32">Commuters by Bus</a></li>
+<li><a class="reference internal" href="#commuters-by-subway-or-elevated" id="id33">Commuters by Subway or Elevated</a></li>
 </ul>
 </div>
 <div class="section" id="commuters-by-bus">
-<span id="us-census-acs-b08006009"></span><h3><a class="toc-backref" href="#id27">Commuters by Bus</a><a class="headerlink" href="#commuters-by-bus" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08006009"></span><h3><a class="toc-backref" href="#id32">5.13.3.1. Commuters by Bus</a><a class="headerlink" href="#commuters-by-bus" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08006009.png"><img alt="../_images/us.census.acs.B08006009.png" src="../_images/us.census.acs.B08006009.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers age 16 years and over within a geographic area who primarily traveled to work by bus.  This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.  This is a subset of workers who commuted by public transport.</p>
 <p>Measure &#8220;Commuters by Bus&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006009&#39;</span>
@@ -250,8 +381,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Bus&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006009&#39;</span>
@@ -259,8 +390,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Bus&#8221; percent of &#8220;Commuters by Public Transportation&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006009&#39;</span><span class="p">,</span>
@@ -269,8 +400,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Bus&#8221; percent of &#8220;Commuters by Public Transportation&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006009&#39;</span><span class="p">,</span>
@@ -288,11 +419,14 @@
 </table>
 </div>
 <div class="section" id="commuters-by-subway-or-elevated">
-<span id="us-census-acs-b08006011"></span><h3><a class="toc-backref" href="#id28">Commuters by Subway or Elevated</a><a class="headerlink" href="#commuters-by-subway-or-elevated" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08006011"></span><h3><a class="toc-backref" href="#id33">5.13.3.2. Commuters by Subway or Elevated</a><a class="headerlink" href="#commuters-by-subway-or-elevated" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08006011.png"><img alt="../_images/us.census.acs.B08006011.png" src="../_images/us.census.acs.B08006011.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers age 16 years and over within a geographic area who primarily traveled to work by subway or elevated train.  This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.  This is a subset of workers who commuted by public transport.</p>
 <p>Measure &#8220;Commuters by Subway or Elevated&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006011&#39;</span>
@@ -300,8 +434,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Subway or Elevated&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006011&#39;</span>
@@ -309,8 +443,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Subway or Elevated&#8221; percent of &#8220;Commuters by Public Transportation&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006011&#39;</span><span class="p">,</span>
@@ -319,8 +453,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Commuters by Subway or Elevated&#8221; percent of &#8220;Commuters by Public Transportation&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006011&#39;</span><span class="p">,</span>
@@ -338,12 +472,227 @@
 </table>
 </div>
 </div>
+<div class="section" id="four-car-households">
+<span id="us-census-acs-b08201006"></span><h2><a class="toc-backref" href="#id8">5.13.4. Four car households</a><a class="headerlink" href="#four-car-households" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08201006.png"><img alt="../_images/us.census.acs.B08201006.png" src="../_images/us.census.acs.B08201006.png" style="width: 100%;" /></a>
+</div>
+<p>The number of households with four or more passenger cars, vans, pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.</p>
+<p>Measure &#8220;Four car households&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201006&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Four car households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201006&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Four car households&#8221; percent of &#8220;Households&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201006&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Four car households&#8221; percent of &#8220;Households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201006&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.housing.html#us-census-acs-b11001001"><span class="std std-ref">Households</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="one-car-households">
+<span id="us-census-acs-b08201003"></span><h2><a class="toc-backref" href="#id9">5.13.5. One car households</a><a class="headerlink" href="#one-car-households" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08201003.png"><img alt="../_images/us.census.acs.B08201003.png" src="../_images/us.census.acs.B08201003.png" style="width: 100%;" /></a>
+</div>
+<p>The number of households with one passenger car, van, , pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.</p>
+<p>Measure &#8220;One car households&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201003&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;One car households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201003&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;One car households&#8221; percent of &#8220;Households&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201003&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;One car households&#8221; percent of &#8220;Households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201003&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.housing.html#us-census-acs-b11001001"><span class="std std-ref">Households</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="three-car-households">
+<span id="us-census-acs-b08201005"></span><h2><a class="toc-backref" href="#id10">5.13.6. Three car households</a><a class="headerlink" href="#three-car-households" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08201005.png"><img alt="../_images/us.census.acs.B08201005.png" src="../_images/us.census.acs.B08201005.png" style="width: 100%;" /></a>
+</div>
+<p>The number of households with one passenger cars, vans, pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.</p>
+<p>Measure &#8220;Three car households&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201005&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Three car households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201005&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Three car households&#8221; percent of &#8220;Households&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201005&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Three car households&#8221; percent of &#8220;Households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201005&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.housing.html#us-census-acs-b11001001"><span class="std std-ref">Households</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="two-car-households">
+<span id="us-census-acs-b08201004"></span><h2><a class="toc-backref" href="#id11">5.13.7. Two car households</a><a class="headerlink" href="#two-car-households" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08201004.png"><img alt="../_images/us.census.acs.B08201004.png" src="../_images/us.census.acs.B08201004.png" style="width: 100%;" /></a>
+</div>
+<p>The number of households with two passenger cars, vans, pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.</p>
+<p>Measure &#8220;Two car households&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201004&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Two car households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201004&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Two car households&#8221; percent of &#8220;Households&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201004&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Two car households&#8221; percent of &#8220;Households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08201004&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.housing.html#us-census-acs-b11001001"><span class="std std-ref">Households</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="walked-to-work">
-<span id="us-census-acs-b08006015"></span><h2><a class="toc-backref" href="#id7">Walked to Work</a><a class="headerlink" href="#walked-to-work" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-acs-b08006015"></span><h2><a class="toc-backref" href="#id12">5.13.8. Walked to Work</a><a class="headerlink" href="#walked-to-work" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08006015.png"><img alt="../_images/us.census.acs.B08006015.png" src="../_images/us.census.acs.B08006015.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers age 16 years and over within a geographic area who primarily walked to work.  This would mean that of any way of getting to work, they travelled the most distance walking.</p>
 <p>Measure &#8220;Walked to Work&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006015&#39;</span>
@@ -351,8 +700,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Walked to Work&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006015&#39;</span>
@@ -360,8 +709,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Walked to Work&#8221; percent of &#8220;Workers over the Age of 16&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006015&#39;</span><span class="p">,</span>
@@ -370,8 +719,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Walked to Work&#8221; percent of &#8220;Workers over the Age of 16&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006015&#39;</span><span class="p">,</span>
@@ -389,11 +738,14 @@
 </table>
 </div>
 <div class="section" id="worked-at-home">
-<span id="us-census-acs-b08006017"></span><h2><a class="toc-backref" href="#id8">Worked at Home</a><a class="headerlink" href="#worked-at-home" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-acs-b08006017"></span><h2><a class="toc-backref" href="#id13">5.13.9. Worked at Home</a><a class="headerlink" href="#worked-at-home" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08006017.png"><img alt="../_images/us.census.acs.B08006017.png" src="../_images/us.census.acs.B08006017.png" style="width: 100%;" /></a>
+</div>
 <p>The count within a geographical area of workers over the age of 16 who worked at home.</p>
 <p>Measure &#8220;Worked at Home&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006017&#39;</span>
@@ -401,8 +753,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Worked at Home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006017&#39;</span>
@@ -410,8 +762,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Worked at Home&#8221; percent of &#8220;Workers over the Age of 16&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006017&#39;</span><span class="p">,</span>
@@ -420,8 +772,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Worked at Home&#8221; percent of &#8220;Workers over the Age of 16&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08006017&#39;</span><span class="p">,</span>
@@ -439,11 +791,14 @@
 </table>
 </div>
 <div class="section" id="workers-age-16-and-over-who-do-not-work-from-home">
-<span id="us-census-acs-b08134001"></span><h2><a class="toc-backref" href="#id9">Workers age 16 and over who do not work from home</a><a class="headerlink" href="#workers-age-16-and-over-who-do-not-work-from-home" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-acs-b08134001"></span><h2><a class="toc-backref" href="#id14">5.13.10. Workers age 16 and over who do not work from home</a><a class="headerlink" href="#workers-age-16-and-over-who-do-not-work-from-home" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08134001.png"><img alt="../_images/us.census.acs.B08134001.png" src="../_images/us.census.acs.B08134001.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home</p>
 <p>Measure &#8220;Workers age 16 and over who do not work from home&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134001&#39;</span>
@@ -451,8 +806,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134001&#39;</span>
@@ -462,28 +817,31 @@
 <div class="contents local topic" id="subcolumns-of-workers-age-16-and-over-who-do-not-work-from-home">
 <p class="topic-title first">Subcolumns of Workers age 16 and over who do not work from home</p>
 <ul class="simple">
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-5-and-9-minutes" id="id29">Number of workers with a commute between 5 and 9 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-10-and-14-minutes" id="id30">Number of workers with a commute between 10 and 14 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-15-and-19-minutes" id="id31">Number of workers with a commute between 15 and 19 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-20-and-24-minutes" id="id32">Number of workers with a commute between 20 and 24 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-25-and-29-minutes" id="id33">Number of workers with a commute between 25 and 29 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-30-and-34-minutes" id="id34">Number of workers with a commute between 30 and 34 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-39-minutes" id="id35">Number of workers with a commute between 35 and 39 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-44-minutes" id="id36">Number of workers with a commute between 35 and 44 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-40-and-44-minutes" id="id37">Number of workers with a commute between 40 and 44 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-45-and-59-minutes" id="id38">Number of workers with a commute between 45 and 59 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-60-and-89-minutes" id="id39">Number of workers with a commute between 60 and 89 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-more-than-90-minutes" id="id40">Number of workers with a commute of more than 90 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-over-60-minutes" id="id41">Number of workers with a commute of over 60 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-less-than-10-minute-commute" id="id42">Number of workers with less than 10 minute commute</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-5-and-9-minutes" id="id34">Number of workers with a commute between 5 and 9 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-10-and-14-minutes" id="id35">Number of workers with a commute between 10 and 14 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-15-and-19-minutes" id="id36">Number of workers with a commute between 15 and 19 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-20-and-24-minutes" id="id37">Number of workers with a commute between 20 and 24 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-25-and-29-minutes" id="id38">Number of workers with a commute between 25 and 29 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-30-and-34-minutes" id="id39">Number of workers with a commute between 30 and 34 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-39-minutes" id="id40">Number of workers with a commute between 35 and 39 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-44-minutes" id="id41">Number of workers with a commute between 35 and 44 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-40-and-44-minutes" id="id42">Number of workers with a commute between 40 and 44 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-45-and-59-minutes" id="id43">Number of workers with a commute between 45 and 59 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-60-and-89-minutes" id="id44">Number of workers with a commute between 60 and 89 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-more-than-90-minutes" id="id45">Number of workers with a commute of more than 90 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-over-60-minutes" id="id46">Number of workers with a commute of over 60 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-less-than-10-minute-commute" id="id47">Number of workers with less than 10 minute commute</a></li>
 </ul>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-5-and-9-minutes">
-<span id="us-census-acs-b08303003"></span><h3><a class="toc-backref" href="#id29">Number of workers with a commute between 5 and 9 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-5-and-9-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303003"></span><h3><a class="toc-backref" href="#id34">5.13.10.1. Number of workers with a commute between 5 and 9 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-5-and-9-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303003.png"><img alt="../_images/us.census.acs.B08303003.png" src="../_images/us.census.acs.B08303003.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 5 and 9 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303003&#39;</span>
@@ -491,8 +849,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 5 and 9 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303003&#39;</span>
@@ -500,8 +858,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 5 and 9 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303003&#39;</span><span class="p">,</span>
@@ -510,8 +868,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 5 and 9 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303003&#39;</span><span class="p">,</span>
@@ -529,11 +887,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-10-and-14-minutes">
-<span id="us-census-acs-b08303004"></span><h3><a class="toc-backref" href="#id30">Number of workers with a commute between 10 and 14 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-10-and-14-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303004"></span><h3><a class="toc-backref" href="#id35">5.13.10.2. Number of workers with a commute between 10 and 14 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-10-and-14-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303004.png"><img alt="../_images/us.census.acs.B08303004.png" src="../_images/us.census.acs.B08303004.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 10 and 14 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 10 and 14 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303004&#39;</span>
@@ -541,8 +902,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 10 and 14 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303004&#39;</span>
@@ -550,8 +911,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 10 and 14 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303004&#39;</span><span class="p">,</span>
@@ -560,8 +921,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 10 and 14 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303004&#39;</span><span class="p">,</span>
@@ -579,11 +940,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-15-and-19-minutes">
-<span id="us-census-acs-b08303005"></span><h3><a class="toc-backref" href="#id31">Number of workers with a commute between 15 and 19 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-15-and-19-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303005"></span><h3><a class="toc-backref" href="#id36">5.13.10.3. Number of workers with a commute between 15 and 19 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-15-and-19-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303005.png"><img alt="../_images/us.census.acs.B08303005.png" src="../_images/us.census.acs.B08303005.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 15 and 19 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 15 and 19 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303005&#39;</span>
@@ -591,8 +955,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 15 and 19 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303005&#39;</span>
@@ -600,8 +964,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 15 and 19 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303005&#39;</span><span class="p">,</span>
@@ -610,8 +974,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 15 and 19 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303005&#39;</span><span class="p">,</span>
@@ -629,11 +993,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-20-and-24-minutes">
-<span id="us-census-acs-b08303006"></span><h3><a class="toc-backref" href="#id32">Number of workers with a commute between 20 and 24 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-20-and-24-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303006"></span><h3><a class="toc-backref" href="#id37">5.13.10.4. Number of workers with a commute between 20 and 24 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-20-and-24-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303006.png"><img alt="../_images/us.census.acs.B08303006.png" src="../_images/us.census.acs.B08303006.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 20 and 24 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 20 and 24 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303006&#39;</span>
@@ -641,8 +1008,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 20 and 24 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303006&#39;</span>
@@ -650,8 +1017,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 20 and 24 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303006&#39;</span><span class="p">,</span>
@@ -660,8 +1027,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 20 and 24 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303006&#39;</span><span class="p">,</span>
@@ -679,11 +1046,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-25-and-29-minutes">
-<span id="us-census-acs-b08303007"></span><h3><a class="toc-backref" href="#id33">Number of workers with a commute between 25 and 29 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-25-and-29-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303007"></span><h3><a class="toc-backref" href="#id38">5.13.10.5. Number of workers with a commute between 25 and 29 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-25-and-29-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303007.png"><img alt="../_images/us.census.acs.B08303007.png" src="../_images/us.census.acs.B08303007.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 25 and 29 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 25 and 29 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303007&#39;</span>
@@ -691,8 +1061,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 25 and 29 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303007&#39;</span>
@@ -700,8 +1070,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 25 and 29 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303007&#39;</span><span class="p">,</span>
@@ -710,8 +1080,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 25 and 29 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303007&#39;</span><span class="p">,</span>
@@ -729,11 +1099,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-30-and-34-minutes">
-<span id="us-census-acs-b08303008"></span><h3><a class="toc-backref" href="#id34">Number of workers with a commute between 30 and 34 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-30-and-34-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303008"></span><h3><a class="toc-backref" href="#id39">5.13.10.6. Number of workers with a commute between 30 and 34 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-30-and-34-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303008.png"><img alt="../_images/us.census.acs.B08303008.png" src="../_images/us.census.acs.B08303008.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 30 and 34 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 30 and 34 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303008&#39;</span>
@@ -741,8 +1114,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 30 and 34 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303008&#39;</span>
@@ -750,8 +1123,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 30 and 34 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303008&#39;</span><span class="p">,</span>
@@ -760,8 +1133,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 30 and 34 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303008&#39;</span><span class="p">,</span>
@@ -779,11 +1152,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-35-and-39-minutes">
-<span id="us-census-acs-b08303009"></span><h3><a class="toc-backref" href="#id35">Number of workers with a commute between 35 and 39 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-35-and-39-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303009"></span><h3><a class="toc-backref" href="#id40">5.13.10.7. Number of workers with a commute between 35 and 39 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-35-and-39-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303009.png"><img alt="../_images/us.census.acs.B08303009.png" src="../_images/us.census.acs.B08303009.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 39 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 35 and 39 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303009&#39;</span>
@@ -791,8 +1167,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 35 and 39 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303009&#39;</span>
@@ -800,8 +1176,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 35 and 39 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303009&#39;</span><span class="p">,</span>
@@ -810,8 +1186,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 35 and 39 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303009&#39;</span><span class="p">,</span>
@@ -829,11 +1205,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-35-and-44-minutes">
-<span id="us-census-acs-b08134008"></span><h3><a class="toc-backref" href="#id36">Number of workers with a commute between 35 and 44 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-35-and-44-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08134008"></span><h3><a class="toc-backref" href="#id41">5.13.10.8. Number of workers with a commute between 35 and 44 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-35-and-44-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08134008.png"><img alt="../_images/us.census.acs.B08134008.png" src="../_images/us.census.acs.B08134008.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 44 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 35 and 44 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134008&#39;</span>
@@ -841,8 +1220,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 35 and 44 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134008&#39;</span>
@@ -850,8 +1229,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 35 and 44 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134008&#39;</span><span class="p">,</span>
@@ -860,8 +1239,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 35 and 44 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134008&#39;</span><span class="p">,</span>
@@ -879,11 +1258,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-40-and-44-minutes">
-<span id="us-census-acs-b08303010"></span><h3><a class="toc-backref" href="#id37">Number of workers with a commute between 40 and 44 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-40-and-44-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303010"></span><h3><a class="toc-backref" href="#id42">5.13.10.9. Number of workers with a commute between 40 and 44 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-40-and-44-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303010.png"><img alt="../_images/us.census.acs.B08303010.png" src="../_images/us.census.acs.B08303010.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 40 and 44 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303010&#39;</span>
@@ -891,8 +1273,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 40 and 44 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303010&#39;</span>
@@ -900,8 +1282,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 40 and 44 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303010&#39;</span><span class="p">,</span>
@@ -910,8 +1292,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 40 and 44 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303010&#39;</span><span class="p">,</span>
@@ -929,11 +1311,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-45-and-59-minutes">
-<span id="us-census-acs-b08303011"></span><h3><a class="toc-backref" href="#id38">Number of workers with a commute between 45 and 59 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-45-and-59-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303011"></span><h3><a class="toc-backref" href="#id43">5.13.10.10. Number of workers with a commute between 45 and 59 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-45-and-59-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303011.png"><img alt="../_images/us.census.acs.B08303011.png" src="../_images/us.census.acs.B08303011.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute between 45 and 59 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303011&#39;</span>
@@ -941,8 +1326,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 45 and 59 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303011&#39;</span>
@@ -950,8 +1335,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 45 and 59 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303011&#39;</span><span class="p">,</span>
@@ -960,8 +1345,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 45 and 59 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303011&#39;</span><span class="p">,</span>
@@ -979,11 +1364,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-between-60-and-89-minutes">
-<span id="us-census-acs-b08303012"></span><h3><a class="toc-backref" href="#id39">Number of workers with a commute between 60 and 89 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-60-and-89-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303012"></span><h3><a class="toc-backref" href="#id44">5.13.10.11. Number of workers with a commute between 60 and 89 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-between-60-and-89-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303012.png"><img alt="../_images/us.census.acs.B08303012.png" src="../_images/us.census.acs.B08303012.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .</p>
 <p>Measure &#8220;Number of workers with a commute between 60 and 89 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303012&#39;</span>
@@ -991,8 +1379,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 60 and 89 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303012&#39;</span>
@@ -1000,8 +1388,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 60 and 89 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303012&#39;</span><span class="p">,</span>
@@ -1010,8 +1398,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute between 60 and 89 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303012&#39;</span><span class="p">,</span>
@@ -1029,11 +1417,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-of-more-than-90-minutes">
-<span id="us-census-acs-b08303013"></span><h3><a class="toc-backref" href="#id40">Number of workers with a commute of more than 90 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-of-more-than-90-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08303013"></span><h3><a class="toc-backref" href="#id45">5.13.10.12. Number of workers with a commute of more than 90 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-of-more-than-90-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08303013.png"><img alt="../_images/us.census.acs.B08303013.png" src="../_images/us.census.acs.B08303013.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute more than 90 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute of more than 90 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303013&#39;</span>
@@ -1041,8 +1432,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute of more than 90 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303013&#39;</span>
@@ -1050,8 +1441,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute of more than 90 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303013&#39;</span><span class="p">,</span>
@@ -1060,8 +1451,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute of more than 90 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08303013&#39;</span><span class="p">,</span>
@@ -1079,11 +1470,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-a-commute-of-over-60-minutes">
-<span id="us-census-acs-b08134010"></span><h3><a class="toc-backref" href="#id41">Number of workers with a commute of over 60 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-of-over-60-minutes" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08134010"></span><h3><a class="toc-backref" href="#id46">5.13.10.13. Number of workers with a commute of over 60 minutes</a><a class="headerlink" href="#number-of-workers-with-a-commute-of-over-60-minutes" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08134010.png"><img alt="../_images/us.census.acs.B08134010.png" src="../_images/us.census.acs.B08134010.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in over 60 minutes.</p>
 <p>Measure &#8220;Number of workers with a commute of over 60 minutes&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134010&#39;</span>
@@ -1091,8 +1485,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute of over 60 minutes&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134010&#39;</span>
@@ -1100,8 +1494,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute of over 60 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134010&#39;</span><span class="p">,</span>
@@ -1110,8 +1504,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with a commute of over 60 minutes&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134010&#39;</span><span class="p">,</span>
@@ -1129,11 +1523,14 @@
 </table>
 </div>
 <div class="section" id="number-of-workers-with-less-than-10-minute-commute">
-<span id="us-census-acs-b08134002"></span><h3><a class="toc-backref" href="#id42">Number of workers with less than 10 minute commute</a><a class="headerlink" href="#number-of-workers-with-less-than-10-minute-commute" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b08134002"></span><h3><a class="toc-backref" href="#id47">5.13.10.14. Number of workers with less than 10 minute commute</a><a class="headerlink" href="#number-of-workers-with-less-than-10-minute-commute" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08134002.png"><img alt="../_images/us.census.acs.B08134002.png" src="../_images/us.census.acs.B08134002.png" style="width: 100%;" /></a>
+</div>
 <p>The number of workers in a geographic area over the age of 16 who do not work from home and commute in less than 10 minutes.</p>
 <p>Measure &#8220;Number of workers with less than 10 minute commute&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134002&#39;</span>
@@ -1141,8 +1538,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with less than 10 minute commute&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134002&#39;</span>
@@ -1150,8 +1547,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with less than 10 minute commute&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134002&#39;</span><span class="p">,</span>
@@ -1160,8 +1557,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Number of workers with less than 10 minute commute&#8221; percent of &#8220;Workers age 16 and over who do not work from home&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08134002&#39;</span><span class="p">,</span>
@@ -1180,23 +1577,44 @@
 </div>
 </div>
 <div class="section" id="workers-age-16-and-over-with-no-vehicle">
-<span id="us-census-acs-b08014002"></span><h2><a class="toc-backref" href="#id24">Workers age 16 and over with no vehicle</a><a class="headerlink" href="#workers-age-16-and-over-with-no-vehicle" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-acs-b08014002"></span><h2><a class="toc-backref" href="#id29">5.13.11. Workers age 16 and over with no vehicle</a><a class="headerlink" href="#workers-age-16-and-over-with-no-vehicle" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B08014002.png"><img alt="../_images/us.census.acs.B08014002.png" src="../_images/us.census.acs.B08014002.png" style="width: 100%;" /></a>
+</div>
 <p>All people in a geographic area over the age of 16 who do not own a car.</p>
-<p>Measure &#8220;Workers age 16 and over with no vehicle&#8221;  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<p>Measure &#8220;Workers age 16 and over with no vehicle&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08014002&#39;</span>
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Workers age 16 and over with no vehicle is only available for point lookups.</p>
+<p>Measure &#8220;Workers age 16 and over with no vehicle&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08014002&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
 <p>Measure &#8220;Workers age 16 and over with no vehicle&#8221; percent of &#8220;Workers over the Age of 16&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B08014002&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Workers age 16 and over with no vehicle&#8221; percent of &#8220;Workers over the Age of 16&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B08014002&#39;</span><span class="p">,</span>
       <span class="s1">&#39;denominator&#39;</span>
     <span class="p">);</span>
@@ -1221,37 +1639,42 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Transportation</a><ul>
-<li><a class="reference internal" href="#commuters-by-car-truck-or-van">Commuters by Car, Truck, or Van</a><ul>
-<li><a class="reference internal" href="#commuters-by-carpool">Commuters by Carpool</a></li>
-<li><a class="reference internal" href="#commuters-who-drove-alone">Commuters who drove alone</a></li>
+<li><a class="reference internal" href="#">5.13. Transportation</a><ul>
+<li><a class="reference internal" href="#car-free-households">5.13.1. Car-free households</a></li>
+<li><a class="reference internal" href="#commuters-by-car-truck-or-van">5.13.2. Commuters by Car, Truck, or Van</a><ul>
+<li><a class="reference internal" href="#commuters-by-carpool">5.13.2.1. Commuters by Carpool</a></li>
+<li><a class="reference internal" href="#commuters-who-drove-alone">5.13.2.2. Commuters who drove alone</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#commuters-by-public-transportation">Commuters by Public Transportation</a><ul>
-<li><a class="reference internal" href="#commuters-by-bus">Commuters by Bus</a></li>
-<li><a class="reference internal" href="#commuters-by-subway-or-elevated">Commuters by Subway or Elevated</a></li>
+<li><a class="reference internal" href="#commuters-by-public-transportation">5.13.3. Commuters by Public Transportation</a><ul>
+<li><a class="reference internal" href="#commuters-by-bus">5.13.3.1. Commuters by Bus</a></li>
+<li><a class="reference internal" href="#commuters-by-subway-or-elevated">5.13.3.2. Commuters by Subway or Elevated</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#walked-to-work">Walked to Work</a></li>
-<li><a class="reference internal" href="#worked-at-home">Worked at Home</a></li>
-<li><a class="reference internal" href="#workers-age-16-and-over-who-do-not-work-from-home">Workers age 16 and over who do not work from home</a><ul>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-5-and-9-minutes">Number of workers with a commute between 5 and 9 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-10-and-14-minutes">Number of workers with a commute between 10 and 14 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-15-and-19-minutes">Number of workers with a commute between 15 and 19 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-20-and-24-minutes">Number of workers with a commute between 20 and 24 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-25-and-29-minutes">Number of workers with a commute between 25 and 29 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-30-and-34-minutes">Number of workers with a commute between 30 and 34 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-39-minutes">Number of workers with a commute between 35 and 39 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-44-minutes">Number of workers with a commute between 35 and 44 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-40-and-44-minutes">Number of workers with a commute between 40 and 44 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-45-and-59-minutes">Number of workers with a commute between 45 and 59 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-60-and-89-minutes">Number of workers with a commute between 60 and 89 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-more-than-90-minutes">Number of workers with a commute of more than 90 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-over-60-minutes">Number of workers with a commute of over 60 minutes</a></li>
-<li><a class="reference internal" href="#number-of-workers-with-less-than-10-minute-commute">Number of workers with less than 10 minute commute</a></li>
+<li><a class="reference internal" href="#four-car-households">5.13.4. Four car households</a></li>
+<li><a class="reference internal" href="#one-car-households">5.13.5. One car households</a></li>
+<li><a class="reference internal" href="#three-car-households">5.13.6. Three car households</a></li>
+<li><a class="reference internal" href="#two-car-households">5.13.7. Two car households</a></li>
+<li><a class="reference internal" href="#walked-to-work">5.13.8. Walked to Work</a></li>
+<li><a class="reference internal" href="#worked-at-home">5.13.9. Worked at Home</a></li>
+<li><a class="reference internal" href="#workers-age-16-and-over-who-do-not-work-from-home">5.13.10. Workers age 16 and over who do not work from home</a><ul>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-5-and-9-minutes">5.13.10.1. Number of workers with a commute between 5 and 9 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-10-and-14-minutes">5.13.10.2. Number of workers with a commute between 10 and 14 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-15-and-19-minutes">5.13.10.3. Number of workers with a commute between 15 and 19 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-20-and-24-minutes">5.13.10.4. Number of workers with a commute between 20 and 24 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-25-and-29-minutes">5.13.10.5. Number of workers with a commute between 25 and 29 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-30-and-34-minutes">5.13.10.6. Number of workers with a commute between 30 and 34 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-39-minutes">5.13.10.7. Number of workers with a commute between 35 and 39 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-35-and-44-minutes">5.13.10.8. Number of workers with a commute between 35 and 44 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-40-and-44-minutes">5.13.10.9. Number of workers with a commute between 40 and 44 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-45-and-59-minutes">5.13.10.10. Number of workers with a commute between 45 and 59 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-between-60-and-89-minutes">5.13.10.11. Number of workers with a commute between 60 and 89 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-more-than-90-minutes">5.13.10.12. Number of workers with a commute of more than 90 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-a-commute-of-over-60-minutes">5.13.10.13. Number of workers with a commute of over 60 minutes</a></li>
+<li><a class="reference internal" href="#number-of-workers-with-less-than-10-minute-commute">5.13.10.14. Number of workers with less than 10 minute commute</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#workers-age-16-and-over-with-no-vehicle">Workers age 16 and over with no vehicle</a></li>
+<li><a class="reference internal" href="#workers-age-16-and-over-with-no-vehicle">5.13.11. Workers age 16 and over with no vehicle</a></li>
 </ul>
 </li>
 </ul>
@@ -1259,9 +1682,9 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-  <li><a href="../tags.united_states.html">United States</a><ul>
-      <li>Previous: <a href="tags.race_ethnicity.html" title="previous chapter">Race and Ethnicity</a></li>
-      <li>Next: <a href="us.census.acs.segments.html" title="next chapter">US Population Segments</a></li>
+  <li><a href="../tags.united_states.html">5. United States</a><ul>
+      <li>Previous: <a href="tags.segments.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="us.census.acs.segments.html" title="next chapter">5.14. US Population Segments</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -1276,8 +1699,8 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -1291,8 +1714,8 @@
       &copy;2016, CartoDB.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
       |
       <a href="../_sources/tags.united_states/tags.transportation.txt"

@@ -1,0 +1,437 @@
+
+
+.. Boundaries:
+
+Boundaries
+===========================================================================
+
+Political, administrative, and census-based boundaries.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _es.cnig.ccaa:
+
+Autonomous Community
+---------------------------------------------------------------------------
+
+
+
+
+
+The first-level administrative subdivision of Spain. 
+
+
+
+
+
+Obtain "Autonomous Community" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(42.8226119029, -2.51141249535),
+      'es.cnig.ccaa'
+    )
+
+
+
+
+
+Obtain all "Autonomous Community" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+      'es.cnig.ccaa'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.ccaa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+20150101
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.cnig.cnig-source`
+
+:License:
+
+    :ref:`es.cnig.cnig-license`
+
+
+
+
+
+
+
+.. _es.cnig.muni:
+
+Municipality
+---------------------------------------------------------------------------
+
+
+
+
+
+The lowest level of territorial organization in Spain. Municipal boundaries do not cross between provinces. 
+
+
+
+
+
+Obtain "Municipality" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(42.8226119029, -2.51141249535),
+      'es.cnig.muni'
+    )
+
+
+
+
+
+Obtain all "Municipality" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+      'es.cnig.muni'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.muni`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+20150101
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.cnig.cnig-source`
+
+:License:
+
+    :ref:`es.cnig.cnig-license`
+
+
+
+
+
+
+
+.. _es.cnig.prov:
+
+Province
+---------------------------------------------------------------------------
+
+
+
+
+
+The second-level administrative subdivision of Spain, used primarily as electoral districts and geographic references.  Provinces do not cross between autonomous communities.
+
+
+
+
+
+Obtain "Province" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(42.8226119029, -2.51141249535),
+      'es.cnig.prov'
+    )
+
+
+
+
+
+Obtain all "Province" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+      'es.cnig.prov'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.cnig.prov`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+20150101
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`es.cnig.cnig-source`
+
+:License:
+
+    :ref:`es.cnig.cnig-license`
+
+
+
+
+
+
+
+.. _es.ine.the_geom:
+
+Sección Censal
+---------------------------------------------------------------------------
+
+
+
+
+
+The smallest division of the Spanish Census.
+
+
+
+
+
+Obtain "Sección Censal" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(42.8226119029, -2.51141249535),
+      'es.ine.the_geom'
+    )
+
+
+
+
+
+Obtain all "Sección Censal" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+      'es.ine.the_geom'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+

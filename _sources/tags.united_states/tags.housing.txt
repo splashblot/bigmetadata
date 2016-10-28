@@ -21,6 +21,10 @@ Households
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B11001001.png
+  :width: 100 %
+  :align: center
+
 
 A count of the number of households in each geography. A household consists of one or more people who live in the same dwelling and also share at meals or living accommodation, and may consist of a single family or some other grouping of people. 
 
@@ -31,7 +35,7 @@ A count of the number of households in each geography. A household consists of o
 Measure "Households"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -52,7 +56,7 @@ Measure "Households"  density per sq. kilometer  for one point:
 
 Measure "Households" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -120,6 +124,16 @@ Measure "Households" within an area:
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
@@ -132,6 +146,10 @@ Housing Units
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B25001001.png
+  :width: 100 %
+  :align: center
+
 
 A count of housing units in each geography.  A housing unit is a house, an apartment, a mobile home or trailer, a group of rooms, or a single room occupied as separate living quarters, or if vacant, intended for occupancy as separate living quarters.
 
@@ -142,7 +160,7 @@ A count of housing units in each geography.  A housing unit is a house, an apart
 Measure "Housing Units"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -163,7 +181,7 @@ Measure "Housing Units"  density per sq. kilometer  for one point:
 
 Measure "Housing Units" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -206,6 +224,10 @@ Housing units built before 1939
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B25034010.png
+  :width: 100 %
+  :align: center
+
 
 A house, an apartment, a mobile home or trailer, a group of rooms, or a single room occupied as separate living quarters, or if vacant, intended for occupancy as separate living quarters built in 1939 or earlier.
 
@@ -216,7 +238,7 @@ A house, an apartment, a mobile home or trailer, a group of rooms, or a single r
 Measure "Housing units built before 1939"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -237,7 +259,7 @@ Measure "Housing units built before 1939"  density per sq. kilometer  for one po
 
 Measure "Housing units built before 1939" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -250,9 +272,10 @@ Measure "Housing units built before 1939" within an area:
 
 
 
+
 Measure "Housing units built before 1939" percent of "Housing Units" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -265,7 +288,7 @@ Measure "Housing units built before 1939" percent of "Housing Units" at one poin
 
 Measure "Housing units built before 1939" percent of "Housing Units" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -274,7 +297,6 @@ Measure "Housing units built before 1939" percent of "Housing Units" within an a
         'us.census.acs.B25034010',
         'denominator'
       );
-
 
 
 
@@ -301,6 +323,10 @@ Housing units built between 2000 and 2004
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B25034003.png
+  :width: 100 %
+  :align: center
+
 
 A house, an apartment, a mobile home or trailer, a group of rooms, or a single room occupied as separate living quarters, or if vacant, intended for occupancy as separate living quarters built from 2000 to 2004.
 
@@ -311,7 +337,7 @@ A house, an apartment, a mobile home or trailer, a group of rooms, or a single r
 Measure "Housing units built between 2000 and 2004"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -332,7 +358,7 @@ Measure "Housing units built between 2000 and 2004"  density per sq. kilometer  
 
 Measure "Housing units built between 2000 and 2004" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -345,9 +371,10 @@ Measure "Housing units built between 2000 and 2004" within an area:
 
 
 
+
 Measure "Housing units built between 2000 and 2004" percent of "Housing Units" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -360,7 +387,7 @@ Measure "Housing units built between 2000 and 2004" percent of "Housing Units" a
 
 Measure "Housing units built between 2000 and 2004" percent of "Housing Units" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -369,7 +396,6 @@ Measure "Housing units built between 2000 and 2004" percent of "Housing Units" w
         'us.census.acs.B25034003',
         'denominator'
       );
-
 
 
 
@@ -396,6 +422,10 @@ Housing units built in 2005 or later
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B25034002.png
+  :width: 100 %
+  :align: center
+
 
 A house, an apartment, a mobile home or trailer, a group of rooms, or a single room occupied as separate living quarters, or if vacant, intended for occupancy as separate living quarters built in 2005 or later.
 
@@ -406,7 +436,7 @@ A house, an apartment, a mobile home or trailer, a group of rooms, or a single r
 Measure "Housing units built in 2005 or later"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -427,7 +457,7 @@ Measure "Housing units built in 2005 or later"  density per sq. kilometer  for o
 
 Measure "Housing units built in 2005 or later" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -440,9 +470,10 @@ Measure "Housing units built in 2005 or later" within an area:
 
 
 
+
 Measure "Housing units built in 2005 or later" percent of "Housing Units" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -455,7 +486,7 @@ Measure "Housing units built in 2005 or later" percent of "Housing Units" at one
 
 Measure "Housing units built in 2005 or later" percent of "Housing Units" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -464,7 +495,6 @@ Measure "Housing units built in 2005 or later" percent of "Housing Units" within
         'us.census.acs.B25034002',
         'denominator'
       );
-
 
 
 
@@ -491,6 +521,10 @@ Mobile homes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B25024010.png
+  :width: 100 %
+  :align: center
+
 
 A manufactured home is defined as a movable dwelling, 8 feet or more wide and 40 feet or more long, designed to be towed on its own chassis, with transportation gear integral to the unit when it leaves the factory, and without need of a permanent foundation. These homes are built in accordance with the U.S. Department of Housing and Urban Development (HUD) building code.
 
@@ -501,7 +535,7 @@ A manufactured home is defined as a movable dwelling, 8 feet or more wide and 40
 Measure "Mobile homes"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -522,7 +556,7 @@ Measure "Mobile homes"  density per sq. kilometer  for one point:
 
 Measure "Mobile homes" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -535,9 +569,10 @@ Measure "Mobile homes" within an area:
 
 
 
+
 Measure "Mobile homes" percent of "Housing Units" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -550,7 +585,7 @@ Measure "Mobile homes" percent of "Housing Units" at one point:
 
 Measure "Mobile homes" percent of "Housing Units" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -559,7 +594,6 @@ Measure "Mobile homes" percent of "Housing Units" within an area:
         'us.census.acs.B25024010',
         'denominator'
       );
-
 
 
 
@@ -581,8 +615,818 @@ Measure "Mobile homes" percent of "Housing Units" within an area:
   
   
   
+
+.. _us.census.acs.B25075001:
+
+Owner-occupied Housing Units
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/us.census.acs.B25075001.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Owner-occupied Housing Units"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25075001'
+      );
+
+
+
+
+
+Measure "Owner-occupied Housing Units" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B25075001'
+        );
+
+
+
+
+
+
+Measure "Owner-occupied Housing Units" percent of "Housing Units" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25075001',
+        'denominator'
+      );
+
+
+Measure "Owner-occupied Housing Units" percent of "Housing Units" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B25075001',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`us.census.acs.B25001001`
+
+
+
+.. contents:: Subcolumns of Owner-occupied Housing Units
+   :local:
+   :depth: 1
+
   
   
+  
+
+.. _us.census.acs.B25075025:
+
+Owner-occupied Housing Units valued at $1,000,000 or more.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/us.census.acs.B25075025.png
+  :width: 100 %
+  :align: center
+
+
+The count of owner occupied housing units in a geographic area that are valued at $1,000,000 or more.  Value is the respondent's estimate of how much the property (house and lot, mobile home and lot, or condominium unit) would sell for if it were for sale.
+
+
+
+
+
+Measure "Owner-occupied Housing Units valued at $1,000,000 or more."  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25075025'
+      );
+
+
+
+
+
+Measure "Owner-occupied Housing Units valued at $1,000,000 or more." within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B25075025'
+        );
+
+
+
+
+
+
+Measure "Owner-occupied Housing Units valued at $1,000,000 or more." percent of "Owner-occupied Housing Units" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25075025',
+        'denominator'
+      );
+
+
+Measure "Owner-occupied Housing Units valued at $1,000,000 or more." percent of "Owner-occupied Housing Units" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B25075025',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`us.census.acs.B25075001`
+
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B25081002:
+
+Owner-occupied Housing Units with a Mortgage
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/us.census.acs.B25081002.png
+  :width: 100 %
+  :align: center
+
+
+The count of housing units within a geographic area that are mortagaged. "Mortgage" refers to all forms of debt where the property is pledged as security for repayment of the debt, including deeds of trust, trust deed, contracts to purchase, land contracts, junior mortgages, and home equity loans.
+
+
+
+
+
+Measure "Owner-occupied Housing Units with a Mortgage"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25081002'
+      );
+
+
+
+
+
+Measure "Owner-occupied Housing Units with a Mortgage" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B25081002'
+        );
+
+
+
+
+
+
+Measure "Owner-occupied Housing Units with a Mortgage" percent of "Owner-occupied Housing Units" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25081002',
+        'denominator'
+      );
+
+
+Measure "Owner-occupied Housing Units with a Mortgage" percent of "Owner-occupied Housing Units" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B25081002',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`us.census.acs.B25075001`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _us.census.acs.B25003001:
+
+Renter occupied housing units
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/us.census.acs.B25003001.png
+  :width: 100 %
+  :align: center
+
+
+A housing unit is classified as occupied if it is the usual place of residence of the person or group of people living in it at the time of enumeration.
+
+
+
+
+
+Measure "Renter occupied housing units"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25003001'
+      );
+
+
+
+
+
+Measure "Renter occupied housing units" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B25003001'
+        );
+
+
+
+
+
+
+Measure "Renter occupied housing units" percent of "Housing Units" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25003001',
+        'denominator'
+      );
+
+
+Measure "Renter occupied housing units" percent of "Housing Units" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B25003001',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`us.census.acs.B25001001`
+
+
+
+.. contents:: Subcolumns of Renter occupied housing units
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B25003003:
+
+Renter occupied housing units
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/us.census.acs.B25003003.png
+  :width: 100 %
+  :align: center
+
+
+All occupied units which are not owner occupied, whether they are rented for cash rent or occupied without payment of cash rent, are classified as renter-occupied.
+
+
+
+
+
+Measure "Renter occupied housing units"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25003003'
+      );
+
+
+
+
+
+Measure "Renter occupied housing units" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B25003003'
+        );
+
+
+
+
+
+
+Measure "Renter occupied housing units" percent of "Renter occupied housing units" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25003003',
+        'denominator'
+      );
+
+
+Measure "Renter occupied housing units" percent of "Renter occupied housing units" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B25003003',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`us.census.acs.B25003001`
+
+
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _us.census.acs.B25002003:
+
+Vacant Housing Units
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/us.census.acs.B25002003.png
+  :width: 100 %
+  :align: center
+
+
+The count of vacant housing units in a geographic area. A housing unit is vacant if no one is living in it at the time of enumeration, unless its occupants are only temporarily absent. Units temporarily occupied at the time of enumeration entirely by people who have a usual residence elsewhere are also classified as vacant.
+
+
+
+
+
+Measure "Vacant Housing Units"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25002003'
+      );
+
+
+
+
+
+Measure "Vacant Housing Units" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B25002003'
+        );
+
+
+
+
+
+
+Measure "Vacant Housing Units" percent of "Housing Units" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25002003',
+        'denominator'
+      );
+
+
+Measure "Vacant Housing Units" percent of "Housing Units" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B25002003',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`us.census.acs.B25001001`
+
+
+
+.. contents:: Subcolumns of Vacant Housing Units
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B25004002:
+
+Vacant Housing Units for Rent
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/us.census.acs.B25004002.png
+  :width: 100 %
+  :align: center
+
+
+The count of vacant housing units in a geographic area that are for rent. A housing unit is vacant if no one is living in it at the time of enumeration, unless its occupants are only temporarily absent. Units temporarily occupied at the time of enumeration entirely by people who have a usual residence elsewhere are also classified as vacant.
+
+
+
+
+
+Measure "Vacant Housing Units for Rent"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25004002'
+      );
+
+
+
+
+
+Measure "Vacant Housing Units for Rent" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B25004002'
+        );
+
+
+
+
+
+
+Measure "Vacant Housing Units for Rent" percent of "Vacant Housing Units" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25004002',
+        'denominator'
+      );
+
+
+Measure "Vacant Housing Units for Rent" percent of "Vacant Housing Units" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B25004002',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`us.census.acs.B25002003`
+
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B25004004:
+
+Vacant Housing Units for Sale
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/us.census.acs.B25004004.png
+  :width: 100 %
+  :align: center
+
+
+The count of vacant housing units in a geographic area that are for sale. A housing unit is vacant if no one is living in it at the time of enumeration, unless its occupants are only temporarily absent. Units temporarily occupied at the time of enumeration entirely by people who have a usual residence elsewhere are also classified as vacant.
+
+
+
+
+
+Measure "Vacant Housing Units for Sale"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25004004'
+      );
+
+
+
+
+
+Measure "Vacant Housing Units for Sale" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B25004004'
+        );
+
+
+
+
+
+
+Measure "Vacant Housing Units for Sale" percent of "Vacant Housing Units" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B25004004',
+        'denominator'
+      );
+
+
+Measure "Vacant Housing Units for Sale" percent of "Vacant Housing Units" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B25004004',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`us.census.acs.B25002003`
+
+
+
+  
+  
+
   
   
 
@@ -597,6 +1441,10 @@ Lived in a different house one year ago in a different city
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B07204007.png
+  :width: 100 %
+  :align: center
+
 
 All people in a geographic area who lived in a different city within the year prior to the survey.
 
@@ -604,10 +1452,10 @@ All people in a geographic area who lived in a different city within the year pr
 
 
 
-Measure "Lived in a different house one year ago in a different city"  for one point:
+Measure "Lived in a different house one year ago in a different city"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -626,15 +1474,25 @@ Measure "Lived in a different house one year ago in a different city"  for one p
 
 
 
+Measure "Lived in a different house one year ago in a different city" within an area:
 
-Lived in a different house one year ago in a different city is only available for point lookups.
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B07204007'
+        );
+
+
 
 
 
 
 Measure "Lived in a different house one year ago in a different city" percent of "Population 1 year and over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -644,6 +1502,18 @@ Measure "Lived in a different house one year ago in a different city" percent of
         'denominator'
       );
 
+
+Measure "Lived in a different house one year ago in a different city" percent of "Population 1 year and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B07204007',
+        'denominator'
+      );
 
 
 
@@ -670,6 +1540,10 @@ Lived in a different house one year ago in the same city
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B07204004.png
+  :width: 100 %
+  :align: center
+
 
 All people in a geographic area who lived in the same city but moved to a different unit within the year prior to the survey.
 
@@ -677,10 +1551,10 @@ All people in a geographic area who lived in the same city but moved to a differ
 
 
 
-Measure "Lived in a different house one year ago in the same city"  for one point:
+Measure "Lived in a different house one year ago in the same city"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -699,15 +1573,25 @@ Measure "Lived in a different house one year ago in the same city"  for one poin
 
 
 
+Measure "Lived in a different house one year ago in the same city" within an area:
 
-Lived in a different house one year ago in the same city is only available for point lookups.
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B07204004'
+        );
+
+
 
 
 
 
 Measure "Lived in a different house one year ago in the same city" percent of "Population 1 year and over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -717,6 +1601,18 @@ Measure "Lived in a different house one year ago in the same city" percent of "P
         'denominator'
       );
 
+
+Measure "Lived in a different house one year ago in the same city" percent of "Population 1 year and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B07204004',
+        'denominator'
+      );
 
 
 
@@ -743,6 +1639,10 @@ Median Rent
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B25058001.png
+  :width: 100 %
+  :align: center
+
 
 The median contract rent within a geographic area. The contract rent is the monthly rent agreed to or contracted for, regardless of any furnishings, utilities, fees, meals, or services that may be included. For vacant units, it is the monthly rent asked for the rental unit at the time of interview.
 
@@ -753,7 +1653,7 @@ The median contract rent within a geographic area. The contract rent is the mont
 Measure "Median Rent"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -797,6 +1697,10 @@ Median rental price per square foot for All homes
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.zillow.AllHomes_MedianRentalPricePerSqft.png
+  :width: 100 %
+  :align: center
+
 
 Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home's square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.
 
@@ -807,7 +1711,7 @@ Median of the value (US Dollars) of all homes per square foot. This number is ca
 Measure "Median rental price per square foot for All homes"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -851,6 +1755,10 @@ Median rental price per square foot for Single Family residence rental
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.zillow.Sfr_MedianRentalPricePerSqft.png
+  :width: 100 %
+  :align: center
+
 
 Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home's square footage. Single family residences are detached, free-standing residential buildings. 
 
@@ -861,7 +1769,7 @@ Median of the value (US Dollars) of all homes per square foot. This number is ca
 Measure "Median rental price per square foot for Single Family residence rental"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -905,6 +1813,10 @@ Median value per square foot for All homes
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.zillow.AllHomes_MedianValuePerSqft.png
+  :width: 100 %
+  :align: center
+
 
 Median of the estimated monthly rent price (US Dollars) of all homes, per square foot. This is calculated by taking the estimated rent price for a home and dividing it by the homes square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.
 
@@ -915,7 +1827,7 @@ Median of the estimated monthly rent price (US Dollars) of all homes, per square
 Measure "Median value per square foot for All homes"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -959,6 +1871,10 @@ Owner-Occupied Housing Units Median Value
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B25077001.png
+  :width: 100 %
+  :align: center
+
 
 The middle value (median) in a geographic area owner occupied housing units.
 
@@ -969,7 +1885,7 @@ The middle value (median) in a geographic area owner occupied housing units.
 Measure "Owner-Occupied Housing Units Median Value"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1007,270 +1923,15 @@ Owner-Occupied Housing Units Median Value is only available for point lookups.
 
 
 
-.. _us.census.acs.B25075001:
-
-Owner-occupied Housing Units
----------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-Measure "Owner-occupied Housing Units"  density per sq. kilometer  for one point:
-
-
-.. code:: postgresql
-
-
-  
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25075001'
-      );
-
-
-
-
-
-Measure "Owner-occupied Housing Units" within an area:
-
-.. code:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B25075001'
-        );
-
-
-
-
-
-
-
-
-
-
-
-
-
-.. contents:: Subcolumns of Owner-occupied Housing Units
-   :local:
-   :depth: 1
-
-  
-  
-  
-
-.. _us.census.acs.B25075025:
-
-Owner-occupied Housing Units valued at $1,000,000 or more.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-The count of owner occupied housing units in a geographic area that are valued at $1,000,000 or more.  Value is the respondent's estimate of how much the property (house and lot, mobile home and lot, or condominium unit) would sell for if it were for sale.
-
-
-
-
-
-Measure "Owner-occupied Housing Units valued at $1,000,000 or more."  density per sq. kilometer  for one point:
-
-
-.. code:: postgresql
-
-
-  
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25075025'
-      );
-
-
-
-
-
-Measure "Owner-occupied Housing Units valued at $1,000,000 or more." within an area:
-
-.. code:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B25075025'
-        );
-
-
-
-
-
-Measure "Owner-occupied Housing Units valued at $1,000,000 or more." percent of "Owner-occupied Housing Units" at one point:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25075025',
-        'denominator'
-      );
-
-
-Measure "Owner-occupied Housing Units valued at $1,000,000 or more." percent of "Owner-occupied Housing Units" within an area:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-        'us.census.acs.B25075025',
-        'denominator'
-      );
-
-
-
-
-
-
-
-
-
-
-:denominator:
-
-    :ref:`us.census.acs.B25075001`
-
-
-
-  
-  
-  
-  
-
-.. _us.census.acs.B25081002:
-
-Owner-occupied Housing Units with a Mortgage
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-The count of housing units within a geographic area that are mortagaged. "Mortgage" refers to all forms of debt where the property is pledged as security for repayment of the debt, including deeds of trust, trust deed, contracts to purchase, land contracts, junior mortgages, and home equity loans.
-
-
-
-
-
-Measure "Owner-occupied Housing Units with a Mortgage"  density per sq. kilometer  for one point:
-
-
-.. code:: postgresql
-
-
-  
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25081002'
-      );
-
-
-
-
-
-Measure "Owner-occupied Housing Units with a Mortgage" within an area:
-
-.. code:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B25081002'
-        );
-
-
-
-
-
-Measure "Owner-occupied Housing Units with a Mortgage" percent of "Owner-occupied Housing Units" at one point:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25081002',
-        'denominator'
-      );
-
-
-Measure "Owner-occupied Housing Units with a Mortgage" percent of "Owner-occupied Housing Units" within an area:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-        'us.census.acs.B25081002',
-        'denominator'
-      );
-
-
-
-
-
-
-
-
-
-
-:denominator:
-
-    :ref:`us.census.acs.B25075001`
-
-
-
-  
-  
-
-
-
-
-
-
 .. _us.census.acs.B25071001:
 
 Percent of Household Income Spent on Rent
 ---------------------------------------------------------------------------
 
+
+.. figure:: ../img/us.census.acs.B25071001.png
+  :width: 100 %
+  :align: center
 
 
 Within a geographic area, the median percentage of household income which was spent on gross rent.  Gross rent is the amount of the contract rent plus the estimated average monthly cost of utilities (electricity, gas, water, sewer etc.) and fuels (oil, coal, wood, etc.) if these are paid by the renter.  Household income is the sum of the income of all people 15 years and older living in the household.
@@ -1282,7 +1943,7 @@ Within a geographic area, the median percentage of household income which was sp
 Measure "Percent of Household Income Spent on Rent"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1320,434 +1981,15 @@ Percent of Household Income Spent on Rent is only available for point lookups.
 
 
 
-.. _us.census.acs.B25003001:
-
-Renter occupied housing units
----------------------------------------------------------------------------
-
-
-
-A housing unit is classified as occupied if it is the usual place of residence of the person or group of people living in it at the time of enumeration.
-
-
-
-
-
-Measure "Renter occupied housing units"  density per sq. kilometer  for one point:
-
-
-.. code:: postgresql
-
-
-  
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25003001'
-      );
-
-
-
-
-
-Measure "Renter occupied housing units" within an area:
-
-.. code:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B25003001'
-        );
-
-
-
-
-
-
-
-
-
-
-
-
-
-.. contents:: Subcolumns of Renter occupied housing units
-   :local:
-   :depth: 1
-
-  
-  
-  
-
-.. _us.census.acs.B25003003:
-
-Renter occupied housing units
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-All occupied units which are not owner occupied, whether they are rented for cash rent or occupied without payment of cash rent, are classified as renter-occupied.
-
-
-
-
-
-Measure "Renter occupied housing units"  density per sq. kilometer  for one point:
-
-
-.. code:: postgresql
-
-
-  
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25003003'
-      );
-
-
-
-
-
-Measure "Renter occupied housing units" within an area:
-
-.. code:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B25003003'
-        );
-
-
-
-
-
-Measure "Renter occupied housing units" percent of "Renter occupied housing units" at one point:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25003003',
-        'denominator'
-      );
-
-
-Measure "Renter occupied housing units" percent of "Renter occupied housing units" within an area:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-        'us.census.acs.B25003003',
-        'denominator'
-      );
-
-
-
-
-
-
-
-
-
-
-:denominator:
-
-    :ref:`us.census.acs.B25003001`
-
-
-
-  
-  
-
-
-
-
-
-
-.. _us.census.acs.B25002003:
-
-Vacant Housing Units
----------------------------------------------------------------------------
-
-
-
-The count of vacant housing units in a geographic area. A housing unit is vacant if no one is living in it at the time of enumeration, unless its occupants are only temporarily absent. Units temporarily occupied at the time of enumeration entirely by people who have a usual residence elsewhere are also classified as vacant.
-
-
-
-
-
-Measure "Vacant Housing Units"  density per sq. kilometer  for one point:
-
-
-.. code:: postgresql
-
-
-  
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25002003'
-      );
-
-
-
-
-
-Measure "Vacant Housing Units" within an area:
-
-.. code:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B25002003'
-        );
-
-
-
-
-
-
-
-
-
-
-
-
-
-.. contents:: Subcolumns of Vacant Housing Units
-   :local:
-   :depth: 1
-
-  
-  
-  
-
-.. _us.census.acs.B25004002:
-
-Vacant Housing Units for Rent
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-The count of vacant housing units in a geographic area that are for rent. A housing unit is vacant if no one is living in it at the time of enumeration, unless its occupants are only temporarily absent. Units temporarily occupied at the time of enumeration entirely by people who have a usual residence elsewhere are also classified as vacant.
-
-
-
-
-
-Measure "Vacant Housing Units for Rent"  density per sq. kilometer  for one point:
-
-
-.. code:: postgresql
-
-
-  
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25004002'
-      );
-
-
-
-
-
-Measure "Vacant Housing Units for Rent" within an area:
-
-.. code:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B25004002'
-        );
-
-
-
-
-
-Measure "Vacant Housing Units for Rent" percent of "Vacant Housing Units" at one point:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25004002',
-        'denominator'
-      );
-
-
-Measure "Vacant Housing Units for Rent" percent of "Vacant Housing Units" within an area:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-        'us.census.acs.B25004002',
-        'denominator'
-      );
-
-
-
-
-
-
-
-
-
-
-:denominator:
-
-    :ref:`us.census.acs.B25002003`
-
-
-
-  
-  
-  
-  
-
-.. _us.census.acs.B25004004:
-
-Vacant Housing Units for Sale
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-The count of vacant housing units in a geographic area that are for sale. A housing unit is vacant if no one is living in it at the time of enumeration, unless its occupants are only temporarily absent. Units temporarily occupied at the time of enumeration entirely by people who have a usual residence elsewhere are also classified as vacant.
-
-
-
-
-
-Measure "Vacant Housing Units for Sale"  density per sq. kilometer  for one point:
-
-
-.. code:: postgresql
-
-
-  
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25004004'
-      );
-
-
-
-
-
-Measure "Vacant Housing Units for Sale" within an area:
-
-.. code:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B25004004'
-        );
-
-
-
-
-
-Measure "Vacant Housing Units for Sale" percent of "Vacant Housing Units" at one point:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B25004004',
-        'denominator'
-      );
-
-
-Measure "Vacant Housing Units for Sale" percent of "Vacant Housing Units" within an area:
-
-.. code:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-        'us.census.acs.B25004004',
-        'denominator'
-      );
-
-
-
-
-
-
-
-
-
-
-:denominator:
-
-    :ref:`us.census.acs.B25002003`
-
-
-
-  
-  
-
-
-
-
-
-
 .. _us.zillow.AllHomes_Zhvi:
 
 Zillow Home Value Index for All homes
 ---------------------------------------------------------------------------
 
+
+.. figure:: ../img/us.zillow.AllHomes_Zhvi.png
+  :width: 100 %
+  :align: center
 
 
 The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See `Zillow's methodology <http://www.zillow.com/research/zhvi-methodology-6032/>`_ for more information. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.
@@ -1759,7 +2001,7 @@ The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median 
 Measure "Zillow Home Value Index for All homes"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1803,6 +2045,10 @@ Zillow Home Value Index for Single Family Homes
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.zillow.SingleFamilyResidence_Zhvi.png
+  :width: 100 %
+  :align: center
+
 
 The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See `Zillow's methodology <http://www.zillow.com/research/zhvi-methodology-6032/>`_ for more information. Single family residences are detached, free-standing residential buildings. 
 
@@ -1813,7 +2059,7 @@ The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median 
 Measure "Zillow Home Value Index for Single Family Homes"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1857,6 +2103,10 @@ Zillow Rental Index for All homes plus multifamily
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.zillow.AllHomesPlusMultifamily_Zri.png
+  :width: 100 %
+  :align: center
+
 
 Similar to Zillow's ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See `Zillow's methodology <http://www.zillow.com/research/zillow-rent-index-methodology-2393/>`_ for more information. In addition to "All homes", which Zillow defines as single-family, condominium and co-operative homes with a county record, this group includes units in buildings with 5 or more housing units that are not a condominiums or co-ops.
 
@@ -1867,7 +2117,7 @@ Similar to Zillow's ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median 
 Measure "Zillow Rental Index for All homes plus multifamily"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1911,6 +2161,10 @@ Zillow Rental Index for Single Family residence rental
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.zillow.SingleFamilyResidenceRental_Zri.png
+  :width: 100 %
+  :align: center
+
 
 Similar to Zillow's ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See `Zillow's methodology <http://www.zillow.com/research/zillow-rent-index-methodology-2393/>`_ for more information. Single Family residence rental is defined as detached, free-standing residential buildings which are rented out.
 
@@ -1921,7 +2175,7 @@ Similar to Zillow's ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median 
 Measure "Zillow Rental Index for Single Family residence rental"  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   

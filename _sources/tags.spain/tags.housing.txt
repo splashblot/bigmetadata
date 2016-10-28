@@ -1,0 +1,2858 @@
+
+
+.. Housing:
+
+Housing
+===========================================================================
+
+What type of housing exists and how do people live in it?
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _es.ine.t16_1:
+
+Total dwellings
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/es.ine.t16_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Total dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t16_1'
+      );
+
+
+
+
+
+Measure "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t16_1'
+        );
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. contents:: Subcolumns of Total dwellings
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t19_2:
+
+Dwellings between 30-45 m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings between 30-45 m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_2'
+      );
+
+
+
+
+
+Measure "Dwellings between 30-45 m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_2'
+        );
+
+
+
+
+
+
+Measure "Dwellings between 30-45 m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_2',
+        'denominator'
+      );
+
+
+Measure "Dwellings between 30-45 m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t19_3:
+
+Dwellings between 46-60 m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings between 46-60 m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_3'
+      );
+
+
+
+
+
+Measure "Dwellings between 46-60 m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_3'
+        );
+
+
+
+
+
+
+Measure "Dwellings between 46-60 m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_3',
+        'denominator'
+      );
+
+
+Measure "Dwellings between 46-60 m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t19_4:
+
+Dwellings between 61-75 m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings between 61-75 m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_4'
+      );
+
+
+
+
+
+Measure "Dwellings between 61-75 m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_4'
+        );
+
+
+
+
+
+
+Measure "Dwellings between 61-75 m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_4',
+        'denominator'
+      );
+
+
+Measure "Dwellings between 61-75 m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t19_5:
+
+Dwellings between 76-90 m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings between 76-90 m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_5'
+      );
+
+
+
+
+
+Measure "Dwellings between 76-90 m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_5'
+        );
+
+
+
+
+
+
+Measure "Dwellings between 76-90 m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_5',
+        'denominator'
+      );
+
+
+Measure "Dwellings between 76-90 m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t19_6:
+
+Dwellings between 91-105 m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings between 91-105 m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_6'
+      );
+
+
+
+
+
+Measure "Dwellings between 91-105 m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_6'
+        );
+
+
+
+
+
+
+Measure "Dwellings between 91-105 m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_6',
+        'denominator'
+      );
+
+
+Measure "Dwellings between 91-105 m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t19_7:
+
+Dwellings between 106-120 m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings between 106-120 m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_7'
+      );
+
+
+
+
+
+Measure "Dwellings between 106-120 m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_7'
+        );
+
+
+
+
+
+
+Measure "Dwellings between 106-120 m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_7',
+        'denominator'
+      );
+
+
+Measure "Dwellings between 106-120 m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t19_8:
+
+Dwellings between 121-150 m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings between 121-150 m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_8'
+      );
+
+
+
+
+
+Measure "Dwellings between 121-150 m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_8'
+        );
+
+
+
+
+
+
+Measure "Dwellings between 121-150 m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_8',
+        'denominator'
+      );
+
+
+Measure "Dwellings between 121-150 m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t19_9:
+
+Dwellings between 151-180 m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings between 151-180 m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_9'
+      );
+
+
+
+
+
+Measure "Dwellings between 151-180 m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_9'
+        );
+
+
+
+
+
+
+Measure "Dwellings between 151-180 m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_9',
+        'denominator'
+      );
+
+
+Measure "Dwellings between 151-180 m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t18_3:
+
+Dwellings owned, by inheritance or donation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t18_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings owned, by inheritance or donation"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_3'
+      );
+
+
+
+
+
+Measure "Dwellings owned, by inheritance or donation" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t18_3'
+        );
+
+
+
+
+
+
+Measure "Dwellings owned, by inheritance or donation" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_3',
+        'denominator'
+      );
+
+
+Measure "Dwellings owned, by inheritance or donation" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t18_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t18_1:
+
+Dwellings owned, by purchase, totally paid
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t18_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings owned, by purchase, totally paid"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_1'
+      );
+
+
+
+
+
+Measure "Dwellings owned, by purchase, totally paid" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t18_1'
+        );
+
+
+
+
+
+
+Measure "Dwellings owned, by purchase, totally paid" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_1',
+        'denominator'
+      );
+
+
+Measure "Dwellings owned, by purchase, totally paid" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t18_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t18_2:
+
+Dwellings owned, by purchase, with outstanding
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t18_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings owned, by purchase, with outstanding"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_2'
+      );
+
+
+
+
+
+Measure "Dwellings owned, by purchase, with outstanding" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t18_2'
+        );
+
+
+
+
+
+
+Measure "Dwellings owned, by purchase, with outstanding" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_2',
+        'denominator'
+      );
+
+
+Measure "Dwellings owned, by purchase, with outstanding" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t18_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t18_4:
+
+Dwellings rented
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t18_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings rented"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_4'
+      );
+
+
+
+
+
+Measure "Dwellings rented" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t18_4'
+        );
+
+
+
+
+
+
+Measure "Dwellings rented" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_4',
+        'denominator'
+      );
+
+
+Measure "Dwellings rented" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t18_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t18_5:
+
+Dwellings transferred for free or at low cost
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t18_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings transferred for free or at low cost"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_5'
+      );
+
+
+
+
+
+Measure "Dwellings transferred for free or at low cost" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t18_5'
+        );
+
+
+
+
+
+
+Measure "Dwellings transferred for free or at low cost" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_5',
+        'denominator'
+      );
+
+
+Measure "Dwellings transferred for free or at low cost" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t18_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t20_1:
+
+Dwellings with 1 room
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t20_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with 1 room"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_1'
+      );
+
+
+
+
+
+Measure "Dwellings with 1 room" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t20_1'
+        );
+
+
+
+
+
+
+Measure "Dwellings with 1 room" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_1',
+        'denominator'
+      );
+
+
+Measure "Dwellings with 1 room" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t20_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t20_2:
+
+Dwellings with 2 rooms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t20_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with 2 rooms"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_2'
+      );
+
+
+
+
+
+Measure "Dwellings with 2 rooms" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t20_2'
+        );
+
+
+
+
+
+
+Measure "Dwellings with 2 rooms" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_2',
+        'denominator'
+      );
+
+
+Measure "Dwellings with 2 rooms" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t20_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t20_3:
+
+Dwellings with 3 rooms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t20_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with 3 rooms"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_3'
+      );
+
+
+
+
+
+Measure "Dwellings with 3 rooms" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t20_3'
+        );
+
+
+
+
+
+
+Measure "Dwellings with 3 rooms" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_3',
+        'denominator'
+      );
+
+
+Measure "Dwellings with 3 rooms" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t20_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t20_4:
+
+Dwellings with 4 rooms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t20_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with 4 rooms"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_4'
+      );
+
+
+
+
+
+Measure "Dwellings with 4 rooms" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t20_4'
+        );
+
+
+
+
+
+
+Measure "Dwellings with 4 rooms" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_4',
+        'denominator'
+      );
+
+
+Measure "Dwellings with 4 rooms" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t20_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t20_5:
+
+Dwellings with 5 rooms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t20_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with 5 rooms"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_5'
+      );
+
+
+
+
+
+Measure "Dwellings with 5 rooms" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t20_5'
+        );
+
+
+
+
+
+
+Measure "Dwellings with 5 rooms" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_5',
+        'denominator'
+      );
+
+
+Measure "Dwellings with 5 rooms" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t20_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t20_6:
+
+Dwellings with 6 rooms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t20_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with 6 rooms"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_6'
+      );
+
+
+
+
+
+Measure "Dwellings with 6 rooms" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t20_6'
+        );
+
+
+
+
+
+
+Measure "Dwellings with 6 rooms" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_6',
+        'denominator'
+      );
+
+
+Measure "Dwellings with 6 rooms" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t20_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t20_7:
+
+Dwellings with 7 rooms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t20_7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with 7 rooms"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_7'
+      );
+
+
+
+
+
+Measure "Dwellings with 7 rooms" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t20_7'
+        );
+
+
+
+
+
+
+Measure "Dwellings with 7 rooms" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_7',
+        'denominator'
+      );
+
+
+Measure "Dwellings with 7 rooms" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t20_7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t20_8:
+
+Dwellings with 8 rooms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t20_8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with 8 rooms"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_8'
+      );
+
+
+
+
+
+Measure "Dwellings with 8 rooms" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t20_8'
+        );
+
+
+
+
+
+
+Measure "Dwellings with 8 rooms" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_8',
+        'denominator'
+      );
+
+
+Measure "Dwellings with 8 rooms" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t20_8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t20_9:
+
+Dwellings with 9 or more rooms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t20_9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with 9 or more rooms"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_9'
+      );
+
+
+
+
+
+Measure "Dwellings with 9 or more rooms" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t20_9'
+        );
+
+
+
+
+
+
+Measure "Dwellings with 9 or more rooms" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t20_9',
+        'denominator'
+      );
+
+
+Measure "Dwellings with 9 or more rooms" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t20_9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t18_6:
+
+Dwellings with another tenancy regime
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t18_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with another tenancy regime"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_6'
+      );
+
+
+
+
+
+Measure "Dwellings with another tenancy regime" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t18_6'
+        );
+
+
+
+
+
+
+Measure "Dwellings with another tenancy regime" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t18_6',
+        'denominator'
+      );
+
+
+Measure "Dwellings with another tenancy regime" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t18_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t19_1:
+
+Dwellings with less than 30m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with less than 30m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_1'
+      );
+
+
+
+
+
+Measure "Dwellings with less than 30m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_1'
+        );
+
+
+
+
+
+
+Measure "Dwellings with less than 30m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_1',
+        'denominator'
+      );
+
+
+Measure "Dwellings with less than 30m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t19_10:
+
+Dwellings with more than 180 m2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t19_10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Dwellings with more than 180 m2"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_10'
+      );
+
+
+
+
+
+Measure "Dwellings with more than 180 m2" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t19_10'
+        );
+
+
+
+
+
+
+Measure "Dwellings with more than 180 m2" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t19_10',
+        'denominator'
+      );
+
+
+Measure "Dwellings with more than 180 m2" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t19_10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t17_3:
+
+Empty dwellings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t17_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Empty dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t17_3'
+      );
+
+
+
+
+
+Measure "Empty dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t17_3'
+        );
+
+
+
+
+
+
+Measure "Empty dwellings" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t17_3',
+        'denominator'
+      );
+
+
+Measure "Empty dwellings" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t17_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t17_1:
+
+Main dwellings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t17_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Main dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t17_1'
+      );
+
+
+
+
+
+Measure "Main dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t17_1'
+        );
+
+
+
+
+
+
+Measure "Main dwellings" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t17_1',
+        'denominator'
+      );
+
+
+Measure "Main dwellings" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t17_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t17_2:
+
+Secondary dwellings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t17_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Secondary dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t17_2'
+      );
+
+
+
+
+
+Measure "Secondary dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t17_2'
+        );
+
+
+
+
+
+
+Measure "Secondary dwellings" percent of "Total dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t17_2',
+        'denominator'
+      );
+
+
+Measure "Secondary dwellings" percent of "Total dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t17_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t16_1`
+
+
+
+  
+  
+
+

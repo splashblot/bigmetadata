@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>10.4. Race and Ethnicity &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="10. United Kingdom" href="../uk.html" />
+    <link rel="next" title="10.5. Religion" href="religion.html" />
+    <link rel="prev" title="10.3. Nationality" href="nationality.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="race-and-ethnicity">
+<h1>10.4. Race and Ethnicity<a class="headerlink" href="#race-and-ethnicity" title="Permalink to this headline">¶</a></h1>
+<p>Population breakdowns by race and ethnicity.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#asian-asian-british-population" id="id1">Asian/Asian British population</a></li>
+<li><a class="reference internal" href="#black-african-caribbean-black-british-population" id="id2">Black/African/Caribbean/Black British population</a></li>
+<li><a class="reference internal" href="#mixed-multiple-ethnic-group-population" id="id3">Mixed/multiple ethnic group population</a></li>
+<li><a class="reference internal" href="#other-ethnic-group-population" id="id4">Other ethnic group population</a></li>
+<li><a class="reference internal" href="#white-population" id="id5">White population</a><ul>
+<li><a class="reference internal" href="#white-english-welsh-scottish-northern-irish-british-population" id="id6">White English/Welsh/Scottish/Northern Irish/British population</a></li>
+<li><a class="reference internal" href="#white-irish-population" id="id7">White Irish population</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="asian-asian-british-population">
+<span id="uk-ons-lc2201ew0061"></span><h2><a class="toc-backref" href="#id1">10.4.1. Asian/Asian British population</a><a class="headerlink" href="#asian-asian-british-population" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC2201EW0061.png"><img alt="../_images/uk.ons.LC2201EW0061.png" src="../_images/uk.ons.LC2201EW0061.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Asian/Asian British population&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0061&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Asian/Asian British population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0061&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Asian/Asian British population&#8221; percent of &#8220;Total Population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0061&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Asian/Asian British population&#8221; percent of &#8220;Total Population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0061&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2102EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="black-african-caribbean-black-british-population">
+<span id="uk-ons-lc2201ew0071"></span><h2><a class="toc-backref" href="#id2">10.4.2. Black/African/Caribbean/Black British population</a><a class="headerlink" href="#black-african-caribbean-black-british-population" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC2201EW0071.png"><img alt="../_images/uk.ons.LC2201EW0071.png" src="../_images/uk.ons.LC2201EW0071.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Black/African/Caribbean/Black British population&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0071&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Black/African/Caribbean/Black British population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0071&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Black/African/Caribbean/Black British population&#8221; percent of &#8220;Total Population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0071&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Black/African/Caribbean/Black British population&#8221; percent of &#8220;Total Population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0071&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2102EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mixed-multiple-ethnic-group-population">
+<span id="uk-ons-lc2201ew0051"></span><h2><a class="toc-backref" href="#id3">10.4.3. Mixed/multiple ethnic group population</a><a class="headerlink" href="#mixed-multiple-ethnic-group-population" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC2201EW0051.png"><img alt="../_images/uk.ons.LC2201EW0051.png" src="../_images/uk.ons.LC2201EW0051.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Mixed/multiple ethnic group population&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0051&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Mixed/multiple ethnic group population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0051&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Mixed/multiple ethnic group population&#8221; percent of &#8220;Total Population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0051&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Mixed/multiple ethnic group population&#8221; percent of &#8220;Total Population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0051&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2102EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="other-ethnic-group-population">
+<span id="uk-ons-lc2201ew0081"></span><h2><a class="toc-backref" href="#id4">10.4.4. Other ethnic group population</a><a class="headerlink" href="#other-ethnic-group-population" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC2201EW0081.png"><img alt="../_images/uk.ons.LC2201EW0081.png" src="../_images/uk.ons.LC2201EW0081.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Other ethnic group population&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0081&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Other ethnic group population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0081&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Other ethnic group population&#8221; percent of &#8220;Total Population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0081&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Other ethnic group population&#8221; percent of &#8220;Total Population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0081&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2102EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="white-population">
+<span id="uk-ons-lc2201ew0011"></span><h2><a class="toc-backref" href="#id5">10.4.5. White population</a><a class="headerlink" href="#white-population" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC2201EW0011.png"><img alt="../_images/uk.ons.LC2201EW0011.png" src="../_images/uk.ons.LC2201EW0011.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;White population&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0011&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;White population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0011&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;White population&#8221; percent of &#8220;Total Population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0011&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;White population&#8221; percent of &#8220;Total Population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0011&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">uk.ons.LC2102EW0001</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+<div class="contents local topic" id="subcolumns-of-white-population">
+<p class="topic-title first">Subcolumns of White population</p>
+<ul class="simple">
+<li><a class="reference internal" href="#white-english-welsh-scottish-northern-irish-british-population" id="id8">White English/Welsh/Scottish/Northern Irish/British population</a></li>
+<li><a class="reference internal" href="#white-irish-population" id="id9">White Irish population</a></li>
+</ul>
+</div>
+<div class="section" id="white-english-welsh-scottish-northern-irish-british-population">
+<span id="uk-ons-lc2201ew0021"></span><h3><a class="toc-backref" href="#id8">10.4.5.1. White English/Welsh/Scottish/Northern Irish/British population</a><a class="headerlink" href="#white-english-welsh-scottish-northern-irish-british-population" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC2201EW0021.png"><img alt="../_images/uk.ons.LC2201EW0021.png" src="../_images/uk.ons.LC2201EW0021.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;White English/Welsh/Scottish/Northern Irish/British population&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0021&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;White English/Welsh/Scottish/Northern Irish/British population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0021&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;White English/Welsh/Scottish/Northern Irish/British population&#8221; percent of &#8220;White population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0021&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;White English/Welsh/Scottish/Northern Irish/British population&#8221; percent of &#8220;White population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0021&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#uk-ons-lc2201ew0011"><span class="std std-ref">White population</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="white-irish-population">
+<span id="uk-ons-lc2201ew0031"></span><h3><a class="toc-backref" href="#id9">10.4.5.2. White Irish population</a><a class="headerlink" href="#white-irish-population" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.ons.LC2201EW0031.png"><img alt="../_images/uk.ons.LC2201EW0031.png" src="../_images/uk.ons.LC2201EW0031.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;White Irish population&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0031&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;White Irish population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0031&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;White Irish population&#8221; percent of &#8220;White population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0031&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;White Irish population&#8221; percent of &#8220;White population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;uk.ons.LC2201EW0031&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#uk-ons-lc2201ew0011"><span class="std std-ref">White population</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-ons-ons"><span class="std std-ref">Office for National Statistics (ONS)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-uk-ogl"><span class="std std-ref">UK Open Government Licence (OGL)</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">10.4. Race and Ethnicity</a><ul>
+<li><a class="reference internal" href="#asian-asian-british-population">10.4.1. Asian/Asian British population</a></li>
+<li><a class="reference internal" href="#black-african-caribbean-black-british-population">10.4.2. Black/African/Caribbean/Black British population</a></li>
+<li><a class="reference internal" href="#mixed-multiple-ethnic-group-population">10.4.3. Mixed/multiple ethnic group population</a></li>
+<li><a class="reference internal" href="#other-ethnic-group-population">10.4.4. Other ethnic group population</a></li>
+<li><a class="reference internal" href="#white-population">10.4.5. White population</a><ul>
+<li><a class="reference internal" href="#white-english-welsh-scottish-northern-irish-british-population">10.4.5.1. White English/Welsh/Scottish/Northern Irish/British population</a></li>
+<li><a class="reference internal" href="#white-irish-population">10.4.5.2. White Irish population</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../uk.html">10. United Kingdom</a><ul>
+      <li>Previous: <a href="nationality.html" title="previous chapter">10.3. Nationality</a></li>
+      <li>Next: <a href="religion.html" title="next chapter">10.5. Religion</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/uk/race_ethnicity.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/uk/race_ethnicity.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

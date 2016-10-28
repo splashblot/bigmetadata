@@ -1,0 +1,976 @@
+
+
+.. Population segments:
+
+Population segments
+===========================================================================
+
+Segmentations of the population
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _ca.statcan.cols_census.t010c003_t:
+
+2006 to 2011 population change (%)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "2006 to 2011 population change (%)"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t010c003_t'
+      );
+
+
+
+
+
+
+2006 to 2011 population change (%) is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t010c007_t:
+
+Land area (square km)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Land area (square km)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t010c007_t'
+      );
+
+
+
+
+
+Measure "Land area (square km)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t010c007_t'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t010c006_t:
+
+Population density per square kilometre
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Population density per square kilometre"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t010c006_t'
+      );
+
+
+
+
+
+Measure "Population density per square kilometre" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t010c006_t'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t010c002_t:
+
+Population in 2006
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Population in 2006"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t010c002_t'
+      );
+
+
+
+
+
+Measure "Population in 2006" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t010c002_t'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t010c005_t:
+
+Private dwellings occupied by usual residents
+---------------------------------------------------------------------------
+
+
+
+
+
+A separate set of living quarters which has a private entrance either directly from outside or from a common hall lobby vestibule or stairway leading to the outside and in which a person or a group of persons live permanently.
+
+
+
+
+
+Measure "Private dwellings occupied by usual residents"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t010c005_t'
+      );
+
+
+
+
+
+Measure "Private dwellings occupied by usual residents" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t010c005_t'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t010c004_t:
+
+Total private dwellings
+---------------------------------------------------------------------------
+
+
+
+
+
+A separate set of living quarters designed for or converted for human habitation in which a person or group of persons reside or could reside. In addition a private dwelling must have a source of heat or power and must be an enclosed space that provides shelter from the elements as evidenced by complete and enclosed walls and roof and by doors and windows that provide protection from wind rain and snow.
+
+
+
+
+
+Measure "Total private dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t010c004_t'
+      );
+
+
+
+
+
+Measure "Total private dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t010c004_t'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+

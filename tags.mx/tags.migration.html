@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2.8. Migration &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="2. Mexico" href="../tags.mx.html" />
+    <link rel="next" title="&lt;no title&gt;" href="tags.nationality.html" />
+    <link rel="prev" title="2.7. Language" href="tags.language.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="migration">
+<h1>2.8. Migration<a class="headerlink" href="#migration" title="Permalink to this headline">¶</a></h1>
+<p>Patterns of migration.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#male-female-ratio-in-population-5-years-and-over-who-resided-in-the-united-states-in-june-2005" id="id1">Male-female ratio in population 5 years and over who resided in the United States in June 2005</a></li>
+<li><a class="reference internal" href="#population-age-5-or-more-resident-in-the-united-states-in-june-2005" id="id2">Population age 5 or more resident in the United States in June 2005</a></li>
+<li><a class="reference internal" href="#population-born-in-another-country" id="id3">Population born in another country</a></li>
+<li><a class="reference internal" href="#population-born-in-another-state" id="id4">Population born in another state</a><ul>
+<li><a class="reference internal" href="#female-population-born-in-another-state" id="id5">Female population born in another state</a></li>
+<li><a class="reference internal" href="#male-population-born-in-another-state" id="id6">Male population born in another state</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#population-born-in-the-state" id="id7">Population born in the state</a><ul>
+<li><a class="reference internal" href="#female-population-born-in-the-state" id="id8">Female population born in the state</a></li>
+<li><a class="reference internal" href="#male-population-born-in-the-state" id="id9">Male population born in the state</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#population-resident-in-another-country-in-june-2005" id="id10">Population resident in another country in June 2005</a></li>
+<li><a class="reference internal" href="#population-resident-in-another-state-in-june-2005" id="id11">Population resident in another state in June 2005</a><ul>
+<li><a class="reference internal" href="#female-population-resident-in-another-state-in-june-2005" id="id12">Female population resident in another state in June 2005</a></li>
+<li><a class="reference internal" href="#male-population-resident-in-another-state-in-june-2005" id="id13">Male population resident in another state in June 2005</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#population-resident-in-the-state-in-june-2005" id="id14">Population resident in the state in June 2005</a><ul>
+<li><a class="reference internal" href="#female-population-resident-in-the-state-in-june-2005" id="id15">Female population resident in the state in June 2005</a></li>
+<li><a class="reference internal" href="#male-population-resident-in-the-state-in-june-2005" id="id16">Male population resident in the state in June 2005</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="male-female-ratio-in-population-5-years-and-over-who-resided-in-the-united-states-in-june-2005">
+<span id="mx-inegi-columns-mig16-r"></span><h2><a class="toc-backref" href="#id1">2.8.1. Male-female ratio in population 5 years and over who resided in the United States in June 2005</a><a class="headerlink" href="#male-female-ratio-in-population-5-years-and-over-who-resided-in-the-united-states-in-june-2005" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG16_R.png"><img alt="../_images/mx.inegi_columns.MIG16_R.png" src="../_images/mx.inegi_columns.MIG16_R.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Male-female ratio in population 5 years and over who resided in the United States in June 2005&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG16_R&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Male-female ratio in population 5 years and over who resided in the United States in June 2005 is only available for point lookups.</p>
+</div>
+<div class="section" id="population-age-5-or-more-resident-in-the-united-states-in-june-2005">
+<span id="mx-inegi-columns-mig15"></span><h2><a class="toc-backref" href="#id2">2.8.2. Population age 5 or more resident in the United States in June 2005</a><a class="headerlink" href="#population-age-5-or-more-resident-in-the-united-states-in-june-2005" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG15.png"><img alt="../_images/mx.inegi_columns.MIG15.png" src="../_images/mx.inegi_columns.MIG15.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Population age 5 or more resident in the United States in June 2005&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG15&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population age 5 or more resident in the United States in June 2005&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG15&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population age 5 or more resident in the United States in June 2005&#8221; percent of &#8220;Population 5 or more years old&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG15&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population age 5 or more resident in the United States in June 2005&#8221; percent of &#8220;Population 5 or more years old&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG15&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob18"><span class="std std-ref">Population 5 or more years old</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-born-in-another-country">
+<span id="mx-inegi-columns-mig7"></span><h2><a class="toc-backref" href="#id3">2.8.3. Population born in another country</a><a class="headerlink" href="#population-born-in-another-country" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG7.png"><img alt="../_images/mx.inegi_columns.MIG7.png" src="../_images/mx.inegi_columns.MIG7.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Population born in another country&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG7&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population born in another country&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG7&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population born in another country&#8221; percent of &#8220;Total population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG7&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population born in another country&#8221; percent of &#8220;Total population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG7&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob1"><span class="std std-ref">Total population</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-born-in-another-state">
+<span id="mx-inegi-columns-mig4"></span><h2><a class="toc-backref" href="#id4">2.8.4. Population born in another state</a><a class="headerlink" href="#population-born-in-another-state" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG4.png"><img alt="../_images/mx.inegi_columns.MIG4.png" src="../_images/mx.inegi_columns.MIG4.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Population born in another state&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG4&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population born in another state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG4&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population born in another state&#8221; percent of &#8220;Total population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG4&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population born in another state&#8221; percent of &#8220;Total population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG4&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob1"><span class="std std-ref">Total population</span></a></td>
+</tr>
+</tbody>
+</table>
+<div class="contents local topic" id="subcolumns-of-population-born-in-another-state">
+<p class="topic-title first">Subcolumns of Population born in another state</p>
+<ul class="simple">
+<li><a class="reference internal" href="#female-population-born-in-another-state" id="id17">Female population born in another state</a></li>
+<li><a class="reference internal" href="#male-population-born-in-another-state" id="id18">Male population born in another state</a></li>
+</ul>
+</div>
+<div class="section" id="female-population-born-in-another-state">
+<span id="mx-inegi-columns-mig5"></span><h3><a class="toc-backref" href="#id17">2.8.4.1. Female population born in another state</a><a class="headerlink" href="#female-population-born-in-another-state" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG5.png"><img alt="../_images/mx.inegi_columns.MIG5.png" src="../_images/mx.inegi_columns.MIG5.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Female population born in another state&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG5&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population born in another state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG5&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population born in another state&#8221; percent of &#8220;Population born in another state&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG5&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population born in another state&#8221; percent of &#8220;Population born in another state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG5&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-mig4"><span class="std std-ref">Population born in another state</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob31"><span class="std std-ref">Female population</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="male-population-born-in-another-state">
+<span id="mx-inegi-columns-mig6"></span><h3><a class="toc-backref" href="#id18">2.8.4.2. Male population born in another state</a><a class="headerlink" href="#male-population-born-in-another-state" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG6.png"><img alt="../_images/mx.inegi_columns.MIG6.png" src="../_images/mx.inegi_columns.MIG6.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Male population born in another state&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG6&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population born in another state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG6&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population born in another state&#8221; percent of &#8220;Population born in another state&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG6&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population born in another state&#8221; percent of &#8220;Population born in another state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG6&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-mig4"><span class="std std-ref">Population born in another state</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob57"><span class="std std-ref">Male population</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="population-born-in-the-state">
+<span id="mx-inegi-columns-mig1"></span><h2><a class="toc-backref" href="#id7">2.8.5. Population born in the state</a><a class="headerlink" href="#population-born-in-the-state" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG1.png"><img alt="../_images/mx.inegi_columns.MIG1.png" src="../_images/mx.inegi_columns.MIG1.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Population born in the state&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG1&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population born in the state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG1&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population born in the state&#8221; percent of &#8220;Total population&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG1&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population born in the state&#8221; percent of &#8220;Total population&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG1&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob1"><span class="std std-ref">Total population</span></a></td>
+</tr>
+</tbody>
+</table>
+<div class="contents local topic" id="subcolumns-of-population-born-in-the-state">
+<p class="topic-title first">Subcolumns of Population born in the state</p>
+<ul class="simple">
+<li><a class="reference internal" href="#female-population-born-in-the-state" id="id19">Female population born in the state</a></li>
+<li><a class="reference internal" href="#male-population-born-in-the-state" id="id20">Male population born in the state</a></li>
+</ul>
+</div>
+<div class="section" id="female-population-born-in-the-state">
+<span id="mx-inegi-columns-mig2"></span><h3><a class="toc-backref" href="#id19">2.8.5.1. Female population born in the state</a><a class="headerlink" href="#female-population-born-in-the-state" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG2.png"><img alt="../_images/mx.inegi_columns.MIG2.png" src="../_images/mx.inegi_columns.MIG2.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Female population born in the state&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG2&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population born in the state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG2&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population born in the state&#8221; percent of &#8220;Population born in the state&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG2&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population born in the state&#8221; percent of &#8220;Population born in the state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG2&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-mig1"><span class="std std-ref">Population born in the state</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob31"><span class="std std-ref">Female population</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="male-population-born-in-the-state">
+<span id="mx-inegi-columns-mig3"></span><h3><a class="toc-backref" href="#id20">2.8.5.2. Male population born in the state</a><a class="headerlink" href="#male-population-born-in-the-state" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG3.png"><img alt="../_images/mx.inegi_columns.MIG3.png" src="../_images/mx.inegi_columns.MIG3.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Male population born in the state&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG3&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population born in the state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG3&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population born in the state&#8221; percent of &#8220;Population born in the state&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG3&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population born in the state&#8221; percent of &#8220;Population born in the state&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG3&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-mig1"><span class="std std-ref">Population born in the state</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob57"><span class="std std-ref">Male population</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="population-resident-in-another-country-in-june-2005">
+<span id="mx-inegi-columns-mig14"></span><h2><a class="toc-backref" href="#id10">2.8.6. Population resident in another country in June 2005</a><a class="headerlink" href="#population-resident-in-another-country-in-june-2005" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG14.png"><img alt="../_images/mx.inegi_columns.MIG14.png" src="../_images/mx.inegi_columns.MIG14.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Population resident in another country in June 2005&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG14&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population resident in another country in June 2005&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG14&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population resident in another country in June 2005&#8221; percent of &#8220;Population 5 or more years old&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG14&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population resident in another country in June 2005&#8221; percent of &#8220;Population 5 or more years old&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG14&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob18"><span class="std std-ref">Population 5 or more years old</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-resident-in-another-state-in-june-2005">
+<span id="mx-inegi-columns-mig11"></span><h2><a class="toc-backref" href="#id11">2.8.7. Population resident in another state in June 2005</a><a class="headerlink" href="#population-resident-in-another-state-in-june-2005" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG11.png"><img alt="../_images/mx.inegi_columns.MIG11.png" src="../_images/mx.inegi_columns.MIG11.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Population resident in another state in June 2005&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG11&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population resident in another state in June 2005&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG11&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population resident in another state in June 2005&#8221; percent of &#8220;Population 5 or more years old&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG11&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population resident in another state in June 2005&#8221; percent of &#8220;Population 5 or more years old&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG11&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob18"><span class="std std-ref">Population 5 or more years old</span></a></td>
+</tr>
+</tbody>
+</table>
+<div class="contents local topic" id="subcolumns-of-population-resident-in-another-state-in-june-2005">
+<p class="topic-title first">Subcolumns of Population resident in another state in June 2005</p>
+<ul class="simple">
+<li><a class="reference internal" href="#female-population-resident-in-another-state-in-june-2005" id="id21">Female population resident in another state in June 2005</a></li>
+<li><a class="reference internal" href="#male-population-resident-in-another-state-in-june-2005" id="id22">Male population resident in another state in June 2005</a></li>
+</ul>
+</div>
+<div class="section" id="female-population-resident-in-another-state-in-june-2005">
+<span id="mx-inegi-columns-mig12"></span><h3><a class="toc-backref" href="#id21">2.8.7.1. Female population resident in another state in June 2005</a><a class="headerlink" href="#female-population-resident-in-another-state-in-june-2005" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG12.png"><img alt="../_images/mx.inegi_columns.MIG12.png" src="../_images/mx.inegi_columns.MIG12.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Female population resident in another state in June 2005&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population resident in another state in June 2005&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population resident in another state in June 2005&#8221; percent of &#8220;Female population 5 or more years old&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG12&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population resident in another state in June 2005&#8221; percent of &#8220;Female population 5 or more years old&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG12&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB49</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-mig11"><span class="std std-ref">Population resident in another state in June 2005</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="male-population-resident-in-another-state-in-june-2005">
+<span id="mx-inegi-columns-mig13"></span><h3><a class="toc-backref" href="#id22">2.8.7.2. Male population resident in another state in June 2005</a><a class="headerlink" href="#male-population-resident-in-another-state-in-june-2005" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG13.png"><img alt="../_images/mx.inegi_columns.MIG13.png" src="../_images/mx.inegi_columns.MIG13.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Male population resident in another state in June 2005&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG13&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population resident in another state in June 2005&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG13&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population resident in another state in June 2005&#8221; percent of &#8220;Male population 5 or more years old&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG13&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population resident in another state in June 2005&#8221; percent of &#8220;Male population 5 or more years old&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG13&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB74</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-mig11"><span class="std std-ref">Population resident in another state in June 2005</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="population-resident-in-the-state-in-june-2005">
+<span id="mx-inegi-columns-mig8"></span><h2><a class="toc-backref" href="#id14">2.8.8. Population resident in the state in June 2005</a><a class="headerlink" href="#population-resident-in-the-state-in-june-2005" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG8.png"><img alt="../_images/mx.inegi_columns.MIG8.png" src="../_images/mx.inegi_columns.MIG8.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Population resident in the state in June 2005&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG8&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population resident in the state in June 2005&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG8&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population resident in the state in June 2005&#8221; percent of &#8220;Population 5 or more years old&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG8&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population resident in the state in June 2005&#8221; percent of &#8220;Population 5 or more years old&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG8&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.age_gender.html#mx-inegi-columns-pob18"><span class="std std-ref">Population 5 or more years old</span></a></td>
+</tr>
+</tbody>
+</table>
+<div class="contents local topic" id="subcolumns-of-population-resident-in-the-state-in-june-2005">
+<p class="topic-title first">Subcolumns of Population resident in the state in June 2005</p>
+<ul class="simple">
+<li><a class="reference internal" href="#female-population-resident-in-the-state-in-june-2005" id="id23">Female population resident in the state in June 2005</a></li>
+<li><a class="reference internal" href="#male-population-resident-in-the-state-in-june-2005" id="id24">Male population resident in the state in June 2005</a></li>
+</ul>
+</div>
+<div class="section" id="female-population-resident-in-the-state-in-june-2005">
+<span id="mx-inegi-columns-mig9"></span><h3><a class="toc-backref" href="#id23">2.8.8.1. Female population resident in the state in June 2005</a><a class="headerlink" href="#female-population-resident-in-the-state-in-june-2005" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG9.png"><img alt="../_images/mx.inegi_columns.MIG9.png" src="../_images/mx.inegi_columns.MIG9.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Female population resident in the state in June 2005&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG9&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population resident in the state in June 2005&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG9&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population resident in the state in June 2005&#8221; percent of &#8220;Female population 5 or more years old&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG9&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Female population resident in the state in June 2005&#8221; percent of &#8220;Female population 5 or more years old&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG9&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB49</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-mig8"><span class="std std-ref">Population resident in the state in June 2005</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="male-population-resident-in-the-state-in-june-2005">
+<span id="mx-inegi-columns-mig10"></span><h3><a class="toc-backref" href="#id24">2.8.8.2. Male population resident in the state in June 2005</a><a class="headerlink" href="#male-population-resident-in-the-state-in-june-2005" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/mx.inegi_columns.MIG10.png"><img alt="../_images/mx.inegi_columns.MIG10.png" src="../_images/mx.inegi_columns.MIG10.png" style="width: 100%;" /></a>
+</div>
+<p>Measure &#8220;Male population resident in the state in June 2005&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG10&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population resident in the state in June 2005&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG10&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population resident in the state in June 2005&#8221; percent of &#8220;Male population 5 or more years old&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG10&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Male population resident in the state in June 2005&#8221; percent of &#8220;Male population 5 or more years old&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;mx.inegi_columns.MIG10&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB74</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-mig8"><span class="std std-ref">Population resident in the state in June 2005</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">2.8. Migration</a><ul>
+<li><a class="reference internal" href="#male-female-ratio-in-population-5-years-and-over-who-resided-in-the-united-states-in-june-2005">2.8.1. Male-female ratio in population 5 years and over who resided in the United States in June 2005</a></li>
+<li><a class="reference internal" href="#population-age-5-or-more-resident-in-the-united-states-in-june-2005">2.8.2. Population age 5 or more resident in the United States in June 2005</a></li>
+<li><a class="reference internal" href="#population-born-in-another-country">2.8.3. Population born in another country</a></li>
+<li><a class="reference internal" href="#population-born-in-another-state">2.8.4. Population born in another state</a><ul>
+<li><a class="reference internal" href="#female-population-born-in-another-state">2.8.4.1. Female population born in another state</a></li>
+<li><a class="reference internal" href="#male-population-born-in-another-state">2.8.4.2. Male population born in another state</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#population-born-in-the-state">2.8.5. Population born in the state</a><ul>
+<li><a class="reference internal" href="#female-population-born-in-the-state">2.8.5.1. Female population born in the state</a></li>
+<li><a class="reference internal" href="#male-population-born-in-the-state">2.8.5.2. Male population born in the state</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#population-resident-in-another-country-in-june-2005">2.8.6. Population resident in another country in June 2005</a></li>
+<li><a class="reference internal" href="#population-resident-in-another-state-in-june-2005">2.8.7. Population resident in another state in June 2005</a><ul>
+<li><a class="reference internal" href="#female-population-resident-in-another-state-in-june-2005">2.8.7.1. Female population resident in another state in June 2005</a></li>
+<li><a class="reference internal" href="#male-population-resident-in-another-state-in-june-2005">2.8.7.2. Male population resident in another state in June 2005</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#population-resident-in-the-state-in-june-2005">2.8.8. Population resident in the state in June 2005</a><ul>
+<li><a class="reference internal" href="#female-population-resident-in-the-state-in-june-2005">2.8.8.1. Female population resident in the state in June 2005</a></li>
+<li><a class="reference internal" href="#male-population-resident-in-the-state-in-june-2005">2.8.8.2. Male population resident in the state in June 2005</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../tags.mx.html">2. Mexico</a><ul>
+      <li>Previous: <a href="tags.language.html" title="previous chapter">2.7. Language</a></li>
+      <li>Next: <a href="tags.nationality.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/tags.mx/tags.migration.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CartoDB.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="../_sources/tags.mx/tags.migration.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

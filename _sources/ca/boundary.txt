@@ -1,0 +1,543 @@
+
+
+.. Boundaries:
+
+Boundaries
+===========================================================================
+
+Political, administrative, and census-based boundaries.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _ca.statcan.geo.pr_:
+
+Canada, provinces and territories
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "Canada, provinces and territories" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(43.6559499126, -79.3796539307),
+      'ca.statcan.geo.pr_'
+    )
+
+
+
+
+
+Obtain all "Canada, provinces and territories" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+      'ca.statcan.geo.pr_'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _ca.statcan.geo.ct_:
+
+Census Tracts
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "Census Tracts" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(43.6559499126, -79.3796539307),
+      'ca.statcan.geo.ct_'
+    )
+
+
+
+
+
+Obtain all "Census Tracts" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+      'ca.statcan.geo.ct_'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _ca.statcan.geo.cd_:
+
+Census divisions
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "Census divisions" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(43.6559499126, -79.3796539307),
+      'ca.statcan.geo.cd_'
+    )
+
+
+
+
+
+Obtain all "Census divisions" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+      'ca.statcan.geo.cd_'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _ca.statcan.geo.cma:
+
+Census metropolitan areas and census agglomerations
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "Census metropolitan areas and census agglomerations" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(43.6559499126, -79.3796539307),
+      'ca.statcan.geo.cma'
+    )
+
+
+
+
+
+Obtain all "Census metropolitan areas and census agglomerations" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+      'ca.statcan.geo.cma'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _ca.statcan.geo.csd:
+
+Census subdivisions
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "Census subdivisions" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(43.6559499126, -79.3796539307),
+      'ca.statcan.geo.csd'
+    )
+
+
+
+
+
+Obtain all "Census subdivisions" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+      'ca.statcan.geo.csd'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+

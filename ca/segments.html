@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3.12. Population segments &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="3. Canada" href="../ca.html" />
+    <link rel="next" title="3.13. Transportation" href="transportation.html" />
+    <link rel="prev" title="3.11. Religion" href="religion.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="population-segments">
+<h1>3.12. Population segments<a class="headerlink" href="#population-segments" title="Permalink to this headline">¶</a></h1>
+<p>Segmentations of the population</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#to-2011-population-change" id="id1">2006 to 2011 population change (%)</a></li>
+<li><a class="reference internal" href="#land-area-square-km" id="id2">Land area (square km)</a></li>
+<li><a class="reference internal" href="#population-density-per-square-kilometre" id="id3">Population density per square kilometre</a></li>
+<li><a class="reference internal" href="#population-in-2006" id="id4">Population in 2006</a></li>
+<li><a class="reference internal" href="#private-dwellings-occupied-by-usual-residents" id="id5">Private dwellings occupied by usual residents</a></li>
+<li><a class="reference internal" href="#total-private-dwellings" id="id6">Total private dwellings</a></li>
+</ul>
+</div>
+<div class="section" id="to-2011-population-change">
+<span id="ca-statcan-cols-census-t010c003-t"></span><h2><a class="toc-backref" href="#id1">3.12.1. 2006 to 2011 population change (%)</a><a class="headerlink" href="#to-2011-population-change" title="Permalink to this headline">¶</a></h2>
+<p>Measure &#8220;2006 to 2011 population change (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c003_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>2006 to 2011 population change (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-ct"><span class="std std-ref">Census Tracts</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-cd"><span class="std std-ref">Census divisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-pr"><span class="std std-ref">Canada, provinces and territories</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-csd"><span class="std std-ref">Census subdivisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#ca-statcan-license-statcan-census-2011"><span class="std std-ref">Statistics Canada Census of Population 2011</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#ca-statcan-license-statcan-license"><span class="std std-ref">Statistics Canada Open Licence Agreement</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="land-area-square-km">
+<span id="ca-statcan-cols-census-t010c007-t"></span><h2><a class="toc-backref" href="#id2">3.12.2. Land area (square km)</a><a class="headerlink" href="#land-area-square-km" title="Permalink to this headline">¶</a></h2>
+<p>Measure &#8220;Land area (square km)&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c007_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Land area (square km)&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c007_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-ct"><span class="std std-ref">Census Tracts</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-cd"><span class="std std-ref">Census divisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-pr"><span class="std std-ref">Canada, provinces and territories</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-csd"><span class="std std-ref">Census subdivisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#ca-statcan-license-statcan-census-2011"><span class="std std-ref">Statistics Canada Census of Population 2011</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#ca-statcan-license-statcan-license"><span class="std std-ref">Statistics Canada Open Licence Agreement</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-density-per-square-kilometre">
+<span id="ca-statcan-cols-census-t010c006-t"></span><h2><a class="toc-backref" href="#id3">3.12.3. Population density per square kilometre</a><a class="headerlink" href="#population-density-per-square-kilometre" title="Permalink to this headline">¶</a></h2>
+<p>Measure &#8220;Population density per square kilometre&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c006_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population density per square kilometre&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c006_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-ct"><span class="std std-ref">Census Tracts</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-cd"><span class="std std-ref">Census divisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-pr"><span class="std std-ref">Canada, provinces and territories</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-csd"><span class="std std-ref">Census subdivisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#ca-statcan-license-statcan-census-2011"><span class="std std-ref">Statistics Canada Census of Population 2011</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#ca-statcan-license-statcan-license"><span class="std std-ref">Statistics Canada Open Licence Agreement</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-in-2006">
+<span id="ca-statcan-cols-census-t010c002-t"></span><h2><a class="toc-backref" href="#id4">3.12.4. Population in 2006</a><a class="headerlink" href="#population-in-2006" title="Permalink to this headline">¶</a></h2>
+<p>Measure &#8220;Population in 2006&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c002_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population in 2006&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c002_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-ct"><span class="std std-ref">Census Tracts</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-cd"><span class="std std-ref">Census divisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-pr"><span class="std std-ref">Canada, provinces and territories</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-csd"><span class="std std-ref">Census subdivisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#ca-statcan-license-statcan-census-2011"><span class="std std-ref">Statistics Canada Census of Population 2011</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#ca-statcan-license-statcan-license"><span class="std std-ref">Statistics Canada Open Licence Agreement</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="private-dwellings-occupied-by-usual-residents">
+<span id="ca-statcan-cols-census-t010c005-t"></span><h2><a class="toc-backref" href="#id5">3.12.5. Private dwellings occupied by usual residents</a><a class="headerlink" href="#private-dwellings-occupied-by-usual-residents" title="Permalink to this headline">¶</a></h2>
+<p>A separate set of living quarters which has a private entrance either directly from outside or from a common hall lobby vestibule or stairway leading to the outside and in which a person or a group of persons live permanently.</p>
+<p>Measure &#8220;Private dwellings occupied by usual residents&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c005_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Private dwellings occupied by usual residents&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c005_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-ct"><span class="std std-ref">Census Tracts</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-cd"><span class="std std-ref">Census divisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-pr"><span class="std std-ref">Canada, provinces and territories</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-csd"><span class="std std-ref">Census subdivisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#ca-statcan-license-statcan-census-2011"><span class="std std-ref">Statistics Canada Census of Population 2011</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#ca-statcan-license-statcan-license"><span class="std std-ref">Statistics Canada Open Licence Agreement</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="total-private-dwellings">
+<span id="ca-statcan-cols-census-t010c004-t"></span><h2><a class="toc-backref" href="#id6">3.12.6. Total private dwellings</a><a class="headerlink" href="#total-private-dwellings" title="Permalink to this headline">¶</a></h2>
+<p>A separate set of living quarters designed for or converted for human habitation in which a person or group of persons reside or could reside. In addition a private dwelling must have a source of heat or power and must be an enclosed space that provides shelter from the elements as evidenced by complete and enclosed walls and roof and by doors and windows that provide protection from wind rain and snow.</p>
+<p>Measure &#8220;Total private dwellings&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c004_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Total private dwellings&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.6559499126</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.3796539307</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;ca.statcan.cols_census.t010c004_t&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-ct"><span class="std std-ref">Census Tracts</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-cd"><span class="std std-ref">Census divisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-pr"><span class="std std-ref">Canada, provinces and territories</span></a></p>
+</td>
+<td><p>2011</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#ca-statcan-geo-csd"><span class="std std-ref">Census subdivisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#ca-statcan-license-statcan-census-2011"><span class="std std-ref">Statistics Canada Census of Population 2011</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#ca-statcan-license-statcan-license"><span class="std std-ref">Statistics Canada Open Licence Agreement</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3.12. Population segments</a><ul>
+<li><a class="reference internal" href="#to-2011-population-change">3.12.1. 2006 to 2011 population change (%)</a></li>
+<li><a class="reference internal" href="#land-area-square-km">3.12.2. Land area (square km)</a></li>
+<li><a class="reference internal" href="#population-density-per-square-kilometre">3.12.3. Population density per square kilometre</a></li>
+<li><a class="reference internal" href="#population-in-2006">3.12.4. Population in 2006</a></li>
+<li><a class="reference internal" href="#private-dwellings-occupied-by-usual-residents">3.12.5. Private dwellings occupied by usual residents</a></li>
+<li><a class="reference internal" href="#total-private-dwellings">3.12.6. Total private dwellings</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../ca.html">3. Canada</a><ul>
+      <li>Previous: <a href="religion.html" title="previous chapter">3.11. Religion</a></li>
+      <li>Next: <a href="transportation.html" title="next chapter">3.13. Transportation</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/ca/segments.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/ca/segments.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

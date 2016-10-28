@@ -1,0 +1,121 @@
+
+
+.. Age and Gender:
+
+Age and Gender
+===========================================================================
+
+Population breakdowns by age and gender.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _th.thaipop.pop:
+
+Population in 2010
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Population in 2010"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(13.7253777121, 100.492630005),
+        'th.thaipop.pop'
+      );
+
+
+
+
+
+Measure "Population in 2010" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(13.7253777121, 100.492630005), 0.01),
+          'th.thaipop.pop'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`th.thaipop.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+

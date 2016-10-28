@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>11.14. US Population Segments &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="11. United States" href="../united_states.html" />
+    <link rel="next" title="11.15. Zillow Home Value and Rental Indexes" href="us.zillow.indexes.html" />
+    <link rel="prev" title="11.13. Transportation" href="transportation.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="us-population-segments">
+<h1>11.14. US Population Segments<a class="headerlink" href="#us-population-segments" title="Permalink to this headline">¶</a></h1>
+<p>Segmentation of the United States population</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#spielman-singleton-segments-10-clusters" id="id1">Spielman-Singleton Segments: 10 Clusters</a></li>
+<li><a class="reference internal" href="#spielman-singleton-segments-55-clusters" id="id2">Spielman-Singleton Segments: 55 Clusters</a></li>
+</ul>
+</div>
+<div class="section" id="spielman-singleton-segments-10-clusters">
+<span id="us-census-spielman-singleton-segments-x10"></span><h2><a class="toc-backref" href="#id1">11.14.1. Spielman-Singleton Segments: 10 Clusters</a><a class="headerlink" href="#spielman-singleton-segments-10-clusters" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.spielman_singleton_segments.X10.png"><img alt="../_images/us.census.spielman_singleton_segments.X10.png" src="../_images/us.census.spielman_singleton_segments.X10.png" style="width: 100%;" /></a>
+</div>
+<p>Sociodemographic classes from Spielman and Singleton 2015, 10 clusters</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Low income and diverse</strong>: High school education, single parent families, mobile within cities, multilingual, Black or Asian, typically doesn&#8217;t own a car, uses public transit, high median rent.</li>
+<li><strong>Hispanic and Young</strong>: Predominantly Hispanic, tends to have at most high school education, lots of married couples and single mothers, high mobility within cities, typically takes public transit and tends to rent.</li>
+<li><strong>Low income, mix of minorities</strong>: Highschool education, single parent familes, mobile within cities, diverse minorities, uses public transit and low rent.</li>
+<li><strong>Wealthy, urban without Kids</strong>: Typically has an advanced degree, single parents or same sex couples, highly mobile, White, Black or Asian, doesn&#8217;t own a car and lives in high rental housing.</li>
+<li><strong>Middle Income, Single Family Home</strong>: High school and some college education, mix of single parents and married couples, tends to stay put and only moves within cities, English speaking, white, good retirement funds, owns their own car, lives in lower rent homes of mobile homes.</li>
+<li><strong>Residential Institutions</strong>: Advanced education, highly mobile, White, Black or Asian, public transit, low rent.</li>
+<li><strong>Wealthy Nuclear Families</strong>: Highly educated, high levels of bachelor or grad degrees, married couples and some same sex couples, tends to stay put, white or asian, high income, tends to own a car and lives in single family homes with high rents.</li>
+<li><strong>Low income, African American</strong>: African American, low income, high school education, single parent famalies, mobile within cities, uses public transport.</li>
+<li><strong>Wealthy Old Caucasion</strong>: Highly educated, married couples and same sex couples, tend to stay put, English speaking, White or Asian, high income and high rent.</li>
+<li><strong>Native American</strong>: Native Amerian, high school educated with some college, commutes for work, single parent families, typical doesn&#8217;t own a car and lives in low cost rental housing.</li>
+</ul>
+</div></blockquote>
+<p>Obtain category of &#8220;Spielman-Singleton Segments: 10 Clusters&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_text_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetCategory</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.spielman_singleton_segments.X10&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract"><span class="std std-ref">US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="spielman-singleton-segments-55-clusters">
+<span id="us-census-spielman-singleton-segments-x55"></span><h2><a class="toc-backref" href="#id2">11.14.2. Spielman-Singleton Segments: 55 Clusters</a><a class="headerlink" href="#spielman-singleton-segments-55-clusters" title="Permalink to this headline">¶</a></h2>
+<p>Sociodemographic classes from Spielman and Singleton 2015, 55 clusters</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Wealthy, Retired Mountains/Coasts</strong>:</li>
+<li><strong>Very wealthy, multiple million dollar homes</strong>:</li>
+<li><strong>Hispanic Black mix multilingual, high poverty, renters, uses public transport</strong>:</li>
+<li><strong>Young, City based renters in Sparse neighborhoods, Low poverty</strong>:</li>
+<li><strong>City Center University Campuses</strong>:</li>
+<li><strong>Wealthy Diverse Suburbanites On the Coasts</strong>:</li>
+<li><strong>Older home owners, more financially comfortable, some diversity</strong>:</li>
+<li><strong>Retirement Communitties</strong>:</li>
+<li><strong>Older, mixed race professionals</strong>:</li>
+<li><strong>Urban - Inner city</strong>:</li>
+<li><strong>Older Home owners with high income</strong>:</li>
+<li><strong>Older, middle income Native Americans once married and Educated</strong>:</li>
+<li><strong>City Outskirt University Campuses</strong>:</li>
+<li><strong>Wealthy and Rural Living</strong>:</li>
+<li><strong>Suburban, Young and Low-income</strong>:</li>
+<li><strong>Rural,High School Education, Owns property</strong>:</li>
+<li><strong>New Developments</strong>:</li>
+<li><strong>Older home owners and very high income</strong>:</li>
+<li><strong>low-income, urban, young, unmarried</strong>:</li>
+<li><strong>Low Income on Urban Periphery</strong>:</li>
+<li><strong>Predominantly black renters, rent own mix</strong>:</li>
+<li><strong>Low-Income with gentrification</strong>:</li>
+<li><strong>Rural, Bachelors or college degree, Rent owned mix</strong>:</li>
+<li><strong>Satisfied Lower Middle Income Higher Rent Costs</strong>:</li>
+<li><strong>High school education Long Commuters, Black, White Hispanic mix</strong>:</li>
+<li><strong>Bachelors degree Mid income With Mortgages</strong>:</li>
+<li><strong>Suburban/Rural Satisfied, decently educated lower middle class</strong>:</li>
+<li><strong>College town with poverty</strong>:</li>
+<li><strong>Low rent in built up neighborhoods</strong>:</li>
+<li><strong>Younger, Long Commuter in dense neighborhood</strong>:</li>
+<li><strong>Lower educational attainment, Homeowner, Low rent</strong>:</li>
+<li><strong>Black and mixed community with rent burden</strong>:</li>
+<li><strong>Struggling lower middle class with rent burden</strong>:</li>
+<li><strong>Long commuters White black mix</strong>:</li>
+<li><strong>Relatively affordable, satisfied lower middle class</strong>:</li>
+<li><strong>College towns</strong>:</li>
+<li><strong>Low education, mainly suburban</strong>:</li>
+<li><strong>White and minority mix multilingual, mixed income / education. Married</strong>:</li>
+<li><strong>Bachelors degree Higher income Home Owners</strong>:</li>
+<li><strong>Rural families</strong>:</li>
+<li><strong>Lower Middle Income with affordable housing</strong>:</li>
+<li><strong>Works from home, Highly Educated, Super Wealthy</strong>:</li>
+<li><strong>Middle Class, Educated, Suburban, Mixed Race</strong>:</li>
+<li><strong>Predominantly black, high high school attainment, home owners</strong>:</li>
+<li><strong>Retired Grandparents</strong>:</li>
+<li><strong>High rise, dense urbanites</strong>:</li>
+<li><strong>Young, working class and rural</strong>:</li>
+<li><strong>Younger, poorer,single parent family Native Americans</strong>:</li>
+<li><strong>Lower Middle Income with higher rent burden</strong>:</li>
+<li><strong>Renters within cities, mixed income areas, White/Hispanic mix, Unmarried</strong>:</li>
+<li><strong>White, Asian Mix Big City Burbs Dwellers</strong>:</li>
+<li><strong>University campus wider area</strong>:</li>
+<li><strong>Asian Hispanic Mix, Mid income</strong>:</li>
+<li><strong>Wealthy city commuters</strong>:</li>
+<li><strong>Older white home owners, less comfortable financially</strong>:</li>
+</ul>
+</div></blockquote>
+<p>Obtain category of &#8220;Spielman-Singleton Segments: 55 Clusters&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_text_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetCategory</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.spielman_singleton_segments.X55&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract"><span class="std std-ref">US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">11.14. US Population Segments</a><ul>
+<li><a class="reference internal" href="#spielman-singleton-segments-10-clusters">11.14.1. Spielman-Singleton Segments: 10 Clusters</a></li>
+<li><a class="reference internal" href="#spielman-singleton-segments-55-clusters">11.14.2. Spielman-Singleton Segments: 55 Clusters</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../united_states.html">11. United States</a><ul>
+      <li>Previous: <a href="transportation.html" title="previous chapter">11.13. Transportation</a></li>
+      <li>Next: <a href="us.zillow.indexes.html" title="next chapter">11.15. Zillow Home Value and Rental Indexes</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/united_states/us.census.acs.segments.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/united_states/us.census.acs.segments.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

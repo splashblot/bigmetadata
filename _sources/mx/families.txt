@@ -1,0 +1,11062 @@
+
+
+.. Families:
+
+Families
+===========================================================================
+
+Familial arrangements of people and households.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.FEC1_R:
+
+Birthrate
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.FEC1_R.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Birthrate"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.FEC1_R'
+      );
+
+
+
+
+
+
+Birthrate is only available for point lookups.
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.FEC2_R:
+
+Birthrate to women age 15 to 49
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.FEC2_R.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Birthrate to women age 15 to 49"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.FEC2_R'
+      );
+
+
+
+
+
+
+Birthrate to women age 15 to 49 is only available for point lookups.
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SCONY7:
+
+Formerly married population 12 or more years old
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Formerly married population 12 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY7'
+      );
+
+
+
+
+
+Measure "Formerly married population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY7'
+        );
+
+
+
+
+
+
+Measure "Formerly married population 12 or more years old" percent of "Population 12 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY7',
+        'denominator'
+      );
+
+
+Measure "Formerly married population 12 or more years old" percent of "Population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB19`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Formerly married population 12 or more years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.SCONY8:
+
+Female formerly married population 12 or more years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female formerly married population 12 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY8'
+      );
+
+
+
+
+
+Measure "Female formerly married population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY8'
+        );
+
+
+
+
+
+
+Measure "Female formerly married population 12 or more years old" percent of "Formerly married population 12 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY8',
+        'denominator'
+      );
+
+
+Measure "Female formerly married population 12 or more years old" percent of "Formerly married population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.SCONY7`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB50`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.SCONY9:
+
+Male formerly married population 12 or more years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male formerly married population 12 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY9'
+      );
+
+
+
+
+
+Measure "Male formerly married population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY9'
+        );
+
+
+
+
+
+
+Measure "Male formerly married population 12 or more years old" percent of "Formerly married population 12 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY9',
+        'denominator'
+      );
+
+
+Measure "Male formerly married population 12 or more years old" percent of "Formerly married population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.SCONY7`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB75`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.HOGAR1:
+
+Households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR1'
+      );
+
+
+
+
+
+Measure "Households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR1'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Households
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR2:
+
+Female headed households
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female headed households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR2'
+      );
+
+
+
+
+
+Measure "Female headed households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR2'
+        );
+
+
+
+
+
+
+Measure "Female headed households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR2',
+        'denominator'
+      );
+
+
+Measure "Female headed households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Female headed households
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR20:
+
+Household with female head 60 or more years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with female head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR20'
+      );
+
+
+
+
+
+Measure "Household with female head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR20'
+        );
+
+
+
+
+
+
+Measure "Household with female head 60 or more years old" percent of "Household with head 60 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR20',
+        'denominator'
+      );
+
+
+Measure "Household with female head 60 or more years old" percent of "Household with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR19`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR14:
+
+Household with female head between 30 and 59 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with female head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR14'
+      );
+
+
+
+
+
+Measure "Household with female head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR14'
+        );
+
+
+
+
+
+
+Measure "Household with female head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR14',
+        'denominator'
+      );
+
+
+Measure "Household with female head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR13`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR8:
+
+Household with female head under 30 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with female head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR8'
+      );
+
+
+
+
+
+Measure "Household with female head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR8'
+        );
+
+
+
+
+
+
+Measure "Household with female head under 30 years old" percent of "Female headed households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR8',
+        'denominator'
+      );
+
+
+Measure "Household with female head under 30 years old" percent of "Female headed households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR2`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR7`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR19:
+
+Household with head 60 or more years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR19.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR19'
+      );
+
+
+
+
+
+Measure "Household with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR19'
+        );
+
+
+
+
+
+
+Measure "Household with head 60 or more years old" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR19',
+        'denominator'
+      );
+
+
+Measure "Household with head 60 or more years old" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR19',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Household with head 60 or more years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR20:
+
+Household with female head 60 or more years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with female head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR20'
+      );
+
+
+
+
+
+Measure "Household with female head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR20'
+        );
+
+
+
+
+
+
+Measure "Household with female head 60 or more years old" percent of "Household with head 60 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR20',
+        'denominator'
+      );
+
+
+Measure "Household with female head 60 or more years old" percent of "Household with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR19`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR21:
+
+Household with male head 60 or more years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR21.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with male head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR21'
+      );
+
+
+
+
+
+Measure "Household with male head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR21'
+        );
+
+
+
+
+
+
+Measure "Household with male head 60 or more years old" percent of "Household with head 60 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR21',
+        'denominator'
+      );
+
+
+Measure "Household with male head 60 or more years old" percent of "Household with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR21',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR19`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR3`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR13:
+
+Household with head between 30 and 59 years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR13.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR13'
+      );
+
+
+
+
+
+Measure "Household with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR13'
+        );
+
+
+
+
+
+
+Measure "Household with head between 30 and 59 years old" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR13',
+        'denominator'
+      );
+
+
+Measure "Household with head between 30 and 59 years old" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR13',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Household with head between 30 and 59 years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR14:
+
+Household with female head between 30 and 59 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with female head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR14'
+      );
+
+
+
+
+
+Measure "Household with female head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR14'
+        );
+
+
+
+
+
+
+Measure "Household with female head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR14',
+        'denominator'
+      );
+
+
+Measure "Household with female head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR13`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR15:
+
+Household with male head between 30 and 59 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with male head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR15'
+      );
+
+
+
+
+
+Measure "Household with male head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR15'
+        );
+
+
+
+
+
+
+Measure "Household with male head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR15',
+        'denominator'
+      );
+
+
+Measure "Household with male head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR13`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR3`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR7:
+
+Household with head under 30 years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR7'
+      );
+
+
+
+
+
+Measure "Household with head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR7'
+        );
+
+
+
+
+
+
+Measure "Household with head under 30 years old" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR7',
+        'denominator'
+      );
+
+
+Measure "Household with head under 30 years old" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Household with head under 30 years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR8:
+
+Household with female head under 30 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with female head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR8'
+      );
+
+
+
+
+
+Measure "Household with female head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR8'
+        );
+
+
+
+
+
+
+Measure "Household with female head under 30 years old" percent of "Female headed households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR8',
+        'denominator'
+      );
+
+
+Measure "Household with female head under 30 years old" percent of "Female headed households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR2`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR7`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR9:
+
+Household with male head under 30 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with male head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR9'
+      );
+
+
+
+
+
+Measure "Household with male head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR9'
+        );
+
+
+
+
+
+
+Measure "Household with male head under 30 years old" percent of "Male headed households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR9',
+        'denominator'
+      );
+
+
+Measure "Household with male head under 30 years old" percent of "Male headed households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR3`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR7`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR3:
+
+Male headed households
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male headed households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR3'
+      );
+
+
+
+
+
+Measure "Male headed households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR3'
+        );
+
+
+
+
+
+
+Measure "Male headed households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR3',
+        'denominator'
+      );
+
+
+Measure "Male headed households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Male headed households
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR21:
+
+Household with male head 60 or more years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR21.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with male head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR21'
+      );
+
+
+
+
+
+Measure "Household with male head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR21'
+        );
+
+
+
+
+
+
+Measure "Household with male head 60 or more years old" percent of "Household with head 60 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR21',
+        'denominator'
+      );
+
+
+Measure "Household with male head 60 or more years old" percent of "Household with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR21',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR19`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR3`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR15:
+
+Household with male head between 30 and 59 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with male head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR15'
+      );
+
+
+
+
+
+Measure "Household with male head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR15'
+        );
+
+
+
+
+
+
+Measure "Household with male head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR15',
+        'denominator'
+      );
+
+
+Measure "Household with male head between 30 and 59 years old" percent of "Household with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR13`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR3`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR9:
+
+Household with male head under 30 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Household with male head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR9'
+      );
+
+
+
+
+
+Measure "Household with male head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR9'
+        );
+
+
+
+
+
+
+Measure "Household with male head under 30 years old" percent of "Male headed households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR9',
+        'denominator'
+      );
+
+
+Measure "Household with male head under 30 years old" percent of "Male headed households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR3`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR7`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR25:
+
+Nuclear households (head with children under 18 years of age)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR25.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Nuclear households (head with children under 18 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR25'
+      );
+
+
+
+
+
+Measure "Nuclear households (head with children under 18 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR25'
+        );
+
+
+
+
+
+
+Measure "Nuclear households (head with children under 18 years of age)" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR25',
+        'denominator'
+      );
+
+
+Measure "Nuclear households (head with children under 18 years of age)" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR25',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.SCONY4:
+
+Married or cohabited two years population 12 or more years old
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Married or cohabited two years population 12 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY4'
+      );
+
+
+
+
+
+Measure "Married or cohabited two years population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY4'
+        );
+
+
+
+
+
+
+Measure "Married or cohabited two years population 12 or more years old" percent of "Population 12 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY4',
+        'denominator'
+      );
+
+
+Measure "Married or cohabited two years population 12 or more years old" percent of "Population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB19`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Married or cohabited two years population 12 or more years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.SCONY5:
+
+Female married or cohabited two years population 12 or more years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female married or cohabited two years population 12 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY5'
+      );
+
+
+
+
+
+Measure "Female married or cohabited two years population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY5'
+        );
+
+
+
+
+
+
+Measure "Female married or cohabited two years population 12 or more years old" percent of "Married or cohabited two years population 12 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY5',
+        'denominator'
+      );
+
+
+Measure "Female married or cohabited two years population 12 or more years old" percent of "Married or cohabited two years population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.SCONY4`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB50`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.SCONY6:
+
+Male married or cohabited two years population 12 or more years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male married or cohabited two years population 12 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY6'
+      );
+
+
+
+
+
+Measure "Male married or cohabited two years population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY6'
+        );
+
+
+
+
+
+
+Measure "Male married or cohabited two years population 12 or more years old" percent of "Married or cohabited two years population 12 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY6',
+        'denominator'
+      );
+
+
+Measure "Male married or cohabited two years population 12 or more years old" percent of "Married or cohabited two years population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.SCONY4`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB75`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.SCONY10:
+
+Married or cohabited two years population 15 to 24 years old
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Married or cohabited two years population 15 to 24 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY10'
+      );
+
+
+
+
+
+Measure "Married or cohabited two years population 15 to 24 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY10'
+        );
+
+
+
+
+
+
+Measure "Married or cohabited two years population 15 to 24 years old" percent of "Population 15 to 24 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY10',
+        'denominator'
+      );
+
+
+Measure "Married or cohabited two years population 15 to 24 years old" percent of "Population 15 to 24 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB10`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Married or cohabited two years population 15 to 24 years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.SCONY11:
+
+Female married or cohabited two years population 15 to 24 years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female married or cohabited two years population 15 to 24 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY11'
+      );
+
+
+
+
+
+Measure "Female married or cohabited two years population 15 to 24 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY11'
+        );
+
+
+
+
+
+
+Measure "Female married or cohabited two years population 15 to 24 years old" percent of "Female population 15 to 24 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY11',
+        'denominator'
+      );
+
+
+Measure "Female married or cohabited two years population 15 to 24 years old" percent of "Female population 15 to 24 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB40`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.SCONY10`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.SCONY12:
+
+Male married or cohabited two years population 15 to 24 years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male married or cohabited two years population 15 to 24 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY12'
+      );
+
+
+
+
+
+Measure "Male married or cohabited two years population 15 to 24 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY12'
+        );
+
+
+
+
+
+
+Measure "Male married or cohabited two years population 15 to 24 years old" percent of "Male population 15 to 24 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY12',
+        'denominator'
+      );
+
+
+Measure "Male married or cohabited two years population 15 to 24 years old" percent of "Male population 15 to 24 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB66`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.SCONY10`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.FEC3_R:
+
+Percentage of women age 15 to 19 with a child
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.FEC3_R.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Percentage of women age 15 to 19 with a child"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.FEC3_R'
+      );
+
+
+
+
+
+
+Percentage of women age 15 to 19 with a child is only available for point lookups.
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.HOGAR4:
+
+Population in households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR4'
+      );
+
+
+
+
+
+Measure "Population in households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR4'
+        );
+
+
+
+
+
+
+Measure "Population in households" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR4',
+        'denominator'
+      );
+
+
+Measure "Population in households" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population in households
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR5:
+
+Population in female headed households
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in female headed households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR5'
+      );
+
+
+
+
+
+Measure "Population in female headed households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR5'
+        );
+
+
+
+
+
+
+Measure "Population in female headed households" percent of "Population in households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR5',
+        'denominator'
+      );
+
+
+Measure "Population in female headed households" percent of "Population in households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population in female headed households
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR23:
+
+Population in households with female head 60 or more years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR23.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with female head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR23'
+      );
+
+
+
+
+
+Measure "Population in households with female head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR23'
+        );
+
+
+
+
+
+
+Measure "Population in households with female head 60 or more years old" percent of "Population in households with head 60 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR23',
+        'denominator'
+      );
+
+
+Measure "Population in households with female head 60 or more years old" percent of "Population in households with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR23',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR22`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR17:
+
+Population in households with female head between 30 and 59 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR17.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with female head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR17'
+      );
+
+
+
+
+
+Measure "Population in households with female head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR17'
+        );
+
+
+
+
+
+
+Measure "Population in households with female head between 30 and 59 years old" percent of "Population in households with head between 30 and 59 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR17',
+        'denominator'
+      );
+
+
+Measure "Population in households with female head between 30 and 59 years old" percent of "Population in households with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR17',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR16`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR11:
+
+Population in households with female head under 30 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with female head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR11'
+      );
+
+
+
+
+
+Measure "Population in households with female head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR11'
+        );
+
+
+
+
+
+
+Measure "Population in households with female head under 30 years old" percent of "Population in households with head under 30 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR11',
+        'denominator'
+      );
+
+
+Measure "Population in households with female head under 30 years old" percent of "Population in households with head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR10`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR22:
+
+Population in households with head 60 or more years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR22.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR22'
+      );
+
+
+
+
+
+Measure "Population in households with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR22'
+        );
+
+
+
+
+
+
+Measure "Population in households with head 60 or more years old" percent of "Population in households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR22',
+        'denominator'
+      );
+
+
+Measure "Population in households with head 60 or more years old" percent of "Population in households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR22',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population in households with head 60 or more years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR23:
+
+Population in households with female head 60 or more years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR23.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with female head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR23'
+      );
+
+
+
+
+
+Measure "Population in households with female head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR23'
+        );
+
+
+
+
+
+
+Measure "Population in households with female head 60 or more years old" percent of "Population in households with head 60 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR23',
+        'denominator'
+      );
+
+
+Measure "Population in households with female head 60 or more years old" percent of "Population in households with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR23',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR22`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR24:
+
+Population in households with male head 60 or more years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR24.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with male head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR24'
+      );
+
+
+
+
+
+Measure "Population in households with male head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR24'
+        );
+
+
+
+
+
+
+Measure "Population in households with male head 60 or more years old" percent of "Population in households with head 60 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR24',
+        'denominator'
+      );
+
+
+Measure "Population in households with male head 60 or more years old" percent of "Population in households with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR24',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR22`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR16:
+
+Population in households with head between 30 and 59 years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR16.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR16'
+      );
+
+
+
+
+
+Measure "Population in households with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR16'
+        );
+
+
+
+
+
+
+Measure "Population in households with head between 30 and 59 years old" percent of "Population in households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR16',
+        'denominator'
+      );
+
+
+Measure "Population in households with head between 30 and 59 years old" percent of "Population in households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR16',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population in households with head between 30 and 59 years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR17:
+
+Population in households with female head between 30 and 59 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR17.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with female head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR17'
+      );
+
+
+
+
+
+Measure "Population in households with female head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR17'
+        );
+
+
+
+
+
+
+Measure "Population in households with female head between 30 and 59 years old" percent of "Population in households with head between 30 and 59 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR17',
+        'denominator'
+      );
+
+
+Measure "Population in households with female head between 30 and 59 years old" percent of "Population in households with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR17',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR16`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR18:
+
+Population in households with male head between 30 and 59 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR18.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with male head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR18'
+      );
+
+
+
+
+
+Measure "Population in households with male head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR18'
+        );
+
+
+
+
+
+
+Measure "Population in households with male head between 30 and 59 years old" percent of "Population in households with head between 30 and 59 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR18',
+        'denominator'
+      );
+
+
+Measure "Population in households with male head between 30 and 59 years old" percent of "Population in households with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR18',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR16`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR10:
+
+Population in households with head under 30 years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR10'
+      );
+
+
+
+
+
+Measure "Population in households with head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR10'
+        );
+
+
+
+
+
+
+Measure "Population in households with head under 30 years old" percent of "Population in households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR10',
+        'denominator'
+      );
+
+
+Measure "Population in households with head under 30 years old" percent of "Population in households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population in households with head under 30 years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR11:
+
+Population in households with female head under 30 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with female head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR11'
+      );
+
+
+
+
+
+Measure "Population in households with female head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR11'
+        );
+
+
+
+
+
+
+Measure "Population in households with female head under 30 years old" percent of "Population in households with head under 30 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR11',
+        'denominator'
+      );
+
+
+Measure "Population in households with female head under 30 years old" percent of "Population in households with head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR10`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR5`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR12:
+
+Population in households with male head under 30 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with male head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR12'
+      );
+
+
+
+
+
+Measure "Population in households with male head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR12'
+        );
+
+
+
+
+
+
+Measure "Population in households with male head under 30 years old" percent of "Population in households with head under 30 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR12',
+        'denominator'
+      );
+
+
+Measure "Population in households with male head under 30 years old" percent of "Population in households with head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR10`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR6:
+
+Population in male headed households
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in male headed households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR6'
+      );
+
+
+
+
+
+Measure "Population in male headed households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR6'
+        );
+
+
+
+
+
+
+Measure "Population in male headed households" percent of "Population in households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR6',
+        'denominator'
+      );
+
+
+Measure "Population in male headed households" percent of "Population in households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Population in male headed households
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR24:
+
+Population in households with male head 60 or more years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR24.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with male head 60 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR24'
+      );
+
+
+
+
+
+Measure "Population in households with male head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR24'
+        );
+
+
+
+
+
+
+Measure "Population in households with male head 60 or more years old" percent of "Population in households with head 60 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR24',
+        'denominator'
+      );
+
+
+Measure "Population in households with male head 60 or more years old" percent of "Population in households with head 60 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR24',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR22`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR18:
+
+Population in households with male head between 30 and 59 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR18.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with male head between 30 and 59 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR18'
+      );
+
+
+
+
+
+Measure "Population in households with male head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR18'
+        );
+
+
+
+
+
+
+Measure "Population in households with male head between 30 and 59 years old" percent of "Population in households with head between 30 and 59 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR18',
+        'denominator'
+      );
+
+
+Measure "Population in households with male head between 30 and 59 years old" percent of "Population in households with head between 30 and 59 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR18',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR16`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR12:
+
+Population in households with male head under 30 years old
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in households with male head under 30 years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR12'
+      );
+
+
+
+
+
+Measure "Population in households with male head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR12'
+        );
+
+
+
+
+
+
+Measure "Population in households with male head under 30 years old" percent of "Population in households with head under 30 years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR12',
+        'denominator'
+      );
+
+
+Measure "Population in households with male head under 30 years old" percent of "Population in households with head under 30 years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR10`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR6`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.HOGAR26:
+
+Population in nuclear households (head with children under 18 years of age)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.HOGAR26.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in nuclear households (head with children under 18 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR26'
+      );
+
+
+
+
+
+Measure "Population in nuclear households (head with children under 18 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.HOGAR26'
+        );
+
+
+
+
+
+
+Measure "Population in nuclear households (head with children under 18 years of age)" percent of "Population in households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.HOGAR26',
+        'denominator'
+      );
+
+
+Measure "Population in nuclear households (head with children under 18 years of age)" percent of "Population in households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.HOGAR26',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR4`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.SCONY1:
+
+Single population 12 or more years old
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Single population 12 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY1'
+      );
+
+
+
+
+
+Measure "Single population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY1'
+        );
+
+
+
+
+
+
+Measure "Single population 12 or more years old" percent of "Population 12 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY1',
+        'denominator'
+      );
+
+
+Measure "Single population 12 or more years old" percent of "Population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB19`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Single population 12 or more years old
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.SCONY2:
+
+Female single population 12 or more years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Female single population 12 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY2'
+      );
+
+
+
+
+
+Measure "Female single population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY2'
+        );
+
+
+
+
+
+
+Measure "Female single population 12 or more years old" percent of "Female population 12 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY2',
+        'denominator'
+      );
+
+
+Measure "Female single population 12 or more years old" percent of "Female population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB50`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.SCONY1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.SCONY3:
+
+Male single population 12 or more years old
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.SCONY3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Male single population 12 or more years old"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY3'
+      );
+
+
+
+
+
+Measure "Male single population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SCONY3'
+        );
+
+
+
+
+
+
+Measure "Male single population 12 or more years old" percent of "Male population 12 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SCONY3',
+        'denominator'
+      );
+
+
+Measure "Male single population 12 or more years old" percent of "Male population 12 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SCONY3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB75`
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.SCONY1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+

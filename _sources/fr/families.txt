@@ -1,0 +1,1807 @@
+
+
+.. Families:
+
+Families
+===========================================================================
+
+Familial arrangements of people and households.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _fr.insee.C12_FAM:
+
+Familles en 2012 (compl)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de familles
+
+
+
+
+
+Measure "Familles en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_FAM'
+      );
+
+
+
+
+
+Measure "Familles en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_FAM'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+.. contents:: Subcolumns of Familles en 2012 (compl)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.C12_NE24F0:
+
+Fam 0 enfant moins 25 ans en 2012 (compl)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de familles avec 0 enfant de moins de 25 ans
+
+
+
+
+
+Measure "Fam 0 enfant moins 25 ans en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F0'
+      );
+
+
+
+
+
+Measure "Fam 0 enfant moins 25 ans en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_NE24F0'
+        );
+
+
+
+
+
+
+Measure "Fam 0 enfant moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F0',
+        'denominator'
+      );
+
+
+Measure "Fam 0 enfant moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_NE24F0',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_FAM`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+  
+  
+  
+  
+
+.. _fr.insee.C12_NE24F1:
+
+Fam 1 enfant moins 25 ans en 2012 (compl)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de familles avec 1 enfant de moins de 25 ans
+
+
+
+
+
+Measure "Fam 1 enfant moins 25 ans en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F1'
+      );
+
+
+
+
+
+Measure "Fam 1 enfant moins 25 ans en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_NE24F1'
+        );
+
+
+
+
+
+
+Measure "Fam 1 enfant moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F1',
+        'denominator'
+      );
+
+
+Measure "Fam 1 enfant moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_NE24F1',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_FAM`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+  
+  
+  
+  
+
+.. _fr.insee.C12_NE24F2:
+
+Fam 2 enfants moins 25 ans en 2012 (compl)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de familles avec 2 enfants de moins de 25 ans
+
+
+
+
+
+Measure "Fam 2 enfants moins 25 ans en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F2'
+      );
+
+
+
+
+
+Measure "Fam 2 enfants moins 25 ans en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_NE24F2'
+        );
+
+
+
+
+
+
+Measure "Fam 2 enfants moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F2',
+        'denominator'
+      );
+
+
+Measure "Fam 2 enfants moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_NE24F2',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_FAM`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+  
+  
+  
+  
+
+.. _fr.insee.C12_NE24F3:
+
+Fam 3 enfants moins 25 ans en 2012 (compl)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de familles avec 3 enfants de moins de 25 ans
+
+
+
+
+
+Measure "Fam 3 enfants moins 25 ans en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F3'
+      );
+
+
+
+
+
+Measure "Fam 3 enfants moins 25 ans en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_NE24F3'
+        );
+
+
+
+
+
+
+Measure "Fam 3 enfants moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F3',
+        'denominator'
+      );
+
+
+Measure "Fam 3 enfants moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_NE24F3',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_FAM`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+  
+  
+  
+  
+
+.. _fr.insee.C12_NE24F4P:
+
+Fam 4 enfants ou plus moins 25 ans en 2012 (compl)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de familles avec 4 enfants ou plus de moins de 25 ans
+
+
+
+
+
+Measure "Fam 4 enfants ou plus moins 25 ans en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F4P'
+      );
+
+
+
+
+
+Measure "Fam 4 enfants ou plus moins 25 ans en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_NE24F4P'
+        );
+
+
+
+
+
+
+Measure "Fam 4 enfants ou plus moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_NE24F4P',
+        'denominator'
+      );
+
+
+Measure "Fam 4 enfants ou plus moins 25 ans en 2012 (compl)" percent of "Familles en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_NE24F4P',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_FAM`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+  
+  
+  
+  
+
+.. _fr.insee.C12_COUPAENF:
+
+Fam Couple avec enfant(s) en 2012 (compl)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de familles formées d'un couple avec enfant(s)
+
+
+
+
+
+Measure "Fam Couple avec enfant(s) en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_COUPAENF'
+      );
+
+
+
+
+
+Measure "Fam Couple avec enfant(s) en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_COUPAENF'
+        );
+
+
+
+
+
+
+Measure "Fam Couple avec enfant(s) en 2012 (compl)" percent of "Familles en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_COUPAENF',
+        'denominator'
+      );
+
+
+Measure "Fam Couple avec enfant(s) en 2012 (compl)" percent of "Familles en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_COUPAENF',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_FAM`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+  
+  
+  
+  
+
+.. _fr.insee.C12_COUPSENF:
+
+Fam Couple sans enfant en 2012 (compl)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de familles formées d'un couple sans enfant
+
+
+
+
+
+Measure "Fam Couple sans enfant en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_COUPSENF'
+      );
+
+
+
+
+
+Measure "Fam Couple sans enfant en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_COUPSENF'
+        );
+
+
+
+
+
+
+Measure "Fam Couple sans enfant en 2012 (compl)" percent of "Familles en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_COUPSENF',
+        'denominator'
+      );
+
+
+Measure "Fam Couple sans enfant en 2012 (compl)" percent of "Familles en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_COUPSENF',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_FAM`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+  
+  
+  
+  
+
+.. _fr.insee.C12_FAMMONO:
+
+Fam Monoparentales en 2012 (compl)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de familles monoparentales
+
+
+
+
+
+Measure "Fam Monoparentales en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_FAMMONO'
+      );
+
+
+
+
+
+Measure "Fam Monoparentales en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_FAMMONO'
+        );
+
+
+
+
+
+
+Measure "Fam Monoparentales en 2012 (compl)" percent of "Familles en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_FAMMONO',
+        'denominator'
+      );
+
+
+Measure "Fam Monoparentales en 2012 (compl)" percent of "Familles en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_FAMMONO',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_FAM`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _fr.insee.P12_POP15P_CELIB:
+
+Pop 15 ans ou plus Célibataire en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes de 15 ans ou plus célibataires
+
+
+
+
+
+Measure "Pop 15 ans ou plus Célibataire en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP15P_CELIB'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus Célibataire en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_POP15P_CELIB'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus Célibataire en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP15P_CELIB',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus Célibataire en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_POP15P_CELIB',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+
+
+
+
+
+.. _fr.insee.P12_POP15P_DIVOR:
+
+Pop 15 ans ou plus Divorcé en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes de 15 ans ou plus divorcées
+
+
+
+
+
+Measure "Pop 15 ans ou plus Divorcé en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP15P_DIVOR'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus Divorcé en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_POP15P_DIVOR'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus Divorcé en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP15P_DIVOR',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus Divorcé en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_POP15P_DIVOR',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+
+
+
+
+
+.. _fr.insee.P12_POP15P_MARIE:
+
+Pop 15 ans ou plus Marié en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes de 15 ans ou plus mariées
+
+
+
+
+
+Measure "Pop 15 ans ou plus Marié en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP15P_MARIE'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus Marié en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_POP15P_MARIE'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus Marié en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP15P_MARIE',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus Marié en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_POP15P_MARIE',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+
+
+
+
+
+.. _fr.insee.P12_POP15P_VEUF:
+
+Pop 15 ans ou plus Veuf en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes de 15 ans ou plus veuves
+
+
+
+
+
+Measure "Pop 15 ans ou plus Veuf en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP15P_VEUF'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus Veuf en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_POP15P_VEUF'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus Veuf en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP15P_VEUF',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus Veuf en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_POP15P_VEUF',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+

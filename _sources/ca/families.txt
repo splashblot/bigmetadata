@@ -1,0 +1,13506 @@
+
+
+.. Families:
+
+Families
+===========================================================================
+
+Familial arrangements of people and households.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _ca.statcan.cols_census.t005c035_t:
+
+Average number of children at home per census family
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Average number of children at home per census family"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c035_t'
+      );
+
+
+
+
+
+
+Average number of children at home per census family is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t005c029_t:
+
+Total children in census families in private households
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total children in census families in private households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c029_t'
+      );
+
+
+
+
+
+Measure "Total children in census families in private households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c029_t'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total children in census families in private households
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c031_t:
+
+6 to 14 years
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "6 to 14 years"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c031_t'
+      );
+
+
+
+
+
+Measure "6 to 14 years" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c031_t'
+        );
+
+
+
+
+
+
+Measure "6 to 14 years" percent of "Total children in census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c031_t',
+        'denominator'
+      );
+
+
+Measure "6 to 14 years" percent of "Total children in census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c031_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c029_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c032_t:
+
+15 to 17 years
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "15 to 17 years"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c032_t'
+      );
+
+
+
+
+
+Measure "15 to 17 years" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c032_t'
+        );
+
+
+
+
+
+
+Measure "15 to 17 years" percent of "Total children in census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c032_t',
+        'denominator'
+      );
+
+
+Measure "15 to 17 years" percent of "Total children in census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c032_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c029_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c033_t:
+
+18 to 24 years
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "18 to 24 years"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c033_t'
+      );
+
+
+
+
+
+Measure "18 to 24 years" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c033_t'
+        );
+
+
+
+
+
+
+Measure "18 to 24 years" percent of "Total children in census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c033_t',
+        'denominator'
+      );
+
+
+Measure "18 to 24 years" percent of "Total children in census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c033_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c029_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c034_t:
+
+25 years and over
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "25 years and over"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c034_t'
+      );
+
+
+
+
+
+Measure "25 years and over" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c034_t'
+        );
+
+
+
+
+
+
+Measure "25 years and over" percent of "Total children in census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c034_t',
+        'denominator'
+      );
+
+
+Measure "25 years and over" percent of "Total children in census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c034_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c029_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c030_t:
+
+Under six years of age
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Under six years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c030_t'
+      );
+
+
+
+
+
+Measure "Under six years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c030_t'
+        );
+
+
+
+
+
+
+Measure "Under six years of age" percent of "Total children in census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c030_t',
+        'denominator'
+      );
+
+
+Measure "Under six years of age" percent of "Total children in census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c030_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c029_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t005c001_t:
+
+Total number of census families in private households
+---------------------------------------------------------------------------
+
+
+
+
+
+Census family - Refers to a married couple (with or without children) a common-law couple (with or without children) or a lone parent family. For more information refer to the Census Dictionary: Census family.
+
+
+
+
+
+Measure "Total number of census families in private households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c001_t'
+      );
+
+
+
+
+
+Measure "Total number of census families in private households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c001_t'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total number of census families in private households
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c002_t:
+
+Size of census family: 2 persons
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Size of census family: 2 persons"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c002_t'
+      );
+
+
+
+
+
+Measure "Size of census family: 2 persons" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c002_t'
+        );
+
+
+
+
+
+
+Measure "Size of census family: 2 persons" percent of "Total number of census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c002_t',
+        'denominator'
+      );
+
+
+Measure "Size of census family: 2 persons" percent of "Total number of census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c002_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c003_t:
+
+Size of census family: 3 persons
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Size of census family: 3 persons"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c003_t'
+      );
+
+
+
+
+
+Measure "Size of census family: 3 persons" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c003_t'
+        );
+
+
+
+
+
+
+Measure "Size of census family: 3 persons" percent of "Total number of census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c003_t',
+        'denominator'
+      );
+
+
+Measure "Size of census family: 3 persons" percent of "Total number of census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c003_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c004_t:
+
+Size of census family: 4 persons
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Size of census family: 4 persons"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c004_t'
+      );
+
+
+
+
+
+Measure "Size of census family: 4 persons" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c004_t'
+        );
+
+
+
+
+
+
+Measure "Size of census family: 4 persons" percent of "Total number of census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c004_t',
+        'denominator'
+      );
+
+
+Measure "Size of census family: 4 persons" percent of "Total number of census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c004_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c005_t:
+
+Size of census family: 5 or more persons
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Size of census family: 5 or more persons"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c005_t'
+      );
+
+
+
+
+
+Measure "Size of census family: 5 or more persons" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c005_t'
+        );
+
+
+
+
+
+
+Measure "Size of census family: 5 or more persons" percent of "Total number of census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c005_t',
+        'denominator'
+      );
+
+
+Measure "Size of census family: 5 or more persons" percent of "Total number of census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c005_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c007_t:
+
+Total couple families by family structure and number of children
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total couple families by family structure and number of children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c007_t'
+      );
+
+
+
+
+
+Measure "Total couple families by family structure and number of children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c007_t'
+        );
+
+
+
+
+
+
+Measure "Total couple families by family structure and number of children" percent of "Total number of census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c007_t',
+        'denominator'
+      );
+
+
+Measure "Total couple families by family structure and number of children" percent of "Total number of census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c007_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total couple families by family structure and number of children
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c014_t:
+
+Common-law couples
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Common-law couples"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c014_t'
+      );
+
+
+
+
+
+Measure "Common-law couples" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c014_t'
+        );
+
+
+
+
+
+
+Measure "Common-law couples" percent of "Total couple families by family structure and number of children" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c014_t',
+        'denominator'
+      );
+
+
+Measure "Common-law couples" percent of "Total couple families by family structure and number of children" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c014_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c007_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Common-law couples
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c016_t:
+
+With children at home
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "With children at home"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c016_t'
+      );
+
+
+
+
+
+Measure "With children at home" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c016_t'
+        );
+
+
+
+
+
+
+Measure "With children at home" percent of "Common-law couples" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c016_t',
+        'denominator'
+      );
+
+
+Measure "With children at home" percent of "Common-law couples" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c016_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c014_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of With children at home
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c017_t:
+
+1 child
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "1 child"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c017_t'
+      );
+
+
+
+
+
+Measure "1 child" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c017_t'
+        );
+
+
+
+
+
+
+Measure "1 child" percent of "With children at home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c017_t',
+        'denominator'
+      );
+
+
+Measure "1 child" percent of "With children at home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c017_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c016_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c018_t:
+
+2 children
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "2 children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c018_t'
+      );
+
+
+
+
+
+Measure "2 children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c018_t'
+        );
+
+
+
+
+
+
+Measure "2 children" percent of "With children at home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c018_t',
+        'denominator'
+      );
+
+
+Measure "2 children" percent of "With children at home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c018_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c016_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c019_t:
+
+3 or more children
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "3 or more children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c019_t'
+      );
+
+
+
+
+
+Measure "3 or more children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c019_t'
+        );
+
+
+
+
+
+
+Measure "3 or more children" percent of "With children at home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c019_t',
+        'denominator'
+      );
+
+
+Measure "3 or more children" percent of "With children at home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c019_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c016_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c015_t:
+
+Without children at home
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Without children at home"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c015_t'
+      );
+
+
+
+
+
+Measure "Without children at home" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c015_t'
+        );
+
+
+
+
+
+
+Measure "Without children at home" percent of "Common-law couples" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c015_t',
+        'denominator'
+      );
+
+
+Measure "Without children at home" percent of "Common-law couples" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c015_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c014_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c008_t:
+
+Married couples
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Married couples"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c008_t'
+      );
+
+
+
+
+
+Measure "Married couples" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c008_t'
+        );
+
+
+
+
+
+
+Measure "Married couples" percent of "Total couple families by family structure and number of children" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c008_t',
+        'denominator'
+      );
+
+
+Measure "Married couples" percent of "Total couple families by family structure and number of children" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c008_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c007_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Married couples
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c010_t:
+
+With children at home
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "With children at home"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c010_t'
+      );
+
+
+
+
+
+Measure "With children at home" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c010_t'
+        );
+
+
+
+
+
+
+Measure "With children at home" percent of "Married couples" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c010_t',
+        'denominator'
+      );
+
+
+Measure "With children at home" percent of "Married couples" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c010_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c008_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of With children at home
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c011_t:
+
+1 child
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "1 child"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c011_t'
+      );
+
+
+
+
+
+Measure "1 child" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c011_t'
+        );
+
+
+
+
+
+
+Measure "1 child" percent of "With children at home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c011_t',
+        'denominator'
+      );
+
+
+Measure "1 child" percent of "With children at home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c011_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c010_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c012_t:
+
+2 children
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "2 children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c012_t'
+      );
+
+
+
+
+
+Measure "2 children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c012_t'
+        );
+
+
+
+
+
+
+Measure "2 children" percent of "With children at home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c012_t',
+        'denominator'
+      );
+
+
+Measure "2 children" percent of "With children at home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c012_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c010_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c013_t:
+
+3 or more children
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "3 or more children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c013_t'
+      );
+
+
+
+
+
+Measure "3 or more children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c013_t'
+        );
+
+
+
+
+
+
+Measure "3 or more children" percent of "With children at home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c013_t',
+        'denominator'
+      );
+
+
+Measure "3 or more children" percent of "With children at home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c013_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c010_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c009_t:
+
+Without children at home
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Without children at home"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c009_t'
+      );
+
+
+
+
+
+Measure "Without children at home" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c009_t'
+        );
+
+
+
+
+
+
+Measure "Without children at home" percent of "Married couples" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c009_t',
+        'denominator'
+      );
+
+
+Measure "Without children at home" percent of "Married couples" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c009_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c008_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c020_t:
+
+Total lone-parent families by sex of parent and number of children
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total lone-parent families by sex of parent and number of children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c020_t'
+      );
+
+
+
+
+
+Measure "Total lone-parent families by sex of parent and number of children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c020_t'
+        );
+
+
+
+
+
+
+Measure "Total lone-parent families by sex of parent and number of children" percent of "Total number of census families in private households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c020_t',
+        'denominator'
+      );
+
+
+Measure "Total lone-parent families by sex of parent and number of children" percent of "Total number of census families in private households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c020_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total lone-parent families by sex of parent and number of children
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c021_t:
+
+Female parent
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Female parent"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c021_t'
+      );
+
+
+
+
+
+Measure "Female parent" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c021_t'
+        );
+
+
+
+
+
+
+Measure "Female parent" percent of "Total lone-parent families by sex of parent and number of children" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c021_t',
+        'denominator'
+      );
+
+
+Measure "Female parent" percent of "Total lone-parent families by sex of parent and number of children" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c021_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c020_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Female parent
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c022_t:
+
+1 child
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "1 child"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c022_t'
+      );
+
+
+
+
+
+Measure "1 child" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c022_t'
+        );
+
+
+
+
+
+
+Measure "1 child" percent of "Female parent" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c022_t',
+        'denominator'
+      );
+
+
+Measure "1 child" percent of "Female parent" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c022_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c021_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c023_t:
+
+2 children
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "2 children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c023_t'
+      );
+
+
+
+
+
+Measure "2 children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c023_t'
+        );
+
+
+
+
+
+
+Measure "2 children" percent of "Female parent" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c023_t',
+        'denominator'
+      );
+
+
+Measure "2 children" percent of "Female parent" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c023_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c021_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c024_t:
+
+3 or more children
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "3 or more children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c024_t'
+      );
+
+
+
+
+
+Measure "3 or more children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c024_t'
+        );
+
+
+
+
+
+
+Measure "3 or more children" percent of "Female parent" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c024_t',
+        'denominator'
+      );
+
+
+Measure "3 or more children" percent of "Female parent" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c024_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c021_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c025_t:
+
+Male parent
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Male parent"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c025_t'
+      );
+
+
+
+
+
+Measure "Male parent" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c025_t'
+        );
+
+
+
+
+
+
+Measure "Male parent" percent of "Total lone-parent families by sex of parent and number of children" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c025_t',
+        'denominator'
+      );
+
+
+Measure "Male parent" percent of "Total lone-parent families by sex of parent and number of children" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c025_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c020_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Male parent
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c026_t:
+
+1 child
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "1 child"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c026_t'
+      );
+
+
+
+
+
+Measure "1 child" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c026_t'
+        );
+
+
+
+
+
+
+Measure "1 child" percent of "Male parent" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c026_t',
+        'denominator'
+      );
+
+
+Measure "1 child" percent of "Male parent" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c026_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c025_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c027_t:
+
+2 children
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "2 children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c027_t'
+      );
+
+
+
+
+
+Measure "2 children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c027_t'
+        );
+
+
+
+
+
+
+Measure "2 children" percent of "Male parent" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c027_t',
+        'denominator'
+      );
+
+
+Measure "2 children" percent of "Male parent" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c027_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c025_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t005c028_t:
+
+3 or more children
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "3 or more children"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c028_t'
+      );
+
+
+
+
+
+Measure "3 or more children" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t005c028_t'
+        );
+
+
+
+
+
+
+Measure "3 or more children" percent of "Male parent" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t005c028_t',
+        'denominator'
+      );
+
+
+Measure "3 or more children" percent of "Male parent" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t005c028_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t005c025_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t008c002_f:
+
+Total population - First generation (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+'First generation' includes persons who were born outside Canada. For the most part, these are people who are now, or have ever been, immigrants to Canada.
+
+
+
+
+
+Measure "Total population - First generation (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c002_f'
+      );
+
+
+
+
+
+Measure "Total population - First generation (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t008c002_f'
+        );
+
+
+
+
+
+
+Measure "Total population - First generation (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c002_f',
+        'denominator'
+      );
+
+
+Measure "Total population - First generation (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t008c002_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t008c002_m:
+
+Total population - First generation (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+'First generation' includes persons who were born outside Canada. For the most part, these are people who are now, or have ever been, immigrants to Canada.
+
+
+
+
+
+Measure "Total population - First generation (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c002_m'
+      );
+
+
+
+
+
+Measure "Total population - First generation (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t008c002_m'
+        );
+
+
+
+
+
+
+Measure "Total population - First generation (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c002_m',
+        'denominator'
+      );
+
+
+Measure "Total population - First generation (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t008c002_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t008c002_t:
+
+Total population - First generation (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+'First generation' includes persons who were born outside Canada. For the most part, these are people who are now, or have ever been, immigrants to Canada.
+
+
+
+
+
+Measure "Total population - First generation (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c002_t'
+      );
+
+
+
+
+
+Measure "Total population - First generation (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t008c002_t'
+        );
+
+
+
+
+
+
+Measure "Total population - First generation (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c002_t',
+        'denominator'
+      );
+
+
+Measure "Total population - First generation (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t008c002_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t008c003_f:
+
+Total population - Second generation (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+'Second generation' includes persons who were born in Canada and had at least one parent born outside Canada. For the most part, these are the children of immigrants.
+
+
+
+
+
+Measure "Total population - Second generation (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c003_f'
+      );
+
+
+
+
+
+Measure "Total population - Second generation (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t008c003_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Second generation (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c003_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Second generation (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t008c003_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t008c003_m:
+
+Total population - Second generation (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+'Second generation' includes persons who were born in Canada and had at least one parent born outside Canada. For the most part, these are the children of immigrants.
+
+
+
+
+
+Measure "Total population - Second generation (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c003_m'
+      );
+
+
+
+
+
+Measure "Total population - Second generation (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t008c003_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Second generation (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c003_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Second generation (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t008c003_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t008c003_t:
+
+Total population - Second generation (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+'Second generation' includes persons who were born in Canada and had at least one parent born outside Canada. For the most part, these are the children of immigrants.
+
+
+
+
+
+Measure "Total population - Second generation (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c003_t'
+      );
+
+
+
+
+
+Measure "Total population - Second generation (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t008c003_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Second generation (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c003_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Second generation (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t008c003_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t008c004_f:
+
+Total population - Third generation or more (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+'Third generation or more' includes persons who were born in Canada with both parents born in Canada.
+
+
+
+
+
+Measure "Total population - Third generation or more (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c004_f'
+      );
+
+
+
+
+
+Measure "Total population - Third generation or more (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t008c004_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Third generation or more (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c004_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Third generation or more (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t008c004_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t008c004_m:
+
+Total population - Third generation or more (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+'Third generation or more' includes persons who were born in Canada with both parents born in Canada.
+
+
+
+
+
+Measure "Total population - Third generation or more (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c004_m'
+      );
+
+
+
+
+
+Measure "Total population - Third generation or more (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t008c004_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Third generation or more (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c004_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Third generation or more (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t008c004_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t008c004_t:
+
+Total population - Third generation or more (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+'Third generation or more' includes persons who were born in Canada with both parents born in Canada.
+
+
+
+
+
+Measure "Total population - Third generation or more (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c004_t'
+      );
+
+
+
+
+
+Measure "Total population - Third generation or more (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t008c004_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Third generation or more (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t008c004_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Third generation or more (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t008c004_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t009c001_f:
+
+Total population 15 years and over by marital status (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population 15 years and over by marital status (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c001_f'
+      );
+
+
+
+
+
+Measure "Total population 15 years and over by marital status (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c001_f'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total population 15 years and over by marital status (female)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c002_f:
+
+Married or living with a common-law partner (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Married or living with a common-law partner (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c002_f'
+      );
+
+
+
+
+
+Measure "Married or living with a common-law partner (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c002_f'
+        );
+
+
+
+
+
+
+Measure "Married or living with a common-law partner (female)" percent of "Total population 15 years and over by marital status (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c002_f',
+        'denominator'
+      );
+
+
+Measure "Married or living with a common-law partner (female)" percent of "Total population 15 years and over by marital status (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c002_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Married or living with a common-law partner (female)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c004_f:
+
+Living common law (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Living common law (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c004_f'
+      );
+
+
+
+
+
+Measure "Living common law (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c004_f'
+        );
+
+
+
+
+
+
+Measure "Living common law (female)" percent of "Married or living with a common-law partner (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c004_f',
+        'denominator'
+      );
+
+
+Measure "Living common law (female)" percent of "Married or living with a common-law partner (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c004_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c002_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c003_f:
+
+Married (and not separated) (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Married (and not separated) (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c003_f'
+      );
+
+
+
+
+
+Measure "Married (and not separated) (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c003_f'
+        );
+
+
+
+
+
+
+Measure "Married (and not separated) (female)" percent of "Married or living with a common-law partner (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c003_f',
+        'denominator'
+      );
+
+
+Measure "Married (and not separated) (female)" percent of "Married or living with a common-law partner (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c003_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c002_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c005_f:
+
+Not married and not living with a common-law partner (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Not married and not living with a common-law partner (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c005_f'
+      );
+
+
+
+
+
+Measure "Not married and not living with a common-law partner (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c005_f'
+        );
+
+
+
+
+
+
+Measure "Not married and not living with a common-law partner (female)" percent of "Total population 15 years and over by marital status (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c005_f',
+        'denominator'
+      );
+
+
+Measure "Not married and not living with a common-law partner (female)" percent of "Total population 15 years and over by marital status (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c005_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Not married and not living with a common-law partner (female)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c008_f:
+
+Divorced (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Divorced (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c008_f'
+      );
+
+
+
+
+
+Measure "Divorced (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c008_f'
+        );
+
+
+
+
+
+
+Measure "Divorced (female)" percent of "Not married and not living with a common-law partner (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c008_f',
+        'denominator'
+      );
+
+
+Measure "Divorced (female)" percent of "Not married and not living with a common-law partner (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c008_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c007_f:
+
+Separated (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Separated (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c007_f'
+      );
+
+
+
+
+
+Measure "Separated (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c007_f'
+        );
+
+
+
+
+
+
+Measure "Separated (female)" percent of "Not married and not living with a common-law partner (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c007_f',
+        'denominator'
+      );
+
+
+Measure "Separated (female)" percent of "Not married and not living with a common-law partner (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c007_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c006_f:
+
+Single (never legally married) (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Single (never legally married) (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c006_f'
+      );
+
+
+
+
+
+Measure "Single (never legally married) (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c006_f'
+        );
+
+
+
+
+
+
+Measure "Single (never legally married) (female)" percent of "Not married and not living with a common-law partner (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c006_f',
+        'denominator'
+      );
+
+
+Measure "Single (never legally married) (female)" percent of "Not married and not living with a common-law partner (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c006_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c009_f:
+
+Widowed (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Widowed (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c009_f'
+      );
+
+
+
+
+
+Measure "Widowed (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c009_f'
+        );
+
+
+
+
+
+
+Measure "Widowed (female)" percent of "Not married and not living with a common-law partner (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c009_f',
+        'denominator'
+      );
+
+
+Measure "Widowed (female)" percent of "Not married and not living with a common-law partner (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c009_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t009c001_m:
+
+Total population 15 years and over by marital status (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population 15 years and over by marital status (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c001_m'
+      );
+
+
+
+
+
+Measure "Total population 15 years and over by marital status (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c001_m'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total population 15 years and over by marital status (male)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c002_m:
+
+Married or living with a common-law partner (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Married or living with a common-law partner (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c002_m'
+      );
+
+
+
+
+
+Measure "Married or living with a common-law partner (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c002_m'
+        );
+
+
+
+
+
+
+Measure "Married or living with a common-law partner (male)" percent of "Total population 15 years and over by marital status (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c002_m',
+        'denominator'
+      );
+
+
+Measure "Married or living with a common-law partner (male)" percent of "Total population 15 years and over by marital status (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c002_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Married or living with a common-law partner (male)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c004_m:
+
+Living common law (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Living common law (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c004_m'
+      );
+
+
+
+
+
+Measure "Living common law (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c004_m'
+        );
+
+
+
+
+
+
+Measure "Living common law (male)" percent of "Married or living with a common-law partner (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c004_m',
+        'denominator'
+      );
+
+
+Measure "Living common law (male)" percent of "Married or living with a common-law partner (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c004_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c002_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c003_m:
+
+Married (and not separated) (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Married (and not separated) (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c003_m'
+      );
+
+
+
+
+
+Measure "Married (and not separated) (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c003_m'
+        );
+
+
+
+
+
+
+Measure "Married (and not separated) (male)" percent of "Married or living with a common-law partner (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c003_m',
+        'denominator'
+      );
+
+
+Measure "Married (and not separated) (male)" percent of "Married or living with a common-law partner (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c003_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c002_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c005_m:
+
+Not married and not living with a common-law partner (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Not married and not living with a common-law partner (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c005_m'
+      );
+
+
+
+
+
+Measure "Not married and not living with a common-law partner (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c005_m'
+        );
+
+
+
+
+
+
+Measure "Not married and not living with a common-law partner (male)" percent of "Total population 15 years and over by marital status (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c005_m',
+        'denominator'
+      );
+
+
+Measure "Not married and not living with a common-law partner (male)" percent of "Total population 15 years and over by marital status (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c005_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Not married and not living with a common-law partner (male)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c008_m:
+
+Divorced (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Divorced (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c008_m'
+      );
+
+
+
+
+
+Measure "Divorced (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c008_m'
+        );
+
+
+
+
+
+
+Measure "Divorced (male)" percent of "Not married and not living with a common-law partner (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c008_m',
+        'denominator'
+      );
+
+
+Measure "Divorced (male)" percent of "Not married and not living with a common-law partner (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c008_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c007_m:
+
+Separated (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Separated (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c007_m'
+      );
+
+
+
+
+
+Measure "Separated (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c007_m'
+        );
+
+
+
+
+
+
+Measure "Separated (male)" percent of "Not married and not living with a common-law partner (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c007_m',
+        'denominator'
+      );
+
+
+Measure "Separated (male)" percent of "Not married and not living with a common-law partner (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c007_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c006_m:
+
+Single (never legally married) (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Single (never legally married) (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c006_m'
+      );
+
+
+
+
+
+Measure "Single (never legally married) (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c006_m'
+        );
+
+
+
+
+
+
+Measure "Single (never legally married) (male)" percent of "Not married and not living with a common-law partner (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c006_m',
+        'denominator'
+      );
+
+
+Measure "Single (never legally married) (male)" percent of "Not married and not living with a common-law partner (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c006_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c009_m:
+
+Widowed (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Widowed (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c009_m'
+      );
+
+
+
+
+
+Measure "Widowed (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c009_m'
+        );
+
+
+
+
+
+
+Measure "Widowed (male)" percent of "Not married and not living with a common-law partner (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c009_m',
+        'denominator'
+      );
+
+
+Measure "Widowed (male)" percent of "Not married and not living with a common-law partner (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c009_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _ca.statcan.cols_census.t009c001_t:
+
+Total population 15 years and over by marital status (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population 15 years and over by marital status (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c001_t'
+      );
+
+
+
+
+
+Measure "Total population 15 years and over by marital status (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c001_t'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total population 15 years and over by marital status (total)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c002_t:
+
+Married or living with a common-law partner (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Married or living with a common-law partner (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c002_t'
+      );
+
+
+
+
+
+Measure "Married or living with a common-law partner (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c002_t'
+        );
+
+
+
+
+
+
+Measure "Married or living with a common-law partner (total)" percent of "Total population 15 years and over by marital status (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c002_t',
+        'denominator'
+      );
+
+
+Measure "Married or living with a common-law partner (total)" percent of "Total population 15 years and over by marital status (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c002_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Married or living with a common-law partner (total)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c004_t:
+
+Living common law (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Living common law (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c004_t'
+      );
+
+
+
+
+
+Measure "Living common law (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c004_t'
+        );
+
+
+
+
+
+
+Measure "Living common law (total)" percent of "Married or living with a common-law partner (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c004_t',
+        'denominator'
+      );
+
+
+Measure "Living common law (total)" percent of "Married or living with a common-law partner (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c004_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c002_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c003_t:
+
+Married (and not separated) (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Married (and not separated) (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c003_t'
+      );
+
+
+
+
+
+Measure "Married (and not separated) (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c003_t'
+        );
+
+
+
+
+
+
+Measure "Married (and not separated) (total)" percent of "Married or living with a common-law partner (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c003_t',
+        'denominator'
+      );
+
+
+Measure "Married (and not separated) (total)" percent of "Married or living with a common-law partner (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c003_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c002_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c005_t:
+
+Not married and not living with a common-law partner (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Not married and not living with a common-law partner (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c005_t'
+      );
+
+
+
+
+
+Measure "Not married and not living with a common-law partner (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c005_t'
+        );
+
+
+
+
+
+
+Measure "Not married and not living with a common-law partner (total)" percent of "Total population 15 years and over by marital status (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c005_t',
+        'denominator'
+      );
+
+
+Measure "Not married and not living with a common-law partner (total)" percent of "Total population 15 years and over by marital status (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c005_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Not married and not living with a common-law partner (total)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c008_t:
+
+Divorced (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Divorced (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c008_t'
+      );
+
+
+
+
+
+Measure "Divorced (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c008_t'
+        );
+
+
+
+
+
+
+Measure "Divorced (total)" percent of "Not married and not living with a common-law partner (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c008_t',
+        'denominator'
+      );
+
+
+Measure "Divorced (total)" percent of "Not married and not living with a common-law partner (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c008_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c007_t:
+
+Separated (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Separated (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c007_t'
+      );
+
+
+
+
+
+Measure "Separated (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c007_t'
+        );
+
+
+
+
+
+
+Measure "Separated (total)" percent of "Not married and not living with a common-law partner (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c007_t',
+        'denominator'
+      );
+
+
+Measure "Separated (total)" percent of "Not married and not living with a common-law partner (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c007_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c006_t:
+
+Single (never legally married) (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Single (never legally married) (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c006_t'
+      );
+
+
+
+
+
+Measure "Single (never legally married) (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c006_t'
+        );
+
+
+
+
+
+
+Measure "Single (never legally married) (total)" percent of "Not married and not living with a common-law partner (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c006_t',
+        'denominator'
+      );
+
+
+Measure "Single (never legally married) (total)" percent of "Not married and not living with a common-law partner (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c006_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_census.t009c009_t:
+
+Widowed (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Widowed (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c009_t'
+      );
+
+
+
+
+
+Measure "Widowed (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_census.t009c009_t'
+        );
+
+
+
+
+
+
+Measure "Widowed (total)" percent of "Not married and not living with a common-law partner (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_census.t009c009_t',
+        'denominator'
+      );
+
+
+Measure "Widowed (total)" percent of "Not married and not living with a common-law partner (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_census.t009c009_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_census.t009c005_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-census-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+
+

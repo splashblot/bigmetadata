@@ -1,0 +1,337 @@
+
+
+.. Nationality:
+
+Nationality
+===========================================================================
+
+Population breakdowns by nationality and place of birth.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _us.census.acs.B05001006:
+
+Not a U.S. Citizen Population
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B05001006.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people within each geography who indicated that they are not U.S. citizens.
+
+
+
+
+
+Measure "Not a U.S. Citizen Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B05001006'
+      );
+
+
+
+
+
+Measure "Not a U.S. Citizen Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B05001006'
+        );
+
+
+
+
+
+
+Measure "Not a U.S. Citizen Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B05001006',
+        'denominator'
+      );
+
+
+Measure "Not a U.S. Citizen Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B05001006',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+

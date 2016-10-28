@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>4.2. Boundaries &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="4. United Kingdom" href="../tags.uk.html" />
+    <link rel="next" title="&lt;no title&gt;" href="tags.commerce_economy.html" />
+    <link rel="prev" title="4.1. Age and Gender" href="tags.age_gender.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="boundaries">
+<h1>4.2. Boundaries<a class="headerlink" href="#boundaries" title="Permalink to this headline">¶</a></h1>
+<p>Political, administrative, and census-based boundaries.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#census-output-areas" id="id1">Census Output Areas</a></li>
+</ul>
+</div>
+<div class="section" id="census-output-areas">
+<span id="uk-cdrc-the-geom"></span><h2><a class="toc-backref" href="#id1">4.2.1. Census Output Areas</a><a class="headerlink" href="#census-output-areas" title="Permalink to this headline">¶</a></h2>
+<p>The smallest unit for which census data are published in the UK.  They contain at least 40 households and 100 persons, the target size being 125 households. They were built up from postcode blocks after the census data were available, with the intention of standardising population sizes, geographical shape and social homogeneity (in terms of dwelling types and housing tenure). The OAs generated in 2001 were retained as far as possible for the publication of outputs from the 2011 Census (less than 3% were changed). -<a class="reference external" href="https://en.wikipedia.org/wiki/ONS_coding_system#Geography_of_the_UK_Census">Wikipedia</a></p>
+<p>Obtain &#8220;Census Output Areas&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;uk.cdrc.the_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Census Output Areas&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;uk.cdrc.the_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">4.2. Boundaries</a><ul>
+<li><a class="reference internal" href="#census-output-areas">4.2.1. Census Output Areas</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../tags.uk.html">4. United Kingdom</a><ul>
+      <li>Previous: <a href="tags.age_gender.html" title="previous chapter">4.1. Age and Gender</a></li>
+      <li>Next: <a href="tags.commerce_economy.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/tags.uk/tags.boundary.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CartoDB.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="../_sources/tags.uk/tags.boundary.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

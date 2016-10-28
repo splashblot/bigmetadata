@@ -1,0 +1,119 @@
+
+
+.. Boundaries:
+
+Boundaries
+===========================================================================
+
+Political, administrative, and census-based boundaries.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _fr.insee.the_geom:
+
+IRIS and Commune areas
+---------------------------------------------------------------------------
+
+
+
+
+
+IRIS regions are defined by INSEE census for purposes of all municipalities of over 10000 inhabitants and most towns from 5000 to 10000. For areas in which IRIS is not defined, the commune area is given instead. 
+
+
+
+
+
+Obtain "IRIS and Commune areas" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(48.8608751447, 2.36137390137),
+      'fr.insee.the_geom'
+    )
+
+
+
+
+
+Obtain all "IRIS and Commune areas" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+      'fr.insee.the_geom'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+

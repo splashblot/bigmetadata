@@ -1,0 +1,211 @@
+
+
+.. Race and Ethnicity:
+
+Race and Ethnicity
+===========================================================================
+
+Population breakdowns by race and ethnicity. 
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.INDI19:
+
+Indigenous census households
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.INDI19.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Indigenous census households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI19'
+      );
+
+
+
+
+
+Measure "Indigenous census households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI19'
+        );
+
+
+
+
+
+
+Measure "Indigenous census households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI19',
+        'denominator'
+      );
+
+
+Measure "Indigenous census households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI19',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.HOGAR1`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.INDI20:
+
+Population in indigenous census households
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.INDI20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population in indigenous census households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI20'
+      );
+
+
+
+
+
+Measure "Population in indigenous census households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI20'
+        );
+
+
+
+
+
+
+Measure "Population in indigenous census households" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI20',
+        'denominator'
+      );
+
+
+Measure "Population in indigenous census households" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+

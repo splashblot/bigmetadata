@@ -1,0 +1,607 @@
+
+
+.. Health:
+
+Health
+===========================================================================
+
+Breakdowns of the population by health
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.SALUD1:
+
+Population entitled to health services
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.SALUD1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population entitled to health services"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD1'
+      );
+
+
+
+
+
+Measure "Population entitled to health services" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.SALUD1'
+        );
+
+
+
+
+
+
+Measure "Population entitled to health services" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD1',
+        'denominator'
+      );
+
+
+Measure "Population entitled to health services" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.SALUD1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD3:
+
+Population with IMSS
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.SALUD3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population with IMSS"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD3'
+      );
+
+
+
+
+
+Measure "Population with IMSS" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.SALUD3'
+        );
+
+
+
+
+
+
+Measure "Population with IMSS" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD3',
+        'denominator'
+      );
+
+
+Measure "Population with IMSS" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.SALUD3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD4:
+
+Population with ISSSTE or state ISSSTE
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.SALUD4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population with ISSSTE or state ISSSTE"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD4'
+      );
+
+
+
+
+
+Measure "Population with ISSSTE or state ISSSTE" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.SALUD4'
+        );
+
+
+
+
+
+
+Measure "Population with ISSSTE or state ISSSTE" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD4',
+        'denominator'
+      );
+
+
+Measure "Population with ISSSTE or state ISSSTE" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.SALUD4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD6:
+
+Population with Pemex, Sedena or Semar
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.SALUD6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population with Pemex, Sedena or Semar"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD6'
+      );
+
+
+
+
+
+Measure "Population with Pemex, Sedena or Semar" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.SALUD6'
+        );
+
+
+
+
+
+
+Measure "Population with Pemex, Sedena or Semar" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD6',
+        'denominator'
+      );
+
+
+Measure "Population with Pemex, Sedena or Semar" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.SALUD6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD5:
+
+Population with Seguro Popular or Seguro Medico para una Nueva Generacion
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.SALUD5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population with Seguro Popular or Seguro Medico para una Nueva Generacion"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD5'
+      );
+
+
+
+
+
+Measure "Population with Seguro Popular or Seguro Medico para una Nueva Generacion" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.SALUD5'
+        );
+
+
+
+
+
+
+Measure "Population with Seguro Popular or Seguro Medico para una Nueva Generacion" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD5',
+        'denominator'
+      );
+
+
+Measure "Population with Seguro Popular or Seguro Medico para una Nueva Generacion" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.SALUD5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD2:
+
+Population without access to health services
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.SALUD2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population without access to health services"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD2'
+      );
+
+
+
+
+
+Measure "Population without access to health services" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.SALUD2'
+        );
+
+
+
+
+
+
+Measure "Population without access to health services" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.SALUD2',
+        'denominator'
+      );
+
+
+Measure "Population without access to health services" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.SALUD2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+

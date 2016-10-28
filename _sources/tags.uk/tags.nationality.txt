@@ -1,0 +1,2133 @@
+
+
+.. Nationality:
+
+Nationality
+===========================================================================
+
+Population breakdowns by nationality and place of birth.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _uk.ons.LC2205EW0136:
+
+Born in Africa
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Born in Africa"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0136'
+      );
+
+
+
+
+
+Measure "Born in Africa" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0136'
+        );
+
+
+
+
+
+
+Measure "Born in Africa" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0136',
+        'denominator'
+      );
+
+
+Measure "Born in Africa" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0136',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+.. contents:: Subcolumns of Born in Africa
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC2205EW0154:
+
+Born in Central and Western Africa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in Central and Western Africa"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0154'
+      );
+
+
+
+
+
+Measure "Born in Central and Western Africa" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0154'
+        );
+
+
+
+
+
+
+Measure "Born in Central and Western Africa" percent of "Born in Africa" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0154',
+        'denominator'
+      );
+
+
+Measure "Born in Central and Western Africa" percent of "Born in Africa" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0154',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0136`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0145:
+
+Born in North Africa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in North Africa"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0145'
+      );
+
+
+
+
+
+Measure "Born in North Africa" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0145'
+        );
+
+
+
+
+
+
+Measure "Born in North Africa" percent of "Born in Africa" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0145',
+        'denominator'
+      );
+
+
+Measure "Born in North Africa" percent of "Born in Africa" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0145',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0136`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0163:
+
+Born in South and Eastern Africa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in South and Eastern Africa"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0163'
+      );
+
+
+
+
+
+Measure "Born in South and Eastern Africa" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0163'
+        );
+
+
+
+
+
+
+Measure "Born in South and Eastern Africa" percent of "Born in Africa" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0163',
+        'denominator'
+      );
+
+
+Measure "Born in South and Eastern Africa" percent of "Born in Africa" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0163',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0136`
+
+
+
+  
+  
+
+
+
+
+
+
+.. _uk.ons.LC2205EW0262:
+
+Born in Australia, Australaisa, Oceania, and Antarctica
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Born in Australia, Australaisa, Oceania, and Antarctica"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0262'
+      );
+
+
+
+
+
+Measure "Born in Australia, Australaisa, Oceania, and Antarctica" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0262'
+        );
+
+
+
+
+
+
+Measure "Born in Australia, Australaisa, Oceania, and Antarctica" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0262',
+        'denominator'
+      );
+
+
+Measure "Born in Australia, Australaisa, Oceania, and Antarctica" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0262',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2205EW0010:
+
+Born in Europe
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Born in Europe"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0010'
+      );
+
+
+
+
+
+Measure "Born in Europe" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0010'
+        );
+
+
+
+
+
+
+Measure "Born in Europe" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0010',
+        'denominator'
+      );
+
+
+Measure "Born in Europe" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0010',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+.. contents:: Subcolumns of Born in Europe
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC2205EW0019:
+
+Born in the UK
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in the UK"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0019'
+      );
+
+
+
+
+
+Measure "Born in the UK" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0019'
+        );
+
+
+
+
+
+
+Measure "Born in the UK" percent of "Born in Europe" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0019',
+        'denominator'
+      );
+
+
+Measure "Born in the UK" percent of "Born in Europe" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0019',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0010`
+
+
+
+.. contents:: Subcolumns of Born in the UK
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC2205EW0028:
+
+Born in England
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Born in England"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0028'
+      );
+
+
+
+
+
+Measure "Born in England" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0028'
+        );
+
+
+
+
+
+
+Measure "Born in England" percent of "Born in the UK" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0028',
+        'denominator'
+      );
+
+
+Measure "Born in England" percent of "Born in the UK" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0028',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0019`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0037:
+
+Born in Northern Ireland
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Born in Northern Ireland"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0037'
+      );
+
+
+
+
+
+Measure "Born in Northern Ireland" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0037'
+        );
+
+
+
+
+
+
+Measure "Born in Northern Ireland" percent of "Born in the UK" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0037',
+        'denominator'
+      );
+
+
+Measure "Born in Northern Ireland" percent of "Born in the UK" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0037',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0019`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0046:
+
+Born in Scotland
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Born in Scotland"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0046'
+      );
+
+
+
+
+
+Measure "Born in Scotland" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0046'
+        );
+
+
+
+
+
+
+Measure "Born in Scotland" percent of "Born in the UK" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0046',
+        'denominator'
+      );
+
+
+Measure "Born in Scotland" percent of "Born in the UK" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0046',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0019`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0055:
+
+Born in Wales
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Born in Wales"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0055'
+      );
+
+
+
+
+
+Measure "Born in Wales" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0055'
+        );
+
+
+
+
+
+
+Measure "Born in Wales" percent of "Born in the UK" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0055',
+        'denominator'
+      );
+
+
+Measure "Born in Wales" percent of "Born in the UK" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0055',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0019`
+
+
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _uk.ons.LC2205EW0091:
+
+Born in Europe outside the UK and Ireland
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Born in Europe outside the UK and Ireland"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0091'
+      );
+
+
+
+
+
+Measure "Born in Europe outside the UK and Ireland" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0091'
+        );
+
+
+
+
+
+
+Measure "Born in Europe outside the UK and Ireland" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0091',
+        'denominator'
+      );
+
+
+Measure "Born in Europe outside the UK and Ireland" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0091',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2205EW0082:
+
+Born in Ireland
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Born in Ireland"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0082'
+      );
+
+
+
+
+
+Measure "Born in Ireland" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0082'
+        );
+
+
+
+
+
+
+Measure "Born in Ireland" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0082',
+        'denominator'
+      );
+
+
+Measure "Born in Ireland" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0082',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2205EW0235:
+
+Born in the Americas and Caribbean
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Born in the Americas and Caribbean"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0235'
+      );
+
+
+
+
+
+Measure "Born in the Americas and Caribbean" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0235'
+        );
+
+
+
+
+
+
+Measure "Born in the Americas and Caribbean" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0235',
+        'denominator'
+      );
+
+
+Measure "Born in the Americas and Caribbean" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0235',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+.. contents:: Subcolumns of Born in the Americas and Caribbean
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC2205EW0253:
+
+Born in Central and South America
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in Central and South America"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0253'
+      );
+
+
+
+
+
+Measure "Born in Central and South America" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0253'
+        );
+
+
+
+
+
+
+Measure "Born in Central and South America" percent of "Born in the Americas and Caribbean" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0253',
+        'denominator'
+      );
+
+
+Measure "Born in Central and South America" percent of "Born in the Americas and Caribbean" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0253',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0235`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0244:
+
+Born in North America
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in North America"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0244'
+      );
+
+
+
+
+
+Measure "Born in North America" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0244'
+        );
+
+
+
+
+
+
+Measure "Born in North America" percent of "Born in the Americas and Caribbean" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0244',
+        'denominator'
+      );
+
+
+Measure "Born in North America" percent of "Born in the Americas and Caribbean" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0244',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0235`
+
+
+
+  
+  
+
+
+
+
+
+
+.. _uk.ons.LC2205EW0181:
+
+Born in the Middle East and Asia
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Born in the Middle East and Asia"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0181'
+      );
+
+
+
+
+
+Measure "Born in the Middle East and Asia" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0181'
+        );
+
+
+
+
+
+
+Measure "Born in the Middle East and Asia" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0181',
+        'denominator'
+      );
+
+
+Measure "Born in the Middle East and Asia" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0181',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+.. contents:: Subcolumns of Born in the Middle East and Asia
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC2205EW0226:
+
+Born in Central Asia
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in Central Asia"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0226'
+      );
+
+
+
+
+
+Measure "Born in Central Asia" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0226'
+        );
+
+
+
+
+
+
+Measure "Born in Central Asia" percent of "Born in the Middle East and Asia" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0226',
+        'denominator'
+      );
+
+
+Measure "Born in Central Asia" percent of "Born in the Middle East and Asia" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0226',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0181`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0199:
+
+Born in Eastern Asia
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in Eastern Asia"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0199'
+      );
+
+
+
+
+
+Measure "Born in Eastern Asia" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0199'
+        );
+
+
+
+
+
+
+Measure "Born in Eastern Asia" percent of "Born in the Middle East and Asia" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0199',
+        'denominator'
+      );
+
+
+Measure "Born in Eastern Asia" percent of "Born in the Middle East and Asia" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0199',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0181`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0217:
+
+Born in Southeast Asia
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in Southeast Asia"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0217'
+      );
+
+
+
+
+
+Measure "Born in Southeast Asia" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0217'
+        );
+
+
+
+
+
+
+Measure "Born in Southeast Asia" percent of "Born in the Middle East and Asia" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0217',
+        'denominator'
+      );
+
+
+Measure "Born in Southeast Asia" percent of "Born in the Middle East and Asia" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0217',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0181`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0208:
+
+Born in Southern Asia
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in Southern Asia"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0208'
+      );
+
+
+
+
+
+Measure "Born in Southern Asia" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0208'
+        );
+
+
+
+
+
+
+Measure "Born in Southern Asia" percent of "Born in the Middle East and Asia" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0208',
+        'denominator'
+      );
+
+
+Measure "Born in Southern Asia" percent of "Born in the Middle East and Asia" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0208',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0181`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2205EW0190:
+
+Born in the Middle East
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Born in the Middle East"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0190'
+      );
+
+
+
+
+
+Measure "Born in the Middle East" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2205EW0190'
+        );
+
+
+
+
+
+
+Measure "Born in the Middle East" percent of "Born in the Middle East and Asia" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2205EW0190',
+        'denominator'
+      );
+
+
+Measure "Born in the Middle East" percent of "Born in the Middle East and Asia" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2205EW0190',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2205EW0181`
+
+
+
+  
+  
+
+

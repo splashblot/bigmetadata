@@ -1,0 +1,409 @@
+
+
+.. Religion:
+
+Religion
+===========================================================================
+
+Breakdowns of the population by religion.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.RELIG1:
+
+Catholic population
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.RELIG1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Catholic population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.RELIG1'
+      );
+
+
+
+
+
+Measure "Catholic population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.RELIG1'
+        );
+
+
+
+
+
+
+Measure "Catholic population" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.RELIG1',
+        'denominator'
+      );
+
+
+Measure "Catholic population" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.RELIG1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.RELIG4:
+
+Population with no religion
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.RELIG4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population with no religion"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.RELIG4'
+      );
+
+
+
+
+
+Measure "Population with no religion" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.RELIG4'
+        );
+
+
+
+
+
+
+Measure "Population with no religion" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.RELIG4',
+        'denominator'
+      );
+
+
+Measure "Population with no religion" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.RELIG4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.RELIG3:
+
+Population with other religion
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.RELIG3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population with other religion"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.RELIG3'
+      );
+
+
+
+
+
+Measure "Population with other religion" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.RELIG3'
+        );
+
+
+
+
+
+
+Measure "Population with other religion" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.RELIG3',
+        'denominator'
+      );
+
+
+Measure "Population with other religion" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.RELIG3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.RELIG2:
+
+Protestant and evangelical population
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.RELIG2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Protestant and evangelical population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.RELIG2'
+      );
+
+
+
+
+
+Measure "Protestant and evangelical population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.RELIG2'
+        );
+
+
+
+
+
+
+Measure "Protestant and evangelical population" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.RELIG2',
+        'denominator'
+      );
+
+
+Measure "Protestant and evangelical population" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.RELIG2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+
+

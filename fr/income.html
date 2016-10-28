@@ -1,0 +1,1691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>5.7. Income &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="5. France" href="../fr.html" />
+    <link rel="next" title="&lt;no title&gt;" href="language.html" />
+    <link rel="prev" title="5.6. Housing" href="housing.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="income">
+<h1>5.7. Income<a class="headerlink" href="#income" title="Permalink to this headline">¶</a></h1>
+<p>How much people earn.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#er-decile-du-revenu-disponible-par-unite-de-consommation-en-euros" id="id17">1er décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#er-decile-du-revenu-declare-par-unite-de-consommation-en-euros" id="id18">1er décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#e-decile-du-revenu-disponible-par-unite-de-consommation-en-euros" id="id19">2e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#e-decile-du-revenu-declare-par-unite-de-consommation-en-euros" id="id20">2e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d312" id="id21">3e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d312" id="id22">3e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d412" id="id23">4e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d412" id="id24">4e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d612" id="id25">6e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d612" id="id26">6e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d712" id="id27">7e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d712" id="id28">7e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d812" id="id29">8e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d812" id="id30">8e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d912" id="id31">9e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d912" id="id32">9e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#mediane-du-revenu-disponible-par-unite-de-consommation-en-euros" id="id33">Médiane du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#mediane-du-revenu-declare-par-unite-de-consommation-en-euros" id="id34">Médiane du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#nombre-d-unites-de-consommation-dans-les-menages-fiscaux" id="id35">Nombre d&#8217;unités de consommation dans les ménages fiscaux</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-nbuc12" id="id36">Nombre d&#8217;unités de consommation dans les ménages fiscaux</a></li>
+<li><a class="reference internal" href="#nombre-de-menages-fiscaux" id="id37">Nombre de ménages fiscaux</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-nbmenfisc12" id="id38">Nombre de ménages fiscaux</a></li>
+<li><a class="reference internal" href="#nombre-de-personnes-dans-les-menages-fiscaux" id="id39">Nombre de personnes dans les ménages fiscaux</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-nbpersmenfisc12" id="id40">Nombre de personnes dans les ménages fiscaux</a></li>
+<li><a class="reference internal" href="#part-de-l-ensemble-des-prestations-sociales" id="id41">Part de l&#8217;ensemble des prestations sociales (%)</a></li>
+<li><a class="reference internal" href="#part-des-autres-revenus-essentiellement-des-revenus-du-patrimoine" id="id42">Part des autres revenus (essentiellement des revenus du patrimoine) (%)</a></li>
+<li><a class="reference internal" href="#part-des-impots" id="id43">Part des impôts (%)</a></li>
+<li><a class="reference internal" href="#part-des-indemnites-de-chomage" id="id44">Part des indemnités de chômage (%)</a></li>
+<li><a class="reference internal" href="#part-des-menages-fiscaux-imposes" id="id45">Part des ménages fiscaux imposés (%)</a></li>
+<li><a class="reference internal" href="#part-des-pensions-retraites-et-rentes" id="id46">Part des pensions, retraites et rentes (%)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-ppen12" id="id47">Part des pensions, retraites et rentes (%)</a></li>
+<li><a class="reference internal" href="#part-des-revenus-d-activites-salariees-et-non-salariees-hors-indemnites-de-chomage" id="id48">Part des revenus d&#8217;activités (salariées et non salariées), hors indemnités de chômage (%)</a></li>
+<li><a class="reference internal" href="#part-des-revenus-d-activites-salariees-et-non-salariees-y-compris-indemnites-de-chomage" id="id49">Part des revenus d&#8217;activités (salariées et non salariées), y compris indemnités de chômage (%)</a></li>
+<li><a class="reference internal" href="#part-des-revenus-du-patrimoine" id="id50">Part des revenus du patrimoine (%)</a></li>
+<li><a class="reference internal" href="#rapport-interdecile-d9-d1-du-revenu-disponible-par-unite-de-consommation" id="id51">Rapport interdécile D9/D1 du revenu disponible par unité de consommation</a></li>
+<li><a class="reference internal" href="#rapport-interdecile-d9-d1-du-revenu-declare-par-unite-de-consommation" id="id52">Rapport interdécile D9/D1 du revenu déclaré par unité de consommation</a></li>
+<li><a class="reference internal" href="#taux-de-bas-revenus-declares-au-seuil-de-60-du-revenu-declare-par-unite-de-consommation-median-metropolitain" id="id53">Taux de bas revenus déclarés au seuil de 60 % du revenu déclaré par unité de consommation médian métropolitain (%)</a></li>
+<li><a class="reference internal" href="#taux-de-pauvrete-au-seuil-de-60-du-revenu-disponible-par-uc-median-metropolitain" id="id54">Taux de pauvreté au seuil de 60 % du revenu disponible par UC médian métropolitain (%)</a></li>
+<li><a class="reference internal" href="#dont-part-des-minima-sociaux" id="id55">dont part des minima sociaux (%)</a></li>
+<li><a class="reference internal" href="#dont-part-des-prestations-familiales" id="id56">dont part des prestations familiales (%)</a></li>
+<li><a class="reference internal" href="#dont-part-des-prestations-logement" id="id57">dont part des prestations logement (%)</a></li>
+</ul>
+</div>
+<div class="section" id="er-decile-du-revenu-disponible-par-unite-de-consommation-en-euros">
+<span id="fr-fr-income-disp-d112"></span><h2><a class="toc-backref" href="#id17">5.7.1. 1er décile du revenu disponible par unité de consommation (en euros)</a><a class="headerlink" href="#er-decile-du-revenu-disponible-par-unite-de-consommation-en-euros" title="Permalink to this headline">¶</a></h2>
+<p>1er décile du revenu disponible par unité de consommation (en euros)</p>
+<p>Measure &#8220;1er décile du revenu disponible par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_D112&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>1er décile du revenu disponible par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="er-decile-du-revenu-declare-par-unite-de-consommation-en-euros">
+<span id="fr-fr-income-dec-d112"></span><h2><a class="toc-backref" href="#id18">5.7.2. 1er décile du revenu déclaré par unité de consommation (en euros)</a><a class="headerlink" href="#er-decile-du-revenu-declare-par-unite-de-consommation-en-euros" title="Permalink to this headline">¶</a></h2>
+<p>1er décile du revenu déclaré par unité de consommation (en euros)</p>
+<p>Measure &#8220;1er décile du revenu déclaré par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_D112&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>1er décile du revenu déclaré par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="e-decile-du-revenu-disponible-par-unite-de-consommation-en-euros">
+<span id="fr-fr-income-disp-d212"></span><h2><a class="toc-backref" href="#id19">5.7.3. 2e décile du revenu disponible par unité de consommation (en euros)</a><a class="headerlink" href="#e-decile-du-revenu-disponible-par-unite-de-consommation-en-euros" title="Permalink to this headline">¶</a></h2>
+<p>2e décile du revenu disponible par unité de consommation (en euros)</p>
+<p>Measure &#8220;2e décile du revenu disponible par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_D212&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>2e décile du revenu disponible par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="e-decile-du-revenu-declare-par-unite-de-consommation-en-euros">
+<span id="fr-fr-income-dec-d212"></span><h2><a class="toc-backref" href="#id20">5.7.4. 2e décile du revenu déclaré par unité de consommation (en euros)</a><a class="headerlink" href="#e-decile-du-revenu-declare-par-unite-de-consommation-en-euros" title="Permalink to this headline">¶</a></h2>
+<p>2e décile du revenu déclaré par unité de consommation (en euros)</p>
+<p>Measure &#8220;2e décile du revenu déclaré par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_D212&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>2e décile du revenu déclaré par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-d312">
+<span id="id1"></span><h2><a class="toc-backref" href="#id21">5.7.5. 3e décile du revenu disponible par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-disp-d312" title="Permalink to this headline">¶</a></h2>
+<p>3e décile du revenu disponible par unité de consommation (en euros)</p>
+<p>Measure &#8220;3e décile du revenu disponible par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_D312&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>3e décile du revenu disponible par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-dec-d312">
+<span id="id2"></span><h2><a class="toc-backref" href="#id22">5.7.6. 3e décile du revenu déclaré par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-dec-d312" title="Permalink to this headline">¶</a></h2>
+<p>3e décile du revenu déclaré par unité de consommation (en euros)</p>
+<p>Measure &#8220;3e décile du revenu déclaré par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_D312&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>3e décile du revenu déclaré par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-d412">
+<span id="id3"></span><h2><a class="toc-backref" href="#id23">5.7.7. 4e décile du revenu disponible par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-disp-d412" title="Permalink to this headline">¶</a></h2>
+<p>4e décile du revenu disponible par unité de consommation (en euros)</p>
+<p>Measure &#8220;4e décile du revenu disponible par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_D412&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>4e décile du revenu disponible par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-dec-d412">
+<span id="id4"></span><h2><a class="toc-backref" href="#id24">5.7.8. 4e décile du revenu déclaré par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-dec-d412" title="Permalink to this headline">¶</a></h2>
+<p>4e décile du revenu déclaré par unité de consommation (en euros)</p>
+<p>Measure &#8220;4e décile du revenu déclaré par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_D412&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>4e décile du revenu déclaré par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-d612">
+<span id="id5"></span><h2><a class="toc-backref" href="#id25">5.7.9. 6e décile du revenu disponible par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-disp-d612" title="Permalink to this headline">¶</a></h2>
+<p>6e décile du revenu disponible par unité de consommation (en euros)</p>
+<p>Measure &#8220;6e décile du revenu disponible par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_D612&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>6e décile du revenu disponible par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-dec-d612">
+<span id="id6"></span><h2><a class="toc-backref" href="#id26">5.7.10. 6e décile du revenu déclaré par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-dec-d612" title="Permalink to this headline">¶</a></h2>
+<p>6e décile du revenu déclaré par unité de consommation (en euros)</p>
+<p>Measure &#8220;6e décile du revenu déclaré par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_D612&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>6e décile du revenu déclaré par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-d712">
+<span id="id7"></span><h2><a class="toc-backref" href="#id27">5.7.11. 7e décile du revenu disponible par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-disp-d712" title="Permalink to this headline">¶</a></h2>
+<p>7e décile du revenu disponible par unité de consommation (en euros)</p>
+<p>Measure &#8220;7e décile du revenu disponible par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_D712&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>7e décile du revenu disponible par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-dec-d712">
+<span id="id8"></span><h2><a class="toc-backref" href="#id28">5.7.12. 7e décile du revenu déclaré par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-dec-d712" title="Permalink to this headline">¶</a></h2>
+<p>7e décile du revenu déclaré par unité de consommation (en euros)</p>
+<p>Measure &#8220;7e décile du revenu déclaré par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_D712&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>7e décile du revenu déclaré par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-d812">
+<span id="id9"></span><h2><a class="toc-backref" href="#id29">5.7.13. 8e décile du revenu disponible par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-disp-d812" title="Permalink to this headline">¶</a></h2>
+<p>8e décile du revenu disponible par unité de consommation (en euros)</p>
+<p>Measure &#8220;8e décile du revenu disponible par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_D812&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>8e décile du revenu disponible par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-dec-d812">
+<span id="id10"></span><h2><a class="toc-backref" href="#id30">5.7.14. 8e décile du revenu déclaré par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-dec-d812" title="Permalink to this headline">¶</a></h2>
+<p>8e décile du revenu déclaré par unité de consommation (en euros)</p>
+<p>Measure &#8220;8e décile du revenu déclaré par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_D812&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>8e décile du revenu déclaré par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-d912">
+<span id="id11"></span><h2><a class="toc-backref" href="#id31">5.7.15. 9e décile du revenu disponible par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-disp-d912" title="Permalink to this headline">¶</a></h2>
+<p>9e décile du revenu disponible par unité de consommation (en euros)</p>
+<p>Measure &#8220;9e décile du revenu disponible par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_D912&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>9e décile du revenu disponible par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-dec-d912">
+<span id="id12"></span><h2><a class="toc-backref" href="#id32">5.7.16. 9e décile du revenu déclaré par unité de consommation (en euros)</a><a class="headerlink" href="#fr-fr-income-dec-d912" title="Permalink to this headline">¶</a></h2>
+<p>9e décile du revenu déclaré par unité de consommation (en euros)</p>
+<p>Measure &#8220;9e décile du revenu déclaré par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_D912&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>9e décile du revenu déclaré par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mediane-du-revenu-disponible-par-unite-de-consommation-en-euros">
+<span id="fr-fr-income-disp-med12"></span><h2><a class="toc-backref" href="#id33">5.7.17. Médiane du revenu disponible par unité de consommation (en euros)</a><a class="headerlink" href="#mediane-du-revenu-disponible-par-unite-de-consommation-en-euros" title="Permalink to this headline">¶</a></h2>
+<p>Médiane du revenu disponible par unité de consommation (en euros)</p>
+<p>Measure &#8220;Médiane du revenu disponible par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_MED12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Médiane du revenu disponible par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mediane-du-revenu-declare-par-unite-de-consommation-en-euros">
+<span id="fr-fr-income-dec-med12"></span><h2><a class="toc-backref" href="#id34">5.7.18. Médiane du revenu déclaré par unité de consommation (en euros)</a><a class="headerlink" href="#mediane-du-revenu-declare-par-unite-de-consommation-en-euros" title="Permalink to this headline">¶</a></h2>
+<p>Médiane du revenu déclaré par unité de consommation (en euros)</p>
+<p>Measure &#8220;Médiane du revenu déclaré par unité de consommation (en euros)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_MED12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Médiane du revenu déclaré par unité de consommation (en euros) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nombre-d-unites-de-consommation-dans-les-menages-fiscaux">
+<span id="fr-fr-income-dec-nbuc12"></span><h2><a class="toc-backref" href="#id35">5.7.19. Nombre d&#8217;unités de consommation dans les ménages fiscaux</a><a class="headerlink" href="#nombre-d-unites-de-consommation-dans-les-menages-fiscaux" title="Permalink to this headline">¶</a></h2>
+<p>Nombre d&#8217;unités de consommation dans les ménages fiscaux</p>
+<p>Measure &#8220;Nombre d&#8217;unités de consommation dans les ménages fiscaux&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_NBUC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Nombre d&#8217;unités de consommation dans les ménages fiscaux&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_NBUC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Universe:</th><td class="field-body"><a class="reference internal" href="#fr-fr-income-dec-nbmenfisc12"><span class="std std-ref">Nombre de ménages fiscaux</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-nbuc12">
+<span id="id13"></span><h2><a class="toc-backref" href="#id36">5.7.20. Nombre d&#8217;unités de consommation dans les ménages fiscaux</a><a class="headerlink" href="#fr-fr-income-disp-nbuc12" title="Permalink to this headline">¶</a></h2>
+<p>Nombre d&#8217;unités de consommation dans les ménages fiscaux</p>
+<p>Measure &#8220;Nombre d&#8217;unités de consommation dans les ménages fiscaux&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_NBUC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Nombre d&#8217;unités de consommation dans les ménages fiscaux&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_NBUC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Universe:</th><td class="field-body"><a class="reference internal" href="#fr-fr-income-disp-nbmenfisc12"><span class="std std-ref">Nombre de ménages fiscaux</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nombre-de-menages-fiscaux">
+<span id="fr-fr-income-dec-nbmenfisc12"></span><h2><a class="toc-backref" href="#id37">5.7.21. Nombre de ménages fiscaux</a><a class="headerlink" href="#nombre-de-menages-fiscaux" title="Permalink to this headline">¶</a></h2>
+<p>Nombre de ménages fiscaux</p>
+<p>Measure &#8220;Nombre de ménages fiscaux&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_NBMENFISC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Nombre de ménages fiscaux&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_NBMENFISC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-nbmenfisc12">
+<span id="id14"></span><h2><a class="toc-backref" href="#id38">5.7.22. Nombre de ménages fiscaux</a><a class="headerlink" href="#fr-fr-income-disp-nbmenfisc12" title="Permalink to this headline">¶</a></h2>
+<p>Nombre de ménages fiscaux</p>
+<p>Measure &#8220;Nombre de ménages fiscaux&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_NBMENFISC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Nombre de ménages fiscaux&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_NBMENFISC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nombre-de-personnes-dans-les-menages-fiscaux">
+<span id="fr-fr-income-dec-nbpersmenfisc12"></span><h2><a class="toc-backref" href="#id39">5.7.23. Nombre de personnes dans les ménages fiscaux</a><a class="headerlink" href="#nombre-de-personnes-dans-les-menages-fiscaux" title="Permalink to this headline">¶</a></h2>
+<p>Nombre de personnes dans les ménages fiscaux</p>
+<p>Measure &#8220;Nombre de personnes dans les ménages fiscaux&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_NBPERSMENFISC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Nombre de personnes dans les ménages fiscaux&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_NBPERSMENFISC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Universe:</th><td class="field-body"><a class="reference internal" href="#fr-fr-income-dec-nbmenfisc12"><span class="std std-ref">Nombre de ménages fiscaux</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-nbpersmenfisc12">
+<span id="id15"></span><h2><a class="toc-backref" href="#id40">5.7.24. Nombre de personnes dans les ménages fiscaux</a><a class="headerlink" href="#fr-fr-income-disp-nbpersmenfisc12" title="Permalink to this headline">¶</a></h2>
+<p>Nombre de personnes dans les ménages fiscaux</p>
+<p>Measure &#8220;Nombre de personnes dans les ménages fiscaux&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_NBPERSMENFISC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Nombre de personnes dans les ménages fiscaux&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_NBPERSMENFISC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Universe:</th><td class="field-body"><a class="reference internal" href="#fr-fr-income-disp-nbmenfisc12"><span class="std std-ref">Nombre de ménages fiscaux</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-de-l-ensemble-des-prestations-sociales">
+<span id="fr-fr-income-disp-ppsoc12"></span><h2><a class="toc-backref" href="#id41">5.7.25. Part de l&#8217;ensemble des prestations sociales (%)</a><a class="headerlink" href="#part-de-l-ensemble-des-prestations-sociales" title="Permalink to this headline">¶</a></h2>
+<p>Part de l&#8217;ensemble des prestations sociales (%)</p>
+<p>Measure &#8220;Part de l&#8217;ensemble des prestations sociales (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_PPSOC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part de l&#8217;ensemble des prestations sociales (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-des-autres-revenus-essentiellement-des-revenus-du-patrimoine">
+<span id="fr-fr-income-dec-paut12"></span><h2><a class="toc-backref" href="#id42">5.7.26. Part des autres revenus (essentiellement des revenus du patrimoine) (%)</a><a class="headerlink" href="#part-des-autres-revenus-essentiellement-des-revenus-du-patrimoine" title="Permalink to this headline">¶</a></h2>
+<p>Part des autres revenus (essentiellement des revenus du patrimoine) (%)</p>
+<p>Measure &#8220;Part des autres revenus (essentiellement des revenus du patrimoine) (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_PAUT12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part des autres revenus (essentiellement des revenus du patrimoine) (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-des-impots">
+<span id="fr-fr-income-disp-pimpot12"></span><h2><a class="toc-backref" href="#id43">5.7.27. Part des impôts (%)</a><a class="headerlink" href="#part-des-impots" title="Permalink to this headline">¶</a></h2>
+<p>Part des impôts (%)</p>
+<p>Measure &#8220;Part des impôts (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_PIMPOT12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part des impôts (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-des-indemnites-de-chomage">
+<span id="fr-fr-income-dec-pcho12"></span><h2><a class="toc-backref" href="#id44">5.7.28. Part des indemnités de chômage (%)</a><a class="headerlink" href="#part-des-indemnites-de-chomage" title="Permalink to this headline">¶</a></h2>
+<p>Part des indemnités de chômage (%)</p>
+<p>Measure &#8220;Part des indemnités de chômage (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_PCHO12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part des indemnités de chômage (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-des-menages-fiscaux-imposes">
+<span id="fr-fr-income-dec-pimp12"></span><h2><a class="toc-backref" href="#id45">5.7.29. Part des ménages fiscaux imposés (%)</a><a class="headerlink" href="#part-des-menages-fiscaux-imposes" title="Permalink to this headline">¶</a></h2>
+<p>Part des ménages fiscaux imposés (%)</p>
+<p>Measure &#8220;Part des ménages fiscaux imposés (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_PIMP12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part des ménages fiscaux imposés (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-des-pensions-retraites-et-rentes">
+<span id="fr-fr-income-dec-ppen12"></span><h2><a class="toc-backref" href="#id46">5.7.30. Part des pensions, retraites et rentes (%)</a><a class="headerlink" href="#part-des-pensions-retraites-et-rentes" title="Permalink to this headline">¶</a></h2>
+<p>Part des pensions, retraites et rentes (%)</p>
+<p>Measure &#8220;Part des pensions, retraites et rentes (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_PPEN12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part des pensions, retraites et rentes (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fr-fr-income-disp-ppen12">
+<span id="id16"></span><h2><a class="toc-backref" href="#id47">5.7.31. Part des pensions, retraites et rentes (%)</a><a class="headerlink" href="#fr-fr-income-disp-ppen12" title="Permalink to this headline">¶</a></h2>
+<p>Part des pensions, retraites et rentes (%)</p>
+<p>Measure &#8220;Part des pensions, retraites et rentes (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_PPEN12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part des pensions, retraites et rentes (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-des-revenus-d-activites-salariees-et-non-salariees-hors-indemnites-de-chomage">
+<span id="fr-fr-income-dec-pra12"></span><h2><a class="toc-backref" href="#id48">5.7.32. Part des revenus d&#8217;activités (salariées et non salariées), hors indemnités de chômage (%)</a><a class="headerlink" href="#part-des-revenus-d-activites-salariees-et-non-salariees-hors-indemnites-de-chomage" title="Permalink to this headline">¶</a></h2>
+<p>Part des revenus d&#8217;activités (salariées et non salariées), hors indemnités de chômage (%)</p>
+<p>Measure &#8220;Part des revenus d&#8217;activités (salariées et non salariées), hors indemnités de chômage (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_PRA12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part des revenus d&#8217;activités (salariées et non salariées), hors indemnités de chômage (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-des-revenus-d-activites-salariees-et-non-salariees-y-compris-indemnites-de-chomage">
+<span id="fr-fr-income-disp-prac12"></span><h2><a class="toc-backref" href="#id49">5.7.33. Part des revenus d&#8217;activités (salariées et non salariées), y compris indemnités de chômage (%)</a><a class="headerlink" href="#part-des-revenus-d-activites-salariees-et-non-salariees-y-compris-indemnites-de-chomage" title="Permalink to this headline">¶</a></h2>
+<p>Part des revenus d&#8217;activités (salariées et non salariées), y compris indemnités de chômage (%)</p>
+<p>Measure &#8220;Part des revenus d&#8217;activités (salariées et non salariées), y compris indemnités de chômage (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_PRAC12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part des revenus d&#8217;activités (salariées et non salariées), y compris indemnités de chômage (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-des-revenus-du-patrimoine">
+<span id="fr-fr-income-disp-ppat12"></span><h2><a class="toc-backref" href="#id50">5.7.34. Part des revenus du patrimoine (%)</a><a class="headerlink" href="#part-des-revenus-du-patrimoine" title="Permalink to this headline">¶</a></h2>
+<p>Part des revenus du patrimoine (%)</p>
+<p>Measure &#8220;Part des revenus du patrimoine (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_PPAT12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Part des revenus du patrimoine (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rapport-interdecile-d9-d1-du-revenu-disponible-par-unite-de-consommation">
+<span id="fr-fr-income-disp-rd12"></span><h2><a class="toc-backref" href="#id51">5.7.35. Rapport interdécile D9/D1 du revenu disponible par unité de consommation</a><a class="headerlink" href="#rapport-interdecile-d9-d1-du-revenu-disponible-par-unite-de-consommation" title="Permalink to this headline">¶</a></h2>
+<p>Rapport interdécile D9/D1 du revenu disponible par unité de consommation</p>
+<p>Measure &#8220;Rapport interdécile D9/D1 du revenu disponible par unité de consommation&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_RD12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Rapport interdécile D9/D1 du revenu disponible par unité de consommation is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rapport-interdecile-d9-d1-du-revenu-declare-par-unite-de-consommation">
+<span id="fr-fr-income-dec-rd12"></span><h2><a class="toc-backref" href="#id52">5.7.36. Rapport interdécile D9/D1 du revenu déclaré par unité de consommation</a><a class="headerlink" href="#rapport-interdecile-d9-d1-du-revenu-declare-par-unite-de-consommation" title="Permalink to this headline">¶</a></h2>
+<p>Rapport interdécile D9/D1 du revenu déclaré par unité de consommation</p>
+<p>Measure &#8220;Rapport interdécile D9/D1 du revenu déclaré par unité de consommation&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_RD12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Rapport interdécile D9/D1 du revenu déclaré par unité de consommation is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="taux-de-bas-revenus-declares-au-seuil-de-60-du-revenu-declare-par-unite-de-consommation-median-metropolitain">
+<span id="fr-fr-income-dec-tp6012"></span><h2><a class="toc-backref" href="#id53">5.7.37. Taux de bas revenus déclarés au seuil de 60 % du revenu déclaré par unité de consommation médian métropolitain (%)</a><a class="headerlink" href="#taux-de-bas-revenus-declares-au-seuil-de-60-du-revenu-declare-par-unite-de-consommation-median-metropolitain" title="Permalink to this headline">¶</a></h2>
+<p>Taux de bas revenus déclarés au seuil de 60 % du revenu déclaré par unité de consommation médian métropolitain (%)</p>
+<p>Measure &#8220;Taux de bas revenus déclarés au seuil de 60 % du revenu déclaré par unité de consommation médian métropolitain (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DEC_TP6012&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Taux de bas revenus déclarés au seuil de 60 % du revenu déclaré par unité de consommation médian métropolitain (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="taux-de-pauvrete-au-seuil-de-60-du-revenu-disponible-par-uc-median-metropolitain">
+<span id="fr-fr-income-disp-tp6012"></span><h2><a class="toc-backref" href="#id54">5.7.38. Taux de pauvreté au seuil de 60 % du revenu disponible par UC médian métropolitain (%)</a><a class="headerlink" href="#taux-de-pauvrete-au-seuil-de-60-du-revenu-disponible-par-uc-median-metropolitain" title="Permalink to this headline">¶</a></h2>
+<p>Taux de pauvreté au seuil de 60 % du revenu disponible par UC médian métropolitain (%)</p>
+<p>Measure &#8220;Taux de pauvreté au seuil de 60 % du revenu disponible par UC médian métropolitain (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_TP6012&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Taux de pauvreté au seuil de 60 % du revenu disponible par UC médian métropolitain (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="dont-part-des-minima-sociaux">
+<span id="fr-fr-income-disp-ppmini12"></span><h2><a class="toc-backref" href="#id55">5.7.39. dont part des minima sociaux (%)</a><a class="headerlink" href="#dont-part-des-minima-sociaux" title="Permalink to this headline">¶</a></h2>
+<p>dont part des minima sociaux (%)</p>
+<p>Measure &#8220;dont part des minima sociaux (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_PPMINI12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>dont part des minima sociaux (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="dont-part-des-prestations-familiales">
+<span id="fr-fr-income-disp-ppfam12"></span><h2><a class="toc-backref" href="#id56">5.7.40. dont part des prestations familiales (%)</a><a class="headerlink" href="#dont-part-des-prestations-familiales" title="Permalink to this headline">¶</a></h2>
+<p>dont part des prestations familiales (%)</p>
+<p>Measure &#8220;dont part des prestations familiales (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_PPFAM12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>dont part des prestations familiales (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="dont-part-des-prestations-logement">
+<span id="fr-fr-income-disp-pplogt12"></span><h2><a class="toc-backref" href="#id57">5.7.41. dont part des prestations logement (%)</a><a class="headerlink" href="#dont-part-des-prestations-logement" title="Permalink to this headline">¶</a></h2>
+<p>dont part des prestations logement (%)</p>
+<p>Measure &#8220;dont part des prestations logement (%)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">48.8608751447</span><span class="p">,</span> <span class="mf">2.36137390137</span><span class="p">),</span>
+      <span class="s1">&#39;fr.fr_income.DISP_PPLOGT12&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>dont part des prestations logement (%) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#fr-insee-the-geom"><span class="std std-ref">IRIS and Commune areas</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">5.7. Income</a><ul>
+<li><a class="reference internal" href="#er-decile-du-revenu-disponible-par-unite-de-consommation-en-euros">5.7.1. 1er décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#er-decile-du-revenu-declare-par-unite-de-consommation-en-euros">5.7.2. 1er décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#e-decile-du-revenu-disponible-par-unite-de-consommation-en-euros">5.7.3. 2e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#e-decile-du-revenu-declare-par-unite-de-consommation-en-euros">5.7.4. 2e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d312">5.7.5. 3e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d312">5.7.6. 3e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d412">5.7.7. 4e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d412">5.7.8. 4e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d612">5.7.9. 6e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d612">5.7.10. 6e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d712">5.7.11. 7e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d712">5.7.12. 7e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d812">5.7.13. 8e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d812">5.7.14. 8e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-d912">5.7.15. 9e décile du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-dec-d912">5.7.16. 9e décile du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#mediane-du-revenu-disponible-par-unite-de-consommation-en-euros">5.7.17. Médiane du revenu disponible par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#mediane-du-revenu-declare-par-unite-de-consommation-en-euros">5.7.18. Médiane du revenu déclaré par unité de consommation (en euros)</a></li>
+<li><a class="reference internal" href="#nombre-d-unites-de-consommation-dans-les-menages-fiscaux">5.7.19. Nombre d&#8217;unités de consommation dans les ménages fiscaux</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-nbuc12">5.7.20. Nombre d&#8217;unités de consommation dans les ménages fiscaux</a></li>
+<li><a class="reference internal" href="#nombre-de-menages-fiscaux">5.7.21. Nombre de ménages fiscaux</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-nbmenfisc12">5.7.22. Nombre de ménages fiscaux</a></li>
+<li><a class="reference internal" href="#nombre-de-personnes-dans-les-menages-fiscaux">5.7.23. Nombre de personnes dans les ménages fiscaux</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-nbpersmenfisc12">5.7.24. Nombre de personnes dans les ménages fiscaux</a></li>
+<li><a class="reference internal" href="#part-de-l-ensemble-des-prestations-sociales">5.7.25. Part de l&#8217;ensemble des prestations sociales (%)</a></li>
+<li><a class="reference internal" href="#part-des-autres-revenus-essentiellement-des-revenus-du-patrimoine">5.7.26. Part des autres revenus (essentiellement des revenus du patrimoine) (%)</a></li>
+<li><a class="reference internal" href="#part-des-impots">5.7.27. Part des impôts (%)</a></li>
+<li><a class="reference internal" href="#part-des-indemnites-de-chomage">5.7.28. Part des indemnités de chômage (%)</a></li>
+<li><a class="reference internal" href="#part-des-menages-fiscaux-imposes">5.7.29. Part des ménages fiscaux imposés (%)</a></li>
+<li><a class="reference internal" href="#part-des-pensions-retraites-et-rentes">5.7.30. Part des pensions, retraites et rentes (%)</a></li>
+<li><a class="reference internal" href="#fr-fr-income-disp-ppen12">5.7.31. Part des pensions, retraites et rentes (%)</a></li>
+<li><a class="reference internal" href="#part-des-revenus-d-activites-salariees-et-non-salariees-hors-indemnites-de-chomage">5.7.32. Part des revenus d&#8217;activités (salariées et non salariées), hors indemnités de chômage (%)</a></li>
+<li><a class="reference internal" href="#part-des-revenus-d-activites-salariees-et-non-salariees-y-compris-indemnites-de-chomage">5.7.33. Part des revenus d&#8217;activités (salariées et non salariées), y compris indemnités de chômage (%)</a></li>
+<li><a class="reference internal" href="#part-des-revenus-du-patrimoine">5.7.34. Part des revenus du patrimoine (%)</a></li>
+<li><a class="reference internal" href="#rapport-interdecile-d9-d1-du-revenu-disponible-par-unite-de-consommation">5.7.35. Rapport interdécile D9/D1 du revenu disponible par unité de consommation</a></li>
+<li><a class="reference internal" href="#rapport-interdecile-d9-d1-du-revenu-declare-par-unite-de-consommation">5.7.36. Rapport interdécile D9/D1 du revenu déclaré par unité de consommation</a></li>
+<li><a class="reference internal" href="#taux-de-bas-revenus-declares-au-seuil-de-60-du-revenu-declare-par-unite-de-consommation-median-metropolitain">5.7.37. Taux de bas revenus déclarés au seuil de 60 % du revenu déclaré par unité de consommation médian métropolitain (%)</a></li>
+<li><a class="reference internal" href="#taux-de-pauvrete-au-seuil-de-60-du-revenu-disponible-par-uc-median-metropolitain">5.7.38. Taux de pauvreté au seuil de 60 % du revenu disponible par UC médian métropolitain (%)</a></li>
+<li><a class="reference internal" href="#dont-part-des-minima-sociaux">5.7.39. dont part des minima sociaux (%)</a></li>
+<li><a class="reference internal" href="#dont-part-des-prestations-familiales">5.7.40. dont part des prestations familiales (%)</a></li>
+<li><a class="reference internal" href="#dont-part-des-prestations-logement">5.7.41. dont part des prestations logement (%)</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../fr.html">5. France</a><ul>
+      <li>Previous: <a href="housing.html" title="previous chapter">5.6. Housing</a></li>
+      <li>Next: <a href="language.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/fr/income.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/fr/income.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

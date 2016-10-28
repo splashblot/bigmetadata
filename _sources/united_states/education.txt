@@ -1,0 +1,5281 @@
+
+
+.. Education:
+
+Education
+===========================================================================
+
+Educational attainment and enrollment.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _us.census.acs.B15003001:
+
+Population 25 Years and Over
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B15003001.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area who are over the age of 25.  This is used mostly as a denominator of educational attainment.
+
+
+
+
+
+Measure "Population 25 Years and Over"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003001'
+      );
+
+
+
+
+
+Measure "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B15003001'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Population 25 Years and Over
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B07009002:
+
+Less than high school graduate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B07009002.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area over the age of 25 who have not completed high school or any other advanced degree.
+
+
+
+
+
+Measure "Less than high school graduate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B07009002'
+      );
+
+
+
+
+
+Measure "Less than high school graduate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B07009002'
+        );
+
+
+
+
+
+
+Measure "Less than high school graduate" percent of "Population 25 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B07009002',
+        'denominator'
+      );
+
+
+Measure "Less than high school graduate" percent of "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B07009002',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B15003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B15003021:
+
+Population Completed Associate's Degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B15003021.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area over the age of 25 who obtained a associate's degree, and did not complete a more advanced degree.
+
+
+
+
+
+Measure "Population Completed Associate's Degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003021'
+      );
+
+
+
+
+
+Measure "Population Completed Associate's Degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B15003021'
+        );
+
+
+
+
+
+
+Measure "Population Completed Associate's Degree" percent of "Population 25 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003021',
+        'denominator'
+      );
+
+
+Measure "Population Completed Associate's Degree" percent of "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B15003021',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B15003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B15003022:
+
+Population Completed Bachelor's Degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B15003022.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area over the age of 25 who obtained a bachelor's degree, and did not complete a more advanced degree.
+
+
+
+
+
+Measure "Population Completed Bachelor's Degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003022'
+      );
+
+
+
+
+
+Measure "Population Completed Bachelor's Degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B15003022'
+        );
+
+
+
+
+
+
+Measure "Population Completed Bachelor's Degree" percent of "Population 25 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003022',
+        'denominator'
+      );
+
+
+Measure "Population Completed Bachelor's Degree" percent of "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B15003022',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B15003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B15003017:
+
+Population Completed High School
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B15003017.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area over the age of 25 who completed high school, and did not complete a more advanced degree.
+
+
+
+
+
+Measure "Population Completed High School"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003017'
+      );
+
+
+
+
+
+Measure "Population Completed High School" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B15003017'
+        );
+
+
+
+
+
+
+Measure "Population Completed High School" percent of "Population 25 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003017',
+        'denominator'
+      );
+
+
+Measure "Population Completed High School" percent of "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B15003017',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B15003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B15003019:
+
+Population completed less than one year of college, no degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B15003019.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area over the age of 25 who attended college for less than one year and no further.
+
+
+
+
+
+Measure "Population completed less than one year of college, no degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003019'
+      );
+
+
+
+
+
+Measure "Population completed less than one year of college, no degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B15003019'
+        );
+
+
+
+
+
+
+Measure "Population completed less than one year of college, no degree" percent of "Population 25 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003019',
+        'denominator'
+      );
+
+
+Measure "Population completed less than one year of college, no degree" percent of "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B15003019',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B15003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B15003023:
+
+Population Completed Master's Degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B15003023.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area over the age of 25 who obtained a master's degree, but did not complete a more advanced degree.
+
+
+
+
+
+Measure "Population Completed Master's Degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003023'
+      );
+
+
+
+
+
+Measure "Population Completed Master's Degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B15003023'
+        );
+
+
+
+
+
+
+Measure "Population Completed Master's Degree" percent of "Population 25 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003023',
+        'denominator'
+      );
+
+
+Measure "Population Completed Master's Degree" percent of "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B15003023',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B15003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B15003020:
+
+Population completed more than one year of college, no degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B15003020.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area over the age of 25 who attended college for more than one year but did not obtain a degree
+
+
+
+
+
+Measure "Population completed more than one year of college, no degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003020'
+      );
+
+
+
+
+
+Measure "Population completed more than one year of college, no degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B15003020'
+        );
+
+
+
+
+
+
+Measure "Population completed more than one year of college, no degree" percent of "Population 25 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B15003020',
+        'denominator'
+      );
+
+
+Measure "Population completed more than one year of college, no degree" percent of "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B15003020',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B15003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _us.census.acs.B07009004:
+
+Population who completed some college or obtained associate's degree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B07009004.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area over the age of 25 who obtained an associate's degree, and did not complete a more advanced degree.
+
+
+
+
+
+Measure "Population who completed some college or obtained associate's degree"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B07009004'
+      );
+
+
+
+
+
+Measure "Population who completed some college or obtained associate's degree" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B07009004'
+        );
+
+
+
+
+
+
+Measure "Population who completed some college or obtained associate's degree" percent of "Population 25 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B07009004',
+        'denominator'
+      );
+
+
+Measure "Population who completed some college or obtained associate's degree" percent of "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B07009004',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B15003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B07009003:
+
+Population with high school degree, including GED
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B07009003.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area over the age of 25 who attained a high school degree or GED.
+
+
+
+
+
+Measure "Population with high school degree, including GED"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B07009003'
+      );
+
+
+
+
+
+Measure "Population with high school degree, including GED" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B07009003'
+        );
+
+
+
+
+
+
+Measure "Population with high school degree, including GED" percent of "Population 25 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B07009003',
+        'denominator'
+      );
+
+
+Measure "Population with high school degree, including GED" percent of "Population 25 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B07009003',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B15003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+
+
+
+
+
+
+.. _us.census.acs.B14001001:
+
+Population 3 Years and Over
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B14001001.png
+  :width: 100 %
+  :align: center
+
+
+
+The total number of people in each geography age 3 years and over.  This denominator is mostly used to calculate rates of school enrollment.
+
+
+
+
+
+Measure "Population 3 Years and Over"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001001'
+      );
+
+
+
+
+
+Measure "Population 3 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B14001001'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Population 3 Years and Over
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B14001002:
+
+Students Enrolled in School
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B14001002.png
+  :width: 100 %
+  :align: center
+
+
+
+The total number of people in each geography currently enrolled at any level of school, from nursery or pre-school to advanced post-graduate education.  Only includes those over the age of 3.
+
+
+
+
+
+Measure "Students Enrolled in School"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001002'
+      );
+
+
+
+
+
+Measure "Students Enrolled in School" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B14001002'
+        );
+
+
+
+
+
+
+Measure "Students Enrolled in School" percent of "Population 3 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001002',
+        'denominator'
+      );
+
+
+Measure "Students Enrolled in School" percent of "Population 3 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B14001002',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B14001001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Students Enrolled in School
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B14001008:
+
+Students Enrolled as Undergraduate in College
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: ../img/us.census.acs.B14001008.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area who are enrolled in college at the undergraduate level. Enrollment refers to being registered or listed as a student in an educational program leading to a college degree. This may be a public school or college, a private school or college.
+
+
+
+
+
+Measure "Students Enrolled as Undergraduate in College"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001008'
+      );
+
+
+
+
+
+Measure "Students Enrolled as Undergraduate in College" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B14001008'
+        );
+
+
+
+
+
+
+Measure "Students Enrolled as Undergraduate in College" percent of "Students Enrolled in School" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001008',
+        'denominator'
+      );
+
+
+Measure "Students Enrolled as Undergraduate in College" percent of "Students Enrolled in School" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B14001008',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B14001002`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B14001005:
+
+Students Enrolled in Grades 1 to 4
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: ../img/us.census.acs.B14001005.png
+  :width: 100 %
+  :align: center
+
+
+
+The total number of people in each geography currently enrolled in grades 1 through 4 inclusive.  This corresponds roughly to elementary school.
+
+
+
+
+
+Measure "Students Enrolled in Grades 1 to 4"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001005'
+      );
+
+
+
+
+
+Measure "Students Enrolled in Grades 1 to 4" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B14001005'
+        );
+
+
+
+
+
+
+Measure "Students Enrolled in Grades 1 to 4" percent of "Students Enrolled in School" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001005',
+        'denominator'
+      );
+
+
+Measure "Students Enrolled in Grades 1 to 4" percent of "Students Enrolled in School" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B14001005',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B14001002`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B14001006:
+
+Students Enrolled in Grades 5 to 8
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: ../img/us.census.acs.B14001006.png
+  :width: 100 %
+  :align: center
+
+
+
+The total number of people in each geography currently enrolled in grades 5 through 8 inclusive.  This corresponds roughly to middle school.
+
+
+
+
+
+Measure "Students Enrolled in Grades 5 to 8"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001006'
+      );
+
+
+
+
+
+Measure "Students Enrolled in Grades 5 to 8" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B14001006'
+        );
+
+
+
+
+
+
+Measure "Students Enrolled in Grades 5 to 8" percent of "Students Enrolled in School" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001006',
+        'denominator'
+      );
+
+
+Measure "Students Enrolled in Grades 5 to 8" percent of "Students Enrolled in School" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B14001006',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B14001002`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B14001007:
+
+Students Enrolled in Grades 9 to 12
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: ../img/us.census.acs.B14001007.png
+  :width: 100 %
+  :align: center
+
+
+
+The total number of people in each geography currently enrolled in grades 9 through 12 inclusive.  This corresponds roughly to high school.
+
+
+
+
+
+Measure "Students Enrolled in Grades 9 to 12"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001007'
+      );
+
+
+
+
+
+Measure "Students Enrolled in Grades 9 to 12" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B14001007'
+        );
+
+
+
+
+
+
+Measure "Students Enrolled in Grades 9 to 12" percent of "Students Enrolled in School" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B14001007',
+        'denominator'
+      );
+
+
+Measure "Students Enrolled in Grades 9 to 12" percent of "Students Enrolled in School" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B14001007',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B14001002`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+
+  
+  
+
+

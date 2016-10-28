@@ -1,0 +1,684 @@
+
+
+.. Race and Ethnicity:
+
+Race and Ethnicity
+===========================================================================
+
+Population breakdowns by race and ethnicity. 
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _uk.ons.LC2201EW0061:
+
+Asian/Asian British population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Asian/Asian British population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0061'
+      );
+
+
+
+
+
+Measure "Asian/Asian British population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2201EW0061'
+        );
+
+
+
+
+
+
+Measure "Asian/Asian British population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0061',
+        'denominator'
+      );
+
+
+Measure "Asian/Asian British population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2201EW0061',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2201EW0071:
+
+Black/African/Caribbean/Black British population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Black/African/Caribbean/Black British population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0071'
+      );
+
+
+
+
+
+Measure "Black/African/Caribbean/Black British population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2201EW0071'
+        );
+
+
+
+
+
+
+Measure "Black/African/Caribbean/Black British population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0071',
+        'denominator'
+      );
+
+
+Measure "Black/African/Caribbean/Black British population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2201EW0071',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2201EW0051:
+
+Mixed/multiple ethnic group population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Mixed/multiple ethnic group population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0051'
+      );
+
+
+
+
+
+Measure "Mixed/multiple ethnic group population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2201EW0051'
+        );
+
+
+
+
+
+
+Measure "Mixed/multiple ethnic group population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0051',
+        'denominator'
+      );
+
+
+Measure "Mixed/multiple ethnic group population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2201EW0051',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2201EW0081:
+
+Other ethnic group population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Other ethnic group population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0081'
+      );
+
+
+
+
+
+Measure "Other ethnic group population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2201EW0081'
+        );
+
+
+
+
+
+
+Measure "Other ethnic group population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0081',
+        'denominator'
+      );
+
+
+Measure "Other ethnic group population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2201EW0081',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2201EW0011:
+
+White population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "White population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0011'
+      );
+
+
+
+
+
+Measure "White population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2201EW0011'
+        );
+
+
+
+
+
+
+Measure "White population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0011',
+        'denominator'
+      );
+
+
+Measure "White population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2201EW0011',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+.. contents:: Subcolumns of White population
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC2201EW0021:
+
+White English/Welsh/Scottish/Northern Irish/British population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "White English/Welsh/Scottish/Northern Irish/British population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0021'
+      );
+
+
+
+
+
+Measure "White English/Welsh/Scottish/Northern Irish/British population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2201EW0021'
+        );
+
+
+
+
+
+
+Measure "White English/Welsh/Scottish/Northern Irish/British population" percent of "White population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0021',
+        'denominator'
+      );
+
+
+Measure "White English/Welsh/Scottish/Northern Irish/British population" percent of "White population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2201EW0021',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2201EW0011`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC2201EW0031:
+
+White Irish population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "White Irish population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0031'
+      );
+
+
+
+
+
+Measure "White Irish population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2201EW0031'
+        );
+
+
+
+
+
+
+Measure "White Irish population" percent of "White population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2201EW0031',
+        'denominator'
+      );
+
+
+Measure "White Irish population" percent of "White population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2201EW0031',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2201EW0011`
+
+
+
+  
+  
+
+

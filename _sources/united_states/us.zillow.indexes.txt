@@ -1,0 +1,734 @@
+
+
+.. Zillow Home Value and Rental Indexes:
+
+Zillow Home Value and Rental Indexes
+===========================================================================
+
+Zillow home value and rental indexes.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _us.zillow.AllHomes_MedianRentalPricePerSqft:
+
+Median rental price per square foot for All homes
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.zillow.AllHomes_MedianRentalPricePerSqft.png
+  :width: 100 %
+  :align: center
+
+
+
+Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home's square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.
+
+
+
+
+
+Measure "Median rental price per square foot for All homes"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(28.3305906292, -81.3544048197),
+        'us.zillow.AllHomes_MedianRentalPricePerSqft'
+      );
+
+
+
+
+
+
+Median rental price per square foot for All homes is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.zillow.zillow-source`
+
+:License:
+
+    :ref:`us.zillow.zillow-license`
+
+
+
+
+
+
+
+.. _us.zillow.Sfr_MedianRentalPricePerSqft:
+
+Median rental price per square foot for Single Family residence rental
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.zillow.Sfr_MedianRentalPricePerSqft.png
+  :width: 100 %
+  :align: center
+
+
+
+Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home's square footage. Single family residences are detached, free-standing residential buildings. 
+
+
+
+
+
+Measure "Median rental price per square foot for Single Family residence rental"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(28.3305906292, -81.3544048197),
+        'us.zillow.Sfr_MedianRentalPricePerSqft'
+      );
+
+
+
+
+
+
+Median rental price per square foot for Single Family residence rental is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.zillow.zillow-source`
+
+:License:
+
+    :ref:`us.zillow.zillow-license`
+
+
+
+
+
+
+
+.. _us.zillow.AllHomes_MedianValuePerSqft:
+
+Median value per square foot for All homes
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.zillow.AllHomes_MedianValuePerSqft.png
+  :width: 100 %
+  :align: center
+
+
+
+Median of the estimated monthly rent price (US Dollars) of all homes, per square foot. This is calculated by taking the estimated rent price for a home and dividing it by the homes square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.
+
+
+
+
+
+Measure "Median value per square foot for All homes"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(28.3305906292, -81.3544048197),
+        'us.zillow.AllHomes_MedianValuePerSqft'
+      );
+
+
+
+
+
+
+Median value per square foot for All homes is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.zillow.zillow-source`
+
+:License:
+
+    :ref:`us.zillow.zillow-license`
+
+
+
+
+
+
+
+.. _us.zillow.AllHomes_Zhvi:
+
+Zillow Home Value Index for All homes
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.zillow.AllHomes_Zhvi.png
+  :width: 100 %
+  :align: center
+
+
+
+The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See `Zillow's methodology <http://www.zillow.com/research/zhvi-methodology-6032/>`_ for more information. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.
+
+
+
+
+
+Measure "Zillow Home Value Index for All homes"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(28.3305906292, -81.3544048197),
+        'us.zillow.AllHomes_Zhvi'
+      );
+
+
+
+
+
+
+Zillow Home Value Index for All homes is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.zillow.zillow-source`
+
+:License:
+
+    :ref:`us.zillow.zillow-license`
+
+
+
+
+
+
+
+.. _us.zillow.SingleFamilyResidence_Zhvi:
+
+Zillow Home Value Index for Single Family Homes
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.zillow.SingleFamilyResidence_Zhvi.png
+  :width: 100 %
+  :align: center
+
+
+
+The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See `Zillow's methodology <http://www.zillow.com/research/zhvi-methodology-6032/>`_ for more information. Single family residences are detached, free-standing residential buildings. 
+
+
+
+
+
+Measure "Zillow Home Value Index for Single Family Homes"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(28.3305906292, -81.3544048197),
+        'us.zillow.SingleFamilyResidence_Zhvi'
+      );
+
+
+
+
+
+
+Zillow Home Value Index for Single Family Homes is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.zillow.zillow-source`
+
+:License:
+
+    :ref:`us.zillow.zillow-license`
+
+
+
+
+
+
+
+.. _us.zillow.AllHomesPlusMultifamily_Zri:
+
+Zillow Rental Index for All homes plus multifamily
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.zillow.AllHomesPlusMultifamily_Zri.png
+  :width: 100 %
+  :align: center
+
+
+
+Similar to Zillow's ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See `Zillow's methodology <http://www.zillow.com/research/zillow-rent-index-methodology-2393/>`_ for more information. In addition to "All homes", which Zillow defines as single-family, condominium and co-operative homes with a county record, this group includes units in buildings with 5 or more housing units that are not a condominiums or co-ops.
+
+
+
+
+
+Measure "Zillow Rental Index for All homes plus multifamily"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(28.3305906292, -81.3544048197),
+        'us.zillow.AllHomesPlusMultifamily_Zri'
+      );
+
+
+
+
+
+
+Zillow Rental Index for All homes plus multifamily is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.zillow.zillow-source`
+
+:License:
+
+    :ref:`us.zillow.zillow-license`
+
+
+
+
+
+
+
+.. _us.zillow.SingleFamilyResidenceRental_Zri:
+
+Zillow Rental Index for Single Family residence rental
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.zillow.SingleFamilyResidenceRental_Zri.png
+  :width: 100 %
+  :align: center
+
+
+
+Similar to Zillow's ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See `Zillow's methodology <http://www.zillow.com/research/zillow-rent-index-methodology-2393/>`_ for more information. Single Family residence rental is defined as detached, free-standing residential buildings which are rented out.
+
+
+
+
+
+Measure "Zillow Rental Index for Single Family residence rental"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(28.3305906292, -81.3544048197),
+        'us.zillow.SingleFamilyResidenceRental_Zri'
+      );
+
+
+
+
+
+
+Zillow Rental Index for Single Family residence rental is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.zillow.zillow-source`
+
+:License:
+
+    :ref:`us.zillow.zillow-license`
+
+
+

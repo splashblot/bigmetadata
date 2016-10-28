@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>11.15. Zillow Home Value and Rental Indexes &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="11. United States" href="../united_states.html" />
+    <link rel="prev" title="11.14. US Population Segments" href="us.census.acs.segments.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="zillow-home-value-and-rental-indexes">
+<h1>11.15. Zillow Home Value and Rental Indexes<a class="headerlink" href="#zillow-home-value-and-rental-indexes" title="Permalink to this headline">¶</a></h1>
+<p>Zillow home value and rental indexes.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#median-rental-price-per-square-foot-for-all-homes" id="id4">Median rental price per square foot for All homes</a></li>
+<li><a class="reference internal" href="#median-rental-price-per-square-foot-for-single-family-residence-rental" id="id5">Median rental price per square foot for Single Family residence rental</a></li>
+<li><a class="reference internal" href="#median-value-per-square-foot-for-all-homes" id="id6">Median value per square foot for All homes</a></li>
+<li><a class="reference internal" href="#zillow-home-value-index-for-all-homes" id="id7">Zillow Home Value Index for All homes</a></li>
+<li><a class="reference internal" href="#zillow-home-value-index-for-single-family-homes" id="id8">Zillow Home Value Index for Single Family Homes</a></li>
+<li><a class="reference internal" href="#zillow-rental-index-for-all-homes-plus-multifamily" id="id9">Zillow Rental Index for All homes plus multifamily</a></li>
+<li><a class="reference internal" href="#zillow-rental-index-for-single-family-residence-rental" id="id10">Zillow Rental Index for Single Family residence rental</a></li>
+</ul>
+</div>
+<div class="section" id="median-rental-price-per-square-foot-for-all-homes">
+<span id="us-zillow-allhomes-medianrentalpricepersqft"></span><h2><a class="toc-backref" href="#id4">11.15.1. Median rental price per square foot for All homes</a><a class="headerlink" href="#median-rental-price-per-square-foot-for-all-homes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.AllHomes_MedianRentalPricePerSqft.png"><img alt="../_images/us.zillow.AllHomes_MedianRentalPricePerSqft.png" src="../_images/us.zillow.AllHomes_MedianRentalPricePerSqft.png" style="width: 100%;" /></a>
+</div>
+<p>Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home&#8217;s square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.</p>
+<p>Measure &#8220;Median rental price per square foot for All homes&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906292</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197</span><span class="p">),</span>
+      <span class="s1">&#39;us.zillow.AllHomes_MedianRentalPricePerSqft&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Median rental price per square foot for All homes is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5-clipped"><span class="std std-ref">Shoreline clipped US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-zillow-zillow-source"><span class="std std-ref">Zillow Data</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#us-zillow-zillow-license"><span class="std std-ref">Zillow Terms of Use for &#8220;Aggregate Data&#8221;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="median-rental-price-per-square-foot-for-single-family-residence-rental">
+<span id="us-zillow-sfr-medianrentalpricepersqft"></span><h2><a class="toc-backref" href="#id5">11.15.2. Median rental price per square foot for Single Family residence rental</a><a class="headerlink" href="#median-rental-price-per-square-foot-for-single-family-residence-rental" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.Sfr_MedianRentalPricePerSqft.png"><img alt="../_images/us.zillow.Sfr_MedianRentalPricePerSqft.png" src="../_images/us.zillow.Sfr_MedianRentalPricePerSqft.png" style="width: 100%;" /></a>
+</div>
+<p>Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home&#8217;s square footage. Single family residences are detached, free-standing residential buildings.</p>
+<p>Measure &#8220;Median rental price per square foot for Single Family residence rental&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906292</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197</span><span class="p">),</span>
+      <span class="s1">&#39;us.zillow.Sfr_MedianRentalPricePerSqft&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Median rental price per square foot for Single Family residence rental is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5-clipped"><span class="std std-ref">Shoreline clipped US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-zillow-zillow-source"><span class="std std-ref">Zillow Data</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#us-zillow-zillow-license"><span class="std std-ref">Zillow Terms of Use for &#8220;Aggregate Data&#8221;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="median-value-per-square-foot-for-all-homes">
+<span id="us-zillow-allhomes-medianvaluepersqft"></span><h2><a class="toc-backref" href="#id6">11.15.3. Median value per square foot for All homes</a><a class="headerlink" href="#median-value-per-square-foot-for-all-homes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.AllHomes_MedianValuePerSqft.png"><img alt="../_images/us.zillow.AllHomes_MedianValuePerSqft.png" src="../_images/us.zillow.AllHomes_MedianValuePerSqft.png" style="width: 100%;" /></a>
+</div>
+<p>Median of the estimated monthly rent price (US Dollars) of all homes, per square foot. This is calculated by taking the estimated rent price for a home and dividing it by the homes square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.</p>
+<p>Measure &#8220;Median value per square foot for All homes&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906292</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197</span><span class="p">),</span>
+      <span class="s1">&#39;us.zillow.AllHomes_MedianValuePerSqft&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Median value per square foot for All homes is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5-clipped"><span class="std std-ref">Shoreline clipped US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-zillow-zillow-source"><span class="std std-ref">Zillow Data</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#us-zillow-zillow-license"><span class="std std-ref">Zillow Terms of Use for &#8220;Aggregate Data&#8221;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="zillow-home-value-index-for-all-homes">
+<span id="us-zillow-allhomes-zhvi"></span><h2><a class="toc-backref" href="#id7">11.15.4. Zillow Home Value Index for All homes</a><a class="headerlink" href="#zillow-home-value-index-for-all-homes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.AllHomes_Zhvi.png"><img alt="../_images/us.zillow.AllHomes_Zhvi.png" src="../_images/us.zillow.AllHomes_Zhvi.png" style="width: 100%;" /></a>
+</div>
+<p>The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See <a class="reference external" href="http://www.zillow.com/research/zhvi-methodology-6032/">Zillow&#8217;s methodology</a> for more information. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.</p>
+<p>Measure &#8220;Zillow Home Value Index for All homes&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906292</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197</span><span class="p">),</span>
+      <span class="s1">&#39;us.zillow.AllHomes_Zhvi&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Zillow Home Value Index for All homes is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5-clipped"><span class="std std-ref">Shoreline clipped US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-zillow-zillow-source"><span class="std std-ref">Zillow Data</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#us-zillow-zillow-license"><span class="std std-ref">Zillow Terms of Use for &#8220;Aggregate Data&#8221;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="zillow-home-value-index-for-single-family-homes">
+<span id="us-zillow-singlefamilyresidence-zhvi"></span><h2><a class="toc-backref" href="#id8">11.15.5. Zillow Home Value Index for Single Family Homes</a><a class="headerlink" href="#zillow-home-value-index-for-single-family-homes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.SingleFamilyResidence_Zhvi.png"><img alt="../_images/us.zillow.SingleFamilyResidence_Zhvi.png" src="../_images/us.zillow.SingleFamilyResidence_Zhvi.png" style="width: 100%;" /></a>
+</div>
+<p>The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See <a class="reference external" href="http://www.zillow.com/research/zhvi-methodology-6032/">Zillow&#8217;s methodology</a> for more information. Single family residences are detached, free-standing residential buildings.</p>
+<p>Measure &#8220;Zillow Home Value Index for Single Family Homes&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906292</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197</span><span class="p">),</span>
+      <span class="s1">&#39;us.zillow.SingleFamilyResidence_Zhvi&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Zillow Home Value Index for Single Family Homes is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5-clipped"><span class="std std-ref">Shoreline clipped US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-zillow-zillow-source"><span class="std std-ref">Zillow Data</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#us-zillow-zillow-license"><span class="std std-ref">Zillow Terms of Use for &#8220;Aggregate Data&#8221;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="zillow-rental-index-for-all-homes-plus-multifamily">
+<span id="us-zillow-allhomesplusmultifamily-zri"></span><h2><a class="toc-backref" href="#id9">11.15.6. Zillow Rental Index for All homes plus multifamily</a><a class="headerlink" href="#zillow-rental-index-for-all-homes-plus-multifamily" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.AllHomesPlusMultifamily_Zri.png"><img alt="../_images/us.zillow.AllHomesPlusMultifamily_Zri.png" src="../_images/us.zillow.AllHomesPlusMultifamily_Zri.png" style="width: 100%;" /></a>
+</div>
+<p>Similar to Zillow&#8217;s ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See <a class="reference external" href="http://www.zillow.com/research/zillow-rent-index-methodology-2393/">Zillow&#8217;s methodology</a> for more information. In addition to &#8220;All homes&#8221;, which Zillow defines as single-family, condominium and co-operative homes with a county record, this group includes units in buildings with 5 or more housing units that are not a condominiums or co-ops.</p>
+<p>Measure &#8220;Zillow Rental Index for All homes plus multifamily&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906292</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197</span><span class="p">),</span>
+      <span class="s1">&#39;us.zillow.AllHomesPlusMultifamily_Zri&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Zillow Rental Index for All homes plus multifamily is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5-clipped"><span class="std std-ref">Shoreline clipped US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-zillow-zillow-source"><span class="std std-ref">Zillow Data</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#us-zillow-zillow-license"><span class="std std-ref">Zillow Terms of Use for &#8220;Aggregate Data&#8221;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="zillow-rental-index-for-single-family-residence-rental">
+<span id="us-zillow-singlefamilyresidencerental-zri"></span><h2><a class="toc-backref" href="#id10">11.15.7. Zillow Rental Index for Single Family residence rental</a><a class="headerlink" href="#zillow-rental-index-for-single-family-residence-rental" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.SingleFamilyResidenceRental_Zri.png"><img alt="../_images/us.zillow.SingleFamilyResidenceRental_Zri.png" src="../_images/us.zillow.SingleFamilyResidenceRental_Zri.png" style="width: 100%;" /></a>
+</div>
+<p>Similar to Zillow&#8217;s ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See <a class="reference external" href="http://www.zillow.com/research/zillow-rent-index-methodology-2393/">Zillow&#8217;s methodology</a> for more information. Single Family residence rental is defined as detached, free-standing residential buildings which are rented out.</p>
+<p>Measure &#8220;Zillow Rental Index for Single Family residence rental&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906292</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197</span><span class="p">),</span>
+      <span class="s1">&#39;us.zillow.SingleFamilyResidenceRental_Zri&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Zillow Rental Index for Single Family residence rental is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5-clipped"><span class="std std-ref">Shoreline clipped US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2016-08, 2016-07, 2016-06, 2016-05, 2016-04, 2016-03, 2016-02, 2016-01, 2015-12, 2015-11, 2015-10, 2015-09, 2015-08, 2015-07, 2015-06, 2015-05, 2015-04, 2015-03, 2015-02, 2015-01, 2014-12, 2014-11, 2014-10, 2014-09, 2014-08, 2014-07, 2014-06, 2014-05, 2014-04, 2014-03, 2014-02, 2014-01, 2013-12, 2013-11, 2013-10, 2013-09, 2013-08, 2013-07, 2013-06, 2013-05, 2013-04, 2013-03, 2013-02, 2013-01, 2012-12, 2012-11, 2012-10, 2012-09, 2012-08, 2012-07, 2012-06, 2012-05, 2012-04, 2012-03, 2012-02, 2012-01, 2011-12, 2011-11, 2011-10, 2011-09, 2011-08, 2011-07, 2011-06, 2011-05, 2011-04, 2011-03, 2011-02, 2011-01, 2010-12, 2010-11</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-zillow-zillow-source"><span class="std std-ref">Zillow Data</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#us-zillow-zillow-license"><span class="std std-ref">Zillow Terms of Use for &#8220;Aggregate Data&#8221;</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">11.15. Zillow Home Value and Rental Indexes</a><ul>
+<li><a class="reference internal" href="#median-rental-price-per-square-foot-for-all-homes">11.15.1. Median rental price per square foot for All homes</a></li>
+<li><a class="reference internal" href="#median-rental-price-per-square-foot-for-single-family-residence-rental">11.15.2. Median rental price per square foot for Single Family residence rental</a></li>
+<li><a class="reference internal" href="#median-value-per-square-foot-for-all-homes">11.15.3. Median value per square foot for All homes</a></li>
+<li><a class="reference internal" href="#zillow-home-value-index-for-all-homes">11.15.4. Zillow Home Value Index for All homes</a></li>
+<li><a class="reference internal" href="#zillow-home-value-index-for-single-family-homes">11.15.5. Zillow Home Value Index for Single Family Homes</a></li>
+<li><a class="reference internal" href="#zillow-rental-index-for-all-homes-plus-multifamily">11.15.6. Zillow Rental Index for All homes plus multifamily</a></li>
+<li><a class="reference internal" href="#zillow-rental-index-for-single-family-residence-rental">11.15.7. Zillow Rental Index for Single Family residence rental</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../united_states.html">11. United States</a><ul>
+      <li>Previous: <a href="us.census.acs.segments.html" title="previous chapter">11.14. US Population Segments</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/united_states/us.zillow.indexes.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/united_states/us.zillow.indexes.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

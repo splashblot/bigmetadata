@@ -1,0 +1,825 @@
+<h1><a name="housing"></a>Housing</h1>
+<p>What type of housing exists and how do people live in it?</p>
+<ul>
+<li>
+<p><a href="#households">Households</a></p>
+</li>
+<li>
+<p><a href="#housing-units">Housing Units</a></p>
+<ul>
+<li>
+<p><a href="#housing-units-built-before-1939">Housing units built before 1939</a></p>
+</li>
+<li>
+<p><a href="#housing-units-built-between-2000-and-2004">Housing units built between 2000 and 2004</a></p>
+</li>
+<li>
+<p><a href="#housing-units-built-in-2005-or-later">Housing units built in 2005 or later</a></p>
+</li>
+<li>
+<p><a href="#mobile-homes">Mobile homes</a></p>
+</li>
+<li>
+<p><a href="#owner-occupied-housing-units">Owner-occupied Housing Units</a></p>
+<ul>
+<li>
+<p><a href="#owner-occupied-housing-units-valued-at-1-000-000-or-more">Owner-occupied Housing Units valued at $1,000,000 or more.</a></p>
+</li>
+<li>
+<p><a href="#owner-occupied-housing-units-with-a-mortgage">Owner-occupied Housing Units with a Mortgage</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#renter-occupied-housing-units">Renter occupied housing units</a></p>
+<ul>
+<li><a href="#us-census-acs-b25003003">Renter occupied housing units</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#vacant-housing-units">Vacant Housing Units</a></p>
+<ul>
+<li>
+<p><a href="#vacant-housing-units-for-rent">Vacant Housing Units for Rent</a></p>
+</li>
+<li>
+<p><a href="#vacant-housing-units-for-sale">Vacant Housing Units for Sale</a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#lived-in-a-different-house-one-year-ago-in-a-different-city">Lived in a different house one year ago in a different city</a></p>
+</li>
+<li>
+<p><a href="#lived-in-a-different-house-one-year-ago-in-the-same-city">Lived in a different house one year ago in the same city</a></p>
+</li>
+<li>
+<p><a href="#median-rent">Median Rent</a></p>
+</li>
+<li>
+<p><a href="#median-rental-price-per-square-foot-for-all-homes">Median rental price per square foot for All homes</a></p>
+</li>
+<li>
+<p><a href="#median-rental-price-per-square-foot-for-single-family-residence-rental">Median rental price per square foot for Single Family residence rental</a></p>
+</li>
+<li>
+<p><a href="#median-value-per-square-foot-for-all-homes">Median value per square foot for All homes</a></p>
+</li>
+<li>
+<p><a href="#owner-occupied-housing-units-median-value">Owner-Occupied Housing Units Median Value</a></p>
+</li>
+<li>
+<p><a href="#percent-of-household-income-spent-on-rent">Percent of Household Income Spent on Rent</a></p>
+</li>
+<li>
+<p><a href="#zillow-home-value-index-for-all-homes">Zillow Home Value Index for All homes</a></p>
+</li>
+<li>
+<p><a href="#zillow-home-value-index-for-single-family-homes">Zillow Home Value Index for Single Family Homes</a></p>
+</li>
+<li>
+<p><a href="#zillow-rental-index-for-all-homes-plus-multifamily">Zillow Rental Index for All homes plus multifamily</a></p>
+</li>
+<li>
+<p><a href="#zillow-rental-index-for-single-family-residence-rental">Zillow Rental Index for Single Family residence rental</a></p>
+</li>
+</ul>
+<h2><a name="households"></a><a name="us-census-acs-b11001001"></a>Households</h2>
+<p><a href="../../_images/us.census.acs.B11001001.png"><img alt="../../_images/us.census.acs.B11001001.png" src="../../_images/us.census.acs.B11001001.png" style="width: 100%;" /></a>A count of the number of households in each geography. A household consists of one or more people who live in the same dwelling and also share at meals or living accommodation, and may consist of a single family or some other grouping of people.</p>
+<p>Measure &quot;Households&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B11001001'
+    );
+</code></pre>
+<p>Measure &quot;Households&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B11001001'
+    );
+</code></pre>
+<h2><a name="housing-units"></a><a name="us-census-acs-b25001001"></a>Housing Units</h2>
+<p><a href="../../_images/us.census.acs.B25001001.png"><img alt="../../_images/us.census.acs.B25001001.png" src="../../_images/us.census.acs.B25001001.png" style="width: 100%;" /></a>A count of housing units in each geography.  A housing unit is a house, an apartment, a mobile home or trailer, a group of rooms, or a single room occupied as separate living quarters, or if vacant, intended for occupancy as separate living quarters.</p>
+<p>Measure &quot;Housing Units&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25001001'
+    );
+</code></pre>
+<p>Measure &quot;Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25001001'
+    );
+</code></pre>
+<p>Subcolumns of Housing Units</p>
+<ul>
+<li>
+<p><a href="#housing-units-built-before-1939">Housing units built before 1939</a></p>
+</li>
+<li>
+<p><a href="#housing-units-built-between-2000-and-2004">Housing units built between 2000 and 2004</a></p>
+</li>
+<li>
+<p><a href="#housing-units-built-in-2005-or-later">Housing units built in 2005 or later</a></p>
+</li>
+<li>
+<p><a href="#mobile-homes">Mobile homes</a></p>
+</li>
+<li>
+<p><a href="#owner-occupied-housing-units">Owner-occupied Housing Units</a></p>
+</li>
+<li>
+<p><a href="#renter-occupied-housing-units">Renter occupied housing units</a></p>
+</li>
+<li>
+<p><a href="#vacant-housing-units">Vacant Housing Units</a></p>
+</li>
+</ul>
+<h3><a name="housing-units-built-before-1939"></a><a name="us-census-acs-b25034010"></a>Housing units built before 1939</h3>
+<p><a href="../../_images/us.census.acs.B25034010.png"><img alt="../../_images/us.census.acs.B25034010.png" src="../../_images/us.census.acs.B25034010.png" style="width: 100%;" /></a>A house, an apartment, a mobile home or trailer, a group of rooms, or a single room occupied as separate living quarters, or if vacant, intended for occupancy as separate living quarters built in 1939 or earlier.</p>
+<p>Measure &quot;Housing units built before 1939&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25034010'
+    );
+</code></pre>
+<p>Measure &quot;Housing units built before 1939&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25034010'
+    );
+</code></pre>
+<p>Measure &quot;Housing units built before 1939&quot; percent of &quot;Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25034010',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Housing units built before 1939&quot; percent of &quot;Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25034010',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25001001">Housing Units</a></li>
+</ul>
+<h3><a name="housing-units-built-between-2000-and-2004"></a><a name="us-census-acs-b25034003"></a>Housing units built between 2000 and 2004</h3>
+<p><a href="../../_images/us.census.acs.B25034003.png"><img alt="../../_images/us.census.acs.B25034003.png" src="../../_images/us.census.acs.B25034003.png" style="width: 100%;" /></a>A house, an apartment, a mobile home or trailer, a group of rooms, or a single room occupied as separate living quarters, or if vacant, intended for occupancy as separate living quarters built from 2000 to 2004.</p>
+<p>Measure &quot;Housing units built between 2000 and 2004&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25034003'
+    );
+</code></pre>
+<p>Measure &quot;Housing units built between 2000 and 2004&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25034003'
+    );
+</code></pre>
+<p>Measure &quot;Housing units built between 2000 and 2004&quot; percent of &quot;Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25034003',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Housing units built between 2000 and 2004&quot; percent of &quot;Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25034003',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25001001">Housing Units</a></li>
+</ul>
+<h3><a name="housing-units-built-in-2005-or-later"></a><a name="us-census-acs-b25034002"></a>Housing units built in 2005 or later</h3>
+<p><a href="../../_images/us.census.acs.B25034002.png"><img alt="../../_images/us.census.acs.B25034002.png" src="../../_images/us.census.acs.B25034002.png" style="width: 100%;" /></a>A house, an apartment, a mobile home or trailer, a group of rooms, or a single room occupied as separate living quarters, or if vacant, intended for occupancy as separate living quarters built in 2005 or later.</p>
+<p>Measure &quot;Housing units built in 2005 or later&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25034002'
+    );
+</code></pre>
+<p>Measure &quot;Housing units built in 2005 or later&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25034002'
+    );
+</code></pre>
+<p>Measure &quot;Housing units built in 2005 or later&quot; percent of &quot;Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25034002',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Housing units built in 2005 or later&quot; percent of &quot;Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25034002',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25001001">Housing Units</a></li>
+</ul>
+<h3><a name="mobile-homes"></a><a name="us-census-acs-b25024010"></a>Mobile homes</h3>
+<p><a href="../../_images/us.census.acs.B25024010.png"><img alt="../../_images/us.census.acs.B25024010.png" src="../../_images/us.census.acs.B25024010.png" style="width: 100%;" /></a>A manufactured home is defined as a movable dwelling, 8 feet or more wide and 40 feet or more long, designed to be towed on its own chassis, with transportation gear integral to the unit when it leaves the factory, and without need of a permanent foundation. These homes are built in accordance with the U.S. Department of Housing and Urban Development (HUD) building code.</p>
+<p>Measure &quot;Mobile homes&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25024010'
+    );
+</code></pre>
+<p>Measure &quot;Mobile homes&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25024010'
+    );
+</code></pre>
+<p>Measure &quot;Mobile homes&quot; percent of &quot;Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25024010',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Mobile homes&quot; percent of &quot;Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25024010',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25001001">Housing Units</a></li>
+</ul>
+<h3><a name="owner-occupied-housing-units"></a><a name="us-census-acs-b25075001"></a>Owner-occupied Housing Units</h3>
+<p><a href="../../_images/us.census.acs.B25075001.png"><img alt="../../_images/us.census.acs.B25075001.png" src="../../_images/us.census.acs.B25075001.png" style="width: 100%;" /></a>Measure &quot;Owner-occupied Housing Units&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25075001'
+    );
+</code></pre>
+<p>Measure &quot;Owner-occupied Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25075001'
+    );
+</code></pre>
+<p>Measure &quot;Owner-occupied Housing Units&quot; percent of &quot;Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25075001',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Owner-occupied Housing Units&quot; percent of &quot;Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25075001',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25001001">Housing Units</a></li>
+</ul>
+<p>Subcolumns of Owner-occupied Housing Units</p>
+<ul>
+<li>
+<p><a href="#owner-occupied-housing-units-valued-at-1-000-000-or-more">Owner-occupied Housing Units valued at $1,000,000 or more.</a></p>
+</li>
+<li>
+<p><a href="#owner-occupied-housing-units-with-a-mortgage">Owner-occupied Housing Units with a Mortgage</a></p>
+</li>
+</ul>
+<h4><a name="owner-occupied-housing-units-valued-at-1-000-000-or-more"></a><a name="us-census-acs-b25075025"></a>Owner-occupied Housing Units valued at $1,000,000 or more.</h4>
+<p><a href="../../_images/us.census.acs.B25075025.png"><img alt="../../_images/us.census.acs.B25075025.png" src="../../_images/us.census.acs.B25075025.png" style="width: 100%;" /></a>The count of owner occupied housing units in a geographic area that are valued at $1,000,000 or more.  Value is the respondent's estimate of how much the property (house and lot, mobile home and lot, or condominium unit) would sell for if it were for sale.</p>
+<p>Measure &quot;Owner-occupied Housing Units valued at $1,000,000 or more.&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25075025'
+    );
+</code></pre>
+<p>Measure &quot;Owner-occupied Housing Units valued at $1,000,000 or more.&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25075025'
+    );
+</code></pre>
+<p>Measure &quot;Owner-occupied Housing Units valued at $1,000,000 or more.&quot; percent of &quot;Owner-occupied Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25075025',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Owner-occupied Housing Units valued at $1,000,000 or more.&quot; percent of &quot;Owner-occupied Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25075025',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25075001">Owner-occupied Housing Units</a></li>
+</ul>
+<h4><a name="owner-occupied-housing-units-with-a-mortgage"></a><a name="us-census-acs-b25081002"></a>Owner-occupied Housing Units with a Mortgage</h4>
+<p><a href="../../_images/us.census.acs.B25081002.png"><img alt="../../_images/us.census.acs.B25081002.png" src="../../_images/us.census.acs.B25081002.png" style="width: 100%;" /></a>The count of housing units within a geographic area that are mortagaged. &quot;Mortgage&quot; refers to all forms of debt where the property is pledged as security for repayment of the debt, including deeds of trust, trust deed, contracts to purchase, land contracts, junior mortgages, and home equity loans.</p>
+<p>Measure &quot;Owner-occupied Housing Units with a Mortgage&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25081002'
+    );
+</code></pre>
+<p>Measure &quot;Owner-occupied Housing Units with a Mortgage&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25081002'
+    );
+</code></pre>
+<p>Measure &quot;Owner-occupied Housing Units with a Mortgage&quot; percent of &quot;Owner-occupied Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25081002',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Owner-occupied Housing Units with a Mortgage&quot; percent of &quot;Owner-occupied Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25081002',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25075001">Owner-occupied Housing Units</a></li>
+</ul>
+<h3><a name="renter-occupied-housing-units"></a><a name="us-census-acs-b25003001"></a>Renter occupied housing units</h3>
+<p><a href="../../_images/us.census.acs.B25003001.png"><img alt="../../_images/us.census.acs.B25003001.png" src="../../_images/us.census.acs.B25003001.png" style="width: 100%;" /></a>A housing unit is classified as occupied if it is the usual place of residence of the person or group of people living in it at the time of enumeration.</p>
+<p>Measure &quot;Renter occupied housing units&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25003001'
+    );
+</code></pre>
+<p>Measure &quot;Renter occupied housing units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25003001'
+    );
+</code></pre>
+<p>Measure &quot;Renter occupied housing units&quot; percent of &quot;Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25003001',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Renter occupied housing units&quot; percent of &quot;Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25003001',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25001001">Housing Units</a></li>
+</ul>
+<p>Subcolumns of Renter occupied housing units</p>
+<ul>
+<li><a href="#us-census-acs-b25003003">Renter occupied housing units</a></li>
+</ul>
+<h4><a name="us-census-acs-b25003003"></a><a name="id1"></a>Renter occupied housing units</h4>
+<p><a href="../../_images/us.census.acs.B25003003.png"><img alt="../../_images/us.census.acs.B25003003.png" src="../../_images/us.census.acs.B25003003.png" style="width: 100%;" /></a>All occupied units which are not owner occupied, whether they are rented for cash rent or occupied without payment of cash rent, are classified as renter-occupied.</p>
+<p>Measure &quot;Renter occupied housing units&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25003003'
+    );
+</code></pre>
+<p>Measure &quot;Renter occupied housing units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25003003'
+    );
+</code></pre>
+<p>Measure &quot;Renter occupied housing units&quot; percent of &quot;Renter occupied housing units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25003003',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Renter occupied housing units&quot; percent of &quot;Renter occupied housing units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25003003',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25003001">Renter occupied housing units</a></li>
+</ul>
+<h3><a name="vacant-housing-units"></a><a name="us-census-acs-b25002003"></a>Vacant Housing Units</h3>
+<p><a href="../../_images/us.census.acs.B25002003.png"><img alt="../../_images/us.census.acs.B25002003.png" src="../../_images/us.census.acs.B25002003.png" style="width: 100%;" /></a>The count of vacant housing units in a geographic area. A housing unit is vacant if no one is living in it at the time of enumeration, unless its occupants are only temporarily absent. Units temporarily occupied at the time of enumeration entirely by people who have a usual residence elsewhere are also classified as vacant.</p>
+<p>Measure &quot;Vacant Housing Units&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25002003'
+    );
+</code></pre>
+<p>Measure &quot;Vacant Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25002003'
+    );
+</code></pre>
+<p>Measure &quot;Vacant Housing Units&quot; percent of &quot;Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25002003',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Vacant Housing Units&quot; percent of &quot;Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25002003',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25001001">Housing Units</a></li>
+</ul>
+<p>Subcolumns of Vacant Housing Units</p>
+<ul>
+<li>
+<p><a href="#vacant-housing-units-for-rent">Vacant Housing Units for Rent</a></p>
+</li>
+<li>
+<p><a href="#vacant-housing-units-for-sale">Vacant Housing Units for Sale</a></p>
+</li>
+</ul>
+<h4><a name="vacant-housing-units-for-rent"></a><a name="us-census-acs-b25004002"></a>Vacant Housing Units for Rent</h4>
+<p><a href="../../_images/us.census.acs.B25004002.png"><img alt="../../_images/us.census.acs.B25004002.png" src="../../_images/us.census.acs.B25004002.png" style="width: 100%;" /></a>The count of vacant housing units in a geographic area that are for rent. A housing unit is vacant if no one is living in it at the time of enumeration, unless its occupants are only temporarily absent. Units temporarily occupied at the time of enumeration entirely by people who have a usual residence elsewhere are also classified as vacant.</p>
+<p>Measure &quot;Vacant Housing Units for Rent&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25004002'
+    );
+</code></pre>
+<p>Measure &quot;Vacant Housing Units for Rent&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25004002'
+    );
+</code></pre>
+<p>Measure &quot;Vacant Housing Units for Rent&quot; percent of &quot;Vacant Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25004002',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Vacant Housing Units for Rent&quot; percent of &quot;Vacant Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25004002',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25002003">Vacant Housing Units</a></li>
+</ul>
+<h4><a name="vacant-housing-units-for-sale"></a><a name="us-census-acs-b25004004"></a>Vacant Housing Units for Sale</h4>
+<p><a href="../../_images/us.census.acs.B25004004.png"><img alt="../../_images/us.census.acs.B25004004.png" src="../../_images/us.census.acs.B25004004.png" style="width: 100%;" /></a>The count of vacant housing units in a geographic area that are for sale. A housing unit is vacant if no one is living in it at the time of enumeration, unless its occupants are only temporarily absent. Units temporarily occupied at the time of enumeration entirely by people who have a usual residence elsewhere are also classified as vacant.</p>
+<p>Measure &quot;Vacant Housing Units for Sale&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25004004'
+    );
+</code></pre>
+<p>Measure &quot;Vacant Housing Units for Sale&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25004004'
+    );
+</code></pre>
+<p>Measure &quot;Vacant Housing Units for Sale&quot; percent of &quot;Vacant Housing Units&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25004004',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Vacant Housing Units for Sale&quot; percent of &quot;Vacant Housing Units&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B25004004',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="#us-census-acs-b25002003">Vacant Housing Units</a></li>
+</ul>
+<h2><a name="lived-in-a-different-house-one-year-ago-in-a-different-city"></a><a name="us-census-acs-b07204007"></a>Lived in a different house one year ago in a different city</h2>
+<p><a href="../../_images/us.census.acs.B07204007.png"><img alt="../../_images/us.census.acs.B07204007.png" src="../../_images/us.census.acs.B07204007.png" style="width: 100%;" /></a>All people in a geographic area who lived in a different city within the year prior to the survey.</p>
+<p>Measure &quot;Lived in a different house one year ago in a different city&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B07204007'
+    );
+</code></pre>
+<p>Measure &quot;Lived in a different house one year ago in a different city&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B07204007'
+    );
+</code></pre>
+<p>Measure &quot;Lived in a different house one year ago in a different city&quot; percent of &quot;Population 1 year and over&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B07204007',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Lived in a different house one year ago in a different city&quot; percent of &quot;Population 1 year and over&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B07204007',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="../age_gender/#us-census-acs-b07204001">Population 1 year and over</a></li>
+</ul>
+<h2><a name="lived-in-a-different-house-one-year-ago-in-the-same-city"></a><a name="us-census-acs-b07204004"></a>Lived in a different house one year ago in the same city</h2>
+<p><a href="../../_images/us.census.acs.B07204004.png"><img alt="../../_images/us.census.acs.B07204004.png" src="../../_images/us.census.acs.B07204004.png" style="width: 100%;" /></a>All people in a geographic area who lived in the same city but moved to a different unit within the year prior to the survey.</p>
+<p>Measure &quot;Lived in a different house one year ago in the same city&quot;  density per sq. kilometer  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B07204004'
+    );
+</code></pre>
+<p>Measure &quot;Lived in a different house one year ago in the same city&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B07204004'
+    );
+</code></pre>
+<p>Measure &quot;Lived in a different house one year ago in the same city&quot; percent of &quot;Population 1 year and over&quot; at one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B07204004',
+      'denominator'
+    );
+</code></pre>
+<p>Measure &quot;Lived in a different house one year ago in the same city&quot; percent of &quot;Population 1 year and over&quot; within an area:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'us.census.acs.B07204004',
+      'denominator'
+    );
+</code></pre>
+<ul>
+<li>denominator: <a href="../age_gender/#us-census-acs-b07204001">Population 1 year and over</a></li>
+</ul>
+<h2><a name="median-rent"></a><a name="us-census-acs-b25058001"></a>Median Rent</h2>
+<p><a href="../../_images/us.census.acs.B25058001.png"><img alt="../../_images/us.census.acs.B25058001.png" src="../../_images/us.census.acs.B25058001.png" style="width: 100%;" /></a>The median contract rent within a geographic area. The contract rent is the monthly rent agreed to or contracted for, regardless of any furnishings, utilities, fees, meals, or services that may be included. For vacant units, it is the monthly rent asked for the rental unit at the time of interview.</p>
+<p>Measure &quot;Median Rent&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25058001'
+    );
+</code></pre>
+<p>Median Rent is only available for point lookups.</p>
+<h2><a name="median-rental-price-per-square-foot-for-all-homes"></a><a name="us-zillow-allhomes-medianrentalpricepersqft"></a>Median rental price per square foot for All homes</h2>
+<p><a href="../../_images/us.zillow.AllHomes_MedianRentalPricePerSqft.png"><img alt="../../_images/us.zillow.AllHomes_MedianRentalPricePerSqft.png" src="../../_images/us.zillow.AllHomes_MedianRentalPricePerSqft.png" style="width: 100%;" /></a>Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home's square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.</p>
+<p>Measure &quot;Median rental price per square foot for All homes&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(28.3305906291771, -81.3544048197256),
+      'us.zillow.AllHomes_MedianRentalPricePerSqft'
+    );
+</code></pre>
+<p>Median rental price per square foot for All homes is only available for point lookups.</p>
+<h2><a name="median-rental-price-per-square-foot-for-single-family-residence-rental"></a><a name="us-zillow-sfr-medianrentalpricepersqft"></a>Median rental price per square foot for Single Family residence rental</h2>
+<p><a href="../../_images/us.zillow.Sfr_MedianRentalPricePerSqft.png"><img alt="../../_images/us.zillow.Sfr_MedianRentalPricePerSqft.png" src="../../_images/us.zillow.Sfr_MedianRentalPricePerSqft.png" style="width: 100%;" /></a>Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home's square footage. Single family residences are detached, free-standing residential buildings.</p>
+<p>Measure &quot;Median rental price per square foot for Single Family residence rental&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(28.3305906291771, -81.3544048197256),
+      'us.zillow.Sfr_MedianRentalPricePerSqft'
+    );
+</code></pre>
+<p>Median rental price per square foot for Single Family residence rental is only available for point lookups.</p>
+<h2><a name="median-value-per-square-foot-for-all-homes"></a><a name="us-zillow-allhomes-medianvaluepersqft"></a>Median value per square foot for All homes</h2>
+<p><a href="../../_images/us.zillow.AllHomes_MedianValuePerSqft.png"><img alt="../../_images/us.zillow.AllHomes_MedianValuePerSqft.png" src="../../_images/us.zillow.AllHomes_MedianValuePerSqft.png" style="width: 100%;" /></a>Median of the estimated monthly rent price (US Dollars) of all homes, per square foot. This is calculated by taking the estimated rent price for a home and dividing it by the homes square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.</p>
+<p>Measure &quot;Median value per square foot for All homes&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(28.3305906291771, -81.3544048197256),
+      'us.zillow.AllHomes_MedianValuePerSqft'
+    );
+</code></pre>
+<p>Median value per square foot for All homes is only available for point lookups.</p>
+<h2><a name="owner-occupied-housing-units-median-value"></a><a name="us-census-acs-b25077001"></a>Owner-Occupied Housing Units Median Value</h2>
+<p><a href="../../_images/us.census.acs.B25077001.png"><img alt="../../_images/us.census.acs.B25077001.png" src="../../_images/us.census.acs.B25077001.png" style="width: 100%;" /></a>The middle value (median) in a geographic area owner occupied housing units.</p>
+<p>Measure &quot;Owner-Occupied Housing Units Median Value&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25077001'
+    );
+</code></pre>
+<p>Owner-Occupied Housing Units Median Value is only available for point lookups.</p>
+<h2><a name="percent-of-household-income-spent-on-rent"></a><a name="us-census-acs-b25071001"></a>Percent of Household Income Spent on Rent</h2>
+<p><a href="../../_images/us.census.acs.B25071001.png"><img alt="../../_images/us.census.acs.B25071001.png" src="../../_images/us.census.acs.B25071001.png" style="width: 100%;" /></a>Within a geographic area, the median percentage of household income which was spent on gross rent.  Gross rent is the amount of the contract rent plus the estimated average monthly cost of utilities (electricity, gas, water, sewer etc.) and fuels (oil, coal, wood, etc.) if these are paid by the renter.  Household income is the sum of the income of all people 15 years and older living in the household.</p>
+<p>Measure &quot;Percent of Household Income Spent on Rent&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(40.7, -73.9),
+      'us.census.acs.B25071001'
+    );
+</code></pre>
+<p>Percent of Household Income Spent on Rent is only available for point lookups.</p>
+<h2><a name="zillow-home-value-index-for-all-homes"></a><a name="us-zillow-allhomes-zhvi"></a>Zillow Home Value Index for All homes</h2>
+<p><a href="../../_images/us.zillow.AllHomes_Zhvi.png"><img alt="../../_images/us.zillow.AllHomes_Zhvi.png" src="../../_images/us.zillow.AllHomes_Zhvi.png" style="width: 100%;" /></a>The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See <a href="http://www.zillow.com/research/zhvi-methodology-6032/">Zillow's methodology</a> for more information. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.</p>
+<p>Measure &quot;Zillow Home Value Index for All homes&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(28.3305906291771, -81.3544048197256),
+      'us.zillow.AllHomes_Zhvi'
+    );
+</code></pre>
+<p>Zillow Home Value Index for All homes is only available for point lookups.</p>
+<h2><a name="zillow-home-value-index-for-single-family-homes"></a><a name="us-zillow-singlefamilyresidence-zhvi"></a>Zillow Home Value Index for Single Family Homes</h2>
+<p><a href="../../_images/us.zillow.SingleFamilyResidence_Zhvi.png"><img alt="../../_images/us.zillow.SingleFamilyResidence_Zhvi.png" src="../../_images/us.zillow.SingleFamilyResidence_Zhvi.png" style="width: 100%;" /></a>The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See <a href="http://www.zillow.com/research/zhvi-methodology-6032/">Zillow's methodology</a> for more information. Single family residences are detached, free-standing residential buildings.</p>
+<p>Measure &quot;Zillow Home Value Index for Single Family Homes&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(28.3305906291771, -81.3544048197256),
+      'us.zillow.SingleFamilyResidence_Zhvi'
+    );
+</code></pre>
+<p>Zillow Home Value Index for Single Family Homes is only available for point lookups.</p>
+<h2><a name="zillow-rental-index-for-all-homes-plus-multifamily"></a><a name="us-zillow-allhomesplusmultifamily-zri"></a>Zillow Rental Index for All homes plus multifamily</h2>
+<p><a href="../../_images/us.zillow.AllHomesPlusMultifamily_Zri.png"><img alt="../../_images/us.zillow.AllHomesPlusMultifamily_Zri.png" src="../../_images/us.zillow.AllHomesPlusMultifamily_Zri.png" style="width: 100%;" /></a>Similar to Zillow's ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See <a href="http://www.zillow.com/research/zillow-rent-index-methodology-2393/">Zillow's methodology</a> for more information. In addition to &quot;All homes&quot;, which Zillow defines as single-family, condominium and co-operative homes with a county record, this group includes units in buildings with 5 or more housing units that are not a condominiums or co-ops.</p>
+<p>Measure &quot;Zillow Rental Index for All homes plus multifamily&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(28.3305906291771, -81.3544048197256),
+      'us.zillow.AllHomesPlusMultifamily_Zri'
+    );
+</code></pre>
+<p>Zillow Rental Index for All homes plus multifamily is only available for point lookups.</p>
+<h2><a name="zillow-rental-index-for-single-family-residence-rental"></a><a name="us-zillow-singlefamilyresidencerental-zri"></a>Zillow Rental Index for Single Family residence rental</h2>
+<p><a href="../../_images/us.zillow.SingleFamilyResidenceRental_Zri.png"><img alt="../../_images/us.zillow.SingleFamilyResidenceRental_Zri.png" src="../../_images/us.zillow.SingleFamilyResidenceRental_Zri.png" style="width: 100%;" /></a>Similar to Zillow's ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See <a href="http://www.zillow.com/research/zillow-rent-index-methodology-2393/">Zillow's methodology</a> for more information. Single Family residence rental is defined as detached, free-standing residential buildings which are rented out.</p>
+<p>Measure &quot;Zillow Rental Index for Single Family residence rental&quot;  for one point:</p>
+<pre><code>UPDATE {table_name}
+  SET {new_numeric_column} =
+    OBS_GetMeasure(
+      CDB_LatLng(28.3305906291771, -81.3544048197256),
+      'us.zillow.SingleFamilyResidenceRental_Zri'
+    );
+</code></pre>
+<p>Zillow Rental Index for Single Family residence rental is only available for point lookups.</p>

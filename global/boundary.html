@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>6.1. Boundaries &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="6. Global" href="../global.html" />
+    <link rel="next" title="&lt;no title&gt;" href="commerce_economy.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="age_gender.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="boundaries">
+<h1>6.1. Boundaries<a class="headerlink" href="#boundaries" title="Permalink to this headline">¶</a></h1>
+<p>Political, administrative, and census-based boundaries.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#continents" id="id1">Continents</a></li>
+<li><a class="reference internal" href="#counties" id="id2">Counties</a></li>
+<li><a class="reference internal" href="#countries" id="id3">Countries</a></li>
+<li><a class="reference internal" href="#disputed-areas" id="id4">Disputed Areas</a></li>
+<li><a class="reference internal" href="#marine-areas" id="id5">Marine Areas</a></li>
+<li><a class="reference internal" href="#regions-first-level-administrative" id="id6">Regions (First-level Administrative)</a></li>
+</ul>
+</div>
+<div class="section" id="continents">
+<span id="whosonfirst-wof-continent-geom"></span><h2><a class="toc-backref" href="#id1">6.1.1. Continents</a><a class="headerlink" href="#continents" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/whosonfirst.wof_continent_geom.png"><img alt="../_images/whosonfirst.wof_continent_geom.png" src="../_images/whosonfirst.wof_continent_geom.png" style="width: 100%;" /></a>
+</div>
+<p>Obtain &#8220;Continents&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_continent_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Continents&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_continent_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#whosonfirst-wof-continent-geom"><span class="std std-ref">Continents</span></a></p>
+</td>
+<td><p>2016</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="counties">
+<span id="whosonfirst-wof-county-geom"></span><h2><a class="toc-backref" href="#id2">6.1.2. Counties</a><a class="headerlink" href="#counties" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Counties&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_county_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Counties&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_county_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="countries">
+<span id="whosonfirst-wof-country-geom"></span><h2><a class="toc-backref" href="#id3">6.1.3. Countries</a><a class="headerlink" href="#countries" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/whosonfirst.wof_country_geom.png"><img alt="../_images/whosonfirst.wof_country_geom.png" src="../_images/whosonfirst.wof_country_geom.png" style="width: 100%;" /></a>
+</div>
+<p>Obtain &#8220;Countries&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_country_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Countries&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_country_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#whosonfirst-wof-country-geom"><span class="std std-ref">Countries</span></a></p>
+</td>
+<td><p>2016</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="disputed-areas">
+<span id="whosonfirst-wof-disputed-geom"></span><h2><a class="toc-backref" href="#id4">6.1.4. Disputed Areas</a><a class="headerlink" href="#disputed-areas" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Disputed Areas&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">76.57</span><span class="p">,</span> <span class="mf">33.78</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_disputed_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Disputed Areas&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">76.57</span><span class="p">,</span> <span class="mf">33.78</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_disputed_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#whosonfirst-wof-disputed-geom"><span class="std std-ref">Disputed Areas</span></a></p>
+</td>
+<td><p>2016</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="marine-areas">
+<span id="whosonfirst-wof-marinearea-geom"></span><h2><a class="toc-backref" href="#id5">6.1.5. Marine Areas</a><a class="headerlink" href="#marine-areas" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Marine Areas&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">68.47</span><span class="p">,</span> <span class="mf">43.33</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_marinearea_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Marine Areas&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">68.47</span><span class="p">,</span> <span class="mf">43.33</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_marinearea_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#whosonfirst-wof-marinearea-geom"><span class="std std-ref">Marine Areas</span></a></p>
+</td>
+<td><p>2016</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="regions-first-level-administrative">
+<span id="whosonfirst-wof-region-geom"></span><h2><a class="toc-backref" href="#id6">6.1.6. Regions (First-level Administrative)</a><a class="headerlink" href="#regions-first-level-administrative" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/whosonfirst.wof_region_geom.png"><img alt="../_images/whosonfirst.wof_region_geom.png" src="../_images/whosonfirst.wof_region_geom.png" style="width: 100%;" /></a>
+</div>
+<p>Obtain &#8220;Regions (First-level Administrative)&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_region_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Regions (First-level Administrative)&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;whosonfirst.wof_region_geom&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#whosonfirst-wof-region-geom"><span class="std std-ref">Regions (First-level Administrative)</span></a></p>
+</td>
+<td><p>2016</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">6.1. Boundaries</a><ul>
+<li><a class="reference internal" href="#continents">6.1.1. Continents</a></li>
+<li><a class="reference internal" href="#counties">6.1.2. Counties</a></li>
+<li><a class="reference internal" href="#countries">6.1.3. Countries</a></li>
+<li><a class="reference internal" href="#disputed-areas">6.1.4. Disputed Areas</a></li>
+<li><a class="reference internal" href="#marine-areas">6.1.5. Marine Areas</a></li>
+<li><a class="reference internal" href="#regions-first-level-administrative">6.1.6. Regions (First-level Administrative)</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../global.html">6. Global</a><ul>
+      <li>Previous: <a href="age_gender.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="commerce_economy.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/global/boundary.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/global/boundary.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,2885 @@
+
+
+.. Employment:
+
+Employment
+===========================================================================
+
+How people are employed.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _uk.ons.LC6201EW0001:
+
+Population age 16 and over
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population age 16 and over"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0001'
+      );
+
+
+
+
+
+Measure "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0001'
+        );
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. contents:: Subcolumns of Population age 16 and over
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC6201EW0010:
+
+Economically active
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Economically active"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0010'
+      );
+
+
+
+
+
+Measure "Economically active" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0010'
+        );
+
+
+
+
+
+
+Measure "Economically active" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0010',
+        'denominator'
+      );
+
+
+Measure "Economically active" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0010',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+.. contents:: Subcolumns of Economically active
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC6201EW0019:
+
+Employed population
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Employed population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0019'
+      );
+
+
+
+
+
+Measure "Employed population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0019'
+        );
+
+
+
+
+
+
+Measure "Employed population" percent of "Economically active" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0019',
+        'denominator'
+      );
+
+
+Measure "Employed population" percent of "Economically active" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0019',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0010`
+
+
+
+.. contents:: Subcolumns of Employed population
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC6201EW0028:
+
+Employed as an employee
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Employed as an employee"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0028'
+      );
+
+
+
+
+
+Measure "Employed as an employee" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0028'
+        );
+
+
+
+
+
+
+Measure "Employed as an employee" percent of "Employed population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0028',
+        'denominator'
+      );
+
+
+Measure "Employed as an employee" percent of "Employed population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0028',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0019`
+
+
+
+.. contents:: Subcolumns of Employed as an employee
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC6201EW0046:
+
+Full-time employees
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Full-time employees"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0046'
+      );
+
+
+
+
+
+Measure "Full-time employees" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0046'
+        );
+
+
+
+
+
+
+Measure "Full-time employees" percent of "Employed as an employee" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0046',
+        'denominator'
+      );
+
+
+Measure "Full-time employees" percent of "Employed as an employee" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0046',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0028`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0037:
+
+Part-time employees
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Part-time employees"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0037'
+      );
+
+
+
+
+
+Measure "Part-time employees" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0037'
+        );
+
+
+
+
+
+
+Measure "Part-time employees" percent of "Employed as an employee" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0037',
+        'denominator'
+      );
+
+
+Measure "Part-time employees" percent of "Employed as an employee" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0037',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0028`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0082:
+
+Full-time students
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Full-time students"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0082'
+      );
+
+
+
+
+
+Measure "Full-time students" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0082'
+        );
+
+
+
+
+
+
+Measure "Full-time students" percent of "Employed population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0082',
+        'denominator'
+      );
+
+
+Measure "Full-time students" percent of "Employed population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0082',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0019`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0055:
+
+Self-employed
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Self-employed"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0055'
+      );
+
+
+
+
+
+Measure "Self-employed" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0055'
+        );
+
+
+
+
+
+
+Measure "Self-employed" percent of "Employed population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0055',
+        'denominator'
+      );
+
+
+Measure "Self-employed" percent of "Employed population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0055',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0019`
+
+
+
+.. contents:: Subcolumns of Self-employed
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC6201EW0073:
+
+Self-employed full-time
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Self-employed full-time"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0073'
+      );
+
+
+
+
+
+Measure "Self-employed full-time" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0073'
+        );
+
+
+
+
+
+
+Measure "Self-employed full-time" percent of "Self-employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0073',
+        'denominator'
+      );
+
+
+Measure "Self-employed full-time" percent of "Self-employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0073',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0055`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0064:
+
+Self-employed part-time
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Self-employed part-time"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0064'
+      );
+
+
+
+
+
+Measure "Self-employed part-time" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0064'
+        );
+
+
+
+
+
+
+Measure "Self-employed part-time" percent of "Self-employed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0064',
+        'denominator'
+      );
+
+
+Measure "Self-employed part-time" percent of "Self-employed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0064',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0055`
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0091:
+
+Unemployed
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Unemployed"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0091'
+      );
+
+
+
+
+
+Measure "Unemployed" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0091'
+        );
+
+
+
+
+
+
+Measure "Unemployed" percent of "Economically active" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0091',
+        'denominator'
+      );
+
+
+Measure "Unemployed" percent of "Economically active" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0091',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0010`
+
+
+
+.. contents:: Subcolumns of Unemployed
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC6201EW0109:
+
+Full-time students, unemployed
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Full-time students, unemployed"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0109'
+      );
+
+
+
+
+
+Measure "Full-time students, unemployed" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0109'
+        );
+
+
+
+
+
+
+Measure "Full-time students, unemployed" percent of "Unemployed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0109',
+        'denominator'
+      );
+
+
+Measure "Full-time students, unemployed" percent of "Unemployed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0109',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0091`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0100:
+
+Unemployed (excluding full-time students)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Unemployed (excluding full-time students)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0100'
+      );
+
+
+
+
+
+Measure "Unemployed (excluding full-time students)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0100'
+        );
+
+
+
+
+
+
+Measure "Unemployed (excluding full-time students)" percent of "Unemployed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0100',
+        'denominator'
+      );
+
+
+Measure "Unemployed (excluding full-time students)" percent of "Unemployed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0100',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0091`
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0118:
+
+Economically inactive
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Economically inactive"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0118'
+      );
+
+
+
+
+
+Measure "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0118'
+        );
+
+
+
+
+
+
+Measure "Economically inactive" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0118',
+        'denominator'
+      );
+
+
+Measure "Economically inactive" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0118',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+.. contents:: Subcolumns of Economically inactive
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC6201EW0136:
+
+Economically inactive students
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Economically inactive students"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0136'
+      );
+
+
+
+
+
+Measure "Economically inactive students" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0136'
+        );
+
+
+
+
+
+
+Measure "Economically inactive students" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0136',
+        'denominator'
+      );
+
+
+Measure "Economically inactive students" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0136',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0118`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0154:
+
+Long-term sick or disabled
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Long-term sick or disabled"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0154'
+      );
+
+
+
+
+
+Measure "Long-term sick or disabled" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0154'
+        );
+
+
+
+
+
+
+Measure "Long-term sick or disabled" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0154',
+        'denominator'
+      );
+
+
+Measure "Long-term sick or disabled" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0154',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0118`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0145:
+
+Looking after home or family
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Looking after home or family"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0145'
+      );
+
+
+
+
+
+Measure "Looking after home or family" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0145'
+        );
+
+
+
+
+
+
+Measure "Looking after home or family" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0145',
+        'denominator'
+      );
+
+
+Measure "Looking after home or family" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0145',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0118`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6201EW0127:
+
+Retired population
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Retired population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0127'
+      );
+
+
+
+
+
+Measure "Retired population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6201EW0127'
+        );
+
+
+
+
+
+
+Measure "Retired population" percent of "Economically inactive" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6201EW0127',
+        'denominator'
+      );
+
+
+Measure "Retired population" percent of "Economically inactive" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6201EW0127',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0118`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0010:
+
+Higher managerial, administrative and professional occupations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Higher managerial, administrative and professional occupations"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0010'
+      );
+
+
+
+
+
+Measure "Higher managerial, administrative and professional occupations" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0010'
+        );
+
+
+
+
+
+
+Measure "Higher managerial, administrative and professional occupations" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0010',
+        'denominator'
+      );
+
+
+Measure "Higher managerial, administrative and professional occupations" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0010',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+.. contents:: Subcolumns of Higher managerial, administrative and professional occupations
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC6206EW0028:
+
+Higher professional occupations
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Higher professional occupations"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0028'
+      );
+
+
+
+
+
+Measure "Higher professional occupations" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0028'
+        );
+
+
+
+
+
+
+Measure "Higher professional occupations" percent of "Higher managerial, administrative and professional occupations" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0028',
+        'denominator'
+      );
+
+
+Measure "Higher professional occupations" percent of "Higher managerial, administrative and professional occupations" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0028',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6206EW0010`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0019:
+
+Large employers and higher managerial and administrative occupations
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Large employers and higher managerial and administrative occupations"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0019'
+      );
+
+
+
+
+
+Measure "Large employers and higher managerial and administrative occupations" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0019'
+        );
+
+
+
+
+
+
+Measure "Large employers and higher managerial and administrative occupations" percent of "Higher managerial, administrative and professional occupations" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0019',
+        'denominator'
+      );
+
+
+Measure "Large employers and higher managerial and administrative occupations" percent of "Higher managerial, administrative and professional occupations" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0019',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6206EW0010`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0046:
+
+Intermediate occupations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Intermediate occupations"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0046'
+      );
+
+
+
+
+
+Measure "Intermediate occupations" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0046'
+        );
+
+
+
+
+
+
+Measure "Intermediate occupations" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0046',
+        'denominator'
+      );
+
+
+Measure "Intermediate occupations" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0046',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0037:
+
+Lower managerial, administrative and professional occupations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Lower managerial, administrative and professional occupations"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0037'
+      );
+
+
+
+
+
+Measure "Lower managerial, administrative and professional occupations" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0037'
+        );
+
+
+
+
+
+
+Measure "Lower managerial, administrative and professional occupations" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0037',
+        'denominator'
+      );
+
+
+Measure "Lower managerial, administrative and professional occupations" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0037',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0064:
+
+Lower supervisory and technical occupations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Lower supervisory and technical occupations"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0064'
+      );
+
+
+
+
+
+Measure "Lower supervisory and technical occupations" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0064'
+        );
+
+
+
+
+
+
+Measure "Lower supervisory and technical occupations" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0064',
+        'denominator'
+      );
+
+
+Measure "Lower supervisory and technical occupations" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0064',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0091:
+
+Never worked and long-term unemployed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Never worked and long-term unemployed"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0091'
+      );
+
+
+
+
+
+Measure "Never worked and long-term unemployed" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0091'
+        );
+
+
+
+
+
+
+Measure "Never worked and long-term unemployed" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0091',
+        'denominator'
+      );
+
+
+Measure "Never worked and long-term unemployed" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0091',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+.. contents:: Subcolumns of Never worked and long-term unemployed
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _uk.ons.LC6206EW0109:
+
+Long-term unemployed
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Long-term unemployed"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0109'
+      );
+
+
+
+
+
+Measure "Long-term unemployed" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0109'
+        );
+
+
+
+
+
+
+Measure "Long-term unemployed" percent of "Never worked and long-term unemployed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0109',
+        'denominator'
+      );
+
+
+Measure "Long-term unemployed" percent of "Never worked and long-term unemployed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0109',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6206EW0091`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0100:
+
+Never worked
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+Measure "Never worked"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0100'
+      );
+
+
+
+
+
+Measure "Never worked" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0100'
+        );
+
+
+
+
+
+
+Measure "Never worked" percent of "Never worked and long-term unemployed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0100',
+        'denominator'
+      );
+
+
+Measure "Never worked" percent of "Never worked and long-term unemployed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0100',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6206EW0091`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0082:
+
+Routine occupations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Routine occupations"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0082'
+      );
+
+
+
+
+
+Measure "Routine occupations" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0082'
+        );
+
+
+
+
+
+
+Measure "Routine occupations" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0082',
+        'denominator'
+      );
+
+
+Measure "Routine occupations" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0082',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0073:
+
+Semi-routine occupations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Semi-routine occupations"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0073'
+      );
+
+
+
+
+
+Measure "Semi-routine occupations" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0073'
+        );
+
+
+
+
+
+
+Measure "Semi-routine occupations" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0073',
+        'denominator'
+      );
+
+
+Measure "Semi-routine occupations" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0073',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+  
+  
+  
+  
+
+.. _uk.ons.LC6206EW0055:
+
+Small employers and account workers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+Measure "Small employers and account workers"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0055'
+      );
+
+
+
+
+
+Measure "Small employers and account workers" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC6206EW0055'
+        );
+
+
+
+
+
+
+Measure "Small employers and account workers" percent of "Population age 16 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC6206EW0055',
+        'denominator'
+      );
+
+
+Measure "Small employers and account workers" percent of "Population age 16 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC6206EW0055',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC6201EW0001`
+
+
+
+  
+  
+
+

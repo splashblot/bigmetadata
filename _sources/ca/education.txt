@@ -1,0 +1,5791 @@
+
+
+.. Education:
+
+Education
+===========================================================================
+
+Educational attainment and enrollment.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t005c011_f:
+
+Total population aged 25 to 64 years by highest certificate, diploma or degree (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population aged 25 to 64 years by highest certificate, diploma or degree (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c011_f'
+      );
+
+
+
+
+
+Measure "Total population aged 25 to 64 years by highest certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c011_f'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total population aged 25 to 64 years by highest certificate, diploma or degree (female)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c013_f:
+
+High school diploma or equivalent (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "High school diploma or equivalent (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c013_f'
+      );
+
+
+
+
+
+Measure "High school diploma or equivalent (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c013_f'
+        );
+
+
+
+
+
+
+Measure "High school diploma or equivalent (female)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c013_f',
+        'denominator'
+      );
+
+
+Measure "High school diploma or equivalent (female)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c013_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c011_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c012_f:
+
+No certificate, diploma or degree (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "No certificate, diploma or degree (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c012_f'
+      );
+
+
+
+
+
+Measure "No certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c012_f'
+        );
+
+
+
+
+
+
+Measure "No certificate, diploma or degree (female)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c012_f',
+        'denominator'
+      );
+
+
+Measure "No certificate, diploma or degree (female)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c012_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c011_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c014_f:
+
+Postsecondary certificate, diploma or degree (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Postsecondary certificate, diploma or degree (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c014_f'
+      );
+
+
+
+
+
+Measure "Postsecondary certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c014_f'
+        );
+
+
+
+
+
+
+Measure "Postsecondary certificate, diploma or degree (female)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c014_f',
+        'denominator'
+      );
+
+
+Measure "Postsecondary certificate, diploma or degree (female)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c014_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c011_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Postsecondary certificate, diploma or degree (female)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c015_f:
+
+Apprenticeship or trades certificate or diploma (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Apprenticeship or trades certificate or diploma (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c015_f'
+      );
+
+
+
+
+
+Measure "Apprenticeship or trades certificate or diploma (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c015_f'
+        );
+
+
+
+
+
+
+Measure "Apprenticeship or trades certificate or diploma (female)" percent of "Postsecondary certificate, diploma or degree (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c015_f',
+        'denominator'
+      );
+
+
+Measure "Apprenticeship or trades certificate or diploma (female)" percent of "Postsecondary certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c015_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c016_f:
+
+College, CEGEP or other non-university certificate or diploma (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c016_f'
+      );
+
+
+
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c016_f'
+        );
+
+
+
+
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (female)" percent of "Postsecondary certificate, diploma or degree (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c016_f',
+        'denominator'
+      );
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (female)" percent of "Postsecondary certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c016_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c017_f:
+
+University certificate or diploma below bachelor level (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "University certificate or diploma below bachelor level (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c017_f'
+      );
+
+
+
+
+
+Measure "University certificate or diploma below bachelor level (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c017_f'
+        );
+
+
+
+
+
+
+Measure "University certificate or diploma below bachelor level (female)" percent of "Postsecondary certificate, diploma or degree (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c017_f',
+        'denominator'
+      );
+
+
+Measure "University certificate or diploma below bachelor level (female)" percent of "Postsecondary certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c017_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c018_f:
+
+University certificate, diploma or degree at bachelor level or above (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c018_f'
+      );
+
+
+
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c018_f'
+        );
+
+
+
+
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (female)" percent of "Postsecondary certificate, diploma or degree (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c018_f',
+        'denominator'
+      );
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (female)" percent of "Postsecondary certificate, diploma or degree (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c018_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of University certificate, diploma or degree at bachelor level or above (female)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c019_f:
+
+Bachelor's degree (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Bachelor's degree (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c019_f'
+      );
+
+
+
+
+
+Measure "Bachelor's degree (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c019_f'
+        );
+
+
+
+
+
+
+Measure "Bachelor's degree (female)" percent of "University certificate, diploma or degree at bachelor level or above (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c019_f',
+        'denominator'
+      );
+
+
+Measure "Bachelor's degree (female)" percent of "University certificate, diploma or degree at bachelor level or above (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c019_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c018_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c020_f:
+
+University certificate, diploma or degree above bachelor level (female)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "University certificate, diploma or degree above bachelor level (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c020_f'
+      );
+
+
+
+
+
+Measure "University certificate, diploma or degree above bachelor level (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c020_f'
+        );
+
+
+
+
+
+
+Measure "University certificate, diploma or degree above bachelor level (female)" percent of "University certificate, diploma or degree at bachelor level or above (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c020_f',
+        'denominator'
+      );
+
+
+Measure "University certificate, diploma or degree above bachelor level (female)" percent of "University certificate, diploma or degree at bachelor level or above (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c020_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c018_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t005c011_m:
+
+Total population aged 25 to 64 years by highest certificate, diploma or degree (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population aged 25 to 64 years by highest certificate, diploma or degree (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c011_m'
+      );
+
+
+
+
+
+Measure "Total population aged 25 to 64 years by highest certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c011_m'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total population aged 25 to 64 years by highest certificate, diploma or degree (male)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c013_m:
+
+High school diploma or equivalent (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "High school diploma or equivalent (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c013_m'
+      );
+
+
+
+
+
+Measure "High school diploma or equivalent (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c013_m'
+        );
+
+
+
+
+
+
+Measure "High school diploma or equivalent (male)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c013_m',
+        'denominator'
+      );
+
+
+Measure "High school diploma or equivalent (male)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c013_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c011_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c012_m:
+
+No certificate, diploma or degree (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "No certificate, diploma or degree (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c012_m'
+      );
+
+
+
+
+
+Measure "No certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c012_m'
+        );
+
+
+
+
+
+
+Measure "No certificate, diploma or degree (male)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c012_m',
+        'denominator'
+      );
+
+
+Measure "No certificate, diploma or degree (male)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c012_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c011_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c014_m:
+
+Postsecondary certificate, diploma or degree (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Postsecondary certificate, diploma or degree (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c014_m'
+      );
+
+
+
+
+
+Measure "Postsecondary certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c014_m'
+        );
+
+
+
+
+
+
+Measure "Postsecondary certificate, diploma or degree (male)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c014_m',
+        'denominator'
+      );
+
+
+Measure "Postsecondary certificate, diploma or degree (male)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c014_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c011_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Postsecondary certificate, diploma or degree (male)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c015_m:
+
+Apprenticeship or trades certificate or diploma (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Apprenticeship or trades certificate or diploma (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c015_m'
+      );
+
+
+
+
+
+Measure "Apprenticeship or trades certificate or diploma (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c015_m'
+        );
+
+
+
+
+
+
+Measure "Apprenticeship or trades certificate or diploma (male)" percent of "Postsecondary certificate, diploma or degree (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c015_m',
+        'denominator'
+      );
+
+
+Measure "Apprenticeship or trades certificate or diploma (male)" percent of "Postsecondary certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c015_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c016_m:
+
+College, CEGEP or other non-university certificate or diploma (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c016_m'
+      );
+
+
+
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c016_m'
+        );
+
+
+
+
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (male)" percent of "Postsecondary certificate, diploma or degree (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c016_m',
+        'denominator'
+      );
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (male)" percent of "Postsecondary certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c016_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c017_m:
+
+University certificate or diploma below bachelor level (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "University certificate or diploma below bachelor level (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c017_m'
+      );
+
+
+
+
+
+Measure "University certificate or diploma below bachelor level (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c017_m'
+        );
+
+
+
+
+
+
+Measure "University certificate or diploma below bachelor level (male)" percent of "Postsecondary certificate, diploma or degree (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c017_m',
+        'denominator'
+      );
+
+
+Measure "University certificate or diploma below bachelor level (male)" percent of "Postsecondary certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c017_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c018_m:
+
+University certificate, diploma or degree at bachelor level or above (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c018_m'
+      );
+
+
+
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c018_m'
+        );
+
+
+
+
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (male)" percent of "Postsecondary certificate, diploma or degree (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c018_m',
+        'denominator'
+      );
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (male)" percent of "Postsecondary certificate, diploma or degree (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c018_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of University certificate, diploma or degree at bachelor level or above (male)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c019_m:
+
+Bachelor's degree (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Bachelor's degree (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c019_m'
+      );
+
+
+
+
+
+Measure "Bachelor's degree (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c019_m'
+        );
+
+
+
+
+
+
+Measure "Bachelor's degree (male)" percent of "University certificate, diploma or degree at bachelor level or above (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c019_m',
+        'denominator'
+      );
+
+
+Measure "Bachelor's degree (male)" percent of "University certificate, diploma or degree at bachelor level or above (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c019_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c018_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c020_m:
+
+University certificate, diploma or degree above bachelor level (male)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "University certificate, diploma or degree above bachelor level (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c020_m'
+      );
+
+
+
+
+
+Measure "University certificate, diploma or degree above bachelor level (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c020_m'
+        );
+
+
+
+
+
+
+Measure "University certificate, diploma or degree above bachelor level (male)" percent of "University certificate, diploma or degree at bachelor level or above (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c020_m',
+        'denominator'
+      );
+
+
+Measure "University certificate, diploma or degree above bachelor level (male)" percent of "University certificate, diploma or degree at bachelor level or above (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c020_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c018_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t005c011_t:
+
+Total population aged 25 to 64 years by highest certificate, diploma or degree (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population aged 25 to 64 years by highest certificate, diploma or degree (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c011_t'
+      );
+
+
+
+
+
+Measure "Total population aged 25 to 64 years by highest certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c011_t'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total population aged 25 to 64 years by highest certificate, diploma or degree (total)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c013_t:
+
+High school diploma or equivalent (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "High school diploma or equivalent (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c013_t'
+      );
+
+
+
+
+
+Measure "High school diploma or equivalent (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c013_t'
+        );
+
+
+
+
+
+
+Measure "High school diploma or equivalent (total)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c013_t',
+        'denominator'
+      );
+
+
+Measure "High school diploma or equivalent (total)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c013_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c011_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c012_t:
+
+No certificate, diploma or degree (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "No certificate, diploma or degree (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c012_t'
+      );
+
+
+
+
+
+Measure "No certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c012_t'
+        );
+
+
+
+
+
+
+Measure "No certificate, diploma or degree (total)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c012_t',
+        'denominator'
+      );
+
+
+Measure "No certificate, diploma or degree (total)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c012_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c011_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c014_t:
+
+Postsecondary certificate, diploma or degree (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Postsecondary certificate, diploma or degree (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c014_t'
+      );
+
+
+
+
+
+Measure "Postsecondary certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c014_t'
+        );
+
+
+
+
+
+
+Measure "Postsecondary certificate, diploma or degree (total)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c014_t',
+        'denominator'
+      );
+
+
+Measure "Postsecondary certificate, diploma or degree (total)" percent of "Total population aged 25 to 64 years by highest certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c014_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c011_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Postsecondary certificate, diploma or degree (total)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c015_t:
+
+Apprenticeship or trades certificate or diploma (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Apprenticeship or trades certificate or diploma (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c015_t'
+      );
+
+
+
+
+
+Measure "Apprenticeship or trades certificate or diploma (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c015_t'
+        );
+
+
+
+
+
+
+Measure "Apprenticeship or trades certificate or diploma (total)" percent of "Postsecondary certificate, diploma or degree (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c015_t',
+        'denominator'
+      );
+
+
+Measure "Apprenticeship or trades certificate or diploma (total)" percent of "Postsecondary certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c015_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c016_t:
+
+College, CEGEP or other non-university certificate or diploma (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c016_t'
+      );
+
+
+
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c016_t'
+        );
+
+
+
+
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (total)" percent of "Postsecondary certificate, diploma or degree (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c016_t',
+        'denominator'
+      );
+
+
+Measure "College, CEGEP or other non-university certificate or diploma (total)" percent of "Postsecondary certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c016_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c017_t:
+
+University certificate or diploma below bachelor level (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "University certificate or diploma below bachelor level (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c017_t'
+      );
+
+
+
+
+
+Measure "University certificate or diploma below bachelor level (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c017_t'
+        );
+
+
+
+
+
+
+Measure "University certificate or diploma below bachelor level (total)" percent of "Postsecondary certificate, diploma or degree (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c017_t',
+        'denominator'
+      );
+
+
+Measure "University certificate or diploma below bachelor level (total)" percent of "Postsecondary certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c017_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c018_t:
+
+University certificate, diploma or degree at bachelor level or above (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c018_t'
+      );
+
+
+
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c018_t'
+        );
+
+
+
+
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (total)" percent of "Postsecondary certificate, diploma or degree (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c018_t',
+        'denominator'
+      );
+
+
+Measure "University certificate, diploma or degree at bachelor level or above (total)" percent of "Postsecondary certificate, diploma or degree (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c018_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c014_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of University certificate, diploma or degree at bachelor level or above (total)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c019_t:
+
+Bachelor's degree (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "Bachelor's degree (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c019_t'
+      );
+
+
+
+
+
+Measure "Bachelor's degree (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c019_t'
+        );
+
+
+
+
+
+
+Measure "Bachelor's degree (total)" percent of "University certificate, diploma or degree at bachelor level or above (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c019_t',
+        'denominator'
+      );
+
+
+Measure "Bachelor's degree (total)" percent of "University certificate, diploma or degree at bachelor level or above (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c019_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c018_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t005c020_t:
+
+University certificate, diploma or degree above bachelor level (total)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+Measure "University certificate, diploma or degree above bachelor level (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c020_t'
+      );
+
+
+
+
+
+Measure "University certificate, diploma or degree above bachelor level (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t005c020_t'
+        );
+
+
+
+
+
+
+Measure "University certificate, diploma or degree above bachelor level (total)" percent of "University certificate, diploma or degree at bachelor level or above (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t005c020_t',
+        'denominator'
+      );
+
+
+Measure "University certificate, diploma or degree above bachelor level (total)" percent of "University certificate, diploma or degree at bachelor level or above (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t005c020_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t005c018_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+

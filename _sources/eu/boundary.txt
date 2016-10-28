@@ -1,0 +1,119 @@
+
+
+.. Boundaries:
+
+Boundaries
+===========================================================================
+
+Political, administrative, and census-based boundaries.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _eu.geo.nuts3:
+
+NUTS Level 3
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "NUTS Level 3" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(52.5220703614, 13.4060668945),
+      'eu.geo.nuts3'
+    )
+
+
+
+
+
+Obtain all "NUTS Level 3" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+      'eu.geo.nuts3'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2015
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.geo.eurographics-source`
+
+:License:
+
+    :ref:`eu.geo.eurographics-license`
+
+
+

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Families &mdash; bigmetadata 0.0.1 documentation</title>
+    <title>5.6. Families &mdash; observatory 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -27,16 +27,18 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/bigmetadata.js"></script>
     <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
-    <link rel="top" title="bigmetadata 0.0.1 documentation" href="../index.html" />
-    <link rel="up" title="United States" href="../tags.united_states.html" />
-    <link rel="next" title="Housing" href="tags.housing.html" />
-    <link rel="prev" title="Employment" href="tags.employment.html" />
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="5. United States" href="../tags.united_states.html" />
+    <link rel="next" title="5.7. Health" href="tags.health.html" />
+    <link rel="prev" title="5.5. Employment" href="tags.employment.html" />
    
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">  
+  <body role="document">
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -44,27 +46,33 @@
           <div class="body" role="main">
             
   <div class="section" id="families">
-<h1>Families<a class="headerlink" href="#families" title="Permalink to this headline">¶</a></h1>
+<h1>5.6. Families<a class="headerlink" href="#families" title="Permalink to this headline">¶</a></h1>
 <p>Familial arrangements of people and households.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><a class="reference internal" href="#children-under-18-years-of-age" id="id1">Children under 18 Years of Age</a></li>
-<li><a class="reference internal" href="#population-15-years-and-over" id="id2">Population 15 Years and Over</a><ul>
-<li><a class="reference internal" href="#currently-married" id="id3">Currently married</a></li>
-<li><a class="reference internal" href="#divorced" id="id4">Divorced</a></li>
-<li><a class="reference internal" href="#married-but-separated" id="id5">Married but separated</a></li>
-<li><a class="reference internal" href="#never-married" id="id6">Never Married</a></li>
-<li><a class="reference internal" href="#widowed" id="id7">Widowed</a></li>
+<li><a class="reference internal" href="#households-with-two-female-partners" id="id2">Households with two female partners</a></li>
+<li><a class="reference internal" href="#households-with-two-male-partners" id="id3">Households with two male partners</a></li>
+<li><a class="reference internal" href="#married-households" id="id4">Married households</a></li>
+<li><a class="reference internal" href="#population-15-years-and-over" id="id5">Population 15 Years and Over</a><ul>
+<li><a class="reference internal" href="#currently-married" id="id6">Currently married</a></li>
+<li><a class="reference internal" href="#divorced" id="id7">Divorced</a></li>
+<li><a class="reference internal" href="#married-but-separated" id="id8">Married but separated</a></li>
+<li><a class="reference internal" href="#never-married" id="id9">Never Married</a></li>
+<li><a class="reference internal" href="#widowed" id="id10">Widowed</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="children-under-18-years-of-age">
-<span id="us-census-acs-b09001001"></span><h2><a class="toc-backref" href="#id1">Children under 18 Years of Age</a><a class="headerlink" href="#children-under-18-years-of-age" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-acs-b09001001"></span><h2><a class="toc-backref" href="#id1">5.6.1. Children under 18 Years of Age</a><a class="headerlink" href="#children-under-18-years-of-age" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B09001001.png"><img alt="../_images/us.census.acs.B09001001.png" src="../_images/us.census.acs.B09001001.png" style="width: 100%;" /></a>
+</div>
 <p>The number of people within each geography who are under 18 years of age.</p>
 <p>Measure &#8220;Children under 18 Years of Age&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B09001001&#39;</span>
@@ -72,8 +80,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Children under 18 Years of Age&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B09001001&#39;</span>
@@ -81,12 +89,174 @@
 </pre></div>
 </div>
 </div>
+<div class="section" id="households-with-two-female-partners">
+<span id="us-census-acs-b11009005"></span><h2><a class="toc-backref" href="#id2">5.6.2. Households with two female partners</a><a class="headerlink" href="#households-with-two-female-partners" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B11009005.png"><img alt="../_images/us.census.acs.B11009005.png" src="../_images/us.census.acs.B11009005.png" style="width: 100%;" /></a>
+</div>
+<p>An unmarried partner is a person age 15 years and over, who is not related to the householder, who shares living quarters, and who has an intimate relationship with the householder.</p>
+<p>Measure &#8220;Households with two female partners&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11009005&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Households with two female partners&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11009005&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Households with two female partners&#8221; percent of &#8220;Households&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11009005&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Households with two female partners&#8221; percent of &#8220;Households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11009005&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.housing.html#us-census-acs-b11001001"><span class="std std-ref">Households</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="households-with-two-male-partners">
+<span id="us-census-acs-b11009003"></span><h2><a class="toc-backref" href="#id3">5.6.3. Households with two male partners</a><a class="headerlink" href="#households-with-two-male-partners" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B11009003.png"><img alt="../_images/us.census.acs.B11009003.png" src="../_images/us.census.acs.B11009003.png" style="width: 100%;" /></a>
+</div>
+<p>An unmarried partner is a person age 15 years and over, who is not related to the householder, who shares living quarters, and who has an intimate relationship with the householder.</p>
+<p>Measure &#8220;Households with two male partners&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11009003&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Households with two male partners&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11009003&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Households with two male partners&#8221; percent of &#8220;Households&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11009003&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Households with two male partners&#8221; percent of &#8220;Households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11009003&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.housing.html#us-census-acs-b11001001"><span class="std std-ref">Households</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="married-households">
+<span id="us-census-acs-b11001003"></span><h2><a class="toc-backref" href="#id4">5.6.4. Married households</a><a class="headerlink" href="#married-households" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B11001003.png"><img alt="../_images/us.census.acs.B11001003.png" src="../_images/us.census.acs.B11001003.png" style="width: 100%;" /></a>
+</div>
+<p>People in formal marriages, as well as people in common-law marriages, are included. Does not include same-sex marriages.</p>
+<p>Measure &#8220;Married households&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11001003&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Married households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11001003&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Married households&#8221; percent of &#8220;Households&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11001003&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Married households&#8221; percent of &#8220;Households&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B11001003&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">denominator:</th><td class="field-body"><a class="reference internal" href="tags.housing.html#us-census-acs-b11001001"><span class="std std-ref">Households</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="population-15-years-and-over">
-<span id="us-census-acs-b12005001"></span><h2><a class="toc-backref" href="#id2">Population 15 Years and Over</a><a class="headerlink" href="#population-15-years-and-over" title="Permalink to this headline">¶</a></h2>
+<span id="us-census-acs-b12005001"></span><h2><a class="toc-backref" href="#id5">5.6.5. Population 15 Years and Over</a><a class="headerlink" href="#population-15-years-and-over" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B12005001.png"><img alt="../_images/us.census.acs.B12005001.png" src="../_images/us.census.acs.B12005001.png" style="width: 100%;" /></a>
+</div>
 <p>The number of people in a geographic area who are over the age of 15.  This is used mostly as a denominator of marital status.</p>
 <p>Measure &#8220;Population 15 Years and Over&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005001&#39;</span>
@@ -94,8 +264,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Population 15 Years and Over&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005001&#39;</span>
@@ -105,19 +275,22 @@
 <div class="contents local topic" id="subcolumns-of-population-15-years-and-over">
 <p class="topic-title first">Subcolumns of Population 15 Years and Over</p>
 <ul class="simple">
-<li><a class="reference internal" href="#currently-married" id="id8">Currently married</a></li>
-<li><a class="reference internal" href="#divorced" id="id9">Divorced</a></li>
-<li><a class="reference internal" href="#married-but-separated" id="id10">Married but separated</a></li>
-<li><a class="reference internal" href="#never-married" id="id11">Never Married</a></li>
-<li><a class="reference internal" href="#widowed" id="id12">Widowed</a></li>
+<li><a class="reference internal" href="#currently-married" id="id11">Currently married</a></li>
+<li><a class="reference internal" href="#divorced" id="id12">Divorced</a></li>
+<li><a class="reference internal" href="#married-but-separated" id="id13">Married but separated</a></li>
+<li><a class="reference internal" href="#never-married" id="id14">Never Married</a></li>
+<li><a class="reference internal" href="#widowed" id="id15">Widowed</a></li>
 </ul>
 </div>
 <div class="section" id="currently-married">
-<span id="us-census-acs-b12005005"></span><h3><a class="toc-backref" href="#id8">Currently married</a><a class="headerlink" href="#currently-married" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b12005005"></span><h3><a class="toc-backref" href="#id11">5.6.5.1. Currently married</a><a class="headerlink" href="#currently-married" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B12005005.png"><img alt="../_images/us.census.acs.B12005005.png" src="../_images/us.census.acs.B12005005.png" style="width: 100%;" /></a>
+</div>
 <p>The number of people in a geographic area who are currently married</p>
 <p>Measure &#8220;Currently married&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005005&#39;</span>
@@ -125,8 +298,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Currently married&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005005&#39;</span>
@@ -134,8 +307,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Currently married&#8221; percent of &#8220;Population 15 Years and Over&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005005&#39;</span><span class="p">,</span>
@@ -144,8 +317,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Currently married&#8221; percent of &#8220;Population 15 Years and Over&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005005&#39;</span><span class="p">,</span>
@@ -163,11 +336,14 @@
 </table>
 </div>
 <div class="section" id="divorced">
-<span id="us-census-acs-b12005015"></span><h3><a class="toc-backref" href="#id9">Divorced</a><a class="headerlink" href="#divorced" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b12005015"></span><h3><a class="toc-backref" href="#id12">5.6.5.2. Divorced</a><a class="headerlink" href="#divorced" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B12005015.png"><img alt="../_images/us.census.acs.B12005015.png" src="../_images/us.census.acs.B12005015.png" style="width: 100%;" /></a>
+</div>
 <p>The number of people in a geographic area who are divorced</p>
 <p>Measure &#8220;Divorced&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005015&#39;</span>
@@ -175,8 +351,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Divorced&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005015&#39;</span>
@@ -184,8 +360,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Divorced&#8221; percent of &#8220;Population 15 Years and Over&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005015&#39;</span><span class="p">,</span>
@@ -194,8 +370,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Divorced&#8221; percent of &#8220;Population 15 Years and Over&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005015&#39;</span><span class="p">,</span>
@@ -213,11 +389,14 @@
 </table>
 </div>
 <div class="section" id="married-but-separated">
-<span id="us-census-acs-b12005008"></span><h3><a class="toc-backref" href="#id10">Married but separated</a><a class="headerlink" href="#married-but-separated" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b12005008"></span><h3><a class="toc-backref" href="#id13">5.6.5.3. Married but separated</a><a class="headerlink" href="#married-but-separated" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B12005008.png"><img alt="../_images/us.census.acs.B12005008.png" src="../_images/us.census.acs.B12005008.png" style="width: 100%;" /></a>
+</div>
 <p>The number of people in a geographic area who are married but separated</p>
 <p>Measure &#8220;Married but separated&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005008&#39;</span>
@@ -225,8 +404,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Married but separated&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005008&#39;</span>
@@ -234,8 +413,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Married but separated&#8221; percent of &#8220;Population 15 Years and Over&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005008&#39;</span><span class="p">,</span>
@@ -244,8 +423,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Married but separated&#8221; percent of &#8220;Population 15 Years and Over&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005008&#39;</span><span class="p">,</span>
@@ -263,11 +442,14 @@
 </table>
 </div>
 <div class="section" id="never-married">
-<span id="us-census-acs-b12005002"></span><h3><a class="toc-backref" href="#id11">Never Married</a><a class="headerlink" href="#never-married" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b12005002"></span><h3><a class="toc-backref" href="#id14">5.6.5.4. Never Married</a><a class="headerlink" href="#never-married" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B12005002.png"><img alt="../_images/us.census.acs.B12005002.png" src="../_images/us.census.acs.B12005002.png" style="width: 100%;" /></a>
+</div>
 <p>The number of people in a geographic area who have never been married.</p>
 <p>Measure &#8220;Never Married&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005002&#39;</span>
@@ -275,8 +457,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Never Married&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005002&#39;</span>
@@ -284,8 +466,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Never Married&#8221; percent of &#8220;Population 15 Years and Over&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005002&#39;</span><span class="p">,</span>
@@ -294,8 +476,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Never Married&#8221; percent of &#8220;Population 15 Years and Over&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005002&#39;</span><span class="p">,</span>
@@ -313,11 +495,14 @@
 </table>
 </div>
 <div class="section" id="widowed">
-<span id="us-census-acs-b12005012"></span><h3><a class="toc-backref" href="#id12">Widowed</a><a class="headerlink" href="#widowed" title="Permalink to this headline">¶</a></h3>
+<span id="us-census-acs-b12005012"></span><h3><a class="toc-backref" href="#id15">5.6.5.5. Widowed</a><a class="headerlink" href="#widowed" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B12005012.png"><img alt="../_images/us.census.acs.B12005012.png" src="../_images/us.census.acs.B12005012.png" style="width: 100%;" /></a>
+</div>
 <p>The number of people in a geographic area who are widowed</p>
 <p>Measure &#8220;Widowed&#8221;  density per sq. kilometer  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005012&#39;</span>
@@ -325,8 +510,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Widowed&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005012&#39;</span>
@@ -334,8 +519,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Widowed&#8221; percent of &#8220;Population 15 Years and Over&#8221; at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005012&#39;</span><span class="p">,</span>
@@ -344,8 +529,8 @@
 </pre></div>
 </div>
 <p>Measure &#8220;Widowed&#8221; percent of &#8220;Population 15 Years and Over&#8221; within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
       <span class="s1">&#39;us.census.acs.B12005012&#39;</span><span class="p">,</span>
@@ -373,14 +558,17 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Families</a><ul>
-<li><a class="reference internal" href="#children-under-18-years-of-age">Children under 18 Years of Age</a></li>
-<li><a class="reference internal" href="#population-15-years-and-over">Population 15 Years and Over</a><ul>
-<li><a class="reference internal" href="#currently-married">Currently married</a></li>
-<li><a class="reference internal" href="#divorced">Divorced</a></li>
-<li><a class="reference internal" href="#married-but-separated">Married but separated</a></li>
-<li><a class="reference internal" href="#never-married">Never Married</a></li>
-<li><a class="reference internal" href="#widowed">Widowed</a></li>
+<li><a class="reference internal" href="#">5.6. Families</a><ul>
+<li><a class="reference internal" href="#children-under-18-years-of-age">5.6.1. Children under 18 Years of Age</a></li>
+<li><a class="reference internal" href="#households-with-two-female-partners">5.6.2. Households with two female partners</a></li>
+<li><a class="reference internal" href="#households-with-two-male-partners">5.6.3. Households with two male partners</a></li>
+<li><a class="reference internal" href="#married-households">5.6.4. Married households</a></li>
+<li><a class="reference internal" href="#population-15-years-and-over">5.6.5. Population 15 Years and Over</a><ul>
+<li><a class="reference internal" href="#currently-married">5.6.5.1. Currently married</a></li>
+<li><a class="reference internal" href="#divorced">5.6.5.2. Divorced</a></li>
+<li><a class="reference internal" href="#married-but-separated">5.6.5.3. Married but separated</a></li>
+<li><a class="reference internal" href="#never-married">5.6.5.4. Never Married</a></li>
+<li><a class="reference internal" href="#widowed">5.6.5.5. Widowed</a></li>
 </ul>
 </li>
 </ul>
@@ -390,9 +578,9 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-  <li><a href="../tags.united_states.html">United States</a><ul>
-      <li>Previous: <a href="tags.employment.html" title="previous chapter">Employment</a></li>
-      <li>Next: <a href="tags.housing.html" title="next chapter">Housing</a></li>
+  <li><a href="../tags.united_states.html">5. United States</a><ul>
+      <li>Previous: <a href="tags.employment.html" title="previous chapter">5.5. Employment</a></li>
+      <li>Next: <a href="tags.health.html" title="next chapter">5.7. Health</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -407,8 +595,8 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -422,8 +610,8 @@
       &copy;2016, CartoDB.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
       |
       <a href="../_sources/tags.united_states/tags.families.txt"

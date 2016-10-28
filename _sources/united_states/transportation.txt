@@ -1,0 +1,9993 @@
+
+
+.. Transportation:
+
+Transportation
+===========================================================================
+
+How do people move from place to place?
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _us.census.acs.B08135001:
+
+Aggregate travel time to work
+---------------------------------------------------------------------------
+
+
+
+
+
+The total number of minutes every worker in a geographic area over the age of 16 who did not work from home spent spent commuting to work in one day
+
+
+
+
+
+Measure "Aggregate travel time to work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08135001'
+      );
+
+
+
+
+
+Measure "Aggregate travel time to work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08135001'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Divisor:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B08201002:
+
+Car-free households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08201002.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of households without passenger cars, vans, and pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.
+
+
+
+
+
+Measure "Car-free households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201002'
+      );
+
+
+
+
+
+Measure "Car-free households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08201002'
+        );
+
+
+
+
+
+
+Measure "Car-free households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201002',
+        'denominator'
+      );
+
+
+Measure "Car-free households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08201002',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B11001001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B08006002:
+
+Commuters by Car, Truck, or Van
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08006002.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers age 16 years and over within  a geographic area who primarily traveled to work by car, truck or  van.  This is the principal mode of travel or type of conveyance,  by distance rather than time, that the worker usually used to get  from home to work.
+
+
+
+
+
+Measure "Commuters by Car, Truck, or Van"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006002'
+      );
+
+
+
+
+
+Measure "Commuters by Car, Truck, or Van" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08006002'
+        );
+
+
+
+
+
+
+Measure "Commuters by Car, Truck, or Van" percent of "Workers over the Age of 16" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006002',
+        'denominator'
+      );
+
+
+Measure "Commuters by Car, Truck, or Van" percent of "Workers over the Age of 16" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08006002',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08006001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Commuters by Car, Truck, or Van
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B08006004:
+
+Commuters by Carpool
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08006004.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers age 16 years and over within a geographic area who primarily traveled to work by carpool.  This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.
+
+
+
+
+
+Measure "Commuters by Carpool"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006004'
+      );
+
+
+
+
+
+Measure "Commuters by Carpool" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08006004'
+        );
+
+
+
+
+
+
+Measure "Commuters by Carpool" percent of "Commuters by Car, Truck, or Van" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006004',
+        'denominator'
+      );
+
+
+Measure "Commuters by Carpool" percent of "Commuters by Car, Truck, or Van" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08006004',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08006002`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08006003:
+
+Commuters who drove alone
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08006003.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers age 16 years and over within a geographic area who primarily traveled by car driving alone. This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.
+
+
+
+
+
+Measure "Commuters who drove alone"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006003'
+      );
+
+
+
+
+
+Measure "Commuters who drove alone" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08006003'
+        );
+
+
+
+
+
+
+Measure "Commuters who drove alone" percent of "Commuters by Car, Truck, or Van" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006003',
+        'denominator'
+      );
+
+
+Measure "Commuters who drove alone" percent of "Commuters by Car, Truck, or Van" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08006003',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08006002`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+
+
+
+
+
+
+.. _us.census.acs.B08301010:
+
+Commuters by Public Transportation
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08301010.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers age 16 years and over within a geographic area who primarily traveled to work by public transportation.  This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.
+
+
+
+
+
+Measure "Commuters by Public Transportation"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08301010'
+      );
+
+
+
+
+
+Measure "Commuters by Public Transportation" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08301010'
+        );
+
+
+
+
+
+
+Measure "Commuters by Public Transportation" percent of "Workers over the Age of 16" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08301010',
+        'denominator'
+      );
+
+
+Measure "Commuters by Public Transportation" percent of "Workers over the Age of 16" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08301010',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08006001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Commuters by Public Transportation
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B08006009:
+
+Commuters by Bus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08006009.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers age 16 years and over within a geographic area who primarily traveled to work by bus.  This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.  This is a subset of workers who commuted by public transport.
+
+
+
+
+
+Measure "Commuters by Bus"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006009'
+      );
+
+
+
+
+
+Measure "Commuters by Bus" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08006009'
+        );
+
+
+
+
+
+
+Measure "Commuters by Bus" percent of "Commuters by Public Transportation" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006009',
+        'denominator'
+      );
+
+
+Measure "Commuters by Bus" percent of "Commuters by Public Transportation" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08006009',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08301010`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08006011:
+
+Commuters by Subway or Elevated
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08006011.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers age 16 years and over within a geographic area who primarily traveled to work by subway or elevated train.  This is the principal mode of travel or type of conveyance, by distance rather than time, that the worker usually used to get from home to work.  This is a subset of workers who commuted by public transport.
+
+
+
+
+
+Measure "Commuters by Subway or Elevated"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006011'
+      );
+
+
+
+
+
+Measure "Commuters by Subway or Elevated" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08006011'
+        );
+
+
+
+
+
+
+Measure "Commuters by Subway or Elevated" percent of "Commuters by Public Transportation" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006011',
+        'denominator'
+      );
+
+
+Measure "Commuters by Subway or Elevated" percent of "Commuters by Public Transportation" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08006011',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08301010`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+
+
+
+
+
+
+.. _us.census.acs.B08201006:
+
+Four car households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08201006.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of households with four or more passenger cars, vans, pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.
+
+
+
+
+
+Measure "Four car households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201006'
+      );
+
+
+
+
+
+Measure "Four car households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08201006'
+        );
+
+
+
+
+
+
+Measure "Four car households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201006',
+        'denominator'
+      );
+
+
+Measure "Four car households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08201006',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B11001001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B08201003:
+
+One car households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08201003.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of households with one passenger car, van, , pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.
+
+
+
+
+
+Measure "One car households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201003'
+      );
+
+
+
+
+
+Measure "One car households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08201003'
+        );
+
+
+
+
+
+
+Measure "One car households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201003',
+        'denominator'
+      );
+
+
+Measure "One car households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08201003',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B11001001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B08201005:
+
+Three car households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08201005.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of households with one passenger cars, vans, pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.
+
+
+
+
+
+Measure "Three car households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201005'
+      );
+
+
+
+
+
+Measure "Three car households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08201005'
+        );
+
+
+
+
+
+
+Measure "Three car households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201005',
+        'denominator'
+      );
+
+
+Measure "Three car households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08201005',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B11001001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B08201004:
+
+Two car households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08201004.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of households with two passenger cars, vans, pickup or panel trucks of one-ton capacity or less kept at home and available for the use of household members. Vehicles rented or leased for one month or more, company vehicles, and police and government vehicles are included if kept at home and used for non-business purposes. Dismantled or immobile vehicles ware excluded. Vehicles kept at home but used only for business purposes also are excluded.
+
+
+
+
+
+Measure "Two car households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201004'
+      );
+
+
+
+
+
+Measure "Two car households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08201004'
+        );
+
+
+
+
+
+
+Measure "Two car households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08201004',
+        'denominator'
+      );
+
+
+Measure "Two car households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08201004',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B11001001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B08006015:
+
+Walked to Work
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08006015.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers age 16 years and over within a geographic area who primarily walked to work.  This would mean that of any way of getting to work, they travelled the most distance walking.
+
+
+
+
+
+Measure "Walked to Work"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006015'
+      );
+
+
+
+
+
+Measure "Walked to Work" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08006015'
+        );
+
+
+
+
+
+
+Measure "Walked to Work" percent of "Workers over the Age of 16" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006015',
+        'denominator'
+      );
+
+
+Measure "Walked to Work" percent of "Workers over the Age of 16" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08006015',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08006001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B08006017:
+
+Worked at Home
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08006017.png
+  :width: 100 %
+  :align: center
+
+
+
+The count within a geographical area of workers over the age of 16 who worked at home.
+
+
+
+
+
+Measure "Worked at Home"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006017'
+      );
+
+
+
+
+
+Measure "Worked at Home" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08006017'
+        );
+
+
+
+
+
+
+Measure "Worked at Home" percent of "Workers over the Age of 16" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08006017',
+        'denominator'
+      );
+
+
+Measure "Worked at Home" percent of "Workers over the Age of 16" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08006017',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08006001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B08134001:
+
+Workers age 16 and over who do not work from home
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08134001.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home
+
+
+
+
+
+Measure "Workers age 16 and over who do not work from home"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08134001'
+      );
+
+
+
+
+
+Measure "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08134001'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Workers age 16 and over who do not work from home
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B08303003:
+
+Number of workers with a commute between 5 and 9 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303003.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 5 and 9 minutes.
+
+
+
+
+
+Measure "Number of workers with a commute between 5 and 9 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303003'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 5 and 9 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303003'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 5 and 9 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303003',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 5 and 9 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303003',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303004:
+
+Number of workers with a commute between 10 and 14 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303004.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 10 and 14 minutes. 
+
+
+
+
+
+Measure "Number of workers with a commute between 10 and 14 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303004'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 10 and 14 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303004'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 10 and 14 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303004',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 10 and 14 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303004',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303005:
+
+Number of workers with a commute between 15 and 19 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303005.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 15 and 19 minutes. 
+
+
+
+
+
+Measure "Number of workers with a commute between 15 and 19 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303005'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 15 and 19 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303005'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 15 and 19 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303005',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 15 and 19 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303005',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303006:
+
+Number of workers with a commute between 20 and 24 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303006.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 20 and 24 minutes.
+
+
+
+
+
+Measure "Number of workers with a commute between 20 and 24 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303006'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 20 and 24 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303006'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 20 and 24 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303006',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 20 and 24 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303006',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303007:
+
+Number of workers with a commute between 25 and 29 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303007.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 25 and 29 minutes. 
+
+
+
+
+
+Measure "Number of workers with a commute between 25 and 29 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303007'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 25 and 29 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303007'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 25 and 29 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303007',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 25 and 29 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303007',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303008:
+
+Number of workers with a commute between 30 and 34 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303008.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 30 and 34 minutes. 
+
+
+
+
+
+Measure "Number of workers with a commute between 30 and 34 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303008'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 30 and 34 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303008'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 30 and 34 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303008',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 30 and 34 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303008',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303009:
+
+Number of workers with a commute between 35 and 39 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303009.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 39 minutes. 
+
+
+
+
+
+Measure "Number of workers with a commute between 35 and 39 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303009'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 35 and 39 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303009'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 35 and 39 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303009',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 35 and 39 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303009',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08134008:
+
+Number of workers with a commute between 35 and 44 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08134008.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 35 and 44 minutes. 
+
+
+
+
+
+Measure "Number of workers with a commute between 35 and 44 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08134008'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 35 and 44 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08134008'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 35 and 44 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08134008',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 35 and 44 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08134008',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303010:
+
+Number of workers with a commute between 40 and 44 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303010.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 40 and 44 minutes. 
+
+
+
+
+
+Measure "Number of workers with a commute between 40 and 44 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303010'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 40 and 44 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303010'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 40 and 44 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303010',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 40 and 44 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303010',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303011:
+
+Number of workers with a commute between 45 and 59 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303011.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 45 and 59 minutes. 
+
+
+
+
+
+Measure "Number of workers with a commute between 45 and 59 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303011'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 45 and 59 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303011'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 45 and 59 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303011',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 45 and 59 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303011',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303012:
+
+Number of workers with a commute between 60 and 89 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303012.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in between 60 and 89 minutes .
+
+
+
+
+
+Measure "Number of workers with a commute between 60 and 89 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303012'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute between 60 and 89 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303012'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute between 60 and 89 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303012',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute between 60 and 89 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303012',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08303013:
+
+Number of workers with a commute of more than 90 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08303013.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute more than 90 minutes.
+
+
+
+
+
+Measure "Number of workers with a commute of more than 90 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303013'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute of more than 90 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08303013'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute of more than 90 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08303013',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute of more than 90 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08303013',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08134010:
+
+Number of workers with a commute of over 60 minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08134010.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in over 60 minutes.
+
+
+
+
+
+Measure "Number of workers with a commute of over 60 minutes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08134010'
+      );
+
+
+
+
+
+Measure "Number of workers with a commute of over 60 minutes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08134010'
+        );
+
+
+
+
+
+
+Measure "Number of workers with a commute of over 60 minutes" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08134010',
+        'denominator'
+      );
+
+
+Measure "Number of workers with a commute of over 60 minutes" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08134010',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B08134002:
+
+Number of workers with less than 10 minute commute
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B08134002.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of workers in a geographic area over the age of 16 who do not work from home and commute in less than 10 minutes.
+
+
+
+
+
+Measure "Number of workers with less than 10 minute commute"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08134002'
+      );
+
+
+
+
+
+Measure "Number of workers with less than 10 minute commute" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08134002'
+        );
+
+
+
+
+
+
+Measure "Number of workers with less than 10 minute commute" percent of "Workers age 16 and over who do not work from home" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08134002',
+        'denominator'
+      );
+
+
+Measure "Number of workers with less than 10 minute commute" percent of "Workers age 16 and over who do not work from home" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08134002',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08134001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+
+
+
+
+
+
+.. _us.census.acs.B08014002:
+
+Workers age 16 and over with no vehicle
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B08014002.png
+  :width: 100 %
+  :align: center
+
+
+
+All people in a geographic area over the age of 16 who do not own a car.
+
+
+
+
+
+Measure "Workers age 16 and over with no vehicle"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08014002'
+      );
+
+
+
+
+
+Measure "Workers age 16 and over with no vehicle" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B08014002'
+        );
+
+
+
+
+
+
+Measure "Workers age 16 and over with no vehicle" percent of "Workers over the Age of 16" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B08014002',
+        'denominator'
+      );
+
+
+Measure "Workers age 16 and over with no vehicle" percent of "Workers over the Age of 16" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B08014002',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B08006001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+

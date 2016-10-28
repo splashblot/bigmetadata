@@ -1,0 +1,3203 @@
+
+
+.. Race and Ethnicity:
+
+Race and Ethnicity
+===========================================================================
+
+Population breakdowns by race and ethnicity. 
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _us.census.acs.B01003001:
+
+Total Population
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B01003001.png
+  :width: 100 %
+  :align: center
+
+
+
+The total number of all people living in a given geographic area.  This is a very useful catch-all denominator when calculating rates.
+
+
+
+
+
+Measure "Total Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B01003001'
+      );
+
+
+
+
+
+Measure "Total Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B01003001'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Total Population
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B03002005:
+
+American Indian and Alaska Native Population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B03002005.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people identifying as American Indian or Alaska native in each geography.
+
+
+
+
+
+Measure "American Indian and Alaska Native Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002005'
+      );
+
+
+
+
+
+Measure "American Indian and Alaska Native Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B03002005'
+        );
+
+
+
+
+
+
+Measure "American Indian and Alaska Native Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002005',
+        'denominator'
+      );
+
+
+Measure "American Indian and Alaska Native Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B03002005',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _us.census.acs.B03002006:
+
+Asian Population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B03002006.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people identifying as Asian, non-Hispanic in each geography.
+
+
+
+
+
+Measure "Asian Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002006'
+      );
+
+
+
+
+
+Measure "Asian Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B03002006'
+        );
+
+
+
+
+
+
+Measure "Asian Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002006',
+        'denominator'
+      );
+
+
+Measure "Asian Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B03002006',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _us.census.acs.B03002004:
+
+Black or African American Population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B03002004.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people identifying as black or African American, non-Hispanic in each geography.
+
+
+
+
+
+Measure "Black or African American Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002004'
+      );
+
+
+
+
+
+Measure "Black or African American Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B03002004'
+        );
+
+
+
+
+
+
+Measure "Black or African American Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002004',
+        'denominator'
+      );
+
+
+Measure "Black or African American Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B03002004',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _us.census.acs.B03002012:
+
+Hispanic Population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B03002012.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people identifying as Hispanic or Latino in each geography.
+
+
+
+
+
+Measure "Hispanic Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002012'
+      );
+
+
+
+
+
+Measure "Hispanic Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B03002012'
+        );
+
+
+
+
+
+
+Measure "Hispanic Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002012',
+        'denominator'
+      );
+
+
+Measure "Hispanic Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B03002012',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _us.census.acs.B03002008:
+
+Other Race population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B03002008.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people identifying as another race in each geography
+
+
+
+
+
+Measure "Other Race population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002008'
+      );
+
+
+
+
+
+Measure "Other Race population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B03002008'
+        );
+
+
+
+
+
+
+Measure "Other Race population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002008',
+        'denominator'
+      );
+
+
+Measure "Other Race population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B03002008',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B03002002:
+
+Population not Hispanic
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B03002002.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people not identifying as Hispanic or Latino in each geography.
+
+
+
+
+
+Measure "Population not Hispanic"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002002'
+      );
+
+
+
+
+
+Measure "Population not Hispanic" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B03002002'
+        );
+
+
+
+
+
+
+Measure "Population not Hispanic" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002002',
+        'denominator'
+      );
+
+
+Measure "Population not Hispanic" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B03002002',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B03002009:
+
+Two or more races population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B03002009.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people identifying as two or more races in each geography
+
+
+
+
+
+Measure "Two or more races population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002009'
+      );
+
+
+
+
+
+Measure "Two or more races population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B03002009'
+        );
+
+
+
+
+
+
+Measure "Two or more races population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002009',
+        'denominator'
+      );
+
+
+Measure "Two or more races population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B03002009',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _us.census.acs.B03002003:
+
+White Population
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B03002003.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people identifying as white, non-Hispanic in each geography.
+
+
+
+
+
+Measure "White Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002003'
+      );
+
+
+
+
+
+Measure "White Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B03002003'
+        );
+
+
+
+
+
+
+Measure "White Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B03002003',
+        'denominator'
+      );
+
+
+Measure "White Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B03002003',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+
+

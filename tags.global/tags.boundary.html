@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Boundaries &mdash; bigmetadata 0.0.1 documentation</title>
+    <title>1.1. Boundaries &mdash; observatory 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -27,16 +27,18 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/bigmetadata.js"></script>
     <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
-    <link rel="top" title="bigmetadata 0.0.1 documentation" href="../index.html" />
-    <link rel="up" title="Global" href="../tags.global.html" />
-    <link rel="next" title="&lt;no title&gt;" href="tags.education.html" />
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="1. Global" href="../tags.global.html" />
+    <link rel="next" title="&lt;no title&gt;" href="tags.commerce_economy.html" />
     <link rel="prev" title="&lt;no title&gt;" href="tags.age_gender.html" />
    
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">  
+  <body role="document">
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -44,7 +46,7 @@
           <div class="body" role="main">
             
   <div class="section" id="boundaries">
-<h1>Boundaries<a class="headerlink" href="#boundaries" title="Permalink to this headline">¶</a></h1>
+<h1>1.1. Boundaries<a class="headerlink" href="#boundaries" title="Permalink to this headline">¶</a></h1>
 <p>Political, administrative, and census-based boundaries.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -56,22 +58,22 @@
 </ul>
 </div>
 <div class="section" id="continents">
-<span id="whosonfirst-wof-continent-geom"></span><h2><a class="toc-backref" href="#id1">Continents</a><a class="headerlink" href="#continents" title="Permalink to this headline">¶</a></h2>
+<span id="whosonfirst-wof-continent-geom"></span><h2><a class="toc-backref" href="#id1">1.1.1. Continents</a><a class="headerlink" href="#continents" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/whosonfirst.wof_continent_geom.png"><img alt="../_images/whosonfirst.wof_continent_geom.png" src="../_images/whosonfirst.wof_continent_geom.png" style="width: 100%;" /></a>
 </div>
 <p>Obtain &#8220;Continents&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_continent_geom&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Continents&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_continent_geom&#39;</span>
   <span class="p">)</span>
@@ -79,22 +81,22 @@
 </div>
 </div>
 <div class="section" id="countries">
-<span id="whosonfirst-wof-country-geom"></span><h2><a class="toc-backref" href="#id2">Countries</a><a class="headerlink" href="#countries" title="Permalink to this headline">¶</a></h2>
+<span id="whosonfirst-wof-country-geom"></span><h2><a class="toc-backref" href="#id2">1.1.2. Countries</a><a class="headerlink" href="#countries" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/whosonfirst.wof_country_geom.png"><img alt="../_images/whosonfirst.wof_country_geom.png" src="../_images/whosonfirst.wof_country_geom.png" style="width: 100%;" /></a>
 </div>
 <p>Obtain &#8220;Countries&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_country_geom&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Countries&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_country_geom&#39;</span>
   <span class="p">)</span>
@@ -102,19 +104,19 @@
 </div>
 </div>
 <div class="section" id="disputed-areas">
-<span id="whosonfirst-wof-disputed-geom"></span><h2><a class="toc-backref" href="#id3">Disputed Areas</a><a class="headerlink" href="#disputed-areas" title="Permalink to this headline">¶</a></h2>
+<span id="whosonfirst-wof-disputed-geom"></span><h2><a class="toc-backref" href="#id3">1.1.3. Disputed Areas</a><a class="headerlink" href="#disputed-areas" title="Permalink to this headline">¶</a></h2>
 <p>Obtain &#8220;Disputed Areas&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">33.78</span><span class="p">,</span> <span class="mf">76.57</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_disputed_geom&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Disputed Areas&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">33.78</span><span class="p">,</span> <span class="mf">76.57</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_disputed_geom&#39;</span>
   <span class="p">)</span>
@@ -122,19 +124,19 @@
 </div>
 </div>
 <div class="section" id="marine-areas">
-<span id="whosonfirst-wof-marinearea-geom"></span><h2><a class="toc-backref" href="#id4">Marine Areas</a><a class="headerlink" href="#marine-areas" title="Permalink to this headline">¶</a></h2>
+<span id="whosonfirst-wof-marinearea-geom"></span><h2><a class="toc-backref" href="#id4">1.1.4. Marine Areas</a><a class="headerlink" href="#marine-areas" title="Permalink to this headline">¶</a></h2>
 <p>Obtain &#8220;Marine Areas&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.33</span><span class="p">,</span> <span class="o">-</span><span class="mf">68.47</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_marinearea_geom&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Marine Areas&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">43.33</span><span class="p">,</span> <span class="o">-</span><span class="mf">68.47</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_marinearea_geom&#39;</span>
   <span class="p">)</span>
@@ -142,22 +144,22 @@
 </div>
 </div>
 <div class="section" id="regions-first-level-administrative">
-<span id="whosonfirst-wof-region-geom"></span><h2><a class="toc-backref" href="#id5">Regions (First-level Administrative)</a><a class="headerlink" href="#regions-first-level-administrative" title="Permalink to this headline">¶</a></h2>
+<span id="whosonfirst-wof-region-geom"></span><h2><a class="toc-backref" href="#id5">1.1.5. Regions (First-level Administrative)</a><a class="headerlink" href="#regions-first-level-administrative" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/whosonfirst.wof_region_geom.png"><img alt="../_images/whosonfirst.wof_region_geom.png" src="../_images/whosonfirst.wof_region_geom.png" style="width: 100%;" /></a>
 </div>
 <p>Obtain &#8220;Regions (First-level Administrative)&#8221; geometry at one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
-  <span class="n">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
     <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_region_geom&#39;</span>
   <span class="p">)</span>
 </pre></div>
 </div>
 <p>Obtain all &#8220;Regions (First-level Administrative)&#8221; geometries within an area:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
-  <span class="n">SELECT</span> <span class="o">*</span>
-  <span class="n">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
     <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
     <span class="s1">&#39;whosonfirst.wof_region_geom&#39;</span>
   <span class="p">)</span>
@@ -174,12 +176,12 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Boundaries</a><ul>
-<li><a class="reference internal" href="#continents">Continents</a></li>
-<li><a class="reference internal" href="#countries">Countries</a></li>
-<li><a class="reference internal" href="#disputed-areas">Disputed Areas</a></li>
-<li><a class="reference internal" href="#marine-areas">Marine Areas</a></li>
-<li><a class="reference internal" href="#regions-first-level-administrative">Regions (First-level Administrative)</a></li>
+<li><a class="reference internal" href="#">1.1. Boundaries</a><ul>
+<li><a class="reference internal" href="#continents">1.1.1. Continents</a></li>
+<li><a class="reference internal" href="#countries">1.1.2. Countries</a></li>
+<li><a class="reference internal" href="#disputed-areas">1.1.3. Disputed Areas</a></li>
+<li><a class="reference internal" href="#marine-areas">1.1.4. Marine Areas</a></li>
+<li><a class="reference internal" href="#regions-first-level-administrative">1.1.5. Regions (First-level Administrative)</a></li>
 </ul>
 </li>
 </ul>
@@ -187,9 +189,9 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-  <li><a href="../tags.global.html">Global</a><ul>
+  <li><a href="../tags.global.html">1. Global</a><ul>
       <li>Previous: <a href="tags.age_gender.html" title="previous chapter">&lt;no title&gt;</a></li>
-      <li>Next: <a href="tags.education.html" title="next chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="tags.commerce_economy.html" title="next chapter">&lt;no title&gt;</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -204,8 +206,8 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -219,8 +221,8 @@
       &copy;2016, CartoDB.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
       |
       <a href="../_sources/tags.global/tags.boundary.txt"

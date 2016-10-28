@@ -1,0 +1,1021 @@
+
+
+.. Religion:
+
+Religion
+===========================================================================
+
+Breakdowns of the population by religion.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _uk.ons.LC2107EW0003:
+
+Buddhist Population
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/uk.ons.LC2107EW0003.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Buddhist Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0003'
+      );
+
+
+
+
+
+Measure "Buddhist Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+          'uk.ons.LC2107EW0003'
+        );
+
+
+
+
+
+
+Measure "Buddhist Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0003',
+        'denominator'
+      );
+
+
+Measure "Buddhist Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+        'uk.ons.LC2107EW0003',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`uk.cdrc.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+:Source:
+
+    :ref:`uk.ons.ons`
+
+:License:
+
+    :ref:`tags.uk_ogl`
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0002:
+
+Christian Population
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/uk.ons.LC2107EW0002.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Christian Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0002'
+      );
+
+
+
+
+
+Measure "Christian Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+          'uk.ons.LC2107EW0002'
+        );
+
+
+
+
+
+
+Measure "Christian Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0002',
+        'denominator'
+      );
+
+
+Measure "Christian Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+        'uk.ons.LC2107EW0002',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`uk.cdrc.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+:Source:
+
+    :ref:`uk.ons.ons`
+
+:License:
+
+    :ref:`tags.uk_ogl`
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0004:
+
+Hindu Population
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/uk.ons.LC2107EW0004.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Hindu Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0004'
+      );
+
+
+
+
+
+Measure "Hindu Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+          'uk.ons.LC2107EW0004'
+        );
+
+
+
+
+
+
+Measure "Hindu Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0004',
+        'denominator'
+      );
+
+
+Measure "Hindu Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+        'uk.ons.LC2107EW0004',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`uk.cdrc.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+:Source:
+
+    :ref:`uk.ons.ons`
+
+:License:
+
+    :ref:`tags.uk_ogl`
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0005:
+
+Jewish Population
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/uk.ons.LC2107EW0005.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Jewish Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0005'
+      );
+
+
+
+
+
+Measure "Jewish Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+          'uk.ons.LC2107EW0005'
+        );
+
+
+
+
+
+
+Measure "Jewish Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0005',
+        'denominator'
+      );
+
+
+Measure "Jewish Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+        'uk.ons.LC2107EW0005',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`uk.cdrc.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+:Source:
+
+    :ref:`uk.ons.ons`
+
+:License:
+
+    :ref:`tags.uk_ogl`
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0006:
+
+Muslim Population
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/uk.ons.LC2107EW0006.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Muslim Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0006'
+      );
+
+
+
+
+
+Measure "Muslim Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+          'uk.ons.LC2107EW0006'
+        );
+
+
+
+
+
+
+Measure "Muslim Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0006',
+        'denominator'
+      );
+
+
+Measure "Muslim Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+        'uk.ons.LC2107EW0006',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`uk.cdrc.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+:Source:
+
+    :ref:`uk.ons.ons`
+
+:License:
+
+    :ref:`tags.uk_ogl`
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0009:
+
+Population who are not religious
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/uk.ons.LC2107EW0009.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population who are not religious"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0009'
+      );
+
+
+
+
+
+Measure "Population who are not religious" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+          'uk.ons.LC2107EW0009'
+        );
+
+
+
+
+
+
+Measure "Population who are not religious" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0009',
+        'denominator'
+      );
+
+
+Measure "Population who are not religious" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+        'uk.ons.LC2107EW0009',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`uk.cdrc.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+:Source:
+
+    :ref:`uk.ons.ons`
+
+:License:
+
+    :ref:`tags.uk_ogl`
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0007:
+
+Sikh Population
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/uk.ons.LC2107EW0007.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Sikh Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0007'
+      );
+
+
+
+
+
+Measure "Sikh Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+          'uk.ons.LC2107EW0007'
+        );
+
+
+
+
+
+
+Measure "Sikh Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(51.5146183469, -0.0888347625732),
+        'uk.ons.LC2107EW0007',
+        'denominator'
+      );
+
+
+Measure "Sikh Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(51.5146183469, -0.0888347625732), 0.01),
+        'uk.ons.LC2107EW0007',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`uk.cdrc.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+:Source:
+
+    :ref:`uk.ons.ons`
+
+:License:
+
+    :ref:`tags.uk_ogl`
+
+
+

@@ -1,0 +1,622 @@
+
+
+.. Boundaries:
+
+Boundaries
+===========================================================================
+
+Political, administrative, and census-based boundaries.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _whosonfirst.wof_continent_geom:
+
+Continents
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/whosonfirst.wof_continent_geom.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Obtain "Continents" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(40.7, -73.9),
+      'whosonfirst.wof_continent_geom'
+    )
+
+
+
+
+
+Obtain all "Continents" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'whosonfirst.wof_continent_geom'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`whosonfirst.wof_continent_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _whosonfirst.wof_county_geom:
+
+Counties
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "Counties" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(40.7, -73.9),
+      'whosonfirst.wof_county_geom'
+    )
+
+
+
+
+
+Obtain all "Counties" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'whosonfirst.wof_county_geom'
+    )
+
+
+
+
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _whosonfirst.wof_country_geom:
+
+Countries
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/whosonfirst.wof_country_geom.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Obtain "Countries" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(40.7, -73.9),
+      'whosonfirst.wof_country_geom'
+    )
+
+
+
+
+
+Obtain all "Countries" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'whosonfirst.wof_country_geom'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`whosonfirst.wof_country_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _whosonfirst.wof_disputed_geom:
+
+Disputed Areas
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "Disputed Areas" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(76.57, 33.78),
+      'whosonfirst.wof_disputed_geom'
+    )
+
+
+
+
+
+Obtain all "Disputed Areas" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(76.57, 33.78), 0.01),
+      'whosonfirst.wof_disputed_geom'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`whosonfirst.wof_disputed_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _whosonfirst.wof_marinearea_geom:
+
+Marine Areas
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "Marine Areas" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(-68.47, 43.33),
+      'whosonfirst.wof_marinearea_geom'
+    )
+
+
+
+
+
+Obtain all "Marine Areas" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(-68.47, 43.33), 0.01),
+      'whosonfirst.wof_marinearea_geom'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`whosonfirst.wof_marinearea_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _whosonfirst.wof_region_geom:
+
+Regions (First-level Administrative)
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/whosonfirst.wof_region_geom.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Obtain "Regions (First-level Administrative)" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(40.7, -73.9),
+      'whosonfirst.wof_region_geom'
+    )
+
+
+
+
+
+Obtain all "Regions (First-level Administrative)" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+      'whosonfirst.wof_region_geom'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`whosonfirst.wof_region_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2016
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+

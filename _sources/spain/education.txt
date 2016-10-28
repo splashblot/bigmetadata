@@ -1,0 +1,6167 @@
+
+
+.. Education:
+
+Education
+===========================================================================
+
+Educational attainment and enrollment.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _es.ine.t12_1:
+
+Illiterate persons
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.ine.t12_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Illiterate persons"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_1'
+      );
+
+
+
+
+
+Measure "Illiterate persons" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t12_1'
+        );
+
+
+
+
+
+
+Measure "Illiterate persons" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_1',
+        'denominator'
+      );
+
+
+Measure "Illiterate persons" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t12_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+.. contents:: Subcolumns of Illiterate persons
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t13_2:
+
+Illiterate females
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Illiterate females"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_2'
+      );
+
+
+
+
+
+Measure "Illiterate females" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_2'
+        );
+
+
+
+
+
+
+Measure "Illiterate females" percent of "Illiterate persons" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_2',
+        'denominator'
+      );
+
+
+Measure "Illiterate females" percent of "Illiterate persons" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_1`
+
+:Denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_1:
+
+Illiterate males
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Illiterate males"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_1'
+      );
+
+
+
+
+
+Measure "Illiterate males" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_1'
+        );
+
+
+
+
+
+
+Measure "Illiterate males" percent of "Illiterate persons" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_1',
+        'denominator'
+      );
+
+
+Measure "Illiterate males" percent of "Illiterate persons" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_1`
+
+:Denominator:
+
+    :ref:`es.ine.t2_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_2:
+
+Persons aged between 16 (included) and 64 (included) years and illiterate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_2'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_2'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Illiterate persons" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_2',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Illiterate persons" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_1`
+
+:Denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_3:
+
+Persons aged over 64 years and illiterate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_3'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_3'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and illiterate" percent of "Illiterate persons" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_3',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and illiterate" percent of "Illiterate persons" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_1`
+
+:Denominator:
+
+    :ref:`es.ine.t3_3`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_2:
+
+Persons with a foreign nationality and illiterate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_2'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality and illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_2'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and illiterate" percent of "Illiterate persons" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_2',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality and illiterate" percent of "Illiterate persons" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_1`
+
+:Denominator:
+
+    :ref:`es.ine.t6_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_1:
+
+Persons with Spanish nationality and illiterate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_1'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality and illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_1'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and illiterate" percent of "Illiterate persons" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_1',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality and illiterate" percent of "Illiterate persons" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_1`
+
+:Denominator:
+
+    :ref:`es.ine.t6_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _es.ine.t15_16:
+
+Persons aged under 16 years (information regarding the educational level is not available)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Persons aged under 16 years (information regarding the educational level is not available)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_16'
+      );
+
+
+
+
+
+Measure "Persons aged under 16 years (information regarding the educational level is not available)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_16'
+        );
+
+
+
+
+
+
+Measure "Persons aged under 16 years (information regarding the educational level is not available)" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_16',
+        'denominator'
+      );
+
+
+Measure "Persons aged under 16 years (information regarding the educational level is not available)" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_16',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t3_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+
+
+
+
+
+.. _es.ine.t12_3:
+
+Persons with first level studies
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.ine.t12_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_3'
+      );
+
+
+
+
+
+Measure "Persons with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t12_3'
+        );
+
+
+
+
+
+
+Measure "Persons with first level studies" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_3',
+        'denominator'
+      );
+
+
+Measure "Persons with first level studies" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t12_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+.. contents:: Subcolumns of Persons with first level studies
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t13_6:
+
+Females with first level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Females with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_6'
+      );
+
+
+
+
+
+Measure "Females with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_6'
+        );
+
+
+
+
+
+
+Measure "Females with first level studies" percent of "Persons with first level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_6',
+        'denominator'
+      );
+
+
+Measure "Females with first level studies" percent of "Persons with first level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+:Denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_5:
+
+Males with first level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Males with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_5'
+      );
+
+
+
+
+
+Measure "Males with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_5'
+        );
+
+
+
+
+
+
+Measure "Males with first level studies" percent of "Persons with first level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_5',
+        'denominator'
+      );
+
+
+Measure "Males with first level studies" percent of "Persons with first level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+:Denominator:
+
+    :ref:`es.ine.t2_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_8:
+
+Persons aged between 16 (included) and 64 (included) years and with first level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_8'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_8'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons with first level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_8',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons with first level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+:Denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_11:
+
+Persons aged between 16 (included) and 64 (included) years and with second level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_11'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_11'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons with first level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_11',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons with first level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+:Denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_14:
+
+Persons aged between 16 (included) and 64 (included) years and with third level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_14'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_14'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons with first level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_14',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons with first level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+:Denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_9:
+
+Persons aged over 64 years and with first level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_9'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_9'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with first level studies" percent of "Persons with first level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_9',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and with first level studies" percent of "Persons with first level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+:Denominator:
+
+    :ref:`es.ine.t3_3`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_12:
+
+Persons aged over 64 years and with second level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_12'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_12'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with second level studies" percent of "Persons with first level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_12',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and with second level studies" percent of "Persons with first level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+:Denominator:
+
+    :ref:`es.ine.t3_3`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_15:
+
+Persons aged over 64 years and with third level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_15'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_15'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with third level studies" percent of "Persons with first level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_15',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and with third level studies" percent of "Persons with first level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+:Denominator:
+
+    :ref:`es.ine.t3_3`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_6:
+
+Persons with a foreign nationality and with first level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_6'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality and with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_6'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and with first level studies" percent of "Persons with a foreign nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_6',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality and with first level studies" percent of "Persons with a foreign nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t6_2`
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_5:
+
+Persons with Spanish nationality and with first level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_5'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality and with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_5'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and with first level studies" percent of "Persons with Spanish nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_5',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality and with first level studies" percent of "Persons with Spanish nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t6_1`
+
+:Denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _es.ine.t12_4:
+
+Persons with second level studies
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.ine.t12_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_4'
+      );
+
+
+
+
+
+Measure "Persons with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t12_4'
+        );
+
+
+
+
+
+
+Measure "Persons with second level studies" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_4',
+        'denominator'
+      );
+
+
+Measure "Persons with second level studies" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t12_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+.. contents:: Subcolumns of Persons with second level studies
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t13_8:
+
+Females with second level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Females with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_8'
+      );
+
+
+
+
+
+Measure "Females with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_8'
+        );
+
+
+
+
+
+
+Measure "Females with second level studies" percent of "Persons with second level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_8',
+        'denominator'
+      );
+
+
+Measure "Females with second level studies" percent of "Persons with second level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_4`
+
+:Denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_7:
+
+Males with second level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Males with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_7'
+      );
+
+
+
+
+
+Measure "Males with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_7'
+        );
+
+
+
+
+
+
+Measure "Males with second level studies" percent of "Persons with second level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_7',
+        'denominator'
+      );
+
+
+Measure "Males with second level studies" percent of "Persons with second level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_4`
+
+:Denominator:
+
+    :ref:`es.ine.t2_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_8:
+
+Persons with a foreign nationality and with second level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_8'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality and with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_8'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and with second level studies" percent of "Persons with a foreign nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_8',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality and with second level studies" percent of "Persons with a foreign nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t6_2`
+
+:Denominator:
+
+    :ref:`es.ine.t12_4`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_7:
+
+Persons with Spanish nationality and with second level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_7'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality and with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_7'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and with second level studies" percent of "Persons with Spanish nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_7',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality and with second level studies" percent of "Persons with Spanish nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t6_1`
+
+:Denominator:
+
+    :ref:`es.ine.t12_4`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _es.ine.t12_5:
+
+Persons with third level studies
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.ine.t12_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_5'
+      );
+
+
+
+
+
+Measure "Persons with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t12_5'
+        );
+
+
+
+
+
+
+Measure "Persons with third level studies" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_5',
+        'denominator'
+      );
+
+
+Measure "Persons with third level studies" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t12_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+.. contents:: Subcolumns of Persons with third level studies
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t13_10:
+
+Females with third level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Females with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_10'
+      );
+
+
+
+
+
+Measure "Females with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_10'
+        );
+
+
+
+
+
+
+Measure "Females with third level studies" percent of "Persons with third level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_10',
+        'denominator'
+      );
+
+
+Measure "Females with third level studies" percent of "Persons with third level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_5`
+
+:Denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_9:
+
+Males with third level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Males with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_9'
+      );
+
+
+
+
+
+Measure "Males with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_9'
+        );
+
+
+
+
+
+
+Measure "Males with third level studies" percent of "Persons with third level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_9',
+        'denominator'
+      );
+
+
+Measure "Males with third level studies" percent of "Persons with third level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_5`
+
+:Denominator:
+
+    :ref:`es.ine.t2_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_10:
+
+Persons with a foreign nationality and with third level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_10'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality and with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_10'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and with third level studies" percent of "Persons with a foreign nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_10',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality and with third level studies" percent of "Persons with a foreign nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t6_2`
+
+:Denominator:
+
+    :ref:`es.ine.t12_5`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_9:
+
+Persons with Spanish nationality and with third level studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_9'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality and with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_9'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and with third level studies" percent of "Persons with third level studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_9',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality and with third level studies" percent of "Persons with third level studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_5`
+
+:Denominator:
+
+    :ref:`es.ine.t6_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _es.ine.t12_6:
+
+Persons without information regarding their educational level (aged under 16 years)
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.ine.t12_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons without information regarding their educational level (aged under 16 years)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_6'
+      );
+
+
+
+
+
+Measure "Persons without information regarding their educational level (aged under 16 years)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t12_6'
+        );
+
+
+
+
+
+
+Measure "Persons without information regarding their educational level (aged under 16 years)" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_6',
+        'denominator'
+      );
+
+
+Measure "Persons without information regarding their educational level (aged under 16 years)" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t12_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t3_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+.. contents:: Subcolumns of Persons without information regarding their educational level (aged under 16 years)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t13_12:
+
+Females without information regarding their educational level  (under 16 years of age)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_12'
+      );
+
+
+
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_12'
+        );
+
+
+
+
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_12',
+        'denominator'
+      );
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_6`
+
+:Denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_11:
+
+Males without information regarding their educational level (under 16 years of age)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_11'
+      );
+
+
+
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_11'
+        );
+
+
+
+
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_11',
+        'denominator'
+      );
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_6`
+
+:Denominator:
+
+    :ref:`es.ine.t2_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_12:
+
+Persons with a foreign nationality without information regarding their educational level (under 16 years of age)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_12'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_12'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_12',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_6`
+
+:Denominator:
+
+    :ref:`es.ine.t6_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_11:
+
+Persons with Spanish nationality without information regarding their educational level (under 16 years of age)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_11'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_11'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_11',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_6`
+
+:Denominator:
+
+    :ref:`es.ine.t6_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _es.ine.t12_2:
+
+Persons without studies
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/es.ine.t12_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_2'
+      );
+
+
+
+
+
+Measure "Persons without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t12_2'
+        );
+
+
+
+
+
+
+Measure "Persons without studies" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t12_2',
+        'denominator'
+      );
+
+
+Measure "Persons without studies" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t12_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+.. contents:: Subcolumns of Persons without studies
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t13_4:
+
+Females without studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Females without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_4'
+      );
+
+
+
+
+
+Measure "Females without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_4'
+        );
+
+
+
+
+
+
+Measure "Females without studies" percent of "Persons without studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_4',
+        'denominator'
+      );
+
+
+Measure "Females without studies" percent of "Persons without studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_2`
+
+:Denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_3:
+
+Males without studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t13_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Males without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_3'
+      );
+
+
+
+
+
+Measure "Males without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t13_3'
+        );
+
+
+
+
+
+
+Measure "Males without studies" percent of "Persons without studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t13_3',
+        'denominator'
+      );
+
+
+Measure "Males without studies" percent of "Persons without studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t13_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_2`
+
+:Denominator:
+
+    :ref:`es.ine.t2_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_5:
+
+Persons aged between 16 (included) and 64 (included) years and without studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_5'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_5'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies" percent of "Persons without studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_5',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies" percent of "Persons without studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_2`
+
+:Denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_6:
+
+Persons aged over 64 years and without studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t15_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_6'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t15_6'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and without studies" percent of "Persons without studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t15_6',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and without studies" percent of "Persons without studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t15_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_2`
+
+:Denominator:
+
+    :ref:`es.ine.t3_3`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_4:
+
+Persons with a foreign nationality and without studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_4'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality and without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_4'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and without studies" percent of "Persons without studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_4',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality and without studies" percent of "Persons without studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_2`
+
+:Denominator:
+
+    :ref:`es.ine.t6_2`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_3:
+
+Persons with Spanish nationality and without studies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/es.ine.t14_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_3'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality and without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+          'es.ine.t14_3'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and without studies" percent of "Persons without studies" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(42.8226119029, -2.51141249535),
+        'es.ine.t14_3',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality and without studies" percent of "Persons without studies" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
+        'es.ine.t14_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`es.ine.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`es.ine.t12_2`
+
+:Denominator:
+
+    :ref:`es.ine.t6_1`
+
+
+:Source:
+
+    :ref:`es.ine.ine-source`
+
+:License:
+
+    :ref:`es.ine.ine-license`
+
+
+  
+  
+
+

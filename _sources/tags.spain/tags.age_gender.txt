@@ -1,0 +1,9326 @@
+
+
+.. Age and Gender:
+
+Age and Gender
+===========================================================================
+
+Population breakdowns by age and gender.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _es.ine.t1_1:
+
+Total population
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/es.ine.t1_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Total population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t1_1'
+      );
+
+
+
+
+
+Measure "Total population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t1_1'
+        );
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. contents:: Subcolumns of Total population
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t2_2:
+
+Females
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t2_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t2_2'
+      );
+
+
+
+
+
+Measure "Females" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t2_2'
+        );
+
+
+
+
+
+
+Measure "Females" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t2_2',
+        'denominator'
+      );
+
+
+Measure "Females" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t2_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+.. contents:: Subcolumns of Females
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t7_5:
+
+Females between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_5'
+      );
+
+
+
+
+
+Measure "Females between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_5'
+        );
+
+
+
+
+
+
+Measure "Females between 16 (included) and 64 (included) years of age" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_5',
+        'denominator'
+      );
+
+
+Measure "Females between 16 (included) and 64 (included) years of age" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t7_6:
+
+Females over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_6'
+      );
+
+
+
+
+
+Measure "Females over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_6'
+        );
+
+
+
+
+
+
+Measure "Females over 64 years of age" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_6',
+        'denominator'
+      );
+
+
+Measure "Females over 64 years of age" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t7_4:
+
+Females under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_4'
+      );
+
+
+
+
+
+Measure "Females under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_4'
+        );
+
+
+
+
+
+
+Measure "Females under 16 years of age" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_4',
+        'denominator'
+      );
+
+
+Measure "Females under 16 years of age" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t8_4:
+
+Females with a foreign nationality
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t8_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females with a foreign nationality"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t8_4'
+      );
+
+
+
+
+
+Measure "Females with a foreign nationality" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t8_4'
+        );
+
+
+
+
+
+
+Measure "Females with a foreign nationality" percent of "Persons with a foreign nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t8_4',
+        'denominator'
+      );
+
+
+Measure "Females with a foreign nationality" percent of "Persons with a foreign nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t8_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t6_2`
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_6:
+
+Females with first level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_6'
+      );
+
+
+
+
+
+Measure "Females with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_6'
+        );
+
+
+
+
+
+
+Measure "Females with first level studies" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_6',
+        'denominator'
+      );
+
+
+Measure "Females with first level studies" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_8:
+
+Females with second level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_8'
+      );
+
+
+
+
+
+Measure "Females with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_8'
+        );
+
+
+
+
+
+
+Measure "Females with second level studies" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_8',
+        'denominator'
+      );
+
+
+Measure "Females with second level studies" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_4`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t8_3:
+
+Females with Spanish nationality
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t8_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females with Spanish nationality"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t8_3'
+      );
+
+
+
+
+
+Measure "Females with Spanish nationality" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t8_3'
+        );
+
+
+
+
+
+
+Measure "Females with Spanish nationality" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t8_3',
+        'denominator'
+      );
+
+
+Measure "Females with Spanish nationality" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t8_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t6_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_10:
+
+Females with third level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_10'
+      );
+
+
+
+
+
+Measure "Females with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_10'
+        );
+
+
+
+
+
+
+Measure "Females with third level studies" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_10',
+        'denominator'
+      );
+
+
+Measure "Females with third level studies" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_5`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_12:
+
+Females without information regarding their educational level  (under 16 years of age)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_12'
+      );
+
+
+
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_12'
+        );
+
+
+
+
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_12',
+        'denominator'
+      );
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_6`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_4:
+
+Females without studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_4'
+      );
+
+
+
+
+
+Measure "Females without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_4'
+        );
+
+
+
+
+
+
+Measure "Females without studies" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_4',
+        'denominator'
+      );
+
+
+Measure "Females without studies" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_2:
+
+Illiterate females
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Illiterate females"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_2'
+      );
+
+
+
+
+
+Measure "Illiterate females" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_2'
+        );
+
+
+
+
+
+
+Measure "Illiterate females" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_2',
+        'denominator'
+      );
+
+
+Measure "Illiterate females" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_1`
+
+
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+.. _es.ine.t2_1:
+
+Males
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t2_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t2_1'
+      );
+
+
+
+
+
+Measure "Males" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t2_1'
+        );
+
+
+
+
+
+
+Measure "Males" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t2_1',
+        'denominator'
+      );
+
+
+Measure "Males" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t2_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+.. contents:: Subcolumns of Males
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t13_1:
+
+Illiterate males
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Illiterate males"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_1'
+      );
+
+
+
+
+
+Measure "Illiterate males" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_1'
+        );
+
+
+
+
+
+
+Measure "Illiterate males" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_1',
+        'denominator'
+      );
+
+
+Measure "Illiterate males" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t12_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t7_2:
+
+Males between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_2'
+      );
+
+
+
+
+
+Measure "Males between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_2'
+        );
+
+
+
+
+
+
+Measure "Males between 16 (included) and 64 (included) years of age" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_2',
+        'denominator'
+      );
+
+
+Measure "Males between 16 (included) and 64 (included) years of age" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t7_3:
+
+Males over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_3'
+      );
+
+
+
+
+
+Measure "Males over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_3'
+        );
+
+
+
+
+
+
+Measure "Males over 64 years of age" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_3',
+        'denominator'
+      );
+
+
+Measure "Males over 64 years of age" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t7_1:
+
+Males under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_1'
+      );
+
+
+
+
+
+Measure "Males under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_1'
+        );
+
+
+
+
+
+
+Measure "Males under 16 years of age" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_1',
+        'denominator'
+      );
+
+
+Measure "Males under 16 years of age" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t8_2:
+
+Males with a foreign nationality
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t8_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males with a foreign nationality"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t8_2'
+      );
+
+
+
+
+
+Measure "Males with a foreign nationality" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t8_2'
+        );
+
+
+
+
+
+
+Measure "Males with a foreign nationality" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t8_2',
+        'denominator'
+      );
+
+
+Measure "Males with a foreign nationality" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t8_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t6_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_5:
+
+Males with first level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_5'
+      );
+
+
+
+
+
+Measure "Males with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_5'
+        );
+
+
+
+
+
+
+Measure "Males with first level studies" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_5',
+        'denominator'
+      );
+
+
+Measure "Males with first level studies" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_7:
+
+Males with second level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_7'
+      );
+
+
+
+
+
+Measure "Males with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_7'
+        );
+
+
+
+
+
+
+Measure "Males with second level studies" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_7',
+        'denominator'
+      );
+
+
+Measure "Males with second level studies" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t12_4`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t8_1:
+
+Males with Spanish nationality
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t8_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males with Spanish nationality"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t8_1'
+      );
+
+
+
+
+
+Measure "Males with Spanish nationality" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t8_1'
+        );
+
+
+
+
+
+
+Measure "Males with Spanish nationality" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t8_1',
+        'denominator'
+      );
+
+
+Measure "Males with Spanish nationality" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t8_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t6_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_9:
+
+Males with third level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_9'
+      );
+
+
+
+
+
+Measure "Males with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_9'
+        );
+
+
+
+
+
+
+Measure "Males with third level studies" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_9',
+        'denominator'
+      );
+
+
+Measure "Males with third level studies" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t12_5`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_11:
+
+Males without information regarding their educational level (under 16 years of age)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_11'
+      );
+
+
+
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_11'
+        );
+
+
+
+
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_11',
+        'denominator'
+      );
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t12_6`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_3:
+
+Males without studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_3'
+      );
+
+
+
+
+
+Measure "Males without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_3'
+        );
+
+
+
+
+
+
+Measure "Males without studies" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_3',
+        'denominator'
+      );
+
+
+Measure "Males without studies" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t12_2`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _es.ine.t3_2:
+
+Persons aged between 16 (included) and 64 (included) years
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t3_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t3_2'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t3_2'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t3_2',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t3_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+.. contents:: Subcolumns of Persons aged between 16 (included) and 64 (included) years
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t7_5:
+
+Females between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_5'
+      );
+
+
+
+
+
+Measure "Females between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_5'
+        );
+
+
+
+
+
+
+Measure "Females between 16 (included) and 64 (included) years of age" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_5',
+        'denominator'
+      );
+
+
+Measure "Females between 16 (included) and 64 (included) years of age" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t7_2:
+
+Males between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_2'
+      );
+
+
+
+
+
+Measure "Males between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_2'
+        );
+
+
+
+
+
+
+Measure "Males between 16 (included) and 64 (included) years of age" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_2',
+        'denominator'
+      );
+
+
+Measure "Males between 16 (included) and 64 (included) years of age" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_2:
+
+Persons aged between 16 (included) and 64 (included) years and illiterate
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_2'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_2'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_2',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_8:
+
+Persons aged between 16 (included) and 64 (included) years and with first level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_8'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_8'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_8',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_11:
+
+Persons aged between 16 (included) and 64 (included) years and with second level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_11'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_11'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_11',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_14:
+
+Persons aged between 16 (included) and 64 (included) years and with third level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_14'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_14'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_14',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_5:
+
+Persons aged between 16 (included) and 64 (included) years and without studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_5'
+      );
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_5'
+        );
+
+
+
+
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_5',
+        'denominator'
+      );
+
+
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t9_4:
+
+Persons with a foreign nationality and between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t9_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_4'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality and between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t9_4'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and between 16 (included) and 64 (included) years of age" percent of "Persons with a foreign nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_4',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality and between 16 (included) and 64 (included) years of age" percent of "Persons with a foreign nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t9_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t6_2`
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_11:
+
+Persons with marital status: divorced and between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: divorced and between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_11'
+      );
+
+
+
+
+
+Measure "Persons with marital status: divorced and between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_11'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: divorced and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_11',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: divorced and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+:denominator:
+
+    :ref:`es.ine.t10_4`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_5:
+
+Persons with marital status: married and between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: married and between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_5'
+      );
+
+
+
+
+
+Measure "Persons with marital status: married and between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_5'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: married and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_5',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: married and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+:denominator:
+
+    :ref:`es.ine.t10_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_8:
+
+Persons with marital status: separated and between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: separated and between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_8'
+      );
+
+
+
+
+
+Measure "Persons with marital status: separated and between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_8'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: separated and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_8',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: separated and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+:denominator:
+
+    :ref:`es.ine.t10_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_2:
+
+Persons with marital status: single and between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: single and between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_2'
+      );
+
+
+
+
+
+Measure "Persons with marital status: single and between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_2'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: single and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_2',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: single and between 16 (included) and 64 (included) years of age" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+:denominator:
+
+    :ref:`es.ine.t10_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_14:
+
+Persons with marital status: widowed and between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: widowed and between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_14'
+      );
+
+
+
+
+
+Measure "Persons with marital status: widowed and between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_14'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: widowed and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: widowed" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_14',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: widowed and between 16 (included) and 64 (included) years of age" percent of "Persons with marital status: widowed" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t10_5`
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t9_3:
+
+Persons with Spanish nationality and between 16 (included) and 64 (included) years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t9_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and between 16 (included) and 64 (included) years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_3'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality and between 16 (included) and 64 (included) years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t9_3'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and between 16 (included) and 64 (included) years of age" percent of "Persons with Spanish nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_3',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality and between 16 (included) and 64 (included) years of age" percent of "Persons with Spanish nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t9_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t6_1`
+
+:denominator:
+
+    :ref:`es.ine.t3_2`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _es.ine.t3_3:
+
+Persons aged over 64 years
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t3_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t3_3'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t3_3'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t3_3',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t3_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+.. contents:: Subcolumns of Persons aged over 64 years
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t7_6:
+
+Females over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_6'
+      );
+
+
+
+
+
+Measure "Females over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_6'
+        );
+
+
+
+
+
+
+Measure "Females over 64 years of age" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_6',
+        'denominator'
+      );
+
+
+Measure "Females over 64 years of age" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t7_3:
+
+Males over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_3'
+      );
+
+
+
+
+
+Measure "Males over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_3'
+        );
+
+
+
+
+
+
+Measure "Males over 64 years of age" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_3',
+        'denominator'
+      );
+
+
+Measure "Males over 64 years of age" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_3:
+
+Persons aged over 64 years and illiterate
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and illiterate"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_3'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and illiterate" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_3'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and illiterate" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_3',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and illiterate" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t12_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_9:
+
+Persons aged over 64 years and with first level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with first level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_9'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and with first level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_9'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with first level studies" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_9',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and with first level studies" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_12:
+
+Persons aged over 64 years and with second level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with second level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_12'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and with second level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_12'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with second level studies" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_12',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and with second level studies" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_15:
+
+Persons aged over 64 years and with third level studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with third level studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_15'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and with third level studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_15'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and with third level studies" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_15',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and with third level studies" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t12_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t15_6:
+
+Persons aged over 64 years and without studies
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t15_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged over 64 years and without studies"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_6'
+      );
+
+
+
+
+
+Measure "Persons aged over 64 years and without studies" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t15_6'
+        );
+
+
+
+
+
+
+Measure "Persons aged over 64 years and without studies" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t15_6',
+        'denominator'
+      );
+
+
+Measure "Persons aged over 64 years and without studies" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t15_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t12_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t9_6:
+
+Persons with a foreign nationality and over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t9_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_6'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality and over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t9_6'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and over 64 years of age" percent of "Persons with a foreign nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_6',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality and over 64 years of age" percent of "Persons with a foreign nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t9_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t6_2`
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_12:
+
+Persons with marital status: divorced and over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: divorced and over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_12'
+      );
+
+
+
+
+
+Measure "Persons with marital status: divorced and over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_12'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: divorced and over 64 years of age" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_12',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: divorced and over 64 years of age" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t10_4`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_6:
+
+Persons with marital status: married and over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: married and over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_6'
+      );
+
+
+
+
+
+Measure "Persons with marital status: married and over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_6'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: married and over 64 years of age" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_6',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: married and over 64 years of age" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t10_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_9:
+
+Persons with marital status: separated and over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: separated and over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_9'
+      );
+
+
+
+
+
+Measure "Persons with marital status: separated and over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_9'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: separated and over 64 years of age" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_9',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: separated and over 64 years of age" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t10_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_3:
+
+Persons with marital status: single and over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: single and over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_3'
+      );
+
+
+
+
+
+Measure "Persons with marital status: single and over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_3'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: single and over 64 years of age" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_3',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: single and over 64 years of age" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t10_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_15:
+
+Persons with marital status: widowed and over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: widowed and over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_15'
+      );
+
+
+
+
+
+Measure "Persons with marital status: widowed and over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_15'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: widowed and over 64 years of age" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_15',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: widowed and over 64 years of age" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t10_5`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t9_5:
+
+Persons with Spanish nationality and over 64 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t9_5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and over 64 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_5'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality and over 64 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t9_5'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and over 64 years of age" percent of "Persons aged over 64 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_5',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality and over 64 years of age" percent of "Persons aged over 64 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t9_5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_3`
+
+:denominator:
+
+    :ref:`es.ine.t6_1`
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _es.ine.t3_1:
+
+Persons aged under 16 years
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.t3_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons aged under 16 years"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t3_1'
+      );
+
+
+
+
+
+Measure "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t3_1'
+        );
+
+
+
+
+
+
+Measure "Persons aged under 16 years" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t3_1',
+        'denominator'
+      );
+
+
+Measure "Persons aged under 16 years" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t3_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+.. contents:: Subcolumns of Persons aged under 16 years
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t7_4:
+
+Females under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_4'
+      );
+
+
+
+
+
+Measure "Females under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_4'
+        );
+
+
+
+
+
+
+Measure "Females under 16 years of age" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_4',
+        'denominator'
+      );
+
+
+Measure "Females under 16 years of age" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t7_1:
+
+Males under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t7_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_1'
+      );
+
+
+
+
+
+Measure "Males under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t7_1'
+        );
+
+
+
+
+
+
+Measure "Males under 16 years of age" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t7_1',
+        'denominator'
+      );
+
+
+Measure "Males under 16 years of age" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t7_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+
+
+  
+  
+  
+  
+  
+  
+
+.. _es.ine.t9_2:
+
+Persons with a foreign nationality and under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t9_2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_2'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality and under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t9_2'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality and under 16 years of age" percent of "Persons with a foreign nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_2',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality and under 16 years of age" percent of "Persons with a foreign nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t9_2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t6_2`
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_10:
+
+Persons with marital status: divorced and under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: divorced and under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_10'
+      );
+
+
+
+
+
+Measure "Persons with marital status: divorced and under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_10'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: divorced and under 16 years of age" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_10',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: divorced and under 16 years of age" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+:denominator:
+
+    :ref:`es.ine.t10_4`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_4:
+
+Persons with marital status: married and under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: married and under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_4'
+      );
+
+
+
+
+
+Measure "Persons with marital status: married and under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_4'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: married and under 16 years of age" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_4',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: married and under 16 years of age" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+:denominator:
+
+    :ref:`es.ine.t10_2`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_7:
+
+Persons with marital status: separated and under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: separated and under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_7'
+      );
+
+
+
+
+
+Measure "Persons with marital status: separated and under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_7'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: separated and under 16 years of age" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_7',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: separated and under 16 years of age" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+:denominator:
+
+    :ref:`es.ine.t10_3`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_1:
+
+Persons with marital status: single and under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: single and under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_1'
+      );
+
+
+
+
+
+Measure "Persons with marital status: single and under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_1'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: single and under 16 years of age" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_1',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: single and under 16 years of age" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+:denominator:
+
+    :ref:`es.ine.t10_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t11_13:
+
+Persons with marital status: widowed and under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t11_13.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with marital status: widowed and under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_13'
+      );
+
+
+
+
+
+Measure "Persons with marital status: widowed and under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t11_13'
+        );
+
+
+
+
+
+
+Measure "Persons with marital status: widowed and under 16 years of age" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t11_13',
+        'denominator'
+      );
+
+
+Measure "Persons with marital status: widowed and under 16 years of age" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t11_13',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+:denominator:
+
+    :ref:`es.ine.t10_5`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t9_1:
+
+Persons with Spanish nationality and under 16 years of age
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t9_1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and under 16 years of age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_1'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality and under 16 years of age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t9_1'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality and under 16 years of age" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t9_1',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality and under 16 years of age" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t9_1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+:denominator:
+
+    :ref:`es.ine.t6_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t12_6:
+
+Persons without information regarding their educational level (aged under 16 years)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t12_6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons without information regarding their educational level (aged under 16 years)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t12_6'
+      );
+
+
+
+
+
+Measure "Persons without information regarding their educational level (aged under 16 years)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t12_6'
+        );
+
+
+
+
+
+
+Measure "Persons without information regarding their educational level (aged under 16 years)" percent of "Persons aged under 16 years" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t12_6',
+        'denominator'
+      );
+
+
+Measure "Persons without information regarding their educational level (aged under 16 years)" percent of "Persons aged under 16 years" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t12_6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t3_1`
+
+
+
+.. contents:: Subcolumns of Persons without information regarding their educational level (aged under 16 years)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _es.ine.t13_12:
+
+Females without information regarding their educational level  (under 16 years of age)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_12'
+      );
+
+
+
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_12'
+        );
+
+
+
+
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Females" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_12',
+        'denominator'
+      );
+
+
+Measure "Females without information regarding their educational level  (under 16 years of age)" percent of "Females" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_2`
+
+:denominator:
+
+    :ref:`es.ine.t12_6`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t13_11:
+
+Males without information regarding their educational level (under 16 years of age)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t13_11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_11'
+      );
+
+
+
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t13_11'
+        );
+
+
+
+
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t13_11',
+        'denominator'
+      );
+
+
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t13_11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t2_1`
+
+:denominator:
+
+    :ref:`es.ine.t12_6`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_12:
+
+Persons with a foreign nationality without information regarding their educational level (under 16 years of age)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t14_12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t14_12'
+      );
+
+
+
+
+
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t14_12'
+        );
+
+
+
+
+
+
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t14_12',
+        'denominator'
+      );
+
+
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t14_12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t6_1`
+
+:denominator:
+
+    :ref:`es.ine.t12_6`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.t14_11:
+
+Persons with Spanish nationality without information regarding their educational level (under 16 years of age)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+.. figure:: ../img/es.ine.t14_11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t14_11'
+      );
+
+
+
+
+
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.t14_11'
+        );
+
+
+
+
+
+
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.t14_11',
+        'denominator'
+      );
+
+
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.t14_11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t6_1`
+
+:denominator:
+
+    :ref:`es.ine.t12_6`
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _es.ine.pop_0_4:
+
+Population age 0 to 4
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_0_4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 0 to 4"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_0_4'
+      );
+
+
+
+
+
+Measure "Population age 0 to 4" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_0_4'
+        );
+
+
+
+
+
+
+Measure "Population age 0 to 4" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_0_4',
+        'denominator'
+      );
+
+
+Measure "Population age 0 to 4" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_0_4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_5_9:
+
+Population age 5 to 9
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_5_9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 5 to 9"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_5_9'
+      );
+
+
+
+
+
+Measure "Population age 5 to 9" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_5_9'
+        );
+
+
+
+
+
+
+Measure "Population age 5 to 9" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_5_9',
+        'denominator'
+      );
+
+
+Measure "Population age 5 to 9" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_5_9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_10_14:
+
+Population age 10 to 14
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_10_14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 10 to 14"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_10_14'
+      );
+
+
+
+
+
+Measure "Population age 10 to 14" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_10_14'
+        );
+
+
+
+
+
+
+Measure "Population age 10 to 14" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_10_14',
+        'denominator'
+      );
+
+
+Measure "Population age 10 to 14" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_10_14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_15_19:
+
+Population age 15 to 19
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_15_19.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 15 to 19"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_15_19'
+      );
+
+
+
+
+
+Measure "Population age 15 to 19" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_15_19'
+        );
+
+
+
+
+
+
+Measure "Population age 15 to 19" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_15_19',
+        'denominator'
+      );
+
+
+Measure "Population age 15 to 19" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_15_19',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_20_24:
+
+Population age 20 to 24
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_20_24.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 20 to 24"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_20_24'
+      );
+
+
+
+
+
+Measure "Population age 20 to 24" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_20_24'
+        );
+
+
+
+
+
+
+Measure "Population age 20 to 24" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_20_24',
+        'denominator'
+      );
+
+
+Measure "Population age 20 to 24" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_20_24',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_25_29:
+
+Population age 25 to 29
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_25_29.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 25 to 29"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_25_29'
+      );
+
+
+
+
+
+Measure "Population age 25 to 29" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_25_29'
+        );
+
+
+
+
+
+
+Measure "Population age 25 to 29" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_25_29',
+        'denominator'
+      );
+
+
+Measure "Population age 25 to 29" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_25_29',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_30_34:
+
+Population age 30 to 34
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_30_34.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 30 to 34"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_30_34'
+      );
+
+
+
+
+
+Measure "Population age 30 to 34" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_30_34'
+        );
+
+
+
+
+
+
+Measure "Population age 30 to 34" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_30_34',
+        'denominator'
+      );
+
+
+Measure "Population age 30 to 34" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_30_34',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_35_39:
+
+Population age 35 to 39
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_35_39.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 35 to 39"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_35_39'
+      );
+
+
+
+
+
+Measure "Population age 35 to 39" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_35_39'
+        );
+
+
+
+
+
+
+Measure "Population age 35 to 39" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_35_39',
+        'denominator'
+      );
+
+
+Measure "Population age 35 to 39" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_35_39',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_40_44:
+
+Population age 40 to 44
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_40_44.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 40 to 44"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_40_44'
+      );
+
+
+
+
+
+Measure "Population age 40 to 44" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_40_44'
+        );
+
+
+
+
+
+
+Measure "Population age 40 to 44" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_40_44',
+        'denominator'
+      );
+
+
+Measure "Population age 40 to 44" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_40_44',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_45_49:
+
+Population age 45 to 49
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_45_49.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 45 to 49"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_45_49'
+      );
+
+
+
+
+
+Measure "Population age 45 to 49" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_45_49'
+        );
+
+
+
+
+
+
+Measure "Population age 45 to 49" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_45_49',
+        'denominator'
+      );
+
+
+Measure "Population age 45 to 49" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_45_49',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_50_54:
+
+Population age 50 to 54
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_50_54.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 50 to 54"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_50_54'
+      );
+
+
+
+
+
+Measure "Population age 50 to 54" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_50_54'
+        );
+
+
+
+
+
+
+Measure "Population age 50 to 54" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_50_54',
+        'denominator'
+      );
+
+
+Measure "Population age 50 to 54" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_50_54',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_55_59:
+
+Population age 55 to 59
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_55_59.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 55 to 59"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_55_59'
+      );
+
+
+
+
+
+Measure "Population age 55 to 59" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_55_59'
+        );
+
+
+
+
+
+
+Measure "Population age 55 to 59" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_55_59',
+        'denominator'
+      );
+
+
+Measure "Population age 55 to 59" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_55_59',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_60_64:
+
+Population age 60 to 64
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_60_64.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 60 to 64"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_60_64'
+      );
+
+
+
+
+
+Measure "Population age 60 to 64" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_60_64'
+        );
+
+
+
+
+
+
+Measure "Population age 60 to 64" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_60_64',
+        'denominator'
+      );
+
+
+Measure "Population age 60 to 64" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_60_64',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_65_69:
+
+Population age 65 to 69
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_65_69.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 65 to 69"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_65_69'
+      );
+
+
+
+
+
+Measure "Population age 65 to 69" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_65_69'
+        );
+
+
+
+
+
+
+Measure "Population age 65 to 69" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_65_69',
+        'denominator'
+      );
+
+
+Measure "Population age 65 to 69" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_65_69',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_70_74:
+
+Population age 70 to 74
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_70_74.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 70 to 74"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_70_74'
+      );
+
+
+
+
+
+Measure "Population age 70 to 74" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_70_74'
+        );
+
+
+
+
+
+
+Measure "Population age 70 to 74" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_70_74',
+        'denominator'
+      );
+
+
+Measure "Population age 70 to 74" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_70_74',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_75_79:
+
+Population age 75 to 79
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_75_79.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 75 to 79"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_75_79'
+      );
+
+
+
+
+
+Measure "Population age 75 to 79" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_75_79'
+        );
+
+
+
+
+
+
+Measure "Population age 75 to 79" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_75_79',
+        'denominator'
+      );
+
+
+Measure "Population age 75 to 79" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_75_79',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_80_84:
+
+Population age 80 to 84
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_80_84.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 80 to 84"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_80_84'
+      );
+
+
+
+
+
+Measure "Population age 80 to 84" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_80_84'
+        );
+
+
+
+
+
+
+Measure "Population age 80 to 84" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_80_84',
+        'denominator'
+      );
+
+
+Measure "Population age 80 to 84" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_80_84',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_85_89:
+
+Population age 85 to 89
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_85_89.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 85 to 89"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_85_89'
+      );
+
+
+
+
+
+Measure "Population age 85 to 89" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_85_89'
+        );
+
+
+
+
+
+
+Measure "Population age 85 to 89" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_85_89',
+        'denominator'
+      );
+
+
+Measure "Population age 85 to 89" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_85_89',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_90_94:
+
+Population age 90 to 94
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_90_94.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 90 to 94"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_90_94'
+      );
+
+
+
+
+
+Measure "Population age 90 to 94" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_90_94'
+        );
+
+
+
+
+
+
+Measure "Population age 90 to 94" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_90_94',
+        'denominator'
+      );
+
+
+Measure "Population age 90 to 94" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_90_94',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_95_99:
+
+Population age 95 to 99
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_95_99.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 95 to 99"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_95_99'
+      );
+
+
+
+
+
+Measure "Population age 95 to 99" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_95_99'
+        );
+
+
+
+
+
+
+Measure "Population age 95 to 99" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_95_99',
+        'denominator'
+      );
+
+
+Measure "Population age 95 to 99" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_95_99',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+  
+  
+
+.. _es.ine.pop_100_more:
+
+Population age 100 or more
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/es.ine.pop_100_more.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 100 or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_100_more'
+      );
+
+
+
+
+
+Measure "Population age 100 or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+          'es.ine.pop_100_more'
+        );
+
+
+
+
+
+
+Measure "Population age 100 or more" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.39, -3.7),
+        'es.ine.pop_100_more',
+        'denominator'
+      );
+
+
+Measure "Population age 100 or more" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.39, -3.7), 0.01),
+        'es.ine.pop_100_more',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`es.ine.t1_1`
+
+
+
+  
+  
+
+

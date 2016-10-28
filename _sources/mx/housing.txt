@@ -1,0 +1,9073 @@
+
+
+.. Housing:
+
+Housing
+===========================================================================
+
+What type of housing exists and how do people live in it?
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.VIV4_R:
+
+Average number of people per private occupied dwellings
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.VIV4_R.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Average number of people per private occupied dwellings"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV4_R'
+      );
+
+
+
+
+
+
+Average number of people per private occupied dwellings is only available for point lookups.
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.VIV5_R:
+
+Average number of people per room in private occupied dwellings
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.VIV5_R.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Average number of people per room in private occupied dwellings"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV5_R'
+      );
+
+
+
+
+
+
+Average number of people per room in private occupied dwellings is only available for point lookups.
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.VIV0:
+
+Dwellings
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.VIV0.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV0'
+      );
+
+
+
+
+
+Measure "Dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV0'
+        );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Dwellings
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.VIV1:
+
+Occupied dwellings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: html/mx.inegi_columns.VIV1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Occupied dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV1'
+      );
+
+
+
+
+
+Measure "Occupied dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV1'
+        );
+
+
+
+
+
+
+Measure "Occupied dwellings" percent of "Dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV1',
+        'denominator'
+      );
+
+
+Measure "Occupied dwellings" percent of "Dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV0`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Occupied dwellings
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.VIV2:
+
+Occupied private dwellings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Occupied private dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV2'
+      );
+
+
+
+
+
+Measure "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV2'
+        );
+
+
+
+
+
+
+Measure "Occupied private dwellings" percent of "Occupied dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV2',
+        'denominator'
+      );
+
+
+Measure "Occupied private dwellings" percent of "Occupied dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+.. contents:: Subcolumns of Occupied private dwellings
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.VIV10:
+
+One room private occupied dwellings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "One room private occupied dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV10'
+      );
+
+
+
+
+
+Measure "One room private occupied dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV10'
+        );
+
+
+
+
+
+
+Measure "One room private occupied dwellings" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV10',
+        'denominator'
+      );
+
+
+Measure "One room private occupied dwellings" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV9:
+
+Private occupied dwellings with 2.5 people per bedroom or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with 2.5 people per bedroom or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV9'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with 2.5 people per bedroom or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV9'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with 2.5 people per bedroom or more" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV9',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with 2.5 people per bedroom or more" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV13:
+
+Private occupied dwellings with 3 people per bedroom or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV13.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with 3 people per bedroom or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV13'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with 3 people per bedroom or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV13'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with 3 people per bedroom or more" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV13',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with 3 people per bedroom or more" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV13',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV19:
+
+Private occupied dwellings with a bathroom or toilet
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV19.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a bathroom or toilet"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV19'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a bathroom or toilet" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV19'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a bathroom or toilet" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV19',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a bathroom or toilet" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV19',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV28:
+
+Private occupied dwellings with a car or van
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV28.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a car or van"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV28'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a car or van" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV28'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a car or van" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV28',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a car or van" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV28',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV35:
+
+Private occupied dwellings with a cellphone
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV35.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a cellphone"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV35'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a cellphone" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV35'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a cellphone" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV35',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a cellphone" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV35',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV33:
+
+Private occupied dwellings with a computer
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV33.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a computer"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV33'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a computer" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV33'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a computer" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV33',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a computer" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV33',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV34:
+
+Private occupied dwellings with a landline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV34.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a landline"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV34'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a landline" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV34'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a landline" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV34',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a landline" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV34',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV31:
+
+Private occupied dwellings with a radio
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV31.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a radio"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV31'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a radio" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV31'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a radio" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV31',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a radio" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV31',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV26:
+
+Private occupied dwellings with a refrigator
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV26.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a refrigator"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV26'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a refrigator" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV26'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a refrigator" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV26',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a refrigator" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV26',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV32:
+
+Private occupied dwellings with a television
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV32.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a television"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV32'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a television" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV32'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a television" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV32',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a television" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV32',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV27:
+
+Private occupied dwellings with a washer
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV27.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a washer"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV27'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a washer" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV27'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a washer" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV27',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a washer" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV27',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV22:
+
+Private occupied dwellings with drainage
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV22.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with drainage"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV22'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with drainage" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV22'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with drainage" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV22',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with drainage" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV22',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV6:
+
+Private occupied dwellings with earthen floor
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with earthen floor"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV6'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with earthen floor" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV6'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with earthen floor" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV6',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with earthen floor" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV14:
+
+Private occupied dwellings with electric light
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with electric light"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV14'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with electric light" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV14'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with electric light" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV14',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with electric light" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV24:
+
+Private occupied dwellings with electric light, running water and drainage
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV24.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with electric light, running water and drainage"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV24'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with electric light, running water and drainage" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV24'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with electric light, running water and drainage" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV24',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with electric light, running water and drainage" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV24',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV36:
+
+Private occupied dwellings with Internet access
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV36.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with Internet access"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV36'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with Internet access" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV36'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with Internet access" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV36',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with Internet access" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV36',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV39:
+
+Private occupied dwellings with neither a computer nor Internet access
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV39.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither a computer nor Internet access"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV39'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with neither a computer nor Internet access" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV39'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither a computer nor Internet access" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV39',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with neither a computer nor Internet access" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV39',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV38:
+
+Private occupied dwellings with neither a landline nor a cellphone
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV38.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither a landline nor a cellphone"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV38'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with neither a landline nor a cellphone" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV38'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither a landline nor a cellphone" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV38',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with neither a landline nor a cellphone" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV38',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV25:
+
+Private occupied dwellings with neither electric light, running water nor drainage
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV25.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither electric light, running water nor drainage"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV25'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with neither electric light, running water nor drainage" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV25'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither electric light, running water nor drainage" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV25',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with neither electric light, running water nor drainage" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV25',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV29:
+
+Private occupied dwellings with neither refigerator nor washer
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV29.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither refigerator nor washer"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV29'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with neither refigerator nor washer" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV29'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither refigerator nor washer" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV29',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with neither refigerator nor washer" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV29',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV30:
+
+Private occupied dwellings with neither refigerator, washer, nor car or van
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV30.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither refigerator, washer, nor car or van"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV30'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with neither refigerator, washer, nor car or van" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV30'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither refigerator, washer, nor car or van" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV30',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with neither refigerator, washer, nor car or van" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV30',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV37:
+
+Private occupied dwellings with neither television nor radio
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV37.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither television nor radio"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV37'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with neither television nor radio" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV37'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither television nor radio" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV37',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with neither television nor radio" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV37',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV41:
+
+Private occupied dwellings with no physical property
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV41.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with no physical property"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV41'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with no physical property" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV41'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with no physical property" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV41',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with no physical property" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV41',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV7:
+
+Private occupied dwellings with one bedroom
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with one bedroom"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV7'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with one bedroom" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV7'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with one bedroom" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV7',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with one bedroom" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV16:
+
+Private occupied dwellings with running water
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV16.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with running water"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV16'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with running water" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV16'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with running water" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV16',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with running water" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV16',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV8:
+
+Private occupied dwellings with two bedrooms or more
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with two bedrooms or more"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV8'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with two bedrooms or more" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV8'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with two bedrooms or more" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV8',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with two bedrooms or more" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV20:
+
+Private occupied dwellings without a bathroom or toilet
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings without a bathroom or toilet"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV20'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings without a bathroom or toilet" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV20'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings without a bathroom or toilet" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV20',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings without a bathroom or toilet" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV40:
+
+Private occupied dwellings without any information or communication technology
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV40.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings without any information or communication technology"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV40'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings without any information or communication technology" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV40'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings without any information or communication technology" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV40',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings without any information or communication technology" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV40',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV23:
+
+Private occupied dwellings without drainage
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV23.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings without drainage"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV23'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings without drainage" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV23'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings without drainage" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV23',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings without drainage" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV23',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV15:
+
+Private occupied dwellings without electric light
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings without electric light"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV15'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings without electric light" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV15'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings without electric light" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV15',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings without electric light" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV17:
+
+Private occupied dwellings without running water
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV17.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings without running water"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV17'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings without running water" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV17'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings without running water" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV17',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings without running water" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV17',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV12:
+
+Three or more room private occupied dwellings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Three or more room private occupied dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV12'
+      );
+
+
+
+
+
+Measure "Three or more room private occupied dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV12'
+        );
+
+
+
+
+
+
+Measure "Three or more room private occupied dwellings" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV12',
+        'denominator'
+      );
+
+
+Measure "Three or more room private occupied dwellings" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.VIV11:
+
+Two room private occupied dwellings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+.. figure:: html/mx.inegi_columns.VIV11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Two room private occupied dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV11'
+      );
+
+
+
+
+
+Measure "Two room private occupied dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV11'
+        );
+
+
+
+
+
+
+Measure "Two room private occupied dwellings" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV11',
+        'denominator'
+      );
+
+
+Measure "Two room private occupied dwellings" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.VIV3:
+
+Population in occupied private dwellings
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.VIV3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in occupied private dwellings"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV3'
+      );
+
+
+
+
+
+Measure "Population in occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV3'
+        );
+
+
+
+
+
+
+Measure "Population in occupied private dwellings" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV3',
+        'denominator'
+      );
+
+
+Measure "Population in occupied private dwellings" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.VIV21:
+
+Population in private occupied dwellings with a bathroom or toilet
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.VIV21.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in private occupied dwellings with a bathroom or toilet"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV21'
+      );
+
+
+
+
+
+Measure "Population in private occupied dwellings with a bathroom or toilet" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV21'
+        );
+
+
+
+
+
+
+Measure "Population in private occupied dwellings with a bathroom or toilet" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV21',
+        'denominator'
+      );
+
+
+Measure "Population in private occupied dwellings with a bathroom or toilet" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV21',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.VIV18:
+
+Population in private occupied dwellings with running water
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.VIV18.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in private occupied dwellings with running water"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV18'
+      );
+
+
+
+
+
+Measure "Population in private occupied dwellings with running water" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.VIV18'
+        );
+
+
+
+
+
+
+Measure "Population in private occupied dwellings with running water" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.VIV18',
+        'denominator'
+      );
+
+
+Measure "Population in private occupied dwellings with running water" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.VIV18',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+

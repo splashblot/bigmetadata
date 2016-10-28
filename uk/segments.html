@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>10.6. Population segments &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="10. United Kingdom" href="../uk.html" />
+    <link rel="next" title="&lt;no title&gt;" href="us.census.acs.segments.html" />
+    <link rel="prev" title="10.5. Religion" href="religion.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="population-segments">
+<h1>10.6. Population segments<a class="headerlink" href="#population-segments" title="Permalink to this headline">¶</a></h1>
+<p>Segmentations of the population</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#group-area-classification" id="id6">Group Area Classification</a></li>
+<li><a class="reference internal" href="#subgroup-area-classification" id="id7">Subgroup Area Classification</a></li>
+<li><a class="reference internal" href="#supergroup-area-classification" id="id8">Supergroup Area Classification</a></li>
+</ul>
+</div>
+<div class="section" id="group-area-classification">
+<span id="uk-cdrc-grp"></span><h2><a class="toc-backref" href="#id6">10.6.1. Group Area Classification</a><a class="headerlink" href="#group-area-classification" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.cdrc.grp.png"><img alt="../_images/uk.cdrc.grp.png" src="../_images/uk.cdrc.grp.png" style="width: 100%;" /></a>
+</div>
+<p>The 2011 Area Classification for Output Areas (2011 OAC) is a UK geodemographic classification produced as a collaboration between the Office for National Statistics and University College London. Visit <a class="reference external" href="http://www.ons.gov.uk/ons/guide-method/geography/products/area-classifications/ns-area-classifications/ns-2011-area-classifications/index.html">here</a> or <a class="reference external" href="http://www.opengeodemographics.com">here</a> for further information regarding the 2011 OAC.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Students Around Campus</strong>:</li>
+<li><strong>Comfortable Cosmopolitans</strong>:</li>
+<li><strong>Industrious Communities</strong>:</li>
+<li><strong>Challenged Terraced Workers</strong>:</li>
+<li><strong>Ageing City Dwellers</strong>:</li>
+<li><strong>Aspiring and Affluent</strong>:</li>
+<li><strong>Asian Traits</strong>:</li>
+<li><strong>Ageing Rural Dwellers</strong>:</li>
+<li><strong>White Communities</strong>:</li>
+<li><strong>Semi-Detached Suburbia</strong>:</li>
+<li><strong>Migration and Churn</strong>:</li>
+<li><strong>Rented Family Living</strong>:</li>
+<li><strong>Challenged Asian Terraces</strong>:</li>
+<li><strong>Ageing Urban Living</strong>:</li>
+<li><strong>Suburban Achievers</strong>:</li>
+<li><strong>Inner-City Students</strong>:</li>
+<li><strong>Farming Communities</strong>:</li>
+<li><strong>Ethnic Family Life</strong>:</li>
+<li><strong>Urban Professionals and Families</strong>:</li>
+<li><strong>Hard-Pressed Ageing Workers</strong>:</li>
+<li><strong>Aspirational Techies</strong>:</li>
+<li><strong>Endeavouring Ethnic Mix</strong>:</li>
+<li><strong>Ethnic Dynamics</strong>:</li>
+<li><strong>Rural Tenants</strong>:</li>
+<li><strong>Challenged Diversity</strong>:</li>
+<li><strong>Constrained Flat Dwellers</strong>:</li>
+</ul>
+</div></blockquote>
+<p>Obtain category of &#8220;Group Area Classification&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_text_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetCategory</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.cdrc.grp&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-cdrc-cdrc-source"><span class="std std-ref">Consumer Data Research Centre</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#uk-cdrc-opengeodemographics-license"><span class="std std-ref">Open Geodemographics license</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="subgroup-area-classification">
+<span id="uk-cdrc-subgrp"></span><h2><a class="toc-backref" href="#id7">10.6.2. Subgroup Area Classification</a><a class="headerlink" href="#subgroup-area-classification" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.cdrc.subgrp.png"><img alt="../_images/uk.cdrc.subgrp.png" src="../_images/uk.cdrc.subgrp.png" style="width: 100%;" /></a>
+</div>
+<p>The 2011 Area Classification for Output Areas (2011 OAC) is a UK geodemographic classification produced as a collaboration between the Office for National Statistics and University College London. Visit <a class="reference external" href="http://www.ons.gov.uk/ons/guide-method/geography/products/area-classifications/ns-area-classifications/ns-2011-area-classifications/index.html">here</a> or <a class="reference external" href="http://www.opengeodemographics.com">here</a> for further information regarding the 2011 OAC.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Pakistani Communities</strong>:</li>
+<li><strong>Agricultural Communities</strong>:</li>
+<li><strong>Rural Employment and Retirees</strong>:</li>
+<li><strong>Rural White-Collar Workers</strong>:</li>
+<li><strong>Professional Service Cosmopolitans</strong>:</li>
+<li><strong>Established Tech Workers</strong>:</li>
+<li><strong>Eastern European Communities</strong>:</li>
+<li><strong>Bangladeshi Mixed Employment</strong>:</li>
+<li><strong>Achieving Minorities</strong>:</li>
+<li><strong>Multi-Ethnic Professionals with Families</strong>:</li>
+<li><strong>White Suburban Communities</strong>:</li>
+<li><strong>Families in Terraces and Flats</strong>:</li>
+<li><strong>Challenged Transitionaries</strong>:</li>
+<li><strong>Industrious Transitions</strong>:</li>
+<li><strong>EU White-Collar Workers</strong>:</li>
+<li><strong>Deprived Blue-Collar Terraces</strong>:</li>
+<li><strong>Highly-Qualified Quaternary Workers</strong>:</li>
+<li><strong>Social Renting Young Families</strong>:</li>
+<li><strong>Constrained Commuters</strong>:</li>
+<li><strong>Indian Tech Achievers</strong>:</li>
+<li><strong>Comfortable Suburbia</strong>:</li>
+<li><strong>Older Farming Communities</strong>:</li>
+<li><strong>Transitional Eastern European Neighbourhoods</strong>:</li>
+<li><strong>Old EU Tech Workers</strong>:</li>
+<li><strong>New EU Tech Workers</strong>:</li>
+<li><strong>Student Digs</strong>:</li>
+<li><strong>Hard-Pressed Ethnic Mix</strong>:</li>
+<li><strong>Endeavouring Flat Dwellers</strong>:</li>
+<li><strong>Renting Hard-Pressed Workers</strong>:</li>
+<li><strong>Inner City Ethnic Mix</strong>:</li>
+<li><strong>Detached Rural Retirement</strong>:</li>
+<li><strong>Delayed Retirement</strong>:</li>
+<li><strong>Hampered Aspiration</strong>:</li>
+<li><strong>Students and Commuters</strong>:</li>
+<li><strong>Young Families and Students</strong>:</li>
+<li><strong>Older Workers and Retirement</strong>:</li>
+<li><strong>Renting Rural Retirement</strong>:</li>
+<li><strong>Multicultural Student Neighbourhoods</strong>:</li>
+<li><strong>Detached Retirement Living</strong>:</li>
+<li><strong>Multicultural New Arrivals</strong>:</li>
+<li><strong>Outer City Hardship</strong>:</li>
+<li><strong>Retired Communal City Dwellers</strong>:</li>
+<li><strong>Rural Workers and Families</strong>:</li>
+<li><strong>Students and Professionals</strong>:</li>
+<li><strong>Established Farming Communities</strong>:</li>
+<li><strong>Semi-Detached Ageing</strong>:</li>
+<li><strong>Ageing in Suburbia</strong>:</li>
+<li><strong>Migrant Families</strong>:</li>
+<li><strong>Deprived Neighbourhoods</strong>:</li>
+<li><strong>Ageing Industrious Workers</strong>:</li>
+<li><strong>Urban Cultural Mix</strong>:</li>
+<li><strong>Retired Independent City Dwellers</strong>:</li>
+<li><strong>Retired City Hardship</strong>:</li>
+<li><strong>Ageing Rural Flat Tenants</strong>:</li>
+<li><strong>Student Communal Living</strong>:</li>
+<li><strong>Migrant Commuters</strong>:</li>
+<li><strong>Commuters with Young Families</strong>:</li>
+<li><strong>Asian Terraces and Flats</strong>:</li>
+<li><strong>Multi-Ethnic Suburbia</strong>:</li>
+<li><strong>Rural Life</strong>:</li>
+<li><strong>Young Hard-Pressed Families</strong>:</li>
+<li><strong>Private Renting New Arrivals</strong>:</li>
+<li><strong>Hard-Pressed European Settlers</strong>:</li>
+<li><strong>Ageing Communities and Families</strong>:</li>
+<li><strong>Constrained Young Families</strong>:</li>
+<li><strong>Established Renting Families</strong>:</li>
+<li><strong>Communal Retirement</strong>:</li>
+<li><strong>Self-Sufficient Retirement</strong>:</li>
+<li><strong>Multi-Ethnic Professional Service Workers</strong>:</li>
+<li><strong>Constrained Neighbourhoods</strong>:</li>
+<li><strong>White Professionals</strong>:</li>
+<li><strong>Ageing Rural Industry Workers</strong>:</li>
+<li><strong>Multi-Ethnic Hardship</strong>:</li>
+<li><strong>Striving Service Workers</strong>:</li>
+<li><strong>Industrious Hardship</strong>:</li>
+<li><strong>Hard-Pressed Rented Terraces</strong>:</li>
+</ul>
+</div></blockquote>
+<p>Obtain category of &#8220;Subgroup Area Classification&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_text_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetCategory</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.cdrc.subgrp&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-cdrc-cdrc-source"><span class="std std-ref">Consumer Data Research Centre</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#uk-cdrc-opengeodemographics-license"><span class="std std-ref">Open Geodemographics license</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="supergroup-area-classification">
+<span id="uk-cdrc-sprgrp"></span><h2><a class="toc-backref" href="#id8">10.6.3. Supergroup Area Classification</a><a class="headerlink" href="#supergroup-area-classification" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/uk.cdrc.sprgrp.png"><img alt="../_images/uk.cdrc.sprgrp.png" src="../_images/uk.cdrc.sprgrp.png" style="width: 100%;" /></a>
+</div>
+<p>The 2011 Area Classification for Output Areas (2011 OAC) is a UK geodemographic classification produced as a collaboration between the Office for National Statistics and University College London. Visit <a class="reference external" href="http://www.ons.gov.uk/ons/guide-method/geography/products/area-classifications/ns-area-classifications/ns-2011-area-classifications/index.html">here</a> or <a class="reference external" href="http://www.opengeodemographics.com">here</a> for further information regarding the 2011 OAC.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Hard-Pressed Living</strong>:</li>
+<li><strong>Cosmopolitans</strong>:</li>
+<li><strong>Urbanites</strong>:</li>
+<li><strong>Rural Residents</strong>:</li>
+<li><strong>Suburbanites</strong>:</li>
+<li><strong>Constrained City Dwellers</strong>:</li>
+<li><strong>Multicultural Metropolitans</strong>:</li>
+<li><strong>Ethnicity Central</strong>:</li>
+</ul>
+</div></blockquote>
+<p>Obtain category of &#8220;Supergroup Area Classification&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_text_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetCategory</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">51.5146183469</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0888347625732</span><span class="p">),</span>
+      <span class="s1">&#39;uk.cdrc.sprgrp&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#uk-cdrc-the-geom"><span class="std std-ref">Census Output Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#uk-cdrc-cdrc-source"><span class="std std-ref">Consumer Data Research Centre</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#uk-cdrc-opengeodemographics-license"><span class="std std-ref">Open Geodemographics license</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">10.6. Population segments</a><ul>
+<li><a class="reference internal" href="#group-area-classification">10.6.1. Group Area Classification</a></li>
+<li><a class="reference internal" href="#subgroup-area-classification">10.6.2. Subgroup Area Classification</a></li>
+<li><a class="reference internal" href="#supergroup-area-classification">10.6.3. Supergroup Area Classification</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../uk.html">10. United Kingdom</a><ul>
+      <li>Previous: <a href="religion.html" title="previous chapter">10.5. Religion</a></li>
+      <li>Next: <a href="us.census.acs.segments.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/uk/segments.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/uk/segments.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

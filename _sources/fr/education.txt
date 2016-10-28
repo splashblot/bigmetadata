@@ -1,0 +1,6485 @@
+
+
+.. Education:
+
+Education
+===========================================================================
+
+Educational attainment and enrollment.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _fr.insee.P12_NSCOL15P:
+
+Pop 15 ans ou plus non scolarisée en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes non scolarisées de 15 ans ou plus
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scolarisée en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_NSCOL15P'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scolarisée en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus non scolarisée en 2012 (princ)" percent of "Pop 15 ans ou plus en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_NSCOL15P',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_POP15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Pop 15 ans ou plus non scolarisée en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P:
+
+Femmes 15 ans ou plus non scolarisées en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scolarisées en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Femmes 15 ans ou plus non scolarisées en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_BAC:
+
+Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'un baccalauréat ou d'un brevet professionnel
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BAC'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_BAC'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BAC',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_BAC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BAC`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_BEPC:
+
+Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires du BEPC, brevet des collèges
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BEPC'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_BEPC'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BEPC`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_CAPBEP:
+
+Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'un CAP ou d'un BEP
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_CAPBEP'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_CAPBEP'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_CAPBEP`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_CEP:
+
+Femmes 15 ans ou plus non scol. CEP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires du certificat d'études primaires
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_CEP'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_CEP'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_CEP',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_CEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_CEP`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_BACP2:
+
+Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur court
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BACP2'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_BACP2'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BACP2`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_SUP:
+
+Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur long
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_SUP'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_SUP'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_SUP',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_SUP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_SUP`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_DIPL0:
+
+Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'aucun diplôme
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_DIPL0'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_DIPL0'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_DIPL0`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P:
+
+Hommes 15 ans ou plus non scolarisés en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scolarisés en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Hommes 15 ans ou plus non scolarisés en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_BAC:
+
+Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'un baccalauréat ou d'un brevet professionnel
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BAC'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_BAC'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BAC',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_BAC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BAC`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_BEPC:
+
+Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires du BEPC, brevet des collèges
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BEPC'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_BEPC'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BEPC`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_CAPBEP:
+
+Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'un CAP ou d'un BEP
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_CAPBEP'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_CAPBEP'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_CAPBEP`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_CEP:
+
+Hommes 15 ans ou plus non scol. CEP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires du certificat d'études primaires
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_CEP'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_CEP'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. CEP en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_CEP',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. CEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_CEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_CEP`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_BACP2:
+
+Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur court
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BACP2'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_BACP2'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BACP2`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_SUP:
+
+Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur long
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_SUP'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_SUP'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_SUP',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_SUP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_SUP`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_DIPL0:
+
+Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'aucun diplôme
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_DIPL0'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_DIPL0'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_DIPL0`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_NSCOL15P_BAC:
+
+Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de personnes non scolarisées de 15 ans ou plus titulaires d'un baccalauréat ou d'un brevet professionnel
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_BAC'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_NSCOL15P_BAC'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_BAC',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_NSCOL15P_BAC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_BAC:
+
+Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'un baccalauréat ou d'un brevet professionnel
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BAC'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_BAC'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BAC',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_BAC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BAC`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_BAC:
+
+Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'un baccalauréat ou d'un brevet professionnel
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BAC'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_BAC'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BAC',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. BAC-BP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. BAC-BP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_BAC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BAC`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_NSCOL15P_BEPC:
+
+Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de personnes non scolarisées de 15 ans ou plus titulaires du BEPC, brevet des collèges
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_BEPC'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_NSCOL15P_BEPC'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_NSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_BEPC:
+
+Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires du BEPC, brevet des collèges
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BEPC'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_BEPC'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BEPC`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_BEPC:
+
+Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires du BEPC, brevet des collèges
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BEPC'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_BEPC'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. BEPC, brevet collèges en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_BEPC',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BEPC`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_NSCOL15P_CAPBEP:
+
+Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de personnes non scolarisées de 15 ans ou plus titulaires d'un CAP ou d'un BEP
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_CAPBEP'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_NSCOL15P_CAPBEP'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_NSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_CAPBEP:
+
+Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'un CAP ou d'un BEP
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_CAPBEP'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_CAPBEP'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_CAPBEP`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_CAPBEP:
+
+Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'un CAP ou d'un BEP
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_CAPBEP'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_CAPBEP'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. CAP-BEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_CAPBEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_CAPBEP`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_NSCOL15P_CEP:
+
+Pop 15 ans ou plus non scol. CEP en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de personnes non scolarisées de 15 ans ou plus titulaires du certificat d'études primaires
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. CEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_CEP'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. CEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_NSCOL15P_CEP'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_CEP',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_NSCOL15P_CEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Pop 15 ans ou plus non scol. CEP en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_CEP:
+
+Femmes 15 ans ou plus non scol. CEP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires du certificat d'études primaires
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_CEP'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_CEP'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_CEP',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_CEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_CEP`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_CEP:
+
+Hommes 15 ans ou plus non scol. CEP en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires du certificat d'études primaires
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CEP en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_CEP'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_CEP'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. CEP en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_CEP',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. CEP en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. CEP en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_CEP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_CEP`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_NSCOL15P_BACP2:
+
+Pop 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de personnes non scolarisées de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur court
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_BACP2'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_NSCOL15P_BACP2'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_NSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Pop 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_BACP2:
+
+Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur court
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BACP2'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_BACP2'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BACP2`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_BACP2:
+
+Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur court
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BACP2'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_BACP2'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup court en 2012 (princ)" percent of "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_BACP2',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_BACP2`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_NSCOL15P_SUP:
+
+Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de personnes non scolarisées de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur long
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_SUP'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_NSCOL15P_SUP'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_SUP',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_NSCOL15P_SUP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_SUP:
+
+Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur long
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_SUP'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_SUP'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_SUP',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_SUP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_SUP`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_SUP:
+
+Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'un diplôme de l'enseignement supérieur long
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_SUP'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_SUP'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_SUP',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" percent of "Pop 15 ans ou plus non scol. Enseignement sup long en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_SUP',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_SUP`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_NSCOL15P_DIPL0:
+
+Pop 15 ans ou plus non scol. Sans diplôme en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de personnes non scolarisées de 15 ans ou plus titulaires d'aucun diplôme
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. Sans diplôme en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_DIPL0'
+      );
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_NSCOL15P_DIPL0'
+        );
+
+
+
+
+
+
+Measure "Pop 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_NSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+Measure "Pop 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Pop 15 ans ou plus non scolarisée en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_NSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Pop 15 ans ou plus non scol. Sans diplôme en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_FNSCOL15P_DIPL0:
+
+Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre de femmes non scolarisées de 15 ans ou plus titulaires d'aucun diplôme
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_DIPL0'
+      );
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_FNSCOL15P_DIPL0'
+        );
+
+
+
+
+
+
+Measure "Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_FNSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+Measure "Femmes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Femmes 15 ans ou plus non scolarisées en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_FNSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_FNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_DIPL0`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_HNSCOL15P_DIPL0:
+
+Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+Nombre d'hommes non scolarisés de 15 ans ou plus titulaires d'aucun diplôme
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_DIPL0'
+      );
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_HNSCOL15P_DIPL0'
+        );
+
+
+
+
+
+
+Measure "Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_HNSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+Measure "Hommes 15 ans ou plus non scol. Sans diplôme en 2012 (princ)" percent of "Hommes 15 ans ou plus non scolarisés en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_HNSCOL15P_DIPL0',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_HNSCOL15P`
+
+:Denominator:
+
+    :ref:`fr.insee.P12_NSCOL15P_DIPL0`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+.. _fr.insee.P12_SCOL1114:
+
+Pop scolarisée 11-14 ans en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes scolarisées de 11 à 14 ans
+
+
+
+
+
+Measure "Pop scolarisée 11-14 ans en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL1114'
+      );
+
+
+
+
+
+Measure "Pop scolarisée 11-14 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_SCOL1114'
+        );
+
+
+
+
+
+
+Measure "Pop scolarisée 11-14 ans en 2012 (princ)" percent of "Pop 11-14 ans en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL1114',
+        'denominator'
+      );
+
+
+Measure "Pop scolarisée 11-14 ans en 2012 (princ)" percent of "Pop 11-14 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_SCOL1114',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP1114`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_SCOL1517:
+
+Pop scolarisée 15-17 ans en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes scolarisées de 15 à 17 ans
+
+
+
+
+
+Measure "Pop scolarisée 15-17 ans en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL1517'
+      );
+
+
+
+
+
+Measure "Pop scolarisée 15-17 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_SCOL1517'
+        );
+
+
+
+
+
+
+Measure "Pop scolarisée 15-17 ans en 2012 (princ)" percent of "Pop 15-17 ans en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL1517',
+        'denominator'
+      );
+
+
+Measure "Pop scolarisée 15-17 ans en 2012 (princ)" percent of "Pop 15-17 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_SCOL1517',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP1517`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_SCOL1824:
+
+Pop scolarisée 18-24 ans en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes scolarisées de 18 à 24 ans
+
+
+
+
+
+Measure "Pop scolarisée 18-24 ans en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL1824'
+      );
+
+
+
+
+
+Measure "Pop scolarisée 18-24 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_SCOL1824'
+        );
+
+
+
+
+
+
+Measure "Pop scolarisée 18-24 ans en 2012 (princ)" percent of "Pop 18-24 ans en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL1824',
+        'denominator'
+      );
+
+
+Measure "Pop scolarisée 18-24 ans en 2012 (princ)" percent of "Pop 18-24 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_SCOL1824',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP1824`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_SCOL0205:
+
+Pop scolarisée 2-5 ans en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes scolarisées de 2 à 5 ans
+
+
+
+
+
+Measure "Pop scolarisée 2-5 ans en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL0205'
+      );
+
+
+
+
+
+Measure "Pop scolarisée 2-5 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_SCOL0205'
+        );
+
+
+
+
+
+
+Measure "Pop scolarisée 2-5 ans en 2012 (princ)" percent of "Pop 2-5 ans en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL0205',
+        'denominator'
+      );
+
+
+Measure "Pop scolarisée 2-5 ans en 2012 (princ)" percent of "Pop 2-5 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_SCOL0205',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP0205`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_SCOL2529:
+
+Pop scolarisée 25-29 ans en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes scolarisées de 25 à 29 ans
+
+
+
+
+
+Measure "Pop scolarisée 25-29 ans en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL2529'
+      );
+
+
+
+
+
+Measure "Pop scolarisée 25-29 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_SCOL2529'
+        );
+
+
+
+
+
+
+Measure "Pop scolarisée 25-29 ans en 2012 (princ)" percent of "Pop 25-29 ans en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL2529',
+        'denominator'
+      );
+
+
+Measure "Pop scolarisée 25-29 ans en 2012 (princ)" percent of "Pop 25-29 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_SCOL2529',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP2529`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_SCOL30P:
+
+Pop scolarisée 30 ans ou plus en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes scolarisées de 30 ans ou plus
+
+
+
+
+
+Measure "Pop scolarisée 30 ans ou plus en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL30P'
+      );
+
+
+
+
+
+Measure "Pop scolarisée 30 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_SCOL30P'
+        );
+
+
+
+
+
+
+Measure "Pop scolarisée 30 ans ou plus en 2012 (princ)" percent of "Pop 30 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL30P',
+        'denominator'
+      );
+
+
+Measure "Pop scolarisée 30 ans ou plus en 2012 (princ)" percent of "Pop 30 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_SCOL30P',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP30P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_SCOL0610:
+
+Pop scolarisée 6-10 ans en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes scolarisées de 6 à 10 ans
+
+
+
+
+
+Measure "Pop scolarisée 6-10 ans en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL0610'
+      );
+
+
+
+
+
+Measure "Pop scolarisée 6-10 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_SCOL0610'
+        );
+
+
+
+
+
+
+Measure "Pop scolarisée 6-10 ans en 2012 (princ)" percent of "Pop 6-10 ans en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_SCOL0610',
+        'denominator'
+      );
+
+
+Measure "Pop scolarisée 6-10 ans en 2012 (princ)" percent of "Pop 6-10 ans en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_SCOL0610',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP0610`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+

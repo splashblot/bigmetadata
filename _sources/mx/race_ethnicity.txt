@@ -1,0 +1,449 @@
+
+
+.. Race and Ethnicity:
+
+Race and Ethnicity
+===========================================================================
+
+Population breakdowns by race and ethnicity. 
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.INDI19:
+
+Indigenous census households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.INDI19.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Indigenous census households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.INDI19'
+      );
+
+
+
+
+
+Measure "Indigenous census households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.INDI19'
+        );
+
+
+
+
+
+
+Measure "Indigenous census households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.INDI19',
+        'denominator'
+      );
+
+
+Measure "Indigenous census households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.INDI19',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.HOGAR1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.INDI20:
+
+Population in indigenous census households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.INDI20.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population in indigenous census households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.INDI20'
+      );
+
+
+
+
+
+Measure "Population in indigenous census households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.INDI20'
+        );
+
+
+
+
+
+
+Measure "Population in indigenous census households" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.INDI20',
+        'denominator'
+      );
+
+
+Measure "Population in indigenous census households" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.INDI20',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+

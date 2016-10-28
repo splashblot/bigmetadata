@@ -1,0 +1,341 @@
+
+
+.. US Population Segments:
+
+US Population Segments
+===========================================================================
+
+Segmentation of the United States population
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _us.census.spielman_singleton_segments.X10:
+
+Spielman-Singleton Segments: 10 Clusters
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.spielman_singleton_segments.X10.png
+  :width: 100 %
+  :align: center
+
+
+
+Sociodemographic classes from Spielman and Singleton 2015, 10 clusters
+
+
+  
+  * **Low income and diverse**: High school education, single parent families, mobile within cities, multilingual, Black or Asian, typically doesn't own a car, uses public transit, high median rent. 
+  
+  * **Hispanic and Young**: Predominantly Hispanic, tends to have at most high school education, lots of married couples and single mothers, high mobility within cities, typically takes public transit and tends to rent.
+  
+  * **Low income, mix of minorities**: Highschool education, single parent familes, mobile within cities, diverse minorities, uses public transit and low rent.
+  
+  * **Wealthy, urban without Kids**: Typically has an advanced degree, single parents or same sex couples, highly mobile, White, Black or Asian, doesn't own a car and lives in high rental housing.
+  
+  * **Middle Income, Single Family Home**: High school and some college education, mix of single parents and married couples, tends to stay put and only moves within cities, English speaking, white, good retirement funds, owns their own car, lives in lower rent homes of mobile homes.
+  
+  * **Residential Institutions**: Advanced education, highly mobile, White, Black or Asian, public transit, low rent.
+  
+  * **Wealthy Nuclear Families**: Highly educated, high levels of bachelor or grad degrees, married couples and some same sex couples, tends to stay put, white or asian, high income, tends to own a car and lives in single family homes with high rents.
+  
+  * **Low income, African American**: African American, low income, high school education, single parent famalies, mobile within cities, uses public transport.
+  
+  * **Wealthy Old Caucasion**: Highly educated, married couples and same sex couples, tend to stay put, English speaking, White or Asian, high income and high rent.
+  
+  * **Native American**: Native Amerian, high school educated with some college, commutes for work, single parent families, typical doesn't own a car and lives in low cost rental housing.
+  
+
+
+
+
+Obtain category of "Spielman-Singleton Segments: 10 Clusters" at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_text_column} =
+      OBS_GetCategory(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.spielman_singleton_segments.X10'
+      );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _us.census.spielman_singleton_segments.X55:
+
+Spielman-Singleton Segments: 55 Clusters
+---------------------------------------------------------------------------
+
+
+
+
+
+Sociodemographic classes from Spielman and Singleton 2015, 55 clusters
+
+
+  
+  * **Wealthy, Retired Mountains/Coasts**: 
+  
+  * **Very wealthy, multiple million dollar homes**: 
+  
+  * **Hispanic Black mix multilingual, high poverty, renters, uses public transport**: 
+  
+  * **Young, City based renters in Sparse neighborhoods, Low poverty**: 
+  
+  * **City Center University Campuses**: 
+  
+  * **Wealthy Diverse Suburbanites On the Coasts**: 
+  
+  * **Older home owners, more financially comfortable, some diversity**: 
+  
+  * **Retirement Communitties**: 
+  
+  * **Older, mixed race professionals**: 
+  
+  * **Urban - Inner city**: 
+  
+  * **Older Home owners with high income**: 
+  
+  * **Older, middle income Native Americans once married and Educated**: 
+  
+  * **City Outskirt University Campuses**: 
+  
+  * **Wealthy and Rural Living**: 
+  
+  * **Suburban, Young and Low-income**: 
+  
+  * **Rural,High School Education, Owns property**: 
+  
+  * **New Developments**: 
+  
+  * **Older home owners and very high income**: 
+  
+  * **low-income, urban, young, unmarried**: 
+  
+  * **Low Income on Urban Periphery**: 
+  
+  * **Predominantly black renters, rent own mix**: 
+  
+  * **Low-Income with gentrification**: 
+  
+  * **Rural, Bachelors or college degree, Rent owned mix**: 
+  
+  * **Satisfied Lower Middle Income Higher Rent Costs**: 
+  
+  * **High school education Long Commuters, Black, White Hispanic mix**: 
+  
+  * **Bachelors degree Mid income With Mortgages**: 
+  
+  * **Suburban/Rural Satisfied, decently educated lower middle class**: 
+  
+  * **College town with poverty**: 
+  
+  * **Low rent in built up neighborhoods**: 
+  
+  * **Younger, Long Commuter in dense neighborhood**: 
+  
+  * **Lower educational attainment, Homeowner, Low rent**: 
+  
+  * **Black and mixed community with rent burden**: 
+  
+  * **Struggling lower middle class with rent burden**: 
+  
+  * **Long commuters White black mix**: 
+  
+  * **Relatively affordable, satisfied lower middle class**: 
+  
+  * **College towns**: 
+  
+  * **Low education, mainly suburban**: 
+  
+  * **White and minority mix multilingual, mixed income / education. Married**: 
+  
+  * **Bachelors degree Higher income Home Owners**: 
+  
+  * **Rural families**: 
+  
+  * **Lower Middle Income with affordable housing**: 
+  
+  * **Works from home, Highly Educated, Super Wealthy**: 
+  
+  * **Middle Class, Educated, Suburban, Mixed Race**: 
+  
+  * **Predominantly black, high high school attainment, home owners**: 
+  
+  * **Retired Grandparents**: 
+  
+  * **High rise, dense urbanites**: 
+  
+  * **Young, working class and rural**: 
+  
+  * **Younger, poorer,single parent family Native Americans**: 
+  
+  * **Lower Middle Income with higher rent burden**: 
+  
+  * **Renters within cities, mixed income areas, White/Hispanic mix, Unmarried**: 
+  
+  * **White, Asian Mix Big City Burbs Dwellers**: 
+  
+  * **University campus wider area**: 
+  
+  * **Asian Hispanic Mix, Mid income**: 
+  
+  * **Wealthy city commuters**: 
+  
+  * **Older white home owners, less comfortable financially**: 
+  
+
+
+
+
+Obtain category of "Spielman-Singleton Segments: 55 Clusters" at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_text_column} =
+      OBS_GetCategory(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.spielman_singleton_segments.X55'
+      );
+
+
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+

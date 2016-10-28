@@ -21,6 +21,10 @@ Population 5 Years and Over
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B16001001.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area who are over the age of 5.  This is primarily used as a denominator of measures of language spoken at home.
 
@@ -31,7 +35,7 @@ The number of people in a geographic area who are over the age of 5.  This is pr
 Measure "Population 5 Years and Over"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -52,7 +56,7 @@ Measure "Population 5 Years and Over"  density per sq. kilometer  for one point:
 
 Measure "Population 5 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -87,6 +91,10 @@ Speaks only English at Home
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B16001002.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over age 5 who speak only English at home.
 
@@ -97,7 +105,7 @@ The number of people in a geographic area over age 5 who speak only English at h
 Measure "Speaks only English at Home"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -118,7 +126,7 @@ Measure "Speaks only English at Home"  density per sq. kilometer  for one point:
 
 Measure "Speaks only English at Home" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -131,9 +139,10 @@ Measure "Speaks only English at Home" within an area:
 
 
 
+
 Measure "Speaks only English at Home" percent of "Population 5 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -146,7 +155,7 @@ Measure "Speaks only English at Home" percent of "Population 5 Years and Over" a
 
 Measure "Speaks only English at Home" percent of "Population 5 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -155,7 +164,6 @@ Measure "Speaks only English at Home" percent of "Population 5 Years and Over" w
         'us.census.acs.B16001002',
         'denominator'
       );
-
 
 
 
@@ -182,6 +190,10 @@ Speaks Spanish at Home
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B16001003.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over age 5 who speak Spanish at home, possibly in addition to other languages.
 
@@ -192,7 +204,7 @@ The number of people in a geographic area over age 5 who speak Spanish at home, 
 Measure "Speaks Spanish at Home"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -213,7 +225,7 @@ Measure "Speaks Spanish at Home"  density per sq. kilometer  for one point:
 
 Measure "Speaks Spanish at Home" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -226,9 +238,10 @@ Measure "Speaks Spanish at Home" within an area:
 
 
 
+
 Measure "Speaks Spanish at Home" percent of "Population 5 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -241,7 +254,7 @@ Measure "Speaks Spanish at Home" percent of "Population 5 Years and Over" at one
 
 Measure "Speaks Spanish at Home" percent of "Population 5 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -250,7 +263,6 @@ Measure "Speaks Spanish at Home" percent of "Population 5 Years and Over" within
         'us.census.acs.B16001003',
         'denominator'
       );
-
 
 
 

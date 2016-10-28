@@ -1,0 +1,2259 @@
+
+
+.. Transportation:
+
+Transportation
+===========================================================================
+
+How do people move from place to place?
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _fr.insee.P12_ACTOCC15P_ILT45D:
+
+Actif occ 15 ans ou plus DOM travaille autre région en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus dans les DOM qui travaillent dans une autre région
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus DOM travaille autre région en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(4.93840837121, -52.329082489),
+        'fr.insee.P12_ACTOCC15P_ILT45D'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus DOM travaille autre région en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(4.93840837121, -52.329082489), 0.01),
+          'fr.insee.P12_ACTOCC15P_ILT45D'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus DOM travaille autre région en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(4.93840837121, -52.329082489),
+        'fr.insee.P12_ACTOCC15P_ILT45D',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus DOM travaille autre région en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(4.93840837121, -52.329082489), 0.01),
+        'fr.insee.P12_ACTOCC15P_ILT45D',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.C12_ACTOCC15P_DROU:
+
+Actif occ 15 ans ou plus deux roues en 2012 (compl)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui utilisent principalement un deux roues pour aller travailler
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus deux roues en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_DROU'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus deux roues en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_ACTOCC15P_DROU'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus deux roues en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_DROU',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus deux roues en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_ACTOCC15P_DROU',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.C12_ACTOCC15P_MAR:
+
+Actif occ 15 ans ou plus marche à pied en 2012 (compl)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui vont travailler principalement à pied
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus marche à pied en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_MAR'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus marche à pied en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_ACTOCC15P_MAR'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus marche à pied en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_MAR',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus marche à pied en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_ACTOCC15P_MAR',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.C12_ACTOCC15P_PAS:
+
+Actif occ 15 ans ou plus pas de transport en 2012 (compl)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui n'utilisent pas de moyen de transport pour aller travailler
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus pas de transport en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_PAS'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus pas de transport en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_ACTOCC15P_PAS'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus pas de transport en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_PAS',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus pas de transport en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_ACTOCC15P_PAS',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.C12_ACTOCC15P_TCOM:
+
+Actif occ 15 ans ou plus transport en commun en 2012 (compl)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui utilisent principalement les transports en commun pour aller travailler
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus transport en commun en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_TCOM'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus transport en commun en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_ACTOCC15P_TCOM'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus transport en commun en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_TCOM',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus transport en commun en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_ACTOCC15P_TCOM',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_ACTOCC15P_ILT2:
+
+Actif occ 15 ans ou plus travaille autre commune même dépt résidence en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui travaillent dans une autre commune située dans le département de résidence
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre commune même dépt résidence en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT2'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre commune même dépt résidence en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_ACTOCC15P_ILT2'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre commune même dépt résidence en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT2',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus travaille autre commune même dépt résidence en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_ACTOCC15P_ILT2',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_ACTOCC15P_ILT2P:
+
+Actif occ 15 ans ou plus travaille autre commune que commune résidence en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui travaillent dans une autre commune que la commune de résidence
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre commune que commune résidence en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT2P'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre commune que commune résidence en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_ACTOCC15P_ILT2P'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre commune que commune résidence en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT2P',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus travaille autre commune que commune résidence en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_ACTOCC15P_ILT2P',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_ACTOCC15P_ILT3:
+
+Actif occ 15 ans ou plus travaille autre dépt même région résidence en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui travaillent dans une autre commune située dans un autre département de la région de résidence
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre dépt même région résidence en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT3'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre dépt même région résidence en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_ACTOCC15P_ILT3'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre dépt même région résidence en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT3',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus travaille autre dépt même région résidence en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_ACTOCC15P_ILT3',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_ACTOCC15P_ILT4:
+
+Actif occ 15 ans ou plus travaille autre région en métropole en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui travaillent dans une commune située dans une autre région en France métropolitaine
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre région en métropole en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT4'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre région en métropole en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_ACTOCC15P_ILT4'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre région en métropole en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT4',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus travaille autre région en métropole en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_ACTOCC15P_ILT4',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_ACTOCC15P_ILT5:
+
+Actif occ 15 ans ou plus travaille autre région hors métropole en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui travaillent ailleurs, hors de France métropolitaine (Département d'outre-mer, Collectivité d'outre-mer ou à l'étranger)
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre région hors métropole en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT5'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre région hors métropole en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_ACTOCC15P_ILT5'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille autre région hors métropole en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT5',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus travaille autre région hors métropole en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_ACTOCC15P_ILT5',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_ACTOCC15P_ILT1:
+
+Actif occ 15 ans ou plus travaille commune résidence en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui travaillent dans la commune de résidence
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille commune résidence en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT1'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille commune résidence en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_ACTOCC15P_ILT1'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus travaille commune résidence en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_ACTOCC15P_ILT1',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus travaille commune résidence en 2012 (princ)" percent of "Actifs occupés 15 ans ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_ACTOCC15P_ILT1',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.C12_ACTOCC15P_VOIT:
+
+Actif occ 15 ans ou plus voiture, camion en 2012 (compl)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre d'actifs occupés de 15 ans ou plus qui utilisent principalement une voiture ou un camion pour aller travailler
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus voiture, camion en 2012 (compl)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_VOIT'
+      );
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus voiture, camion en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.C12_ACTOCC15P_VOIT'
+        );
+
+
+
+
+
+
+Measure "Actif occ 15 ans ou plus voiture, camion en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.C12_ACTOCC15P_VOIT',
+        'denominator'
+      );
+
+
+Measure "Actif occ 15 ans ou plus voiture, camion en 2012 (compl)" percent of "Actif occ 15 ans ou plus en 2012 (compl)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.C12_ACTOCC15P_VOIT',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.C12_ACTOCC15P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_RP_GARL:
+
+Ménages au moins un parking en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de ménages disposant au moins d'un emplacement réservé au stationnement
+
+
+
+
+
+Measure "Ménages au moins un parking en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_RP_GARL'
+      );
+
+
+
+
+
+Measure "Ménages au moins un parking en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_RP_GARL'
+        );
+
+
+
+
+
+
+Measure "Ménages au moins un parking en 2012 (princ)" percent of "Ménages en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_RP_GARL',
+        'denominator'
+      );
+
+
+Measure "Ménages au moins un parking en 2012 (princ)" percent of "Ménages en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_RP_GARL',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_MEN`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+
+
+
+
+
+.. _fr.insee.P12_RP_VOIT1P:
+
+Ménages au moins une voiture en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de ménages disposant au moins d'une voiture
+
+
+
+
+
+Measure "Ménages au moins une voiture en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_RP_VOIT1P'
+      );
+
+
+
+
+
+Measure "Ménages au moins une voiture en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_RP_VOIT1P'
+        );
+
+
+
+
+
+
+Measure "Ménages au moins une voiture en 2012 (princ)" percent of "Ménages en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_RP_VOIT1P',
+        'denominator'
+      );
+
+
+Measure "Ménages au moins une voiture en 2012 (princ)" percent of "Ménages en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_RP_VOIT1P',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_MEN`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+.. contents:: Subcolumns of Ménages au moins une voiture en 2012 (princ)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _fr.insee.P12_RP_VOIT2P:
+
+Ménages deux voitures ou plus en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de ménages disposant de deux voitures ou plus
+
+
+
+
+
+Measure "Ménages deux voitures ou plus en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_RP_VOIT2P'
+      );
+
+
+
+
+
+Measure "Ménages deux voitures ou plus en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_RP_VOIT2P'
+        );
+
+
+
+
+
+
+Measure "Ménages deux voitures ou plus en 2012 (princ)" percent of "Ménages au moins une voiture en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_RP_VOIT2P',
+        'denominator'
+      );
+
+
+Measure "Ménages deux voitures ou plus en 2012 (princ)" percent of "Ménages au moins une voiture en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_RP_VOIT2P',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_RP_VOIT1P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _fr.insee.P12_RP_VOIT1:
+
+Ménages une voiture en 2012 (princ)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Nombre de ménages disposant d'une voiture
+
+
+
+
+
+Measure "Ménages une voiture en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_RP_VOIT1'
+      );
+
+
+
+
+
+Measure "Ménages une voiture en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_RP_VOIT1'
+        );
+
+
+
+
+
+
+Measure "Ménages une voiture en 2012 (princ)" percent of "Ménages au moins une voiture en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_RP_VOIT1',
+        'denominator'
+      );
+
+
+Measure "Ménages une voiture en 2012 (princ)" percent of "Ménages au moins une voiture en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_RP_VOIT1',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_RP_VOIT1P`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    
+
+
+  
+  
+
+

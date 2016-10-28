@@ -21,6 +21,10 @@ Population 25 Years and Over
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B15003001.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area who are over the age of 25.  This is used mostly as a denominator of educational attainment.
 
@@ -31,7 +35,7 @@ The number of people in a geographic area who are over the age of 25.  This is u
 Measure "Population 25 Years and Over"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -52,7 +56,7 @@ Measure "Population 25 Years and Over"  density per sq. kilometer  for one point
 
 Measure "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -87,6 +91,10 @@ Less than high school graduate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B07009002.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over the age of 25 who have not completed high school or any other advanced degree.
 
@@ -97,7 +105,7 @@ The number of people in a geographic area over the age of 25 who have not comple
 Measure "Less than high school graduate"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -118,7 +126,7 @@ Measure "Less than high school graduate"  density per sq. kilometer  for one poi
 
 Measure "Less than high school graduate" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -131,9 +139,10 @@ Measure "Less than high school graduate" within an area:
 
 
 
+
 Measure "Less than high school graduate" percent of "Population 25 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -146,7 +155,7 @@ Measure "Less than high school graduate" percent of "Population 25 Years and Ove
 
 Measure "Less than high school graduate" percent of "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -155,7 +164,6 @@ Measure "Less than high school graduate" percent of "Population 25 Years and Ove
         'us.census.acs.B07009002',
         'denominator'
       );
-
 
 
 
@@ -182,6 +190,10 @@ Population Completed Associate's Degree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B15003021.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over the age of 25 who obtained a associate's degree, and did not complete a more advanced degree.
 
@@ -192,7 +204,7 @@ The number of people in a geographic area over the age of 25 who obtained a asso
 Measure "Population Completed Associate's Degree"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -213,7 +225,7 @@ Measure "Population Completed Associate's Degree"  density per sq. kilometer  fo
 
 Measure "Population Completed Associate's Degree" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -226,9 +238,10 @@ Measure "Population Completed Associate's Degree" within an area:
 
 
 
+
 Measure "Population Completed Associate's Degree" percent of "Population 25 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -241,7 +254,7 @@ Measure "Population Completed Associate's Degree" percent of "Population 25 Year
 
 Measure "Population Completed Associate's Degree" percent of "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -250,7 +263,6 @@ Measure "Population Completed Associate's Degree" percent of "Population 25 Year
         'us.census.acs.B15003021',
         'denominator'
       );
-
 
 
 
@@ -277,6 +289,10 @@ Population Completed Bachelor's Degree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B15003022.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over the age of 25 who obtained a bachelor's degree, and did not complete a more advanced degree.
 
@@ -287,7 +303,7 @@ The number of people in a geographic area over the age of 25 who obtained a bach
 Measure "Population Completed Bachelor's Degree"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -308,7 +324,7 @@ Measure "Population Completed Bachelor's Degree"  density per sq. kilometer  for
 
 Measure "Population Completed Bachelor's Degree" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -321,9 +337,10 @@ Measure "Population Completed Bachelor's Degree" within an area:
 
 
 
+
 Measure "Population Completed Bachelor's Degree" percent of "Population 25 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -336,7 +353,7 @@ Measure "Population Completed Bachelor's Degree" percent of "Population 25 Years
 
 Measure "Population Completed Bachelor's Degree" percent of "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -345,7 +362,6 @@ Measure "Population Completed Bachelor's Degree" percent of "Population 25 Years
         'us.census.acs.B15003022',
         'denominator'
       );
-
 
 
 
@@ -372,6 +388,10 @@ Population Completed High School
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B15003017.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over the age of 25 who completed high school, and did not complete a more advanced degree.
 
@@ -382,7 +402,7 @@ The number of people in a geographic area over the age of 25 who completed high 
 Measure "Population Completed High School"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -403,7 +423,7 @@ Measure "Population Completed High School"  density per sq. kilometer  for one p
 
 Measure "Population Completed High School" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -416,9 +436,10 @@ Measure "Population Completed High School" within an area:
 
 
 
+
 Measure "Population Completed High School" percent of "Population 25 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -431,7 +452,7 @@ Measure "Population Completed High School" percent of "Population 25 Years and O
 
 Measure "Population Completed High School" percent of "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -440,7 +461,6 @@ Measure "Population Completed High School" percent of "Population 25 Years and O
         'us.census.acs.B15003017',
         'denominator'
       );
-
 
 
 
@@ -467,6 +487,10 @@ Population completed less than one year of college, no degree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B15003019.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over the age of 25 who attended college for less than one year and no further.
 
@@ -477,7 +501,7 @@ The number of people in a geographic area over the age of 25 who attended colleg
 Measure "Population completed less than one year of college, no degree"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -498,7 +522,7 @@ Measure "Population completed less than one year of college, no degree"  density
 
 Measure "Population completed less than one year of college, no degree" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -511,9 +535,10 @@ Measure "Population completed less than one year of college, no degree" within a
 
 
 
+
 Measure "Population completed less than one year of college, no degree" percent of "Population 25 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -526,7 +551,7 @@ Measure "Population completed less than one year of college, no degree" percent 
 
 Measure "Population completed less than one year of college, no degree" percent of "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -535,7 +560,6 @@ Measure "Population completed less than one year of college, no degree" percent 
         'us.census.acs.B15003019',
         'denominator'
       );
-
 
 
 
@@ -562,6 +586,10 @@ Population Completed Master's Degree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B15003023.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over the age of 25 who obtained a master's degree, but did not complete a more advanced degree.
 
@@ -572,7 +600,7 @@ The number of people in a geographic area over the age of 25 who obtained a mast
 Measure "Population Completed Master's Degree"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -593,7 +621,7 @@ Measure "Population Completed Master's Degree"  density per sq. kilometer  for o
 
 Measure "Population Completed Master's Degree" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -606,9 +634,10 @@ Measure "Population Completed Master's Degree" within an area:
 
 
 
+
 Measure "Population Completed Master's Degree" percent of "Population 25 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -621,7 +650,7 @@ Measure "Population Completed Master's Degree" percent of "Population 25 Years a
 
 Measure "Population Completed Master's Degree" percent of "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -630,7 +659,6 @@ Measure "Population Completed Master's Degree" percent of "Population 25 Years a
         'us.census.acs.B15003023',
         'denominator'
       );
-
 
 
 
@@ -657,6 +685,10 @@ Population completed more than one year of college, no degree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B15003020.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over the age of 25 who attended college for more than one year but did not obtain a degree
 
@@ -667,7 +699,7 @@ The number of people in a geographic area over the age of 25 who attended colleg
 Measure "Population completed more than one year of college, no degree"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -688,7 +720,7 @@ Measure "Population completed more than one year of college, no degree"  density
 
 Measure "Population completed more than one year of college, no degree" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -701,9 +733,10 @@ Measure "Population completed more than one year of college, no degree" within a
 
 
 
+
 Measure "Population completed more than one year of college, no degree" percent of "Population 25 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -716,7 +749,7 @@ Measure "Population completed more than one year of college, no degree" percent 
 
 Measure "Population completed more than one year of college, no degree" percent of "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -725,7 +758,6 @@ Measure "Population completed more than one year of college, no degree" percent 
         'us.census.acs.B15003020',
         'denominator'
       );
-
 
 
 
@@ -756,6 +788,10 @@ Population who completed some college or obtained associate's degree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B07009004.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over the age of 25 who obtained an associate's degree, and did not complete a more advanced degree.
 
@@ -766,7 +802,7 @@ The number of people in a geographic area over the age of 25 who obtained an ass
 Measure "Population who completed some college or obtained associate's degree"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -787,7 +823,7 @@ Measure "Population who completed some college or obtained associate's degree"  
 
 Measure "Population who completed some college or obtained associate's degree" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -800,9 +836,10 @@ Measure "Population who completed some college or obtained associate's degree" w
 
 
 
+
 Measure "Population who completed some college or obtained associate's degree" percent of "Population 25 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -815,7 +852,7 @@ Measure "Population who completed some college or obtained associate's degree" p
 
 Measure "Population who completed some college or obtained associate's degree" percent of "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -824,7 +861,6 @@ Measure "Population who completed some college or obtained associate's degree" p
         'us.census.acs.B07009004',
         'denominator'
       );
-
 
 
 
@@ -851,6 +887,10 @@ Population with high school degree, including GED
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B07009003.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area over the age of 25 who attained a high school degree or GED.
 
@@ -861,7 +901,7 @@ The number of people in a geographic area over the age of 25 who attained a high
 Measure "Population with high school degree, including GED"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -882,7 +922,7 @@ Measure "Population with high school degree, including GED"  density per sq. kil
 
 Measure "Population with high school degree, including GED" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -895,9 +935,10 @@ Measure "Population with high school degree, including GED" within an area:
 
 
 
+
 Measure "Population with high school degree, including GED" percent of "Population 25 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -910,7 +951,7 @@ Measure "Population with high school degree, including GED" percent of "Populati
 
 Measure "Population with high school degree, including GED" percent of "Population 25 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -919,7 +960,6 @@ Measure "Population with high school degree, including GED" percent of "Populati
         'us.census.acs.B07009003',
         'denominator'
       );
-
 
 
 
@@ -949,6 +989,10 @@ Population 3 Years and Over
 ---------------------------------------------------------------------------
 
 
+.. figure:: ../img/us.census.acs.B14001001.png
+  :width: 100 %
+  :align: center
+
 
 The total number of people in each geography age 3 years and over.  This denominator is mostly used to calculate rates of school enrollment.
 
@@ -959,7 +1003,7 @@ The total number of people in each geography age 3 years and over.  This denomin
 Measure "Population 3 Years and Over"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -980,7 +1024,7 @@ Measure "Population 3 Years and Over"  density per sq. kilometer  for one point:
 
 Measure "Population 3 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1015,6 +1059,10 @@ Students Enrolled in School
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
+.. figure:: ../img/us.census.acs.B14001002.png
+  :width: 100 %
+  :align: center
+
 
 The total number of people in each geography currently enrolled at any level of school, from nursery or pre-school to advanced post-graduate education.  Only includes those over the age of 3.
 
@@ -1025,7 +1073,7 @@ The total number of people in each geography currently enrolled at any level of 
 Measure "Students Enrolled in School"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1046,7 +1094,7 @@ Measure "Students Enrolled in School"  density per sq. kilometer  for one point:
 
 Measure "Students Enrolled in School" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1059,9 +1107,10 @@ Measure "Students Enrolled in School" within an area:
 
 
 
+
 Measure "Students Enrolled in School" percent of "Population 3 Years and Over" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1074,7 +1123,7 @@ Measure "Students Enrolled in School" percent of "Population 3 Years and Over" a
 
 Measure "Students Enrolled in School" percent of "Population 3 Years and Over" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1083,7 +1132,6 @@ Measure "Students Enrolled in School" percent of "Population 3 Years and Over" w
         'us.census.acs.B14001002',
         'denominator'
       );
-
 
 
 
@@ -1113,6 +1161,10 @@ Students Enrolled as Undergraduate in College
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+.. figure:: ../img/us.census.acs.B14001008.png
+  :width: 100 %
+  :align: center
+
 
 The number of people in a geographic area who are enrolled in college at the undergraduate level. Enrollment refers to being registered or listed as a student in an educational program leading to a college degree. This may be a public school or college, a private school or college.
 
@@ -1123,7 +1175,7 @@ The number of people in a geographic area who are enrolled in college at the und
 Measure "Students Enrolled as Undergraduate in College"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1144,7 +1196,7 @@ Measure "Students Enrolled as Undergraduate in College"  density per sq. kilomet
 
 Measure "Students Enrolled as Undergraduate in College" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1157,9 +1209,10 @@ Measure "Students Enrolled as Undergraduate in College" within an area:
 
 
 
+
 Measure "Students Enrolled as Undergraduate in College" percent of "Students Enrolled in School" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1172,7 +1225,7 @@ Measure "Students Enrolled as Undergraduate in College" percent of "Students Enr
 
 Measure "Students Enrolled as Undergraduate in College" percent of "Students Enrolled in School" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1181,7 +1234,6 @@ Measure "Students Enrolled as Undergraduate in College" percent of "Students Enr
         'us.census.acs.B14001008',
         'denominator'
       );
-
 
 
 
@@ -1208,6 +1260,10 @@ Students Enrolled in Grades 1 to 4
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+.. figure:: ../img/us.census.acs.B14001005.png
+  :width: 100 %
+  :align: center
+
 
 The total number of people in each geography currently enrolled in grades 1 through 4 inclusive.  This corresponds roughly to elementary school.
 
@@ -1218,7 +1274,7 @@ The total number of people in each geography currently enrolled in grades 1 thro
 Measure "Students Enrolled in Grades 1 to 4"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1239,7 +1295,7 @@ Measure "Students Enrolled in Grades 1 to 4"  density per sq. kilometer  for one
 
 Measure "Students Enrolled in Grades 1 to 4" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1252,9 +1308,10 @@ Measure "Students Enrolled in Grades 1 to 4" within an area:
 
 
 
+
 Measure "Students Enrolled in Grades 1 to 4" percent of "Students Enrolled in School" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1267,7 +1324,7 @@ Measure "Students Enrolled in Grades 1 to 4" percent of "Students Enrolled in Sc
 
 Measure "Students Enrolled in Grades 1 to 4" percent of "Students Enrolled in School" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1276,7 +1333,6 @@ Measure "Students Enrolled in Grades 1 to 4" percent of "Students Enrolled in Sc
         'us.census.acs.B14001005',
         'denominator'
       );
-
 
 
 
@@ -1303,6 +1359,10 @@ Students Enrolled in Grades 5 to 8
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+.. figure:: ../img/us.census.acs.B14001006.png
+  :width: 100 %
+  :align: center
+
 
 The total number of people in each geography currently enrolled in grades 5 through 8 inclusive.  This corresponds roughly to middle school.
 
@@ -1313,7 +1373,7 @@ The total number of people in each geography currently enrolled in grades 5 thro
 Measure "Students Enrolled in Grades 5 to 8"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1334,7 +1394,7 @@ Measure "Students Enrolled in Grades 5 to 8"  density per sq. kilometer  for one
 
 Measure "Students Enrolled in Grades 5 to 8" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1347,9 +1407,10 @@ Measure "Students Enrolled in Grades 5 to 8" within an area:
 
 
 
+
 Measure "Students Enrolled in Grades 5 to 8" percent of "Students Enrolled in School" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1362,7 +1423,7 @@ Measure "Students Enrolled in Grades 5 to 8" percent of "Students Enrolled in Sc
 
 Measure "Students Enrolled in Grades 5 to 8" percent of "Students Enrolled in School" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1371,7 +1432,6 @@ Measure "Students Enrolled in Grades 5 to 8" percent of "Students Enrolled in Sc
         'us.census.acs.B14001006',
         'denominator'
       );
-
 
 
 
@@ -1398,6 +1458,10 @@ Students Enrolled in Grades 9 to 12
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+.. figure:: ../img/us.census.acs.B14001007.png
+  :width: 100 %
+  :align: center
+
 
 The total number of people in each geography currently enrolled in grades 9 through 12 inclusive.  This corresponds roughly to high school.
 
@@ -1408,7 +1472,7 @@ The total number of people in each geography currently enrolled in grades 9 thro
 Measure "Students Enrolled in Grades 9 to 12"  density per sq. kilometer  for one point:
 
 
-.. code:: postgresql
+.. code-block:: postgresql
 
 
   
@@ -1429,7 +1493,7 @@ Measure "Students Enrolled in Grades 9 to 12"  density per sq. kilometer  for on
 
 Measure "Students Enrolled in Grades 9 to 12" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
     UPDATE {table_name}
       SET {new_numeric_column} =
@@ -1442,9 +1506,10 @@ Measure "Students Enrolled in Grades 9 to 12" within an area:
 
 
 
+
 Measure "Students Enrolled in Grades 9 to 12" percent of "Students Enrolled in School" at one point:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1457,7 +1522,7 @@ Measure "Students Enrolled in Grades 9 to 12" percent of "Students Enrolled in S
 
 Measure "Students Enrolled in Grades 9 to 12" percent of "Students Enrolled in School" within an area:
 
-.. code:: postgresql
+.. code-block:: postgresql
 
   UPDATE {table_name}
     SET {new_numeric_column} =
@@ -1466,7 +1531,6 @@ Measure "Students Enrolled in Grades 9 to 12" percent of "Students Enrolled in S
         'us.census.acs.B14001007',
         'denominator'
       );
-
 
 
 

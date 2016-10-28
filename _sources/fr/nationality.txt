@@ -1,0 +1,433 @@
+
+
+.. Nationality:
+
+Nationality
+===========================================================================
+
+Population breakdowns by nationality and place of birth.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _fr.insee.P12_POP_ETR:
+
+Pop Etrangers en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes étrangères
+
+
+
+
+
+Measure "Pop Etrangers en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP_ETR'
+      );
+
+
+
+
+
+Measure "Pop Etrangers en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_POP_ETR'
+        );
+
+
+
+
+
+
+Measure "Pop Etrangers en 2012 (princ)" percent of "Population en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP_ETR',
+        'denominator'
+      );
+
+
+Measure "Pop Etrangers en 2012 (princ)" percent of "Population en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_POP_ETR',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+
+
+
+
+
+.. _fr.insee.P12_POP_FR:
+
+Pop Français en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombre de personnes de nationalité française
+
+
+
+
+
+Measure "Pop Français en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP_FR'
+      );
+
+
+
+
+
+Measure "Pop Français en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_POP_FR'
+        );
+
+
+
+
+
+
+Measure "Pop Français en 2012 (princ)" percent of "Population en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP_FR',
+        'denominator'
+      );
+
+
+Measure "Pop Français en 2012 (princ)" percent of "Population en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_POP_FR',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+
+
+
+
+
+.. _fr.insee.P12_POP_IMM:
+
+Pop Immigrés en 2012 (princ)
+---------------------------------------------------------------------------
+
+
+
+
+
+Nombres de personnes immigrées
+
+
+
+
+
+Measure "Pop Immigrés en 2012 (princ)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP_IMM'
+      );
+
+
+
+
+
+Measure "Pop Immigrés en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+          'fr.insee.P12_POP_IMM'
+        );
+
+
+
+
+
+
+Measure "Pop Immigrés en 2012 (princ)" percent of "Population en 2012 (princ)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(48.8608751447, 2.36137390137),
+        'fr.insee.P12_POP_IMM',
+        'denominator'
+      );
+
+
+Measure "Pop Immigrés en 2012 (princ)" percent of "Population en 2012 (princ)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(48.8608751447, 2.36137390137), 0.01),
+        'fr.insee.P12_POP_IMM',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`fr.insee.the_geom`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`fr.insee.P12_POP`
+
+
+:Source:
+
+    :ref:`fr.insee.insee`
+
+:License:
+
+    :ref:`fr.insee.insee-license`
+
+
+

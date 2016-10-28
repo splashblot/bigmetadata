@@ -1,0 +1,3549 @@
+
+
+.. Families:
+
+Families
+===========================================================================
+
+Familial arrangements of people and households.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _us.census.acs.B09001001:
+
+Children under 18 Years of Age
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B09001001.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people within each geography who are under 18 years of age.
+
+
+
+
+
+Measure "Children under 18 Years of Age"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B09001001'
+      );
+
+
+
+
+
+Measure "Children under 18 Years of Age" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B09001001'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Children under 18 Years of Age
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+
+
+
+
+
+.. _us.census.acs.B23008002:
+
+Families with young children (under 6 years of age)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Families with young children (under 6 years of age)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B23008002'
+      );
+
+
+
+
+
+Measure "Families with young children (under 6 years of age)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B23008002'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Families with young children (under 6 years of age)
+   :local:
+   :depth: 1
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+.. _us.census.acs.B11009005:
+
+Households with two female partners
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B11009005.png
+  :width: 100 %
+  :align: center
+
+
+
+An unmarried partner is a person age 15 years and over, who is not related to the householder, who shares living quarters, and who has an intimate relationship with the householder.
+
+
+
+
+
+Measure "Households with two female partners"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B11009005'
+      );
+
+
+
+
+
+Measure "Households with two female partners" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B11009005'
+        );
+
+
+
+
+
+
+Measure "Households with two female partners" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B11009005',
+        'denominator'
+      );
+
+
+Measure "Households with two female partners" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B11009005',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B11001001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B11009003:
+
+Households with two male partners
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B11009003.png
+  :width: 100 %
+  :align: center
+
+
+
+An unmarried partner is a person age 15 years and over, who is not related to the householder, who shares living quarters, and who has an intimate relationship with the householder.
+
+
+
+
+
+Measure "Households with two male partners"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B11009003'
+      );
+
+
+
+
+
+Measure "Households with two male partners" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B11009003'
+        );
+
+
+
+
+
+
+Measure "Households with two male partners" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B11009003',
+        'denominator'
+      );
+
+
+Measure "Households with two male partners" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B11009003',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B11001001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B11001003:
+
+Married households
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B11001003.png
+  :width: 100 %
+  :align: center
+
+
+
+People in formal marriages, as well as people in common-law marriages, are included. Does not include same-sex marriages.
+
+
+
+
+
+Measure "Married households"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B11001003'
+      );
+
+
+
+
+
+Measure "Married households" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B11001003'
+        );
+
+
+
+
+
+
+Measure "Married households" percent of "Households" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B11001003',
+        'denominator'
+      );
+
+
+Measure "Married households" percent of "Households" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B11001003',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B11001001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.census.acs.B12005001:
+
+Population 15 Years and Over
+---------------------------------------------------------------------------
+
+
+
+.. figure:: ../img/us.census.acs.B12005001.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area who are over the age of 15.  This is used mostly as a denominator of marital status.
+
+
+
+
+
+Measure "Population 15 Years and Over"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005001'
+      );
+
+
+
+
+
+Measure "Population 15 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B12005001'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+.. contents:: Subcolumns of Population 15 Years and Over
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _us.census.acs.B12005005:
+
+Currently married
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B12005005.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area who are currently married
+
+
+
+
+
+Measure "Currently married"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005005'
+      );
+
+
+
+
+
+Measure "Currently married" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B12005005'
+        );
+
+
+
+
+
+
+Measure "Currently married" percent of "Population 15 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005005',
+        'denominator'
+      );
+
+
+Measure "Currently married" percent of "Population 15 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B12005005',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B12005001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B12005015:
+
+Divorced
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B12005015.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area who are divorced
+
+
+
+
+
+Measure "Divorced"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005015'
+      );
+
+
+
+
+
+Measure "Divorced" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B12005015'
+        );
+
+
+
+
+
+
+Measure "Divorced" percent of "Population 15 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005015',
+        'denominator'
+      );
+
+
+Measure "Divorced" percent of "Population 15 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B12005015',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B12005001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B12005008:
+
+Married but separated
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B12005008.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area who are married but separated
+
+
+
+
+
+Measure "Married but separated"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005008'
+      );
+
+
+
+
+
+Measure "Married but separated" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B12005008'
+        );
+
+
+
+
+
+
+Measure "Married but separated" percent of "Population 15 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005008',
+        'denominator'
+      );
+
+
+Measure "Married but separated" percent of "Population 15 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B12005008',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B12005001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B12005002:
+
+Never Married
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B12005002.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area who have never been married.
+
+
+
+
+
+Measure "Never Married"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005002'
+      );
+
+
+
+
+
+Measure "Never Married" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B12005002'
+        );
+
+
+
+
+
+
+Measure "Never Married" percent of "Population 15 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005002',
+        'denominator'
+      );
+
+
+Measure "Never Married" percent of "Population 15 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B12005002',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B12005001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+  
+  
+
+.. _us.census.acs.B12005012:
+
+Widowed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.census.acs.B12005012.png
+  :width: 100 %
+  :align: center
+
+
+
+The number of people in a geographic area who are widowed
+
+
+
+
+
+Measure "Widowed"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005012'
+      );
+
+
+
+
+
+Measure "Widowed" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B12005012'
+        );
+
+
+
+
+
+
+Measure "Widowed" percent of "Population 15 Years and Over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B12005012',
+        'denominator'
+      );
+
+
+Measure "Widowed" percent of "Population 15 Years and Over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B12005012',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_elementary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.census.acs.B12005001`
+
+
+:Source:
+
+    :ref:`us.census.acs.acs`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+  
+  
+
+

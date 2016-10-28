@@ -1,0 +1,112 @@
+
+
+.. Nationality:
+
+Nationality
+===========================================================================
+
+Population breakdowns by nationality and place of birth.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _us.census.acs.B05001006:
+
+Not a U.S. Citizen Population
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/us.census.acs.B05001006.png
+  :width: 100 %
+  :align: center
+
+
+The number of people within each geography who indicated that they are not U.S. citizens.
+
+
+
+
+
+Measure "Not a U.S. Citizen Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B05001006'
+      );
+
+
+
+
+
+Measure "Not a U.S. Citizen Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.census.acs.B05001006'
+        );
+
+
+
+
+
+
+Measure "Not a U.S. Citizen Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.census.acs.B05001006',
+        'denominator'
+      );
+
+
+Measure "Not a U.S. Citizen Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.census.acs.B05001006',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`us.census.acs.B01003001`
+
+
+
+

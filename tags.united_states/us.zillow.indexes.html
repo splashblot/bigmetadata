@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Zillow Home Value and Rental Indexes &mdash; bigmetadata 0.0.1 documentation</title>
+    <title>5.15. Zillow Home Value and Rental Indexes &mdash; observatory 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -27,15 +27,17 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/bigmetadata.js"></script>
     <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
-    <link rel="top" title="bigmetadata 0.0.1 documentation" href="../index.html" />
-    <link rel="up" title="United States" href="../tags.united_states.html" />
-    <link rel="prev" title="US Population Segments" href="us.census.acs.segments.html" />
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="5. United States" href="../tags.united_states.html" />
+    <link rel="prev" title="5.14. US Population Segments" href="us.census.acs.segments.html" />
    
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">  
+  <body role="document">
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -43,7 +45,7 @@
           <div class="body" role="main">
             
   <div class="section" id="zillow-home-value-and-rental-indexes">
-<h1>Zillow Home Value and Rental Indexes<a class="headerlink" href="#zillow-home-value-and-rental-indexes" title="Permalink to this headline">¶</a></h1>
+<h1>5.15. Zillow Home Value and Rental Indexes<a class="headerlink" href="#zillow-home-value-and-rental-indexes" title="Permalink to this headline">¶</a></h1>
 <p>Zillow home value and rental indexes.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -57,11 +59,14 @@
 </ul>
 </div>
 <div class="section" id="median-rental-price-per-square-foot-for-all-homes">
-<span id="us-zillow-allhomes-medianrentalpricepersqft"></span><h2><a class="toc-backref" href="#id4">Median rental price per square foot for All homes</a><a class="headerlink" href="#median-rental-price-per-square-foot-for-all-homes" title="Permalink to this headline">¶</a></h2>
+<span id="us-zillow-allhomes-medianrentalpricepersqft"></span><h2><a class="toc-backref" href="#id4">5.15.1. Median rental price per square foot for All homes</a><a class="headerlink" href="#median-rental-price-per-square-foot-for-all-homes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.AllHomes_MedianRentalPricePerSqft.png"><img alt="../_images/us.zillow.AllHomes_MedianRentalPricePerSqft.png" src="../_images/us.zillow.AllHomes_MedianRentalPricePerSqft.png" style="width: 100%;" /></a>
+</div>
 <p>Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home&#8217;s square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.</p>
 <p>Measure &#8220;Median rental price per square foot for All homes&#8221;  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906291771</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197256</span><span class="p">),</span>
       <span class="s1">&#39;us.zillow.AllHomes_MedianRentalPricePerSqft&#39;</span>
@@ -71,11 +76,14 @@
 <p>Median rental price per square foot for All homes is only available for point lookups.</p>
 </div>
 <div class="section" id="median-rental-price-per-square-foot-for-single-family-residence-rental">
-<span id="us-zillow-sfr-medianrentalpricepersqft"></span><h2><a class="toc-backref" href="#id5">Median rental price per square foot for Single Family residence rental</a><a class="headerlink" href="#median-rental-price-per-square-foot-for-single-family-residence-rental" title="Permalink to this headline">¶</a></h2>
+<span id="us-zillow-sfr-medianrentalpricepersqft"></span><h2><a class="toc-backref" href="#id5">5.15.2. Median rental price per square foot for Single Family residence rental</a><a class="headerlink" href="#median-rental-price-per-square-foot-for-single-family-residence-rental" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.Sfr_MedianRentalPricePerSqft.png"><img alt="../_images/us.zillow.Sfr_MedianRentalPricePerSqft.png" src="../_images/us.zillow.Sfr_MedianRentalPricePerSqft.png" style="width: 100%;" /></a>
+</div>
 <p>Median of the value (US Dollars) of all homes per square foot. This number is calculated by taking the estimated home value for each home in a given region and dividing it by the home&#8217;s square footage. Single family residences are detached, free-standing residential buildings.</p>
 <p>Measure &#8220;Median rental price per square foot for Single Family residence rental&#8221;  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906291771</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197256</span><span class="p">),</span>
       <span class="s1">&#39;us.zillow.Sfr_MedianRentalPricePerSqft&#39;</span>
@@ -85,11 +93,14 @@
 <p>Median rental price per square foot for Single Family residence rental is only available for point lookups.</p>
 </div>
 <div class="section" id="median-value-per-square-foot-for-all-homes">
-<span id="us-zillow-allhomes-medianvaluepersqft"></span><h2><a class="toc-backref" href="#id6">Median value per square foot for All homes</a><a class="headerlink" href="#median-value-per-square-foot-for-all-homes" title="Permalink to this headline">¶</a></h2>
+<span id="us-zillow-allhomes-medianvaluepersqft"></span><h2><a class="toc-backref" href="#id6">5.15.3. Median value per square foot for All homes</a><a class="headerlink" href="#median-value-per-square-foot-for-all-homes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.AllHomes_MedianValuePerSqft.png"><img alt="../_images/us.zillow.AllHomes_MedianValuePerSqft.png" src="../_images/us.zillow.AllHomes_MedianValuePerSqft.png" style="width: 100%;" /></a>
+</div>
 <p>Median of the estimated monthly rent price (US Dollars) of all homes, per square foot. This is calculated by taking the estimated rent price for a home and dividing it by the homes square footage. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.</p>
 <p>Measure &#8220;Median value per square foot for All homes&#8221;  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906291771</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197256</span><span class="p">),</span>
       <span class="s1">&#39;us.zillow.AllHomes_MedianValuePerSqft&#39;</span>
@@ -99,11 +110,14 @@
 <p>Median value per square foot for All homes is only available for point lookups.</p>
 </div>
 <div class="section" id="zillow-home-value-index-for-all-homes">
-<span id="us-zillow-allhomes-zhvi"></span><h2><a class="toc-backref" href="#id7">Zillow Home Value Index for All homes</a><a class="headerlink" href="#zillow-home-value-index-for-all-homes" title="Permalink to this headline">¶</a></h2>
+<span id="us-zillow-allhomes-zhvi"></span><h2><a class="toc-backref" href="#id7">5.15.4. Zillow Home Value Index for All homes</a><a class="headerlink" href="#zillow-home-value-index-for-all-homes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.AllHomes_Zhvi.png"><img alt="../_images/us.zillow.AllHomes_Zhvi.png" src="../_images/us.zillow.AllHomes_Zhvi.png" style="width: 100%;" /></a>
+</div>
 <p>The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See <a class="reference external" href="http://www.zillow.com/research/zhvi-methodology-6032/">Zillow&#8217;s methodology</a> for more information. Zillow defines all homes as single-family, condominium and co-operative homes with a county record. Unless specified, all series cover this segment of the housing stock.</p>
 <p>Measure &#8220;Zillow Home Value Index for All homes&#8221;  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906291771</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197256</span><span class="p">),</span>
       <span class="s1">&#39;us.zillow.AllHomes_Zhvi&#39;</span>
@@ -113,11 +127,14 @@
 <p>Zillow Home Value Index for All homes is only available for point lookups.</p>
 </div>
 <div class="section" id="zillow-home-value-index-for-single-family-homes">
-<span id="us-zillow-singlefamilyresidence-zhvi"></span><h2><a class="toc-backref" href="#id8">Zillow Home Value Index for Single Family Homes</a><a class="headerlink" href="#zillow-home-value-index-for-single-family-homes" title="Permalink to this headline">¶</a></h2>
+<span id="us-zillow-singlefamilyresidence-zhvi"></span><h2><a class="toc-backref" href="#id8">5.15.5. Zillow Home Value Index for Single Family Homes</a><a class="headerlink" href="#zillow-home-value-index-for-single-family-homes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.SingleFamilyResidence_Zhvi.png"><img alt="../_images/us.zillow.SingleFamilyResidence_Zhvi.png" src="../_images/us.zillow.SingleFamilyResidence_Zhvi.png" style="width: 100%;" /></a>
+</div>
 <p>The Zillow Home Value Index (ZHVI) is a time series tracking the monthly median home value (in US Dollars) in a particular geographical region. In general, each ZHVI time series begins in April 1996. See <a class="reference external" href="http://www.zillow.com/research/zhvi-methodology-6032/">Zillow&#8217;s methodology</a> for more information. Single family residences are detached, free-standing residential buildings.</p>
 <p>Measure &#8220;Zillow Home Value Index for Single Family Homes&#8221;  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906291771</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197256</span><span class="p">),</span>
       <span class="s1">&#39;us.zillow.SingleFamilyResidence_Zhvi&#39;</span>
@@ -127,11 +144,14 @@
 <p>Zillow Home Value Index for Single Family Homes is only available for point lookups.</p>
 </div>
 <div class="section" id="zillow-rental-index-for-all-homes-plus-multifamily">
-<span id="us-zillow-allhomesplusmultifamily-zri"></span><h2><a class="toc-backref" href="#id9">Zillow Rental Index for All homes plus multifamily</a><a class="headerlink" href="#zillow-rental-index-for-all-homes-plus-multifamily" title="Permalink to this headline">¶</a></h2>
+<span id="us-zillow-allhomesplusmultifamily-zri"></span><h2><a class="toc-backref" href="#id9">5.15.6. Zillow Rental Index for All homes plus multifamily</a><a class="headerlink" href="#zillow-rental-index-for-all-homes-plus-multifamily" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.AllHomesPlusMultifamily_Zri.png"><img alt="../_images/us.zillow.AllHomesPlusMultifamily_Zri.png" src="../_images/us.zillow.AllHomesPlusMultifamily_Zri.png" style="width: 100%;" /></a>
+</div>
 <p>Similar to Zillow&#8217;s ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See <a class="reference external" href="http://www.zillow.com/research/zillow-rent-index-methodology-2393/">Zillow&#8217;s methodology</a> for more information. In addition to &#8220;All homes&#8221;, which Zillow defines as single-family, condominium and co-operative homes with a county record, this group includes units in buildings with 5 or more housing units that are not a condominiums or co-ops.</p>
 <p>Measure &#8220;Zillow Rental Index for All homes plus multifamily&#8221;  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906291771</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197256</span><span class="p">),</span>
       <span class="s1">&#39;us.zillow.AllHomesPlusMultifamily_Zri&#39;</span>
@@ -141,11 +161,14 @@
 <p>Zillow Rental Index for All homes plus multifamily is only available for point lookups.</p>
 </div>
 <div class="section" id="zillow-rental-index-for-single-family-residence-rental">
-<span id="us-zillow-singlefamilyresidencerental-zri"></span><h2><a class="toc-backref" href="#id10">Zillow Rental Index for Single Family residence rental</a><a class="headerlink" href="#zillow-rental-index-for-single-family-residence-rental" title="Permalink to this headline">¶</a></h2>
+<span id="us-zillow-singlefamilyresidencerental-zri"></span><h2><a class="toc-backref" href="#id10">5.15.7. Zillow Rental Index for Single Family residence rental</a><a class="headerlink" href="#zillow-rental-index-for-single-family-residence-rental" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.zillow.SingleFamilyResidenceRental_Zri.png"><img alt="../_images/us.zillow.SingleFamilyResidenceRental_Zri.png" src="../_images/us.zillow.SingleFamilyResidenceRental_Zri.png" style="width: 100%;" /></a>
+</div>
 <p>Similar to Zillow&#8217;s ZHVI, the Zillow Rent Index (ZRI) tracks the monthly median rent (in US Dollars) in different geographical regions. In general, each ZRI time series beginds in November, 2010.  See <a class="reference external" href="http://www.zillow.com/research/zillow-rent-index-methodology-2393/">Zillow&#8217;s methodology</a> for more information. Single Family residence rental is defined as detached, free-standing residential buildings which are rented out.</p>
 <p>Measure &#8220;Zillow Rental Index for Single Family residence rental&#8221;  for one point:</p>
-<div class="code postgresql highlight-default"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
-  <span class="n">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
       <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">28.3305906291771</span><span class="p">,</span> <span class="o">-</span><span class="mf">81.3544048197256</span><span class="p">),</span>
       <span class="s1">&#39;us.zillow.SingleFamilyResidenceRental_Zri&#39;</span>
@@ -164,14 +187,14 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Zillow Home Value and Rental Indexes</a><ul>
-<li><a class="reference internal" href="#median-rental-price-per-square-foot-for-all-homes">Median rental price per square foot for All homes</a></li>
-<li><a class="reference internal" href="#median-rental-price-per-square-foot-for-single-family-residence-rental">Median rental price per square foot for Single Family residence rental</a></li>
-<li><a class="reference internal" href="#median-value-per-square-foot-for-all-homes">Median value per square foot for All homes</a></li>
-<li><a class="reference internal" href="#zillow-home-value-index-for-all-homes">Zillow Home Value Index for All homes</a></li>
-<li><a class="reference internal" href="#zillow-home-value-index-for-single-family-homes">Zillow Home Value Index for Single Family Homes</a></li>
-<li><a class="reference internal" href="#zillow-rental-index-for-all-homes-plus-multifamily">Zillow Rental Index for All homes plus multifamily</a></li>
-<li><a class="reference internal" href="#zillow-rental-index-for-single-family-residence-rental">Zillow Rental Index for Single Family residence rental</a></li>
+<li><a class="reference internal" href="#">5.15. Zillow Home Value and Rental Indexes</a><ul>
+<li><a class="reference internal" href="#median-rental-price-per-square-foot-for-all-homes">5.15.1. Median rental price per square foot for All homes</a></li>
+<li><a class="reference internal" href="#median-rental-price-per-square-foot-for-single-family-residence-rental">5.15.2. Median rental price per square foot for Single Family residence rental</a></li>
+<li><a class="reference internal" href="#median-value-per-square-foot-for-all-homes">5.15.3. Median value per square foot for All homes</a></li>
+<li><a class="reference internal" href="#zillow-home-value-index-for-all-homes">5.15.4. Zillow Home Value Index for All homes</a></li>
+<li><a class="reference internal" href="#zillow-home-value-index-for-single-family-homes">5.15.5. Zillow Home Value Index for Single Family Homes</a></li>
+<li><a class="reference internal" href="#zillow-rental-index-for-all-homes-plus-multifamily">5.15.6. Zillow Rental Index for All homes plus multifamily</a></li>
+<li><a class="reference internal" href="#zillow-rental-index-for-single-family-residence-rental">5.15.7. Zillow Rental Index for Single Family residence rental</a></li>
 </ul>
 </li>
 </ul>
@@ -179,8 +202,8 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-  <li><a href="../tags.united_states.html">United States</a><ul>
-      <li>Previous: <a href="us.census.acs.segments.html" title="previous chapter">US Population Segments</a></li>
+  <li><a href="../tags.united_states.html">5. United States</a><ul>
+      <li>Previous: <a href="us.census.acs.segments.html" title="previous chapter">5.14. US Population Segments</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -195,8 +218,8 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -210,8 +233,8 @@
       &copy;2016, CartoDB.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
       |
       <a href="../_sources/tags.united_states/us.zillow.indexes.txt"

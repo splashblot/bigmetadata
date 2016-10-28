@@ -1,0 +1,10507 @@
+
+
+.. Religion:
+
+Religion
+===========================================================================
+
+Breakdowns of the population by religion.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c002_f:
+
+Total population - Buddhist (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Buddhist (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c002_f'
+      );
+
+
+
+
+
+Measure "Total population - Buddhist (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c002_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Buddhist (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c002_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Buddhist (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c002_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c002_m:
+
+Total population - Buddhist (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Buddhist (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c002_m'
+      );
+
+
+
+
+
+Measure "Total population - Buddhist (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c002_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Buddhist (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c002_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Buddhist (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c002_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c002_t:
+
+Total population - Buddhist (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Buddhist (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c002_t'
+      );
+
+
+
+
+
+Measure "Total population - Buddhist (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c002_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Buddhist (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c002_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Buddhist (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c002_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c003_f:
+
+Total population - Christian (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Christian (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c003_f'
+      );
+
+
+
+
+
+Measure "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c003_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Christian (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c003_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Christian (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c003_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total population - Christian (female)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c004_f:
+
+Anglican (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Anglican (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c004_f'
+      );
+
+
+
+
+
+Measure "Anglican (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c004_f'
+        );
+
+
+
+
+
+
+Measure "Anglican (female)" percent of "Total population - Christian (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c004_f',
+        'denominator'
+      );
+
+
+Measure "Anglican (female)" percent of "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c004_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c005_f:
+
+Baptist (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Baptist (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c005_f'
+      );
+
+
+
+
+
+Measure "Baptist (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c005_f'
+        );
+
+
+
+
+
+
+Measure "Baptist (female)" percent of "Total population - Christian (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c005_f',
+        'denominator'
+      );
+
+
+Measure "Baptist (female)" percent of "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c005_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c006_f:
+
+Catholic (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Catholic (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c006_f'
+      );
+
+
+
+
+
+Measure "Catholic (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c006_f'
+        );
+
+
+
+
+
+
+Measure "Catholic (female)" percent of "Total population - Christian (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c006_f',
+        'denominator'
+      );
+
+
+Measure "Catholic (female)" percent of "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c006_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c007_f:
+
+Christian Orthodox (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Christian Orthodox (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c007_f'
+      );
+
+
+
+
+
+Measure "Christian Orthodox (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c007_f'
+        );
+
+
+
+
+
+
+Measure "Christian Orthodox (female)" percent of "Total population - Christian (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c007_f',
+        'denominator'
+      );
+
+
+Measure "Christian Orthodox (female)" percent of "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c007_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c008_f:
+
+Lutheran (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Lutheran (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c008_f'
+      );
+
+
+
+
+
+Measure "Lutheran (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c008_f'
+        );
+
+
+
+
+
+
+Measure "Lutheran (female)" percent of "Total population - Christian (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c008_f',
+        'denominator'
+      );
+
+
+Measure "Lutheran (female)" percent of "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c008_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c012_f:
+
+Other Christian (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Other Christian (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c012_f'
+      );
+
+
+
+
+
+Measure "Other Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c012_f'
+        );
+
+
+
+
+
+
+Measure "Other Christian (female)" percent of "Total population - Christian (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c012_f',
+        'denominator'
+      );
+
+
+Measure "Other Christian (female)" percent of "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c012_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c009_f:
+
+Pentecostal (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Pentecostal (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c009_f'
+      );
+
+
+
+
+
+Measure "Pentecostal (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c009_f'
+        );
+
+
+
+
+
+
+Measure "Pentecostal (female)" percent of "Total population - Christian (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c009_f',
+        'denominator'
+      );
+
+
+Measure "Pentecostal (female)" percent of "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c009_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c010_f:
+
+Presbyterian (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Presbyterian (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c010_f'
+      );
+
+
+
+
+
+Measure "Presbyterian (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c010_f'
+        );
+
+
+
+
+
+
+Measure "Presbyterian (female)" percent of "Total population - Christian (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c010_f',
+        'denominator'
+      );
+
+
+Measure "Presbyterian (female)" percent of "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c010_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c011_f:
+
+United Church (female)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "United Church (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c011_f'
+      );
+
+
+
+
+
+Measure "United Church (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c011_f'
+        );
+
+
+
+
+
+
+Measure "United Church (female)" percent of "Total population - Christian (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c011_f',
+        'denominator'
+      );
+
+
+Measure "United Church (female)" percent of "Total population - Christian (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c011_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c003_m:
+
+Total population - Christian (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Christian (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c003_m'
+      );
+
+
+
+
+
+Measure "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c003_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Christian (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c003_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Christian (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c003_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total population - Christian (male)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c004_m:
+
+Anglican (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Anglican (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c004_m'
+      );
+
+
+
+
+
+Measure "Anglican (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c004_m'
+        );
+
+
+
+
+
+
+Measure "Anglican (male)" percent of "Total population - Christian (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c004_m',
+        'denominator'
+      );
+
+
+Measure "Anglican (male)" percent of "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c004_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c005_m:
+
+Baptist (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Baptist (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c005_m'
+      );
+
+
+
+
+
+Measure "Baptist (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c005_m'
+        );
+
+
+
+
+
+
+Measure "Baptist (male)" percent of "Total population - Christian (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c005_m',
+        'denominator'
+      );
+
+
+Measure "Baptist (male)" percent of "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c005_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c006_m:
+
+Catholic (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Catholic (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c006_m'
+      );
+
+
+
+
+
+Measure "Catholic (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c006_m'
+        );
+
+
+
+
+
+
+Measure "Catholic (male)" percent of "Total population - Christian (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c006_m',
+        'denominator'
+      );
+
+
+Measure "Catholic (male)" percent of "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c006_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c007_m:
+
+Christian Orthodox (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Christian Orthodox (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c007_m'
+      );
+
+
+
+
+
+Measure "Christian Orthodox (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c007_m'
+        );
+
+
+
+
+
+
+Measure "Christian Orthodox (male)" percent of "Total population - Christian (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c007_m',
+        'denominator'
+      );
+
+
+Measure "Christian Orthodox (male)" percent of "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c007_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c008_m:
+
+Lutheran (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Lutheran (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c008_m'
+      );
+
+
+
+
+
+Measure "Lutheran (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c008_m'
+        );
+
+
+
+
+
+
+Measure "Lutheran (male)" percent of "Total population - Christian (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c008_m',
+        'denominator'
+      );
+
+
+Measure "Lutheran (male)" percent of "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c008_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c012_m:
+
+Other Christian (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Other Christian (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c012_m'
+      );
+
+
+
+
+
+Measure "Other Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c012_m'
+        );
+
+
+
+
+
+
+Measure "Other Christian (male)" percent of "Total population - Christian (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c012_m',
+        'denominator'
+      );
+
+
+Measure "Other Christian (male)" percent of "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c012_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c009_m:
+
+Pentecostal (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Pentecostal (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c009_m'
+      );
+
+
+
+
+
+Measure "Pentecostal (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c009_m'
+        );
+
+
+
+
+
+
+Measure "Pentecostal (male)" percent of "Total population - Christian (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c009_m',
+        'denominator'
+      );
+
+
+Measure "Pentecostal (male)" percent of "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c009_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c010_m:
+
+Presbyterian (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Presbyterian (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c010_m'
+      );
+
+
+
+
+
+Measure "Presbyterian (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c010_m'
+        );
+
+
+
+
+
+
+Measure "Presbyterian (male)" percent of "Total population - Christian (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c010_m',
+        'denominator'
+      );
+
+
+Measure "Presbyterian (male)" percent of "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c010_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c011_m:
+
+United Church (male)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "United Church (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c011_m'
+      );
+
+
+
+
+
+Measure "United Church (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c011_m'
+        );
+
+
+
+
+
+
+Measure "United Church (male)" percent of "Total population - Christian (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c011_m',
+        'denominator'
+      );
+
+
+Measure "United Church (male)" percent of "Total population - Christian (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c011_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c003_t:
+
+Total population - Christian (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Christian (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c003_t'
+      );
+
+
+
+
+
+Measure "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c003_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Christian (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c003_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Christian (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c003_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+.. contents:: Subcolumns of Total population - Christian (total)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c004_t:
+
+Anglican (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Anglican (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c004_t'
+      );
+
+
+
+
+
+Measure "Anglican (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c004_t'
+        );
+
+
+
+
+
+
+Measure "Anglican (total)" percent of "Total population - Christian (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c004_t',
+        'denominator'
+      );
+
+
+Measure "Anglican (total)" percent of "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c004_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c005_t:
+
+Baptist (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Baptist (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c005_t'
+      );
+
+
+
+
+
+Measure "Baptist (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c005_t'
+        );
+
+
+
+
+
+
+Measure "Baptist (total)" percent of "Total population - Christian (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c005_t',
+        'denominator'
+      );
+
+
+Measure "Baptist (total)" percent of "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c005_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c006_t:
+
+Catholic (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Catholic (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c006_t'
+      );
+
+
+
+
+
+Measure "Catholic (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c006_t'
+        );
+
+
+
+
+
+
+Measure "Catholic (total)" percent of "Total population - Christian (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c006_t',
+        'denominator'
+      );
+
+
+Measure "Catholic (total)" percent of "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c006_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c007_t:
+
+Christian Orthodox (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Christian Orthodox (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c007_t'
+      );
+
+
+
+
+
+Measure "Christian Orthodox (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c007_t'
+        );
+
+
+
+
+
+
+Measure "Christian Orthodox (total)" percent of "Total population - Christian (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c007_t',
+        'denominator'
+      );
+
+
+Measure "Christian Orthodox (total)" percent of "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c007_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c008_t:
+
+Lutheran (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Lutheran (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c008_t'
+      );
+
+
+
+
+
+Measure "Lutheran (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c008_t'
+        );
+
+
+
+
+
+
+Measure "Lutheran (total)" percent of "Total population - Christian (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c008_t',
+        'denominator'
+      );
+
+
+Measure "Lutheran (total)" percent of "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c008_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c012_t:
+
+Other Christian (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Other Christian (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c012_t'
+      );
+
+
+
+
+
+Measure "Other Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c012_t'
+        );
+
+
+
+
+
+
+Measure "Other Christian (total)" percent of "Total population - Christian (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c012_t',
+        'denominator'
+      );
+
+
+Measure "Other Christian (total)" percent of "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c012_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c009_t:
+
+Pentecostal (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Pentecostal (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c009_t'
+      );
+
+
+
+
+
+Measure "Pentecostal (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c009_t'
+        );
+
+
+
+
+
+
+Measure "Pentecostal (total)" percent of "Total population - Christian (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c009_t',
+        'denominator'
+      );
+
+
+Measure "Pentecostal (total)" percent of "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c009_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c010_t:
+
+Presbyterian (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "Presbyterian (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c010_t'
+      );
+
+
+
+
+
+Measure "Presbyterian (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c010_t'
+        );
+
+
+
+
+
+
+Measure "Presbyterian (total)" percent of "Total population - Christian (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c010_t',
+        'denominator'
+      );
+
+
+Measure "Presbyterian (total)" percent of "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c010_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+  
+  
+
+.. _ca.statcan.cols_nhs.t025c011_t:
+
+United Church (total)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
+
+
+Measure "United Church (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c011_t'
+      );
+
+
+
+
+
+Measure "United Church (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c011_t'
+        );
+
+
+
+
+
+
+Measure "United Church (total)" percent of "Total population - Christian (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c011_t',
+        'denominator'
+      );
+
+
+Measure "United Church (total)" percent of "Total population - Christian (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c011_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t025c003_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c013_f:
+
+Total population - Hindu (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Hindu (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c013_f'
+      );
+
+
+
+
+
+Measure "Total population - Hindu (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c013_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Hindu (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c013_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Hindu (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c013_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c013_m:
+
+Total population - Hindu (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Hindu (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c013_m'
+      );
+
+
+
+
+
+Measure "Total population - Hindu (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c013_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Hindu (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c013_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Hindu (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c013_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c013_t:
+
+Total population - Hindu (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Hindu (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c013_t'
+      );
+
+
+
+
+
+Measure "Total population - Hindu (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c013_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Hindu (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c013_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Hindu (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c013_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c014_f:
+
+Total population - Jewish (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Jewish (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c014_f'
+      );
+
+
+
+
+
+Measure "Total population - Jewish (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c014_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Jewish (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c014_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Jewish (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c014_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c014_m:
+
+Total population - Jewish (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Jewish (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c014_m'
+      );
+
+
+
+
+
+Measure "Total population - Jewish (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c014_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Jewish (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c014_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Jewish (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c014_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c014_t:
+
+Total population - Jewish (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Jewish (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c014_t'
+      );
+
+
+
+
+
+Measure "Total population - Jewish (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c014_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Jewish (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c014_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Jewish (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c014_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c015_f:
+
+Total population - Muslim (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Muslim (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c015_f'
+      );
+
+
+
+
+
+Measure "Total population - Muslim (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c015_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Muslim (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c015_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Muslim (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c015_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c015_m:
+
+Total population - Muslim (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Muslim (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c015_m'
+      );
+
+
+
+
+
+Measure "Total population - Muslim (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c015_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Muslim (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c015_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Muslim (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c015_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c015_t:
+
+Total population - Muslim (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Muslim (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c015_t'
+      );
+
+
+
+
+
+Measure "Total population - Muslim (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c015_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Muslim (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c015_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Muslim (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c015_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c019_f:
+
+Total population - No religious affiliation (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - No religious affiliation (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c019_f'
+      );
+
+
+
+
+
+Measure "Total population - No religious affiliation (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c019_f'
+        );
+
+
+
+
+
+
+Measure "Total population - No religious affiliation (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c019_f',
+        'denominator'
+      );
+
+
+Measure "Total population - No religious affiliation (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c019_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c019_m:
+
+Total population - No religious affiliation (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - No religious affiliation (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c019_m'
+      );
+
+
+
+
+
+Measure "Total population - No religious affiliation (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c019_m'
+        );
+
+
+
+
+
+
+Measure "Total population - No religious affiliation (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c019_m',
+        'denominator'
+      );
+
+
+Measure "Total population - No religious affiliation (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c019_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c019_t:
+
+Total population - No religious affiliation (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - No religious affiliation (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c019_t'
+      );
+
+
+
+
+
+Measure "Total population - No religious affiliation (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c019_t'
+        );
+
+
+
+
+
+
+Measure "Total population - No religious affiliation (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c019_t',
+        'denominator'
+      );
+
+
+Measure "Total population - No religious affiliation (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c019_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c018_f:
+
+Total population - Other religions (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Other religions (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c018_f'
+      );
+
+
+
+
+
+Measure "Total population - Other religions (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c018_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Other religions (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c018_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Other religions (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c018_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c018_m:
+
+Total population - Other religions (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Other religions (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c018_m'
+      );
+
+
+
+
+
+Measure "Total population - Other religions (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c018_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Other religions (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c018_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Other religions (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c018_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c018_t:
+
+Total population - Other religions (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Other religions (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c018_t'
+      );
+
+
+
+
+
+Measure "Total population - Other religions (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c018_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Other religions (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c018_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Other religions (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c018_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c016_f:
+
+Total population - Sikh (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Sikh (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c016_f'
+      );
+
+
+
+
+
+Measure "Total population - Sikh (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c016_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Sikh (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c016_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Sikh (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c016_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c016_m:
+
+Total population - Sikh (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Sikh (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c016_m'
+      );
+
+
+
+
+
+Measure "Total population - Sikh (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c016_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Sikh (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c016_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Sikh (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c016_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c016_t:
+
+Total population - Sikh (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Sikh (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c016_t'
+      );
+
+
+
+
+
+Measure "Total population - Sikh (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c016_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Sikh (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c016_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Sikh (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c016_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c017_f:
+
+Total population - Traditional (Aboriginal) Spirituality (female)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (female)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c017_f'
+      );
+
+
+
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (female)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c017_f'
+        );
+
+
+
+
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (female)" percent of "Total population in private households (female)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c017_f',
+        'denominator'
+      );
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (female)" percent of "Total population in private households (female)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c017_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_f`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c017_m:
+
+Total population - Traditional (Aboriginal) Spirituality (male)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (male)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c017_m'
+      );
+
+
+
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (male)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c017_m'
+        );
+
+
+
+
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (male)" percent of "Total population in private households (male)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c017_m',
+        'denominator'
+      );
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (male)" percent of "Total population in private households (male)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c017_m',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_m`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+
+
+
+
+
+.. _ca.statcan.cols_nhs.t025c017_t:
+
+Total population - Traditional (Aboriginal) Spirituality (total)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (total)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c017_t'
+      );
+
+
+
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (total)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+          'ca.statcan.cols_nhs.t025c017_t'
+        );
+
+
+
+
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (total)" percent of "Total population in private households (total)" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(43.6559499126, -79.3796539307),
+        'ca.statcan.cols_nhs.t025c017_t',
+        'denominator'
+      );
+
+
+Measure "Total population - Traditional (Aboriginal) Spirituality (total)" percent of "Total population in private households (total)" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(43.6559499126, -79.3796539307), 0.01),
+        'ca.statcan.cols_nhs.t025c017_t',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.cd_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.pr_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.ct_`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`ca.statcan.geo.csd`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2011
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`ca.statcan.cols_nhs.t001c001_t`
+
+
+:Source:
+
+    :ref:`ca.statcan.license.statcan-nhs-2011`
+
+:License:
+
+    :ref:`ca.statcan.license.statcan-license`
+
+
+

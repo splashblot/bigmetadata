@@ -1,0 +1,1321 @@
+
+
+.. Health:
+
+Health
+===========================================================================
+
+Breakdowns of the population by health
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.SALUD1:
+
+Population entitled to health services
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SALUD1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population entitled to health services"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD1'
+      );
+
+
+
+
+
+Measure "Population entitled to health services" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SALUD1'
+        );
+
+
+
+
+
+
+Measure "Population entitled to health services" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD1',
+        'denominator'
+      );
+
+
+Measure "Population entitled to health services" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SALUD1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD3:
+
+Population with IMSS
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SALUD3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population with IMSS"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD3'
+      );
+
+
+
+
+
+Measure "Population with IMSS" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SALUD3'
+        );
+
+
+
+
+
+
+Measure "Population with IMSS" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD3',
+        'denominator'
+      );
+
+
+Measure "Population with IMSS" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SALUD3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD4:
+
+Population with ISSSTE or state ISSSTE
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SALUD4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population with ISSSTE or state ISSSTE"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD4'
+      );
+
+
+
+
+
+Measure "Population with ISSSTE or state ISSSTE" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SALUD4'
+        );
+
+
+
+
+
+
+Measure "Population with ISSSTE or state ISSSTE" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD4',
+        'denominator'
+      );
+
+
+Measure "Population with ISSSTE or state ISSSTE" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SALUD4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD6:
+
+Population with Pemex, Sedena or Semar
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SALUD6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population with Pemex, Sedena or Semar"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD6'
+      );
+
+
+
+
+
+Measure "Population with Pemex, Sedena or Semar" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SALUD6'
+        );
+
+
+
+
+
+
+Measure "Population with Pemex, Sedena or Semar" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD6',
+        'denominator'
+      );
+
+
+Measure "Population with Pemex, Sedena or Semar" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SALUD6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD5:
+
+Population with Seguro Popular or Seguro Medico para una Nueva Generacion
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SALUD5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population with Seguro Popular or Seguro Medico para una Nueva Generacion"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD5'
+      );
+
+
+
+
+
+Measure "Population with Seguro Popular or Seguro Medico para una Nueva Generacion" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SALUD5'
+        );
+
+
+
+
+
+
+Measure "Population with Seguro Popular or Seguro Medico para una Nueva Generacion" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD5',
+        'denominator'
+      );
+
+
+Measure "Population with Seguro Popular or Seguro Medico para una Nueva Generacion" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SALUD5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+
+
+
+
+
+.. _mx.inegi_columns.SALUD2:
+
+Population without access to health services
+---------------------------------------------------------------------------
+
+
+
+.. figure:: html/mx.inegi_columns.SALUD2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+
+Measure "Population without access to health services"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD2'
+      );
+
+
+
+
+
+Measure "Population without access to health services" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+          'mx.inegi_columns.SALUD2'
+        );
+
+
+
+
+
+
+Measure "Population without access to health services" percent of "Total population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(19.4134769939, -99.1701936722),
+        'mx.inegi_columns.SALUD2',
+        'denominator'
+      );
+
+
+Measure "Population without access to health services" percent of "Total population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(19.4134769939, -99.1701936722), 0.01),
+        'mx.inegi_columns.SALUD2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.municipio`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.manzana`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.ageb`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`mx.inegi.entidad`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`mx.inegi_columns.POB1`
+
+
+:Source:
+
+    :ref:`mx.inegi_columns.inegi-source`
+
+:License:
+
+    :ref:`mx.inegi_columns.inegi-license`
+
+
+

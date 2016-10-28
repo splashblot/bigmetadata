@@ -1,0 +1,211 @@
+
+
+.. Transportation:
+
+Transportation
+===========================================================================
+
+How do people move from place to place?
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.VIV28:
+
+Private occupied dwellings with a car or van
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.VIV28.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with a car or van"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.VIV28'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with a car or van" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.VIV28'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with a car or van" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.VIV28',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with a car or van" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.VIV28',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+
+
+
+
+
+
+.. _mx.inegi_columns.VIV30:
+
+Private occupied dwellings with neither refigerator, washer, nor car or van
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.VIV30.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither refigerator, washer, nor car or van"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.VIV30'
+      );
+
+
+
+
+
+Measure "Private occupied dwellings with neither refigerator, washer, nor car or van" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.VIV30'
+        );
+
+
+
+
+
+
+Measure "Private occupied dwellings with neither refigerator, washer, nor car or van" percent of "Occupied private dwellings" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.VIV30',
+        'denominator'
+      );
+
+
+Measure "Private occupied dwellings with neither refigerator, washer, nor car or van" percent of "Occupied private dwellings" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.VIV30',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.VIV2`
+
+
+
+

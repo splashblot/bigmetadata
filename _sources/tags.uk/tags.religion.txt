@@ -1,0 +1,678 @@
+
+
+.. Religion:
+
+Religion
+===========================================================================
+
+Breakdowns of the population by religion.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _uk.ons.LC2107EW0003:
+
+Buddhist Population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Buddhist Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0003'
+      );
+
+
+
+
+
+Measure "Buddhist Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2107EW0003'
+        );
+
+
+
+
+
+
+Measure "Buddhist Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0003',
+        'denominator'
+      );
+
+
+Measure "Buddhist Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2107EW0003',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0002:
+
+Christian Population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Christian Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0002'
+      );
+
+
+
+
+
+Measure "Christian Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2107EW0002'
+        );
+
+
+
+
+
+
+Measure "Christian Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0002',
+        'denominator'
+      );
+
+
+Measure "Christian Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2107EW0002',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0004:
+
+Hindu Population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Hindu Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0004'
+      );
+
+
+
+
+
+Measure "Hindu Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2107EW0004'
+        );
+
+
+
+
+
+
+Measure "Hindu Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0004',
+        'denominator'
+      );
+
+
+Measure "Hindu Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2107EW0004',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0005:
+
+Jewish Population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Jewish Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0005'
+      );
+
+
+
+
+
+Measure "Jewish Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2107EW0005'
+        );
+
+
+
+
+
+
+Measure "Jewish Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0005',
+        'denominator'
+      );
+
+
+Measure "Jewish Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2107EW0005',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0006:
+
+Muslim Population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Muslim Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0006'
+      );
+
+
+
+
+
+Measure "Muslim Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2107EW0006'
+        );
+
+
+
+
+
+
+Measure "Muslim Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0006',
+        'denominator'
+      );
+
+
+Measure "Muslim Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2107EW0006',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0009:
+
+Population who are not religious
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population who are not religious"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0009'
+      );
+
+
+
+
+
+Measure "Population who are not religious" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2107EW0009'
+        );
+
+
+
+
+
+
+Measure "Population who are not religious" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0009',
+        'denominator'
+      );
+
+
+Measure "Population who are not religious" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2107EW0009',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2107EW0007:
+
+Sikh Population
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Sikh Population"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0007'
+      );
+
+
+
+
+
+Measure "Sikh Population" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2107EW0007'
+        );
+
+
+
+
+
+
+Measure "Sikh Population" percent of "Total Population" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2107EW0007',
+        'denominator'
+      );
+
+
+Measure "Sikh Population" percent of "Total Population" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2107EW0007',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2102EW0001`
+
+
+
+

@@ -1,0 +1,1736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>11.4. Education &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="11. United States" href="../united_states.html" />
+    <link rel="next" title="11.5. Employment" href="employment.html" />
+    <link rel="prev" title="11.3. Commerce &amp; Economy" href="commerce_economy.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="education">
+<h1>11.4. Education<a class="headerlink" href="#education" title="Permalink to this headline">¶</a></h1>
+<p>Educational attainment and enrollment.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#population-25-years-and-over" id="id1">Population 25 Years and Over</a><ul>
+<li><a class="reference internal" href="#less-than-high-school-graduate" id="id2">Less than high school graduate</a></li>
+<li><a class="reference internal" href="#population-completed-associate-s-degree" id="id3">Population Completed Associate&#8217;s Degree</a></li>
+<li><a class="reference internal" href="#population-completed-bachelor-s-degree" id="id4">Population Completed Bachelor&#8217;s Degree</a></li>
+<li><a class="reference internal" href="#population-completed-high-school" id="id5">Population Completed High School</a></li>
+<li><a class="reference internal" href="#population-completed-less-than-one-year-of-college-no-degree" id="id6">Population completed less than one year of college, no degree</a></li>
+<li><a class="reference internal" href="#population-completed-master-s-degree" id="id7">Population Completed Master&#8217;s Degree</a></li>
+<li><a class="reference internal" href="#population-completed-more-than-one-year-of-college-no-degree" id="id8">Population completed more than one year of college, no degree</a></li>
+<li><a class="reference internal" href="#population-who-completed-some-college-or-obtained-associate-s-degree" id="id9">Population who completed some college or obtained associate&#8217;s degree</a></li>
+<li><a class="reference internal" href="#population-with-high-school-degree-including-ged" id="id10">Population with high school degree, including GED</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#population-3-years-and-over" id="id11">Population 3 Years and Over</a><ul>
+<li><a class="reference internal" href="#students-enrolled-in-school" id="id12">Students Enrolled in School</a><ul>
+<li><a class="reference internal" href="#students-enrolled-as-undergraduate-in-college" id="id13">Students Enrolled as Undergraduate in College</a></li>
+<li><a class="reference internal" href="#students-enrolled-in-grades-1-to-4" id="id14">Students Enrolled in Grades 1 to 4</a></li>
+<li><a class="reference internal" href="#students-enrolled-in-grades-5-to-8" id="id15">Students Enrolled in Grades 5 to 8</a></li>
+<li><a class="reference internal" href="#students-enrolled-in-grades-9-to-12" id="id16">Students Enrolled in Grades 9 to 12</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="population-25-years-and-over">
+<span id="us-census-acs-b15003001"></span><h2><a class="toc-backref" href="#id1">11.4.1. Population 25 Years and Over</a><a class="headerlink" href="#population-25-years-and-over" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B15003001.png"><img alt="../_images/us.census.acs.B15003001.png" src="../_images/us.census.acs.B15003001.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area who are over the age of 25.  This is used mostly as a denominator of educational attainment.</p>
+<p>Measure &#8220;Population 25 Years and Over&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003001&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003001&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-block-group"><span class="std std-ref">US Census Block Groups</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+<div class="contents local topic" id="subcolumns-of-population-25-years-and-over">
+<p class="topic-title first">Subcolumns of Population 25 Years and Over</p>
+<ul class="simple">
+<li><a class="reference internal" href="#less-than-high-school-graduate" id="id17">Less than high school graduate</a></li>
+<li><a class="reference internal" href="#population-completed-associate-s-degree" id="id18">Population Completed Associate&#8217;s Degree</a></li>
+<li><a class="reference internal" href="#population-completed-bachelor-s-degree" id="id19">Population Completed Bachelor&#8217;s Degree</a></li>
+<li><a class="reference internal" href="#population-completed-high-school" id="id20">Population Completed High School</a></li>
+<li><a class="reference internal" href="#population-completed-less-than-one-year-of-college-no-degree" id="id21">Population completed less than one year of college, no degree</a></li>
+<li><a class="reference internal" href="#population-completed-master-s-degree" id="id22">Population Completed Master&#8217;s Degree</a></li>
+<li><a class="reference internal" href="#population-completed-more-than-one-year-of-college-no-degree" id="id23">Population completed more than one year of college, no degree</a></li>
+<li><a class="reference internal" href="#population-who-completed-some-college-or-obtained-associate-s-degree" id="id24">Population who completed some college or obtained associate&#8217;s degree</a></li>
+<li><a class="reference internal" href="#population-with-high-school-degree-including-ged" id="id25">Population with high school degree, including GED</a></li>
+</ul>
+</div>
+<div class="section" id="less-than-high-school-graduate">
+<span id="us-census-acs-b07009002"></span><h3><a class="toc-backref" href="#id17">11.4.1.1. Less than high school graduate</a><a class="headerlink" href="#less-than-high-school-graduate" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B07009002.png"><img alt="../_images/us.census.acs.B07009002.png" src="../_images/us.census.acs.B07009002.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area over the age of 25 who have not completed high school or any other advanced degree.</p>
+<p>Measure &#8220;Less than high school graduate&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009002&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Less than high school graduate&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009002&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Less than high school graduate&#8221; percent of &#8220;Population 25 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009002&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Less than high school graduate&#8221; percent of &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009002&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b15003001"><span class="std std-ref">Population 25 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-completed-associate-s-degree">
+<span id="us-census-acs-b15003021"></span><h3><a class="toc-backref" href="#id18">11.4.1.2. Population Completed Associate&#8217;s Degree</a><a class="headerlink" href="#population-completed-associate-s-degree" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B15003021.png"><img alt="../_images/us.census.acs.B15003021.png" src="../_images/us.census.acs.B15003021.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area over the age of 25 who obtained a associate&#8217;s degree, and did not complete a more advanced degree.</p>
+<p>Measure &#8220;Population Completed Associate&#8217;s Degree&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003021&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed Associate&#8217;s Degree&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003021&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed Associate&#8217;s Degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003021&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed Associate&#8217;s Degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003021&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-block-group"><span class="std std-ref">US Census Block Groups</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b15003001"><span class="std std-ref">Population 25 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-completed-bachelor-s-degree">
+<span id="us-census-acs-b15003022"></span><h3><a class="toc-backref" href="#id19">11.4.1.3. Population Completed Bachelor&#8217;s Degree</a><a class="headerlink" href="#population-completed-bachelor-s-degree" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B15003022.png"><img alt="../_images/us.census.acs.B15003022.png" src="../_images/us.census.acs.B15003022.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area over the age of 25 who obtained a bachelor&#8217;s degree, and did not complete a more advanced degree.</p>
+<p>Measure &#8220;Population Completed Bachelor&#8217;s Degree&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003022&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed Bachelor&#8217;s Degree&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003022&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed Bachelor&#8217;s Degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003022&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed Bachelor&#8217;s Degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003022&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-block-group"><span class="std std-ref">US Census Block Groups</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b15003001"><span class="std std-ref">Population 25 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-completed-high-school">
+<span id="us-census-acs-b15003017"></span><h3><a class="toc-backref" href="#id20">11.4.1.4. Population Completed High School</a><a class="headerlink" href="#population-completed-high-school" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B15003017.png"><img alt="../_images/us.census.acs.B15003017.png" src="../_images/us.census.acs.B15003017.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area over the age of 25 who completed high school, and did not complete a more advanced degree.</p>
+<p>Measure &#8220;Population Completed High School&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003017&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed High School&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003017&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed High School&#8221; percent of &#8220;Population 25 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003017&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed High School&#8221; percent of &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003017&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-block-group"><span class="std std-ref">US Census Block Groups</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b15003001"><span class="std std-ref">Population 25 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-completed-less-than-one-year-of-college-no-degree">
+<span id="us-census-acs-b15003019"></span><h3><a class="toc-backref" href="#id21">11.4.1.5. Population completed less than one year of college, no degree</a><a class="headerlink" href="#population-completed-less-than-one-year-of-college-no-degree" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B15003019.png"><img alt="../_images/us.census.acs.B15003019.png" src="../_images/us.census.acs.B15003019.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area over the age of 25 who attended college for less than one year and no further.</p>
+<p>Measure &#8220;Population completed less than one year of college, no degree&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003019&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population completed less than one year of college, no degree&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003019&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population completed less than one year of college, no degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003019&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population completed less than one year of college, no degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003019&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-block-group"><span class="std std-ref">US Census Block Groups</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b15003001"><span class="std std-ref">Population 25 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-completed-master-s-degree">
+<span id="us-census-acs-b15003023"></span><h3><a class="toc-backref" href="#id22">11.4.1.6. Population Completed Master&#8217;s Degree</a><a class="headerlink" href="#population-completed-master-s-degree" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B15003023.png"><img alt="../_images/us.census.acs.B15003023.png" src="../_images/us.census.acs.B15003023.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area over the age of 25 who obtained a master&#8217;s degree, but did not complete a more advanced degree.</p>
+<p>Measure &#8220;Population Completed Master&#8217;s Degree&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003023&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed Master&#8217;s Degree&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003023&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed Master&#8217;s Degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003023&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population Completed Master&#8217;s Degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003023&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-block-group"><span class="std std-ref">US Census Block Groups</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b15003001"><span class="std std-ref">Population 25 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-completed-more-than-one-year-of-college-no-degree">
+<span id="us-census-acs-b15003020"></span><h3><a class="toc-backref" href="#id23">11.4.1.7. Population completed more than one year of college, no degree</a><a class="headerlink" href="#population-completed-more-than-one-year-of-college-no-degree" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B15003020.png"><img alt="../_images/us.census.acs.B15003020.png" src="../_images/us.census.acs.B15003020.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area over the age of 25 who attended college for more than one year but did not obtain a degree</p>
+<p>Measure &#8220;Population completed more than one year of college, no degree&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003020&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population completed more than one year of college, no degree&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003020&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population completed more than one year of college, no degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003020&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population completed more than one year of college, no degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B15003020&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-block-group"><span class="std std-ref">US Census Block Groups</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b15003001"><span class="std std-ref">Population 25 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-who-completed-some-college-or-obtained-associate-s-degree">
+<span id="us-census-acs-b07009004"></span><h3><a class="toc-backref" href="#id24">11.4.1.8. Population who completed some college or obtained associate&#8217;s degree</a><a class="headerlink" href="#population-who-completed-some-college-or-obtained-associate-s-degree" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B07009004.png"><img alt="../_images/us.census.acs.B07009004.png" src="../_images/us.census.acs.B07009004.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area over the age of 25 who obtained an associate&#8217;s degree, and did not complete a more advanced degree.</p>
+<p>Measure &#8220;Population who completed some college or obtained associate&#8217;s degree&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009004&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population who completed some college or obtained associate&#8217;s degree&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009004&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population who completed some college or obtained associate&#8217;s degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009004&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population who completed some college or obtained associate&#8217;s degree&#8221; percent of &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009004&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b15003001"><span class="std std-ref">Population 25 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="population-with-high-school-degree-including-ged">
+<span id="us-census-acs-b07009003"></span><h3><a class="toc-backref" href="#id25">11.4.1.9. Population with high school degree, including GED</a><a class="headerlink" href="#population-with-high-school-degree-including-ged" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B07009003.png"><img alt="../_images/us.census.acs.B07009003.png" src="../_images/us.census.acs.B07009003.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area over the age of 25 who attained a high school degree or GED.</p>
+<p>Measure &#8220;Population with high school degree, including GED&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009003&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population with high school degree, including GED&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009003&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population with high school degree, including GED&#8221; percent of &#8220;Population 25 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009003&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population with high school degree, including GED&#8221; percent of &#8220;Population 25 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B07009003&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b15003001"><span class="std std-ref">Population 25 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="population-3-years-and-over">
+<span id="us-census-acs-b14001001"></span><h2><a class="toc-backref" href="#id11">11.4.2. Population 3 Years and Over</a><a class="headerlink" href="#population-3-years-and-over" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B14001001.png"><img alt="../_images/us.census.acs.B14001001.png" src="../_images/us.census.acs.B14001001.png" style="width: 100%;" /></a>
+</div>
+<p>The total number of people in each geography age 3 years and over.  This denominator is mostly used to calculate rates of school enrollment.</p>
+<p>Measure &#8220;Population 3 Years and Over&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001001&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Population 3 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001001&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+<div class="contents local topic" id="subcolumns-of-population-3-years-and-over">
+<p class="topic-title first">Subcolumns of Population 3 Years and Over</p>
+<ul class="simple">
+<li><a class="reference internal" href="#students-enrolled-in-school" id="id26">Students Enrolled in School</a></li>
+</ul>
+</div>
+<div class="section" id="students-enrolled-in-school">
+<span id="us-census-acs-b14001002"></span><h3><a class="toc-backref" href="#id26">11.4.2.1. Students Enrolled in School</a><a class="headerlink" href="#students-enrolled-in-school" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B14001002.png"><img alt="../_images/us.census.acs.B14001002.png" src="../_images/us.census.acs.B14001002.png" style="width: 100%;" /></a>
+</div>
+<p>The total number of people in each geography currently enrolled at any level of school, from nursery or pre-school to advanced post-graduate education.  Only includes those over the age of 3.</p>
+<p>Measure &#8220;Students Enrolled in School&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001002&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in School&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001002&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in School&#8221; percent of &#8220;Population 3 Years and Over&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001002&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in School&#8221; percent of &#8220;Population 3 Years and Over&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001002&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b14001001"><span class="std std-ref">Population 3 Years and Over</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+<div class="contents local topic" id="subcolumns-of-students-enrolled-in-school">
+<p class="topic-title first">Subcolumns of Students Enrolled in School</p>
+<ul class="simple">
+<li><a class="reference internal" href="#students-enrolled-as-undergraduate-in-college" id="id27">Students Enrolled as Undergraduate in College</a></li>
+<li><a class="reference internal" href="#students-enrolled-in-grades-1-to-4" id="id28">Students Enrolled in Grades 1 to 4</a></li>
+<li><a class="reference internal" href="#students-enrolled-in-grades-5-to-8" id="id29">Students Enrolled in Grades 5 to 8</a></li>
+<li><a class="reference internal" href="#students-enrolled-in-grades-9-to-12" id="id30">Students Enrolled in Grades 9 to 12</a></li>
+</ul>
+</div>
+<div class="section" id="students-enrolled-as-undergraduate-in-college">
+<span id="us-census-acs-b14001008"></span><h4><a class="toc-backref" href="#id27">11.4.2.1.1. Students Enrolled as Undergraduate in College</a><a class="headerlink" href="#students-enrolled-as-undergraduate-in-college" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B14001008.png"><img alt="../_images/us.census.acs.B14001008.png" src="../_images/us.census.acs.B14001008.png" style="width: 100%;" /></a>
+</div>
+<p>The number of people in a geographic area who are enrolled in college at the undergraduate level. Enrollment refers to being registered or listed as a student in an educational program leading to a college degree. This may be a public school or college, a private school or college.</p>
+<p>Measure &#8220;Students Enrolled as Undergraduate in College&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001008&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled as Undergraduate in College&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001008&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled as Undergraduate in College&#8221; percent of &#8220;Students Enrolled in School&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001008&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled as Undergraduate in College&#8221; percent of &#8220;Students Enrolled in School&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001008&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b14001002"><span class="std std-ref">Students Enrolled in School</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="students-enrolled-in-grades-1-to-4">
+<span id="us-census-acs-b14001005"></span><h4><a class="toc-backref" href="#id28">11.4.2.1.2. Students Enrolled in Grades 1 to 4</a><a class="headerlink" href="#students-enrolled-in-grades-1-to-4" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B14001005.png"><img alt="../_images/us.census.acs.B14001005.png" src="../_images/us.census.acs.B14001005.png" style="width: 100%;" /></a>
+</div>
+<p>The total number of people in each geography currently enrolled in grades 1 through 4 inclusive.  This corresponds roughly to elementary school.</p>
+<p>Measure &#8220;Students Enrolled in Grades 1 to 4&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001005&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in Grades 1 to 4&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001005&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in Grades 1 to 4&#8221; percent of &#8220;Students Enrolled in School&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001005&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in Grades 1 to 4&#8221; percent of &#8220;Students Enrolled in School&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001005&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b14001002"><span class="std std-ref">Students Enrolled in School</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="students-enrolled-in-grades-5-to-8">
+<span id="us-census-acs-b14001006"></span><h4><a class="toc-backref" href="#id29">11.4.2.1.3. Students Enrolled in Grades 5 to 8</a><a class="headerlink" href="#students-enrolled-in-grades-5-to-8" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B14001006.png"><img alt="../_images/us.census.acs.B14001006.png" src="../_images/us.census.acs.B14001006.png" style="width: 100%;" /></a>
+</div>
+<p>The total number of people in each geography currently enrolled in grades 5 through 8 inclusive.  This corresponds roughly to middle school.</p>
+<p>Measure &#8220;Students Enrolled in Grades 5 to 8&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001006&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in Grades 5 to 8&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001006&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in Grades 5 to 8&#8221; percent of &#8220;Students Enrolled in School&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001006&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in Grades 5 to 8&#8221; percent of &#8220;Students Enrolled in School&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001006&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b14001002"><span class="std std-ref">Students Enrolled in School</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="students-enrolled-in-grades-9-to-12">
+<span id="us-census-acs-b14001007"></span><h4><a class="toc-backref" href="#id30">11.4.2.1.4. Students Enrolled in Grades 9 to 12</a><a class="headerlink" href="#students-enrolled-in-grades-9-to-12" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/us.census.acs.B14001007.png"><img alt="../_images/us.census.acs.B14001007.png" src="../_images/us.census.acs.B14001007.png" style="width: 100%;" /></a>
+</div>
+<p>The total number of people in each geography currently enrolled in grades 9 through 12 inclusive.  This corresponds roughly to high school.</p>
+<p>Measure &#8220;Students Enrolled in Grades 9 to 12&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001007&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in Grades 9 to 12&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001007&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in Grades 9 to 12&#8221; percent of &#8220;Students Enrolled in School&#8221; at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001007&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Students Enrolled in Grades 9 to 12&#8221; percent of &#8220;Students Enrolled in School&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.census.acs.B14001007&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;denominator&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-cbsa-clipped"><span class="std std-ref">Shoreline clipped Core Based Statistical Area (CBSA)</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-puma-clipped"><span class="std std-ref">Shoreline clipped US Census Public Use Microdata Areas</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-secondary"><span class="std std-ref">Secondary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-unified"><span class="std std-ref">Unified School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-congressional-district-clipped"><span class="std std-ref">Shoreline clipped US Congressional Districts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-census-tract-clipped"><span class="std std-ref">Shoreline clipped US Census Tracts</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-place-clipped"><span class="std std-ref">Shoreline clipped Incorporated Places</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-county-clipped"><span class="std std-ref">Shoreline clipped US County</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-zcta5"><span class="std std-ref">US Census Zip Code Tabulation Areas</span></a></p>
+</td>
+<td><p>2010 - 2014</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-state"><span class="std std-ref">US States</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-census-tiger-school-district-elementary"><span class="std std-ref">Elementary School District</span></a></p>
+</td>
+<td><p>2010 - 2014, 2006 - 2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#us-census-acs-b14001002"><span class="std std-ref">Students Enrolled in School</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-census-acs-acs"><span class="std std-ref">US American Community Survey</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">11.4. Education</a><ul>
+<li><a class="reference internal" href="#population-25-years-and-over">11.4.1. Population 25 Years and Over</a><ul>
+<li><a class="reference internal" href="#less-than-high-school-graduate">11.4.1.1. Less than high school graduate</a></li>
+<li><a class="reference internal" href="#population-completed-associate-s-degree">11.4.1.2. Population Completed Associate&#8217;s Degree</a></li>
+<li><a class="reference internal" href="#population-completed-bachelor-s-degree">11.4.1.3. Population Completed Bachelor&#8217;s Degree</a></li>
+<li><a class="reference internal" href="#population-completed-high-school">11.4.1.4. Population Completed High School</a></li>
+<li><a class="reference internal" href="#population-completed-less-than-one-year-of-college-no-degree">11.4.1.5. Population completed less than one year of college, no degree</a></li>
+<li><a class="reference internal" href="#population-completed-master-s-degree">11.4.1.6. Population Completed Master&#8217;s Degree</a></li>
+<li><a class="reference internal" href="#population-completed-more-than-one-year-of-college-no-degree">11.4.1.7. Population completed more than one year of college, no degree</a></li>
+<li><a class="reference internal" href="#population-who-completed-some-college-or-obtained-associate-s-degree">11.4.1.8. Population who completed some college or obtained associate&#8217;s degree</a></li>
+<li><a class="reference internal" href="#population-with-high-school-degree-including-ged">11.4.1.9. Population with high school degree, including GED</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#population-3-years-and-over">11.4.2. Population 3 Years and Over</a><ul>
+<li><a class="reference internal" href="#students-enrolled-in-school">11.4.2.1. Students Enrolled in School</a><ul>
+<li><a class="reference internal" href="#students-enrolled-as-undergraduate-in-college">11.4.2.1.1. Students Enrolled as Undergraduate in College</a></li>
+<li><a class="reference internal" href="#students-enrolled-in-grades-1-to-4">11.4.2.1.2. Students Enrolled in Grades 1 to 4</a></li>
+<li><a class="reference internal" href="#students-enrolled-in-grades-5-to-8">11.4.2.1.3. Students Enrolled in Grades 5 to 8</a></li>
+<li><a class="reference internal" href="#students-enrolled-in-grades-9-to-12">11.4.2.1.4. Students Enrolled in Grades 9 to 12</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../united_states.html">11. United States</a><ul>
+      <li>Previous: <a href="commerce_economy.html" title="previous chapter">11.3. Commerce &amp; Economy</a></li>
+      <li>Next: <a href="employment.html" title="next chapter">11.5. Employment</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/united_states/education.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/united_states/education.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,389 @@
+
+
+.. Population segments:
+
+Population segments
+===========================================================================
+
+Segmentations of the population
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _uk.cdrc.grp:
+
+Group Area Classification
+---------------------------------------------------------------------------
+
+
+
+The 2011 Area Classification for Output Areas (2011 OAC) is a UK geodemographic classification produced as a collaboration between the Office for National Statistics and University College London. Visit `here <http://www.ons.gov.uk/ons/guide-method/geography/products/area-classifications/ns-area-classifications/ns-2011-area-classifications/index.html>`_ or `here <http://www.opengeodemographics.com>`_ for further information regarding the 2011 OAC. 
+
+
+  
+  * **Students Around Campus**: 
+  
+  * **Comfortable Cosmopolitans**: 
+  
+  * **Industrious Communities**: 
+  
+  * **Challenged Terraced Workers**: 
+  
+  * **Ageing City Dwellers**: 
+  
+  * **Aspiring and Affluent**: 
+  
+  * **Asian Traits**: 
+  
+  * **Ageing Rural Dwellers**: 
+  
+  * **White Communities**: 
+  
+  * **Semi-Detached Suburbia**: 
+  
+  * **Migration and Churn**: 
+  
+  * **Rented Family Living**: 
+  
+  * **Challenged Asian Terraces**: 
+  
+  * **Ageing Urban Living**: 
+  
+  * **Suburban Achievers**: 
+  
+  * **Inner-City Students**: 
+  
+  * **Farming Communities**: 
+  
+  * **Ethnic Family Life**: 
+  
+  * **Urban Professionals and Families**: 
+  
+  * **Hard-Pressed Ageing Workers**: 
+  
+  * **Aspirational Techies**: 
+  
+  * **Endeavouring Ethnic Mix**: 
+  
+  * **Ethnic Dynamics**: 
+  
+  * **Rural Tenants**: 
+  
+  * **Challenged Diversity**: 
+  
+  * **Constrained Flat Dwellers**: 
+  
+
+
+
+
+Obtain category of "Group Area Classification" at one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_text_column} =
+      OBS_GetCategory(
+        CDB_LatLng(40.7, -73.9),
+        'uk.cdrc.grp'
+      );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. _uk.cdrc.subgrp:
+
+Subgroup Area Classification
+---------------------------------------------------------------------------
+
+
+
+The 2011 Area Classification for Output Areas (2011 OAC) is a UK geodemographic classification produced as a collaboration between the Office for National Statistics and University College London. Visit `here <http://www.ons.gov.uk/ons/guide-method/geography/products/area-classifications/ns-area-classifications/ns-2011-area-classifications/index.html>`_ or `here <http://www.opengeodemographics.com>`_ for further information regarding the 2011 OAC. 
+
+
+  
+  * **Pakistani Communities**: 
+  
+  * **Agricultural Communities**: 
+  
+  * **Rural Employment and Retirees**: 
+  
+  * **Rural White-Collar Workers**: 
+  
+  * **Professional Service Cosmopolitans**: 
+  
+  * **Established Tech Workers**: 
+  
+  * **Eastern European Communities**: 
+  
+  * **Bangladeshi Mixed Employment**: 
+  
+  * **Achieving Minorities**: 
+  
+  * **Multi-Ethnic Professionals with Families**: 
+  
+  * **White Suburban Communities**: 
+  
+  * **Families in Terraces and Flats**: 
+  
+  * **Challenged Transitionaries**: 
+  
+  * **Industrious Transitions**: 
+  
+  * **EU White-Collar Workers**: 
+  
+  * **Deprived Blue-Collar Terraces**: 
+  
+  * **Highly-Qualified Quaternary Workers**: 
+  
+  * **Social Renting Young Families**: 
+  
+  * **Constrained Commuters**: 
+  
+  * **Indian Tech Achievers**: 
+  
+  * **Comfortable Suburbia**: 
+  
+  * **Older Farming Communities**: 
+  
+  * **Transitional Eastern European Neighbourhoods**: 
+  
+  * **Old EU Tech Workers**: 
+  
+  * **New EU Tech Workers**: 
+  
+  * **Student Digs**: 
+  
+  * **Hard-Pressed Ethnic Mix**: 
+  
+  * **Endeavouring Flat Dwellers**: 
+  
+  * **Renting Hard-Pressed Workers**: 
+  
+  * **Inner City Ethnic Mix**: 
+  
+  * **Detached Rural Retirement**: 
+  
+  * **Delayed Retirement**: 
+  
+  * **Hampered Aspiration**: 
+  
+  * **Students and Commuters**: 
+  
+  * **Young Families and Students**: 
+  
+  * **Older Workers and Retirement**: 
+  
+  * **Renting Rural Retirement**: 
+  
+  * **Multicultural Student Neighbourhoods**: 
+  
+  * **Detached Retirement Living**: 
+  
+  * **Multicultural New Arrivals**: 
+  
+  * **Outer City Hardship**: 
+  
+  * **Retired Communal City Dwellers**: 
+  
+  * **Rural Workers and Families**: 
+  
+  * **Students and Professionals**: 
+  
+  * **Established Farming Communities**: 
+  
+  * **Semi-Detached Ageing**: 
+  
+  * **Ageing in Suburbia**: 
+  
+  * **Migrant Families**: 
+  
+  * **Deprived Neighbourhoods**: 
+  
+  * **Ageing Industrious Workers**: 
+  
+  * **Urban Cultural Mix**: 
+  
+  * **Retired Independent City Dwellers**: 
+  
+  * **Retired City Hardship**: 
+  
+  * **Ageing Rural Flat Tenants**: 
+  
+  * **Student Communal Living**: 
+  
+  * **Migrant Commuters**: 
+  
+  * **Commuters with Young Families**: 
+  
+  * **Asian Terraces and Flats**: 
+  
+  * **Multi-Ethnic Suburbia**: 
+  
+  * **Rural Life**: 
+  
+  * **Young Hard-Pressed Families**: 
+  
+  * **Private Renting New Arrivals**: 
+  
+  * **Hard-Pressed European Settlers**: 
+  
+  * **Ageing Communities and Families**: 
+  
+  * **Constrained Young Families**: 
+  
+  * **Established Renting Families**: 
+  
+  * **Communal Retirement**: 
+  
+  * **Self-Sufficient Retirement**: 
+  
+  * **Multi-Ethnic Professional Service Workers**: 
+  
+  * **Constrained Neighbourhoods**: 
+  
+  * **White Professionals**: 
+  
+  * **Ageing Rural Industry Workers**: 
+  
+  * **Multi-Ethnic Hardship**: 
+  
+  * **Striving Service Workers**: 
+  
+  * **Industrious Hardship**: 
+  
+  * **Hard-Pressed Rented Terraces**: 
+  
+
+
+
+
+Obtain category of "Subgroup Area Classification" at one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_text_column} =
+      OBS_GetCategory(
+        CDB_LatLng(40.7, -73.9),
+        'uk.cdrc.subgrp'
+      );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. _uk.cdrc.sprgrp:
+
+Supergroup Area Classification
+---------------------------------------------------------------------------
+
+
+
+The 2011 Area Classification for Output Areas (2011 OAC) is a UK geodemographic classification produced as a collaboration between the Office for National Statistics and University College London. Visit `here <http://www.ons.gov.uk/ons/guide-method/geography/products/area-classifications/ns-area-classifications/ns-2011-area-classifications/index.html>`_ or `here <http://www.opengeodemographics.com>`_ for further information regarding the 2011 OAC. 
+
+
+  
+  * **Hard-Pressed Living**: 
+  
+  * **Cosmopolitans**: 
+  
+  * **Urbanites**: 
+  
+  * **Rural Residents**: 
+  
+  * **Suburbanites**: 
+  
+  * **Constrained City Dwellers**: 
+  
+  * **Multicultural Metropolitans**: 
+  
+  * **Ethnicity Central**: 
+  
+
+
+
+
+Obtain category of "Supergroup Area Classification" at one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_text_column} =
+      OBS_GetCategory(
+        CDB_LatLng(40.7, -73.9),
+        'uk.cdrc.sprgrp'
+      );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1153 @@
+
+
+.. Language:
+
+Language
+===========================================================================
+
+What languages people speak.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _uk.ons.LC2104EW0010:
+
+Population whose main language is Arabic
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Arabic"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0010'
+      );
+
+
+
+
+
+Measure "Population whose main language is Arabic" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0010'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Arabic" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0010',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Arabic" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0010',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0015:
+
+Population whose main language is Bengali (with Sylheti and Chatgaya)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Bengali (with Sylheti and Chatgaya)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0015'
+      );
+
+
+
+
+
+Measure "Population whose main language is Bengali (with Sylheti and Chatgaya)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0015'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Bengali (with Sylheti and Chatgaya)" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0015',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Bengali (with Sylheti and Chatgaya)" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0015',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0020:
+
+Population whose main language is Chinese
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Chinese"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0020'
+      );
+
+
+
+
+
+Measure "Population whose main language is Chinese" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0020'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Chinese" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0020',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Chinese" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0020',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0002:
+
+Population whose main language is English (English or Welsh if in Wales)
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is English (English or Welsh if in Wales)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0002'
+      );
+
+
+
+
+
+Measure "Population whose main language is English (English or Welsh if in Wales)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0002'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is English (English or Welsh if in Wales)" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0002',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is English (English or Welsh if in Wales)" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0002',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0003:
+
+Population whose main language is French
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is French"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0003'
+      );
+
+
+
+
+
+Measure "Population whose main language is French" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0003'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is French" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0003',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is French" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0003',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0016:
+
+Population whose main language is Gujarati
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Gujarati"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0016'
+      );
+
+
+
+
+
+Measure "Population whose main language is Gujarati" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0016'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Gujarati" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0016',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Gujarati" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0016',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0013:
+
+Population whose main language is Panjabi
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Panjabi"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0013'
+      );
+
+
+
+
+
+Measure "Population whose main language is Panjabi" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0013'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Panjabi" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0013',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Panjabi" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0013',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0007:
+
+Population whose main language is Polish
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Polish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0007'
+      );
+
+
+
+
+
+Measure "Population whose main language is Polish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0007'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Polish" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0007',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Polish" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0007',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0004:
+
+Population whose main language is Portuguese
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Portuguese"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0004'
+      );
+
+
+
+
+
+Measure "Population whose main language is Portuguese" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0004'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Portuguese" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0004',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Portuguese" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0004',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0005:
+
+Population whose main language is Spanish
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0005'
+      );
+
+
+
+
+
+Measure "Population whose main language is Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0005'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Spanish" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0005',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Spanish" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0005',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0017:
+
+Population whose main language is Tamil
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Tamil"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0017'
+      );
+
+
+
+
+
+Measure "Population whose main language is Tamil" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0017'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Tamil" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0017',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Tamil" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0017',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+
+
+
+
+
+.. _uk.ons.LC2104EW0014:
+
+Population whose main language is Urdu
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Measure "Population whose main language is Urdu"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0014'
+      );
+
+
+
+
+
+Measure "Population whose main language is Urdu" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'uk.ons.LC2104EW0014'
+        );
+
+
+
+
+
+
+Measure "Population whose main language is Urdu" percent of "Population age 3 and over" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'uk.ons.LC2104EW0014',
+        'denominator'
+      );
+
+
+Measure "Population whose main language is Urdu" percent of "Population age 3 and over" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'uk.ons.LC2104EW0014',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`uk.ons.LC2104EW0001`
+
+
+
+

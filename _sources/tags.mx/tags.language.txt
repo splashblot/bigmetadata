@@ -1,0 +1,1879 @@
+
+
+.. Language:
+
+Language
+===========================================================================
+
+What languages people speak.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _mx.inegi_columns.INDI4:
+
+Population 3 or more years old who speak an indigenous language and do not speak Spanish
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.INDI4.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population 3 or more years old who speak an indigenous language and do not speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI4'
+      );
+
+
+
+
+
+Measure "Population 3 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI4'
+        );
+
+
+
+
+
+
+Measure "Population 3 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 3 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI4',
+        'denominator'
+      );
+
+
+Measure "Population 3 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 3 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI4',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB17`
+
+
+
+.. contents:: Subcolumns of Population 3 or more years old who speak an indigenous language and do not speak Spanish
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.INDI5:
+
+Female population 3 or more years old who speak an indigenous language and do not speak Spanish
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI5.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female population 3 or more years old who speak an indigenous language and do not speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI5'
+      );
+
+
+
+
+
+Measure "Female population 3 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI5'
+        );
+
+
+
+
+
+
+Measure "Female population 3 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 3 or more years old who speak an indigenous language and do not speak Spanish" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI5',
+        'denominator'
+      );
+
+
+Measure "Female population 3 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 3 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI5',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI4`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB48`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.INDI6:
+
+Male population 3 or more years old who speak an indigenous language and do not speak Spanish
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI6.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male population 3 or more years old who speak an indigenous language and do not speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI6'
+      );
+
+
+
+
+
+Measure "Male population 3 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI6'
+        );
+
+
+
+
+
+
+Measure "Male population 3 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 3 or more years old who speak an indigenous language and do not speak Spanish" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI6',
+        'denominator'
+      );
+
+
+Measure "Male population 3 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 3 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI6',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI4`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB73`
+
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.INDI7:
+
+Population 3 or more years old who speak an indigenous language and speak Spanish
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.INDI7.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population 3 or more years old who speak an indigenous language and speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI7'
+      );
+
+
+
+
+
+Measure "Population 3 or more years old who speak an indigenous language and speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI7'
+        );
+
+
+
+
+
+
+Measure "Population 3 or more years old who speak an indigenous language and speak Spanish" percent of "Population 3 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI7',
+        'denominator'
+      );
+
+
+Measure "Population 3 or more years old who speak an indigenous language and speak Spanish" percent of "Population 3 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI7',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB17`
+
+
+
+.. contents:: Subcolumns of Population 3 or more years old who speak an indigenous language and speak Spanish
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.INDI8:
+
+Female population 3 or more years old who speak an indigenous language and speak Spanish
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI8.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female population 3 or more years old who speak an indigenous language and speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI8'
+      );
+
+
+
+
+
+Measure "Female population 3 or more years old who speak an indigenous language and speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI8'
+        );
+
+
+
+
+
+
+Measure "Female population 3 or more years old who speak an indigenous language and speak Spanish" percent of "Female population 3 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI8',
+        'denominator'
+      );
+
+
+Measure "Female population 3 or more years old who speak an indigenous language and speak Spanish" percent of "Female population 3 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI8',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB48`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI7`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.INDI9:
+
+Male population 3 or more years old who speak an indigenous language and speak Spanish
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI9.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male population 3 or more years old who speak an indigenous language and speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI9'
+      );
+
+
+
+
+
+Measure "Male population 3 or more years old who speak an indigenous language and speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI9'
+        );
+
+
+
+
+
+
+Measure "Male population 3 or more years old who speak an indigenous language and speak Spanish" percent of "Male population 3 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI9',
+        'denominator'
+      );
+
+
+Measure "Male population 3 or more years old who speak an indigenous language and speak Spanish" percent of "Male population 3 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI9',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB73`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI7`
+
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.INDI10:
+
+Population 5 or more years old who speak an indigenous language
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.INDI10.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population 5 or more years old who speak an indigenous language"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI10'
+      );
+
+
+
+
+
+Measure "Population 5 or more years old who speak an indigenous language" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI10'
+        );
+
+
+
+
+
+
+Measure "Population 5 or more years old who speak an indigenous language" percent of "Population 5 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI10',
+        'denominator'
+      );
+
+
+Measure "Population 5 or more years old who speak an indigenous language" percent of "Population 5 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI10',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB18`
+
+
+
+.. contents:: Subcolumns of Population 5 or more years old who speak an indigenous language
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.INDI11:
+
+Female population 5 or more years old who speak an indigenous language
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI11.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female population 5 or more years old who speak an indigenous language"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI11'
+      );
+
+
+
+
+
+Measure "Female population 5 or more years old who speak an indigenous language" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI11'
+        );
+
+
+
+
+
+
+Measure "Female population 5 or more years old who speak an indigenous language" percent of "Female population 5 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI11',
+        'denominator'
+      );
+
+
+Measure "Female population 5 or more years old who speak an indigenous language" percent of "Female population 5 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI11',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB49`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI10`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.INDI12:
+
+Male population 5 or more years old who speak an indigenous language
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI12.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male population 5 or more years old who speak an indigenous language"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI12'
+      );
+
+
+
+
+
+Measure "Male population 5 or more years old who speak an indigenous language" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI12'
+        );
+
+
+
+
+
+
+Measure "Male population 5 or more years old who speak an indigenous language" percent of "Male population 5 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI12',
+        'denominator'
+      );
+
+
+Measure "Male population 5 or more years old who speak an indigenous language" percent of "Male population 5 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI12',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB74`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI10`
+
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.INDI13:
+
+Population 5 or more years old who speak an indigenous language and do not speak Spanish
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.INDI13.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population 5 or more years old who speak an indigenous language and do not speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI13'
+      );
+
+
+
+
+
+Measure "Population 5 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI13'
+        );
+
+
+
+
+
+
+Measure "Population 5 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 5 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI13',
+        'denominator'
+      );
+
+
+Measure "Population 5 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 5 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI13',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB18`
+
+
+
+.. contents:: Subcolumns of Population 5 or more years old who speak an indigenous language and do not speak Spanish
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.INDI14:
+
+Female population 5 or more years old who speak an indigenous language and do not speak Spanish
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI14.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female population 5 or more years old who speak an indigenous language and do not speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI14'
+      );
+
+
+
+
+
+Measure "Female population 5 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI14'
+        );
+
+
+
+
+
+
+Measure "Female population 5 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 5 or more years old who speak an indigenous language and do not speak Spanish" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI14',
+        'denominator'
+      );
+
+
+Measure "Female population 5 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 5 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI14',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI13`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB49`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.INDI15:
+
+Male population 5 or more years old who speak an indigenous language and do not speak Spanish
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI15.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male population 5 or more years old who speak an indigenous language and do not speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI15'
+      );
+
+
+
+
+
+Measure "Male population 5 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI15'
+        );
+
+
+
+
+
+
+Measure "Male population 5 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 5 or more years old who speak an indigenous language and do not speak Spanish" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI15',
+        'denominator'
+      );
+
+
+Measure "Male population 5 or more years old who speak an indigenous language and do not speak Spanish" percent of "Population 5 or more years old who speak an indigenous language and do not speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI15',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI13`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB74`
+
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.INDI16:
+
+Population 5 or more years old who speak an indigenous language and speak Spanish
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.INDI16.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population 5 or more years old who speak an indigenous language and speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI16'
+      );
+
+
+
+
+
+Measure "Population 5 or more years old who speak an indigenous language and speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI16'
+        );
+
+
+
+
+
+
+Measure "Population 5 or more years old who speak an indigenous language and speak Spanish" percent of "Population 5 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI16',
+        'denominator'
+      );
+
+
+Measure "Population 5 or more years old who speak an indigenous language and speak Spanish" percent of "Population 5 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI16',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB18`
+
+
+
+.. contents:: Subcolumns of Population 5 or more years old who speak an indigenous language and speak Spanish
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.INDI17:
+
+Female population 5 or more years old who speak an indigenous language and speak Spanish
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI17.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female population 5 or more years old who speak an indigenous language and speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI17'
+      );
+
+
+
+
+
+Measure "Female population 5 or more years old who speak an indigenous language and speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI17'
+        );
+
+
+
+
+
+
+Measure "Female population 5 or more years old who speak an indigenous language and speak Spanish" percent of "Female population 5 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI17',
+        'denominator'
+      );
+
+
+Measure "Female population 5 or more years old who speak an indigenous language and speak Spanish" percent of "Female population 5 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI17',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB49`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI16`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.INDI18:
+
+Male population 5 or more years old who speak an indigenous language and speak Spanish
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI18.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male population 5 or more years old who speak an indigenous language and speak Spanish"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI18'
+      );
+
+
+
+
+
+Measure "Male population 5 or more years old who speak an indigenous language and speak Spanish" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI18'
+        );
+
+
+
+
+
+
+Measure "Male population 5 or more years old who speak an indigenous language and speak Spanish" percent of "Male population 5 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI18',
+        'denominator'
+      );
+
+
+Measure "Male population 5 or more years old who speak an indigenous language and speak Spanish" percent of "Male population 5 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI18',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB74`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI16`
+
+
+
+  
+  
+
+
+
+
+
+
+.. _mx.inegi_columns.INDI1:
+
+Population age 3 or more who speak an indigenous language
+---------------------------------------------------------------------------
+
+
+.. figure:: ../img/mx.inegi_columns.INDI1.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Population age 3 or more who speak an indigenous language"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI1'
+      );
+
+
+
+
+
+Measure "Population age 3 or more who speak an indigenous language" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI1'
+        );
+
+
+
+
+
+
+Measure "Population age 3 or more who speak an indigenous language" percent of "Population 3 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI1',
+        'denominator'
+      );
+
+
+Measure "Population age 3 or more who speak an indigenous language" percent of "Population 3 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI1',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB17`
+
+
+
+.. contents:: Subcolumns of Population age 3 or more who speak an indigenous language
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+.. _mx.inegi_columns.INDI2:
+
+Female population age 3 or more who speak an indigenous language
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI2.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Female population age 3 or more who speak an indigenous language"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI2'
+      );
+
+
+
+
+
+Measure "Female population age 3 or more who speak an indigenous language" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI2'
+        );
+
+
+
+
+
+
+Measure "Female population age 3 or more who speak an indigenous language" percent of "Female population 3 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI2',
+        'denominator'
+      );
+
+
+Measure "Female population age 3 or more who speak an indigenous language" percent of "Female population 3 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI2',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB48`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI1`
+
+
+
+  
+  
+  
+  
+
+.. _mx.inegi_columns.INDI3:
+
+Male population age 3 or more who speak an indigenous language
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. figure:: ../img/mx.inegi_columns.INDI3.png
+  :width: 100 %
+  :align: center
+
+
+
+
+
+
+
+
+Measure "Male population age 3 or more who speak an indigenous language"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+  
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI3'
+      );
+
+
+
+
+
+Measure "Male population age 3 or more who speak an indigenous language" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'mx.inegi_columns.INDI3'
+        );
+
+
+
+
+
+
+Measure "Male population age 3 or more who speak an indigenous language" percent of "Male population 3 or more years old" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'mx.inegi_columns.INDI3',
+        'denominator'
+      );
+
+
+Measure "Male population age 3 or more who speak an indigenous language" percent of "Male population 3 or more years old" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'mx.inegi_columns.INDI3',
+        'denominator'
+      );
+
+
+
+
+
+
+
+
+
+:denominator:
+
+    :ref:`mx.inegi_columns.POB73`
+
+:denominator:
+
+    :ref:`mx.inegi_columns.INDI1`
+
+
+
+  
+  
+
+

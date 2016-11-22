@@ -3,7 +3,7 @@
 .. Commerce & Economy:
 
 Commerce & Economy
-===========================================================================
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 Broader measures of economic and commercial activity.
 
@@ -18,7 +18,7 @@ Broader measures of economic and commercial activity.
 .. _us.bls.qtrly_estabs_10:
 
 Establishments in Total, all industries
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -88,7 +88,7 @@ Measure "Establishments in Total, all industries" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -133,7 +133,7 @@ Measure "Establishments in Total, all industries" within an area:
 .. _us.bls.qtrly_estabs_72:
 
 Establishments in Accommodation and food services
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -231,7 +231,7 @@ Measure "Establishments in Accommodation and food services" percent of "Establis
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -277,7 +277,7 @@ Measure "Establishments in Accommodation and food services" percent of "Establis
 .. _us.bls.qtrly_estabs_56:
 
 Establishments in Administrative and waste services
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -375,7 +375,7 @@ Measure "Establishments in Administrative and waste services" percent of "Establ
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -421,7 +421,7 @@ Measure "Establishments in Administrative and waste services" percent of "Establ
 .. _us.bls.qtrly_estabs_11:
 
 Establishments in Agriculture, forestry, fishing and hunting
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -519,7 +519,7 @@ Measure "Establishments in Agriculture, forestry, fishing and hunting" percent o
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -565,7 +565,7 @@ Measure "Establishments in Agriculture, forestry, fishing and hunting" percent o
 .. _us.bls.qtrly_estabs_71:
 
 Establishments in Arts, entertainment, and recreation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -663,151 +663,7 @@ Measure "Establishments in Arts, entertainment, and recreation" percent of "Esta
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2015Q4, 2015Q3, 2015Q2, 2015Q1, 2014Q4, 2014Q3, 2014Q2, 2014Q1, 2013Q4, 2013Q3, 2013Q2, 2013Q1, 2012Q4, 2012Q3, 2012Q2, 2012Q1
-
-.. raw:: html
-
-   </td>
-
-   
-
-.. raw:: html
-
-   </tr>
-   </tbody>
-   </table>
-
-
-
-
-:Denominator:
-
-    :ref:`us.bls.qtrly_estabs_10`
-
-
-:Source:
-
-    
-
-:License:
-
-    
-
-
-  
-  
-  
-  
-
-.. _us.bls.qtrly_estabs_1012:
-
-Establishments in Construction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-.. figure:: ../img/us.bls.qtrly_estabs_1012.png
-  :width: 100 %
-  :align: center
-
-
-
-Count of establishments in a given quarter in the Construction industry (NAICS 1012).Construction is .
-
-
-
-
-
-Measure "Establishments in Construction"  density per sq. kilometer  for one point:
-
-
-.. code-block:: postgresql
-
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.bls.qtrly_estabs_1012'
-      );
-
-
-
-
-
-Measure "Establishments in Construction" within an area:
-
-.. code-block:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.bls.qtrly_estabs_1012'
-        );
-
-
-
-
-
-
-Measure "Establishments in Construction" percent of "Establishments in Total, all industries" at one point:
-
-.. code-block:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.bls.qtrly_estabs_1012',
-        'denominator'
-      );
-
-
-Measure "Establishments in Construction" percent of "Establishments in Total, all industries" within an area:
-
-.. code-block:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-        'us.bls.qtrly_estabs_1012',
-        'denominator'
-      );
-
-
-
-
-
-
-.. raw:: html
-
-   <table border="1" class="docutils">
-   <thead valign="bottom">
-   <tr class="row-odd"><th class="head">Boundary</th>
-   <th class="head">Time (default is latest)</th>
-   </tr>
-   </thead>
-   <tbody valign="top">
-
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -853,7 +709,7 @@ Measure "Establishments in Construction" percent of "Establishments in Total, al
 .. _us.bls.qtrly_estabs_23:
 
 Establishments in Construction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -951,7 +807,151 @@ Measure "Establishments in Construction" percent of "Establishments in Total, al
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2015Q4, 2015Q3, 2015Q2, 2015Q1, 2014Q4, 2014Q3, 2014Q2, 2014Q1, 2013Q4, 2013Q3, 2013Q2, 2013Q1, 2012Q4, 2012Q3, 2012Q2, 2012Q1
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`us.bls.qtrly_estabs_10`
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
+.. _us.bls.qtrly_estabs_1012:
+
+Establishments in Construction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+.. figure:: ../img/us.bls.qtrly_estabs_1012.png
+  :width: 100 %
+  :align: center
+
+
+
+Count of establishments in a given quarter in the Construction industry (NAICS 1012).Construction is .
+
+
+
+
+
+Measure "Establishments in Construction"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.bls.qtrly_estabs_1012'
+      );
+
+
+
+
+
+Measure "Establishments in Construction" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.bls.qtrly_estabs_1012'
+        );
+
+
+
+
+
+
+Measure "Establishments in Construction" percent of "Establishments in Total, all industries" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.bls.qtrly_estabs_1012',
+        'denominator'
+      );
+
+
+Measure "Establishments in Construction" percent of "Establishments in Total, all industries" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.bls.qtrly_estabs_1012',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -997,7 +997,7 @@ Measure "Establishments in Construction" percent of "Establishments in Total, al
 .. _us.bls.qtrly_estabs_1025:
 
 Establishments in Education and health services
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1095,7 +1095,7 @@ Measure "Establishments in Education and health services" percent of "Establishm
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -1141,7 +1141,7 @@ Measure "Establishments in Education and health services" percent of "Establishm
 .. _us.bls.qtrly_estabs_61:
 
 Establishments in Educational services
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1239,7 +1239,7 @@ Measure "Establishments in Educational services" percent of "Establishments in T
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -1285,7 +1285,7 @@ Measure "Establishments in Educational services" percent of "Establishments in T
 .. _us.bls.qtrly_estabs_52:
 
 Establishments in Finance and insurance
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1383,7 +1383,7 @@ Measure "Establishments in Finance and insurance" percent of "Establishments in 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -1429,7 +1429,7 @@ Measure "Establishments in Finance and insurance" percent of "Establishments in 
 .. _us.bls.qtrly_estabs_1023:
 
 Establishments in Financial activities
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1527,7 +1527,7 @@ Measure "Establishments in Financial activities" percent of "Establishments in T
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -1573,7 +1573,7 @@ Measure "Establishments in Financial activities" percent of "Establishments in T
 .. _us.bls.qtrly_estabs_62:
 
 Establishments in Health care and social assistance
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1671,7 +1671,7 @@ Measure "Establishments in Health care and social assistance" percent of "Establ
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -1717,7 +1717,7 @@ Measure "Establishments in Health care and social assistance" percent of "Establ
 .. _us.bls.qtrly_estabs_1022:
 
 Establishments in Information
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1815,7 +1815,7 @@ Measure "Establishments in Information" percent of "Establishments in Total, all
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -1861,7 +1861,7 @@ Measure "Establishments in Information" percent of "Establishments in Total, all
 .. _us.bls.qtrly_estabs_51:
 
 Establishments in Information
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1959,7 +1959,7 @@ Measure "Establishments in Information" percent of "Establishments in Total, all
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -2005,7 +2005,7 @@ Measure "Establishments in Information" percent of "Establishments in Total, all
 .. _us.bls.qtrly_estabs_1026:
 
 Establishments in Leisure and hospitality
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2103,7 +2103,7 @@ Measure "Establishments in Leisure and hospitality" percent of "Establishments i
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -2149,7 +2149,7 @@ Measure "Establishments in Leisure and hospitality" percent of "Establishments i
 .. _us.bls.qtrly_estabs_55:
 
 Establishments in Management of companies and enterprises
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2247,7 +2247,7 @@ Measure "Establishments in Management of companies and enterprises" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -2293,7 +2293,7 @@ Measure "Establishments in Management of companies and enterprises" percent of "
 .. _us.bls.qtrly_estabs_31_33:
 
 Establishments in Manufacturing
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2391,7 +2391,7 @@ Measure "Establishments in Manufacturing" percent of "Establishments in Total, a
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -2437,7 +2437,7 @@ Measure "Establishments in Manufacturing" percent of "Establishments in Total, a
 .. _us.bls.qtrly_estabs_1013:
 
 Establishments in Manufacturing
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2535,7 +2535,7 @@ Measure "Establishments in Manufacturing" percent of "Establishments in Total, a
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -2581,7 +2581,7 @@ Measure "Establishments in Manufacturing" percent of "Establishments in Total, a
 .. _us.bls.qtrly_estabs_21:
 
 Establishments in Mining, quarrying, and oil and gas extraction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2679,7 +2679,7 @@ Measure "Establishments in Mining, quarrying, and oil and gas extraction" percen
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -2725,7 +2725,7 @@ Measure "Establishments in Mining, quarrying, and oil and gas extraction" percen
 .. _us.bls.qtrly_estabs_1011:
 
 Establishments in Natural resources and mining
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2823,7 +2823,7 @@ Measure "Establishments in Natural resources and mining" percent of "Establishme
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -2869,7 +2869,7 @@ Measure "Establishments in Natural resources and mining" percent of "Establishme
 .. _us.bls.qtrly_estabs_1027:
 
 Establishments in Other services
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2967,7 +2967,7 @@ Measure "Establishments in Other services" percent of "Establishments in Total, 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -3013,7 +3013,7 @@ Measure "Establishments in Other services" percent of "Establishments in Total, 
 .. _us.bls.qtrly_estabs_81:
 
 Establishments in Other services, except public administration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3111,7 +3111,7 @@ Measure "Establishments in Other services, except public administration" percent
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -3157,7 +3157,7 @@ Measure "Establishments in Other services, except public administration" percent
 .. _us.bls.qtrly_estabs_1024:
 
 Establishments in Professional and business services
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3255,7 +3255,7 @@ Measure "Establishments in Professional and business services" percent of "Estab
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -3301,7 +3301,7 @@ Measure "Establishments in Professional and business services" percent of "Estab
 .. _us.bls.qtrly_estabs_54:
 
 Establishments in Professional and technical services
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3399,7 +3399,7 @@ Measure "Establishments in Professional and technical services" percent of "Esta
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -3442,111 +3442,10 @@ Measure "Establishments in Professional and technical services" percent of "Esta
   
   
 
-.. _us.bls.qtrly_estabs_1028:
-
-Establishments in Public administration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
-
-Count of establishments in a given quarter in the Public administration industry (NAICS 1028).Public administration is .
-
-
-
-
-
-Measure "Establishments in Public administration"  density per sq. kilometer  for one point:
-
-
-.. code-block:: postgresql
-
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.bls.qtrly_estabs_1028'
-      );
-
-
-
-
-
-Measure "Establishments in Public administration" within an area:
-
-.. code-block:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.bls.qtrly_estabs_1028'
-        );
-
-
-
-
-
-
-Measure "Establishments in Public administration" percent of "Establishments in Total, all industries" at one point:
-
-.. code-block:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.bls.qtrly_estabs_1028',
-        'denominator'
-      );
-
-
-Measure "Establishments in Public administration" percent of "Establishments in Total, all industries" within an area:
-
-.. code-block:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-        'us.bls.qtrly_estabs_1028',
-        'denominator'
-      );
-
-
-
-
-
-
-
-:Denominator:
-
-    :ref:`us.bls.qtrly_estabs_10`
-
-
-:Source:
-
-    
-
-:License:
-
-    
-
-
-  
-  
-  
-  
-
 .. _us.bls.qtrly_estabs_92:
 
 Establishments in Public administration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3644,10 +3543,111 @@ Measure "Establishments in Public administration" percent of "Establishments in 
   
   
 
+.. _us.bls.qtrly_estabs_1028:
+
+Establishments in Public administration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Count of establishments in a given quarter in the Public administration industry (NAICS 1028).Public administration is .
+
+
+
+
+
+Measure "Establishments in Public administration"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.bls.qtrly_estabs_1028'
+      );
+
+
+
+
+
+Measure "Establishments in Public administration" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.bls.qtrly_estabs_1028'
+        );
+
+
+
+
+
+
+Measure "Establishments in Public administration" percent of "Establishments in Total, all industries" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.bls.qtrly_estabs_1028',
+        'denominator'
+      );
+
+
+Measure "Establishments in Public administration" percent of "Establishments in Total, all industries" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+        'us.bls.qtrly_estabs_1028',
+        'denominator'
+      );
+
+
+
+
+
+
+
+:Denominator:
+
+    :ref:`us.bls.qtrly_estabs_10`
+
+
+:Source:
+
+    
+
+:License:
+
+    
+
+
+  
+  
+  
+  
+
 .. _us.bls.qtrly_estabs_53:
 
 Establishments in Real estate and rental and leasing
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3745,7 +3745,7 @@ Measure "Establishments in Real estate and rental and leasing" percent of "Estab
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -3791,7 +3791,7 @@ Measure "Establishments in Real estate and rental and leasing" percent of "Estab
 .. _us.bls.qtrly_estabs_44_45:
 
 Establishments in Retail trade
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3889,7 +3889,7 @@ Measure "Establishments in Retail trade" percent of "Establishments in Total, al
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -3935,7 +3935,7 @@ Measure "Establishments in Retail trade" percent of "Establishments in Total, al
 .. _us.bls.qtrly_estabs_1021:
 
 Establishments in Trade, transportation, and utilities
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4033,7 +4033,7 @@ Measure "Establishments in Trade, transportation, and utilities" percent of "Est
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -4079,7 +4079,7 @@ Measure "Establishments in Trade, transportation, and utilities" percent of "Est
 .. _us.bls.qtrly_estabs_48_49:
 
 Establishments in Transportation and warehousing
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4177,7 +4177,7 @@ Measure "Establishments in Transportation and warehousing" percent of "Establish
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -4223,7 +4223,7 @@ Measure "Establishments in Transportation and warehousing" percent of "Establish
 .. _us.bls.qtrly_estabs_1029:
 
 Establishments in Unclassified
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4321,7 +4321,7 @@ Measure "Establishments in Unclassified" percent of "Establishments in Total, al
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -4367,7 +4367,7 @@ Measure "Establishments in Unclassified" percent of "Establishments in Total, al
 .. _us.bls.qtrly_estabs_99:
 
 Establishments in Unclassified
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4465,7 +4465,7 @@ Measure "Establishments in Unclassified" percent of "Establishments in Total, al
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -4511,7 +4511,7 @@ Measure "Establishments in Unclassified" percent of "Establishments in Total, al
 .. _us.bls.qtrly_estabs_22:
 
 Establishments in Utilities
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4609,7 +4609,7 @@ Measure "Establishments in Utilities" percent of "Establishments in Total, all i
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -4655,7 +4655,7 @@ Measure "Establishments in Utilities" percent of "Establishments in Total, all i
 .. _us.bls.qtrly_estabs_42:
 
 Establishments in Wholesale trade
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4753,7 +4753,7 @@ Measure "Establishments in Wholesale trade" percent of "Establishments in Total,
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -4802,7 +4802,7 @@ Measure "Establishments in Wholesale trade" percent of "Establishments in Total,
 .. _us.bls.lq_qtrly_estabs_72:
 
 Location quotient of establishments in Accommodation and food services
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -4863,7 +4863,7 @@ Location quotient of establishments in Accommodation and food services is only a
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -4905,7 +4905,7 @@ Location quotient of establishments in Accommodation and food services is only a
 .. _us.bls.lq_qtrly_estabs_56:
 
 Location quotient of establishments in Administrative and waste services
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -4966,7 +4966,7 @@ Location quotient of establishments in Administrative and waste services is only
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5008,7 +5008,7 @@ Location quotient of establishments in Administrative and waste services is only
 .. _us.bls.lq_qtrly_estabs_11:
 
 Location quotient of establishments in Agriculture, forestry, fishing and hunting
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5069,7 +5069,7 @@ Location quotient of establishments in Agriculture, forestry, fishing and huntin
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5111,7 +5111,7 @@ Location quotient of establishments in Agriculture, forestry, fishing and huntin
 .. _us.bls.lq_qtrly_estabs_71:
 
 Location quotient of establishments in Arts, entertainment, and recreation
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5172,7 +5172,7 @@ Location quotient of establishments in Arts, entertainment, and recreation is on
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5214,7 +5214,7 @@ Location quotient of establishments in Arts, entertainment, and recreation is on
 .. _us.bls.lq_qtrly_estabs_1012:
 
 Location quotient of establishments in Construction
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5275,7 +5275,7 @@ Location quotient of establishments in Construction is only available for point 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5317,7 +5317,7 @@ Location quotient of establishments in Construction is only available for point 
 .. _us.bls.lq_qtrly_estabs_23:
 
 Location quotient of establishments in Construction
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5378,7 +5378,7 @@ Location quotient of establishments in Construction is only available for point 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5420,7 +5420,7 @@ Location quotient of establishments in Construction is only available for point 
 .. _us.bls.lq_qtrly_estabs_1025:
 
 Location quotient of establishments in Education and health services
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5481,7 +5481,7 @@ Location quotient of establishments in Education and health services is only ava
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5523,7 +5523,7 @@ Location quotient of establishments in Education and health services is only ava
 .. _us.bls.lq_qtrly_estabs_61:
 
 Location quotient of establishments in Educational services
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5584,7 +5584,7 @@ Location quotient of establishments in Educational services is only available fo
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5626,7 +5626,7 @@ Location quotient of establishments in Educational services is only available fo
 .. _us.bls.lq_qtrly_estabs_52:
 
 Location quotient of establishments in Finance and insurance
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5687,7 +5687,7 @@ Location quotient of establishments in Finance and insurance is only available f
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5729,7 +5729,7 @@ Location quotient of establishments in Finance and insurance is only available f
 .. _us.bls.lq_qtrly_estabs_1023:
 
 Location quotient of establishments in Financial activities
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5790,7 +5790,7 @@ Location quotient of establishments in Financial activities is only available fo
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5832,7 +5832,7 @@ Location quotient of establishments in Financial activities is only available fo
 .. _us.bls.lq_qtrly_estabs_62:
 
 Location quotient of establishments in Health care and social assistance
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5893,7 +5893,7 @@ Location quotient of establishments in Health care and social assistance is only
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -5935,7 +5935,7 @@ Location quotient of establishments in Health care and social assistance is only
 .. _us.bls.lq_qtrly_estabs_1022:
 
 Location quotient of establishments in Information
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5996,7 +5996,7 @@ Location quotient of establishments in Information is only available for point l
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6038,7 +6038,7 @@ Location quotient of establishments in Information is only available for point l
 .. _us.bls.lq_qtrly_estabs_51:
 
 Location quotient of establishments in Information
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -6099,7 +6099,7 @@ Location quotient of establishments in Information is only available for point l
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6141,7 +6141,7 @@ Location quotient of establishments in Information is only available for point l
 .. _us.bls.lq_qtrly_estabs_1026:
 
 Location quotient of establishments in Leisure and hospitality
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -6202,7 +6202,7 @@ Location quotient of establishments in Leisure and hospitality is only available
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6244,7 +6244,7 @@ Location quotient of establishments in Leisure and hospitality is only available
 .. _us.bls.lq_qtrly_estabs_55:
 
 Location quotient of establishments in Management of companies and enterprises
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -6305,7 +6305,7 @@ Location quotient of establishments in Management of companies and enterprises i
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6347,7 +6347,7 @@ Location quotient of establishments in Management of companies and enterprises i
 .. _us.bls.lq_qtrly_estabs_1013:
 
 Location quotient of establishments in Manufacturing
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -6408,7 +6408,7 @@ Location quotient of establishments in Manufacturing is only available for point
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6450,7 +6450,7 @@ Location quotient of establishments in Manufacturing is only available for point
 .. _us.bls.lq_qtrly_estabs_31_33:
 
 Location quotient of establishments in Manufacturing
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -6511,7 +6511,7 @@ Location quotient of establishments in Manufacturing is only available for point
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6553,7 +6553,7 @@ Location quotient of establishments in Manufacturing is only available for point
 .. _us.bls.lq_qtrly_estabs_21:
 
 Location quotient of establishments in Mining, quarrying, and oil and gas extraction
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -6614,7 +6614,7 @@ Location quotient of establishments in Mining, quarrying, and oil and gas extrac
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6656,7 +6656,7 @@ Location quotient of establishments in Mining, quarrying, and oil and gas extrac
 .. _us.bls.lq_qtrly_estabs_1011:
 
 Location quotient of establishments in Natural resources and mining
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -6717,7 +6717,7 @@ Location quotient of establishments in Natural resources and mining is only avai
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6759,7 +6759,7 @@ Location quotient of establishments in Natural resources and mining is only avai
 .. _us.bls.lq_qtrly_estabs_1027:
 
 Location quotient of establishments in Other services
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -6820,7 +6820,7 @@ Location quotient of establishments in Other services is only available for poin
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6862,7 +6862,7 @@ Location quotient of establishments in Other services is only available for poin
 .. _us.bls.lq_qtrly_estabs_81:
 
 Location quotient of establishments in Other services, except public administration
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -6923,7 +6923,7 @@ Location quotient of establishments in Other services, except public administrat
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -6965,7 +6965,7 @@ Location quotient of establishments in Other services, except public administrat
 .. _us.bls.lq_qtrly_estabs_1024:
 
 Location quotient of establishments in Professional and business services
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7026,7 +7026,7 @@ Location quotient of establishments in Professional and business services is onl
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7068,7 +7068,7 @@ Location quotient of establishments in Professional and business services is onl
 .. _us.bls.lq_qtrly_estabs_54:
 
 Location quotient of establishments in Professional and technical services
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7129,7 +7129,7 @@ Location quotient of establishments in Professional and technical services is on
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7171,7 +7171,7 @@ Location quotient of establishments in Professional and technical services is on
 .. _us.bls.lq_qtrly_estabs_53:
 
 Location quotient of establishments in Real estate and rental and leasing
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7232,7 +7232,7 @@ Location quotient of establishments in Real estate and rental and leasing is onl
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7274,7 +7274,7 @@ Location quotient of establishments in Real estate and rental and leasing is onl
 .. _us.bls.lq_qtrly_estabs_44_45:
 
 Location quotient of establishments in Retail trade
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7335,7 +7335,7 @@ Location quotient of establishments in Retail trade is only available for point 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7377,7 +7377,7 @@ Location quotient of establishments in Retail trade is only available for point 
 .. _us.bls.lq_qtrly_estabs_10:
 
 Location quotient of establishments in Total, all industries
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7438,7 +7438,7 @@ Location quotient of establishments in Total, all industries is only available f
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7480,7 +7480,7 @@ Location quotient of establishments in Total, all industries is only available f
 .. _us.bls.lq_qtrly_estabs_1021:
 
 Location quotient of establishments in Trade, transportation, and utilities
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7541,7 +7541,7 @@ Location quotient of establishments in Trade, transportation, and utilities is o
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7583,7 +7583,7 @@ Location quotient of establishments in Trade, transportation, and utilities is o
 .. _us.bls.lq_qtrly_estabs_48_49:
 
 Location quotient of establishments in Transportation and warehousing
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7644,7 +7644,7 @@ Location quotient of establishments in Transportation and warehousing is only av
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7686,7 +7686,7 @@ Location quotient of establishments in Transportation and warehousing is only av
 .. _us.bls.lq_qtrly_estabs_1029:
 
 Location quotient of establishments in Unclassified
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7747,7 +7747,7 @@ Location quotient of establishments in Unclassified is only available for point 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7789,7 +7789,7 @@ Location quotient of establishments in Unclassified is only available for point 
 .. _us.bls.lq_qtrly_estabs_99:
 
 Location quotient of establishments in Unclassified
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7850,7 +7850,7 @@ Location quotient of establishments in Unclassified is only available for point 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7892,7 +7892,7 @@ Location quotient of establishments in Unclassified is only available for point 
 .. _us.bls.lq_qtrly_estabs_22:
 
 Location quotient of establishments in Utilities
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -7953,7 +7953,7 @@ Location quotient of establishments in Utilities is only available for point loo
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 
@@ -7995,7 +7995,7 @@ Location quotient of establishments in Utilities is only available for point loo
 .. _us.bls.lq_qtrly_estabs_42:
 
 Location quotient of establishments in Wholesale trade
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -8056,7 +8056,7 @@ Location quotient of establishments in Wholesale trade is only available for poi
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county_clipped`
+:ref:`us.census.tiger.county`
 
 .. raw:: html
 

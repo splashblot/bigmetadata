@@ -1,0 +1,445 @@
+
+
+.. Society:
+
+Society
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+Measures of society quality of life
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _eu.eurostat.crim_gen_regnr_iccs05012:
+
+Crimes recorded - Burglary of private residential premises
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Crimes recorded - Burglary of private residential premises
+
+
+
+
+
+Measure "Crimes recorded - Burglary of private residential premises"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.crim_gen_regnr_iccs05012'
+      );
+
+
+
+
+
+Measure "Crimes recorded - Burglary of private residential premises" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.crim_gen_regnr_iccs05012'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010, 2009, 2008
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+
+
+
+
+
+.. _eu.eurostat.crim_gen_regnr_iccs0101:
+
+Crimes recorded - Intentional homicide
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Crimes recorded - Intentional homicide
+
+
+
+
+
+Measure "Crimes recorded - Intentional homicide"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.crim_gen_regnr_iccs0101'
+      );
+
+
+
+
+
+Measure "Crimes recorded - Intentional homicide" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.crim_gen_regnr_iccs0101'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010, 2009, 2008
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+
+
+
+
+
+.. _eu.eurostat.crim_gen_regnr_iccs0401:
+
+Crimes recorded - Robbery
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Crimes recorded - Robbery
+
+
+
+
+
+Measure "Crimes recorded - Robbery"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.crim_gen_regnr_iccs0401'
+      );
+
+
+
+
+
+Measure "Crimes recorded - Robbery" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.crim_gen_regnr_iccs0401'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010, 2009, 2008
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+
+
+
+
+
+.. _eu.eurostat.crim_gen_regnr_iccs050211:
+
+Crimes recorded - Theft of a motorized land vehicle
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Crimes recorded - Theft of a motorized land vehicle
+
+
+
+
+
+Measure "Crimes recorded - Theft of a motorized land vehicle"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.crim_gen_regnr_iccs050211'
+      );
+
+
+
+
+
+Measure "Crimes recorded - Theft of a motorized land vehicle" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.crim_gen_regnr_iccs050211'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010, 2009, 2008
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+

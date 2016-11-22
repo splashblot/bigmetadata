@@ -1,0 +1,1012 @@
+
+
+.. Environmental:
+
+Environmental
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+Attributes of the natural environment
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _us.epa.enviroatlas.landcover_pagc:
+
+Agricultural cropland land cover
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Percentage of land area within the WBD 12-digit hydrologic unit that is classified as agricultural cropland land cover (2006 NLCD codes: 82). A value of -1 indicates that no land cover data was located within the hydrologic unit.
+
+
+
+
+
+Measure "Agricultural cropland land cover"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.landcover_pagc'
+      );
+
+
+
+
+
+
+Agricultural cropland land cover is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2006
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.epa.enviroatlas.landcover_pagp:
+
+Agricultural pasture land cover
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Percentage of land area within the WBD 12-digit hydrologic unit that is classified as agricultural pasture land cover (2006 NLCD codes: 81). A value of -1 indicates that no land cover data was located within the hydrologic unit.
+
+
+
+
+
+Measure "Agricultural pasture land cover"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.landcover_pagp'
+      );
+
+
+
+
+
+
+Agricultural pasture land cover is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2006
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.epa.enviroatlas.landcover_pagt:
+
+Agricultural/cultivated land cover
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Percentage of land area within the WBD 12-digit hydrologic unit that is classified as agricultural/cultivated land cover (2006 NLCD codes: 21, 81, 82). A value of -1 indicates that no land cover data was located within the hydrologic unit.
+
+
+
+
+
+Measure "Agricultural/cultivated land cover"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.landcover_pagt'
+      );
+
+
+
+
+
+
+Agricultural/cultivated land cover is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2006
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.epa.enviroatlas.solar_energy_sole_mean:
+
+Annual Average direct normal solar resources kWh/m2/day
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Annual Average direct normal solar resources kWh/m2/day"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.solar_energy_sole_mean'
+      );
+
+
+
+
+
+
+Annual Average direct normal solar resources kWh/m2/day is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.epa.enviroatlas.solar_energy_sole_area:
+
+Area with solar energy potential
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Area with solar energy potential"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.solar_energy_sole_area'
+      );
+
+
+
+
+
+Measure "Area with solar energy potential" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
+          'us.epa.enviroatlas.solar_energy_sole_area'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2012
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.epa.enviroatlas.avgprecip_meanprecip:
+
+Average annual precipitation
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Average annual precipitation in inches.
+
+
+
+
+
+Measure "Average annual precipitation"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.avgprecip_meanprecip'
+      );
+
+
+
+
+
+
+Average annual precipitation is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.epa.enviroatlas.landcover_pfor:
+
+Forest land cover
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Percentage of land area within the WBD 12-digit hydrologic unit that is classified as forest land cover (2006 NLCD codes: 41, 42, 43). A value of -1 indicates that no land cover data was located within the hydrologic unit.
+
+
+
+
+
+Measure "Forest land cover"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.landcover_pfor'
+      );
+
+
+
+
+
+
+Forest land cover is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2006
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.epa.enviroatlas.landcover_pfor90:
+
+Modified forest land cover
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Percentage of land area within the WBD 12-digit hydrologic unit that is classified as modified forest land cover (2006 NLCD codes: 41, 42, 43, and 90). A value of -1 indicates that no land cover data was located within the hydrologic unit.
+
+
+
+
+
+Measure "Modified forest land cover"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.landcover_pfor90'
+      );
+
+
+
+
+
+
+Modified forest land cover is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2006
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.epa.enviroatlas.landcover_pwetl95:
+
+Modified wetlands land cover
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Percentage of land area within the WBD 12-digit hydrologic unit that is classified as modified wetlands land cover (2006 NLCD codes: 95). A value of -1 indicates that no land cover data was located within the hydrologic unit.
+
+
+
+
+
+Measure "Modified wetlands land cover"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.landcover_pwetl95'
+      );
+
+
+
+
+
+
+Modified wetlands land cover is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2006
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+
+
+
+
+
+.. _us.epa.enviroatlas.landcover_pwetl:
+
+Wetland land cover
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Percentage of land area within the WBD 12-digit hydrologic unit that is classified as wetland land cover (2006 NLCD codes: 90, 95). A value of -1 indicates that no land cover data was located within the hydrologic unit.
+
+
+
+
+
+Measure "Wetland land cover"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(40.7, -73.9),
+        'us.epa.enviroatlas.landcover_pwetl'
+      );
+
+
+
+
+
+
+Wetland land cover is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.epa.huc.hydro_unit`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2006
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`us.epa.huc.epa-enviroatlas`
+
+:License:
+
+    :ref:`tags.no-restrictions`
+
+
+

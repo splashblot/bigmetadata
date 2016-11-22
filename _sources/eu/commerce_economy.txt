@@ -1,0 +1,4427 @@
+
+
+.. Commerce & Economy:
+
+Commerce & Economy
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+Broader measures of economic and commercial activity.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_total:
+
+Gross value added at basic prices - Million euro, Total - all NACE activities
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Gross value added at basic prices - Million euro, Total - all NACE activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Total - all NACE activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_total'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_total'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+.. contents:: Subcolumns of Gross value added at basic prices - Million euro, Total - all NACE activities
+   :local:
+   :depth: 1
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_a:
+
+Gross value added at basic prices - Million euro, Agriculture, forestry and fishing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Agriculture, forestry and fishing
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Agriculture, forestry and fishing"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_a'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Agriculture, forestry and fishing" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_a'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Agriculture, forestry and fishing" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_a',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Agriculture, forestry and fishing" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_a',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_r_u:
+
+Gross value added at basic prices - Million euro, Arts, entertainment, recreation, and other service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Arts, entertainment and recreation; other service activities; activities of household and extra-territorial organizations and bodies
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Arts, entertainment, recreation, and other service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_r_u'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Arts, entertainment, recreation, and other service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_r_u'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Arts, entertainment, recreation, and other service activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_r_u',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Arts, entertainment, recreation, and other service activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_r_u',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_f:
+
+Gross value added at basic prices - Million euro, Construction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Construction
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Construction"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_f'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Construction" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_f'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Construction" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_f',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Construction" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_k:
+
+Gross value added at basic prices - Million euro, Financial and insurance activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Financial and insurance activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Financial and insurance activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_k'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Financial and insurance activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_k'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Financial and insurance activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_k',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Financial and insurance activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_k',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_k_n:
+
+Gross value added at basic prices - Million euro, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_k_n'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_k_n'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_k_n',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_k_n',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_b_e:
+
+Gross value added at basic prices - Million euro, Industry (except construction)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Industry (except construction)
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Industry (except construction)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_b_e'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Industry (except construction)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_b_e'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Industry (except construction)" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_b_e',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Industry (except construction)" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_b_e',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_j:
+
+Gross value added at basic prices - Million euro, Information and communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Information and communication
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Information and communication"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_j'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Information and communication" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_j'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Information and communication" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_j',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Information and communication" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_j',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_c:
+
+Gross value added at basic prices - Million euro, Manufacturing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Manufacturing
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Manufacturing"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_c'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Manufacturing" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_c'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Manufacturing" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_c',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Manufacturing" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_c',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_m_n:
+
+Gross value added at basic prices - Million euro, Professional, scientific, technical, administrative and support service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Professional, scientific and technical activities; administrative and support service activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Professional, scientific, technical, administrative and support service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_m_n'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Professional, scientific, technical, administrative and support service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_m_n'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Professional, scientific, technical, administrative and support service activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_m_n',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Professional, scientific, technical, administrative and support service activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_m_n',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_o_u:
+
+Gross value added at basic prices - Million euro, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_o_u'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_o_u'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_o_u',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_o_u',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_o_q:
+
+Gross value added at basic prices - Million euro, Public administration, defence, education, human health and social work activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Public administration, defence, education, human health and social work activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Public administration, defence, education, human health and social work activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_o_q'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Public administration, defence, education, human health and social work activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_o_q'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Public administration, defence, education, human health and social work activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_o_q',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Public administration, defence, education, human health and social work activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_o_q',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_l:
+
+Gross value added at basic prices - Million euro, Real estate activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Real estate activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Real estate activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_l'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Real estate activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_l'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Real estate activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_l',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Real estate activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_l',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_g_i:
+
+Gross value added at basic prices - Million euro, Wholesale and retail trade, transport, accomodation and food service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Wholesale and retail trade, transport, accomodation and food service activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Wholesale and retail trade, transport, accomodation and food service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_g_i'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Wholesale and retail trade, transport, accomodation and food service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_g_i'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Wholesale and retail trade, transport, accomodation and food service activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_g_i',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Wholesale and retail trade, transport, accomodation and food service activities" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_g_i',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_eur_g_j:
+
+Gross value added at basic prices - Million euro, Wholesale and retail trade; transport; accommodation and food service activities; information and communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million euro, Wholesale and retail trade; transport; accommodation and food service activities; information and communication
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Wholesale and retail trade; transport; accommodation and food service activities; information and communication"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_g_j'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_eur_g_j'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million euro, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_g_j',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million euro, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" percent of "Gross value added at basic prices - Million euro, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_eur_g_j',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_eur_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_total:
+
+Gross value added at basic prices - Million units of national currency, Total - all NACE activities
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Total - all NACE activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Total - all NACE activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_total'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_total'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+.. contents:: Subcolumns of Gross value added at basic prices - Million units of national currency, Total - all NACE activities
+   :local:
+   :depth: 1
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_a:
+
+Gross value added at basic prices - Million units of national currency, Agriculture, forestry and fishing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Agriculture, forestry and fishing
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Agriculture, forestry and fishing"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_a'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Agriculture, forestry and fishing" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_a'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Agriculture, forestry and fishing" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_a',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Agriculture, forestry and fishing" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_a',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_r_u:
+
+Gross value added at basic prices - Million units of national currency, Arts, entertainment, recreation, and other service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Arts, entertainment and recreation; other service activities; activities of household and extra-territorial organizations and bodies
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Arts, entertainment, recreation, and other service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_r_u'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Arts, entertainment, recreation, and other service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_r_u'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Arts, entertainment, recreation, and other service activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_r_u',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Arts, entertainment, recreation, and other service activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_r_u',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_f:
+
+Gross value added at basic prices - Million units of national currency, Construction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Construction
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Construction"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_f'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Construction" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_f'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Construction" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_f',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Construction" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_f',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_k:
+
+Gross value added at basic prices - Million units of national currency, Financial and insurance activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Financial and insurance activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Financial and insurance activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_k'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Financial and insurance activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_k'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Financial and insurance activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_k',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Financial and insurance activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_k',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_k_n:
+
+Gross value added at basic prices - Million units of national currency, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_k_n'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_k_n'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_k_n',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_k_n',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_b_e:
+
+Gross value added at basic prices - Million units of national currency, Industry (except construction)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Industry (except construction)
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Industry (except construction)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_b_e'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Industry (except construction)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_b_e'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Industry (except construction)" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_b_e',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Industry (except construction)" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_b_e',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_j:
+
+Gross value added at basic prices - Million units of national currency, Information and communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Information and communication
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Information and communication"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_j'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Information and communication" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_j'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Information and communication" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_j',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Information and communication" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_j',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_c:
+
+Gross value added at basic prices - Million units of national currency, Manufacturing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Manufacturing
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Manufacturing"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_c'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Manufacturing" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_c'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Manufacturing" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_c',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Manufacturing" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_c',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_m_n:
+
+Gross value added at basic prices - Million units of national currency, Professional, scientific, technical, administrative and support service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Professional, scientific and technical activities; administrative and support service activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Professional, scientific, technical, administrative and support service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_m_n'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Professional, scientific, technical, administrative and support service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_m_n'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Professional, scientific, technical, administrative and support service activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_m_n',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Professional, scientific, technical, administrative and support service activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_m_n',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_o_u:
+
+Gross value added at basic prices - Million units of national currency, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_o_u'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_o_u'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_o_u',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_o_u',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_o_q:
+
+Gross value added at basic prices - Million units of national currency, Public administration, defence, education, human health and social work activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Public administration, defence, education, human health and social work activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Public administration, defence, education, human health and social work activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_o_q'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Public administration, defence, education, human health and social work activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_o_q'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Public administration, defence, education, human health and social work activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_o_q',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Public administration, defence, education, human health and social work activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_o_q',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_l:
+
+Gross value added at basic prices - Million units of national currency, Real estate activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Real estate activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Real estate activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_l'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Real estate activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_l'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Real estate activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_l',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Real estate activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_l',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_g_i:
+
+Gross value added at basic prices - Million units of national currency, Wholesale and retail trade, transport, accomodation and food service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Wholesale and retail trade, transport, accomodation and food service activities
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Wholesale and retail trade, transport, accomodation and food service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_g_i'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Wholesale and retail trade, transport, accomodation and food service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_g_i'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Wholesale and retail trade, transport, accomodation and food service activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_g_i',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Wholesale and retail trade, transport, accomodation and food service activities" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_g_i',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_gvamio_nac_g_j:
+
+Gross value added at basic prices - Million units of national currency, Wholesale and retail trade; transport; accommodation and food service activities; information and communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Gross value added at basic prices - Million units of national currency, Wholesale and retail trade; transport; accommodation and food service activities; information and communication
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Wholesale and retail trade; transport; accommodation and food service activities; information and communication"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_g_j'
+      );
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_gvamio_nac_g_j'
+        );
+
+
+
+
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_g_j',
+        'denominator'
+      );
+
+
+Measure "Gross value added at basic prices - Million units of national currency, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" percent of "Gross value added at basic prices - Million units of national currency, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_gvamio_nac_g_j',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_gvamio_nac_total`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _eu.eurostat.nama_aux_cra:
+
+Purchasing power parities - annual data - PPS = .. National currency units (including 'euro fixed' series for euro area countries)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Purchasing power parities - annual data - PPS = .. National currency units (including 'euro fixed' series for euro area countries)
+
+
+
+
+
+Measure "Purchasing power parities - annual data - PPS = .. National currency units (including 'euro fixed' series for euro area countries)"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_aux_cra'
+      );
+
+
+
+
+
+
+Purchasing power parities - annual data - PPS = .. National currency units (including 'euro fixed' series for euro area countries) is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts0`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000, 1999, 1998, 1997, 1996, 1995, 1994, 1993, 1992, 1991, 1990, 1989, 1988, 1987, 1986, 1985, 1984, 1983, 1982, 1981, 1980, 1979, 1978, 1977, 1976, 1975, 1974, 1973, 1972, 1971, 1970, 1969, 1968, 1967, 1966, 1965, 1964, 1963, 1962, 1961, 1960
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+
+
+
+
+
+.. _eu.eurostat.tgs00042:
+
+Total intramural R&D expenditure (GERD) - All sectors, Percentage of gross domestic product (GDP)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Total intramural R&D expenditure (GERD) - All sectors, Percentage of gross domestic product (GDP)
+
+
+
+
+
+Measure "Total intramural R&D expenditure (GERD) - All sectors, Percentage of gross domestic product (GDP)"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.tgs00042'
+      );
+
+
+
+
+
+
+Total intramural R&D expenditure (GERD) - All sectors, Percentage of gross domestic product (GDP) is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts2`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+.. contents:: Subcolumns of Total intramural R&D expenditure (GERD) - All sectors, Percentage of gross domestic product (GDP)
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+

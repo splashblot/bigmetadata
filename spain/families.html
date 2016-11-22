@@ -30,7 +30,7 @@
     <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
     <link rel="up" title="8. Spain" href="../spain.html" />
     <link rel="next" title="&lt;no title&gt;" href="health.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="employment.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="environmental.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -471,7 +471,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: married and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons with marital status: married&#8221; at one point:</p>
+<p>Measure &#8220;Persons with marital status: married and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -481,7 +481,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: married and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons with marital status: married&#8221; within an area:</p>
+<p>Measure &#8220;Persons with marital status: married and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -506,9 +506,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-2"><span class="std std-ref">Persons with marital status: married</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-2"><span class="std std-ref">Persons with marital status: married</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -753,7 +753,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: separated and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons with marital status: separated&#8221; at one point:</p>
+<p>Measure &#8220;Persons with marital status: separated and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -763,7 +763,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: separated and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons with marital status: separated&#8221; within an area:</p>
+<p>Measure &#8220;Persons with marital status: separated and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -788,9 +788,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-3"><span class="std std-ref">Persons with marital status: separated</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-3"><span class="std std-ref">Persons with marital status: separated</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -891,7 +891,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: separated and under 16 years of age&#8221; percent of &#8220;Persons with marital status: separated&#8221; at one point:</p>
+<p>Measure &#8220;Persons with marital status: separated and under 16 years of age&#8221; percent of &#8220;Persons aged under 16 years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -901,7 +901,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: separated and under 16 years of age&#8221; percent of &#8220;Persons with marital status: separated&#8221; within an area:</p>
+<p>Measure &#8220;Persons with marital status: separated and under 16 years of age&#8221; percent of &#8220;Persons aged under 16 years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -926,9 +926,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-3"><span class="std std-ref">Persons with marital status: separated</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-1"><span class="std std-ref">Persons aged under 16 years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-1"><span class="std std-ref">Persons aged under 16 years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-3"><span class="std std-ref">Persons with marital status: separated</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -1035,7 +1035,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: single and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons with marital status: single &#8221; at one point:</p>
+<p>Measure &#8220;Persons with marital status: single and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1045,7 +1045,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: single and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons with marital status: single &#8221; within an area:</p>
+<p>Measure &#8220;Persons with marital status: single and between 16 (included) and 64 (included) years of age&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1070,9 +1070,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-1"><span class="std std-ref">Persons with marital status: single</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-1"><span class="std std-ref">Persons with marital status: single</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -1173,7 +1173,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: single and under 16 years of age&#8221; percent of &#8220;Persons with marital status: single &#8221; at one point:</p>
+<p>Measure &#8220;Persons with marital status: single and under 16 years of age&#8221; percent of &#8220;Persons aged under 16 years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1183,7 +1183,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with marital status: single and under 16 years of age&#8221; percent of &#8220;Persons with marital status: single &#8221; within an area:</p>
+<p>Measure &#8220;Persons with marital status: single and under 16 years of age&#8221; percent of &#8220;Persons aged under 16 years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1208,9 +1208,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-1"><span class="std std-ref">Persons with marital status: single</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-1"><span class="std std-ref">Persons aged under 16 years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-1"><span class="std std-ref">Persons aged under 16 years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t10-1"><span class="std std-ref">Persons with marital status: single</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2018,7 +2018,7 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="../spain.html">8. Spain</a><ul>
-      <li>Previous: <a href="employment.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Previous: <a href="environmental.html" title="previous chapter">&lt;no title&gt;</a></li>
       <li>Next: <a href="health.html" title="next chapter">&lt;no title&gt;</a></li>
   </ul></li>
   </ul></li>

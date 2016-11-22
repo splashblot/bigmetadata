@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>11.6. Environmental &mdash; observatory 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bigmetadata.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/bigmetadata.js"></script>
+    <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
+    <link rel="up" title="11. United States" href="../united_states.html" />
+    <link rel="next" title="11.7. Families" href="families.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="energy.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="environmental">
+<h1>11.6. Environmental<a class="headerlink" href="#environmental" title="Permalink to this headline">¶</a></h1>
+<p>Attributes of the natural environment</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#agricultural-cropland-land-cover" id="id1">Agricultural cropland land cover</a></li>
+<li><a class="reference internal" href="#agricultural-pasture-land-cover" id="id2">Agricultural pasture land cover</a></li>
+<li><a class="reference internal" href="#agricultural-cultivated-land-cover" id="id3">Agricultural/cultivated land cover</a></li>
+<li><a class="reference internal" href="#annual-average-direct-normal-solar-resources-kwh-m2-day" id="id4">Annual Average direct normal solar resources kWh/m2/day</a></li>
+<li><a class="reference internal" href="#area-with-solar-energy-potential" id="id5">Area with solar energy potential</a></li>
+<li><a class="reference internal" href="#average-annual-precipitation" id="id6">Average annual precipitation</a></li>
+<li><a class="reference internal" href="#forest-land-cover" id="id7">Forest land cover</a></li>
+<li><a class="reference internal" href="#modified-forest-land-cover" id="id8">Modified forest land cover</a></li>
+<li><a class="reference internal" href="#modified-wetlands-land-cover" id="id9">Modified wetlands land cover</a></li>
+<li><a class="reference internal" href="#wetland-land-cover" id="id10">Wetland land cover</a></li>
+</ul>
+</div>
+<div class="section" id="agricultural-cropland-land-cover">
+<span id="us-epa-enviroatlas-landcover-pagc"></span><h2><a class="toc-backref" href="#id1">11.6.1. Agricultural cropland land cover</a><a class="headerlink" href="#agricultural-cropland-land-cover" title="Permalink to this headline">¶</a></h2>
+<p>Percentage of land area within the WBD 12-digit hydrologic unit that is classified as agricultural cropland land cover (2006 NLCD codes: 82). A value of -1 indicates that no land cover data was located within the hydrologic unit.</p>
+<p>Measure &#8220;Agricultural cropland land cover&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.landcover_pagc&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Agricultural cropland land cover is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2006</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="agricultural-pasture-land-cover">
+<span id="us-epa-enviroatlas-landcover-pagp"></span><h2><a class="toc-backref" href="#id2">11.6.2. Agricultural pasture land cover</a><a class="headerlink" href="#agricultural-pasture-land-cover" title="Permalink to this headline">¶</a></h2>
+<p>Percentage of land area within the WBD 12-digit hydrologic unit that is classified as agricultural pasture land cover (2006 NLCD codes: 81). A value of -1 indicates that no land cover data was located within the hydrologic unit.</p>
+<p>Measure &#8220;Agricultural pasture land cover&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.landcover_pagp&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Agricultural pasture land cover is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2006</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="agricultural-cultivated-land-cover">
+<span id="us-epa-enviroatlas-landcover-pagt"></span><h2><a class="toc-backref" href="#id3">11.6.3. Agricultural/cultivated land cover</a><a class="headerlink" href="#agricultural-cultivated-land-cover" title="Permalink to this headline">¶</a></h2>
+<p>Percentage of land area within the WBD 12-digit hydrologic unit that is classified as agricultural/cultivated land cover (2006 NLCD codes: 21, 81, 82). A value of -1 indicates that no land cover data was located within the hydrologic unit.</p>
+<p>Measure &#8220;Agricultural/cultivated land cover&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.landcover_pagt&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Agricultural/cultivated land cover is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2006</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="annual-average-direct-normal-solar-resources-kwh-m2-day">
+<span id="us-epa-enviroatlas-solar-energy-sole-mean"></span><h2><a class="toc-backref" href="#id4">11.6.4. Annual Average direct normal solar resources kWh/m2/day</a><a class="headerlink" href="#annual-average-direct-normal-solar-resources-kwh-m2-day" title="Permalink to this headline">¶</a></h2>
+<p>Measure &#8220;Annual Average direct normal solar resources kWh/m2/day&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.solar_energy_sole_mean&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Annual Average direct normal solar resources kWh/m2/day is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="area-with-solar-energy-potential">
+<span id="us-epa-enviroatlas-solar-energy-sole-area"></span><h2><a class="toc-backref" href="#id5">11.6.5. Area with solar energy potential</a><a class="headerlink" href="#area-with-solar-energy-potential" title="Permalink to this headline">¶</a></h2>
+<p>Measure &#8220;Area with solar energy potential&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.solar_energy_sole_area&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Area with solar energy potential&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.solar_energy_sole_area&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2012</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="average-annual-precipitation">
+<span id="us-epa-enviroatlas-avgprecip-meanprecip"></span><h2><a class="toc-backref" href="#id6">11.6.6. Average annual precipitation</a><a class="headerlink" href="#average-annual-precipitation" title="Permalink to this headline">¶</a></h2>
+<p>Average annual precipitation in inches.</p>
+<p>Measure &#8220;Average annual precipitation&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.avgprecip_meanprecip&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Average annual precipitation is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2010</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="forest-land-cover">
+<span id="us-epa-enviroatlas-landcover-pfor"></span><h2><a class="toc-backref" href="#id7">11.6.7. Forest land cover</a><a class="headerlink" href="#forest-land-cover" title="Permalink to this headline">¶</a></h2>
+<p>Percentage of land area within the WBD 12-digit hydrologic unit that is classified as forest land cover (2006 NLCD codes: 41, 42, 43). A value of -1 indicates that no land cover data was located within the hydrologic unit.</p>
+<p>Measure &#8220;Forest land cover&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.landcover_pfor&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Forest land cover is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2006</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="modified-forest-land-cover">
+<span id="us-epa-enviroatlas-landcover-pfor90"></span><h2><a class="toc-backref" href="#id8">11.6.8. Modified forest land cover</a><a class="headerlink" href="#modified-forest-land-cover" title="Permalink to this headline">¶</a></h2>
+<p>Percentage of land area within the WBD 12-digit hydrologic unit that is classified as modified forest land cover (2006 NLCD codes: 41, 42, 43, and 90). A value of -1 indicates that no land cover data was located within the hydrologic unit.</p>
+<p>Measure &#8220;Modified forest land cover&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.landcover_pfor90&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Modified forest land cover is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2006</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="modified-wetlands-land-cover">
+<span id="us-epa-enviroatlas-landcover-pwetl95"></span><h2><a class="toc-backref" href="#id9">11.6.9. Modified wetlands land cover</a><a class="headerlink" href="#modified-wetlands-land-cover" title="Permalink to this headline">¶</a></h2>
+<p>Percentage of land area within the WBD 12-digit hydrologic unit that is classified as modified wetlands land cover (2006 NLCD codes: 95). A value of -1 indicates that no land cover data was located within the hydrologic unit.</p>
+<p>Measure &#8220;Modified wetlands land cover&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.landcover_pwetl95&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Modified wetlands land cover is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2006</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="wetland-land-cover">
+<span id="us-epa-enviroatlas-landcover-pwetl"></span><h2><a class="toc-backref" href="#id10">11.6.10. Wetland land cover</a><a class="headerlink" href="#wetland-land-cover" title="Permalink to this headline">¶</a></h2>
+<p>Percentage of land area within the WBD 12-digit hydrologic unit that is classified as wetland land cover (2006 NLCD codes: 90, 95). A value of -1 indicates that no land cover data was located within the hydrologic unit.</p>
+<p>Measure &#8220;Wetland land cover&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">40.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.9</span><span class="p">),</span>
+      <span class="s1">&#39;us.epa.enviroatlas.landcover_pwetl&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Wetland land cover is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#us-epa-huc-hydro-unit"><span class="std std-ref">Subwatershed hydrological unit</span></a></p>
+</td>
+<td><p>2006</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#us-epa-huc-epa-enviroatlas"><span class="std std-ref">United States Environmental Protection Agency (EPA) EnviroAtlas</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#tags-no-restrictions"><span class="std std-ref">Unrestricted</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">11.6. Environmental</a><ul>
+<li><a class="reference internal" href="#agricultural-cropland-land-cover">11.6.1. Agricultural cropland land cover</a></li>
+<li><a class="reference internal" href="#agricultural-pasture-land-cover">11.6.2. Agricultural pasture land cover</a></li>
+<li><a class="reference internal" href="#agricultural-cultivated-land-cover">11.6.3. Agricultural/cultivated land cover</a></li>
+<li><a class="reference internal" href="#annual-average-direct-normal-solar-resources-kwh-m2-day">11.6.4. Annual Average direct normal solar resources kWh/m2/day</a></li>
+<li><a class="reference internal" href="#area-with-solar-energy-potential">11.6.5. Area with solar energy potential</a></li>
+<li><a class="reference internal" href="#average-annual-precipitation">11.6.6. Average annual precipitation</a></li>
+<li><a class="reference internal" href="#forest-land-cover">11.6.7. Forest land cover</a></li>
+<li><a class="reference internal" href="#modified-forest-land-cover">11.6.8. Modified forest land cover</a></li>
+<li><a class="reference internal" href="#modified-wetlands-land-cover">11.6.9. Modified wetlands land cover</a></li>
+<li><a class="reference internal" href="#wetland-land-cover">11.6.10. Wetland land cover</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../united_states.html">11. United States</a><ul>
+      <li>Previous: <a href="energy.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="families.html" title="next chapter">11.7. Families</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/united_states/environmental.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CARTO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/united_states/environmental.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

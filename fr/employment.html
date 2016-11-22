@@ -29,7 +29,7 @@
     <script type="text/javascript" src="//libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
     <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
     <link rel="up" title="5. France" href="../fr.html" />
-    <link rel="next" title="5.5. Families" href="families.html" />
+    <link rel="next" title="&lt;no title&gt;" href="energy.html" />
     <link rel="prev" title="5.3. Education" href="education.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -1681,7 +1681,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 15-24 ans en 2012 (princ)&#8221; percent of &#8220;Pop 15-24 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs 15-24 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1691,7 +1691,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 15-24 ans en 2012 (princ)&#8221; percent of &#8220;Pop 15-24 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs 15-24 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1716,9 +1716,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-pop1524"><span class="std std-ref">Pop 15-24 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act1564"><span class="std std-ref">Actifs 15-64 ans en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act1564"><span class="std std-ref">Actifs 15-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-pop1524"><span class="std std-ref">Pop 15-24 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -2178,7 +2178,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 15-24 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans Femmes en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs 15-24 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-24 ans Femmes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2188,7 +2188,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 15-24 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans Femmes en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs 15-24 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-24 ans Femmes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2213,11 +2213,11 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-fact1564"><span class="std std-ref">Actifs 15-64 ans Femmes en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1524"><span class="std std-ref">Pop 15-24 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act1524"><span class="std std-ref">Actifs 15-24 ans en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1524"><span class="std std-ref">Pop 15-24 ans Femmes en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-fact1564"><span class="std std-ref">Actifs 15-64 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -2314,7 +2314,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs 25-54 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans Femmes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2324,7 +2324,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs 25-54 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans Femmes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2349,9 +2349,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f2554"><span class="std std-ref">Pop 25-54 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f2554"><span class="std std-ref">Pop 25-54 ans Femmes en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-fact1564"><span class="std std-ref">Actifs 15-64 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
@@ -2934,7 +2934,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 15-24 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans Hommes en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs 15-24 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Pop 15-24 ans Hommes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2944,7 +2944,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 15-24 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans Hommes en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs 15-24 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Pop 15-24 ans Hommes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2969,11 +2969,11 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hact1564"><span class="std std-ref">Actifs 15-64 ans Hommes en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-h1524"><span class="std std-ref">Pop 15-24 ans Hommes en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act1524"><span class="std std-ref">Actifs 15-24 ans en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-h1524"><span class="std std-ref">Pop 15-24 ans Hommes en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hact1564"><span class="std std-ref">Actifs 15-64 ans Hommes en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -3070,7 +3070,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans Hommes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3080,7 +3080,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans Hommes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3105,11 +3105,11 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
-</tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hact1564"><span class="std std-ref">Actifs 15-64 ans Hommes en 2012 (princ)</span></a></td>
-</tr>
 <tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-h2554"><span class="std std-ref">Pop 25-54 ans Hommes en 2012 (princ)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hact1564"><span class="std std-ref">Actifs 15-64 ans Hommes en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -3139,7 +3139,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs occupés 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs occupés 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs occupés 15-64 ans Hommes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3149,7 +3149,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs occupés 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs occupés 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs occupés 15-64 ans Hommes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3174,9 +3174,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">fr.insee.P12_HACT2554</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hactocc1564"><span class="std std-ref">Actifs occupés 15-64 ans Hommes en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hactocc1564"><span class="std std-ref">Actifs occupés 15-64 ans Hommes en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">fr.insee.P12_HACT2554</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -3474,7 +3474,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs occupés 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs occupés 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs occupés 15-64 ans Hommes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3484,7 +3484,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs occupés 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs occupés 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs occupés 15-64 ans Hommes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3509,9 +3509,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">fr.insee.P12_HACT2554</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hactocc1564"><span class="std std-ref">Actifs occupés 15-64 ans Hommes en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hactocc1564"><span class="std std-ref">Actifs occupés 15-64 ans Hommes en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">fr.insee.P12_HACT2554</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -3609,7 +3609,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3619,7 +3619,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3644,9 +3644,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-pop2554"><span class="std std-ref">Pop 25-54 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act1564"><span class="std std-ref">Actifs 15-64 ans en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act1564"><span class="std std-ref">Actifs 15-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-pop2554"><span class="std std-ref">Pop 25-54 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -3685,7 +3685,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs 25-54 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans Femmes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3695,7 +3695,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs 25-54 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans Femmes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3720,9 +3720,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f2554"><span class="std std-ref">Pop 25-54 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f2554"><span class="std std-ref">Pop 25-54 ans Femmes en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-fact1564"><span class="std std-ref">Actifs 15-64 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
@@ -3821,7 +3821,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans Hommes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3831,7 +3831,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs 25-54 ans Hommes en 2012 (princ)&#8221; percent of &#8220;Pop 25-54 ans Hommes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3856,11 +3856,11 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
-</tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hact1564"><span class="std std-ref">Actifs 15-64 ans Hommes en 2012 (princ)</span></a></td>
-</tr>
 <tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-h2554"><span class="std std-ref">Pop 25-54 ans Hommes en 2012 (princ)</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-hact1564"><span class="std std-ref">Actifs 15-64 ans Hommes en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -3957,7 +3957,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs occupés 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs occupés 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs occupés 15-64 ans en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3967,7 +3967,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs occupés 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs occupés 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs occupés 15-64 ans en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3992,9 +3992,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-actocc1564"><span class="std std-ref">Actifs occupés 15-64 ans en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-actocc1564"><span class="std std-ref">Actifs occupés 15-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -4025,7 +4025,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 55-64 ans en 2012 (princ)&#8221; percent of &#8220;Pop 55-64 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs 55-64 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4035,7 +4035,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs 55-64 ans en 2012 (princ)&#8221; percent of &#8220;Pop 55-64 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs 55-64 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 15-64 ans en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4060,9 +4060,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-pop5564"><span class="std std-ref">Pop 55-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act1564"><span class="std std-ref">Actifs 15-64 ans en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act1564"><span class="std std-ref">Actifs 15-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-pop5564"><span class="std std-ref">Pop 55-64 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -4580,7 +4580,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs occupés 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Actifs occupés 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs occupés 15-64 ans en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4590,7 +4590,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Actifs occupés 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs 25-54 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Actifs occupés 25-54 ans en 2012 (princ)&#8221; percent of &#8220;Actifs occupés 15-64 ans en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4615,9 +4615,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-actocc1564"><span class="std std-ref">Actifs occupés 15-64 ans en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-actocc1564"><span class="std std-ref">Actifs occupés 15-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-act2554"><span class="std std-ref">Actifs 25-54 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -5517,7 +5517,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Autres inactifs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Autres inactifs 15-64 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Autres inactifs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-64 ans Femmes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -5527,7 +5527,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Autres inactifs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Autres inactifs 15-64 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Autres inactifs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-64 ans Femmes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -5552,9 +5552,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-ainact1564"><span class="std std-ref">Autres inactifs 15-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1564"><span class="std std-ref">Pop 15-64 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1564"><span class="std std-ref">Pop 15-64 ans Femmes en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-ainact1564"><span class="std std-ref">Autres inactifs 15-64 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -5793,7 +5793,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Chômeurs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Chômeurs 15-64 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Chômeurs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-64 ans Femmes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -5803,7 +5803,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Chômeurs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Chômeurs 15-64 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Chômeurs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-64 ans Femmes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -5828,9 +5828,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-chom1564"><span class="std std-ref">Chômeurs 15-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1564"><span class="std std-ref">Pop 15-64 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1564"><span class="std std-ref">Pop 15-64 ans Femmes en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-chom1564"><span class="std std-ref">Chômeurs 15-64 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -6133,7 +6133,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Elèv. Etud. Stag. non rémunérés 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Elèv. Etud. Stag. non rémunérés 15-64 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Elèv. Etud. Stag. non rémunérés 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-64 ans Femmes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -6143,7 +6143,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Elèv. Etud. Stag. non rémunérés 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Elèv. Etud. Stag. non rémunérés 15-64 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Elèv. Etud. Stag. non rémunérés 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-64 ans Femmes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -6168,9 +6168,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-etud1564"><span class="std std-ref">Elèv. Etud. Stag. non rémunérés 15-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1564"><span class="std std-ref">Pop 15-64 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1564"><span class="std std-ref">Pop 15-64 ans Femmes en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-etud1564"><span class="std std-ref">Elèv. Etud. Stag. non rémunérés 15-64 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -6339,7 +6339,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Inactifs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Inactifs 15-64 ans en 2012 (princ)&#8221; at one point:</p>
+<p>Measure &#8220;Inactifs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-64 ans Femmes en 2012 (princ)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -6349,7 +6349,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Inactifs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Inactifs 15-64 ans en 2012 (princ)&#8221; within an area:</p>
+<p>Measure &#8220;Inactifs 15-64 ans Femmes en 2012 (princ)&#8221; percent of &#8220;Pop 15-64 ans Femmes en 2012 (princ)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -6374,9 +6374,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-inact1564"><span class="std std-ref">Inactifs 15-64 ans en 2012 (princ)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1564"><span class="std std-ref">Pop 15-64 ans Femmes en 2012 (princ)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-p12-f1564"><span class="std std-ref">Pop 15-64 ans Femmes en 2012 (princ)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-p12-inact1564"><span class="std std-ref">Inactifs 15-64 ans en 2012 (princ)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -7509,7 +7509,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Agriculteurs exploitants en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Agriculteurs exploitants en 2012 (compl)&#8221; at one point:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Agriculteurs exploitants en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -7519,7 +7519,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Agriculteurs exploitants en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Agriculteurs exploitants en 2012 (compl)&#8221; within an area:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Agriculteurs exploitants en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -7544,9 +7544,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs1"><span class="std std-ref">Pop 15 ans ou plus Agriculteurs exploitants en 2012 (compl)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs1"><span class="std std-ref">Pop 15 ans ou plus Agriculteurs exploitants en 2012 (compl)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -7921,7 +7921,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Autres en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Autres en 2012 (compl)&#8221; at one point:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Autres en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -7931,7 +7931,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Autres en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Autres en 2012 (compl)&#8221; within an area:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Autres en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -7956,9 +7956,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs8"><span class="std std-ref">Pop 15 ans ou plus Autres en 2012 (compl)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs8"><span class="std std-ref">Pop 15 ans ou plus Autres en 2012 (compl)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -8127,7 +8127,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Cadres, Prof. intel. sup. en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Cadres, Prof. intel. sup. en 2012 (compl)&#8221; at one point:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Cadres, Prof. intel. sup. en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8137,7 +8137,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Cadres, Prof. intel. sup. en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Cadres, Prof. intel. sup. en 2012 (compl)&#8221; within an area:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Cadres, Prof. intel. sup. en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8162,9 +8162,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs3"><span class="std std-ref">Pop 15 ans ou plus Cadres, Prof. intel. sup. en 2012 (compl)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs3"><span class="std std-ref">Pop 15 ans ou plus Cadres, Prof. intel. sup. en 2012 (compl)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -8333,7 +8333,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Employés en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Employés en 2012 (compl)&#8221; at one point:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Employés en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8343,7 +8343,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Employés en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Employés en 2012 (compl)&#8221; within an area:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Employés en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8368,9 +8368,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs5"><span class="std std-ref">Pop 15 ans ou plus Employés en 2012 (compl)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs5"><span class="std std-ref">Pop 15 ans ou plus Employés en 2012 (compl)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -8539,7 +8539,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Ouvriers en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Ouvriers en 2012 (compl)&#8221; at one point:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Ouvriers en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8549,7 +8549,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Ouvriers en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Ouvriers en 2012 (compl)&#8221; within an area:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Ouvriers en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8574,9 +8574,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs6"><span class="std std-ref">Pop 15 ans ou plus Ouvriers en 2012 (compl)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs6"><span class="std std-ref">Pop 15 ans ou plus Ouvriers en 2012 (compl)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -8606,7 +8606,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Hommes Ouvriers en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Hommes en 2012 (compl)&#8221; at one point:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Hommes Ouvriers en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Ouvriers en 2012 (compl)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8616,7 +8616,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Hommes Ouvriers en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Hommes en 2012 (compl)&#8221; within an area:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Hommes Ouvriers en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Ouvriers en 2012 (compl)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8641,9 +8641,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-h15p"><span class="std std-ref">Pop 15 ans ou plus Hommes en 2012 (compl)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs6"><span class="std std-ref">Pop 15 ans ou plus Ouvriers en 2012 (compl)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs6"><span class="std std-ref">Pop 15 ans ou plus Ouvriers en 2012 (compl)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-h15p"><span class="std std-ref">Pop 15 ans ou plus Hommes en 2012 (compl)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -8951,7 +8951,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Retraités en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Retraités en 2012 (compl)&#8221; at one point:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Retraités en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8961,7 +8961,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Pop 15 ans ou plus Femmes Retraités en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Retraités en 2012 (compl)&#8221; within an area:</p>
+<p>Measure &#8220;Pop 15 ans ou plus Femmes Retraités en 2012 (compl)&#8221; percent of &#8220;Pop 15 ans ou plus Femmes en 2012 (compl)&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -8986,9 +8986,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs7"><span class="std std-ref">Pop 15 ans ou plus Retraités en 2012 (compl)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#fr-insee-c12-f15p"><span class="std std-ref">Pop 15 ans ou plus Femmes en 2012 (compl)</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#fr-insee-c12-pop15p-cs7"><span class="std std-ref">Pop 15 ans ou plus Retraités en 2012 (compl)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#fr-insee-insee"><span class="std std-ref">National Institute of Statistics and Economic Studies (INSEE)</span></a></td>
 </tr>
@@ -10763,7 +10763,7 @@
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="../fr.html">5. France</a><ul>
       <li>Previous: <a href="education.html" title="previous chapter">5.3. Education</a></li>
-      <li>Next: <a href="families.html" title="next chapter">5.5. Families</a></li>
+      <li>Next: <a href="energy.html" title="next chapter">&lt;no title&gt;</a></li>
   </ul></li>
   </ul></li>
 </ul>

@@ -3,7 +3,7 @@
 .. Education:
 
 Education
-===========================================================================
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 Educational attainment and enrollment.
 
@@ -18,7 +18,7 @@ Educational attainment and enrollment.
 .. _es.ine.t12_1:
 
 Illiterate persons
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -165,7 +165,7 @@ Measure "Illiterate persons" percent of "Total population" within an area:
 .. _es.ine.t13_2:
 
 Illiterate females
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -313,7 +313,7 @@ Measure "Illiterate females" percent of "Females" within an area:
 .. _es.ine.t13_1:
 
 Illiterate males
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -365,7 +365,7 @@ Measure "Illiterate males" within an area:
 
 
 
-Measure "Illiterate males" percent of "Males" at one point:
+Measure "Illiterate males" percent of "Illiterate persons" at one point:
 
 .. code-block:: postgresql
 
@@ -378,7 +378,7 @@ Measure "Illiterate males" percent of "Males" at one point:
       );
 
 
-Measure "Illiterate males" percent of "Males" within an area:
+Measure "Illiterate males" percent of "Illiterate persons" within an area:
 
 .. code-block:: postgresql
 
@@ -437,11 +437,11 @@ Measure "Illiterate males" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_1`
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -461,7 +461,7 @@ Measure "Illiterate males" percent of "Males" within an area:
 .. _es.ine.t15_2:
 
 Persons aged between 16 (included) and 64 (included) years and illiterate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -513,7 +513,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Illiterate persons" at one point:
 
 .. code-block:: postgresql
 
@@ -526,7 +526,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and illiterate" percent of "Illiterate persons" within an area:
 
 .. code-block:: postgresql
 
@@ -585,11 +585,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_1`
 
 :Denominator:
 
-    :ref:`es.ine.t12_1`
+    :ref:`es.ine.t3_2`
 
 
 :Source:
@@ -609,7 +609,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and illitera
 .. _es.ine.t15_3:
 
 Persons aged over 64 years and illiterate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -757,7 +757,7 @@ Measure "Persons aged over 64 years and illiterate" percent of "Illiterate perso
 .. _es.ine.t14_2:
 
 Persons with a foreign nationality and illiterate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -905,7 +905,7 @@ Measure "Persons with a foreign nationality and illiterate" percent of "Persons 
 .. _es.ine.t14_1:
 
 Persons with Spanish nationality and illiterate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1053,150 +1053,10 @@ Measure "Persons with Spanish nationality and illiterate" percent of "Persons wi
 
 
 
-.. _es.ine.t15_16:
-
-Persons aged under 16 years (information regarding the educational level is not available)
----------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-Measure "Persons aged under 16 years (information regarding the educational level is not available)"  density per sq. kilometer  for one point:
-
-
-.. code-block:: postgresql
-
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(42.8226119029, -2.51141249535),
-        'es.ine.t15_16'
-      );
-
-
-
-
-
-Measure "Persons aged under 16 years (information regarding the educational level is not available)" within an area:
-
-.. code-block:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
-          'es.ine.t15_16'
-        );
-
-
-
-
-
-
-Measure "Persons aged under 16 years (information regarding the educational level is not available)" percent of "Persons aged under 16 years" at one point:
-
-.. code-block:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(42.8226119029, -2.51141249535),
-        'es.ine.t15_16',
-        'denominator'
-      );
-
-
-Measure "Persons aged under 16 years (information regarding the educational level is not available)" percent of "Persons aged under 16 years" within an area:
-
-.. code-block:: postgresql
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        ST_Buffer(CDB_LatLng(42.8226119029, -2.51141249535), 0.01),
-        'es.ine.t15_16',
-        'denominator'
-      );
-
-
-
-
-
-
-.. raw:: html
-
-   <table border="1" class="docutils">
-   <thead valign="bottom">
-   <tr class="row-odd"><th class="head">Boundary</th>
-   <th class="head">Time (default is latest)</th>
-   </tr>
-   </thead>
-   <tbody valign="top">
-
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`es.ine.the_geom`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2011
-
-.. raw:: html
-
-   </td>
-
-   
-
-.. raw:: html
-
-   </tr>
-   </tbody>
-   </table>
-
-
-
-
-:Denominator:
-
-    :ref:`es.ine.t3_1`
-
-
-:Source:
-
-    :ref:`es.ine.ine-source`
-
-:License:
-
-    :ref:`es.ine.ine-license`
-
-
-
-
-
-
-
 .. _es.ine.t12_3:
 
 Persons with first level studies
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -1343,7 +1203,7 @@ Measure "Persons with first level studies" percent of "Total population" within 
 .. _es.ine.t13_6:
 
 Females with first level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1491,7 +1351,7 @@ Measure "Females with first level studies" percent of "Females" within an area:
 .. _es.ine.t13_5:
 
 Males with first level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1543,7 +1403,7 @@ Measure "Males with first level studies" within an area:
 
 
 
-Measure "Males with first level studies" percent of "Males" at one point:
+Measure "Males with first level studies" percent of "Persons with first level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -1556,7 +1416,7 @@ Measure "Males with first level studies" percent of "Males" at one point:
       );
 
 
-Measure "Males with first level studies" percent of "Males" within an area:
+Measure "Males with first level studies" percent of "Persons with first level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -1615,11 +1475,11 @@ Measure "Males with first level studies" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_3`
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -1639,7 +1499,7 @@ Measure "Males with first level studies" percent of "Males" within an area:
 .. _es.ine.t15_8:
 
 Persons aged between 16 (included) and 64 (included) years and with first level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1691,7 +1551,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with fir
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons with first level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -1704,7 +1564,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with fir
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and with first level studies" percent of "Persons with first level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -1763,11 +1623,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with fir
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_3`
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t3_2`
 
 
 :Source:
@@ -1787,7 +1647,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with fir
 .. _es.ine.t15_11:
 
 Persons aged between 16 (included) and 64 (included) years and with second level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1839,7 +1699,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with sec
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons with first level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -1852,7 +1712,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with sec
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and with second level studies" percent of "Persons with first level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -1911,11 +1771,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with sec
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_3`
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t3_2`
 
 
 :Source:
@@ -1935,7 +1795,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with sec
 .. _es.ine.t15_14:
 
 Persons aged between 16 (included) and 64 (included) years and with third level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1987,7 +1847,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with thi
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons with first level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -2000,7 +1860,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with thi
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and with third level studies" percent of "Persons with first level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -2059,11 +1919,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with thi
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_3`
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t3_2`
 
 
 :Source:
@@ -2083,7 +1943,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and with thi
 .. _es.ine.t15_9:
 
 Persons aged over 64 years and with first level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2231,7 +2091,7 @@ Measure "Persons aged over 64 years and with first level studies" percent of "Pe
 .. _es.ine.t15_12:
 
 Persons aged over 64 years and with second level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2379,7 +2239,7 @@ Measure "Persons aged over 64 years and with second level studies" percent of "P
 .. _es.ine.t15_15:
 
 Persons aged over 64 years and with third level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2527,7 +2387,7 @@ Measure "Persons aged over 64 years and with third level studies" percent of "Pe
 .. _es.ine.t14_6:
 
 Persons with a foreign nationality and with first level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2675,7 +2535,7 @@ Measure "Persons with a foreign nationality and with first level studies" percen
 .. _es.ine.t14_5:
 
 Persons with Spanish nationality and with first level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2727,7 +2587,7 @@ Measure "Persons with Spanish nationality and with first level studies" within a
 
 
 
-Measure "Persons with Spanish nationality and with first level studies" percent of "Persons with Spanish nationality" at one point:
+Measure "Persons with Spanish nationality and with first level studies" percent of "Persons with first level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -2740,7 +2600,7 @@ Measure "Persons with Spanish nationality and with first level studies" percent 
       );
 
 
-Measure "Persons with Spanish nationality and with first level studies" percent of "Persons with Spanish nationality" within an area:
+Measure "Persons with Spanish nationality and with first level studies" percent of "Persons with first level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -2799,11 +2659,11 @@ Measure "Persons with Spanish nationality and with first level studies" percent 
 
 :Denominator:
 
-    :ref:`es.ine.t6_1`
+    :ref:`es.ine.t12_3`
 
 :Denominator:
 
-    :ref:`es.ine.t12_3`
+    :ref:`es.ine.t6_1`
 
 
 :Source:
@@ -2826,7 +2686,7 @@ Measure "Persons with Spanish nationality and with first level studies" percent 
 .. _es.ine.t12_4:
 
 Persons with second level studies
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -2973,7 +2833,7 @@ Measure "Persons with second level studies" percent of "Total population" within
 .. _es.ine.t13_8:
 
 Females with second level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3121,7 +2981,7 @@ Measure "Females with second level studies" percent of "Females" within an area:
 .. _es.ine.t13_7:
 
 Males with second level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3173,7 +3033,7 @@ Measure "Males with second level studies" within an area:
 
 
 
-Measure "Males with second level studies" percent of "Males" at one point:
+Measure "Males with second level studies" percent of "Persons with second level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -3186,7 +3046,7 @@ Measure "Males with second level studies" percent of "Males" at one point:
       );
 
 
-Measure "Males with second level studies" percent of "Males" within an area:
+Measure "Males with second level studies" percent of "Persons with second level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -3245,11 +3105,11 @@ Measure "Males with second level studies" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_4`
 
 :Denominator:
 
-    :ref:`es.ine.t12_4`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -3269,7 +3129,7 @@ Measure "Males with second level studies" percent of "Males" within an area:
 .. _es.ine.t14_8:
 
 Persons with a foreign nationality and with second level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3417,7 +3277,7 @@ Measure "Persons with a foreign nationality and with second level studies" perce
 .. _es.ine.t14_7:
 
 Persons with Spanish nationality and with second level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3568,7 +3428,7 @@ Measure "Persons with Spanish nationality and with second level studies" percent
 .. _es.ine.t12_5:
 
 Persons with third level studies
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -3715,7 +3575,7 @@ Measure "Persons with third level studies" percent of "Total population" within 
 .. _es.ine.t13_10:
 
 Females with third level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3767,7 +3627,7 @@ Measure "Females with third level studies" within an area:
 
 
 
-Measure "Females with third level studies" percent of "Females" at one point:
+Measure "Females with third level studies" percent of "Persons with third level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -3780,7 +3640,7 @@ Measure "Females with third level studies" percent of "Females" at one point:
       );
 
 
-Measure "Females with third level studies" percent of "Females" within an area:
+Measure "Females with third level studies" percent of "Persons with third level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -3839,11 +3699,11 @@ Measure "Females with third level studies" percent of "Females" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_2`
+    :ref:`es.ine.t12_5`
 
 :Denominator:
 
-    :ref:`es.ine.t12_5`
+    :ref:`es.ine.t2_2`
 
 
 :Source:
@@ -3863,7 +3723,7 @@ Measure "Females with third level studies" percent of "Females" within an area:
 .. _es.ine.t13_9:
 
 Males with third level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3915,7 +3775,7 @@ Measure "Males with third level studies" within an area:
 
 
 
-Measure "Males with third level studies" percent of "Males" at one point:
+Measure "Males with third level studies" percent of "Persons with third level studies" at one point:
 
 .. code-block:: postgresql
 
@@ -3928,7 +3788,7 @@ Measure "Males with third level studies" percent of "Males" at one point:
       );
 
 
-Measure "Males with third level studies" percent of "Males" within an area:
+Measure "Males with third level studies" percent of "Persons with third level studies" within an area:
 
 .. code-block:: postgresql
 
@@ -3987,11 +3847,11 @@ Measure "Males with third level studies" percent of "Males" within an area:
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_5`
 
 :Denominator:
 
-    :ref:`es.ine.t12_5`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -4011,7 +3871,7 @@ Measure "Males with third level studies" percent of "Males" within an area:
 .. _es.ine.t14_10:
 
 Persons with a foreign nationality and with third level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4159,7 +4019,7 @@ Measure "Persons with a foreign nationality and with third level studies" percen
 .. _es.ine.t14_9:
 
 Persons with Spanish nationality and with third level studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4310,7 +4170,7 @@ Measure "Persons with Spanish nationality and with third level studies" percent 
 .. _es.ine.t12_6:
 
 Persons without information regarding their educational level (aged under 16 years)
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -4457,7 +4317,7 @@ Measure "Persons without information regarding their educational level (aged und
 .. _es.ine.t13_12:
 
 Females without information regarding their educational level  (under 16 years of age)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4605,7 +4465,7 @@ Measure "Females without information regarding their educational level  (under 1
 .. _es.ine.t13_11:
 
 Males without information regarding their educational level (under 16 years of age)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4657,7 +4517,7 @@ Measure "Males without information regarding their educational level (under 16 y
 
 
 
-Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" at one point:
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
 
 .. code-block:: postgresql
 
@@ -4670,7 +4530,7 @@ Measure "Males without information regarding their educational level (under 16 y
       );
 
 
-Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Males" within an area:
+Measure "Males without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
 
 .. code-block:: postgresql
 
@@ -4729,11 +4589,11 @@ Measure "Males without information regarding their educational level (under 16 y
 
 :Denominator:
 
-    :ref:`es.ine.t2_1`
+    :ref:`es.ine.t12_6`
 
 :Denominator:
 
-    :ref:`es.ine.t12_6`
+    :ref:`es.ine.t2_1`
 
 
 :Source:
@@ -4753,7 +4613,7 @@ Measure "Males without information regarding their educational level (under 16 y
 .. _es.ine.t14_12:
 
 Persons with a foreign nationality without information regarding their educational level (under 16 years of age)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4805,7 +4665,7 @@ Measure "Persons with a foreign nationality without information regarding their 
 
 
 
-Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" at one point:
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
 
 .. code-block:: postgresql
 
@@ -4818,7 +4678,7 @@ Measure "Persons with a foreign nationality without information regarding their 
       );
 
 
-Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" within an area:
+Measure "Persons with a foreign nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
 
 .. code-block:: postgresql
 
@@ -4877,11 +4737,11 @@ Measure "Persons with a foreign nationality without information regarding their 
 
 :Denominator:
 
-    :ref:`es.ine.t6_1`
+    :ref:`es.ine.t12_6`
 
 :Denominator:
 
-    :ref:`es.ine.t12_6`
+    :ref:`es.ine.t6_1`
 
 
 :Source:
@@ -4901,7 +4761,7 @@ Measure "Persons with a foreign nationality without information regarding their 
 .. _es.ine.t14_11:
 
 Persons with Spanish nationality without information regarding their educational level (under 16 years of age)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4953,7 +4813,7 @@ Measure "Persons with Spanish nationality without information regarding their ed
 
 
 
-Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" at one point:
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" at one point:
 
 .. code-block:: postgresql
 
@@ -4966,7 +4826,7 @@ Measure "Persons with Spanish nationality without information regarding their ed
       );
 
 
-Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons with Spanish nationality" within an area:
+Measure "Persons with Spanish nationality without information regarding their educational level (under 16 years of age)" percent of "Persons without information regarding their educational level (aged under 16 years)" within an area:
 
 .. code-block:: postgresql
 
@@ -5025,11 +4885,11 @@ Measure "Persons with Spanish nationality without information regarding their ed
 
 :Denominator:
 
-    :ref:`es.ine.t6_1`
+    :ref:`es.ine.t12_6`
 
 :Denominator:
 
-    :ref:`es.ine.t12_6`
+    :ref:`es.ine.t6_1`
 
 
 :Source:
@@ -5052,7 +4912,7 @@ Measure "Persons with Spanish nationality without information regarding their ed
 .. _es.ine.t12_2:
 
 Persons without studies
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -5199,7 +5059,7 @@ Measure "Persons without studies" percent of "Total population" within an area:
 .. _es.ine.t13_4:
 
 Females without studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -5347,7 +5207,7 @@ Measure "Females without studies" percent of "Females" within an area:
 .. _es.ine.t13_3:
 
 Males without studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -5495,7 +5355,7 @@ Measure "Males without studies" percent of "Persons without studies" within an a
 .. _es.ine.t15_5:
 
 Persons aged between 16 (included) and 64 (included) years and without studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -5547,7 +5407,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and without 
 
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and without studies" percent of "Persons without studies" at one point:
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies" percent of "Persons aged between 16 (included) and 64 (included) years" at one point:
 
 .. code-block:: postgresql
 
@@ -5560,7 +5420,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and without 
       );
 
 
-Measure "Persons aged between 16 (included) and 64 (included) years and without studies" percent of "Persons without studies" within an area:
+Measure "Persons aged between 16 (included) and 64 (included) years and without studies" percent of "Persons aged between 16 (included) and 64 (included) years" within an area:
 
 .. code-block:: postgresql
 
@@ -5619,11 +5479,11 @@ Measure "Persons aged between 16 (included) and 64 (included) years and without 
 
 :Denominator:
 
-    :ref:`es.ine.t12_2`
+    :ref:`es.ine.t3_2`
 
 :Denominator:
 
-    :ref:`es.ine.t3_2`
+    :ref:`es.ine.t12_2`
 
 
 :Source:
@@ -5643,7 +5503,7 @@ Measure "Persons aged between 16 (included) and 64 (included) years and without 
 .. _es.ine.t15_6:
 
 Persons aged over 64 years and without studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -5791,7 +5651,7 @@ Measure "Persons aged over 64 years and without studies" percent of "Persons wit
 .. _es.ine.t14_4:
 
 Persons with a foreign nationality and without studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -5843,7 +5703,7 @@ Measure "Persons with a foreign nationality and without studies" within an area:
 
 
 
-Measure "Persons with a foreign nationality and without studies" percent of "Persons without studies" at one point:
+Measure "Persons with a foreign nationality and without studies" percent of "Persons with a foreign nationality" at one point:
 
 .. code-block:: postgresql
 
@@ -5856,7 +5716,7 @@ Measure "Persons with a foreign nationality and without studies" percent of "Per
       );
 
 
-Measure "Persons with a foreign nationality and without studies" percent of "Persons without studies" within an area:
+Measure "Persons with a foreign nationality and without studies" percent of "Persons with a foreign nationality" within an area:
 
 .. code-block:: postgresql
 
@@ -5915,11 +5775,11 @@ Measure "Persons with a foreign nationality and without studies" percent of "Per
 
 :Denominator:
 
-    :ref:`es.ine.t12_2`
+    :ref:`es.ine.t6_2`
 
 :Denominator:
 
-    :ref:`es.ine.t6_2`
+    :ref:`es.ine.t12_2`
 
 
 :Source:
@@ -5939,7 +5799,7 @@ Measure "Persons with a foreign nationality and without studies" percent of "Per
 .. _es.ine.t14_3:
 
 Persons with Spanish nationality and without studies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 

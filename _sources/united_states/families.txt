@@ -3,7 +3,7 @@
 .. Families:
 
 Families
-===========================================================================
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 Familial arrangements of people and households.
 
@@ -18,7 +18,7 @@ Familial arrangements of people and households.
 .. _us.census.acs.B09001001:
 
 Children under 18 Years of Age
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -88,97 +88,43 @@ Measure "Children under 18 Years of Age" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
 
 .. raw:: html
 
@@ -214,24 +160,6 @@ Measure "Children under 18 Years of Age" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.census_tract`
 
 .. raw:: html
@@ -250,7 +178,7 @@ Measure "Children under 18 Years of Age" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.puma`
 
 .. raw:: html
 
@@ -276,6 +204,78 @@ Measure "Children under 18 Years of Age" within an area:
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 
@@ -315,338 +315,10 @@ Measure "Children under 18 Years of Age" within an area:
 
 
 
-.. _us.census.acs.B23008002:
-
-Families with young children (under 6 years of age)
----------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-Measure "Families with young children (under 6 years of age)"  density per sq. kilometer  for one point:
-
-
-.. code-block:: postgresql
-
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B23008002'
-      );
-
-
-
-
-
-Measure "Families with young children (under 6 years of age)" within an area:
-
-.. code-block:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B23008002'
-        );
-
-
-
-
-
-
-
-
-.. raw:: html
-
-   <table border="1" class="docutils">
-   <thead valign="bottom">
-   <tr class="row-odd"><th class="head">Boundary</th>
-   <th class="head">Time (default is latest)</th>
-   </tr>
-   </thead>
-   <tbody valign="top">
-
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_elementary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.cbsa`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.county`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-
-.. raw:: html
-
-   </tr>
-   </tbody>
-   </table>
-
-
-
-
-
-:Source:
-
-    :ref:`us.census.acs.acs`
-
-:License:
-
-    :ref:`tags.no-restrictions`
-
-
-.. contents:: Subcolumns of Families with young children (under 6 years of age)
-   :local:
-   :depth: 1
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
 .. _us.census.acs.B11009005:
 
 Households with two female partners
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -744,97 +416,43 @@ Measure "Households with two female partners" percent of "Households" within an 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
 
 .. raw:: html
 
@@ -870,24 +488,6 @@ Measure "Households with two female partners" percent of "Households" within an 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.census_tract`
 
 .. raw:: html
@@ -906,7 +506,7 @@ Measure "Households with two female partners" percent of "Households" within an 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.puma`
 
 .. raw:: html
 
@@ -932,6 +532,78 @@ Measure "Households with two female partners" percent of "Households" within an 
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 
@@ -970,7 +642,7 @@ Measure "Households with two female partners" percent of "Households" within an 
 .. _us.census.acs.B11009003:
 
 Households with two male partners
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -1068,97 +740,43 @@ Measure "Households with two male partners" percent of "Households" within an ar
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
 
 .. raw:: html
 
@@ -1194,24 +812,6 @@ Measure "Households with two male partners" percent of "Households" within an ar
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.census_tract`
 
 .. raw:: html
@@ -1230,7 +830,7 @@ Measure "Households with two male partners" percent of "Households" within an ar
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.puma`
 
 .. raw:: html
 
@@ -1256,6 +856,78 @@ Measure "Households with two male partners" percent of "Households" within an ar
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 
@@ -1294,7 +966,7 @@ Measure "Households with two male partners" percent of "Households" within an ar
 .. _us.census.acs.B11001003:
 
 Married households
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -1392,169 +1064,7 @@ Measure "Married households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_elementary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.cbsa`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -1590,7 +1100,7 @@ Measure "Married households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_elementary`
 
 .. raw:: html
 
@@ -1598,6 +1108,168 @@ Measure "Married households" percent of "Households" within an area:
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.cbsa`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 
@@ -1636,7 +1308,7 @@ Measure "Married households" percent of "Households" within an area:
 .. _us.census.acs.B12005001:
 
 Population 15 Years and Over
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -1706,97 +1378,43 @@ Measure "Population 15 Years and Over" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
 
 .. raw:: html
 
@@ -1832,24 +1450,6 @@ Measure "Population 15 Years and Over" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.census_tract`
 
 .. raw:: html
@@ -1868,7 +1468,7 @@ Measure "Population 15 Years and Over" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.puma`
 
 .. raw:: html
 
@@ -1894,6 +1494,78 @@ Measure "Population 15 Years and Over" within an area:
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 
@@ -1931,7 +1603,7 @@ Measure "Population 15 Years and Over" within an area:
 .. _us.census.acs.B12005005:
 
 Currently married
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2029,97 +1701,43 @@ Measure "Currently married" percent of "Population 15 Years and Over" within an 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
 
 .. raw:: html
 
@@ -2155,24 +1773,6 @@ Measure "Currently married" percent of "Population 15 Years and Over" within an 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.census_tract`
 
 .. raw:: html
@@ -2191,7 +1791,7 @@ Measure "Currently married" percent of "Population 15 Years and Over" within an 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.puma`
 
 .. raw:: html
 
@@ -2217,6 +1817,78 @@ Measure "Currently married" percent of "Population 15 Years and Over" within an 
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 
@@ -2255,7 +1927,7 @@ Measure "Currently married" percent of "Population 15 Years and Over" within an 
 .. _us.census.acs.B12005015:
 
 Divorced
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2353,97 +2025,43 @@ Measure "Divorced" percent of "Population 15 Years and Over" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
 
 .. raw:: html
 
@@ -2479,24 +2097,6 @@ Measure "Divorced" percent of "Population 15 Years and Over" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.census_tract`
 
 .. raw:: html
@@ -2515,7 +2115,7 @@ Measure "Divorced" percent of "Population 15 Years and Over" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.puma`
 
 .. raw:: html
 
@@ -2541,6 +2141,78 @@ Measure "Divorced" percent of "Population 15 Years and Over" within an area:
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 
@@ -2579,7 +2251,7 @@ Measure "Divorced" percent of "Population 15 Years and Over" within an area:
 .. _us.census.acs.B12005008:
 
 Married but separated
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2677,97 +2349,43 @@ Measure "Married but separated" percent of "Population 15 Years and Over" within
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
 
 .. raw:: html
 
@@ -2803,24 +2421,6 @@ Measure "Married but separated" percent of "Population 15 Years and Over" within
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.census_tract`
 
 .. raw:: html
@@ -2839,7 +2439,7 @@ Measure "Married but separated" percent of "Population 15 Years and Over" within
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.puma`
 
 .. raw:: html
 
@@ -2865,6 +2465,78 @@ Measure "Married but separated" percent of "Population 15 Years and Over" within
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 
@@ -2903,7 +2575,7 @@ Measure "Married but separated" percent of "Population 15 Years and Over" within
 .. _us.census.acs.B12005002:
 
 Never Married
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3001,97 +2673,43 @@ Measure "Never Married" percent of "Population 15 Years and Over" within an area
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
 
 .. raw:: html
 
@@ -3127,24 +2745,6 @@ Measure "Never Married" percent of "Population 15 Years and Over" within an area
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.census_tract`
 
 .. raw:: html
@@ -3163,7 +2763,7 @@ Measure "Never Married" percent of "Population 15 Years and Over" within an area
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.puma`
 
 .. raw:: html
 
@@ -3189,6 +2789,78 @@ Measure "Never Married" percent of "Population 15 Years and Over" within an area
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 
@@ -3227,7 +2899,7 @@ Measure "Never Married" percent of "Population 15 Years and Over" within an area
 .. _us.census.acs.B12005012:
 
 Widowed
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -3325,97 +2997,43 @@ Measure "Widowed" percent of "Population 15 Years and Over" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.school_district_unified_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.county_clipped`
 
 .. raw:: html
 
@@ -3451,24 +3069,6 @@ Measure "Widowed" percent of "Population 15 Years and Over" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.census_tract`
 
 .. raw:: html
@@ -3487,7 +3087,7 @@ Measure "Widowed" percent of "Population 15 Years and Over" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.county`
+:ref:`us.census.tiger.puma`
 
 .. raw:: html
 
@@ -3513,6 +3113,78 @@ Measure "Widowed" percent of "Population 15 Years and Over" within an area:
    <td>
 
 2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.zcta5`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
 
 .. raw:: html
 

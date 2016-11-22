@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; observatory 0.0.1 documentation</title>
+    <title>4.9. Transportation &mdash; observatory 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -30,7 +30,7 @@
     <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
     <link rel="up" title="4. European Union" href="../eu.html" />
     <link rel="next" title="&lt;no title&gt;" href="us.census.acs.segments.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="segments.html" />
+    <link rel="prev" title="4.8. Society" href="society.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -46,18 +46,123 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  
+  <div class="section" id="transportation">
+<h1>4.9. Transportation<a class="headerlink" href="#transportation" title="Permalink to this headline">¶</a></h1>
+<p>How do people move from place to place?</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#air-transport-of-freight-freight-and-mail-loaded-and-unloaded-thousand-tonnes" id="id1">Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes</a></li>
+<li><a class="reference internal" href="#air-transport-of-passengers-passengers-carried-thousand-passengers" id="id2">Air transport of passengers - Passengers carried, Thousand passengers</a></li>
+</ul>
+</div>
+<div class="section" id="air-transport-of-freight-freight-and-mail-loaded-and-unloaded-thousand-tonnes">
+<span id="eu-eurostat-tgs00078"></span><h2><a class="toc-backref" href="#id1">4.9.1. Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes</a><a class="headerlink" href="#air-transport-of-freight-freight-and-mail-loaded-and-unloaded-thousand-tonnes" title="Permalink to this headline">¶</a></h2>
+<p>Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes</p>
+<p>Measure &#8220;Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00078&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00078&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#eu-geo-nuts2"><span class="std std-ref">NUTS Level 2</span></a></p>
+</td>
+<td><p>2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#eu-eurostat-eurostat-source"><span class="std std-ref">Eurostat</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#eu-eurostat-eurostat-license"><span class="std std-ref">Copyright European Union</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="air-transport-of-passengers-passengers-carried-thousand-passengers">
+<span id="eu-eurostat-tgs00077"></span><h2><a class="toc-backref" href="#id2">4.9.2. Air transport of passengers - Passengers carried, Thousand passengers</a><a class="headerlink" href="#air-transport-of-passengers-passengers-carried-thousand-passengers" title="Permalink to this headline">¶</a></h2>
+<p>Air transport of passengers - Passengers carried, Thousand passengers</p>
+<p>Measure &#8220;Air transport of passengers - Passengers carried, Thousand passengers&#8221;  density per sq. kilometer  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00077&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Measure &#8220;Air transport of passengers - Passengers carried, Thousand passengers&#8221; within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00077&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#eu-geo-nuts2"><span class="std std-ref">NUTS Level 2</span></a></p>
+</td>
+<td><p>2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#eu-eurostat-eurostat-source"><span class="std std-ref">Eurostat</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#eu-eurostat-eurostat-license"><span class="std std-ref">Copyright European Union</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
 
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">4.9. Transportation</a><ul>
+<li><a class="reference internal" href="#air-transport-of-freight-freight-and-mail-loaded-and-unloaded-thousand-tonnes">4.9.1. Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes</a></li>
+<li><a class="reference internal" href="#air-transport-of-passengers-passengers-carried-thousand-passengers">4.9.2. Air transport of passengers - Passengers carried, Thousand passengers</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="../eu.html">4. European Union</a><ul>
-      <li>Previous: <a href="segments.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Previous: <a href="society.html" title="previous chapter">4.8. Society</a></li>
       <li>Next: <a href="us.census.acs.segments.html" title="next chapter">&lt;no title&gt;</a></li>
   </ul></li>
   </ul></li>

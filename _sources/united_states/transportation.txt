@@ -3,7 +3,7 @@
 .. Transportation:
 
 Transportation
-===========================================================================
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 How do people move from place to place?
 
@@ -15,320 +15,10 @@ How do people move from place to place?
 
 
 
-.. _us.census.acs.B08135001:
-
-Aggregate travel time to work
----------------------------------------------------------------------------
-
-
-
-
-
-The total number of minutes every worker in a geographic area over the age of 16 who did not work from home spent spent commuting to work in one day
-
-
-
-
-
-Measure "Aggregate travel time to work"  density per sq. kilometer  for one point:
-
-
-.. code-block:: postgresql
-
-
-
-
-
-  UPDATE {table_name}
-    SET {new_numeric_column} =
-      OBS_GetMeasure(
-        CDB_LatLng(40.7, -73.9),
-        'us.census.acs.B08135001'
-      );
-
-
-
-
-
-Measure "Aggregate travel time to work" within an area:
-
-.. code-block:: postgresql
-
-    UPDATE {table_name}
-      SET {new_numeric_column} =
-        OBS_GetMeasure(
-          ST_Buffer(CDB_LatLng(40.7, -73.9), 0.01),
-          'us.census.acs.B08135001'
-        );
-
-
-
-
-
-
-
-
-.. raw:: html
-
-   <table border="1" class="docutils">
-   <thead valign="bottom">
-   <tr class="row-odd"><th class="head">Boundary</th>
-   <th class="head">Time (default is latest)</th>
-   </tr>
-   </thead>
-   <tbody valign="top">
-
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.county`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.cbsa_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_elementary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.congressional_district`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-
-.. raw:: html
-
-   </tr>
-   </tbody>
-   </table>
-
-
-
-
-:Divisor:
-
-    :ref:`us.census.acs.B08134001`
-
-
-:Source:
-
-    :ref:`us.census.acs.acs`
-
-:License:
-
-    :ref:`tags.no-restrictions`
-
-
-
-
-
-
-
 .. _us.census.acs.B08201002:
 
 Car-free households
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -426,42 +116,6 @@ Measure "Car-free households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -480,7 +134,7 @@ Measure "Car-free households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -498,25 +152,7 @@ Measure "Car-free households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -552,32 +188,14 @@ Measure "Car-free households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -606,7 +224,79 @@ Measure "Car-free households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -652,7 +342,7 @@ Measure "Car-free households" percent of "Households" within an area:
 .. _us.census.acs.B08006002:
 
 Commuters by Car, Truck, or Van
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -750,42 +440,6 @@ Measure "Commuters by Car, Truck, or Van" percent of "Workers over the Age of 16
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -804,7 +458,7 @@ Measure "Commuters by Car, Truck, or Van" percent of "Workers over the Age of 16
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -822,25 +476,7 @@ Measure "Commuters by Car, Truck, or Van" percent of "Workers over the Age of 16
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -876,32 +512,14 @@ Measure "Commuters by Car, Truck, or Van" percent of "Workers over the Age of 16
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -930,7 +548,79 @@ Measure "Commuters by Car, Truck, or Van" percent of "Workers over the Age of 16
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -979,7 +669,7 @@ Measure "Commuters by Car, Truck, or Van" percent of "Workers over the Age of 16
 .. _us.census.acs.B08006004:
 
 Commuters by Carpool
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1077,42 +767,6 @@ Measure "Commuters by Carpool" percent of "Commuters by Car, Truck, or Van" with
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -1131,7 +785,7 @@ Measure "Commuters by Carpool" percent of "Commuters by Car, Truck, or Van" with
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -1149,25 +803,7 @@ Measure "Commuters by Carpool" percent of "Commuters by Car, Truck, or Van" with
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -1203,32 +839,14 @@ Measure "Commuters by Carpool" percent of "Commuters by Car, Truck, or Van" with
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -1257,7 +875,79 @@ Measure "Commuters by Carpool" percent of "Commuters by Car, Truck, or Van" with
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -1303,7 +993,7 @@ Measure "Commuters by Carpool" percent of "Commuters by Car, Truck, or Van" with
 .. _us.census.acs.B08006003:
 
 Commuters who drove alone
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -1401,42 +1091,6 @@ Measure "Commuters who drove alone" percent of "Commuters by Car, Truck, or Van"
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -1455,7 +1109,7 @@ Measure "Commuters who drove alone" percent of "Commuters by Car, Truck, or Van"
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -1473,25 +1127,7 @@ Measure "Commuters who drove alone" percent of "Commuters by Car, Truck, or Van"
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -1527,32 +1163,14 @@ Measure "Commuters who drove alone" percent of "Commuters by Car, Truck, or Van"
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -1581,7 +1199,79 @@ Measure "Commuters who drove alone" percent of "Commuters by Car, Truck, or Van"
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -1630,7 +1320,7 @@ Measure "Commuters who drove alone" percent of "Commuters by Car, Truck, or Van"
 .. _us.census.acs.B08301010:
 
 Commuters by Public Transportation
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -1728,115 +1418,43 @@ Measure "Commuters by Public Transportation" percent of "Workers over the Age of
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -1872,32 +1490,14 @@ Measure "Commuters by Public Transportation" percent of "Workers over the Age of
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -1926,7 +1526,97 @@ Measure "Commuters by Public Transportation" percent of "Workers over the Age of
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -1975,7 +1665,7 @@ Measure "Commuters by Public Transportation" percent of "Workers over the Age of
 .. _us.census.acs.B08006009:
 
 Commuters by Bus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2073,42 +1763,6 @@ Measure "Commuters by Bus" percent of "Commuters by Public Transportation" withi
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -2127,7 +1781,7 @@ Measure "Commuters by Bus" percent of "Commuters by Public Transportation" withi
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -2145,25 +1799,7 @@ Measure "Commuters by Bus" percent of "Commuters by Public Transportation" withi
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -2199,32 +1835,14 @@ Measure "Commuters by Bus" percent of "Commuters by Public Transportation" withi
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -2253,7 +1871,79 @@ Measure "Commuters by Bus" percent of "Commuters by Public Transportation" withi
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -2299,7 +1989,7 @@ Measure "Commuters by Bus" percent of "Commuters by Public Transportation" withi
 .. _us.census.acs.B08006011:
 
 Commuters by Subway or Elevated
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -2397,42 +2087,6 @@ Measure "Commuters by Subway or Elevated" percent of "Commuters by Public Transp
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -2451,7 +2105,7 @@ Measure "Commuters by Subway or Elevated" percent of "Commuters by Public Transp
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -2469,25 +2123,7 @@ Measure "Commuters by Subway or Elevated" percent of "Commuters by Public Transp
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -2523,32 +2159,14 @@ Measure "Commuters by Subway or Elevated" percent of "Commuters by Public Transp
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -2577,7 +2195,79 @@ Measure "Commuters by Subway or Elevated" percent of "Commuters by Public Transp
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -2626,7 +2316,7 @@ Measure "Commuters by Subway or Elevated" percent of "Commuters by Public Transp
 .. _us.census.acs.B08201006:
 
 Four car households
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -2724,42 +2414,6 @@ Measure "Four car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -2778,7 +2432,7 @@ Measure "Four car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -2796,25 +2450,7 @@ Measure "Four car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -2850,32 +2486,14 @@ Measure "Four car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -2904,7 +2522,79 @@ Measure "Four car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -2950,7 +2640,7 @@ Measure "Four car households" percent of "Households" within an area:
 .. _us.census.acs.B08201003:
 
 One car households
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -3048,42 +2738,6 @@ Measure "One car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -3102,7 +2756,7 @@ Measure "One car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -3120,25 +2774,7 @@ Measure "One car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -3174,32 +2810,14 @@ Measure "One car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -3228,7 +2846,79 @@ Measure "One car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -3274,7 +2964,7 @@ Measure "One car households" percent of "Households" within an area:
 .. _us.census.acs.B08201005:
 
 Three car households
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -3372,42 +3062,6 @@ Measure "Three car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -3426,7 +3080,7 @@ Measure "Three car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -3444,25 +3098,7 @@ Measure "Three car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -3498,32 +3134,14 @@ Measure "Three car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -3552,7 +3170,79 @@ Measure "Three car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -3598,7 +3288,7 @@ Measure "Three car households" percent of "Households" within an area:
 .. _us.census.acs.B08201004:
 
 Two car households
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -3696,42 +3386,6 @@ Measure "Two car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -3750,7 +3404,7 @@ Measure "Two car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -3768,25 +3422,7 @@ Measure "Two car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -3822,32 +3458,14 @@ Measure "Two car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -3876,7 +3494,79 @@ Measure "Two car households" percent of "Households" within an area:
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -3922,7 +3612,7 @@ Measure "Two car households" percent of "Households" within an area:
 .. _us.census.acs.B08006015:
 
 Walked to Work
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -4020,42 +3710,6 @@ Measure "Walked to Work" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -4074,7 +3728,7 @@ Measure "Walked to Work" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -4092,25 +3746,7 @@ Measure "Walked to Work" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -4146,32 +3782,14 @@ Measure "Walked to Work" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -4200,7 +3818,79 @@ Measure "Walked to Work" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -4246,7 +3936,7 @@ Measure "Walked to Work" percent of "Workers over the Age of 16" within an area:
 .. _us.census.acs.B08006017:
 
 Worked at Home
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -4344,42 +4034,6 @@ Measure "Worked at Home" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -4398,7 +4052,7 @@ Measure "Worked at Home" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -4416,25 +4070,7 @@ Measure "Worked at Home" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -4470,32 +4106,14 @@ Measure "Worked at Home" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -4524,7 +4142,79 @@ Measure "Worked at Home" percent of "Workers over the Age of 16" within an area:
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -4570,7 +4260,7 @@ Measure "Worked at Home" percent of "Workers over the Age of 16" within an area:
 .. _us.census.acs.B08134001:
 
 Workers age 16 and over who do not work from home
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -4640,115 +4330,43 @@ Measure "Workers age 16 and over who do not work from home" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -4784,25 +4402,7 @@ Measure "Workers age 16 and over who do not work from home" within an area:
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
@@ -4838,7 +4438,97 @@ Measure "Workers age 16 and over who do not work from home" within an area:
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -4883,7 +4573,7 @@ Measure "Workers age 16 and over who do not work from home" within an area:
 .. _us.census.acs.B08303003:
 
 Number of workers with a commute between 5 and 9 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -4981,115 +4671,43 @@ Measure "Number of workers with a commute between 5 and 9 minutes" percent of "W
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -5125,32 +4743,14 @@ Measure "Number of workers with a commute between 5 and 9 minutes" percent of "W
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -5179,7 +4779,97 @@ Measure "Number of workers with a commute between 5 and 9 minutes" percent of "W
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -5225,7 +4915,7 @@ Measure "Number of workers with a commute between 5 and 9 minutes" percent of "W
 .. _us.census.acs.B08303004:
 
 Number of workers with a commute between 10 and 14 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -5323,115 +5013,43 @@ Measure "Number of workers with a commute between 10 and 14 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -5467,32 +5085,14 @@ Measure "Number of workers with a commute between 10 and 14 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -5521,7 +5121,97 @@ Measure "Number of workers with a commute between 10 and 14 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -5567,7 +5257,7 @@ Measure "Number of workers with a commute between 10 and 14 minutes" percent of 
 .. _us.census.acs.B08303005:
 
 Number of workers with a commute between 15 and 19 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -5665,115 +5355,43 @@ Measure "Number of workers with a commute between 15 and 19 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -5809,32 +5427,14 @@ Measure "Number of workers with a commute between 15 and 19 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -5863,7 +5463,97 @@ Measure "Number of workers with a commute between 15 and 19 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -5909,7 +5599,7 @@ Measure "Number of workers with a commute between 15 and 19 minutes" percent of 
 .. _us.census.acs.B08303006:
 
 Number of workers with a commute between 20 and 24 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -6007,115 +5697,43 @@ Measure "Number of workers with a commute between 20 and 24 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -6151,32 +5769,14 @@ Measure "Number of workers with a commute between 20 and 24 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -6205,7 +5805,97 @@ Measure "Number of workers with a commute between 20 and 24 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -6251,7 +5941,7 @@ Measure "Number of workers with a commute between 20 and 24 minutes" percent of 
 .. _us.census.acs.B08303007:
 
 Number of workers with a commute between 25 and 29 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -6349,115 +6039,43 @@ Measure "Number of workers with a commute between 25 and 29 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -6493,32 +6111,14 @@ Measure "Number of workers with a commute between 25 and 29 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -6547,7 +6147,97 @@ Measure "Number of workers with a commute between 25 and 29 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -6593,7 +6283,7 @@ Measure "Number of workers with a commute between 25 and 29 minutes" percent of 
 .. _us.census.acs.B08303008:
 
 Number of workers with a commute between 30 and 34 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -6691,115 +6381,43 @@ Measure "Number of workers with a commute between 30 and 34 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -6835,32 +6453,14 @@ Measure "Number of workers with a commute between 30 and 34 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -6889,7 +6489,97 @@ Measure "Number of workers with a commute between 30 and 34 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -6935,7 +6625,7 @@ Measure "Number of workers with a commute between 30 and 34 minutes" percent of 
 .. _us.census.acs.B08303009:
 
 Number of workers with a commute between 35 and 39 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -7033,115 +6723,43 @@ Measure "Number of workers with a commute between 35 and 39 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -7177,32 +6795,14 @@ Measure "Number of workers with a commute between 35 and 39 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -7231,7 +6831,97 @@ Measure "Number of workers with a commute between 35 and 39 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -7277,7 +6967,7 @@ Measure "Number of workers with a commute between 35 and 39 minutes" percent of 
 .. _us.census.acs.B08134008:
 
 Number of workers with a commute between 35 and 44 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -7375,115 +7065,43 @@ Measure "Number of workers with a commute between 35 and 44 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -7519,25 +7137,7 @@ Measure "Number of workers with a commute between 35 and 44 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
@@ -7573,7 +7173,97 @@ Measure "Number of workers with a commute between 35 and 44 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -7619,7 +7309,7 @@ Measure "Number of workers with a commute between 35 and 44 minutes" percent of 
 .. _us.census.acs.B08303010:
 
 Number of workers with a commute between 40 and 44 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -7717,115 +7407,43 @@ Measure "Number of workers with a commute between 40 and 44 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -7861,32 +7479,14 @@ Measure "Number of workers with a commute between 40 and 44 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -7915,7 +7515,97 @@ Measure "Number of workers with a commute between 40 and 44 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -7961,7 +7651,7 @@ Measure "Number of workers with a commute between 40 and 44 minutes" percent of 
 .. _us.census.acs.B08303011:
 
 Number of workers with a commute between 45 and 59 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -8059,115 +7749,43 @@ Measure "Number of workers with a commute between 45 and 59 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -8203,32 +7821,14 @@ Measure "Number of workers with a commute between 45 and 59 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -8257,7 +7857,97 @@ Measure "Number of workers with a commute between 45 and 59 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -8303,7 +7993,7 @@ Measure "Number of workers with a commute between 45 and 59 minutes" percent of 
 .. _us.census.acs.B08303012:
 
 Number of workers with a commute between 60 and 89 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -8401,115 +8091,43 @@ Measure "Number of workers with a commute between 60 and 89 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -8545,32 +8163,14 @@ Measure "Number of workers with a commute between 60 and 89 minutes" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -8599,7 +8199,97 @@ Measure "Number of workers with a commute between 60 and 89 minutes" percent of 
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -8645,7 +8335,7 @@ Measure "Number of workers with a commute between 60 and 89 minutes" percent of 
 .. _us.census.acs.B08303013:
 
 Number of workers with a commute of more than 90 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -8743,115 +8433,43 @@ Measure "Number of workers with a commute of more than 90 minutes" percent of "W
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -8887,32 +8505,14 @@ Measure "Number of workers with a commute of more than 90 minutes" percent of "W
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -8941,7 +8541,97 @@ Measure "Number of workers with a commute of more than 90 minutes" percent of "W
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -8987,7 +8677,7 @@ Measure "Number of workers with a commute of more than 90 minutes" percent of "W
 .. _us.census.acs.B08134010:
 
 Number of workers with a commute of over 60 minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -9085,115 +8775,43 @@ Measure "Number of workers with a commute of over 60 minutes" percent of "Worker
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -9229,25 +8847,7 @@ Measure "Number of workers with a commute of over 60 minutes" percent of "Worker
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
@@ -9283,7 +8883,97 @@ Measure "Number of workers with a commute of over 60 minutes" percent of "Worker
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -9329,7 +9019,7 @@ Measure "Number of workers with a commute of over 60 minutes" percent of "Worker
 .. _us.census.acs.B08134002:
 
 Number of workers with less than 10 minute commute
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -9427,115 +9117,43 @@ Measure "Number of workers with less than 10 minute commute" percent of "Workers
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.block_group`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.census_tract`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_secondary`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -9571,25 +9189,7 @@ Measure "Number of workers with less than 10 minute commute" percent of "Workers
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
@@ -9625,7 +9225,97 @@ Measure "Number of workers with less than 10 minute commute" percent of "Workers
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.block_group`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 
@@ -9674,7 +9364,7 @@ Measure "Number of workers with less than 10 minute commute" percent of "Workers
 .. _us.census.acs.B08014002:
 
 Workers age 16 and over with no vehicle
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -9772,42 +9462,6 @@ Measure "Workers age 16 and over with no vehicle" percent of "Workers over the A
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.place`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.zcta5_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
 :ref:`us.census.tiger.county`
 
 .. raw:: html
@@ -9826,7 +9480,7 @@ Measure "Workers age 16 and over with no vehicle" percent of "Workers over the A
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.puma_clipped`
+:ref:`us.census.tiger.school_district_secondary`
 
 .. raw:: html
 
@@ -9844,25 +9498,7 @@ Measure "Workers age 16 and over with no vehicle" percent of "Workers over the A
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.school_district_secondary_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.state_clipped`
+:ref:`us.census.tiger.place`
 
 .. raw:: html
 
@@ -9898,32 +9534,14 @@ Measure "Workers age 16 and over with no vehicle" percent of "Workers over the A
 
    <tr class="row-even"><td>
 
-:ref:`us.census.tiger.census_tract`
+:ref:`us.census.tiger.zcta5_clipped`
 
 .. raw:: html
 
    </td>
    <td>
 
-2010 - 2014, 2006 - 2010
-
-.. raw:: html
-
-   </td>
-
-   
-.. raw:: html
-
-   <tr class="row-even"><td>
-
-:ref:`us.census.tiger.school_district_unified_clipped`
-
-.. raw:: html
-
-   </td>
-   <td>
-
-2010 - 2014, 2006 - 2010
+2010 - 2014
 
 .. raw:: html
 
@@ -9952,7 +9570,79 @@ Measure "Workers age 16 and over with no vehicle" percent of "Workers over the A
 
    <tr class="row-even"><td>
 
+:ref:`us.census.tiger.state_clipped`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.puma`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.census_tract`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
 :ref:`us.census.tiger.congressional_district`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010 - 2014, 2006 - 2010
+
+.. raw:: html
+
+   </td>
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`us.census.tiger.school_district_unified_clipped`
 
 .. raw:: html
 

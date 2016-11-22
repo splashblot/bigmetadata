@@ -1,0 +1,229 @@
+
+
+.. Transportation:
+
+Transportation
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+How do people move from place to place?
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _eu.eurostat.tgs00078:
+
+Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes
+
+
+
+
+
+Measure "Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.tgs00078'
+      );
+
+
+
+
+
+Measure "Air transport of freight - Freight and mail loaded and unloaded, Thousand tonnes" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.tgs00078'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts2`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+
+
+
+
+
+.. _eu.eurostat.tgs00077:
+
+Air transport of passengers - Passengers carried, Thousand passengers
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Air transport of passengers - Passengers carried, Thousand passengers
+
+
+
+
+
+Measure "Air transport of passengers - Passengers carried, Thousand passengers"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.tgs00077'
+      );
+
+
+
+
+
+Measure "Air transport of passengers - Passengers carried, Thousand passengers" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.tgs00077'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts2`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+

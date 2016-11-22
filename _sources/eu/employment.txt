@@ -1,0 +1,4625 @@
+
+
+.. Employment:
+
+Employment
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+How people are employed.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _eu.eurostat.nama_10_r_3_empersemp_total_ths:
+
+Employment (thousand persons) - Employed persons, Total - all NACE activities
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Total - all NACE activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Total - all NACE activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_total_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_total_ths'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+.. contents:: Subcolumns of Employment (thousand persons) - Employed persons, Total - all NACE activities
+   :local:
+   :depth: 1
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_a_ths:
+
+Employment (thousand persons) - Employed persons, Agriculture, forestry and fishing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Agriculture, forestry and fishing
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Agriculture, forestry and fishing"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_a_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Agriculture, forestry and fishing" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_a_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Agriculture, forestry and fishing" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_a_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Agriculture, forestry and fishing" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_a_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_r_u_ths:
+
+Employment (thousand persons) - Employed persons, Arts, entertainment, recreation, and other service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Arts, entertainment and recreation; other service activities; activities of household and extra-territorial organizations and bodies
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Arts, entertainment, recreation, and other service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_r_u_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Arts, entertainment, recreation, and other service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_r_u_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Arts, entertainment, recreation, and other service activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_r_u_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Arts, entertainment, recreation, and other service activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_r_u_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_f_ths:
+
+Employment (thousand persons) - Employed persons, Construction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Construction
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Construction"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_f_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Construction" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_f_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Construction" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_f_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Construction" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_f_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_k_ths:
+
+Employment (thousand persons) - Employed persons, Financial and insurance activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Financial and insurance activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Financial and insurance activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_k_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Financial and insurance activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_k_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Financial and insurance activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_k_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Financial and insurance activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_k_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_k_n_ths:
+
+Employment (thousand persons) - Employed persons, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_k_n_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_k_n_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_k_n_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_k_n_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_b_e_ths:
+
+Employment (thousand persons) - Employed persons, Industry (except construction)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Industry (except construction)
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Industry (except construction)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_b_e_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Industry (except construction)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_b_e_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Industry (except construction)" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_b_e_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Industry (except construction)" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_b_e_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_j_ths:
+
+Employment (thousand persons) - Employed persons, Information and communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Information and communication
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Information and communication"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_j_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Information and communication" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_j_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Information and communication" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_j_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Information and communication" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_j_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_c_ths:
+
+Employment (thousand persons) - Employed persons, Manufacturing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Manufacturing
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Manufacturing"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_c_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Manufacturing" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_c_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Manufacturing" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_c_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Manufacturing" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_c_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_m_n_ths:
+
+Employment (thousand persons) - Employed persons, Professional, scientific, technical, administrative and support service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Professional, scientific and technical activities; administrative and support service activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Professional, scientific, technical, administrative and support service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_m_n_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Professional, scientific, technical, administrative and support service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_m_n_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Professional, scientific, technical, administrative and support service activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_m_n_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Professional, scientific, technical, administrative and support service activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_m_n_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_o_u_ths:
+
+Employment (thousand persons) - Employed persons, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_o_u_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_o_u_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_o_u_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_o_u_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_o_q_ths:
+
+Employment (thousand persons) - Employed persons, Public administration, defence, education, human health and social work activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Public administration, defence, education, human health and social work activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Public administration, defence, education, human health and social work activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_o_q_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Public administration, defence, education, human health and social work activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_o_q_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Public administration, defence, education, human health and social work activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_o_q_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Public administration, defence, education, human health and social work activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_o_q_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_l_ths:
+
+Employment (thousand persons) - Employed persons, Real estate activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Real estate activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Real estate activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_l_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Real estate activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_l_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Real estate activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_l_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Real estate activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_l_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_g_i_ths:
+
+Employment (thousand persons) - Employed persons, Wholesale and retail trade, transport, accomodation and food service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Wholesale and retail trade, transport, accomodation and food service activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Wholesale and retail trade, transport, accomodation and food service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_g_i_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Wholesale and retail trade, transport, accomodation and food service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_g_i_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Wholesale and retail trade, transport, accomodation and food service activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_g_i_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Wholesale and retail trade, transport, accomodation and food service activities" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_g_i_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_empersemp_g_j_ths:
+
+Employment (thousand persons) - Employed persons, Wholesale and retail trade; transport; accommodation and food service activities; information and communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employed persons, Wholesale and retail trade; transport; accommodation and food service activities; information and communication
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Wholesale and retail trade; transport; accommodation and food service activities; information and communication"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_g_j_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_empersemp_g_j_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employed persons, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_empersemp_g_j_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employed persons, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" percent of "Employment (thousand persons) - Employed persons, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_empersemp_g_j_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_empersemp_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _eu.eurostat.nama_10_r_3_emperssal_total_ths:
+
+Employment (thousand persons) - Employees, Total - all NACE activities
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Employment (thousand persons) - Employees, Total - all NACE activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Total - all NACE activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_total_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_total_ths'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+.. contents:: Subcolumns of Employment (thousand persons) - Employees, Total - all NACE activities
+   :local:
+   :depth: 1
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_a_ths:
+
+Employment (thousand persons) - Employees, Agriculture, forestry and fishing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Agriculture, forestry and fishing
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Agriculture, forestry and fishing"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_a_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Agriculture, forestry and fishing" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_a_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Agriculture, forestry and fishing" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_a_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Agriculture, forestry and fishing" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_a_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_r_u_ths:
+
+Employment (thousand persons) - Employees, Arts, entertainment, recreation, and other service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Arts, entertainment and recreation; other service activities; activities of household and extra-territorial organizations and bodies
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Arts, entertainment, recreation, and other service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_r_u_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Arts, entertainment, recreation, and other service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_r_u_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Arts, entertainment, recreation, and other service activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_r_u_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Arts, entertainment, recreation, and other service activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_r_u_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_f_ths:
+
+Employment (thousand persons) - Employees, Construction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Construction
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Construction"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_f_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Construction" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_f_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Construction" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_f_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Construction" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_f_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_k_ths:
+
+Employment (thousand persons) - Employees, Financial and insurance activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Financial and insurance activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Financial and insurance activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_k_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Financial and insurance activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_k_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Financial and insurance activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_k_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Financial and insurance activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_k_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_k_n_ths:
+
+Employment (thousand persons) - Employees, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_k_n_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_k_n_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_k_n_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_k_n_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_b_e_ths:
+
+Employment (thousand persons) - Employees, Industry (except construction)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Industry (except construction)
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Industry (except construction)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_b_e_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Industry (except construction)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_b_e_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Industry (except construction)" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_b_e_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Industry (except construction)" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_b_e_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_j_ths:
+
+Employment (thousand persons) - Employees, Information and communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Information and communication
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Information and communication"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_j_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Information and communication" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_j_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Information and communication" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_j_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Information and communication" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_j_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_c_ths:
+
+Employment (thousand persons) - Employees, Manufacturing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Manufacturing
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Manufacturing"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_c_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Manufacturing" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_c_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Manufacturing" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_c_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Manufacturing" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_c_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_m_n_ths:
+
+Employment (thousand persons) - Employees, Professional, scientific, technical, administrative and support service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Professional, scientific and technical activities; administrative and support service activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Professional, scientific, technical, administrative and support service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_m_n_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Professional, scientific, technical, administrative and support service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_m_n_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Professional, scientific, technical, administrative and support service activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_m_n_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Professional, scientific, technical, administrative and support service activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_m_n_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_o_u_ths:
+
+Employment (thousand persons) - Employees, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_o_u_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_o_u_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_o_u_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_o_u_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_o_q_ths:
+
+Employment (thousand persons) - Employees, Public administration, defence, education, human health and social work activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Public administration, defence, education, human health and social work activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Public administration, defence, education, human health and social work activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_o_q_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Public administration, defence, education, human health and social work activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_o_q_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Public administration, defence, education, human health and social work activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_o_q_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Public administration, defence, education, human health and social work activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_o_q_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_l_ths:
+
+Employment (thousand persons) - Employees, Real estate activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Real estate activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Real estate activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_l_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Real estate activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_l_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Real estate activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_l_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Real estate activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_l_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_g_i_ths:
+
+Employment (thousand persons) - Employees, Wholesale and retail trade, transport, accomodation and food service activities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Wholesale and retail trade, transport, accomodation and food service activities
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Wholesale and retail trade, transport, accomodation and food service activities"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_g_i_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Wholesale and retail trade, transport, accomodation and food service activities" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_g_i_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Wholesale and retail trade, transport, accomodation and food service activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_g_i_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Wholesale and retail trade, transport, accomodation and food service activities" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_g_i_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+  
+  
+
+.. _eu.eurostat.nama_10_r_3_emperssal_g_j_ths:
+
+Employment (thousand persons) - Employees, Wholesale and retail trade; transport; accommodation and food service activities; information and communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+Employment (thousand persons) - Employees, Wholesale and retail trade; transport; accommodation and food service activities; information and communication
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Wholesale and retail trade; transport; accommodation and food service activities; information and communication"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_g_j_ths'
+      );
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+          'eu.eurostat.nama_10_r_3_emperssal_g_j_ths'
+        );
+
+
+
+
+
+
+Measure "Employment (thousand persons) - Employees, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" at one point:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.nama_10_r_3_emperssal_g_j_ths',
+        'denominator'
+      );
+
+
+Measure "Employment (thousand persons) - Employees, Wholesale and retail trade; transport; accommodation and food service activities; information and communication" percent of "Employment (thousand persons) - Employees, Total - all NACE activities" within an area:
+
+.. code-block:: postgresql
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+        'eu.eurostat.nama_10_r_3_emperssal_g_j_ths',
+        'denominator'
+      );
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts3`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+:Denominator:
+
+    :ref:`eu.eurostat.nama_10_r_3_emperssal_total_ths`
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+  
+  
+
+
+
+
+
+
+.. _eu.eurostat.tgs00039:
+
+Employment in high-tech sectors - High-technology sectors (high-technology manufacturing and knowledge-intensive high-technology services), Percentage of total employment, Total
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Employment in high-tech sectors - High-technology sectors (high-technology manufacturing and knowledge-intensive high-technology services), Percentage of total employment, Total
+
+
+
+
+
+Measure "Employment in high-tech sectors - High-technology sectors (high-technology manufacturing and knowledge-intensive high-technology services), Percentage of total employment, Total"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.tgs00039'
+      );
+
+
+
+
+
+
+Employment in high-tech sectors - High-technology sectors (high-technology manufacturing and knowledge-intensive high-technology services), Percentage of total employment, Total is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts2`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+.. contents:: Subcolumns of Employment in high-tech sectors - High-technology sectors (high-technology manufacturing and knowledge-intensive high-technology services), Percentage of total employment, Total
+   :local:
+   :depth: 1
+
+  
+  
+  
+
+
+
+
+
+
+.. _eu.eurostat.ilc_lvhl21_pc_lw95:
+
+People living in households with very low work intensity - Percentage of total population - lower boundary of the 95% confidence interval
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+People living in households with very low work intensity - Percentage of total population - lower boundary of the 95% confidence interval
+
+
+
+
+
+Measure "People living in households with very low work intensity - Percentage of total population - lower boundary of the 95% confidence interval"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.ilc_lvhl21_pc_lw95'
+      );
+
+
+
+
+
+
+People living in households with very low work intensity - Percentage of total population - lower boundary of the 95% confidence interval is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts2`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+
+
+
+
+
+.. _eu.eurostat.ilc_lvhl21_pc_up95:
+
+People living in households with very low work intensity - Percentage of total population - upper boundary of the 95% confidence interval
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+People living in households with very low work intensity - Percentage of total population - upper boundary of the 95% confidence interval
+
+
+
+
+
+Measure "People living in households with very low work intensity - Percentage of total population - upper boundary of the 95% confidence interval"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.ilc_lvhl21_pc_up95'
+      );
+
+
+
+
+
+
+People living in households with very low work intensity - Percentage of total population - upper boundary of the 95% confidence interval is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts2`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2014, 2013, 2012, 2011, 2010, 2009, 2008
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+
+
+
+
+
+.. _eu.eurostat.ilc_lvhl21_pc_y_lt60:
+
+People living in households with very low work intensity - Percentage of total population aged less than 60
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+People living in households with very low work intensity - Percentage of total population aged less than 60
+
+
+
+
+
+Measure "People living in households with very low work intensity - Percentage of total population aged less than 60"  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(52.5220703614, 13.4060668945),
+        'eu.eurostat.ilc_lvhl21_pc_y_lt60'
+      );
+
+
+
+
+
+
+People living in households with very low work intensity - Percentage of total population aged less than 60 is only available for point lookups.
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts2`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.eurostat.eurostat-source`
+
+:License:
+
+    :ref:`eu.eurostat.eurostat-license`
+
+
+

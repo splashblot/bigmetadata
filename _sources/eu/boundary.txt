@@ -3,7 +3,7 @@
 .. Boundaries:
 
 Boundaries
-===========================================================================
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 Political, administrative, and census-based boundaries.
 
@@ -15,10 +15,222 @@ Political, administrative, and census-based boundaries.
 
 
 
+.. _eu.geo.nuts0:
+
+NUTS Level 0
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "NUTS Level 0" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(52.5220703614, 13.4060668945),
+      'eu.geo.nuts0'
+    )
+
+
+
+
+
+Obtain all "NUTS Level 0" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+      'eu.geo.nuts0'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts0`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2015
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.geo.eurographics-source`
+
+:License:
+
+    :ref:`eu.geo.eurographics-license`
+
+
+
+
+
+
+
+.. _eu.geo.nuts2:
+
+NUTS Level 2
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Obtain "NUTS Level 2" geometry at one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  INSERT INTO {tablename}(the_geom)
+    SELECT OBS_GetBoundary(
+      CDB_LatLng(52.5220703614, 13.4060668945),
+      'eu.geo.nuts2'
+    )
+
+
+
+
+
+Obtain all "NUTS Level 2" geometries within an area:
+
+.. code-block:: postgresql
+
+  INSERT INTO {new_table_name} (the_geom, {geo_id_column})
+    SELECT *
+    FROM OBS_GetBoundariesByGeometry(
+      ST_Buffer(CDB_LatLng(52.5220703614, 13.4060668945), 0.01),
+      'eu.geo.nuts2'
+    )
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`eu.geo.nuts2`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2015
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`eu.geo.eurographics-source`
+
+:License:
+
+    :ref:`eu.geo.eurographics-license`
+
+
+
+
+
+
+
 .. _eu.geo.nuts3:
 
 NUTS Level 3
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

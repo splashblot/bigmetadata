@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; observatory 0.0.1 documentation</title>
+    <title>4.6. Health &mdash; observatory 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -46,13 +46,287 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  
+  <div class="section" id="health">
+<h1>4.6. Health<a class="headerlink" href="#health" title="Permalink to this headline">¶</a></h1>
+<p>Breakdowns of the population by health.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#available-beds-in-hospitals-per-hundred-thousand-inhabitants-available-beds-in-hospitals-hp-1" id="id1">Available beds in hospitals - Per hundred thousand inhabitants, Available beds in hospitals (HP.1)</a></li>
+<li><a class="reference internal" href="#death-due-to-accidents-total-accidents-v01-x59-y85-y86-rate-total" id="id2">Death due to accidents - Total, Accidents (V01-X59, Y85, Y86), Rate, Total</a></li>
+<li><a class="reference internal" href="#death-due-to-cancer-total-malignant-neoplasms-c00-c97-rate-total" id="id3">Death due to cancer - Total, Malignant neoplasms (C00-C97), Rate, Total</a></li>
+<li><a class="reference internal" href="#death-due-to-ischaemic-heart-diseases-total-ischaemic-heart-diseases-rate-total" id="id4">Death due to ischaemic heart diseases - Total, Ischaemic heart diseases, Rate, Total</a></li>
+<li><a class="reference internal" href="#death-due-to-transport-accidents-total-transport-accidents-v01-v99-y85-rate-total" id="id5">Death due to transport accidents - Total, Transport accidents (V01-V99, Y85), Rate, Total</a></li>
+<li><a class="reference internal" href="#dentists-dentists-per-hundred-thousand-inhabitants" id="id6">Dentists - Dentists, Per hundred thousand inhabitants</a></li>
+<li><a class="reference internal" href="#physicians-or-doctors-medical-doctors-per-hundred-thousand-inhabitants" id="id7">Physicians or doctors - Medical doctors, Per hundred thousand inhabitants</a></li>
+</ul>
+</div>
+<div class="section" id="available-beds-in-hospitals-per-hundred-thousand-inhabitants-available-beds-in-hospitals-hp-1">
+<span id="eu-eurostat-tgs00064"></span><h2><a class="toc-backref" href="#id1">4.6.1. Available beds in hospitals - Per hundred thousand inhabitants, Available beds in hospitals (HP.1)</a><a class="headerlink" href="#available-beds-in-hospitals-per-hundred-thousand-inhabitants-available-beds-in-hospitals-hp-1" title="Permalink to this headline">¶</a></h2>
+<p>Available beds in hospitals - Per hundred thousand inhabitants, Available beds in hospitals (HP.1)</p>
+<p>Measure &#8220;Available beds in hospitals - Per hundred thousand inhabitants, Available beds in hospitals (HP.1)&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00064&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Available beds in hospitals - Per hundred thousand inhabitants, Available beds in hospitals (HP.1) is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#eu-geo-nuts2"><span class="std std-ref">NUTS Level 2</span></a></p>
+</td>
+<td><p>2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#eu-eurostat-eurostat-source"><span class="std std-ref">Eurostat</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#eu-eurostat-eurostat-license"><span class="std std-ref">Copyright European Union</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="death-due-to-accidents-total-accidents-v01-x59-y85-y86-rate-total">
+<span id="eu-eurostat-tgs00060"></span><h2><a class="toc-backref" href="#id2">4.6.2. Death due to accidents - Total, Accidents (V01-X59, Y85, Y86), Rate, Total</a><a class="headerlink" href="#death-due-to-accidents-total-accidents-v01-x59-y85-y86-rate-total" title="Permalink to this headline">¶</a></h2>
+<p>Death due to accidents - Total, Accidents (V01-X59, Y85, Y86), Rate, Total</p>
+<p>Measure &#8220;Death due to accidents - Total, Accidents (V01-X59, Y85, Y86), Rate, Total&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00060&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Death due to accidents - Total, Accidents (V01-X59, Y85, Y86), Rate, Total is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#eu-geo-nuts2"><span class="std std-ref">NUTS Level 2</span></a></p>
+</td>
+<td><p>2008 - 2010, 2007 - 2009, 2006 - 2008, 2005 - 2007, 2004 - 2006, 2003 - 2005, 2002 - 2004, 2001 - 2003, 2000 - 2002, 1999 - 2001, 1998 - 2000, 1997 - 1999</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#eu-eurostat-eurostat-source"><span class="std std-ref">Eurostat</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#eu-eurostat-eurostat-license"><span class="std std-ref">Copyright European Union</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="death-due-to-cancer-total-malignant-neoplasms-c00-c97-rate-total">
+<span id="eu-eurostat-tgs00058"></span><h2><a class="toc-backref" href="#id3">4.6.3. Death due to cancer - Total, Malignant neoplasms (C00-C97), Rate, Total</a><a class="headerlink" href="#death-due-to-cancer-total-malignant-neoplasms-c00-c97-rate-total" title="Permalink to this headline">¶</a></h2>
+<p>Death due to cancer - Total, Malignant neoplasms (C00-C97), Rate, Total</p>
+<p>Measure &#8220;Death due to cancer - Total, Malignant neoplasms (C00-C97), Rate, Total&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00058&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Death due to cancer - Total, Malignant neoplasms (C00-C97), Rate, Total is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#eu-geo-nuts2"><span class="std std-ref">NUTS Level 2</span></a></p>
+</td>
+<td><p>2008 - 2010, 2007 - 2009, 2006 - 2008, 2005 - 2007, 2004 - 2006, 2003 - 2005, 2002 - 2004, 2001 - 2003, 2000 - 2002, 1999 - 2001, 1998 - 2000, 1997 - 1999</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#eu-eurostat-eurostat-source"><span class="std std-ref">Eurostat</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#eu-eurostat-eurostat-license"><span class="std std-ref">Copyright European Union</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="death-due-to-ischaemic-heart-diseases-total-ischaemic-heart-diseases-rate-total">
+<span id="eu-eurostat-tgs00059"></span><h2><a class="toc-backref" href="#id4">4.6.4. Death due to ischaemic heart diseases - Total, Ischaemic heart diseases, Rate, Total</a><a class="headerlink" href="#death-due-to-ischaemic-heart-diseases-total-ischaemic-heart-diseases-rate-total" title="Permalink to this headline">¶</a></h2>
+<p>Death due to ischaemic heart diseases - Total, Ischaemic heart diseases, Rate, Total</p>
+<p>Measure &#8220;Death due to ischaemic heart diseases - Total, Ischaemic heart diseases, Rate, Total&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00059&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Death due to ischaemic heart diseases - Total, Ischaemic heart diseases, Rate, Total is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#eu-geo-nuts2"><span class="std std-ref">NUTS Level 2</span></a></p>
+</td>
+<td><p>2008 - 2010, 2007 - 2009, 2006 - 2008, 2005 - 2007, 2004 - 2006, 2003 - 2005, 2002 - 2004, 2001 - 2003, 2000 - 2002, 1999 - 2001, 1998 - 2000, 1997 - 1999</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#eu-eurostat-eurostat-source"><span class="std std-ref">Eurostat</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#eu-eurostat-eurostat-license"><span class="std std-ref">Copyright European Union</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="death-due-to-transport-accidents-total-transport-accidents-v01-v99-y85-rate-total">
+<span id="eu-eurostat-tgs00061"></span><h2><a class="toc-backref" href="#id5">4.6.5. Death due to transport accidents - Total, Transport accidents (V01-V99, Y85), Rate, Total</a><a class="headerlink" href="#death-due-to-transport-accidents-total-transport-accidents-v01-v99-y85-rate-total" title="Permalink to this headline">¶</a></h2>
+<p>Death due to transport accidents - Total, Transport accidents (V01-V99, Y85), Rate, Total</p>
+<p>Measure &#8220;Death due to transport accidents - Total, Transport accidents (V01-V99, Y85), Rate, Total&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00061&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Death due to transport accidents - Total, Transport accidents (V01-V99, Y85), Rate, Total is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#eu-geo-nuts2"><span class="std std-ref">NUTS Level 2</span></a></p>
+</td>
+<td><p>2008 - 2010, 2007 - 2009, 2006 - 2008, 2005 - 2007, 2004 - 2006, 2003 - 2005, 2002 - 2004, 2001 - 2003, 2000 - 2002, 1999 - 2001, 1998 - 2000, 1997 - 1999</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#eu-eurostat-eurostat-source"><span class="std std-ref">Eurostat</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#eu-eurostat-eurostat-license"><span class="std std-ref">Copyright European Union</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="dentists-dentists-per-hundred-thousand-inhabitants">
+<span id="eu-eurostat-tgs00063"></span><h2><a class="toc-backref" href="#id6">4.6.6. Dentists - Dentists, Per hundred thousand inhabitants</a><a class="headerlink" href="#dentists-dentists-per-hundred-thousand-inhabitants" title="Permalink to this headline">¶</a></h2>
+<p>Dentists - Dentists, Per hundred thousand inhabitants</p>
+<p>Measure &#8220;Dentists - Dentists, Per hundred thousand inhabitants&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00063&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Dentists - Dentists, Per hundred thousand inhabitants is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#eu-geo-nuts2"><span class="std std-ref">NUTS Level 2</span></a></p>
+</td>
+<td><p>2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#eu-eurostat-eurostat-source"><span class="std std-ref">Eurostat</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#eu-eurostat-eurostat-license"><span class="std std-ref">Copyright European Union</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="physicians-or-doctors-medical-doctors-per-hundred-thousand-inhabitants">
+<span id="eu-eurostat-tgs00062"></span><h2><a class="toc-backref" href="#id7">4.6.7. Physicians or doctors - Medical doctors, Per hundred thousand inhabitants</a><a class="headerlink" href="#physicians-or-doctors-medical-doctors-per-hundred-thousand-inhabitants" title="Permalink to this headline">¶</a></h2>
+<p>Physicians or doctors - Medical doctors, Per hundred thousand inhabitants</p>
+<p>Measure &#8220;Physicians or doctors - Medical doctors, Per hundred thousand inhabitants&#8221;  for one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
+  <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
+    <span class="n">OBS_GetMeasure</span><span class="p">(</span>
+      <span class="n">CDB_LatLng</span><span class="p">(</span><span class="mf">52.5220703614</span><span class="p">,</span> <span class="mf">13.4060668945</span><span class="p">),</span>
+      <span class="s1">&#39;eu.eurostat.tgs00062&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+</div>
+<p>Physicians or doctors - Medical doctors, Per hundred thousand inhabitants is only available for point lookups.</p>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#eu-geo-nuts2"><span class="std std-ref">NUTS Level 2</span></a></p>
+</td>
+<td><p>2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#eu-eurostat-eurostat-source"><span class="std std-ref">Eurostat</span></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"><a class="reference internal" href="../licenses.html#eu-eurostat-eurostat-license"><span class="std std-ref">Copyright European Union</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
 
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">4.6. Health</a><ul>
+<li><a class="reference internal" href="#available-beds-in-hospitals-per-hundred-thousand-inhabitants-available-beds-in-hospitals-hp-1">4.6.1. Available beds in hospitals - Per hundred thousand inhabitants, Available beds in hospitals (HP.1)</a></li>
+<li><a class="reference internal" href="#death-due-to-accidents-total-accidents-v01-x59-y85-y86-rate-total">4.6.2. Death due to accidents - Total, Accidents (V01-X59, Y85, Y86), Rate, Total</a></li>
+<li><a class="reference internal" href="#death-due-to-cancer-total-malignant-neoplasms-c00-c97-rate-total">4.6.3. Death due to cancer - Total, Malignant neoplasms (C00-C97), Rate, Total</a></li>
+<li><a class="reference internal" href="#death-due-to-ischaemic-heart-diseases-total-ischaemic-heart-diseases-rate-total">4.6.4. Death due to ischaemic heart diseases - Total, Ischaemic heart diseases, Rate, Total</a></li>
+<li><a class="reference internal" href="#death-due-to-transport-accidents-total-transport-accidents-v01-v99-y85-rate-total">4.6.5. Death due to transport accidents - Total, Transport accidents (V01-V99, Y85), Rate, Total</a></li>
+<li><a class="reference internal" href="#dentists-dentists-per-hundred-thousand-inhabitants">4.6.6. Dentists - Dentists, Per hundred thousand inhabitants</a></li>
+<li><a class="reference internal" href="#physicians-or-doctors-medical-doctors-per-hundred-thousand-inhabitants">4.6.7. Physicians or doctors - Medical doctors, Per hundred thousand inhabitants</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>

@@ -3,7 +3,7 @@
 .. Age and Gender:
 
 Age and Gender
-===========================================================================
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 Population breakdowns by age and gender.
 
@@ -18,7 +18,7 @@ Population breakdowns by age and gender.
 .. _mx.inegi_columns.MIG16_R:
 
 Male-female ratio in population 5 years and over who resided in the United States in June 2005
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -97,7 +97,7 @@ Male-female ratio in population 5 years and over who resided in the United State
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -115,7 +115,7 @@ Male-female ratio in population 5 years and over who resided in the United State
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -157,7 +157,7 @@ Male-female ratio in population 5 years and over who resided in the United State
 .. _mx.inegi_columns.POB30_R:
 
 Median age
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -332,7 +332,7 @@ Median age is only available for point lookups.
 .. _mx.inegi_columns.POB1:
 
 Total population
----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -525,7 +525,7 @@ Measure "Total population" within an area:
 .. _mx.inegi_columns.POB31:
 
 Female population
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -748,7 +748,7 @@ Measure "Female population" percent of "Total population" within an area:
 .. _mx.inegi_columns.POB32:
 
 Female population 0 to 2 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -800,7 +800,7 @@ Measure "Female population 0 to 2 years old" within an area:
 
 
 
-Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years old" at one point:
+Measure "Female population 0 to 2 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -813,7 +813,7 @@ Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years
       );
 
 
-Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years old" within an area:
+Measure "Female population 0 to 2 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -944,11 +944,11 @@ Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB2`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB2`
 
 
 :Source:
@@ -968,7 +968,7 @@ Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years
 .. _mx.inegi_columns.POB33:
 
 Female population 0 to 4 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -1188,7 +1188,7 @@ Measure "Female population 0 to 4 years old" percent of "Population 0 to 4 years
 .. _mx.inegi_columns.POB38:
 
 Female population 0 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -1408,7 +1408,7 @@ Measure "Female population 0 to 14 years old" percent of "Female population" wit
 .. _mx.inegi_columns.POB48:
 
 Female population 3 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -1460,7 +1460,7 @@ Measure "Female population 3 or more years old" within an area:
 
 
 
-Measure "Female population 3 or more years old" percent of "Population 3 or more years old" at one point:
+Measure "Female population 3 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -1473,7 +1473,7 @@ Measure "Female population 3 or more years old" percent of "Population 3 or more
       );
 
 
-Measure "Female population 3 or more years old" percent of "Population 3 or more years old" within an area:
+Measure "Female population 3 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -1604,11 +1604,11 @@ Measure "Female population 3 or more years old" percent of "Population 3 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB17`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB17`
 
 
 :Source:
@@ -1640,7 +1640,7 @@ Measure "Female population 3 or more years old" percent of "Population 3 or more
 .. _mx.inegi_columns.POB34:
 
 Female population 3 to 5 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -1870,7 +1870,7 @@ Measure "Female population 3 to 5 years old" percent of "Female population" with
 .. _mx.inegi_columns.POB49:
 
 Female population 5 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -1922,7 +1922,7 @@ Measure "Female population 5 or more years old" within an area:
 
 
 
-Measure "Female population 5 or more years old" percent of "Population 5 or more years old" at one point:
+Measure "Female population 5 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -1935,7 +1935,7 @@ Measure "Female population 5 or more years old" percent of "Population 5 or more
       );
 
 
-Measure "Female population 5 or more years old" percent of "Population 5 or more years old" within an area:
+Measure "Female population 5 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -2066,11 +2066,11 @@ Measure "Female population 5 or more years old" percent of "Population 5 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB18`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB18`
 
 
 :Source:
@@ -2106,7 +2106,7 @@ Measure "Female population 5 or more years old" percent of "Population 5 or more
 .. _mx.inegi_columns.POB35:
 
 Female population 6 to 11 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -2336,7 +2336,7 @@ Measure "Female population 6 to 11 years old" percent of "Female population" wit
 .. _mx.inegi_columns.POB36:
 
 Female population 8 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -2388,7 +2388,7 @@ Measure "Female population 8 to 14 years old" within an area:
 
 
 
-Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 years old" at one point:
+Measure "Female population 8 to 14 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -2401,7 +2401,7 @@ Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 yea
       );
 
 
-Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 years old" within an area:
+Measure "Female population 8 to 14 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -2532,11 +2532,11 @@ Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB6`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB6`
 
 
 :Source:
@@ -2566,7 +2566,7 @@ Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 yea
 .. _mx.inegi_columns.POB50:
 
 Female population 12 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -2618,7 +2618,7 @@ Measure "Female population 12 or more years old" within an area:
 
 
 
-Measure "Female population 12 or more years old" percent of "Population 12 or more years old" at one point:
+Measure "Female population 12 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -2631,7 +2631,7 @@ Measure "Female population 12 or more years old" percent of "Population 12 or mo
       );
 
 
-Measure "Female population 12 or more years old" percent of "Population 12 or more years old" within an area:
+Measure "Female population 12 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -2762,11 +2762,11 @@ Measure "Female population 12 or more years old" percent of "Population 12 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB19`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB19`
 
 
 :Source:
@@ -2798,7 +2798,7 @@ Measure "Female population 12 or more years old" percent of "Population 12 or mo
 .. _mx.inegi_columns.POB37:
 
 Female population 12 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -2850,7 +2850,7 @@ Measure "Female population 12 to 14 years old" within an area:
 
 
 
-Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 years old" at one point:
+Measure "Female population 12 to 14 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -2863,7 +2863,7 @@ Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 y
       );
 
 
-Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 years old" within an area:
+Measure "Female population 12 to 14 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -2994,11 +2994,11 @@ Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB7`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB7`
 
 
 :Source:
@@ -3028,7 +3028,7 @@ Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 y
 .. _mx.inegi_columns.POB51:
 
 Female population 15 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -3080,7 +3080,7 @@ Measure "Female population 15 or more years old" within an area:
 
 
 
-Measure "Female population 15 or more years old" percent of "Population 15 or more years old" at one point:
+Measure "Female population 15 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -3093,7 +3093,7 @@ Measure "Female population 15 or more years old" percent of "Population 15 or mo
       );
 
 
-Measure "Female population 15 or more years old" percent of "Population 15 or more years old" within an area:
+Measure "Female population 15 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -3224,11 +3224,11 @@ Measure "Female population 15 or more years old" percent of "Population 15 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB20`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB20`
 
 
 :Source:
@@ -3270,7 +3270,7 @@ Measure "Female population 15 or more years old" percent of "Population 15 or mo
 .. _mx.inegi_columns.POB39:
 
 Female population 15 to 17 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -3490,7 +3490,7 @@ Measure "Female population 15 to 17 years old" percent of "Female population" wi
 .. _mx.inegi_columns.POB40:
 
 Female population 15 to 24 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -3542,7 +3542,7 @@ Measure "Female population 15 to 24 years old" within an area:
 
 
 
-Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 years old" at one point:
+Measure "Female population 15 to 24 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -3555,7 +3555,7 @@ Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 y
       );
 
 
-Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 years old" within an area:
+Measure "Female population 15 to 24 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -3686,11 +3686,11 @@ Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB10`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB10`
 
 
 :Source:
@@ -3718,7 +3718,7 @@ Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 y
 .. _mx.inegi_columns.POB41:
 
 Female population 15 to 29 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -3770,7 +3770,7 @@ Measure "Female population 15 to 29 years old" within an area:
 
 
 
-Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 years old" at one point:
+Measure "Female population 15 to 29 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -3783,7 +3783,7 @@ Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 y
       );
 
 
-Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 years old" within an area:
+Measure "Female population 15 to 29 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -3914,11 +3914,11 @@ Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB11`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB11`
 
 
 :Source:
@@ -3938,7 +3938,7 @@ Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 y
 .. _mx.inegi_columns.POB42:
 
 Female population 15 to 49 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -4154,7 +4154,7 @@ Measure "Female population 15 to 49 years old" percent of "Female population" wi
 .. _mx.inegi_columns.POB43:
 
 Female population 15 to 64 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -4374,7 +4374,7 @@ Measure "Female population 15 to 64 years old" percent of "Population 15 to 64 y
 .. _mx.inegi_columns.POB52:
 
 Female population 18 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -4426,7 +4426,7 @@ Measure "Female population 18 or more years old" within an area:
 
 
 
-Measure "Female population 18 or more years old" percent of "Population 18 or more years old" at one point:
+Measure "Female population 18 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -4439,7 +4439,7 @@ Measure "Female population 18 or more years old" percent of "Population 18 or mo
       );
 
 
-Measure "Female population 18 or more years old" percent of "Population 18 or more years old" within an area:
+Measure "Female population 18 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -4570,11 +4570,11 @@ Measure "Female population 18 or more years old" percent of "Population 18 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB21`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB21`
 
 
 :Source:
@@ -4602,7 +4602,7 @@ Measure "Female population 18 or more years old" percent of "Population 18 or mo
 .. _mx.inegi_columns.POB44:
 
 Female population 18 to 24 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -4822,7 +4822,7 @@ Measure "Female population 18 to 24 years old" percent of "Population 18 to 24 y
 .. _mx.inegi_columns.POB53:
 
 Female population 25 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -4874,7 +4874,7 @@ Measure "Female population 25 or more years old" within an area:
 
 
 
-Measure "Female population 25 or more years old" percent of "Population 25 or more years old" at one point:
+Measure "Female population 25 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -4887,7 +4887,7 @@ Measure "Female population 25 or more years old" percent of "Population 25 or mo
       );
 
 
-Measure "Female population 25 or more years old" percent of "Population 25 or more years old" within an area:
+Measure "Female population 25 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -5018,11 +5018,11 @@ Measure "Female population 25 or more years old" percent of "Population 25 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB22`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB22`
 
 
 :Source:
@@ -5050,7 +5050,7 @@ Measure "Female population 25 or more years old" percent of "Population 25 or mo
 .. _mx.inegi_columns.POB45:
 
 Female population 30 to 49 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -5270,7 +5270,7 @@ Measure "Female population 30 to 49 years old" percent of "Population 30 to 49 y
 .. _mx.inegi_columns.POB46:
 
 Female population 50 to 59 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -5490,7 +5490,7 @@ Measure "Female population 50 to 59 years old" percent of "Population 50 to 59 y
 .. _mx.inegi_columns.POB54:
 
 Female population 60 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -5542,7 +5542,7 @@ Measure "Female population 60 or more years old" within an area:
 
 
 
-Measure "Female population 60 or more years old" percent of "Population 60 or more years old" at one point:
+Measure "Female population 60 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -5555,7 +5555,7 @@ Measure "Female population 60 or more years old" percent of "Population 60 or mo
       );
 
 
-Measure "Female population 60 or more years old" percent of "Population 60 or more years old" within an area:
+Measure "Female population 60 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -5686,11 +5686,11 @@ Measure "Female population 60 or more years old" percent of "Population 60 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB23`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB23`
 
 
 :Source:
@@ -5710,7 +5710,7 @@ Measure "Female population 60 or more years old" percent of "Population 60 or mo
 .. _mx.inegi_columns.POB47:
 
 Female population 60 to 64 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -5762,7 +5762,7 @@ Measure "Female population 60 to 64 years old" within an area:
 
 
 
-Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 years old" at one point:
+Measure "Female population 60 to 64 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -5775,7 +5775,7 @@ Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 y
       );
 
 
-Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 years old" within an area:
+Measure "Female population 60 to 64 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -5906,11 +5906,11 @@ Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB16`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB16`
 
 
 :Source:
@@ -5930,7 +5930,7 @@ Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 y
 .. _mx.inegi_columns.POB55:
 
 Female population 65 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -5982,7 +5982,7 @@ Measure "Female population 65 or more years old" within an area:
 
 
 
-Measure "Female population 65 or more years old" percent of "Population 65 or more years old" at one point:
+Measure "Female population 65 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -5995,7 +5995,7 @@ Measure "Female population 65 or more years old" percent of "Population 65 or mo
       );
 
 
-Measure "Female population 65 or more years old" percent of "Population 65 or more years old" within an area:
+Measure "Female population 65 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -6126,11 +6126,11 @@ Measure "Female population 65 or more years old" percent of "Population 65 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB24`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB24`
 
 
 :Source:
@@ -6150,7 +6150,7 @@ Measure "Female population 65 or more years old" percent of "Population 65 or mo
 .. _mx.inegi_columns.POB56:
 
 Female population 70 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -6202,7 +6202,7 @@ Measure "Female population 70 or more years old" within an area:
 
 
 
-Measure "Female population 70 or more years old" percent of "Population 70 or more years old" at one point:
+Measure "Female population 70 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -6215,7 +6215,7 @@ Measure "Female population 70 or more years old" percent of "Population 70 or mo
       );
 
 
-Measure "Female population 70 or more years old" percent of "Population 70 or more years old" within an area:
+Measure "Female population 70 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -6346,11 +6346,11 @@ Measure "Female population 70 or more years old" percent of "Population 70 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB25`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB25`
 
 
 :Source:
@@ -6379,7 +6379,7 @@ Measure "Female population 70 or more years old" percent of "Population 70 or mo
 .. _mx.inegi_columns.POB57:
 
 Male population
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -6602,7 +6602,7 @@ Measure "Male population" percent of "Total population" within an area:
 .. _mx.inegi_columns.POB58:
 
 Male population 0 to 2 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -6654,7 +6654,7 @@ Measure "Male population 0 to 2 years old" within an area:
 
 
 
-Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years old" at one point:
+Measure "Male population 0 to 2 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -6667,7 +6667,7 @@ Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years o
       );
 
 
-Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years old" within an area:
+Measure "Male population 0 to 2 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -6798,11 +6798,11 @@ Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years o
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB2`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB2`
 
 
 :Source:
@@ -6822,7 +6822,7 @@ Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years o
 .. _mx.inegi_columns.POB59:
 
 Male population 0 to 4 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -7042,7 +7042,7 @@ Measure "Male population 0 to 4 years old" percent of "Population 0 to 4 years o
 .. _mx.inegi_columns.POB64:
 
 Male population 0 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -7262,7 +7262,7 @@ Measure "Male population 0 to 14 years old" percent of "Male population" within 
 .. _mx.inegi_columns.POB73:
 
 Male population 3 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -7314,7 +7314,7 @@ Measure "Male population 3 or more years old" within an area:
 
 
 
-Measure "Male population 3 or more years old" percent of "Population 3 or more years old" at one point:
+Measure "Male population 3 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -7327,7 +7327,7 @@ Measure "Male population 3 or more years old" percent of "Population 3 or more y
       );
 
 
-Measure "Male population 3 or more years old" percent of "Population 3 or more years old" within an area:
+Measure "Male population 3 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -7458,11 +7458,11 @@ Measure "Male population 3 or more years old" percent of "Population 3 or more y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB17`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB17`
 
 
 :Source:
@@ -7494,7 +7494,7 @@ Measure "Male population 3 or more years old" percent of "Population 3 or more y
 .. _mx.inegi_columns.POB60:
 
 Male population 3 to 5 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -7546,7 +7546,7 @@ Measure "Male population 3 to 5 years old" within an area:
 
 
 
-Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years old" at one point:
+Measure "Male population 3 to 5 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -7559,7 +7559,7 @@ Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years o
       );
 
 
-Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years old" within an area:
+Measure "Male population 3 to 5 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -7690,11 +7690,11 @@ Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years o
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB4`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB4`
 
 
 :Source:
@@ -7724,7 +7724,7 @@ Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years o
 .. _mx.inegi_columns.POB74:
 
 Male population 5 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -7776,7 +7776,7 @@ Measure "Male population 5 or more years old" within an area:
 
 
 
-Measure "Male population 5 or more years old" percent of "Population 5 or more years old" at one point:
+Measure "Male population 5 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -7789,7 +7789,7 @@ Measure "Male population 5 or more years old" percent of "Population 5 or more y
       );
 
 
-Measure "Male population 5 or more years old" percent of "Population 5 or more years old" within an area:
+Measure "Male population 5 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -7920,11 +7920,11 @@ Measure "Male population 5 or more years old" percent of "Population 5 or more y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB18`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB18`
 
 
 :Source:
@@ -7960,7 +7960,7 @@ Measure "Male population 5 or more years old" percent of "Population 5 or more y
 .. _mx.inegi_columns.POB61:
 
 Male population 6 to 11 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -8190,7 +8190,7 @@ Measure "Male population 6 to 11 years old" percent of "Population 6 to 11 years
 .. _mx.inegi_columns.POB62:
 
 Male population 8 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -8242,7 +8242,7 @@ Measure "Male population 8 to 14 years old" within an area:
 
 
 
-Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years old" at one point:
+Measure "Male population 8 to 14 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -8255,7 +8255,7 @@ Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years
       );
 
 
-Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years old" within an area:
+Measure "Male population 8 to 14 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -8386,11 +8386,11 @@ Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB6`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB6`
 
 
 :Source:
@@ -8420,7 +8420,7 @@ Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years
 .. _mx.inegi_columns.POB75:
 
 Male population 12 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -8472,7 +8472,7 @@ Measure "Male population 12 or more years old" within an area:
 
 
 
-Measure "Male population 12 or more years old" percent of "Population 12 or more years old" at one point:
+Measure "Male population 12 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -8485,7 +8485,7 @@ Measure "Male population 12 or more years old" percent of "Population 12 or more
       );
 
 
-Measure "Male population 12 or more years old" percent of "Population 12 or more years old" within an area:
+Measure "Male population 12 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -8616,11 +8616,11 @@ Measure "Male population 12 or more years old" percent of "Population 12 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB19`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB19`
 
 
 :Source:
@@ -8652,7 +8652,7 @@ Measure "Male population 12 or more years old" percent of "Population 12 or more
 .. _mx.inegi_columns.POB63:
 
 Male population 12 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -8704,7 +8704,7 @@ Measure "Male population 12 to 14 years old" within an area:
 
 
 
-Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 years old" at one point:
+Measure "Male population 12 to 14 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -8717,7 +8717,7 @@ Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 yea
       );
 
 
-Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 years old" within an area:
+Measure "Male population 12 to 14 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -8848,11 +8848,11 @@ Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB7`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB7`
 
 
 :Source:
@@ -8882,7 +8882,7 @@ Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 yea
 .. _mx.inegi_columns.POB76:
 
 Male population 15 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -8934,7 +8934,7 @@ Measure "Male population 15 or more years old" within an area:
 
 
 
-Measure "Male population 15 or more years old" percent of "Population 15 or more years old" at one point:
+Measure "Male population 15 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -8947,7 +8947,7 @@ Measure "Male population 15 or more years old" percent of "Population 15 or more
       );
 
 
-Measure "Male population 15 or more years old" percent of "Population 15 or more years old" within an area:
+Measure "Male population 15 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -9078,11 +9078,11 @@ Measure "Male population 15 or more years old" percent of "Population 15 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB20`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB20`
 
 
 :Source:
@@ -9116,7 +9116,7 @@ Measure "Male population 15 or more years old" percent of "Population 15 or more
 .. _mx.inegi_columns.POB65:
 
 Male population 15 to 17 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -9336,7 +9336,7 @@ Measure "Male population 15 to 17 years old" percent of "Male population" within
 .. _mx.inegi_columns.POB66:
 
 Male population 15 to 24 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -9388,7 +9388,7 @@ Measure "Male population 15 to 24 years old" within an area:
 
 
 
-Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 years old" at one point:
+Measure "Male population 15 to 24 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -9401,7 +9401,7 @@ Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 yea
       );
 
 
-Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 years old" within an area:
+Measure "Male population 15 to 24 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -9532,11 +9532,11 @@ Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB10`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB10`
 
 
 :Source:
@@ -9564,7 +9564,7 @@ Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 yea
 .. _mx.inegi_columns.POB67:
 
 Male population 15 to 29 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -9616,7 +9616,7 @@ Measure "Male population 15 to 29 years old" within an area:
 
 
 
-Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 years old" at one point:
+Measure "Male population 15 to 29 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -9629,7 +9629,7 @@ Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 yea
       );
 
 
-Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 years old" within an area:
+Measure "Male population 15 to 29 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -9760,11 +9760,11 @@ Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB11`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB11`
 
 
 :Source:
@@ -9784,7 +9784,7 @@ Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 yea
 .. _mx.inegi_columns.POB68:
 
 Male population 15 to 64 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -10004,7 +10004,7 @@ Measure "Male population 15 to 64 years old" percent of "Population 15 to 64 yea
 .. _mx.inegi_columns.POB77:
 
 Male population 18 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -10056,7 +10056,7 @@ Measure "Male population 18 or more years old" within an area:
 
 
 
-Measure "Male population 18 or more years old" percent of "Population 18 or more years old" at one point:
+Measure "Male population 18 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -10069,7 +10069,7 @@ Measure "Male population 18 or more years old" percent of "Population 18 or more
       );
 
 
-Measure "Male population 18 or more years old" percent of "Population 18 or more years old" within an area:
+Measure "Male population 18 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -10200,11 +10200,11 @@ Measure "Male population 18 or more years old" percent of "Population 18 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB21`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB21`
 
 
 :Source:
@@ -10232,7 +10232,7 @@ Measure "Male population 18 or more years old" percent of "Population 18 or more
 .. _mx.inegi_columns.POB69:
 
 Male population 18 to 24 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -10452,7 +10452,7 @@ Measure "Male population 18 to 24 years old" percent of "Population 18 to 24 yea
 .. _mx.inegi_columns.POB78:
 
 Male population 25 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -10504,7 +10504,7 @@ Measure "Male population 25 or more years old" within an area:
 
 
 
-Measure "Male population 25 or more years old" percent of "Population 25 or more years old" at one point:
+Measure "Male population 25 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -10517,7 +10517,7 @@ Measure "Male population 25 or more years old" percent of "Population 25 or more
       );
 
 
-Measure "Male population 25 or more years old" percent of "Population 25 or more years old" within an area:
+Measure "Male population 25 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -10648,11 +10648,11 @@ Measure "Male population 25 or more years old" percent of "Population 25 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB22`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB22`
 
 
 :Source:
@@ -10680,7 +10680,7 @@ Measure "Male population 25 or more years old" percent of "Population 25 or more
 .. _mx.inegi_columns.POB70:
 
 Male population 30 to 49 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -10900,7 +10900,7 @@ Measure "Male population 30 to 49 years old" percent of "Population 30 to 49 yea
 .. _mx.inegi_columns.POB71:
 
 Male population 50 to 59 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -11120,7 +11120,7 @@ Measure "Male population 50 to 59 years old" percent of "Population 50 to 59 yea
 .. _mx.inegi_columns.POB79:
 
 Male population 60 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -11172,7 +11172,7 @@ Measure "Male population 60 or more years old" within an area:
 
 
 
-Measure "Male population 60 or more years old" percent of "Population 60 or more years old" at one point:
+Measure "Male population 60 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -11185,7 +11185,7 @@ Measure "Male population 60 or more years old" percent of "Population 60 or more
       );
 
 
-Measure "Male population 60 or more years old" percent of "Population 60 or more years old" within an area:
+Measure "Male population 60 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -11316,11 +11316,11 @@ Measure "Male population 60 or more years old" percent of "Population 60 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB23`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB23`
 
 
 :Source:
@@ -11340,7 +11340,7 @@ Measure "Male population 60 or more years old" percent of "Population 60 or more
 .. _mx.inegi_columns.POB72:
 
 Male population 60 to 64 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -11392,7 +11392,7 @@ Measure "Male population 60 to 64 years old" within an area:
 
 
 
-Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 years old" at one point:
+Measure "Male population 60 to 64 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -11405,7 +11405,7 @@ Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 yea
       );
 
 
-Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 years old" within an area:
+Measure "Male population 60 to 64 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -11536,11 +11536,11 @@ Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB16`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB16`
 
 
 :Source:
@@ -11560,7 +11560,7 @@ Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 yea
 .. _mx.inegi_columns.POB80:
 
 Male population 65 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -11612,7 +11612,7 @@ Measure "Male population 65 or more years old" within an area:
 
 
 
-Measure "Male population 65 or more years old" percent of "Population 65 or more years old" at one point:
+Measure "Male population 65 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -11625,7 +11625,7 @@ Measure "Male population 65 or more years old" percent of "Population 65 or more
       );
 
 
-Measure "Male population 65 or more years old" percent of "Population 65 or more years old" within an area:
+Measure "Male population 65 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -11756,11 +11756,11 @@ Measure "Male population 65 or more years old" percent of "Population 65 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB24`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB24`
 
 
 :Source:
@@ -11780,7 +11780,7 @@ Measure "Male population 65 or more years old" percent of "Population 65 or more
 .. _mx.inegi_columns.POB81:
 
 Male population 70 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -11832,7 +11832,7 @@ Measure "Male population 70 or more years old" within an area:
 
 
 
-Measure "Male population 70 or more years old" percent of "Population 70 or more years old" at one point:
+Measure "Male population 70 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -11845,7 +11845,7 @@ Measure "Male population 70 or more years old" percent of "Population 70 or more
       );
 
 
-Measure "Male population 70 or more years old" percent of "Population 70 or more years old" within an area:
+Measure "Male population 70 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -11976,11 +11976,11 @@ Measure "Male population 70 or more years old" percent of "Population 70 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB25`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB25`
 
 
 :Source:
@@ -12009,7 +12009,7 @@ Measure "Male population 70 or more years old" percent of "Population 70 or more
 .. _mx.inegi_columns.POB2:
 
 Population 0 to 2 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -12228,7 +12228,7 @@ Measure "Population 0 to 2 years old" percent of "Total population" within an ar
 .. _mx.inegi_columns.POB32:
 
 Female population 0 to 2 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -12280,7 +12280,7 @@ Measure "Female population 0 to 2 years old" within an area:
 
 
 
-Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years old" at one point:
+Measure "Female population 0 to 2 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -12293,7 +12293,7 @@ Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years
       );
 
 
-Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years old" within an area:
+Measure "Female population 0 to 2 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -12424,11 +12424,11 @@ Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB2`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB2`
 
 
 :Source:
@@ -12448,7 +12448,7 @@ Measure "Female population 0 to 2 years old" percent of "Population 0 to 2 years
 .. _mx.inegi_columns.POB58:
 
 Male population 0 to 2 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -12500,7 +12500,7 @@ Measure "Male population 0 to 2 years old" within an area:
 
 
 
-Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years old" at one point:
+Measure "Male population 0 to 2 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -12513,7 +12513,7 @@ Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years o
       );
 
 
-Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years old" within an area:
+Measure "Male population 0 to 2 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -12644,11 +12644,11 @@ Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years o
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB2`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB2`
 
 
 :Source:
@@ -12671,7 +12671,7 @@ Measure "Male population 0 to 2 years old" percent of "Population 0 to 2 years o
 .. _mx.inegi_columns.POB3:
 
 Population 0 to 4 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -12890,7 +12890,7 @@ Measure "Population 0 to 4 years old" percent of "Total population" within an ar
 .. _mx.inegi_columns.POB33:
 
 Female population 0 to 4 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -13110,7 +13110,7 @@ Measure "Female population 0 to 4 years old" percent of "Population 0 to 4 years
 .. _mx.inegi_columns.POB59:
 
 Male population 0 to 4 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -13333,7 +13333,7 @@ Measure "Male population 0 to 4 years old" percent of "Population 0 to 4 years o
 .. _mx.inegi_columns.POB8:
 
 Population 0 to 14 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -13552,7 +13552,7 @@ Measure "Population 0 to 14 years old" percent of "Total population" within an a
 .. _mx.inegi_columns.POB38:
 
 Female population 0 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -13772,7 +13772,7 @@ Measure "Female population 0 to 14 years old" percent of "Female population" wit
 .. _mx.inegi_columns.POB64:
 
 Male population 0 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -13997,7 +13997,7 @@ Measure "Male population 0 to 14 years old" percent of "Male population" within 
 .. _mx.inegi_columns.POB17:
 
 Population 3 or more years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -14216,7 +14216,7 @@ Measure "Population 3 or more years old" percent of "Total population" within an
 .. _mx.inegi_columns.POB48:
 
 Female population 3 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -14268,7 +14268,7 @@ Measure "Female population 3 or more years old" within an area:
 
 
 
-Measure "Female population 3 or more years old" percent of "Population 3 or more years old" at one point:
+Measure "Female population 3 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -14281,7 +14281,7 @@ Measure "Female population 3 or more years old" percent of "Population 3 or more
       );
 
 
-Measure "Female population 3 or more years old" percent of "Population 3 or more years old" within an area:
+Measure "Female population 3 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -14412,11 +14412,11 @@ Measure "Female population 3 or more years old" percent of "Population 3 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB17`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB17`
 
 
 :Source:
@@ -14448,7 +14448,7 @@ Measure "Female population 3 or more years old" percent of "Population 3 or more
 .. _mx.inegi_columns.POB73:
 
 Male population 3 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -14500,7 +14500,7 @@ Measure "Male population 3 or more years old" within an area:
 
 
 
-Measure "Male population 3 or more years old" percent of "Population 3 or more years old" at one point:
+Measure "Male population 3 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -14513,7 +14513,7 @@ Measure "Male population 3 or more years old" percent of "Population 3 or more y
       );
 
 
-Measure "Male population 3 or more years old" percent of "Population 3 or more years old" within an area:
+Measure "Male population 3 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -14644,11 +14644,11 @@ Measure "Male population 3 or more years old" percent of "Population 3 or more y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB17`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB17`
 
 
 :Source:
@@ -14689,7 +14689,7 @@ Measure "Male population 3 or more years old" percent of "Population 3 or more y
 .. _mx.inegi_columns.POB4:
 
 Population 3 to 5 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -14908,7 +14908,7 @@ Measure "Population 3 to 5 years old" percent of "Total population" within an ar
 .. _mx.inegi_columns.POB34:
 
 Female population 3 to 5 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -15138,7 +15138,7 @@ Measure "Female population 3 to 5 years old" percent of "Female population" with
 .. _mx.inegi_columns.POB60:
 
 Male population 3 to 5 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -15190,7 +15190,7 @@ Measure "Male population 3 to 5 years old" within an area:
 
 
 
-Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years old" at one point:
+Measure "Male population 3 to 5 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -15203,7 +15203,7 @@ Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years o
       );
 
 
-Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years old" within an area:
+Measure "Male population 3 to 5 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -15334,11 +15334,11 @@ Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years o
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB4`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB4`
 
 
 :Source:
@@ -15375,7 +15375,7 @@ Measure "Male population 3 to 5 years old" percent of "Population 3 to 5 years o
 .. _mx.inegi_columns.POB18:
 
 Population 5 or more years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -15594,7 +15594,7 @@ Measure "Population 5 or more years old" percent of "Total population" within an
 .. _mx.inegi_columns.POB49:
 
 Female population 5 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -15646,7 +15646,7 @@ Measure "Female population 5 or more years old" within an area:
 
 
 
-Measure "Female population 5 or more years old" percent of "Population 5 or more years old" at one point:
+Measure "Female population 5 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -15659,7 +15659,7 @@ Measure "Female population 5 or more years old" percent of "Population 5 or more
       );
 
 
-Measure "Female population 5 or more years old" percent of "Population 5 or more years old" within an area:
+Measure "Female population 5 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -15790,11 +15790,11 @@ Measure "Female population 5 or more years old" percent of "Population 5 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB18`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB18`
 
 
 :Source:
@@ -15830,7 +15830,7 @@ Measure "Female population 5 or more years old" percent of "Population 5 or more
 .. _mx.inegi_columns.POB74:
 
 Male population 5 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -15882,7 +15882,7 @@ Measure "Male population 5 or more years old" within an area:
 
 
 
-Measure "Male population 5 or more years old" percent of "Population 5 or more years old" at one point:
+Measure "Male population 5 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -15895,7 +15895,7 @@ Measure "Male population 5 or more years old" percent of "Population 5 or more y
       );
 
 
-Measure "Male population 5 or more years old" percent of "Population 5 or more years old" within an area:
+Measure "Male population 5 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -16026,11 +16026,11 @@ Measure "Male population 5 or more years old" percent of "Population 5 or more y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB18`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB18`
 
 
 :Source:
@@ -16083,7 +16083,7 @@ Measure "Male population 5 or more years old" percent of "Population 5 or more y
 .. _mx.inegi_columns.POB5:
 
 Population 6 to 11 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -16302,7 +16302,7 @@ Measure "Population 6 to 11 years old" percent of "Total population" within an a
 .. _mx.inegi_columns.POB35:
 
 Female population 6 to 11 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -16532,7 +16532,7 @@ Measure "Female population 6 to 11 years old" percent of "Female population" wit
 .. _mx.inegi_columns.POB61:
 
 Male population 6 to 11 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -16769,7 +16769,7 @@ Measure "Male population 6 to 11 years old" percent of "Population 6 to 11 years
 .. _mx.inegi_columns.POB6:
 
 Population 8 to 14 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -16988,7 +16988,7 @@ Measure "Population 8 to 14 years old" percent of "Total population" within an a
 .. _mx.inegi_columns.POB36:
 
 Female population 8 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -17040,7 +17040,7 @@ Measure "Female population 8 to 14 years old" within an area:
 
 
 
-Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 years old" at one point:
+Measure "Female population 8 to 14 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -17053,7 +17053,7 @@ Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 yea
       );
 
 
-Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 years old" within an area:
+Measure "Female population 8 to 14 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -17184,11 +17184,11 @@ Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB6`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB6`
 
 
 :Source:
@@ -17218,7 +17218,7 @@ Measure "Female population 8 to 14 years old" percent of "Population 8 to 14 yea
 .. _mx.inegi_columns.POB62:
 
 Male population 8 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -17270,7 +17270,7 @@ Measure "Male population 8 to 14 years old" within an area:
 
 
 
-Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years old" at one point:
+Measure "Male population 8 to 14 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -17283,7 +17283,7 @@ Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years
       );
 
 
-Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years old" within an area:
+Measure "Male population 8 to 14 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -17414,11 +17414,11 @@ Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB6`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB6`
 
 
 :Source:
@@ -17455,7 +17455,7 @@ Measure "Male population 8 to 14 years old" percent of "Population 8 to 14 years
 .. _mx.inegi_columns.POB19:
 
 Population 12 or more years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -17674,7 +17674,7 @@ Measure "Population 12 or more years old" percent of "Total population" within a
 .. _mx.inegi_columns.POB50:
 
 Female population 12 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -17726,7 +17726,7 @@ Measure "Female population 12 or more years old" within an area:
 
 
 
-Measure "Female population 12 or more years old" percent of "Population 12 or more years old" at one point:
+Measure "Female population 12 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -17739,7 +17739,7 @@ Measure "Female population 12 or more years old" percent of "Population 12 or mo
       );
 
 
-Measure "Female population 12 or more years old" percent of "Population 12 or more years old" within an area:
+Measure "Female population 12 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -17870,11 +17870,11 @@ Measure "Female population 12 or more years old" percent of "Population 12 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB19`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB19`
 
 
 :Source:
@@ -17908,7 +17908,7 @@ Measure "Female population 12 or more years old" percent of "Population 12 or mo
 .. _mx.inegi_columns.POB75:
 
 Male population 12 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -17960,7 +17960,7 @@ Measure "Male population 12 or more years old" within an area:
 
 
 
-Measure "Male population 12 or more years old" percent of "Population 12 or more years old" at one point:
+Measure "Male population 12 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -17973,7 +17973,7 @@ Measure "Male population 12 or more years old" percent of "Population 12 or more
       );
 
 
-Measure "Male population 12 or more years old" percent of "Population 12 or more years old" within an area:
+Measure "Male population 12 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -18104,11 +18104,11 @@ Measure "Male population 12 or more years old" percent of "Population 12 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB19`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB19`
 
 
 :Source:
@@ -18147,7 +18147,7 @@ Measure "Male population 12 or more years old" percent of "Population 12 or more
 .. _mx.inegi_columns.POB7:
 
 Population 12 to 14 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -18366,7 +18366,7 @@ Measure "Population 12 to 14 years old" percent of "Total population" within an 
 .. _mx.inegi_columns.POB37:
 
 Female population 12 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -18418,7 +18418,7 @@ Measure "Female population 12 to 14 years old" within an area:
 
 
 
-Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 years old" at one point:
+Measure "Female population 12 to 14 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -18431,7 +18431,7 @@ Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 y
       );
 
 
-Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 years old" within an area:
+Measure "Female population 12 to 14 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -18562,11 +18562,11 @@ Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB7`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB7`
 
 
 :Source:
@@ -18596,7 +18596,7 @@ Measure "Female population 12 to 14 years old" percent of "Population 12 to 14 y
 .. _mx.inegi_columns.POB63:
 
 Male population 12 to 14 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -18648,7 +18648,7 @@ Measure "Male population 12 to 14 years old" within an area:
 
 
 
-Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 years old" at one point:
+Measure "Male population 12 to 14 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -18661,7 +18661,7 @@ Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 yea
       );
 
 
-Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 years old" within an area:
+Measure "Male population 12 to 14 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -18792,11 +18792,11 @@ Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB7`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB7`
 
 
 :Source:
@@ -18833,7 +18833,7 @@ Measure "Male population 12 to 14 years old" percent of "Population 12 to 14 yea
 .. _mx.inegi_columns.POB20:
 
 Population 15 or more years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -19052,7 +19052,7 @@ Measure "Population 15 or more years old" percent of "Total population" within a
 .. _mx.inegi_columns.POB51:
 
 Female population 15 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -19104,7 +19104,7 @@ Measure "Female population 15 or more years old" within an area:
 
 
 
-Measure "Female population 15 or more years old" percent of "Population 15 or more years old" at one point:
+Measure "Female population 15 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -19117,7 +19117,7 @@ Measure "Female population 15 or more years old" percent of "Population 15 or mo
       );
 
 
-Measure "Female population 15 or more years old" percent of "Population 15 or more years old" within an area:
+Measure "Female population 15 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -19248,11 +19248,11 @@ Measure "Female population 15 or more years old" percent of "Population 15 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB20`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB20`
 
 
 :Source:
@@ -19294,7 +19294,7 @@ Measure "Female population 15 or more years old" percent of "Population 15 or mo
 .. _mx.inegi_columns.POB76:
 
 Male population 15 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -19346,7 +19346,7 @@ Measure "Male population 15 or more years old" within an area:
 
 
 
-Measure "Male population 15 or more years old" percent of "Population 15 or more years old" at one point:
+Measure "Male population 15 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -19359,7 +19359,7 @@ Measure "Male population 15 or more years old" percent of "Population 15 or more
       );
 
 
-Measure "Male population 15 or more years old" percent of "Population 15 or more years old" within an area:
+Measure "Male population 15 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -19490,11 +19490,11 @@ Measure "Male population 15 or more years old" percent of "Population 15 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB20`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB20`
 
 
 :Source:
@@ -19543,7 +19543,7 @@ Measure "Male population 15 or more years old" percent of "Population 15 or more
 .. _mx.inegi_columns.POB9:
 
 Population 15 to 17 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -19762,7 +19762,7 @@ Measure "Population 15 to 17 years old" percent of "Total population" within an 
 .. _mx.inegi_columns.POB39:
 
 Female population 15 to 17 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -19982,7 +19982,7 @@ Measure "Female population 15 to 17 years old" percent of "Female population" wi
 .. _mx.inegi_columns.POB65:
 
 Male population 15 to 17 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -20205,7 +20205,7 @@ Measure "Male population 15 to 17 years old" percent of "Male population" within
 .. _mx.inegi_columns.POB10:
 
 Population 15 to 24 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -20424,7 +20424,7 @@ Measure "Population 15 to 24 years old" percent of "Total population" within an 
 .. _mx.inegi_columns.POB40:
 
 Female population 15 to 24 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -20476,7 +20476,7 @@ Measure "Female population 15 to 24 years old" within an area:
 
 
 
-Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 years old" at one point:
+Measure "Female population 15 to 24 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -20489,7 +20489,7 @@ Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 y
       );
 
 
-Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 years old" within an area:
+Measure "Female population 15 to 24 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -20620,11 +20620,11 @@ Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB10`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB10`
 
 
 :Source:
@@ -20652,7 +20652,7 @@ Measure "Female population 15 to 24 years old" percent of "Population 15 to 24 y
 .. _mx.inegi_columns.POB66:
 
 Male population 15 to 24 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -20704,7 +20704,7 @@ Measure "Male population 15 to 24 years old" within an area:
 
 
 
-Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 years old" at one point:
+Measure "Male population 15 to 24 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -20717,7 +20717,7 @@ Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 yea
       );
 
 
-Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 years old" within an area:
+Measure "Male population 15 to 24 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -20848,11 +20848,11 @@ Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB10`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB10`
 
 
 :Source:
@@ -20885,7 +20885,7 @@ Measure "Male population 15 to 24 years old" percent of "Population 15 to 24 yea
 .. _mx.inegi_columns.POB11:
 
 Population 15 to 29 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -21104,7 +21104,7 @@ Measure "Population 15 to 29 years old" percent of "Total population" within an 
 .. _mx.inegi_columns.POB41:
 
 Female population 15 to 29 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -21156,7 +21156,7 @@ Measure "Female population 15 to 29 years old" within an area:
 
 
 
-Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 years old" at one point:
+Measure "Female population 15 to 29 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -21169,7 +21169,7 @@ Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 y
       );
 
 
-Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 years old" within an area:
+Measure "Female population 15 to 29 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -21300,11 +21300,11 @@ Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB11`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB11`
 
 
 :Source:
@@ -21324,7 +21324,7 @@ Measure "Female population 15 to 29 years old" percent of "Population 15 to 29 y
 .. _mx.inegi_columns.POB67:
 
 Male population 15 to 29 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -21376,7 +21376,7 @@ Measure "Male population 15 to 29 years old" within an area:
 
 
 
-Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 years old" at one point:
+Measure "Male population 15 to 29 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -21389,7 +21389,7 @@ Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 yea
       );
 
 
-Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 years old" within an area:
+Measure "Male population 15 to 29 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -21520,11 +21520,11 @@ Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB11`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB11`
 
 
 :Source:
@@ -21547,7 +21547,7 @@ Measure "Male population 15 to 29 years old" percent of "Population 15 to 29 yea
 .. _mx.inegi_columns.POB12:
 
 Population 15 to 64 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -21766,7 +21766,7 @@ Measure "Population 15 to 64 years old" percent of "Total population" within an 
 .. _mx.inegi_columns.POB43:
 
 Female population 15 to 64 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -21986,7 +21986,7 @@ Measure "Female population 15 to 64 years old" percent of "Population 15 to 64 y
 .. _mx.inegi_columns.POB68:
 
 Male population 15 to 64 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -22209,7 +22209,7 @@ Measure "Male population 15 to 64 years old" percent of "Population 15 to 64 yea
 .. _mx.inegi_columns.POB21:
 
 Population 18 or more years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -22428,7 +22428,7 @@ Measure "Population 18 or more years old" percent of "Total population" within a
 .. _mx.inegi_columns.POB52:
 
 Female population 18 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -22480,7 +22480,7 @@ Measure "Female population 18 or more years old" within an area:
 
 
 
-Measure "Female population 18 or more years old" percent of "Population 18 or more years old" at one point:
+Measure "Female population 18 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -22493,7 +22493,7 @@ Measure "Female population 18 or more years old" percent of "Population 18 or mo
       );
 
 
-Measure "Female population 18 or more years old" percent of "Population 18 or more years old" within an area:
+Measure "Female population 18 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -22624,11 +22624,11 @@ Measure "Female population 18 or more years old" percent of "Population 18 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB21`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB21`
 
 
 :Source:
@@ -22656,7 +22656,7 @@ Measure "Female population 18 or more years old" percent of "Population 18 or mo
 .. _mx.inegi_columns.POB77:
 
 Male population 18 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -22708,7 +22708,7 @@ Measure "Male population 18 or more years old" within an area:
 
 
 
-Measure "Male population 18 or more years old" percent of "Population 18 or more years old" at one point:
+Measure "Male population 18 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -22721,7 +22721,7 @@ Measure "Male population 18 or more years old" percent of "Population 18 or more
       );
 
 
-Measure "Male population 18 or more years old" percent of "Population 18 or more years old" within an area:
+Measure "Male population 18 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -22852,11 +22852,11 @@ Measure "Male population 18 or more years old" percent of "Population 18 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB21`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB21`
 
 
 :Source:
@@ -22889,7 +22889,7 @@ Measure "Male population 18 or more years old" percent of "Population 18 or more
 .. _mx.inegi_columns.POB13:
 
 Population 18 to 24 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -23108,7 +23108,7 @@ Measure "Population 18 to 24 years old" percent of "Total population" within an 
 .. _mx.inegi_columns.POB44:
 
 Female population 18 to 24 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -23328,7 +23328,7 @@ Measure "Female population 18 to 24 years old" percent of "Population 18 to 24 y
 .. _mx.inegi_columns.POB69:
 
 Male population 18 to 24 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -23551,7 +23551,7 @@ Measure "Male population 18 to 24 years old" percent of "Population 18 to 24 yea
 .. _mx.inegi_columns.POB22:
 
 Population 25 or more years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -23770,7 +23770,7 @@ Measure "Population 25 or more years old" percent of "Total population" within a
 .. _mx.inegi_columns.POB53:
 
 Female population 25 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -23822,7 +23822,7 @@ Measure "Female population 25 or more years old" within an area:
 
 
 
-Measure "Female population 25 or more years old" percent of "Population 25 or more years old" at one point:
+Measure "Female population 25 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -23835,7 +23835,7 @@ Measure "Female population 25 or more years old" percent of "Population 25 or mo
       );
 
 
-Measure "Female population 25 or more years old" percent of "Population 25 or more years old" within an area:
+Measure "Female population 25 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -23966,11 +23966,11 @@ Measure "Female population 25 or more years old" percent of "Population 25 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB22`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB22`
 
 
 :Source:
@@ -23998,7 +23998,7 @@ Measure "Female population 25 or more years old" percent of "Population 25 or mo
 .. _mx.inegi_columns.POB78:
 
 Male population 25 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -24050,7 +24050,7 @@ Measure "Male population 25 or more years old" within an area:
 
 
 
-Measure "Male population 25 or more years old" percent of "Population 25 or more years old" at one point:
+Measure "Male population 25 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -24063,7 +24063,7 @@ Measure "Male population 25 or more years old" percent of "Population 25 or more
       );
 
 
-Measure "Male population 25 or more years old" percent of "Population 25 or more years old" within an area:
+Measure "Male population 25 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -24194,11 +24194,11 @@ Measure "Male population 25 or more years old" percent of "Population 25 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB22`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB22`
 
 
 :Source:
@@ -24231,7 +24231,7 @@ Measure "Male population 25 or more years old" percent of "Population 25 or more
 .. _mx.inegi_columns.POB14:
 
 Population 30 to 49 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -24450,7 +24450,7 @@ Measure "Population 30 to 49 years old" percent of "Total population" within an 
 .. _mx.inegi_columns.POB45:
 
 Female population 30 to 49 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -24670,7 +24670,7 @@ Measure "Female population 30 to 49 years old" percent of "Population 30 to 49 y
 .. _mx.inegi_columns.POB70:
 
 Male population 30 to 49 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -24893,7 +24893,7 @@ Measure "Male population 30 to 49 years old" percent of "Population 30 to 49 yea
 .. _mx.inegi_columns.POB15:
 
 Population 50 to 59 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -25112,7 +25112,7 @@ Measure "Population 50 to 59 years old" percent of "Total population" within an 
 .. _mx.inegi_columns.POB46:
 
 Female population 50 to 59 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -25332,7 +25332,7 @@ Measure "Female population 50 to 59 years old" percent of "Population 50 to 59 y
 .. _mx.inegi_columns.POB71:
 
 Male population 50 to 59 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -25555,7 +25555,7 @@ Measure "Male population 50 to 59 years old" percent of "Population 50 to 59 yea
 .. _mx.inegi_columns.POB23:
 
 Population 60 or more years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -25774,7 +25774,7 @@ Measure "Population 60 or more years old" percent of "Total population" within a
 .. _mx.inegi_columns.POB54:
 
 Female population 60 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -25826,7 +25826,7 @@ Measure "Female population 60 or more years old" within an area:
 
 
 
-Measure "Female population 60 or more years old" percent of "Population 60 or more years old" at one point:
+Measure "Female population 60 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -25839,7 +25839,7 @@ Measure "Female population 60 or more years old" percent of "Population 60 or mo
       );
 
 
-Measure "Female population 60 or more years old" percent of "Population 60 or more years old" within an area:
+Measure "Female population 60 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -25970,11 +25970,11 @@ Measure "Female population 60 or more years old" percent of "Population 60 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB23`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB23`
 
 
 :Source:
@@ -25994,7 +25994,7 @@ Measure "Female population 60 or more years old" percent of "Population 60 or mo
 .. _mx.inegi_columns.POB79:
 
 Male population 60 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -26046,7 +26046,7 @@ Measure "Male population 60 or more years old" within an area:
 
 
 
-Measure "Male population 60 or more years old" percent of "Population 60 or more years old" at one point:
+Measure "Male population 60 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -26059,7 +26059,7 @@ Measure "Male population 60 or more years old" percent of "Population 60 or more
       );
 
 
-Measure "Male population 60 or more years old" percent of "Population 60 or more years old" within an area:
+Measure "Male population 60 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -26190,11 +26190,11 @@ Measure "Male population 60 or more years old" percent of "Population 60 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB23`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB23`
 
 
 :Source:
@@ -26219,7 +26219,7 @@ Measure "Male population 60 or more years old" percent of "Population 60 or more
 .. _mx.inegi_columns.POB16:
 
 Population 60 to 64 years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -26438,7 +26438,7 @@ Measure "Population 60 to 64 years old" percent of "Total population" within an 
 .. _mx.inegi_columns.POB47:
 
 Female population 60 to 64 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -26490,7 +26490,7 @@ Measure "Female population 60 to 64 years old" within an area:
 
 
 
-Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 years old" at one point:
+Measure "Female population 60 to 64 years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -26503,7 +26503,7 @@ Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 y
       );
 
 
-Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 years old" within an area:
+Measure "Female population 60 to 64 years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -26634,11 +26634,11 @@ Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 y
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB16`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB16`
 
 
 :Source:
@@ -26658,7 +26658,7 @@ Measure "Female population 60 to 64 years old" percent of "Population 60 to 64 y
 .. _mx.inegi_columns.POB72:
 
 Male population 60 to 64 years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -26710,7 +26710,7 @@ Measure "Male population 60 to 64 years old" within an area:
 
 
 
-Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 years old" at one point:
+Measure "Male population 60 to 64 years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -26723,7 +26723,7 @@ Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 yea
       );
 
 
-Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 years old" within an area:
+Measure "Male population 60 to 64 years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -26854,11 +26854,11 @@ Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 yea
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB16`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB16`
 
 
 :Source:
@@ -26881,7 +26881,7 @@ Measure "Male population 60 to 64 years old" percent of "Population 60 to 64 yea
 .. _mx.inegi_columns.POB24:
 
 Population 65 or more years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -27100,7 +27100,7 @@ Measure "Population 65 or more years old" percent of "Total population" within a
 .. _mx.inegi_columns.POB55:
 
 Female population 65 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -27152,7 +27152,7 @@ Measure "Female population 65 or more years old" within an area:
 
 
 
-Measure "Female population 65 or more years old" percent of "Population 65 or more years old" at one point:
+Measure "Female population 65 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -27165,7 +27165,7 @@ Measure "Female population 65 or more years old" percent of "Population 65 or mo
       );
 
 
-Measure "Female population 65 or more years old" percent of "Population 65 or more years old" within an area:
+Measure "Female population 65 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -27296,11 +27296,11 @@ Measure "Female population 65 or more years old" percent of "Population 65 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB24`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB24`
 
 
 :Source:
@@ -27320,7 +27320,7 @@ Measure "Female population 65 or more years old" percent of "Population 65 or mo
 .. _mx.inegi_columns.POB80:
 
 Male population 65 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -27372,7 +27372,7 @@ Measure "Male population 65 or more years old" within an area:
 
 
 
-Measure "Male population 65 or more years old" percent of "Population 65 or more years old" at one point:
+Measure "Male population 65 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -27385,7 +27385,7 @@ Measure "Male population 65 or more years old" percent of "Population 65 or more
       );
 
 
-Measure "Male population 65 or more years old" percent of "Population 65 or more years old" within an area:
+Measure "Male population 65 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -27516,11 +27516,11 @@ Measure "Male population 65 or more years old" percent of "Population 65 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB24`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB24`
 
 
 :Source:
@@ -27543,7 +27543,7 @@ Measure "Male population 65 or more years old" percent of "Population 65 or more
 .. _mx.inegi_columns.POB25:
 
 Population 70 or more years old
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
@@ -27762,7 +27762,7 @@ Measure "Population 70 or more years old" percent of "Total population" within a
 .. _mx.inegi_columns.POB56:
 
 Female population 70 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -27814,7 +27814,7 @@ Measure "Female population 70 or more years old" within an area:
 
 
 
-Measure "Female population 70 or more years old" percent of "Population 70 or more years old" at one point:
+Measure "Female population 70 or more years old" percent of "Female population" at one point:
 
 .. code-block:: postgresql
 
@@ -27827,7 +27827,7 @@ Measure "Female population 70 or more years old" percent of "Population 70 or mo
       );
 
 
-Measure "Female population 70 or more years old" percent of "Population 70 or more years old" within an area:
+Measure "Female population 70 or more years old" percent of "Female population" within an area:
 
 .. code-block:: postgresql
 
@@ -27958,11 +27958,11 @@ Measure "Female population 70 or more years old" percent of "Population 70 or mo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB25`
+    :ref:`mx.inegi_columns.POB31`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB31`
+    :ref:`mx.inegi_columns.POB25`
 
 
 :Source:
@@ -27982,7 +27982,7 @@ Measure "Female population 70 or more years old" percent of "Population 70 or mo
 .. _mx.inegi_columns.POB81:
 
 Male population 70 or more years old
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -28034,7 +28034,7 @@ Measure "Male population 70 or more years old" within an area:
 
 
 
-Measure "Male population 70 or more years old" percent of "Population 70 or more years old" at one point:
+Measure "Male population 70 or more years old" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -28047,7 +28047,7 @@ Measure "Male population 70 or more years old" percent of "Population 70 or more
       );
 
 
-Measure "Male population 70 or more years old" percent of "Population 70 or more years old" within an area:
+Measure "Male population 70 or more years old" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -28178,11 +28178,11 @@ Measure "Male population 70 or more years old" percent of "Population 70 or more
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB25`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.POB25`
 
 
 :Source:

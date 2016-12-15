@@ -97,7 +97,7 @@ Average education level is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -115,7 +115,7 @@ Average education level is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -272,7 +272,7 @@ Average female education level is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -290,7 +290,7 @@ Average female education level is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -447,7 +447,7 @@ Average male education level is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -465,7 +465,7 @@ Average male education level is only available for point lookups.
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -659,7 +659,7 @@ Measure "Employed population who completed basic education" percent of "Employed
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -677,7 +677,7 @@ Measure "Employed population who completed basic education" percent of "Employed
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -814,7 +814,7 @@ Measure "Employed female population who completed basic education" within an are
 
 
 
-Measure "Employed female population who completed basic education" percent of "Employed population who completed basic education" at one point:
+Measure "Employed female population who completed basic education" percent of "Employed female" at one point:
 
 .. code-block:: postgresql
 
@@ -827,7 +827,7 @@ Measure "Employed female population who completed basic education" percent of "E
       );
 
 
-Measure "Employed female population who completed basic education" percent of "Employed population who completed basic education" within an area:
+Measure "Employed female population who completed basic education" percent of "Employed female" within an area:
 
 .. code-block:: postgresql
 
@@ -922,11 +922,11 @@ Measure "Employed female population who completed basic education" percent of "E
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO16`
+    :ref:`mx.inegi_columns.ECO5`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO5`
+    :ref:`mx.inegi_columns.ECO16`
 
 
 :Source:
@@ -998,7 +998,7 @@ Measure "Employed male population who completed basic education" within an area:
 
 
 
-Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" at one point:
+Measure "Employed male population who completed basic education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -1011,7 +1011,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
       );
 
 
-Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" within an area:
+Measure "Employed male population who completed basic education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -1106,11 +1106,11 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO16`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO16`
 
 
 :Source:
@@ -1249,7 +1249,7 @@ Measure "Employed population with a high school degree" percent of "Employed" wi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1267,7 +1267,7 @@ Measure "Employed population with a high school degree" percent of "Employed" wi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -1404,7 +1404,7 @@ Measure "Employed female population with a high school degree" within an area:
 
 
 
-Measure "Employed female population with a high school degree" percent of "Employed population with a high school degree" at one point:
+Measure "Employed female population with a high school degree" percent of "Employed female" at one point:
 
 .. code-block:: postgresql
 
@@ -1417,7 +1417,7 @@ Measure "Employed female population with a high school degree" percent of "Emplo
       );
 
 
-Measure "Employed female population with a high school degree" percent of "Employed population with a high school degree" within an area:
+Measure "Employed female population with a high school degree" percent of "Employed female" within an area:
 
 .. code-block:: postgresql
 
@@ -1512,11 +1512,11 @@ Measure "Employed female population with a high school degree" percent of "Emplo
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO19`
+    :ref:`mx.inegi_columns.ECO5`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO5`
+    :ref:`mx.inegi_columns.ECO19`
 
 
 :Source:
@@ -1839,7 +1839,7 @@ Measure "Employed population with a university degree or more" percent of "Emplo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1857,7 +1857,7 @@ Measure "Employed population with a university degree or more" percent of "Emplo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -2178,7 +2178,7 @@ Measure "Employed male population with a university degree or more" within an ar
 
 
 
-Measure "Employed male population with a university degree or more" percent of "Employed male" at one point:
+Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" at one point:
 
 .. code-block:: postgresql
 
@@ -2191,7 +2191,7 @@ Measure "Employed male population with a university degree or more" percent of "
       );
 
 
-Measure "Employed male population with a university degree or more" percent of "Employed male" within an area:
+Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" within an area:
 
 .. code-block:: postgresql
 
@@ -2286,11 +2286,11 @@ Measure "Employed male population with a university degree or more" percent of "
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO22`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO22`
+    :ref:`mx.inegi_columns.ECO6`
 
 
 :Source:
@@ -2429,7 +2429,7 @@ Measure "Employed population with incomplete secondary education" percent of "Em
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -2447,7 +2447,7 @@ Measure "Employed population with incomplete secondary education" percent of "Em
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -2584,7 +2584,7 @@ Measure "Employed female population with incomplete secondary education" within 
 
 
 
-Measure "Employed female population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+Measure "Employed female population with incomplete secondary education" percent of "Employed female" at one point:
 
 .. code-block:: postgresql
 
@@ -2597,7 +2597,7 @@ Measure "Employed female population with incomplete secondary education" percent
       );
 
 
-Measure "Employed female population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+Measure "Employed female population with incomplete secondary education" percent of "Employed female" within an area:
 
 .. code-block:: postgresql
 
@@ -2692,11 +2692,11 @@ Measure "Employed female population with incomplete secondary education" percent
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO13`
+    :ref:`mx.inegi_columns.ECO5`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO5`
+    :ref:`mx.inegi_columns.ECO13`
 
 
 :Source:
@@ -2768,7 +2768,7 @@ Measure "Employed male population with incomplete secondary education" within an
 
 
 
-Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+Measure "Employed male population with incomplete secondary education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -2781,7 +2781,7 @@ Measure "Employed male population with incomplete secondary education" percent o
       );
 
 
-Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+Measure "Employed male population with incomplete secondary education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -2876,11 +2876,11 @@ Measure "Employed male population with incomplete secondary education" percent o
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO13`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO13`
 
 
 :Source:
@@ -3019,7 +3019,7 @@ Measure "Employed population with primary education" percent of "Employed" withi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3037,7 +3037,7 @@ Measure "Employed population with primary education" percent of "Employed" withi
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -3358,7 +3358,7 @@ Measure "Employed male population with primary education" within an area:
 
 
 
-Measure "Employed male population with primary education" percent of "Employed male" at one point:
+Measure "Employed male population with primary education" percent of "Employed population with primary education" at one point:
 
 .. code-block:: postgresql
 
@@ -3371,7 +3371,7 @@ Measure "Employed male population with primary education" percent of "Employed m
       );
 
 
-Measure "Employed male population with primary education" percent of "Employed male" within an area:
+Measure "Employed male population with primary education" percent of "Employed population with primary education" within an area:
 
 .. code-block:: postgresql
 
@@ -3466,11 +3466,11 @@ Measure "Employed male population with primary education" percent of "Employed m
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO10`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO10`
+    :ref:`mx.inegi_columns.ECO6`
 
 
 :Source:
@@ -3609,7 +3609,7 @@ Measure "Employed population without schooling" percent of "Employed" within an 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3627,7 +3627,7 @@ Measure "Employed population without schooling" percent of "Employed" within an 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -3764,7 +3764,7 @@ Measure "Employed female population without schooling" within an area:
 
 
 
-Measure "Employed female population without schooling" percent of "Employed population without schooling" at one point:
+Measure "Employed female population without schooling" percent of "Employed female" at one point:
 
 .. code-block:: postgresql
 
@@ -3777,7 +3777,7 @@ Measure "Employed female population without schooling" percent of "Employed popu
       );
 
 
-Measure "Employed female population without schooling" percent of "Employed population without schooling" within an area:
+Measure "Employed female population without schooling" percent of "Employed female" within an area:
 
 .. code-block:: postgresql
 
@@ -3872,11 +3872,11 @@ Measure "Employed female population without schooling" percent of "Employed popu
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO7`
+    :ref:`mx.inegi_columns.ECO5`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO5`
+    :ref:`mx.inegi_columns.ECO7`
 
 
 :Source:
@@ -3948,7 +3948,7 @@ Measure "Employed male population without schooling" within an area:
 
 
 
-Measure "Employed male population without schooling" percent of "Employed male" at one point:
+Measure "Employed male population without schooling" percent of "Employed population without schooling" at one point:
 
 .. code-block:: postgresql
 
@@ -3961,7 +3961,7 @@ Measure "Employed male population without schooling" percent of "Employed male" 
       );
 
 
-Measure "Employed male population without schooling" percent of "Employed male" within an area:
+Measure "Employed male population without schooling" percent of "Employed population without schooling" within an area:
 
 .. code-block:: postgresql
 
@@ -4056,11 +4056,11 @@ Measure "Employed male population without schooling" percent of "Employed male" 
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO7`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO7`
+    :ref:`mx.inegi_columns.ECO6`
 
 
 :Source:
@@ -4199,7 +4199,7 @@ Measure "Population 15 or more years old who are illiterate" percent of "Populat
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4217,7 +4217,7 @@ Measure "Population 15 or more years old who are illiterate" percent of "Populat
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -4789,7 +4789,7 @@ Measure "Population 15 or more years old who are literate" percent of "Populatio
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4807,7 +4807,7 @@ Measure "Population 15 or more years old who are literate" percent of "Populatio
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -5379,7 +5379,7 @@ Measure "Population 15 or more years old who completed basic education" percent 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5397,7 +5397,7 @@ Measure "Population 15 or more years old who completed basic education" percent 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -5534,7 +5534,7 @@ Measure "Female population 15 or more years old who completed basic education" w
 
 
 
-Measure "Female population 15 or more years old who completed basic education" percent of "Population 15 or more years old who completed basic education" at one point:
+Measure "Female population 15 or more years old who completed basic education" percent of "Female population 15 or more years old" at one point:
 
 .. code-block:: postgresql
 
@@ -5547,7 +5547,7 @@ Measure "Female population 15 or more years old who completed basic education" p
       );
 
 
-Measure "Female population 15 or more years old who completed basic education" percent of "Population 15 or more years old who completed basic education" within an area:
+Measure "Female population 15 or more years old who completed basic education" percent of "Female population 15 or more years old" within an area:
 
 .. code-block:: postgresql
 
@@ -5642,11 +5642,11 @@ Measure "Female population 15 or more years old who completed basic education" p
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.EDU37`
+    :ref:`mx.inegi_columns.POB51`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB51`
+    :ref:`mx.inegi_columns.EDU37`
 
 
 :Source:
@@ -5969,7 +5969,7 @@ Measure "Population 15 or more years old who did not complete basic education" p
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5987,7 +5987,7 @@ Measure "Population 15 or more years old who did not complete basic education" p
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -6124,7 +6124,7 @@ Measure "Female population 15 or more years old who did not complete basic educa
 
 
 
-Measure "Female population 15 or more years old who did not complete basic education" percent of "Female population 15 or more years old" at one point:
+Measure "Female population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old who did not complete basic education" at one point:
 
 .. code-block:: postgresql
 
@@ -6137,7 +6137,7 @@ Measure "Female population 15 or more years old who did not complete basic educa
       );
 
 
-Measure "Female population 15 or more years old who did not complete basic education" percent of "Female population 15 or more years old" within an area:
+Measure "Female population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old who did not complete basic education" within an area:
 
 .. code-block:: postgresql
 
@@ -6232,11 +6232,11 @@ Measure "Female population 15 or more years old who did not complete basic educa
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB51`
+    :ref:`mx.inegi_columns.EDU34`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.EDU34`
+    :ref:`mx.inegi_columns.POB51`
 
 
 :Source:
@@ -6308,7 +6308,7 @@ Measure "Male population 15 or more years old who did not complete basic educati
 
 
 
-Measure "Male population 15 or more years old who did not complete basic education" percent of "Female population 15 or more years old" at one point:
+Measure "Male population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old who did not complete basic education" at one point:
 
 .. code-block:: postgresql
 
@@ -6321,7 +6321,7 @@ Measure "Male population 15 or more years old who did not complete basic educati
       );
 
 
-Measure "Male population 15 or more years old who did not complete basic education" percent of "Female population 15 or more years old" within an area:
+Measure "Male population 15 or more years old who did not complete basic education" percent of "Population 15 or more years old who did not complete basic education" within an area:
 
 .. code-block:: postgresql
 
@@ -6416,11 +6416,11 @@ Measure "Male population 15 or more years old who did not complete basic educati
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB51`
+    :ref:`mx.inegi_columns.EDU34`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.EDU34`
+    :ref:`mx.inegi_columns.POB51`
 
 
 :Source:
@@ -6559,7 +6559,7 @@ Measure "Population 15 or more years old with some high school" percent of "Popu
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6577,7 +6577,7 @@ Measure "Population 15 or more years old with some high school" percent of "Popu
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -7149,7 +7149,7 @@ Measure "Population 15 or more years old without schooling" percent of "Populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7167,7 +7167,7 @@ Measure "Population 15 or more years old without schooling" percent of "Populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -7739,7 +7739,7 @@ Measure "Population 18 or more years old with a high school degree" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7757,7 +7757,7 @@ Measure "Population 18 or more years old with a high school degree" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -8078,7 +8078,7 @@ Measure "Male population 18 or more years old with a high school degree" within 
 
 
 
-Measure "Male population 18 or more years old with a high school degree" percent of "Population 18 or more years old with a high school degree" at one point:
+Measure "Male population 18 or more years old with a high school degree" percent of "Male population 18 or more years old" at one point:
 
 .. code-block:: postgresql
 
@@ -8091,7 +8091,7 @@ Measure "Male population 18 or more years old with a high school degree" percent
       );
 
 
-Measure "Male population 18 or more years old with a high school degree" percent of "Population 18 or more years old with a high school degree" within an area:
+Measure "Male population 18 or more years old with a high school degree" percent of "Male population 18 or more years old" within an area:
 
 .. code-block:: postgresql
 
@@ -8186,11 +8186,11 @@ Measure "Male population 18 or more years old with a high school degree" percent
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.EDU43`
+    :ref:`mx.inegi_columns.POB77`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB77`
+    :ref:`mx.inegi_columns.EDU43`
 
 
 :Source:
@@ -8329,7 +8329,7 @@ Measure "Population 25 or more years old with a university degree" percent of "P
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8347,7 +8347,7 @@ Measure "Population 25 or more years old with a university degree" percent of "P
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -8919,7 +8919,7 @@ Measure "Population from 12 to 14 years old who do not go to school" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8937,7 +8937,7 @@ Measure "Population from 12 to 14 years old who do not go to school" percent of 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -9074,7 +9074,7 @@ Measure "Female population from 12 to 14 years old who do not go to school" with
 
 
 
-Measure "Female population from 12 to 14 years old who do not go to school" percent of "Population from 12 to 14 years old who do not go to school" at one point:
+Measure "Female population from 12 to 14 years old who do not go to school" percent of "Female population 12 to 14 years old" at one point:
 
 .. code-block:: postgresql
 
@@ -9087,7 +9087,7 @@ Measure "Female population from 12 to 14 years old who do not go to school" perc
       );
 
 
-Measure "Female population from 12 to 14 years old who do not go to school" percent of "Population from 12 to 14 years old who do not go to school" within an area:
+Measure "Female population from 12 to 14 years old who do not go to school" percent of "Female population 12 to 14 years old" within an area:
 
 .. code-block:: postgresql
 
@@ -9182,11 +9182,11 @@ Measure "Female population from 12 to 14 years old who do not go to school" perc
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.EDU16`
+    :ref:`mx.inegi_columns.POB37`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB37`
+    :ref:`mx.inegi_columns.EDU16`
 
 
 :Source:
@@ -9509,7 +9509,7 @@ Measure "Population from 12 to 14 years old who go to school" percent of "Popula
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -9527,7 +9527,7 @@ Measure "Population from 12 to 14 years old who go to school" percent of "Popula
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -10099,7 +10099,7 @@ Measure "Population from 3 to 5 years old who do not go to school" percent of "P
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -10117,7 +10117,7 @@ Measure "Population from 3 to 5 years old who do not go to school" percent of "P
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -10689,7 +10689,7 @@ Measure "Population from 3 to 5 years old who go to school" percent of "Populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -10707,7 +10707,7 @@ Measure "Population from 3 to 5 years old who go to school" percent of "Populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -10844,7 +10844,7 @@ Measure "Female population from 3 to 5 years old who go to school" within an are
 
 
 
-Measure "Female population from 3 to 5 years old who go to school" percent of "Population from 3 to 5 years old who go to school" at one point:
+Measure "Female population from 3 to 5 years old who go to school" percent of "Female population 3 to 5 years old" at one point:
 
 .. code-block:: postgresql
 
@@ -10857,7 +10857,7 @@ Measure "Female population from 3 to 5 years old who go to school" percent of "P
       );
 
 
-Measure "Female population from 3 to 5 years old who go to school" percent of "Population from 3 to 5 years old who go to school" within an area:
+Measure "Female population from 3 to 5 years old who go to school" percent of "Female population 3 to 5 years old" within an area:
 
 .. code-block:: postgresql
 
@@ -10952,11 +10952,11 @@ Measure "Female population from 3 to 5 years old who go to school" percent of "P
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.EDU1`
+    :ref:`mx.inegi_columns.POB34`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB34`
+    :ref:`mx.inegi_columns.EDU1`
 
 
 :Source:
@@ -11279,7 +11279,7 @@ Measure "Population from 6 to 11 years old who do not go to school" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -11297,7 +11297,7 @@ Measure "Population from 6 to 11 years old who do not go to school" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -11869,7 +11869,7 @@ Measure "Population from 6 to 11 years old who go to school" percent of "Populat
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -11887,7 +11887,7 @@ Measure "Population from 6 to 11 years old who go to school" percent of "Populat
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -12459,7 +12459,7 @@ Measure "Population from 8 to 14 years old who are illiterate" percent of "Popul
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -12477,7 +12477,7 @@ Measure "Population from 8 to 14 years old who are illiterate" percent of "Popul
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 
@@ -12614,7 +12614,7 @@ Measure "Female population from 8 to 14 years old who are illiterate" within an 
 
 
 
-Measure "Female population from 8 to 14 years old who are illiterate" percent of "Female population 8 to 14 years old" at one point:
+Measure "Female population from 8 to 14 years old who are illiterate" percent of "Population from 8 to 14 years old who are illiterate" at one point:
 
 .. code-block:: postgresql
 
@@ -12627,7 +12627,7 @@ Measure "Female population from 8 to 14 years old who are illiterate" percent of
       );
 
 
-Measure "Female population from 8 to 14 years old who are illiterate" percent of "Female population 8 to 14 years old" within an area:
+Measure "Female population from 8 to 14 years old who are illiterate" percent of "Population from 8 to 14 years old who are illiterate" within an area:
 
 .. code-block:: postgresql
 
@@ -12722,11 +12722,11 @@ Measure "Female population from 8 to 14 years old who are illiterate" percent of
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB36`
+    :ref:`mx.inegi_columns.EDU22`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.EDU22`
+    :ref:`mx.inegi_columns.POB36`
 
 
 :Source:
@@ -12798,7 +12798,7 @@ Measure "Male population from 8 to 14 years old who are illiterate" within an ar
 
 
 
-Measure "Male population from 8 to 14 years old who are illiterate" percent of "Male population 8 to 14 years old" at one point:
+Measure "Male population from 8 to 14 years old who are illiterate" percent of "Population from 8 to 14 years old who are illiterate" at one point:
 
 .. code-block:: postgresql
 
@@ -12811,7 +12811,7 @@ Measure "Male population from 8 to 14 years old who are illiterate" percent of "
       );
 
 
-Measure "Male population from 8 to 14 years old who are illiterate" percent of "Male population 8 to 14 years old" within an area:
+Measure "Male population from 8 to 14 years old who are illiterate" percent of "Population from 8 to 14 years old who are illiterate" within an area:
 
 .. code-block:: postgresql
 
@@ -12906,11 +12906,11 @@ Measure "Male population from 8 to 14 years old who are illiterate" percent of "
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB62`
+    :ref:`mx.inegi_columns.EDU22`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.EDU22`
+    :ref:`mx.inegi_columns.POB62`
 
 
 :Source:
@@ -13049,7 +13049,7 @@ Measure "Population from 8 to 14 years old who are literate" percent of "Populat
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.manzana`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -13067,7 +13067,7 @@ Measure "Population from 8 to 14 years old who are literate" percent of "Populat
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.manzana`
 
 .. raw:: html
 

@@ -1,0 +1,337 @@
+
+
+.. Health:
+
+Health
+====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+Breakdowns of the population by health.
+
+.. contents::
+   :local:
+   :depth: 10
+
+
+
+
+
+.. _br.data.Pessoa10_V003:
+
+Total de pessoas de até 10 anos de idade que não sabiam se tinham registro de nascimento (inclusive sem declaração)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total de pessoas de até 10 anos de idade que não sabiam se tinham registro de nascimento (inclusive sem declaração)"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(-43.19, -22.9),
+        'br.data.Pessoa10_V003'
+      );
+
+
+
+
+
+Measure "Total de pessoas de até 10 anos de idade que não sabiam se tinham registro de nascimento (inclusive sem declaração)" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(-43.19, -22.9), 0.01),
+          'br.data.Pessoa10_V003'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`br.geo.setores_censitarios`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`br.data.ibge-censo`
+
+:License:
+
+    :ref:`br.data.ibge-license`
+
+
+
+
+
+
+
+.. _br.data.Pessoa10_V002:
+
+Total de pessoas de até 10 anos de idade que não tinham registro de nascimento
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total de pessoas de até 10 anos de idade que não tinham registro de nascimento"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(-43.19, -22.9),
+        'br.data.Pessoa10_V002'
+      );
+
+
+
+
+
+Measure "Total de pessoas de até 10 anos de idade que não tinham registro de nascimento" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(-43.19, -22.9), 0.01),
+          'br.data.Pessoa10_V002'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`br.geo.setores_censitarios`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`br.data.ibge-censo`
+
+:License:
+
+    :ref:`br.data.ibge-license`
+
+
+
+
+
+
+
+.. _br.data.Pessoa10_V001:
+
+Total de pessoas de até 10 anos de idade que tinham registro de nascimento
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+Measure "Total de pessoas de até 10 anos de idade que tinham registro de nascimento"  density per sq. kilometer  for one point:
+
+
+.. code-block:: postgresql
+
+
+
+
+
+  UPDATE {table_name}
+    SET {new_numeric_column} =
+      OBS_GetMeasure(
+        CDB_LatLng(-43.19, -22.9),
+        'br.data.Pessoa10_V001'
+      );
+
+
+
+
+
+Measure "Total de pessoas de até 10 anos de idade que tinham registro de nascimento" within an area:
+
+.. code-block:: postgresql
+
+    UPDATE {table_name}
+      SET {new_numeric_column} =
+        OBS_GetMeasure(
+          ST_Buffer(CDB_LatLng(-43.19, -22.9), 0.01),
+          'br.data.Pessoa10_V001'
+        );
+
+
+
+
+
+
+
+
+.. raw:: html
+
+   <table border="1" class="docutils">
+   <thead valign="bottom">
+   <tr class="row-odd"><th class="head">Boundary</th>
+   <th class="head">Time (default is latest)</th>
+   </tr>
+   </thead>
+   <tbody valign="top">
+
+
+   
+.. raw:: html
+
+   <tr class="row-even"><td>
+
+:ref:`br.geo.setores_censitarios`
+
+.. raw:: html
+
+   </td>
+   <td>
+
+2010
+
+.. raw:: html
+
+   </td>
+
+   
+
+.. raw:: html
+
+   </tr>
+   </tbody>
+   </table>
+
+
+
+
+
+:Source:
+
+    :ref:`br.data.ibge-censo`
+
+:License:
+
+    :ref:`br.data.ibge-license`
+
+
+

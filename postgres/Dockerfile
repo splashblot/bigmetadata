@@ -3,7 +3,8 @@ FROM kartoza/postgis:latest
 
 RUN apt-get update
 RUN apt-get install -yq make wget build-essential postgresql-server-dev-9.5 \
-                             libxml2-dev libgdal-dev libproj-dev libjson0-dev
+                        libxml2-dev libgdal-dev libproj-dev libjson0-dev \
+                        python-pip postgresql-plpython-9.5
 
 RUN wget http://download.osgeo.org/geos/geos-3.5.0.tar.bz2 && \
     tar xjpf geos-3.5.0.tar.bz2 && \

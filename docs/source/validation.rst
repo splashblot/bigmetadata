@@ -187,6 +187,32 @@ a :ref:`tasks.util.OBSTag` of ``type``, ``section``, ``subsection``, ``source``,
 and ``license``.  Use shared tags from :ref:`tasks.tags` when possible, in
 particular for ``section`` and ``subsection``.
 
+Module-specific tags should be created within the module. For example,
+when adding data from a new source with license not shared by other
+modules, new :ref:`tasks.util.OBSTag` objects must be created within
+:ref:`tasks.util.TagsTask` classes like so:
+
+.. code:: python
+
+    class SourceTags(TagsTask):
+        def tags(self):
+            return [
+                OBSTag(id='new-source-name',
+                       name='New Source Name',
+                       type='source',
+                       description='Description of Source and URL')
+            ]
+
+
+    class LicenseTags(TagsTask):
+        def tags(self):
+            return [
+                OBSTag(id='license-name',
+                       name='Name of License',
+                       type='license',
+                       description='Description of license and URL')
+            ]
+
 Specify unit tags for all measure columns
 *****************************************
 
@@ -251,7 +277,7 @@ QA'ing new ETL code.
 Regenerate the ``obs_meta`` table
 *********************************
 
-The ``obs_meta`` table is a denormalized view of the underlying :ref:`metadata` 
+The ``obs_meta`` table is a denormalized view of the underlying :ref:`metadata`
 objects that you've created when running tasks.
 
 You can force the regeneration of this table using
@@ -412,12 +438,12 @@ then you are missing a geometry table. For example:
 
 .. code:: shell
 
-                      id                   |                  tablename                   | timespan | the_geom | description | version 
+                      id                   |                  tablename                   | timespan | the_geom | description | version
    ----------------------------------------+----------------------------------------------+----------+----------+-------------+---------
     es.ine.five_year_population_99914b932b | obs_24b656e9e23d1dac2c8ab5786a388f9bf0f4e5ae | 2015     |          |             |       5
    (1 row)
 
-Notice that the_geom is empty. You will need to write a second :ref:`TableTask` with the 
+Notice that the_geom is empty. You will need to write a second :ref:`TableTask` with the
 following structure:
 
 .. code:: python

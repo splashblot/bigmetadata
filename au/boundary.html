@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; observatory 0.0.1 documentation</title>
+    <title>3.2. Boundaries &mdash; observatory 0.0.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -30,7 +30,7 @@
     <link rel="top" title="observatory 0.0.1 documentation" href="../index.html" />
     <link rel="up" title="3. Australia" href="../au.html" />
     <link rel="next" title="&lt;no title&gt;" href="business_demography.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="age_gender.html" />
+    <link rel="prev" title="3.1. Age and Gender" href="age_gender.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -46,18 +46,753 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  
+  <div class="section" id="boundaries">
+<h1>3.2. Boundaries<a class="headerlink" href="#boundaries" title="Permalink to this headline">¶</a></h1>
+<p>Political, administrative, and census-based boundaries.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#commonwealth-electoral-divisions" id="id1">Commonwealth Electoral Divisions</a></li>
+<li><a class="reference internal" href="#greater-capital-city-statistical-areas" id="id2">Greater Capital City Statistical Areas</a></li>
+<li><a class="reference internal" href="#local-government-areas" id="id3">Local Government Areas</a></li>
+<li><a class="reference internal" href="#postal-areas" id="id4">Postal Areas</a></li>
+<li><a class="reference internal" href="#remoteness-areas" id="id5">Remoteness Areas</a></li>
+<li><a class="reference internal" href="#section-of-state" id="id6">Section of State</a></li>
+<li><a class="reference internal" href="#section-of-state-ranges" id="id7">Section of State Ranges</a></li>
+<li><a class="reference internal" href="#significant-urban-areas" id="id8">Significant Urban Areas</a></li>
+<li><a class="reference internal" href="#state-electoral-divisions" id="id9">State Electoral Divisions</a></li>
+<li><a class="reference internal" href="#state-suburbs" id="id10">State Suburbs</a></li>
+<li><a class="reference internal" href="#state-territory" id="id11">State/Territory</a></li>
+<li><a class="reference internal" href="#statistical-area-level-1" id="id12">Statistical Area Level 1</a></li>
+<li><a class="reference internal" href="#statistical-area-level-2" id="id13">Statistical Area Level 2</a></li>
+<li><a class="reference internal" href="#statistical-area-level-3" id="id14">Statistical Area Level 3</a></li>
+<li><a class="reference internal" href="#statistical-area-level-4" id="id15">Statistical Area Level 4</a></li>
+<li><a class="reference internal" href="#statistical-local-areas" id="id16">Statistical Local Areas</a></li>
+<li><a class="reference internal" href="#urban-centres-and-localities" id="id17">Urban Centres and Localities</a></li>
+</ul>
+</div>
+<div class="section" id="commonwealth-electoral-divisions">
+<span id="au-geo-ced"></span><h2><a class="toc-backref" href="#id1">3.2.1. Commonwealth Electoral Divisions</a><a class="headerlink" href="#commonwealth-electoral-divisions" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Commonwealth Electoral Divisions&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.CED&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Commonwealth Electoral Divisions&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.CED&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-ced"><span class="std std-ref">Commonwealth Electoral Divisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="greater-capital-city-statistical-areas">
+<span id="au-geo-gccsa"></span><h2><a class="toc-backref" href="#id2">3.2.2. Greater Capital City Statistical Areas</a><a class="headerlink" href="#greater-capital-city-statistical-areas" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Greater Capital City Statistical Areas&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.GCCSA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Greater Capital City Statistical Areas&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.GCCSA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-gccsa"><span class="std std-ref">Greater Capital City Statistical Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="local-government-areas">
+<span id="au-geo-lga"></span><h2><a class="toc-backref" href="#id3">3.2.3. Local Government Areas</a><a class="headerlink" href="#local-government-areas" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Local Government Areas&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.LGA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Local Government Areas&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.LGA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-lga"><span class="std std-ref">Local Government Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="postal-areas">
+<span id="au-geo-poa"></span><h2><a class="toc-backref" href="#id4">3.2.4. Postal Areas</a><a class="headerlink" href="#postal-areas" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Postal Areas&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.POA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Postal Areas&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.POA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-poa"><span class="std std-ref">Postal Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="remoteness-areas">
+<span id="au-geo-ra"></span><h2><a class="toc-backref" href="#id5">3.2.5. Remoteness Areas</a><a class="headerlink" href="#remoteness-areas" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Remoteness Areas&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.RA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Remoteness Areas&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.RA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-ra"><span class="std std-ref">Remoteness Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="section-of-state">
+<span id="au-geo-sos"></span><h2><a class="toc-backref" href="#id6">3.2.6. Section of State</a><a class="headerlink" href="#section-of-state" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Section of State&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SOS&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Section of State&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SOS&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-sos"><span class="std std-ref">Section of State</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="section-of-state-ranges">
+<span id="au-geo-sosr"></span><h2><a class="toc-backref" href="#id7">3.2.7. Section of State Ranges</a><a class="headerlink" href="#section-of-state-ranges" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Section of State Ranges&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SOSR&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Section of State Ranges&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SOSR&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-sosr"><span class="std std-ref">Section of State Ranges</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="significant-urban-areas">
+<span id="au-geo-sua"></span><h2><a class="toc-backref" href="#id8">3.2.8. Significant Urban Areas</a><a class="headerlink" href="#significant-urban-areas" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Significant Urban Areas&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SUA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Significant Urban Areas&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SUA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-sua"><span class="std std-ref">Significant Urban Areas</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="state-electoral-divisions">
+<span id="au-geo-sed"></span><h2><a class="toc-backref" href="#id9">3.2.9. State Electoral Divisions</a><a class="headerlink" href="#state-electoral-divisions" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;State Electoral Divisions&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SED&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;State Electoral Divisions&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SED&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-sed"><span class="std std-ref">State Electoral Divisions</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="state-suburbs">
+<span id="au-geo-ssc"></span><h2><a class="toc-backref" href="#id10">3.2.10. State Suburbs</a><a class="headerlink" href="#state-suburbs" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;State Suburbs&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SSC&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;State Suburbs&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SSC&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-ssc"><span class="std std-ref">State Suburbs</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="state-territory">
+<span id="au-geo-ste"></span><h2><a class="toc-backref" href="#id11">3.2.11. State/Territory</a><a class="headerlink" href="#state-territory" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;State/Territory&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.STE&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;State/Territory&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.STE&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-ste"><span class="std std-ref">State/Territory</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="statistical-area-level-1">
+<span id="au-geo-sa1"></span><h2><a class="toc-backref" href="#id12">3.2.12. Statistical Area Level 1</a><a class="headerlink" href="#statistical-area-level-1" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Statistical Area Level 1&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SA1&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Statistical Area Level 1&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SA1&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-sa1"><span class="std std-ref">Statistical Area Level 1</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="statistical-area-level-2">
+<span id="au-geo-sa2"></span><h2><a class="toc-backref" href="#id13">3.2.13. Statistical Area Level 2</a><a class="headerlink" href="#statistical-area-level-2" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Statistical Area Level 2&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SA2&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Statistical Area Level 2&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SA2&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-sa2"><span class="std std-ref">Statistical Area Level 2</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="statistical-area-level-3">
+<span id="au-geo-sa3"></span><h2><a class="toc-backref" href="#id14">3.2.14. Statistical Area Level 3</a><a class="headerlink" href="#statistical-area-level-3" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Statistical Area Level 3&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SA3&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Statistical Area Level 3&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SA3&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-sa3"><span class="std std-ref">Statistical Area Level 3</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="statistical-area-level-4">
+<span id="au-geo-sa4"></span><h2><a class="toc-backref" href="#id15">3.2.15. Statistical Area Level 4</a><a class="headerlink" href="#statistical-area-level-4" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Statistical Area Level 4&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SA4&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Statistical Area Level 4&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SA4&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-sa4"><span class="std std-ref">Statistical Area Level 4</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="statistical-local-areas">
+<span id="au-geo-sla"></span><h2><a class="toc-backref" href="#id16">3.2.16. Statistical Local Areas</a><a class="headerlink" href="#statistical-local-areas" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Statistical Local Areas&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SLA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Statistical Local Areas&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.SLA&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="urban-centres-and-localities">
+<span id="au-geo-ucl"></span><h2><a class="toc-backref" href="#id17">3.2.17. Urban Centres and Localities</a><a class="headerlink" href="#urban-centres-and-localities" title="Permalink to this headline">¶</a></h2>
+<p>Obtain &#8220;Urban Centres and Localities&#8221; geometry at one point:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">tablename</span><span class="p">}(</span><span class="n">the_geom</span><span class="p">)</span>
+  <span class="k">SELECT</span> <span class="n">OBS_GetBoundary</span><span class="p">(</span>
+    <span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.UCL&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<p>Obtain all &#8220;Urban Centres and Localities&#8221; geometries within an area:</p>
+<div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="p">{</span><span class="n">new_table_name</span><span class="p">}</span> <span class="p">(</span><span class="n">the_geom</span><span class="p">,</span> <span class="p">{</span><span class="n">geo_id_column</span><span class="p">})</span>
+  <span class="k">SELECT</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">OBS_GetBoundariesByGeometry</span><span class="p">(</span>
+    <span class="n">ST_Buffer</span><span class="p">(</span><span class="n">CDB_LatLng</span><span class="p">(</span><span class="o">-</span><span class="mf">33.8806</span><span class="p">,</span> <span class="mf">151.2131</span><span class="p">),</span> <span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;au.geo.UCL&#39;</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Boundary</th>
+<th class="head">Time (default is latest)</th>
+</tr>
+</thead>
+<tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="#au-geo-ucl"><span class="std std-ref">Urban Centres and Localities</span></a></p>
+</td>
+<td><p>2011</p>
+</td></tr>
+</tbody>
+</table><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
 
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3.2. Boundaries</a><ul>
+<li><a class="reference internal" href="#commonwealth-electoral-divisions">3.2.1. Commonwealth Electoral Divisions</a></li>
+<li><a class="reference internal" href="#greater-capital-city-statistical-areas">3.2.2. Greater Capital City Statistical Areas</a></li>
+<li><a class="reference internal" href="#local-government-areas">3.2.3. Local Government Areas</a></li>
+<li><a class="reference internal" href="#postal-areas">3.2.4. Postal Areas</a></li>
+<li><a class="reference internal" href="#remoteness-areas">3.2.5. Remoteness Areas</a></li>
+<li><a class="reference internal" href="#section-of-state">3.2.6. Section of State</a></li>
+<li><a class="reference internal" href="#section-of-state-ranges">3.2.7. Section of State Ranges</a></li>
+<li><a class="reference internal" href="#significant-urban-areas">3.2.8. Significant Urban Areas</a></li>
+<li><a class="reference internal" href="#state-electoral-divisions">3.2.9. State Electoral Divisions</a></li>
+<li><a class="reference internal" href="#state-suburbs">3.2.10. State Suburbs</a></li>
+<li><a class="reference internal" href="#state-territory">3.2.11. State/Territory</a></li>
+<li><a class="reference internal" href="#statistical-area-level-1">3.2.12. Statistical Area Level 1</a></li>
+<li><a class="reference internal" href="#statistical-area-level-2">3.2.13. Statistical Area Level 2</a></li>
+<li><a class="reference internal" href="#statistical-area-level-3">3.2.14. Statistical Area Level 3</a></li>
+<li><a class="reference internal" href="#statistical-area-level-4">3.2.15. Statistical Area Level 4</a></li>
+<li><a class="reference internal" href="#statistical-local-areas">3.2.16. Statistical Local Areas</a></li>
+<li><a class="reference internal" href="#urban-centres-and-localities">3.2.17. Urban Centres and Localities</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="../au.html">3. Australia</a><ul>
-      <li>Previous: <a href="age_gender.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Previous: <a href="age_gender.html" title="previous chapter">3.1. Age and Gender</a></li>
       <li>Next: <a href="business_demography.html" title="next chapter">&lt;no title&gt;</a></li>
   </ul></li>
   </ul></li>

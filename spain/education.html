@@ -274,7 +274,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Illiterate males&#8221; percent of &#8220;Males&#8221; at one point:</p>
+<p>Measure &#8220;Illiterate males&#8221; percent of &#8220;Illiterate persons&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -284,7 +284,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Illiterate males&#8221; percent of &#8220;Males&#8221; within an area:</p>
+<p>Measure &#8220;Illiterate males&#8221; percent of &#8220;Illiterate persons&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -309,9 +309,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -343,7 +343,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; at one point:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and illiterate&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -353,7 +353,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; within an area:</p>
+<p>Measure &#8220;Persons aged between 16 (included) and 64 (included) years and illiterate&#8221; percent of &#8220;Persons aged between 16 (included) and 64 (included) years&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -378,9 +378,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t3-2"><span class="std std-ref">Persons aged between 16 (included) and 64 (included) years</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -550,7 +550,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; at one point:</p>
+<p>Measure &#8220;Persons with Spanish nationality and illiterate&#8221; percent of &#8220;Persons with Spanish nationality&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -560,7 +560,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality and illiterate&#8221; percent of &#8220;Illiterate persons&#8221; within an area:</p>
+<p>Measure &#8220;Persons with Spanish nationality and illiterate&#8221; percent of &#8220;Persons with Spanish nationality&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -585,9 +585,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-1"><span class="std std-ref">Illiterate persons</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -701,7 +701,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with first level studies&#8221; percent of &#8220;Females&#8221; at one point:</p>
+<p>Measure &#8220;Females with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -711,7 +711,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with first level studies&#8221; percent of &#8220;Females&#8221; within an area:</p>
+<p>Measure &#8220;Females with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -736,9 +736,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -770,7 +770,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males with first level studies&#8221; percent of &#8220;Males&#8221; at one point:</p>
+<p>Measure &#8220;Males with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -780,7 +780,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Males with first level studies&#8221; percent of &#8220;Males&#8221; within an area:</p>
+<p>Measure &#8220;Males with first level studies&#8221; percent of &#8220;Persons with first level studies&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -805,9 +805,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-3"><span class="std std-ref">Persons with first level studies</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-1"><span class="std std-ref">Males</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -1819,7 +1819,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; at one point:</p>
+<p>Measure &#8220;Females with third level studies&#8221; percent of &#8220;Females&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1829,7 +1829,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; within an area:</p>
+<p>Measure &#8220;Females with third level studies&#8221; percent of &#8220;Females&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1854,9 +1854,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-5"><span class="std std-ref">Persons with third level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-5"><span class="std std-ref">Persons with third level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2026,7 +2026,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality and with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; at one point:</p>
+<p>Measure &#8220;Persons with Spanish nationality and with third level studies&#8221; percent of &#8220;Persons with Spanish nationality&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2036,7 +2036,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality and with third level studies&#8221; percent of &#8220;Persons with third level studies&#8221; within an area:</p>
+<p>Measure &#8220;Persons with Spanish nationality and with third level studies&#8221; percent of &#8220;Persons with Spanish nationality&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2061,9 +2061,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-5"><span class="std std-ref">Persons with third level studies</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-5"><span class="std std-ref">Persons with third level studies</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2171,7 +2171,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females without information regarding their educational level  (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; at one point:</p>
+<p>Measure &#8220;Females without information regarding their educational level  (under 16 years of age)&#8221; percent of &#8220;Females&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2181,7 +2181,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Females without information regarding their educational level  (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; within an area:</p>
+<p>Measure &#8220;Females without information regarding their educational level  (under 16 years of age)&#8221; percent of &#8220;Females&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2206,9 +2206,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="age_gender.html#es-ine-t2-2"><span class="std std-ref">Females</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2309,7 +2309,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with a foreign nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; at one point:</p>
+<p>Measure &#8220;Persons with a foreign nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons with Spanish nationality&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2319,7 +2319,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with a foreign nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; within an area:</p>
+<p>Measure &#8220;Persons with a foreign nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons with Spanish nationality&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2344,9 +2344,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>
@@ -2378,7 +2378,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; at one point:</p>
+<p>Measure &#8220;Persons with Spanish nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons with Spanish nationality&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2388,7 +2388,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Persons with Spanish nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons without information regarding their educational level (aged under 16 years)&#8221; within an area:</p>
+<p>Measure &#8220;Persons with Spanish nationality without information regarding their educational level (under 16 years of age)&#8221; percent of &#8220;Persons with Spanish nationality&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2413,9 +2413,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="nationality.html#es-ine-t6-1"><span class="std std-ref">Persons with Spanish nationality</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#es-ine-t12-6"><span class="std std-ref">Persons without information regarding their educational level (aged under 16 years)</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#es-ine-ine-source"><span class="std std-ref">National Statistics Institute (INE) Legal Notice</span></a></td>
 </tr>

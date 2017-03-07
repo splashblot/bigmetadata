@@ -190,13 +190,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -239,13 +239,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -288,13 +288,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -365,13 +365,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -421,7 +421,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population who completed basic education&#8221; percent of &#8220;Employed female&#8221; at one point:</p>
+<p>Measure &#8220;Employed female population who completed basic education&#8221; percent of &#8220;Employed population who completed basic education&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -431,7 +431,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population who completed basic education&#8221; percent of &#8220;Employed female&#8221; within an area:</p>
+<p>Measure &#8220;Employed female population who completed basic education&#8221; percent of &#8220;Employed population who completed basic education&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -462,9 +462,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco16"><span class="std std-ref">Employed population who completed basic education</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco16"><span class="std std-ref">Employed population who completed basic education</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -496,7 +496,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed male population who completed basic education&#8221; percent of &#8220;Employed male&#8221; at one point:</p>
+<p>Measure &#8220;Employed male population who completed basic education&#8221; percent of &#8220;Employed population who completed basic education&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -506,7 +506,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed male population who completed basic education&#8221; percent of &#8220;Employed male&#8221; within an area:</p>
+<p>Measure &#8220;Employed male population who completed basic education&#8221; percent of &#8220;Employed population who completed basic education&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -537,9 +537,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO6</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco16"><span class="std std-ref">Employed population who completed basic education</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco16"><span class="std std-ref">Employed population who completed basic education</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO6</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -601,13 +601,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -657,7 +657,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population with a high school degree&#8221; percent of &#8220;Employed female&#8221; at one point:</p>
+<p>Measure &#8220;Employed female population with a high school degree&#8221; percent of &#8220;Employed population with a high school degree&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -667,7 +667,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population with a high school degree&#8221; percent of &#8220;Employed female&#8221; within an area:</p>
+<p>Measure &#8220;Employed female population with a high school degree&#8221; percent of &#8220;Employed population with a high school degree&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -698,9 +698,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco19"><span class="std std-ref">Employed population with a high school degree</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco19"><span class="std std-ref">Employed population with a high school degree</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -837,13 +837,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -893,7 +893,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population with a university degree or more&#8221; percent of &#8220;Employed population with a university degree or more&#8221; at one point:</p>
+<p>Measure &#8220;Employed female population with a university degree or more&#8221; percent of &#8220;Employed female&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -903,7 +903,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population with a university degree or more&#8221; percent of &#8220;Employed population with a university degree or more&#8221; within an area:</p>
+<p>Measure &#8220;Employed female population with a university degree or more&#8221; percent of &#8220;Employed female&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -934,9 +934,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco22"><span class="std std-ref">Employed population with a university degree or more</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco22"><span class="std std-ref">Employed population with a university degree or more</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1073,13 +1073,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1129,7 +1129,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population with incomplete secondary education&#8221; percent of &#8220;Employed female&#8221; at one point:</p>
+<p>Measure &#8220;Employed female population with incomplete secondary education&#8221; percent of &#8220;Employed population with incomplete secondary education&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1139,7 +1139,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population with incomplete secondary education&#8221; percent of &#8220;Employed female&#8221; within an area:</p>
+<p>Measure &#8220;Employed female population with incomplete secondary education&#8221; percent of &#8220;Employed population with incomplete secondary education&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1170,9 +1170,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco13"><span class="std std-ref">Employed population with incomplete secondary education</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco13"><span class="std std-ref">Employed population with incomplete secondary education</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1204,7 +1204,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed male population with incomplete secondary education&#8221; percent of &#8220;Employed male&#8221; at one point:</p>
+<p>Measure &#8220;Employed male population with incomplete secondary education&#8221; percent of &#8220;Employed population with incomplete secondary education&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1214,7 +1214,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed male population with incomplete secondary education&#8221; percent of &#8220;Employed male&#8221; within an area:</p>
+<p>Measure &#8220;Employed male population with incomplete secondary education&#8221; percent of &#8220;Employed population with incomplete secondary education&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1245,9 +1245,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO6</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco13"><span class="std std-ref">Employed population with incomplete secondary education</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco13"><span class="std std-ref">Employed population with incomplete secondary education</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO6</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1309,13 +1309,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1365,7 +1365,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population with primary education&#8221; percent of &#8220;Employed population with primary education&#8221; at one point:</p>
+<p>Measure &#8220;Employed female population with primary education&#8221; percent of &#8220;Employed female&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1375,7 +1375,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed female population with primary education&#8221; percent of &#8220;Employed population with primary education&#8221; within an area:</p>
+<p>Measure &#8220;Employed female population with primary education&#8221; percent of &#8220;Employed female&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1406,9 +1406,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco10"><span class="std std-ref">Employed population with primary education</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO5</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco10"><span class="std std-ref">Employed population with primary education</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1440,7 +1440,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed male population with primary education&#8221; percent of &#8220;Employed population with primary education&#8221; at one point:</p>
+<p>Measure &#8220;Employed male population with primary education&#8221; percent of &#8220;Employed male&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1450,7 +1450,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed male population with primary education&#8221; percent of &#8220;Employed population with primary education&#8221; within an area:</p>
+<p>Measure &#8220;Employed male population with primary education&#8221; percent of &#8220;Employed male&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1481,9 +1481,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco10"><span class="std std-ref">Employed population with primary education</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO6</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO6</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco10"><span class="std std-ref">Employed population with primary education</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1545,13 +1545,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1676,7 +1676,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed male population without schooling&#8221; percent of &#8220;Employed population without schooling&#8221; at one point:</p>
+<p>Measure &#8220;Employed male population without schooling&#8221; percent of &#8220;Employed male&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1686,7 +1686,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Employed male population without schooling&#8221; percent of &#8220;Employed population without schooling&#8221; within an area:</p>
+<p>Measure &#8220;Employed male population without schooling&#8221; percent of &#8220;Employed male&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1717,9 +1717,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco7"><span class="std std-ref">Employed population without schooling</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO6</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.ECO6</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="employment.html#mx-inegi-columns-eco7"><span class="std std-ref">Employed population without schooling</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1781,13 +1781,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2017,13 +2017,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2073,7 +2073,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 15 or more years old who are literate&#8221; percent of &#8220;Female population 15 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Female population 15 or more years old who are literate&#8221; percent of &#8220;Population 15 or more years old who are literate&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2083,7 +2083,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 15 or more years old who are literate&#8221; percent of &#8220;Female population 15 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Female population 15 or more years old who are literate&#8221; percent of &#8220;Population 15 or more years old who are literate&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2114,9 +2114,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB51</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu25"><span class="std std-ref">Population 15 or more years old who are literate</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu25"><span class="std std-ref">Population 15 or more years old who are literate</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB51</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -2148,7 +2148,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 15 or more years old who are literate&#8221; percent of &#8220;Female population 15 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Male population 15 or more years old who are literate&#8221; percent of &#8220;Population 15 or more years old who are literate&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2158,7 +2158,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 15 or more years old who are literate&#8221; percent of &#8220;Female population 15 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Male population 15 or more years old who are literate&#8221; percent of &#8220;Population 15 or more years old who are literate&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2189,9 +2189,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB51</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu25"><span class="std std-ref">Population 15 or more years old who are literate</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu25"><span class="std std-ref">Population 15 or more years old who are literate</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB51</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -2253,13 +2253,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2309,7 +2309,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 15 or more years old who completed basic education&#8221; percent of &#8220;Female population 15 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Female population 15 or more years old who completed basic education&#8221; percent of &#8220;Population 15 or more years old who completed basic education&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2319,7 +2319,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 15 or more years old who completed basic education&#8221; percent of &#8220;Female population 15 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Female population 15 or more years old who completed basic education&#8221; percent of &#8220;Population 15 or more years old who completed basic education&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2350,9 +2350,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB51</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu37"><span class="std std-ref">Population 15 or more years old who completed basic education</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu37"><span class="std std-ref">Population 15 or more years old who completed basic education</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB51</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -2489,13 +2489,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2725,13 +2725,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2856,7 +2856,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 15 or more years old with some high school&#8221; percent of &#8220;Population 15 or more years old with some high school&#8221; at one point:</p>
+<p>Measure &#8220;Male population 15 or more years old with some high school&#8221; percent of &#8220;Male population 15 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2866,7 +2866,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 15 or more years old with some high school&#8221; percent of &#8220;Population 15 or more years old with some high school&#8221; within an area:</p>
+<p>Measure &#8220;Male population 15 or more years old with some high school&#8221; percent of &#8220;Male population 15 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2897,9 +2897,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu40"><span class="std std-ref">Population 15 or more years old with some high school</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB76</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB76</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu40"><span class="std std-ref">Population 15 or more years old with some high school</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -2961,13 +2961,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3197,13 +3197,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3328,7 +3328,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 18 or more years old with a high school degree&#8221; percent of &#8220;Male population 18 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Male population 18 or more years old with a high school degree&#8221; percent of &#8220;Population 18 or more years old with a high school degree&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3338,7 +3338,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 18 or more years old with a high school degree&#8221; percent of &#8220;Male population 18 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Male population 18 or more years old with a high school degree&#8221; percent of &#8220;Population 18 or more years old with a high school degree&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3369,9 +3369,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB77</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu43"><span class="std std-ref">Population 18 or more years old with a high school degree</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu43"><span class="std std-ref">Population 18 or more years old with a high school degree</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB77</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -3433,13 +3433,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3489,7 +3489,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 25 or more years old with a university degree&#8221; percent of &#8220;Population 25 or more years old with a university degree&#8221; at one point:</p>
+<p>Measure &#8220;Female population 25 or more years old with a university degree&#8221; percent of &#8220;Female population 25 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3499,7 +3499,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population 25 or more years old with a university degree&#8221; percent of &#8220;Population 25 or more years old with a university degree&#8221; within an area:</p>
+<p>Measure &#8220;Female population 25 or more years old with a university degree&#8221; percent of &#8220;Female population 25 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3530,9 +3530,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu46"><span class="std std-ref">Population 25 or more years old with a university degree</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB53</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB53</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu46"><span class="std std-ref">Population 25 or more years old with a university degree</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -3564,7 +3564,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 25 or more years old with a university degree&#8221; percent of &#8220;Population 25 or more years old with a university degree&#8221; at one point:</p>
+<p>Measure &#8220;Male population 25 or more years old with a university degree&#8221; percent of &#8220;Male population 25 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3574,7 +3574,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population 25 or more years old with a university degree&#8221; percent of &#8220;Population 25 or more years old with a university degree&#8221; within an area:</p>
+<p>Measure &#8220;Male population 25 or more years old with a university degree&#8221; percent of &#8220;Male population 25 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3605,9 +3605,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu46"><span class="std std-ref">Population 25 or more years old with a university degree</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB78</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB78</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu46"><span class="std std-ref">Population 25 or more years old with a university degree</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -3669,13 +3669,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3725,7 +3725,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population from 12 to 14 years old who do not go to school&#8221; percent of &#8220;Female population 12 to 14 years old&#8221; at one point:</p>
+<p>Measure &#8220;Female population from 12 to 14 years old who do not go to school&#8221; percent of &#8220;Population from 12 to 14 years old who do not go to school&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3735,7 +3735,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population from 12 to 14 years old who do not go to school&#8221; percent of &#8220;Female population 12 to 14 years old&#8221; within an area:</p>
+<p>Measure &#8220;Female population from 12 to 14 years old who do not go to school&#8221; percent of &#8220;Population from 12 to 14 years old who do not go to school&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3766,9 +3766,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB37</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu16"><span class="std std-ref">Population from 12 to 14 years old who do not go to school</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu16"><span class="std std-ref">Population from 12 to 14 years old who do not go to school</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB37</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -3800,7 +3800,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population from 12 to 14 years old who do not go to school&#8221; percent of &#8220;Male population 12 to 14 years old&#8221; at one point:</p>
+<p>Measure &#8220;Male population from 12 to 14 years old who do not go to school&#8221; percent of &#8220;Population from 12 to 14 years old who do not go to school&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3810,7 +3810,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population from 12 to 14 years old who do not go to school&#8221; percent of &#8220;Male population 12 to 14 years old&#8221; within an area:</p>
+<p>Measure &#8220;Male population from 12 to 14 years old who do not go to school&#8221; percent of &#8220;Population from 12 to 14 years old who do not go to school&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3841,9 +3841,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB63</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu16"><span class="std std-ref">Population from 12 to 14 years old who do not go to school</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu16"><span class="std std-ref">Population from 12 to 14 years old who do not go to school</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB63</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -3905,13 +3905,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -4141,13 +4141,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -4197,7 +4197,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population from 3 to 5 years old who do not go to school&#8221; percent of &#8220;Population from 3 to 5 years old who do not go to school&#8221; at one point:</p>
+<p>Measure &#8220;Female population from 3 to 5 years old who do not go to school&#8221; percent of &#8220;Female population 3 to 5 years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4207,7 +4207,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population from 3 to 5 years old who do not go to school&#8221; percent of &#8220;Population from 3 to 5 years old who do not go to school&#8221; within an area:</p>
+<p>Measure &#8220;Female population from 3 to 5 years old who do not go to school&#8221; percent of &#8220;Female population 3 to 5 years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4238,9 +4238,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu4"><span class="std std-ref">Population from 3 to 5 years old who do not go to school</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB34</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB34</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu4"><span class="std std-ref">Population from 3 to 5 years old who do not go to school</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -4377,13 +4377,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -4433,7 +4433,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population from 3 to 5 years old who go to school&#8221; percent of &#8220;Female population 3 to 5 years old&#8221; at one point:</p>
+<p>Measure &#8220;Female population from 3 to 5 years old who go to school&#8221; percent of &#8220;Population from 3 to 5 years old who go to school&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4443,7 +4443,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female population from 3 to 5 years old who go to school&#8221; percent of &#8220;Female population 3 to 5 years old&#8221; within an area:</p>
+<p>Measure &#8220;Female population from 3 to 5 years old who go to school&#8221; percent of &#8220;Population from 3 to 5 years old who go to school&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4474,9 +4474,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB34</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu1"><span class="std std-ref">Population from 3 to 5 years old who go to school</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu1"><span class="std std-ref">Population from 3 to 5 years old who go to school</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB34</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -4508,7 +4508,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population from 3 to 5 years old who go to school&#8221; percent of &#8220;Population from 3 to 5 years old who go to school&#8221; at one point:</p>
+<p>Measure &#8220;Male population from 3 to 5 years old who go to school&#8221; percent of &#8220;Male population 3 to 5 years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4518,7 +4518,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male population from 3 to 5 years old who go to school&#8221; percent of &#8220;Population from 3 to 5 years old who go to school&#8221; within an area:</p>
+<p>Measure &#8220;Male population from 3 to 5 years old who go to school&#8221; percent of &#8220;Male population 3 to 5 years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4549,9 +4549,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu1"><span class="std std-ref">Population from 3 to 5 years old who go to school</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB60</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB60</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-edu1"><span class="std std-ref">Population from 3 to 5 years old who go to school</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -4613,13 +4613,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -4849,13 +4849,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -5085,13 +5085,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -5321,13 +5321,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>

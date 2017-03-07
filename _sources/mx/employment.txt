@@ -512,7 +512,7 @@ Measure "Employed female" within an area:
 
 
 
-Measure "Employed female" percent of "Employed" at one point:
+Measure "Employed female" percent of "Economically active female population" at one point:
 
 .. code-block:: postgresql
 
@@ -525,7 +525,7 @@ Measure "Employed female" percent of "Employed" at one point:
       );
 
 
-Measure "Employed female" percent of "Employed" within an area:
+Measure "Employed female" percent of "Economically active female population" within an area:
 
 .. code-block:: postgresql
 
@@ -656,11 +656,11 @@ Measure "Employed female" percent of "Employed" within an area:
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO4`
+    :ref:`mx.inegi_columns.ECO2`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO2`
+    :ref:`mx.inegi_columns.ECO4`
 
 
 :Source:
@@ -781,7 +781,7 @@ Measure "Employed female population who completed basic education" percent of "E
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -817,7 +817,7 @@ Measure "Employed female population who completed basic education" percent of "E
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -965,7 +965,7 @@ Measure "Employed female population with a high school degree" percent of "Emplo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1001,7 +1001,7 @@ Measure "Employed female population with a high school degree" percent of "Emplo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1149,7 +1149,7 @@ Measure "Employed female population with a university degree or more" percent of
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1185,7 +1185,7 @@ Measure "Employed female population with a university degree or more" percent of
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1333,7 +1333,7 @@ Measure "Employed female population with incomplete secondary education" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1369,7 +1369,7 @@ Measure "Employed female population with incomplete secondary education" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1517,7 +1517,7 @@ Measure "Employed female population with primary education" percent of "Employed
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1553,7 +1553,7 @@ Measure "Employed female population with primary education" percent of "Employed
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1655,7 +1655,7 @@ Measure "Employed female population without schooling" within an area:
 
 
 
-Measure "Employed female population without schooling" percent of "Employed female" at one point:
+Measure "Employed female population without schooling" percent of "Employed population without schooling" at one point:
 
 .. code-block:: postgresql
 
@@ -1668,7 +1668,7 @@ Measure "Employed female population without schooling" percent of "Employed fema
       );
 
 
-Measure "Employed female population without schooling" percent of "Employed female" within an area:
+Measure "Employed female population without schooling" percent of "Employed population without schooling" within an area:
 
 .. code-block:: postgresql
 
@@ -1701,7 +1701,7 @@ Measure "Employed female population without schooling" percent of "Employed fema
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -1737,7 +1737,7 @@ Measure "Employed female population without schooling" percent of "Employed fema
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -1763,11 +1763,11 @@ Measure "Employed female population without schooling" percent of "Employed fema
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO5`
+    :ref:`mx.inegi_columns.ECO7`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO7`
+    :ref:`mx.inegi_columns.ECO5`
 
 
 :Source:
@@ -2065,7 +2065,7 @@ Measure "Economically active male population" within an area:
 
 
 
-Measure "Economically active male population" percent of "Male population" at one point:
+Measure "Economically active male population" percent of "Economically active population" at one point:
 
 .. code-block:: postgresql
 
@@ -2078,7 +2078,7 @@ Measure "Economically active male population" percent of "Male population" at on
       );
 
 
-Measure "Economically active male population" percent of "Male population" within an area:
+Measure "Economically active male population" percent of "Economically active population" within an area:
 
 .. code-block:: postgresql
 
@@ -2209,11 +2209,11 @@ Measure "Economically active male population" percent of "Male population" withi
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.ECO1`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO1`
+    :ref:`mx.inegi_columns.POB57`
 
 
 :Source:
@@ -2288,7 +2288,7 @@ Measure "Employed male" within an area:
 
 
 
-Measure "Employed male" percent of "Economically active male population" at one point:
+Measure "Employed male" percent of "Employed" at one point:
 
 .. code-block:: postgresql
 
@@ -2301,7 +2301,7 @@ Measure "Employed male" percent of "Economically active male population" at one 
       );
 
 
-Measure "Employed male" percent of "Economically active male population" within an area:
+Measure "Employed male" percent of "Employed" within an area:
 
 .. code-block:: postgresql
 
@@ -2432,11 +2432,11 @@ Measure "Employed male" percent of "Economically active male population" within 
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO3`
+    :ref:`mx.inegi_columns.ECO4`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO4`
+    :ref:`mx.inegi_columns.ECO3`
 
 
 :Source:
@@ -2511,7 +2511,7 @@ Measure "Employed male population who completed basic education" within an area:
 
 
 
-Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" at one point:
+Measure "Employed male population who completed basic education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -2524,7 +2524,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
       );
 
 
-Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" within an area:
+Measure "Employed male population who completed basic education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -2557,7 +2557,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -2593,7 +2593,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2619,11 +2619,11 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO16`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO16`
 
 
 :Source:
@@ -2695,7 +2695,7 @@ Measure "Employed male population with a high school degree" within an area:
 
 
 
-Measure "Employed male population with a high school degree" percent of "Employed population with a high school degree" at one point:
+Measure "Employed male population with a high school degree" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -2708,7 +2708,7 @@ Measure "Employed male population with a high school degree" percent of "Employe
       );
 
 
-Measure "Employed male population with a high school degree" percent of "Employed population with a high school degree" within an area:
+Measure "Employed male population with a high school degree" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -2741,7 +2741,7 @@ Measure "Employed male population with a high school degree" percent of "Employe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -2777,7 +2777,7 @@ Measure "Employed male population with a high school degree" percent of "Employe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2803,11 +2803,11 @@ Measure "Employed male population with a high school degree" percent of "Employe
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO19`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO19`
 
 
 :Source:
@@ -2879,7 +2879,7 @@ Measure "Employed male population with a university degree or more" within an ar
 
 
 
-Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" at one point:
+Measure "Employed male population with a university degree or more" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -2892,7 +2892,7 @@ Measure "Employed male population with a university degree or more" percent of "
       );
 
 
-Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" within an area:
+Measure "Employed male population with a university degree or more" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -2925,7 +2925,7 @@ Measure "Employed male population with a university degree or more" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -2961,7 +2961,7 @@ Measure "Employed male population with a university degree or more" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -2987,11 +2987,11 @@ Measure "Employed male population with a university degree or more" percent of "
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO22`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO22`
 
 
 :Source:
@@ -3063,7 +3063,7 @@ Measure "Employed male population with incomplete secondary education" within an
 
 
 
-Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+Measure "Employed male population with incomplete secondary education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -3076,7 +3076,7 @@ Measure "Employed male population with incomplete secondary education" percent o
       );
 
 
-Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+Measure "Employed male population with incomplete secondary education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -3109,7 +3109,7 @@ Measure "Employed male population with incomplete secondary education" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3145,7 +3145,7 @@ Measure "Employed male population with incomplete secondary education" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -3171,11 +3171,11 @@ Measure "Employed male population with incomplete secondary education" percent o
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO13`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO13`
 
 
 :Source:
@@ -3247,7 +3247,7 @@ Measure "Employed male population with primary education" within an area:
 
 
 
-Measure "Employed male population with primary education" percent of "Employed population with primary education" at one point:
+Measure "Employed male population with primary education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -3260,7 +3260,7 @@ Measure "Employed male population with primary education" percent of "Employed p
       );
 
 
-Measure "Employed male population with primary education" percent of "Employed population with primary education" within an area:
+Measure "Employed male population with primary education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -3293,7 +3293,7 @@ Measure "Employed male population with primary education" percent of "Employed p
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3329,7 +3329,7 @@ Measure "Employed male population with primary education" percent of "Employed p
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -3355,11 +3355,11 @@ Measure "Employed male population with primary education" percent of "Employed p
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO10`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO10`
 
 
 :Source:
@@ -3477,7 +3477,7 @@ Measure "Employed male population without schooling" percent of "Employed male" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -3513,7 +3513,7 @@ Measure "Employed male population without schooling" percent of "Employed male" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -3618,7 +3618,7 @@ Measure "Unemployed male" within an area:
 
 
 
-Measure "Unemployed male" percent of "Economically active male population" at one point:
+Measure "Unemployed male" percent of "Unemployed" at one point:
 
 .. code-block:: postgresql
 
@@ -3631,7 +3631,7 @@ Measure "Unemployed male" percent of "Economically active male population" at on
       );
 
 
-Measure "Unemployed male" percent of "Economically active male population" within an area:
+Measure "Unemployed male" percent of "Unemployed" within an area:
 
 .. code-block:: postgresql
 
@@ -3762,11 +3762,11 @@ Measure "Unemployed male" percent of "Economically active male population" withi
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO3`
+    :ref:`mx.inegi_columns.ECO25`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO25`
+    :ref:`mx.inegi_columns.ECO3`
 
 
 :Source:
@@ -4060,7 +4060,7 @@ Measure "Employed female" within an area:
 
 
 
-Measure "Employed female" percent of "Employed" at one point:
+Measure "Employed female" percent of "Economically active female population" at one point:
 
 .. code-block:: postgresql
 
@@ -4073,7 +4073,7 @@ Measure "Employed female" percent of "Employed" at one point:
       );
 
 
-Measure "Employed female" percent of "Employed" within an area:
+Measure "Employed female" percent of "Economically active female population" within an area:
 
 .. code-block:: postgresql
 
@@ -4204,11 +4204,11 @@ Measure "Employed female" percent of "Employed" within an area:
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO4`
+    :ref:`mx.inegi_columns.ECO2`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO2`
+    :ref:`mx.inegi_columns.ECO4`
 
 
 :Source:
@@ -4329,7 +4329,7 @@ Measure "Employed female population who completed basic education" percent of "E
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4365,7 +4365,7 @@ Measure "Employed female population who completed basic education" percent of "E
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -4513,7 +4513,7 @@ Measure "Employed female population with a high school degree" percent of "Emplo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4549,7 +4549,7 @@ Measure "Employed female population with a high school degree" percent of "Emplo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -4697,7 +4697,7 @@ Measure "Employed female population with a university degree or more" percent of
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4733,7 +4733,7 @@ Measure "Employed female population with a university degree or more" percent of
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -4881,7 +4881,7 @@ Measure "Employed female population with incomplete secondary education" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -4917,7 +4917,7 @@ Measure "Employed female population with incomplete secondary education" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -5065,7 +5065,7 @@ Measure "Employed female population with primary education" percent of "Employed
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5101,7 +5101,7 @@ Measure "Employed female population with primary education" percent of "Employed
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -5203,7 +5203,7 @@ Measure "Employed female population without schooling" within an area:
 
 
 
-Measure "Employed female population without schooling" percent of "Employed female" at one point:
+Measure "Employed female population without schooling" percent of "Employed population without schooling" at one point:
 
 .. code-block:: postgresql
 
@@ -5216,7 +5216,7 @@ Measure "Employed female population without schooling" percent of "Employed fema
       );
 
 
-Measure "Employed female population without schooling" percent of "Employed female" within an area:
+Measure "Employed female population without schooling" percent of "Employed population without schooling" within an area:
 
 .. code-block:: postgresql
 
@@ -5249,7 +5249,7 @@ Measure "Employed female population without schooling" percent of "Employed fema
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5285,7 +5285,7 @@ Measure "Employed female population without schooling" percent of "Employed fema
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -5311,11 +5311,11 @@ Measure "Employed female population without schooling" percent of "Employed fema
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO5`
+    :ref:`mx.inegi_columns.ECO7`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO7`
+    :ref:`mx.inegi_columns.ECO5`
 
 
 :Source:
@@ -5390,7 +5390,7 @@ Measure "Employed male" within an area:
 
 
 
-Measure "Employed male" percent of "Economically active male population" at one point:
+Measure "Employed male" percent of "Employed" at one point:
 
 .. code-block:: postgresql
 
@@ -5403,7 +5403,7 @@ Measure "Employed male" percent of "Economically active male population" at one 
       );
 
 
-Measure "Employed male" percent of "Economically active male population" within an area:
+Measure "Employed male" percent of "Employed" within an area:
 
 .. code-block:: postgresql
 
@@ -5534,11 +5534,11 @@ Measure "Employed male" percent of "Economically active male population" within 
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO3`
+    :ref:`mx.inegi_columns.ECO4`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO4`
+    :ref:`mx.inegi_columns.ECO3`
 
 
 :Source:
@@ -5613,7 +5613,7 @@ Measure "Employed male population who completed basic education" within an area:
 
 
 
-Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" at one point:
+Measure "Employed male population who completed basic education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -5626,7 +5626,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
       );
 
 
-Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" within an area:
+Measure "Employed male population who completed basic education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -5659,7 +5659,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5695,7 +5695,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -5721,11 +5721,11 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO16`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO16`
 
 
 :Source:
@@ -5797,7 +5797,7 @@ Measure "Employed male population with a high school degree" within an area:
 
 
 
-Measure "Employed male population with a high school degree" percent of "Employed population with a high school degree" at one point:
+Measure "Employed male population with a high school degree" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -5810,7 +5810,7 @@ Measure "Employed male population with a high school degree" percent of "Employe
       );
 
 
-Measure "Employed male population with a high school degree" percent of "Employed population with a high school degree" within an area:
+Measure "Employed male population with a high school degree" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -5843,7 +5843,7 @@ Measure "Employed male population with a high school degree" percent of "Employe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -5879,7 +5879,7 @@ Measure "Employed male population with a high school degree" percent of "Employe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -5905,11 +5905,11 @@ Measure "Employed male population with a high school degree" percent of "Employe
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO19`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO19`
 
 
 :Source:
@@ -5981,7 +5981,7 @@ Measure "Employed male population with a university degree or more" within an ar
 
 
 
-Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" at one point:
+Measure "Employed male population with a university degree or more" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -5994,7 +5994,7 @@ Measure "Employed male population with a university degree or more" percent of "
       );
 
 
-Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" within an area:
+Measure "Employed male population with a university degree or more" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -6027,7 +6027,7 @@ Measure "Employed male population with a university degree or more" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6063,7 +6063,7 @@ Measure "Employed male population with a university degree or more" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -6089,11 +6089,11 @@ Measure "Employed male population with a university degree or more" percent of "
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO22`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO22`
 
 
 :Source:
@@ -6165,7 +6165,7 @@ Measure "Employed male population with incomplete secondary education" within an
 
 
 
-Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+Measure "Employed male population with incomplete secondary education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -6178,7 +6178,7 @@ Measure "Employed male population with incomplete secondary education" percent o
       );
 
 
-Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+Measure "Employed male population with incomplete secondary education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -6211,7 +6211,7 @@ Measure "Employed male population with incomplete secondary education" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6247,7 +6247,7 @@ Measure "Employed male population with incomplete secondary education" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -6273,11 +6273,11 @@ Measure "Employed male population with incomplete secondary education" percent o
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO13`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO13`
 
 
 :Source:
@@ -6349,7 +6349,7 @@ Measure "Employed male population with primary education" within an area:
 
 
 
-Measure "Employed male population with primary education" percent of "Employed population with primary education" at one point:
+Measure "Employed male population with primary education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -6362,7 +6362,7 @@ Measure "Employed male population with primary education" percent of "Employed p
       );
 
 
-Measure "Employed male population with primary education" percent of "Employed population with primary education" within an area:
+Measure "Employed male population with primary education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -6395,7 +6395,7 @@ Measure "Employed male population with primary education" percent of "Employed p
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6431,7 +6431,7 @@ Measure "Employed male population with primary education" percent of "Employed p
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -6457,11 +6457,11 @@ Measure "Employed male population with primary education" percent of "Employed p
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO10`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO10`
 
 
 :Source:
@@ -6579,7 +6579,7 @@ Measure "Employed male population without schooling" percent of "Employed male" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -6615,7 +6615,7 @@ Measure "Employed male population without schooling" percent of "Employed male" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -6985,7 +6985,7 @@ Measure "Employed female population who completed basic education" percent of "E
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7021,7 +7021,7 @@ Measure "Employed female population who completed basic education" percent of "E
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -7123,7 +7123,7 @@ Measure "Employed male population who completed basic education" within an area:
 
 
 
-Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" at one point:
+Measure "Employed male population who completed basic education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -7136,7 +7136,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
       );
 
 
-Measure "Employed male population who completed basic education" percent of "Employed population who completed basic education" within an area:
+Measure "Employed male population who completed basic education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -7169,7 +7169,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7205,7 +7205,7 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -7231,11 +7231,11 @@ Measure "Employed male population who completed basic education" percent of "Emp
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO16`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO16`
 
 
 :Source:
@@ -7575,7 +7575,7 @@ Measure "Employed female population with a high school degree" percent of "Emplo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7611,7 +7611,7 @@ Measure "Employed female population with a high school degree" percent of "Emplo
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -7713,7 +7713,7 @@ Measure "Employed male population with a high school degree" within an area:
 
 
 
-Measure "Employed male population with a high school degree" percent of "Employed population with a high school degree" at one point:
+Measure "Employed male population with a high school degree" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -7726,7 +7726,7 @@ Measure "Employed male population with a high school degree" percent of "Employe
       );
 
 
-Measure "Employed male population with a high school degree" percent of "Employed population with a high school degree" within an area:
+Measure "Employed male population with a high school degree" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -7759,7 +7759,7 @@ Measure "Employed male population with a high school degree" percent of "Employe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -7795,7 +7795,7 @@ Measure "Employed male population with a high school degree" percent of "Employe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -7821,11 +7821,11 @@ Measure "Employed male population with a high school degree" percent of "Employe
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO19`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO19`
 
 
 :Source:
@@ -8165,7 +8165,7 @@ Measure "Employed female population with a university degree or more" percent of
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8201,7 +8201,7 @@ Measure "Employed female population with a university degree or more" percent of
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -8303,7 +8303,7 @@ Measure "Employed male population with a university degree or more" within an ar
 
 
 
-Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" at one point:
+Measure "Employed male population with a university degree or more" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -8316,7 +8316,7 @@ Measure "Employed male population with a university degree or more" percent of "
       );
 
 
-Measure "Employed male population with a university degree or more" percent of "Employed population with a university degree or more" within an area:
+Measure "Employed male population with a university degree or more" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -8349,7 +8349,7 @@ Measure "Employed male population with a university degree or more" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8385,7 +8385,7 @@ Measure "Employed male population with a university degree or more" percent of "
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -8411,11 +8411,11 @@ Measure "Employed male population with a university degree or more" percent of "
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO22`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO22`
 
 
 :Source:
@@ -8755,7 +8755,7 @@ Measure "Employed female population with incomplete secondary education" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8791,7 +8791,7 @@ Measure "Employed female population with incomplete secondary education" percent
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -8893,7 +8893,7 @@ Measure "Employed male population with incomplete secondary education" within an
 
 
 
-Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" at one point:
+Measure "Employed male population with incomplete secondary education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -8906,7 +8906,7 @@ Measure "Employed male population with incomplete secondary education" percent o
       );
 
 
-Measure "Employed male population with incomplete secondary education" percent of "Employed population with incomplete secondary education" within an area:
+Measure "Employed male population with incomplete secondary education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -8939,7 +8939,7 @@ Measure "Employed male population with incomplete secondary education" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -8975,7 +8975,7 @@ Measure "Employed male population with incomplete secondary education" percent o
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -9001,11 +9001,11 @@ Measure "Employed male population with incomplete secondary education" percent o
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO13`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO13`
 
 
 :Source:
@@ -9345,7 +9345,7 @@ Measure "Employed female population with primary education" percent of "Employed
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -9381,7 +9381,7 @@ Measure "Employed female population with primary education" percent of "Employed
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -9483,7 +9483,7 @@ Measure "Employed male population with primary education" within an area:
 
 
 
-Measure "Employed male population with primary education" percent of "Employed population with primary education" at one point:
+Measure "Employed male population with primary education" percent of "Employed male" at one point:
 
 .. code-block:: postgresql
 
@@ -9496,7 +9496,7 @@ Measure "Employed male population with primary education" percent of "Employed p
       );
 
 
-Measure "Employed male population with primary education" percent of "Employed population with primary education" within an area:
+Measure "Employed male population with primary education" percent of "Employed male" within an area:
 
 .. code-block:: postgresql
 
@@ -9529,7 +9529,7 @@ Measure "Employed male population with primary education" percent of "Employed p
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -9565,7 +9565,7 @@ Measure "Employed male population with primary education" percent of "Employed p
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -9591,11 +9591,11 @@ Measure "Employed male population with primary education" percent of "Employed p
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO10`
+    :ref:`mx.inegi_columns.ECO6`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO6`
+    :ref:`mx.inegi_columns.ECO10`
 
 
 :Source:
@@ -9889,7 +9889,7 @@ Measure "Employed female population without schooling" within an area:
 
 
 
-Measure "Employed female population without schooling" percent of "Employed female" at one point:
+Measure "Employed female population without schooling" percent of "Employed population without schooling" at one point:
 
 .. code-block:: postgresql
 
@@ -9902,7 +9902,7 @@ Measure "Employed female population without schooling" percent of "Employed fema
       );
 
 
-Measure "Employed female population without schooling" percent of "Employed female" within an area:
+Measure "Employed female population without schooling" percent of "Employed population without schooling" within an area:
 
 .. code-block:: postgresql
 
@@ -9935,7 +9935,7 @@ Measure "Employed female population without schooling" percent of "Employed fema
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -9971,7 +9971,7 @@ Measure "Employed female population without schooling" percent of "Employed fema
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -9997,11 +9997,11 @@ Measure "Employed female population without schooling" percent of "Employed fema
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO5`
+    :ref:`mx.inegi_columns.ECO7`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO7`
+    :ref:`mx.inegi_columns.ECO5`
 
 
 :Source:
@@ -10119,7 +10119,7 @@ Measure "Employed male population without schooling" percent of "Employed male" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -10155,7 +10155,7 @@ Measure "Employed male population without schooling" percent of "Employed male" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -10702,7 +10702,7 @@ Measure "Unemployed male" within an area:
 
 
 
-Measure "Unemployed male" percent of "Economically active male population" at one point:
+Measure "Unemployed male" percent of "Unemployed" at one point:
 
 .. code-block:: postgresql
 
@@ -10715,7 +10715,7 @@ Measure "Unemployed male" percent of "Economically active male population" at on
       );
 
 
-Measure "Unemployed male" percent of "Economically active male population" within an area:
+Measure "Unemployed male" percent of "Unemployed" within an area:
 
 .. code-block:: postgresql
 
@@ -10846,11 +10846,11 @@ Measure "Unemployed male" percent of "Economically active male population" withi
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO3`
+    :ref:`mx.inegi_columns.ECO25`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO25`
+    :ref:`mx.inegi_columns.ECO3`
 
 
 :Source:
@@ -11412,7 +11412,7 @@ Measure "Female dedicated to housework" percent of "Female economically inactive
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -11448,7 +11448,7 @@ Measure "Female dedicated to housework" percent of "Female economically inactive
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -11596,7 +11596,7 @@ Measure "Male dedicated to housework" percent of "Male economically inactive pop
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -11632,7 +11632,7 @@ Measure "Male dedicated to housework" percent of "Male economically inactive pop
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -11956,7 +11956,7 @@ Measure "Female economically inactive with a physical or mental limitation imped
 
 
 
-Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Female economically inactive population" at one point:
+Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive with a physical or mental limitation impeding work" at one point:
 
 .. code-block:: postgresql
 
@@ -11969,7 +11969,7 @@ Measure "Female economically inactive with a physical or mental limitation imped
       );
 
 
-Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Female economically inactive population" within an area:
+Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive with a physical or mental limitation impeding work" within an area:
 
 .. code-block:: postgresql
 
@@ -12002,7 +12002,7 @@ Measure "Female economically inactive with a physical or mental limitation imped
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -12038,7 +12038,7 @@ Measure "Female economically inactive with a physical or mental limitation imped
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -12064,11 +12064,11 @@ Measure "Female economically inactive with a physical or mental limitation imped
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO29`
+    :ref:`mx.inegi_columns.ECO40`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO40`
+    :ref:`mx.inegi_columns.ECO29`
 
 
 :Source:
@@ -12186,7 +12186,7 @@ Measure "Male economically inactive with a physical or mental limitation impedin
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -12222,7 +12222,7 @@ Measure "Male economically inactive with a physical or mental limitation impedin
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -12546,7 +12546,7 @@ Measure "Female economically inactive with some other reason that impedes work" 
 
 
 
-Measure "Female economically inactive with some other reason that impedes work" percent of "Female economically inactive population" at one point:
+Measure "Female economically inactive with some other reason that impedes work" percent of "Economically inactive with some other reason that impedes work" at one point:
 
 .. code-block:: postgresql
 
@@ -12559,7 +12559,7 @@ Measure "Female economically inactive with some other reason that impedes work" 
       );
 
 
-Measure "Female economically inactive with some other reason that impedes work" percent of "Female economically inactive population" within an area:
+Measure "Female economically inactive with some other reason that impedes work" percent of "Economically inactive with some other reason that impedes work" within an area:
 
 .. code-block:: postgresql
 
@@ -12592,7 +12592,7 @@ Measure "Female economically inactive with some other reason that impedes work" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -12628,7 +12628,7 @@ Measure "Female economically inactive with some other reason that impedes work" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -12654,11 +12654,11 @@ Measure "Female economically inactive with some other reason that impedes work" 
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO29`
+    :ref:`mx.inegi_columns.ECO43`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO43`
+    :ref:`mx.inegi_columns.ECO29`
 
 
 :Source:
@@ -12776,7 +12776,7 @@ Measure "Male economically inactive with some other reason that impedes work" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -12812,7 +12812,7 @@ Measure "Male economically inactive with some other reason that impedes work" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -13186,7 +13186,7 @@ Measure "Female dedicated to housework" percent of "Female economically inactive
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -13222,7 +13222,7 @@ Measure "Female dedicated to housework" percent of "Female economically inactive
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -13324,7 +13324,7 @@ Measure "Female economically inactive with a physical or mental limitation imped
 
 
 
-Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Female economically inactive population" at one point:
+Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive with a physical or mental limitation impeding work" at one point:
 
 .. code-block:: postgresql
 
@@ -13337,7 +13337,7 @@ Measure "Female economically inactive with a physical or mental limitation imped
       );
 
 
-Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Female economically inactive population" within an area:
+Measure "Female economically inactive with a physical or mental limitation impeding work" percent of "Economically inactive with a physical or mental limitation impeding work" within an area:
 
 .. code-block:: postgresql
 
@@ -13370,7 +13370,7 @@ Measure "Female economically inactive with a physical or mental limitation imped
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -13406,7 +13406,7 @@ Measure "Female economically inactive with a physical or mental limitation imped
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -13432,11 +13432,11 @@ Measure "Female economically inactive with a physical or mental limitation imped
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO29`
+    :ref:`mx.inegi_columns.ECO40`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO40`
+    :ref:`mx.inegi_columns.ECO29`
 
 
 :Source:
@@ -13508,7 +13508,7 @@ Measure "Female economically inactive with some other reason that impedes work" 
 
 
 
-Measure "Female economically inactive with some other reason that impedes work" percent of "Female economically inactive population" at one point:
+Measure "Female economically inactive with some other reason that impedes work" percent of "Economically inactive with some other reason that impedes work" at one point:
 
 .. code-block:: postgresql
 
@@ -13521,7 +13521,7 @@ Measure "Female economically inactive with some other reason that impedes work" 
       );
 
 
-Measure "Female economically inactive with some other reason that impedes work" percent of "Female economically inactive population" within an area:
+Measure "Female economically inactive with some other reason that impedes work" percent of "Economically inactive with some other reason that impedes work" within an area:
 
 .. code-block:: postgresql
 
@@ -13554,7 +13554,7 @@ Measure "Female economically inactive with some other reason that impedes work" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -13590,7 +13590,7 @@ Measure "Female economically inactive with some other reason that impedes work" 
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -13616,11 +13616,11 @@ Measure "Female economically inactive with some other reason that impedes work" 
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO29`
+    :ref:`mx.inegi_columns.ECO43`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO43`
+    :ref:`mx.inegi_columns.ECO29`
 
 
 :Source:
@@ -13738,7 +13738,7 @@ Measure "Female full time student" percent of "Female economically inactive popu
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -13774,7 +13774,7 @@ Measure "Female full time student" percent of "Female economically inactive popu
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -13922,7 +13922,7 @@ Measure "Female retiree or receiving pension" percent of "Female economically in
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -13958,7 +13958,7 @@ Measure "Female retiree or receiving pension" percent of "Female economically in
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -14328,7 +14328,7 @@ Measure "Female full time student" percent of "Female economically inactive popu
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -14364,7 +14364,7 @@ Measure "Female full time student" percent of "Female economically inactive popu
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -14512,7 +14512,7 @@ Measure "Male full time student" percent of "Male economically inactive populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -14548,7 +14548,7 @@ Measure "Male full time student" percent of "Male economically inactive populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -14653,7 +14653,7 @@ Measure "Male economically inactive population" within an area:
 
 
 
-Measure "Male economically inactive population" percent of "Economically inactive" at one point:
+Measure "Male economically inactive population" percent of "Male population" at one point:
 
 .. code-block:: postgresql
 
@@ -14666,7 +14666,7 @@ Measure "Male economically inactive population" percent of "Economically inactiv
       );
 
 
-Measure "Male economically inactive population" percent of "Economically inactive" within an area:
+Measure "Male economically inactive population" percent of "Male population" within an area:
 
 .. code-block:: postgresql
 
@@ -14797,11 +14797,11 @@ Measure "Male economically inactive population" percent of "Economically inactiv
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.ECO28`
+    :ref:`mx.inegi_columns.POB57`
 
 :Denominator:
 
-    :ref:`mx.inegi_columns.POB57`
+    :ref:`mx.inegi_columns.ECO28`
 
 
 :Source:
@@ -14922,7 +14922,7 @@ Measure "Male dedicated to housework" percent of "Male economically inactive pop
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -14958,7 +14958,7 @@ Measure "Male dedicated to housework" percent of "Male economically inactive pop
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -15106,7 +15106,7 @@ Measure "Male economically inactive with a physical or mental limitation impedin
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -15142,7 +15142,7 @@ Measure "Male economically inactive with a physical or mental limitation impedin
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -15290,7 +15290,7 @@ Measure "Male economically inactive with some other reason that impedes work" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -15326,7 +15326,7 @@ Measure "Male economically inactive with some other reason that impedes work" pe
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -15474,7 +15474,7 @@ Measure "Male full time student" percent of "Male economically inactive populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -15510,7 +15510,7 @@ Measure "Male full time student" percent of "Male economically inactive populati
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -15658,7 +15658,7 @@ Measure "Male retiree or receiving pension" percent of "Male economically inacti
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -15694,7 +15694,7 @@ Measure "Male retiree or receiving pension" percent of "Male economically inacti
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -16064,7 +16064,7 @@ Measure "Female retiree or receiving pension" percent of "Female economically in
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -16100,7 +16100,7 @@ Measure "Female retiree or receiving pension" percent of "Female economically in
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 
@@ -16248,7 +16248,7 @@ Measure "Male retiree or receiving pension" percent of "Male economically inacti
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
+:ref:`mx.inegi.municipio`
 
 .. raw:: html
 
@@ -16284,7 +16284,7 @@ Measure "Male retiree or receiving pension" percent of "Male economically inacti
 
    <tr class="row-even"><td>
 
-:ref:`mx.inegi.municipio`
+:ref:`mx.inegi.localidad_urbana_y_rural_amanzanada`
 
 .. raw:: html
 

@@ -162,13 +162,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -211,13 +211,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -288,13 +288,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -344,7 +344,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female formerly married population 12 or more years old&#8221; percent of &#8220;Formerly married population 12 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Female formerly married population 12 or more years old&#8221; percent of &#8220;Female population 12 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -354,7 +354,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Female formerly married population 12 or more years old&#8221; percent of &#8220;Formerly married population 12 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Female formerly married population 12 or more years old&#8221; percent of &#8220;Female population 12 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -373,10 +373,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -388,9 +388,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-scony7"><span class="std std-ref">Formerly married population 12 or more years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB50</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB50</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-scony7"><span class="std std-ref">Formerly married population 12 or more years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -422,7 +422,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male formerly married population 12 or more years old&#8221; percent of &#8220;Formerly married population 12 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Male formerly married population 12 or more years old&#8221; percent of &#8220;Male population 12 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -432,7 +432,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male formerly married population 12 or more years old&#8221; percent of &#8220;Formerly married population 12 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Male formerly married population 12 or more years old&#8221; percent of &#8220;Male population 12 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -451,10 +451,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -466,9 +466,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-scony7"><span class="std std-ref">Formerly married population 12 or more years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB75</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB75</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-scony7"><span class="std std-ref">Formerly married population 12 or more years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -510,13 +510,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -597,13 +597,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -683,10 +683,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -732,7 +732,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Household with female head between 30 and 59 years old&#8221; percent of &#8220;Household with head between 30 and 59 years old&#8221; at one point:</p>
+<p>Measure &#8220;Household with female head between 30 and 59 years old&#8221; percent of &#8220;Female headed households&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -742,7 +742,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Household with female head between 30 and 59 years old&#8221; percent of &#8220;Household with head between 30 and 59 years old&#8221; within an area:</p>
+<p>Measure &#8220;Household with female head between 30 and 59 years old&#8221; percent of &#8220;Female headed households&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -761,10 +761,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -776,9 +776,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar13"><span class="std std-ref">Household with head between 30 and 59 years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar2"><span class="std std-ref">Female headed households</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar2"><span class="std std-ref">Female headed households</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar13"><span class="std std-ref">Household with head between 30 and 59 years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -839,10 +839,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -918,13 +918,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1003,10 +1003,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1081,10 +1081,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1160,13 +1160,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1216,7 +1216,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Household with female head between 30 and 59 years old&#8221; percent of &#8220;Household with head between 30 and 59 years old&#8221; at one point:</p>
+<p>Measure &#8220;Household with female head between 30 and 59 years old&#8221; percent of &#8220;Female headed households&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1226,7 +1226,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Household with female head between 30 and 59 years old&#8221; percent of &#8220;Household with head between 30 and 59 years old&#8221; within an area:</p>
+<p>Measure &#8220;Household with female head between 30 and 59 years old&#8221; percent of &#8220;Female headed households&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1245,10 +1245,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1260,9 +1260,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar13"><span class="std std-ref">Household with head between 30 and 59 years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar2"><span class="std std-ref">Female headed households</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar2"><span class="std std-ref">Female headed households</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar13"><span class="std std-ref">Household with head between 30 and 59 years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1294,7 +1294,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Household with male head between 30 and 59 years old&#8221; percent of &#8220;Household with head between 30 and 59 years old&#8221; at one point:</p>
+<p>Measure &#8220;Household with male head between 30 and 59 years old&#8221; percent of &#8220;Male headed households&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1304,7 +1304,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Household with male head between 30 and 59 years old&#8221; percent of &#8220;Household with head between 30 and 59 years old&#8221; within an area:</p>
+<p>Measure &#8220;Household with male head between 30 and 59 years old&#8221; percent of &#8220;Male headed households&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1323,10 +1323,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1338,9 +1338,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar13"><span class="std std-ref">Household with head between 30 and 59 years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar3"><span class="std std-ref">Male headed households</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar3"><span class="std std-ref">Male headed households</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar13"><span class="std std-ref">Household with head between 30 and 59 years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1402,13 +1402,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1487,10 +1487,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1565,10 +1565,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1644,13 +1644,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1730,10 +1730,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1779,7 +1779,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Household with male head between 30 and 59 years old&#8221; percent of &#8220;Household with head between 30 and 59 years old&#8221; at one point:</p>
+<p>Measure &#8220;Household with male head between 30 and 59 years old&#8221; percent of &#8220;Male headed households&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1789,7 +1789,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Household with male head between 30 and 59 years old&#8221; percent of &#8220;Household with head between 30 and 59 years old&#8221; within an area:</p>
+<p>Measure &#8220;Household with male head between 30 and 59 years old&#8221; percent of &#8220;Male headed households&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -1808,10 +1808,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1823,9 +1823,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar13"><span class="std std-ref">Household with head between 30 and 59 years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar3"><span class="std std-ref">Male headed households</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar3"><span class="std std-ref">Male headed households</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar13"><span class="std std-ref">Household with head between 30 and 59 years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -1886,10 +1886,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -1965,13 +1965,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2045,13 +2045,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2130,10 +2130,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2179,7 +2179,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male married or cohabited two years population 12 or more years old&#8221; percent of &#8220;Male population 12 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Male married or cohabited two years population 12 or more years old&#8221; percent of &#8220;Married or cohabited two years population 12 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2189,7 +2189,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male married or cohabited two years population 12 or more years old&#8221; percent of &#8220;Male population 12 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Male married or cohabited two years population 12 or more years old&#8221; percent of &#8220;Married or cohabited two years population 12 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2208,10 +2208,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2223,9 +2223,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB75</span></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-scony4"><span class="std std-ref">Married or cohabited two years population 12 or more years old</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-scony4"><span class="std std-ref">Married or cohabited two years population 12 or more years old</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB75</span></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -2287,13 +2287,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2372,10 +2372,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2450,10 +2450,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2501,13 +2501,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2578,13 +2578,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2667,13 +2667,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2724,7 +2724,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Population in households with female head 60 or more years old&#8221; percent of &#8220;Population in households with head 60 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Population in households with female head 60 or more years old&#8221; percent of &#8220;Population in female headed households&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2734,7 +2734,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Population in households with female head 60 or more years old&#8221; percent of &#8220;Population in households with head 60 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Population in households with female head 60 or more years old&#8221; percent of &#8220;Population in female headed households&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2753,10 +2753,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2768,9 +2768,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar22"><span class="std std-ref">Population in households with head 60 or more years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar5"><span class="std std-ref">Population in female headed households</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar5"><span class="std std-ref">Population in female headed households</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar22"><span class="std std-ref">Population in households with head 60 or more years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -2802,7 +2802,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Population in households with female head between 30 and 59 years old&#8221; percent of &#8220;Population in households with head between 30 and 59 years old&#8221; at one point:</p>
+<p>Measure &#8220;Population in households with female head between 30 and 59 years old&#8221; percent of &#8220;Population in female headed households&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2812,7 +2812,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Population in households with female head between 30 and 59 years old&#8221; percent of &#8220;Population in households with head between 30 and 59 years old&#8221; within an area:</p>
+<p>Measure &#8220;Population in households with female head between 30 and 59 years old&#8221; percent of &#8220;Population in female headed households&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -2831,10 +2831,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2846,9 +2846,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar16"><span class="std std-ref">Population in households with head between 30 and 59 years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar5"><span class="std std-ref">Population in female headed households</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar5"><span class="std std-ref">Population in female headed households</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar16"><span class="std std-ref">Population in households with head between 30 and 59 years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -2909,10 +2909,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -2988,13 +2988,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3044,7 +3044,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Population in households with female head 60 or more years old&#8221; percent of &#8220;Population in households with head 60 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Population in households with female head 60 or more years old&#8221; percent of &#8220;Population in female headed households&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3054,7 +3054,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Population in households with female head 60 or more years old&#8221; percent of &#8220;Population in households with head 60 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Population in households with female head 60 or more years old&#8221; percent of &#8220;Population in female headed households&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3073,10 +3073,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3088,9 +3088,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar22"><span class="std std-ref">Population in households with head 60 or more years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar5"><span class="std std-ref">Population in female headed households</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar5"><span class="std std-ref">Population in female headed households</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar22"><span class="std std-ref">Population in households with head 60 or more years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -3151,10 +3151,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3230,13 +3230,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3286,7 +3286,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Population in households with female head between 30 and 59 years old&#8221; percent of &#8220;Population in households with head between 30 and 59 years old&#8221; at one point:</p>
+<p>Measure &#8220;Population in households with female head between 30 and 59 years old&#8221; percent of &#8220;Population in female headed households&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3296,7 +3296,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Population in households with female head between 30 and 59 years old&#8221; percent of &#8220;Population in households with head between 30 and 59 years old&#8221; within an area:</p>
+<p>Measure &#8220;Population in households with female head between 30 and 59 years old&#8221; percent of &#8220;Population in female headed households&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -3315,10 +3315,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3330,9 +3330,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar16"><span class="std std-ref">Population in households with head between 30 and 59 years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar5"><span class="std std-ref">Population in female headed households</span></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar5"><span class="std std-ref">Population in female headed households</span></a></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-hogar16"><span class="std std-ref">Population in households with head between 30 and 59 years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>
@@ -3393,10 +3393,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3472,13 +3472,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3557,10 +3557,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3635,10 +3635,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3714,13 +3714,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3800,10 +3800,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3878,10 +3878,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -3956,10 +3956,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -4035,13 +4035,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -4115,13 +4115,13 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
-</td>
-<td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-manzana"><span class="std std-ref">Census block (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td>
+<td><p>2010</p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -4200,10 +4200,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -4249,7 +4249,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male single population 12 or more years old&#8221; percent of &#8220;Single population 12 or more years old&#8221; at one point:</p>
+<p>Measure &#8220;Male single population 12 or more years old&#8221; percent of &#8220;Male population 12 or more years old&#8221; at one point:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4259,7 +4259,7 @@
     <span class="p">);</span>
 </pre></div>
 </div>
-<p>Measure &#8220;Male single population 12 or more years old&#8221; percent of &#8220;Single population 12 or more years old&#8221; within an area:</p>
+<p>Measure &#8220;Male single population 12 or more years old&#8221; percent of &#8220;Male population 12 or more years old&#8221; within an area:</p>
 <div class="highlight-postgresql"><div class="highlight"><pre><span></span><span class="k">UPDATE</span> <span class="p">{</span><span class="n">table_name</span><span class="p">}</span>
   <span class="k">SET</span> <span class="p">{</span><span class="n">new_numeric_column</span><span class="p">}</span> <span class="o">=</span>
     <span class="n">OBS_GetMeasure</span><span class="p">(</span>
@@ -4278,10 +4278,10 @@
 <tbody valign="top"><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-ageb"><span class="std std-ref">Census area (urban areas only)</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
 </td>
 <td><p>2010</p>
-</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-entidad"><span class="std std-ref">State</span></a></p>
+</td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-municipio"><span class="std std-ref">Municipios</span></a></p>
 </td>
 <td><p>2010</p>
 </td><tr class="row-even"><td><p><a class="reference internal" href="boundary.html#mx-inegi-localidad-urbana-y-rural-amanzanada"><span class="std std-ref">Localidades (urban)</span></a></p>
@@ -4293,9 +4293,9 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-scony1"><span class="std std-ref">Single population 12 or more years old</span></a></td>
+<tr class="field-odd field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB75</span></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><span class="xref std std-ref">mx.inegi_columns.POB75</span></td>
+<tr class="field-even field"><th class="field-name">Denominator:</th><td class="field-body"><a class="reference internal" href="#mx-inegi-columns-scony1"><span class="std std-ref">Single population 12 or more years old</span></a></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference internal" href="../sources.html#mx-inegi-columns-inegi-source"><span class="std std-ref">Instituto Nacional de Estadística y Geografía (INEGI)</span></a></td>
 </tr>

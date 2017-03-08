@@ -246,12 +246,45 @@ Making sure metadata works right
 --------------------------------
 
 Checking the metadata works right is one of the more challenging components of
-QA'ing new ETL code.
+QA'ing new ETL code. The goal is to check that the metadata and all relationships
+are functioning without needing to trigger a DownloadTask. If you have a large
+amount of data with many geometries, this could take a while and require a lot of space.
+Alternatively, you can run test functions within a test database to check that
+your metadata looks as expected. These steps are explained as follows:
+
+Check test utility functions are working
+*********************************
+
+Switch to the branch where your new metadata has been written and run:
+
+.. code:: shell
+
+  make etl-unittest
+
+This command checks that the test utility functions are working and nothing newly
+written changed these functions.
+
+Generate a module-specific test catalog
+*********************************
+
+If the test utility functions work, run:
+
+.. code:: shell
+
+  make MODULE=<your new task module> test_catalog
+
+The test_catalog function runs the ``Metawrapper``
+task for the specified module for only classes :ref:`tasks.util.TagsTask` ,
+:ref:`tasks.util.ColumnsTask`, and :ref:`tasks.util.TableTask`. The test function
+then creates the ``obs_meta`` table with ``OBSMetaToLocal`` and also generates
+a catalog (see below). Launch the generated Catalog in a browser window by going
+to the IP and port address for the nginx process. You can check for running processes
+and port addresses with ``make ps``.
 
 Regenerate the ``obs_meta`` table
 *********************************
 
-The ``obs_meta`` table is a denormalized view of the underlying :ref:`metadata` 
+The ``obs_meta`` table is a denormalized view of the underlying :ref:`metadata`
 objects that you've created when running tasks.
 
 You can force the regeneration of this table using
@@ -412,12 +445,12 @@ then you are missing a geometry table. For example:
 
 .. code:: shell
 
-                      id                   |                  tablename                   | timespan | the_geom | description | version 
+                      id                   |                  tablename                   | timespan | the_geom | description | version
    ----------------------------------------+----------------------------------------------+----------+----------+-------------+---------
     es.ine.five_year_population_99914b932b | obs_24b656e9e23d1dac2c8ab5786a388f9bf0f4e5ae | 2015     |          |             |       5
    (1 row)
 
-Notice that the_geom is empty. You will need to write a second :ref:`TableTask` with the 
+Notice that the_geom is empty. You will need to write a second :ref:`TableTask` with the
 following structure:
 
 .. code:: python

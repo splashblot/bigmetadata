@@ -15,4 +15,16 @@
     "sudo apt-get install -y postgresql-9.5-postgis-2.3",
     "sudo service postgresql restart"
   ]
+  "notifications": {
+    "webhooks": {
+      "urls": [
+        "http://build.openscrape.com/api/v1/travis/notify"
+      ],
+      "on_success": "always",
+      "on_failure": "always",
+      "on_start": "always",
+      "on_cancel": "always",
+      "on_error": "always"
+    }
+  }
 }

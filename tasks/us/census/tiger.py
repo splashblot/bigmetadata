@@ -13,7 +13,8 @@ from tasks.util import (LoadPostgresFromURL, classpath, TempTableTask,
                         underscore_slugify, TableTask, ColumnTarget,
                         ColumnsTask, TagsTask, Carto2TempTableTask
                        )
-from tasks.meta import (OBSColumnTable, OBSColumn, current_session, GEOM_REF, GEOM_NAME,
+
+from tasks.meta import (OBSColumnTable, OBSColumn, GEOM_REF, GEOM_NAME,
                         OBSColumnTag, OBSTag, OBSColumnToColumn, current_session)
 from tasks.tags import SectionTags, SubsectionTags, LicenseTags
 
@@ -223,14 +224,6 @@ class Attributes(ColumnsTask):
                 aggregate='sum',
                 weight=0,
             )),
-            ('name', OBSColumn(
-                type='Text',
-                name='Name of feature',
-                weight=3,
-                tags=[united_states]
-                targets={geom: GEOM_NAME}
-}
-            ))
         ])
 
 
@@ -257,6 +250,34 @@ class GeoidColumns(ColumnsTask):
                 targets={
                     col: GEOM_REF,
                     clipped[colname + '_clipped']._column: GEOM_REF
+                }
+            )
+
+        return cols
+
+class GeonameColumns(ColumnsTask):
+
+    def version(self):
+        return 1
+
+    def requires(self):
+        return {
+            'raw': GeomColumns(),
+            'clipped': ClippedGeomColumns()
+        }
+
+    def columns(self):
+        cols = OrderedDict()
+        clipped = self.input()['clipped']
+        for colname, coltarget in self.input()['raw'].iteritems():
+            col = coltarget._column
+            cols[colname + '_geoname'] = OBSColumn(
+                type='Text',
+                name=col.name + ' Proper Name',
+                weight=0,
+                targets={
+                    col: GEOM_NAME,
+                    clipped[colname + '_clipped']._column: GEOM_NAME
                 }
             )
 
@@ -605,6 +626,7 @@ class ShorelineClip(TableTask):
             'geoms': ClippedGeomColumns(),
             'geoids': GeoidColumns(),
             'attributes': Attributes(),
+            'geonames': GeonameColumns()
         }
 
     def columns(self):
@@ -612,7 +634,7 @@ class ShorelineClip(TableTask):
             ('geoid', self.input()['geoids'][self.geography + '_geoid']),
             ('the_geom', self.input()['geoms'][self.geography + '_clipped']),
             ('aland', self.input()['attributes']['aland']),
-            ('name', self.input()['attributes']['name']),
+            ('name', self.input()['geonames'][self.geography + '_geoname']),
         ])
 
     def timespan(self):
@@ -682,18 +704,20 @@ class SumLevel(TableTask):
             'attributes': Attributes(),
             'geoids': GeoidColumns(),
             'geoms': GeomColumns(),
+            'sections': SectionTags(),
+            'subsections': SubsectionTags(),
+            'geonames': GeonameColumns(),
         }
 
     def columns(self):
+        united_states = self.input()['sections']['united_states']
         cols = OrderedDict([
             ('geoid', self.input()['geoids'][self.geography + '_geoid']),
             ('the_geom', self.input()['geoms'][self.geography]),
             ('aland', self.input()['attributes']['aland']),
             ('awater', self.input()['attributes']['awater']),
+            ('geoname',self.input()['geonames'][self.geography + '_geoname'])
         ])
-        if self.name:
-            cols['name'] = self.input()['attributes']['name']
-
         return cols
 
     def timespan(self):

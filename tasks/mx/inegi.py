@@ -4,7 +4,7 @@ from tasks.util import (DownloadUnzipTask, shell, Shp2TempTableTask,
                         ColumnsTask, TableTask, MetaWrapper)
 from tasks.meta import GEOM_REF, GEOM_NAME, OBSColumn, current_session
 from tasks.mx.inegi_columns import DemographicColumns
-from tasks.tags import SectionTags, SubsectionTags
+from tasks.tags import SectionTags, SubsectionTags, BoundaryTags
 from tasks.mx.inegi_columns import SourceTags, LicenseTags
 
 from collections import OrderedDict
@@ -39,6 +39,17 @@ RESDESCS = {
     'municipio': '',
     'servicios_area': '',
     'servicios_puntual': '',
+}
+
+RESTAGS = {
+    'ageb': ['cartographic_boundary', 'interpolation_boundary'],
+    'entidad': ['cartographic_boundary', 'interpolation_boundary'],
+    'localidad_rural_no_amanzanada': ['cartographic_boundary'],
+    'localidad_urbana_y_rural_amanzanada': ['cartographic_boundary'],
+    'manzana': ['cartographic_boundary', 'interpolation_boundary'],
+    'municipio': ['cartographic_boundary', 'interpolation_boundary'],
+    'servicios_area': [],
+    'servicios_puntual': [],
 }
 
 #ags_cpv2010_municipal_mortalidad.dbf 'MOR'
@@ -182,11 +193,12 @@ class GeographyColumns(ColumnsTask):
             'sections': SectionTags(),
             'subsections': SubsectionTags(),
             'source': SourceTags(),
-            'license': LicenseTags()
+            'license': LicenseTags(),
+            'boundary': BoundaryTags()
         }
 
     def version(self):
-        return 7
+        return 8
 
     def columns(self):
         input_ = self.input()
@@ -194,6 +206,7 @@ class GeographyColumns(ColumnsTask):
         subsections = input_['subsections']
         license = input_['license']['inegi-license']
         source = input_['source']['inegi-source']
+        boundary_type = input_['boundary']
         geom = OBSColumn(
             id=self.resolution,
             type='Geometry',
@@ -208,7 +221,7 @@ class GeographyColumns(ColumnsTask):
             weight=0,
             targets={geom: GEOM_REF},
         )
-        cols = OrderedDict([('wkb_geometry', geom),
+        cols = OrderedDict([('the_geom', geom),
                             ('cvegeo', geom_ref)
                         ])
 
@@ -220,6 +233,8 @@ class GeographyColumns(ColumnsTask):
                 tags=[sections['mx'],subsections['names'],license, source],
                 targets={geom: GEOM_NAME}
             )
+
+        geom.tags.extend(boundary_type[i] for i in RESTAGS[self.resolution])
 
         return cols
 
@@ -343,7 +358,7 @@ class CensusWrapper(MetaWrapper):
     table = Parameter()
 
     params = {
-        'resolution': RESOLUTIONS,
+        'resolution': set(RESOLUTIONS) - set(['servicios_area']),
         'table': DEMOGRAPHIC_TABLES.keys()
     }
 

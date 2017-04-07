@@ -8,11 +8,12 @@ from collections import OrderedDict
 from luigi import Task, LocalTarget
 from tasks.meta import (OBSColumn, OBSColumnToColumn, OBSTag, current_session,
                         DENOMINATOR, GEOM_REF)
-from tasks.util import (LoadPostgresFromURL, classpath, shell,
+from tasks.util import (LoadPostgresFromURL, classpath, shell, LOGGER,
                         CartoDBTarget, get_logger, underscore_slugify, TableTask,
                         ColumnTarget, ColumnsTask, TagsTask, TempTableTask,
-                        classpath, PostgresTarget)
+                        classpath, PostgresTarget, MetaWrapper)
 from tasks.tags import SectionTags, SubsectionTags, UnitTags, BoundaryTags
+from time import time
 
 
 class DownloadGeometry(Task):
@@ -76,7 +77,8 @@ class GeometryColumns(ColumnsTask):
             type="Geometry",
             weight=10,
             description='The smallest division of the Spanish Census.',
-            tags=[sections['spain'], subsections['boundary'], boundary_type['interpolation_boundary'],
+            tags=[sections['spain'], subsections['boundary'], source, license,
+                  boundary_type['interpolation_boundary'],
                   boundary_type['cartographic_boundary']],
         )
         cusec_id = OBSColumn(
@@ -1990,3 +1992,10 @@ class FiveYearPopulation(TableTask):
                             output=self.output().table,
                             input=self.input()['data'].table
                         ))
+
+
+class FiveYearPopulationMeta(MetaWrapper):
+
+    def tables(self):
+        yield FiveYearPopulation()
+        yield Geometry()

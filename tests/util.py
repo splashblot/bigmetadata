@@ -3,8 +3,9 @@ Util functions for tests
 '''
 
 import os
-import luigi
 from subprocess import check_output
+
+from time import time
 
 
 EMPTY_RASTER = '0100000000000000000000F03F000000000000F0BF0000000000000000' \
@@ -28,8 +29,6 @@ def recreate_db(dbname='test'):
     check_output('createdb {dbname} -E UTF8 -T template0'.format(dbname=dbname), shell=True)
     check_output('psql -d {dbname} -c "CREATE EXTENSION IF NOT EXISTS postgis"'.format(
         dbname=dbname), shell=True)
-    check_output('psql -d {dbname} -c "CREATE SCHEMA IF NOT EXISTS observatory"'.format(
-        dbname=dbname), shell=True)
     os.environ['PGDATABASE'] = dbname
 
 
@@ -44,6 +43,9 @@ def setup():
         raise Exception('Can only run tests on database "test"')
     session = current_session()
     session.rollback()
+    session.execute('DROP SCHEMA IF EXISTS observatory CASCADE')
+    session.execute('CREATE SCHEMA observatory')
+    session.commit()
     Base.metadata.create_all()
 
 
@@ -54,18 +56,32 @@ def teardown():
     session = current_session()
     session.rollback()
     Base.metadata.drop_all()
+    session.execute('DROP SCHEMA IF EXISTS observatory CASCADE')
+    session.commit()
 
 
-def runtask(task):
+def runtask(task, superclasses=None):
     '''
     Run deps of tasks then the task, faking session management
+
+    superclasses is a list of classes that we will be willing to run as
+    pre-reqs, other pre-reqs will be ignored.  Can be useful when testing to
+    only run metadata classes, for example.
     '''
+    from tasks.util import LOGGER
     if task.complete():
         return
     for dep in task.deps():
-        runtask(dep)
-        assert dep.complete() is True
+        if superclasses:
+            for klass in superclasses:
+                if isinstance(dep, klass):
+                    runtask(dep, superclasses=superclasses)
+                    assert dep.complete() is True
+        else:
+            runtask(dep)
+            assert dep.complete() is True
     try:
+        before = time()
         for klass, cb_dict in task._event_callbacks.iteritems():
             if isinstance(task, klass):
                 start_callbacks = cb_dict.get('event.core.start', [])
@@ -73,6 +89,8 @@ def runtask(task):
                     scb(task)
         task.run()
         task.on_success()
+        after = time()
+        LOGGER.warn('runtask timing %s: %s', task, round(after - before, 2))
     except Exception as exc:
         task.on_failure(exc)
         raise

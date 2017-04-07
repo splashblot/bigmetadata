@@ -5,7 +5,7 @@ tasks to download and create metadata
 
 from tasks.tags import SubsectionTags, SectionTags, UnitTags
 from tasks.meta import (GEOM_REF, current_session, GEOM_NAME, OBSColumn)
-from tasks.util import ColumnsTask, TableTask, Carto2TempTableTask
+from tasks.util import ColumnsTask, TableTask, Carto2TempTableTask, MetaWrapper
 from collections import OrderedDict
 
 
@@ -37,7 +37,7 @@ class ThaiColumns(ColumnsTask):
         the_geom = OBSColumn(
             name='District',
             description='Districts in Thailand, also known as amphoes, are '
-            'adminstrative regions analogous to counties that make up the provinces. '
+            'administrative regions analogous to counties that make up the provinces. '
             'There are 878 amphoes in Thailand and '
             '50 urban districts of Bangkok known as khets.',
             type='Geometry',
@@ -96,3 +96,8 @@ class ThaiDistricts(TableTask):
                             output=self.output().table,
                             input=self.input()['data'].table
                         ))
+
+class ThaiMetaWrapper(MetaWrapper):
+
+    def tables(self):
+        yield ThaiDistricts()

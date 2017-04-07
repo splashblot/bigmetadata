@@ -1,13 +1,23 @@
 sh:
 	docker-compose run --rm bigmetadata /bin/bash
 
-perftest: extension
+extension-perftest: extension
 	docker-compose run --rm bigmetadata nosetests -s observatory-extension/src/python/test/perftest.py
 
-autotest: extension
+extension-perftest-record: extension
+	mkdir -p perftest
+	docker-compose run --rm \
+	  -e OBS_RECORD_TEST=true \
+	  -e OBS_PERFTEST_DIR=perftest \
+	  -e OBS_EXTENSION_SHA=$$(cd observatory-extension && git rev-list -n 1 HEAD) \
+	  -e OBS_EXTENSION_MSG="$$(cd observatory-extension && git rev-list --pretty=oneline -n 1 HEAD)" \
+	  bigmetadata \
+	  nosetests observatory-extension/src/python/test/perftest.py
+
+extension-autotest: extension
 	docker-compose run --rm bigmetadata nosetests observatory-extension/src/python/test/autotest.py
 
-test: perftest autotest
+test: extension-perftest extension-autotest
 
 python:
 	docker-compose run --rm bigmetadata python
@@ -15,19 +25,32 @@ python:
 build:
 	docker-compose build
 
+build-postgres:
+	docker build -t recessionporn/bigmetadata_postgres:latest postgres
+
 psql:
 	docker-compose run --rm bigmetadata psql
 
 acs:
 	docker-compose run --rm bigmetadata luigi \
 	  --module tasks.us.census.acs ExtractAll \
-	  --year 2014 --sample 5yr
-#	  --parallel-scheduling --workers=8
+	  --year 2015 --sample 5yr
+	  --parallel-scheduling --workers=8
 
 tiger:
 	docker-compose run --rm bigmetadata luigi \
-	  --module tasks.us.census.tiger AllSumLevels --year 2014
-#	  --parallel-scheduling --workers=8
+	  --module tasks.us.census.tiger AllSumLevels --year 2015
+	  --parallel-scheduling --workers=8
+
+au-data:
+	docker-compose run --rm bigmetadata luigi \
+	  --module tasks.au.data BCPAllGeographiesAllTables --year 2011 \
+	  --parallel-scheduling --workers=8
+
+au-geo:
+	docker-compose run --rm bigmetadata luigi \
+	  --module tasks.au.geo AllGeographies --year 2011 \
+	  --parallel-scheduling --workers=8
 
 catalog-noimage:
 	docker-compose run --rm bigmetadata luigi \
@@ -100,10 +123,20 @@ ifeq (run,$(firstword $(MAKECMDGOALS)))
   $(eval $(RUN_ARGS):;@:)
 endif
 
-.PHONY: run catalog docs carto
+ifeq (run-parallel,$(firstword $(MAKECMDGOALS)))
+  # use the rest as arguments for "run"
+  RUN_ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
+  # ...and turn them into do-nothing targets
+  $(eval $(RUN_ARGS):;@:)
+endif
+
+.PHONY: run run-parallel catalog docs carto restore dataservices-api
 
 run:
 	docker-compose run --rm bigmetadata luigi --local-scheduler --module tasks.$(RUN_ARGS)
+
+run-parallel:
+	docker-compose run --rm bigmetadata luigi --parallel-scheduling --workers=8 --module tasks.$(RUN_ARGS)
 
 dump: test
 	docker-compose run --rm bigmetadata luigi --module tasks.carto DumpS3
@@ -114,8 +147,28 @@ extension:
 	docker exec $$(docker-compose ps -q postgres) sh -c 'cd observatory-extension && make install'
 	docker-compose run --rm bigmetadata psql -c "DROP EXTENSION IF EXISTS observatory; CREATE EXTENSION observatory WITH VERSION 'dev';"
 
+# update dataservices-api in our DB container
+# Depends on having a dataservices-api folder linked
+dataservices-api: extension
+	docker exec $$(docker-compose ps -q postgres) sh -c ' \
+	  cd /cartodb-postgresql && make install && \
+	  cd /data-services/geocoder/extension && make install && \
+	  cd /dataservices-api/client && make install && \
+	  cd /dataservices-api/server/extension && make install && \
+	  cd /dataservices-api/server/lib/python/cartodb_services && \
+	  pip install -r requirements.txt && pip install --upgrade .'
+	docker-compose run --rm bigmetadata psql -f /bigmetadata/postgres/dataservices_config.sql
+	docker exec $$(docker-compose ps -q redis) sh -c \
+	  "$$(cat postgres/dataservices_config.redis)"
+
+## in redis:
+
+
 sh-sql:
 	docker exec -it $$(docker-compose ps -q postgres) /bin/bash
+
+py-sql:
+	docker exec -it $$(docker-compose ps -q postgres) python
 
 # Regenerate fixtures for the extension
 extension-fixtures:
@@ -130,26 +183,53 @@ extension-unittest:
 	                && make install \
 	                && su postgres -c 'make test'"
 
+dataservices-api-client-unittest:
+	docker exec -it \
+	  $$(docker-compose ps -q postgres) \
+	  /bin/bash -c "cd dataservices-api/client \
+	                && chmod -R a+w test \
+	                && make install \
+	                && su postgres -c 'PGUSER=postgres make installcheck'" || :
+	test $$(grep '^[-+] ' dataservices-api/client/test/regression.diffs | grep -Ev '(CONTEXT|PL/pgSQL)' | tee dataservices-api/client/test/regression.diffs | wc -l) = 0
+
+dataservices-api-server-unittest:
+	docker exec -it \
+	  $$(docker-compose ps -q postgres) \
+	  /bin/bash -c "cd dataservices-api/server/extension \
+	                && chmod -R a+w test \
+	                && make install \
+	                && su postgres -c 'PGUSER=postgres make installcheck'" || :
+
+dataservices-api-unittest: dataservices-api-server-unittest dataservices-api-client-unittest
+
 etl-unittest:
 	docker-compose run --rm bigmetadata /bin/bash -c \
 	  'while : ; do pg_isready -t 1 && break; done && \
 	  PGDATABASE=test nosetests -v \
-	    tests/test_meta.py tests/test_util.py \
-	    tests/test_columntasks.py tests/test_tabletasks.py'
+	    tests/test_meta.py tests/test_util.py tests/test_carto.py \
+	    tests/test_tabletasks.py'
+
+etl-metadatatest:
+	docker-compose run --rm bigmetadata /bin/bash -c \
+	  'while : ; do pg_isready -t 1 && break; done && \
+	  TEST_ALL=$(ALL) TEST_MODULE=tasks.$(MODULE) \
+	  PGDATABASE=test nosetests -v --with-timer \
+	    tests/test_metadata.py'
 
 travis-etl-unittest:
-	docker run \
-	  -v $$PWD:/bigmetadata \
-	  --net=host --env-file=.env.sample \
-	             -e PGHOST=localhost -e PYTHONPATH=/bigmetadata \
-	             -e PGDATABASE=test -e PGUSER=postgres \
-	             -e LC_ALL=C.UTF-8 -e LANG=C.UTF-8 \
-	             -e LUIGI_CONFIG_PATH=/bigmetadata/conf/luigi_client.cfg \
-	             -e TRAVIS=$$TRAVIS \
-	   recessionporn/bigmetadata /bin/bash -c \
-	   'nosetests -v \
-	    tests/test_meta.py tests/test_util.py \
-	    tests/test_columntasks.py tests/test_tabletasks.py'
+	./run-travis.sh \
+	  'nosetests -v \
+	    tests/test_meta.py tests/test_util.py tests/test_carto.py \
+	    tests/test_tabletasks.py'
+
+travis-diff-catalog:
+	git fetch origin master
+	./run-travis.sh 'python -c "from tests.util import recreate_db; recreate_db()"'
+	./run-travis.sh 'ENVIRONMENT=test luigi --local-scheduler --module tasks.util RunDiff --compare FETCH_HEAD'
+	./run-travis.sh 'ENVIRONMENT=test luigi --local-scheduler --module tasks.sphinx Catalog'
+
+travis-etl-metadatatest:
+	./run-travis.sh 'nosetests -v tests/test_metadata.py'
 
 restore:
 	docker-compose run --rm -d bigmetadata pg_restore -U docker -j4 -O -x -e -d gis $(RUN_ARGS)
@@ -166,3 +246,28 @@ eurostat-data:
 	docker-compose run --rm bigmetadata luigi \
 	  --module tasks.eu.eurostat_bulkdownload EURegionalTables \
 	  --parallel-scheduling --workers=2
+
+ps:
+	docker-compose ps
+
+stop:
+	docker-compose stop
+
+up:
+	docker-compose up -d
+
+meta:
+	docker-compose run --rm bigmetadata luigi\
+	  --module tasks.carto OBSMetaToLocal
+
+releasetest: extension-fixtures extension-perftest-record extension-unittest extension-autotest
+
+test-catalog:
+	docker-compose run --rm bigmetadata /bin/bash -c \
+	  'while : ; do pg_isready -t 1 && break; done && \
+	  TEST_MODULE=tasks.$(MODULE) PGDATABASE=test nosetests -v \
+	    tests/test_catalog.py'
+
+#restore:
+#	docker exec -it bigmetadata_postgres_1 /bin/bash -c "export PGUSER=docker && export PGPASSWORD=docker && export PGHOST=localhost && pg_restore -j4 -O -d gis -x -e /bigmetadata/tmp/carto/Dump_2016_11_16_c14c5977ac.dump >/bigmetadata/tmp/restore.log 2>&1"
+

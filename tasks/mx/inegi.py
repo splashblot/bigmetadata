@@ -1,7 +1,7 @@
 from luigi import Task, Parameter, WrapperTask
 
 from tasks.util import (DownloadUnzipTask, shell, Shp2TempTableTask,
-                        ColumnsTask, TableTask)
+                        ColumnsTask, TableTask, MetaWrapper)
 from tasks.meta import GEOM_REF, OBSColumn, current_session
 from tasks.mx.inegi_columns import DemographicColumns
 from tasks.tags import SectionTags, SubsectionTags, BoundaryTags
@@ -39,8 +39,8 @@ RESDESCS = {
 RESTAGS = {
     'ageb': ['cartographic_boundary', 'interpolation_boundary'],
     'entidad': ['cartographic_boundary', 'interpolation_boundary'],
-    'localidad_rural_no_amanzanada': ['cartographic_boundary', 'interpolation_boundary'],
-    'localidad_urbana_y_rural_amanzanada': ['cartographic_boundary', 'interpolation_boundary'],
+    'localidad_rural_no_amanzanada': ['cartographic_boundary'],
+    'localidad_urbana_y_rural_amanzanada': ['cartographic_boundary'],
     'manzana': ['cartographic_boundary', 'interpolation_boundary'],
     'municipio': ['cartographic_boundary', 'interpolation_boundary'],
     'servicios_area': [],
@@ -188,7 +188,7 @@ class GeographyColumns(ColumnsTask):
             'sections': SectionTags(),
             'subsections': SubsectionTags(),
             'source': SourceTags(),
-            'license': LicenseTags()
+            'license': LicenseTags(),
             'boundary': BoundaryTags()
         }
 
@@ -210,7 +210,6 @@ class GeographyColumns(ColumnsTask):
             weight=self.weights[self.resolution],
             tags=[sections['mx'], subsections['boundary'], license, source]
         )
-        geom['tags']
         geom_ref = OBSColumn(
             id=self.resolution + '_cvegeo',
             type='Text',
@@ -338,3 +337,18 @@ class AllCensus(WrapperTask):
                 continue
             for table in DEMOGRAPHIC_TABLES.keys():
                 yield Census(resolution=resolution, table=table)
+
+
+class CensusWrapper(MetaWrapper):
+
+    resolution = Parameter()
+    table = Parameter()
+
+    params = {
+        'resolution': set(RESOLUTIONS) - set(['servicios_area']),
+        'table': DEMOGRAPHIC_TABLES.keys()
+    }
+
+    def tables(self):
+        yield Geography(resolution=self.resolution)
+        yield Census(resolution=self.resolution, table=self.table)

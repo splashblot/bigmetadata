@@ -13,7 +13,8 @@ from luigi import Task, BooleanParameter, Target, Event
 
 from sqlalchemy import (Column, Integer, Text, Boolean, MetaData, Numeric, cast,
                         create_engine, event, ForeignKey, PrimaryKeyConstraint,
-                        ForeignKeyConstraint, Table, exc, func, UniqueConstraint)
+                        ForeignKeyConstraint, Table, exc, func, UniqueConstraint,
+                        Index)
 from sqlalchemy.dialects.postgresql import JSON
 from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy.ext.declarative import declarative_base
@@ -30,22 +31,27 @@ def natural_sort_key(s, _nsre=re.compile('([0-9]+)')):
             for text in re.split(_nsre, s)]
 
 
-_engine = create_engine('postgres://{user}:{password}@{host}:{port}/{db}'.format(
-    user=os.environ.get('PGUSER', 'postgres'),
-    password=os.environ.get('PGPASSWORD', ''),
-    host=os.environ.get('PGHOST', 'localhost'),
-    port=os.environ.get('PGPORT', '5432'),
-    db=os.environ.get('PGDATABASE', 'postgres')
-))
+def get_engine(user=None, password=None, host=None, port=None,
+               db=None, readonly=False):
 
+    engine = create_engine('postgres://{user}:{password}@{host}:{port}/{db}'.format(
+        user=user or os.environ.get('PGUSER', 'postgres'),
+        password=password or os.environ.get('PGPASSWORD', ''),
+        host=host or os.environ.get('PGHOST', 'localhost'),
+        port=port or os.environ.get('PGPORT', '5432'),
+        db=db or os.environ.get('PGDATABASE', 'postgres')
+    ))
 
-def get_engine():
+    @event.listens_for(engine, 'begin')
+    def receive_begin(conn):
+        if readonly:
+            conn.execute('SET TRANSACTION READ ONLY')
 
-    @event.listens_for(_engine, "connect")
+    @event.listens_for(engine, "connect")
     def connect(dbapi_connection, connection_record):
         connection_record.info['pid'] = os.getpid()
 
-    @event.listens_for(_engine, "checkout")
+    @event.listens_for(engine, "checkout")
     def checkout(dbapi_connection, connection_record, connection_proxy):
         pid = os.getpid()
         if connection_record.info['pid'] != pid:
@@ -55,7 +61,8 @@ def get_engine():
                 "attempting to check out in pid %s" %
                 (connection_record.info['pid'], pid)
             )
-    return _engine
+
+    return engine
 
 
 def catalog_lonlat(column_id):
@@ -118,6 +125,8 @@ def catalog_lonlat(column_id):
         return (40.7, -73.9)
     elif column_id.startswith('br.'):
         return (-43.19, -22.9)
+    elif column_id.startswith('au.'):
+        return (-33.8806, 151.2131)
     else:
         raise Exception('No catalog point set for {}'.format(column_id))
 
@@ -170,8 +179,12 @@ class Point(UserDefinedType):
         return func.ST_AsText(col, type_=self)
 
 
-metadata = MetaData(bind=get_engine(), schema='observatory')
-Base = declarative_base(metadata=metadata)
+if os.environ.get('READTHEDOCS') == 'True':
+    metadata = None
+    Base = declarative_base()
+else:
+    metadata = MetaData(bind=get_engine(), schema='observatory')
+    Base = declarative_base(metadata=metadata)
 
 
 # A connection between a table and a column
@@ -389,7 +402,7 @@ class OBSColumn(Base):
     description = Column(Text) # human-readable description to provide in
                                  # bigmetadata
 
-    weight = Column(Numeric, default=0)
+    weight = Column(Numeric, default=1)
     aggregate = Column(Text) # what aggregate operation to use when adding
                                # these together across geoms: AVG, SUM etc.
 
@@ -423,9 +436,27 @@ class OBSColumn(Base):
         return self._index_type
 
     def children(self):
-        children = [col for col, reltype in self.sources.iteritems() if reltype == 'denominator']
+        children = [col for col, reltype in self.sources.iteritems() if reltype == DENOMINATOR]
         children.sort(key=lambda x: natural_sort_key(x.name))
         return children
+
+    def is_cartographic(self):
+        '''
+        Returns True if this column is a geometry that can be used for cartography.
+        '''
+        for tag in self.tags:
+            if 'cartographic_boundary' in tag.id:
+                return True
+        return False
+
+    def is_interpolation(self):
+        '''
+        Returns True if this column is a geometry that can be used for interpolation.
+        '''
+        for tag in self.tags:
+            if 'interpolation_boundary' in tag.id:
+                return True
+        return False
 
     def is_geomref(self):
         '''
@@ -443,7 +474,7 @@ class OBSColumn(Base):
         '''
         Returns True if this column has no denominator, False otherwise.
         '''
-        return 'denominator' in self.targets.values()
+        return DENOMINATOR in self.targets.values()
 
     def has_catalog_image(self):
         '''
@@ -457,7 +488,7 @@ class OBSColumn(Base):
         '''
         if not self.has_denominators():
             return []
-        return [k for k, v in self.targets.iteritems() if v == 'denominator']
+        return [k for k, v in self.targets.iteritems() if v == DENOMINATOR]
 
     def unit(self):
         '''
@@ -714,6 +745,25 @@ class OBSColumnTableTile(Base):
     )
 
 
+class OBSColumnTableTileSimple(Base):
+    '''
+    This table contains column/table summary data using raster tiles.
+    '''
+    __tablename__ = 'obs_column_table_tile_simple'
+
+    table_id = Column(Text, primary_key=True)
+    column_id = Column(Text, primary_key=True)
+    tile_id = Column(Integer, primary_key=True)
+
+    tile = Column(Raster)
+
+    tct_constraint = UniqueConstraint(table_id, column_id, tile_id,
+                                      name='obs_column_table_tile_simple_tct')
+    cvxhull_restraint = Index('obs_column_table_simple_chtile',
+                              func.ST_ConvexHull(tile),
+                              postgresql_using='gist')
+
+
 class CurrentSession(object):
 
     def __init__(self):
@@ -812,19 +862,21 @@ UNIVERSE = 'universe'
 GEOM_REF = 'geom_ref'
 GEOM_NAME = 'geom_name'
 
-_engine.execute('CREATE SCHEMA IF NOT EXISTS observatory')
-_engine.execute('''
-    CREATE OR REPLACE FUNCTION public.first_agg ( anyelement, anyelement )
-    RETURNS anyelement LANGUAGE SQL IMMUTABLE STRICT AS $$
-            SELECT $1;
-    $$;
+if not os.environ.get('READTHEDOCS') == 'True':
+    _engine = get_engine()
+    _engine.execute('CREATE SCHEMA IF NOT EXISTS observatory')
+    _engine.execute('''
+        CREATE OR REPLACE FUNCTION public.first_agg ( anyelement, anyelement )
+        RETURNS anyelement LANGUAGE SQL IMMUTABLE STRICT AS $$
+                SELECT $1;
+        $$;
 
-    -- And then wrap an aggregate around it
-    DROP AGGREGATE IF EXISTS public.FIRST (anyelement);
-    CREATE AGGREGATE public.FIRST (
-            sfunc    = public.first_agg,
-            basetype = anyelement,
-            stype    = anyelement
-    );
-''')
-Base.metadata.create_all()
+        -- And then wrap an aggregate around it
+        DROP AGGREGATE IF EXISTS public.FIRST (anyelement);
+        CREATE AGGREGATE public.FIRST (
+                sfunc    = public.first_agg,
+                basetype = anyelement,
+                stype    = anyelement
+        );
+    ''')
+    Base.metadata.create_all()

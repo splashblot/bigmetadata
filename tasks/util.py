@@ -2143,3 +2143,55 @@ def collect_meta_wrappers(test_module=None, test_all=True):
             yield t, params
             if not test_all:
                 break
+
+
+class GenerateVectorTiles(Task):
+
+    # Generate vector tiles for a particular table_id
+
+    table_id = Parameter()
+
+    def run(self):
+        session = current_session()
+        tablename = session.execute('''
+            SELECT tablename FROM observatory.obs_table WHERE id = '{}'
+        '''.format(self.table_id)).fetchone()[0]
+        vectordata = session.execute('''
+            WITH level AS (SELECT Generate_Series({min_zoom}, {max_zoom}) AS z),
+            raster AS (
+            SELECT z, ST_AddBand(ST_MakeEmptyRaster(
+              POW(2, z)::INT, POW(2, z)::INT,
+              -179.8, 89.9,
+              359.6 / POW(2, z)::INT, -179.8 / POW(2, z)::INT,
+              0, 0, 4326)
+            , '2BUI') raster FROM level)
+            , pixels AS (
+              SELECT z, ST_PixelAsPolygons(raster, 1, false) pixel
+              from raster)
+            , mvtgeoms as (
+              select name, (pixel).x - 1 as x, (pixel).y - 1 as y, z,
+              st_asmvtgeom(st_transform(the_geom, 3857),
+                           box2d(st_transform((pixel).geom, 3857)), 128, 0, true) geom
+              from observatory.{tablename}, pixels
+              where the_geom && (pixel).geom
+            )
+            select z, x, y, st_asmvt('whosonfirst.wof_continent_8b78d60afe', 128, 'geom', mvtgeoms)
+            from mvtgeoms
+            group by z, x, y;
+        '''.format(min_zoom=1, max_zoom=4, tablename=tablename))
+        for z, x, y, vectortile in vectordata:
+            dirpath = os.path.join('catalog', 'build', 'html', classpath(self),
+                                   tablename, str(z), str(x))
+            try:
+                os.makedirs(dirpath)
+            except:
+                pass
+            filepath = os.path.join(dirpath, str(y) + '.mvt')
+            with open(filepath, 'wb') as fhandle:
+                fhandle.write(vectortile)
+            LOGGER.info('wrote vector to %s', filepath)
+
+        self._complete = True
+
+    def complete(self):
+        return getattr(self, '_complete', False)

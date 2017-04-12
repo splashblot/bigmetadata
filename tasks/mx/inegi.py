@@ -227,6 +227,7 @@ class GeographyColumns(ColumnsTask):
 
         if self.resolution in RESPROPNAMES:
             cols['nomgeo'] = OBSColumn(
+                id=self.resolution + '_name',
                 type='Text',
                 weight=1,
                 name= 'Nombre de {}'.format(self.resolution),

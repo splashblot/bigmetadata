@@ -226,6 +226,9 @@ class GeographyColumns(ColumnsTask):
             )
             cols['{}'.format(GEOGRAPHY_PROPERNAMES[self.resolution])] = geom_name
         else:
+            # Census tracts in Brazil (aka setores censitarios) don't have proper names
+            # But they are identified by a mesoregion and microregion.
+            # This columnstask adds a proper name column for each.
             for region in GEOGRAPHY_PROPERNAMES[GEO_I]:
                 cols['{}'.format(region)] = OBSColumn(
                     id=self.resolution + region + '_name',

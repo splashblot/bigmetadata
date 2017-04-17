@@ -221,7 +221,7 @@ class GeographyColumns(ColumnsTask):
             weight=0,
             targets={geom: GEOM_REF},
         )
-        cols = OrderedDict([('the_geom', geom),
+        cols = OrderedDict([('wkb_geometry', geom),
                             ('cvegeo', geom_ref)
                         ])
 

@@ -110,7 +110,7 @@ class GeographyColumns(ColumnsTask):
     }
 
     def version(self):
-        return 8
+        return 9
 
     def requires(self):
         return {
@@ -139,6 +139,7 @@ class GeographyColumns(ColumnsTask):
         geom_name = OBSColumn(
             type='Text',
             weight=1,
+            name='Name of ' + GEOGRAPHY_NAMES[self.resolution],
             targets={geom: GEOM_NAME},
             tags=[sections['ca'], subsections['names']]
         )
@@ -157,7 +158,7 @@ class Geography(TableTask):
     resolution = Parameter(default=GEO_PR)
 
     def version(self):
-        return 2
+        return 3
 
     def requires(self):
         return {

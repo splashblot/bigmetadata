@@ -115,7 +115,7 @@ def hometype_measures():
             yield hometype, hometype_human, measure, measure_human, measure_unit
 
 
-class SourceTags(TagsTask):
+class ZillowSourceTags(TagsTask):
 
     def tags(self):
         return [OBSTag(id='zillow-source',
@@ -124,7 +124,7 @@ class SourceTags(TagsTask):
                        description='Zillow makes available data free for reuse `here <http://www.zillow.com/research/data/>`_.', )]
 
 
-class LicenseTags(TagsTask):
+class ZillowLicenseTags(TagsTask):
 
     def version(self):
         return 2
@@ -155,6 +155,8 @@ class DownloadZillow(Task):
     geography = Parameter()
     hometype = Parameter()
     measure = Parameter()
+    last_year = IntParameter()
+    last_month = IntParameter()
 
     URL = 'http://files.zillowstatic.com/research/public/{geography}/{geography}_{measure}_{hometype}.csv'
 
@@ -187,8 +189,8 @@ class ZillowValueColumns(ColumnsTask):
             'subsections': SubsectionTags(),
             'sections': SectionTags(),
             'units': UnitTags(),
-            'source': SourceTags(),
-            'license': LicenseTags(),
+            'source': ZillowSourceTags(),
+            'license': ZillowLicenseTags(),
         }
 
     def version(self):
@@ -277,7 +279,8 @@ class WideZillow(CSV2TempTableTask):
 
     def requires(self):
         return DownloadZillow(geography=self.geography, hometype=self.hometype,
-                               measure=self.measure)
+                               measure=self.measure, last_year=self.last_year,
+                               last_month = self.last_month)
 
     def input_csv(self):
         return self.input().path
@@ -358,11 +361,12 @@ class AllZillow(WrapperTask):
     def requires(self):
         now = datetime.now()
         for geography in ('Zip', ):
-            for year in xrange(2010, now.year + 1):
+            for year in xrange(2011, now.year + 1):
                 for month in xrange(1, 13):
-                    if now.year == year and now.month <= month:
+                    if now.year == year and now.month <= month - 1:
                         continue
                     yield Zillow(geography=geography, year=year, month=month)
+
 
 class ZillowMetaWrapper(MetaWrapper):
     geography = Parameter()
@@ -373,9 +377,13 @@ class ZillowMetaWrapper(MetaWrapper):
 
     params = {
         'geography': ['Zip'],
-        'year': range(2010, now.year + 1),
+        'year': range(2011, now.year + 1),
         'month': range(1, 13)
     }
+
     def tables(self):
+        now = datetime.now()
+        if now.year == self.year and now.month - 1 <= self.month:
+            return
         yield Zillow(geography=self.geography, year=self.year, month=self.month)
-        yield SumLevel(year=str(self.year), geography='zcta5')
+        yield SumLevel(year=str(2015), geography='zcta5')

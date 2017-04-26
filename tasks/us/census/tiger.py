@@ -8,22 +8,16 @@ import json
 import os
 import subprocess
 from collections import OrderedDict
-from tasks.util import (LoadPostgresFromURL, classpath, TempTableTask,
-                        sql_to_cartodb_table, grouper, shell,
-                        underscore_slugify, TableTask, ColumnTarget,
-                        ColumnsTask, TagsTask, Carto2TempTableTask
-                       )
-
-from tasks.meta import (OBSColumnTable, OBSColumn, GEOM_REF, GEOM_NAME,
-                        OBSColumnTag, OBSTag, OBSColumnToColumn, current_session)
+from tasks.util import (LoadPostgresFromURL, classpath, TempTableTask, grouper,
+                        shell, TableTask, ColumnsTask, TagsTask,
+                        Carto2TempTableTask)
+from tasks.meta import (OBSColumn, GEOM_REF, GEOM_NAME, OBSTag, current_session)
 from tasks.tags import SectionTags, SubsectionTags, LicenseTags, BoundaryTags
 
-from luigi import (Task, WrapperTask, Parameter, LocalTarget, BooleanParameter,
-                   IntParameter)
-from psycopg2 import ProgrammingError
+from luigi import (Task, WrapperTask, Parameter, LocalTarget, IntParameter)
 from decimal import Decimal
 
-class SourceTags(TagsTask):
+class TigerSourceTags(TagsTask):
     def version(self):
         return 1
 
@@ -47,7 +41,7 @@ class ClippedGeomColumns(ColumnsTask):
             'geom_columns': GeomColumns(),
             'sections': SectionTags(),
             'subsections': SubsectionTags(),
-            'source': SourceTags(),
+            'source': TigerSourceTags(),
             'license': LicenseTags(),
             'boundary':BoundaryTags(),
         }
@@ -106,7 +100,7 @@ class GeomColumns(ColumnsTask):
         return {
             'sections': SectionTags(),
             'subsections': SubsectionTags(),
-            'source': SourceTags(),
+            'source': TigerSourceTags(),
             'license': LicenseTags(),
             'boundary': BoundaryTags(),
         }
@@ -232,7 +226,6 @@ class Attributes(ColumnsTask):
         return SectionTags()
 
     def columns(self):
-        united_states = self.input()['united_states']
         return OrderedDict([
             ('aland', OBSColumn(
                 type='Numeric',
@@ -280,23 +273,28 @@ class GeoidColumns(ColumnsTask):
 class GeonameColumns(ColumnsTask):
 
     def version(self):
-        return 1
+        return 2
 
     def requires(self):
         return {
             'raw': GeomColumns(),
-            'clipped': ClippedGeomColumns()
+            'clipped': ClippedGeomColumns(),
+            'subsections': SubsectionTags(),
+            'sections':SectionTags(),
         }
 
     def columns(self):
         cols = OrderedDict()
         clipped = self.input()['clipped']
+        subsection = self.input()['subsections']
+        sections = self.input()['sections']
         for colname, coltarget in self.input()['raw'].iteritems():
             col = coltarget._column
             cols[colname + '_geoname'] = OBSColumn(
                 type='Text',
                 name=col.name + ' Proper Name',
-                weight=0,
+                weight=1,
+                tags=[subsection['names'],sections['united_states']],
                 targets={
                     col: GEOM_NAME,
                     clipped[colname + '_clipped']._column: GEOM_NAME
@@ -337,7 +335,7 @@ class DownloadTigerGeography(Task):
         try:
             exists = shell('ls {}'.format(os.path.join(self.directory, self.geography, '*.zip')))
             return exists != ''
-        except subprocess.CalledProcessError as err:
+        except subprocess.CalledProcessError:
             return False
 
 
@@ -640,7 +638,7 @@ class ShorelineClip(TableTask):
     geography = Parameter()
 
     def version(self):
-        return 6
+        return 7
 
     def requires(self):
         return {
@@ -717,7 +715,7 @@ class SumLevel(TableTask):
         return SUMLEVELS_BY_SLUG[self.geography]['table']
 
     def version(self):
-        return 10
+        return 11
 
     def requires(self):
         tiger = DownloadTiger(year=self.year)
@@ -732,14 +730,15 @@ class SumLevel(TableTask):
         }
 
     def columns(self):
-        united_states = self.input()['sections']['united_states']
+        input_ = self.input()
         cols = OrderedDict([
-            ('geoid', self.input()['geoids'][self.geography + '_geoid']),
-            ('the_geom', self.input()['geoms'][self.geography]),
-            ('aland', self.input()['attributes']['aland']),
-            ('awater', self.input()['attributes']['awater']),
-            ('geoname',self.input()['geonames'][self.geography + '_geoname'])
+            ('geoid', input_['geoids'][self.geography + '_geoid']),
+            ('the_geom', input_['geoms'][self.geography]),
+            ('aland', input_['attributes']['aland']),
+            ('awater', input_['attributes']['awater']),
         ])
+        if self.name:
+            cols['geoname'] = input_['geonames'][self.geography + '_geoname']
         return cols
 
     def timespan(self):
@@ -790,7 +789,7 @@ class SharedTigerColumns(ColumnsTask):
         return {
             'sections': SectionTags(),
             'subsections': SubsectionTags(),
-            'source': SourceTags(),
+            'source': TigerSourceTags(),
             'license': LicenseTags(),
         }
 
@@ -834,7 +833,7 @@ class PointLandmarkColumns(ColumnsTask):
         return {
             'sections': SectionTags(),
             'subsections': SubsectionTags(),
-            'source': SourceTags(),
+            'source': TigerSourceTags(),
             'license': LicenseTags(),
         }
 
@@ -911,7 +910,7 @@ class PriSecRoadsColumns(ColumnsTask):
         return {
             'sections': SectionTags(),
             'subsections': SubsectionTags(),
-            'source': SourceTags(),
+            'source': TigerSourceTags(),
             'license': LicenseTags(),
         }
 

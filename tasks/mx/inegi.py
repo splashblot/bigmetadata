@@ -230,7 +230,7 @@ class GeographyColumns(ColumnsTask):
                 id=self.resolution + '_name',
                 type='Text',
                 weight=1,
-                name= 'Name of {}'.format(self.resolution),
+                name= 'Name of {}'.format(RESNAMES[self.resolution]),
                 tags=[sections['mx'],subsections['names'],license, source],
                 targets={geom: GEOM_NAME}
             )

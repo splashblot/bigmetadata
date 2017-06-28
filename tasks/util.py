@@ -315,12 +315,13 @@ def generate_tile_summary(session, table_id, column_id, tablename, colname):
         st_clip = 'ST_Intersection'
     else:
         st_clip = 'ST_ClipByBox2D'
-
+    print('getting session type for table {}'.format(tablename))
+    print(session.query(" ST_GeometryType({colname}) from {tablename}".format(colname=colname, tablename=tablename)).all())
     query = '''
       DROP TABLE IF EXISTS raster_vals_{tablename_ns};
       CREATE TEMPORARY TABLE raster_vals_{tablename_ns} AS
       WITH vector AS (SELECT CASE
-                        WHEN ST_GeometryType({colname}) IN ('ST_Polygon', 'ST_MultiPolygon')
+                        WHEN ST_GeometryType({colname}) IN ('ST_Polygon', 'ST_MultiPolygon',  'ST_GeometryCollection')
                           THEN ST_CollectionExtract(ST_MakeValid(
                                  ST_SimplifyVW({colname}, 0.0005)), 3)
                           ELSE {colname}

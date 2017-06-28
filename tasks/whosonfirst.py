@@ -26,7 +26,7 @@ class DownloadWOF(TempTableTask):
     def run(self):
         resp = requests.get(self.URL.format(resolution=self.resolution))
         #encoded = resp.text.encode(resp.headers['Content-Type'].split('charset=')[1])
-        reader = DictReader(resp.text.encode('utf8').split('\r\n'))
+        reader = DictReader(resp.text.encode('utf8').splitlines())
 
         for i, line in enumerate(reader):
             # TODO would be much, much faster in parallel...
@@ -73,6 +73,7 @@ class WOFColumns(ColumnsTask):
             'disputed': 'Disputed Areas',
             'marinearea': 'Marine Areas',
             'region': 'Regions (First-level Administrative)',
+            'neighbourhood': 'Neighbourhoods',
         }
 
         #geom_descriptions = {
